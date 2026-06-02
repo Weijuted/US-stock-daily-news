@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-01</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-block { padding: 14px 16px; margin-bottom: 12px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-block.geopolitical { background: #fff8f0; border-left-color: #f97316; }
+    .event-block.macro { background: #f0fdf4; border-left-color: #16a34a; }
+    .event-block-title { font-weight: 700; margin-bottom: 6px; font-size: 0.93rem; }
+    .tag { display: inline-block; font-size: 0.74rem; font-weight: 600; padding: 2px 8px; border-radius: 99px; margin-right: 6px; margin-bottom: 4px; }
+    .tag-tech { background: #e0e7ff; color: #3730a3; }
+    .tag-energy { background: #fef9c3; color: #854d0e; }
+    .tag-macro { background: #dcfce7; color: #166534; }
+    .tag-geo { background: #ffe4e6; color: #9f1239; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .note-box { background: #fefce8; border: 1px solid #fbbf24; border-radius: 6px; padding: 12px 16px; font-size: 0.85rem; color: #78350f; margin-top: 14px; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding-left: 16px; position: relative; }
+    .sources li::before { content: "→"; position: absolute; left: 0; color: #9ca3af; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-06-01（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- 主要指數收盤 -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>51,078.88</td>
+          <td class="up">▲ +0.09%</td>
+          <td>創收盤歷史新高</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,599.96</td>
+          <td class="up">▲ +0.26%</td>
+          <td>創收盤歷史新高，連九週收紅</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>27,086.81</td>
+          <td class="up">▲ +0.42%</td>
+          <td>創收盤歷史新高，科技股領漲</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>~2,286</td>
+          <td class="neutral">▼ 表現落後</td>
+          <td>小型股承壓，明顯落後大盤</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note-box">
+      ⚠️ <strong>市場廣度警訊：</strong>儘管三大指數齊創歷史新高，當日僅不到 39% 的美股收漲，漲勢高度集中於科技與能源板塊，市場廣度偏弱值得留意。
+    </div>
+  </div>
+
+  <!-- 重大市場事件 -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+
+    <div class="event-block">
+      <div class="event-block-title">
+        <span class="tag tag-tech">科技</span>Nvidia 宣布進軍 PC 處理器市場（Computex 2026）
+      </div>
+      <p>當日最大催化劑。CEO 黃仁勳於台北 Computex 2026 大會發表全新 <strong>RTX Spark 超級芯片</strong>——Nvidia 史上首款 PC 處理器，採 Arm 架構、與 MediaTek 合作開發，搭載 Windows on Arm。Dell、HP、Lenovo、Microsoft、ASUS、MSI 均宣布將於秋季採用。</p>
+      <p style="margin-top:10px;">個股反應：</p>
+      <table style="margin-top:8px;">
+        <thead>
+          <tr><th>個股</th><th>漲跌幅</th><th>方向</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Arm Holdings (ARM)</td><td class="up">+14% ~ +18%</td><td>大漲（架構授權受益）</td></tr>
+          <tr><td>HP Inc (HPQ)</td><td class="up">+4% ~ +8%</td><td>上漲（OEM 合作夥伴）</td></tr>
+          <tr><td>Dell Technologies (DELL)</td><td class="up">+8% ~ +10%</td><td>上漲（OEM 合作夥伴）</td></tr>
+          <tr><td>Microsoft (MSFT)</td><td class="up">+2%</td><td>上漲（Windows on Arm）</td></tr>
+          <tr><td>Nvidia (NVDA)</td><td class="up">+4% ~ +6%</td><td>上漲</td></tr>
+          <tr><td>Qualcomm (QCOM)</td><td class="down">-7% ~ -10%</td><td>重跌（競爭威脅）</td></tr>
+          <tr><td>Intel (INTC)</td><td class="down">-3%</td><td>下跌（競爭威脅）</td></tr>
+          <tr><td>AMD</td><td class="down">-3%</td><td>下跌（競爭威脅）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="event-block geopolitical">
+      <div class="event-block-title">
+        <span class="tag tag-geo">地緣政治</span>美伊軍事衝突升級，油價飆漲逾 6%
+      </div>
+      <p>美軍在伊朗擊落美國無人機後，對伊朗雷達站及無人機基地發動打擊；伊朗宣稱報復；科威特亦報告遭受來襲。伊朗媒體一度報道德黑蘭考慮關閉<strong>霍爾木茲海峽</strong>，引發油價急漲。</p>
+      <p style="margin-top:8px;"><strong>Brent 原油</strong>收 $93.6/桶 | <strong>WTI 原油</strong>突破 $90/桶，日漲逾 6%。能源板塊整體 +2.5%，為當日第二大贏家板塊。白宮國防部長 Hegseth 聲稱談判仍在進行，Trump 稱以色列—黎巴嫩停火協議有助緩解部分緊張情緒。</p>
+    </div>
+
+    <div class="event-block macro">
+      <div class="event-block-title">
+        <span class="tag tag-macro">經濟數據</span>ISM 製造業 PMI（5 月）強勁超預期
+      </div>
+      <p>5 月 ISM 製造業 PMI 達 <strong>54.0</strong>（4 月為 52.7），為 2022 年 5 月以來最高值，製造業連續第五個月擴張。新訂單指數 56.8，生產指數 54.3，顯示需求強勁。惟<strong>價格指數 82.1</strong>（略降但仍高），提示通膨壓力持續存在。</p>
+    </div>
+  </div>
+
+  <!-- 宏觀因素 -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會（Fed）動態</h3>
+    <p style="font-size:0.9rem;line-height:1.65;">聯邦基金利率維持 <strong>3.50%–3.75%</strong> 目標區間（已連續三次會議不變）。通膨仍略高於目標，疊加中東衝突帶來能源價格不確定性，Fed 維持觀望態度。本週最重大宏觀事件為<strong>週五（6/5）公布的 5 月非農就業報告（NFP）</strong>，市場密切關注。</p>
+
+    <h3>本週重要經濟日曆</h3>
+    <table>
+      <thead>
+        <tr><th>日期</th><th>數據</th><th>結果 / 預期</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>6/1（週一）</td><td>ISM 製造業 PMI（5 月）</td><td class="up">54.0（高於預期）</td></tr>
+        <tr><td>6/5（週五）</td><td>非農就業報告（5 月）</td><td class="neutral">待公布</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 風險與不確定因素 -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>中東衝突持續升溫：</strong>美伊交火若擴大，霍爾木茲海峽封鎖風險將直接衝擊全球能源供應鏈，推升通膨壓力並可能迫使 Fed 延後降息。</li>
+      <li><strong>市場廣度偏窄：</strong>僅 39% 美股上漲，漲勢過度集中於科技與能源，指數新高掩蓋了廣泛個股的疲弱，若領漲板塊回調，指數修正風險較高。</li>
+      <li><strong>通膨壓力未散：</strong>ISM 價格指數 82.1 及能源價格飆升，可能推遲 Fed 降息時間表；市場對降息預期若進一步後移，估值壓力將上升。</li>
+      <li><strong>半導體競爭格局重組：</strong>Nvidia 進軍 PC 處理器市場衝擊 Qualcomm、Intel、AMD 既有市佔，相關個股短期波動風險高，行業競爭格局面臨再評估。</li>
+      <li><strong>NFP 就業報告（週五）：</strong>若就業數據意外強勁，可能進一步壓低降息預期；若數據疲弱，則可能引發衰退擔憂，市場雙向風險皆存。</li>
+    </ul>
+  </div>
+
+  <!-- 資料來源 -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-01-2026" target="_blank">TheStreet — Stock Market Today June 1 2026: Nasdaq, S&amp;P 500 tech and energy</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/31/stock-market-today-live-updates.html" target="_blank">CNBC — S&amp;P 500 closes at a record to kick off June trading (live updates)</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/01/arm-holdings-rockets-18-microsoft-dell-rise-on-rtx-spark-ai-pc-launch/" target="_blank">247 Wall St. — ARM Holdings Rockets 18%, Microsoft, Dell Rise on RTX Spark AI PC Launch</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/01/nvidia-rallies-4-on-rtx-spark-launch-as-qualcomm-falls-7-on-ai-pc-competition-fears/" target="_blank">247 Wall St. — NVIDIA Rallies 5% on RTX Spark Launch as Qualcomm Falls 7%</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-1-213958101.html" target="_blank">Yahoo Finance — Stock Market Today, June 1: Tech and Software Stocks Lift Markets</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/wall-street-futures-rise-nvidia-113309042.html" target="_blank">Yahoo Finance — Wall Street Futures Rise on Nvidia PC Chip</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/articles/intel-amd-qualcomm-shares-slide-152900311.html" target="_blank">Yahoo Finance — Intel, AMD, Qualcomm Shares Slide as Nvidia Crashes PC Chip Market</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/arm-holdings-rockets-18-microsoft-163109555.html" target="_blank">Yahoo Finance — ARM Holdings Rockets 18%</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html" target="_blank">CNBC — Nvidia Jumps into PCs with New Arm-Based Chip (Dell, HP announcement)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/01/arm-ibm-and-hewlett-packard-nvidia-chip-extends-software-rally.html" target="_blank">CNBC — Arm, IBM and Hewlett Packard Soar as Nvidia Chip Extends Software Rally</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Schwab Market Update — Nvidia's New Chip Boosts Tech Early as War Flares</a></li>
+      <li><a href="https://www.thenationalnews.com/business/energy/2026/06/01/oil-prices-surge-as-us-and-iran-launch-fresh-strikes/" target="_blank">The National News — Oil Prices Surge as US and Iran Launch Fresh Strikes (June 1)</a></li>
+      <li><a href="https://fortune.com/article/price-of-oil-06-01-2026/" target="_blank">Fortune — Current Price of Oil as of June 1, 2026</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-may-2026-ism-manufacturing-pmi-report-302786165.html" target="_blank">ISM / PR Newswire — Manufacturing PMI 54% May 2026 Report</a></li>
+      <li><a href="https://www.gurufocus.com/news/8892993/nvidia-enters-pc-processor-market-boosting-ai-pc-stocks" target="_blank">GuruFocus — NVIDIA Enters PC Processor Market, Boosting AI PC Stocks</a></li>
+      <li><a href="https://invezz.com/en-ae/news/2026/06/01/intel-amd-and-qualcomm-slide-as-nvidia-targets-ai-pc-market-with-rtx-spark-chip/" target="_blank">Invezz — Intel, AMD and Qualcomm Slide as Nvidia Targets AI PC Market</a></li>
+      <li><a href="https://grafa.com/en/news/united-states/nvidia-pc-market-expansion-rtx-spark" target="_blank">Grafa — Nvidia's New AI PC Chip Boosts Microsoft, Dell, and HP Stocks</a></li>
+      <li><a href="https://www.morganstanley.com/insights/articles/iran-war-oil-inflation-stock-market-2026" target="_blank">Morgan Stanley — Iran Conflict: Oil Price Impacts and Inflation 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 數據來源：CNBC、TheStreet、Yahoo Finance 等多方交叉確認 | 僅供參考，非投資建議</footer>
+
+</div>
+</body>
+</html>
