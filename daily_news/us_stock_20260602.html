@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-02</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 1rem; font-weight: 700; margin: 18px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 14px 16px; margin-bottom: 10px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-list li strong { color: #0f3460; }
+    .event-list li .badge { display: inline-block; font-size: 0.78rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-right: 6px; }
+    .badge-up { background: #dcfce7; color: #15803d; }
+    .badge-down { background: #fee2e2; color: #b91c1c; }
+    .badge-macro { background: #fef3c7; color: #92400e; }
+    .badge-policy { background: #ede9fe; color: #6d28d9; }
+    .sector-table { margin-top: 8px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding-left: 12px; position: relative; }
+    .sources li::before { content: "›"; position: absolute; left: 0; color: #9ca3af; }
+    .source-group { margin-bottom: 16px; }
+    .source-group h4 { font-size: 0.83rem; font-weight: 700; color: #374151; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .note { font-size: 0.82rem; color: #6b7280; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 6px; padding: 10px 14px; margin-top: 14px; line-height: 1.6; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-row td { background: #fffbeb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-06-02（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td><strong>S&P 500</strong></td>
+          <td>7,609.78</td>
+          <td class="up">+9.91</td>
+          <td class="up">+0.13%</td>
+          <td>史上首次收盤站上 7,600 點，再創歷史新高</td>
+        </tr>
+        <tr>
+          <td><strong>道瓊工業（DJIA）</strong></td>
+          <td>51,307.79</td>
+          <td class="up">+229.64</td>
+          <td class="up">+0.45%</td>
+          <td>延續創高走勢</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>27,093.90</td>
+          <td class="up">+8.14</td>
+          <td class="up">+0.03%</td>
+          <td>再創歷史收盤新高，漲幅相對收斂</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>~2,931</td>
+          <td class="up">+約 25</td>
+          <td class="up">+0.90%</td>
+          <td>當日表現最強的主要指數，小型股領漲</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">* 道瓊點位在 TheStreet（51,307.79）與 Trading Economics（51,322）之間有約 14 點差異，屬不同時點快照所致；Russell 2000 精確收盤點以 Yahoo Finance 歷史資料為準。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+
+      <li>
+        <span class="badge badge-up">個股 +25%~+33%</span>
+        <strong>Jensen Huang 點名 Marvell 為「下一家兆元企業」</strong><br>
+        輝達（Nvidia）執行長黃仁勳在台北 Computex Week 週邊活動與 Marvell CEO Matthew Murphy 同台，公開表示 Marvell 的網路互連晶片對 AI 資料中心「至關重要」，稱其將成為「下一家兆元公司」。Marvell（MRVL）單日大漲 25%～33%，創 2000 年以來最高單日漲幅紀錄。Marvell 目前市值約 1,910 億美元，距兆元目標仍需漲逾 400%。Nvidia 三個月前已以 20 億美元入股 Marvell 強化雙方合作關係。
+      </li>
+
+      <li>
+        <span class="badge badge-up">個股 +19%~+25%</span>
+        <strong>Hewlett Packard Enterprise（HPE）Q2 FY2026 財報爆發</strong><br>
+        HPE 週一盤後公布 Q2 財報後週二大漲，被 CNBC 稱為「有史以來最佳單日表現」之一。關鍵數據：EPS $0.79（vs 預估 $0.54，超出 46%）、營收 106.78 億美元（年增 +40%，vs 預估 98.89 億）、網路部門年增 +148%、雲端與 AI 部門年增 +23%。全年營收成長指引上調至 +29%～+33%。
+      </li>
+
+      <li>
+        <span class="badge badge-down">個股 -4%</span>
+        <strong>Alphabet 宣布 800 億美元股票發行計畫，波克夏哈薩威認購 100 億美元</strong><br>
+        Google 母公司 Alphabet 宣布規模達 800 億美元的股票發行計畫，包含 300 億美元承銷公開發行（150 億美元 A/C 類股 + 150 億美元強制可轉換優先股）以及 400 億美元市價銷售（ATM）計畫。波克夏哈薩威認購 100 億美元私募股份（A 股每股 351.81 美元 50 億 + C 股每股 348.20 美元 50 億），持股總值從約 220 億提升至約 320 億。資金用途：AI 基礎設施擴建。Alphabet（GOOG/GOOGL）當日下跌約 -4%，成為拖累 S&P 500 的最大單一負因。
+      </li>
+
+      <li>
+        <span class="badge badge-up">個股 +5%，創歷史新高</span>
+        <strong>Cisco 在 Cisco Live 推出 AI 網路安全平台，AI 訂單目標大幅上調</strong><br>
+        Cisco 發布「Cisco Cloud Control」統一 AI 代理管理平台，6 月 2 日起在美國進入受控開放。公司宣布超大規模雲端業者 AI 基礎設施訂單達 53 億美元，並將 FY2026 AI 訂單目標從 50 億上調至 <strong>90 億美元</strong>。CSCO 當日上漲 +5%，日內達 127 美元以上，刷新歷史高點。網路設備股 Arista Networks（ANET）受連帶效應走強。
+      </li>
+
+      <li>
+        <span class="badge badge-up">個股 +5%（盤前至收盤）</span>
+        <strong>Broadcom（AVGO）財報前買盤湧現</strong><br>
+        市場預期周三（6/3）盤後公布 Q2 財報，Broadcom（AVGO）日內上漲 +5%（交易區間 458.82～492 美元）。Susquehanna 分析師已將目標價上調至 490 美元，AI 晶片需求持續強勁。
+      </li>
+
+      <li>
+        <span class="badge badge-up">盤後 +8%</span>
+        <strong>Palo Alto Networks（PANW）Q3 FY2026 財報優於預期</strong><br>
+        PANW 於當日盤後公布 Q3 FY2026 財報，盤後大漲 8% 以上。FY2026 全年指引：營收 114.15～114.25 億（年增 24%），下一代安全 ARR 89～89.5 億（年增 59%～60%），稀釋後 non-GAAP EPS 3.77～3.79 美元。
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀因素分析</h2>
+
+    <h3>聯準會（Fed）動態</h3>
+    <ul class="event-list">
+      <li>
+        <span class="badge badge-macro">Fed</span>
+        聯準會維持聯邦基金利率目標區間於 <strong>3.50%～3.75%</strong>（最近 FOMC 聲明日期：2026 年 4 月 29 日）。市場聚焦 <strong>6 月 5 日（週五）</strong>公布的非農就業報告（NFP）。4 月非農新增 11.5 萬人，失業率維持 4.3%，就業市場呈溫和放緩。Fed 當前立場：經濟活動穩健擴張，但就業增長偏弱。
+      </li>
+    </ul>
+
+    <h3>6 月 2 日公布之關鍵經濟數據</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>數據</th>
+          <th>公布值</th>
+          <th>前值</th>
+          <th>預期值</th>
+          <th>市場解讀</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ISM 製造業 PMI（5 月）</td>
+          <td class="up"><strong>54.0</strong></td>
+          <td>52.7</td>
+          <td>53.0</td>
+          <td>創 2022 年 5 月以來最強製造業擴張，超預期</td>
+        </tr>
+        <tr>
+          <td>JOLTS 職位空缺（4 月）</td>
+          <td>760 萬</td>
+          <td>750 萬</td>
+          <td>—</td>
+          <td>職位空缺小幅上升；招聘與分離人數下降，就業市場趨穩</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>地緣政治：美伊對峙與油價波動</h3>
+    <ul class="event-list">
+      <li>
+        <span class="badge badge-macro">能源</span>
+        WTI / Brent 原油約 <strong>91 美元/桶</strong>，周二小跌約 1%（前一交易日因伊朗暫停談判傳言急漲 5.5% 後回落）。美以聯合軍事行動引發 2026 年伊朗戰爭，霍爾木茲海峽（全球 20% 石油貿易通道）一度關閉。6 月 2 日：伊朗暫停與華盛頓談判（回應以色列在黎巴嫩軍事行動），川普稱談判仍在進行，表示「最快下週可簽署重開霍爾木茲海峽的諒解備忘錄」。油價波動形成對沖壓力，但 AI 題材走強抵銷此拖累。
+      </li>
+    </ul>
+
+    <h3>政策面：川普 AI 行政命令</h3>
+    <ul class="event-list">
+      <li>
+        <span class="badge badge-policy">政策</span>
+        川普於 6 月 2 日簽署「促進先進人工智慧創新與安全」行政命令。主要內容：AI 公司自願於公開發布前 30 天將前沿模型提交政府測試；建立 AI 網路安全資訊交換平台（AI Cybersecurity Clearinghouse）；聯邦機構建立 AI 模型網路能力評估基準。直接受益股：Cisco（Project Glasswing Anthropic 創始夥伴）、Palo Alto Networks。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTOR -->
+  <div class="card">
+    <h2>板塊與個股動態摘要</h2>
+    <table class="sector-table">
+      <thead>
+        <tr>
+          <th>板塊 / 個股</th>
+          <th>表現</th>
+          <th>驅動因素</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>半導體（SOX）</td>
+          <td class="up">大幅走強</td>
+          <td>Marvell 飆漲 25%+，Broadcom / Qualcomm / Lam Research 各漲約 +5%</td>
+        </tr>
+        <tr>
+          <td>AI 基礎設施 / 伺服器</td>
+          <td class="up">強勢</td>
+          <td>HPE +19%～25%，SK Hynix 晶圓產能預期提升</td>
+        </tr>
+        <tr>
+          <td>網路 / 資安</td>
+          <td class="up">強勢</td>
+          <td>Cisco +5% 創新高，PANW 盤後 +8%，ANET 連帶走強</td>
+        </tr>
+        <tr>
+          <td>科技龍頭（Mega-cap）</td>
+          <td class="neutral">分化</td>
+          <td>Alphabet -4% 拖累大盤，其餘多數持穩或小漲</td>
+        </tr>
+        <tr>
+          <td>能源</td>
+          <td class="down">震盪走低</td>
+          <td>油價從前日高點回落約 1%，能源股跟跌</td>
+        </tr>
+        <tr>
+          <td>小型股（Russell 2000）</td>
+          <td class="up">強勁</td>
+          <td>漲約 +0.90%，表現優於大盤，寬廣市場參與度提升</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>油價波動風險：</strong>美伊衝突持續，霍爾木茲海峽局勢不穩；若談判破裂或升級，WTI 原油可能再度急漲，通膨預期升溫將衝擊高估值科技股。</li>
+      <li><strong>非農就業報告（6/5）：</strong>若 5 月非農大幅不及預期，可能強化市場對 Fed 維持高利率更久的憂慮；反之若過熱，則壓縮降息空間。</li>
+      <li><strong>Alphabet 股權稀釋效應：</strong>800 億美元股票發行計畫若市場消化不良，可能持續拖累 GOOG/GOOGL 股價，並透過指數加權效應波及 S&P 500、Nasdaq。</li>
+      <li><strong>AI 估值泡沫疑慮：</strong>Marvell 單日漲 25%+ 使其市值快速膨脹，分析師質疑距「兆元目標」仍需 400% 漲幅；半導體板塊估值整體偏高，若財報季出現任何落差，修正幅度可能較大。</li>
+      <li><strong>Fed 政策不確定性：</strong>現行利率 3.50%～3.75%，若通膨再燃（受油價或強 PMI 推升），Fed 暫停降息甚至再升息的可能性將重新定價。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+
+    <div class="source-group">
+      <h4>指數收盤數據</h4>
+      <ul class="sources">
+        <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-02-2026" target="_blank">TheStreet — Stock Market Today June 2, 2026: S&P 500 finishes above 7,600</a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-2-212210685.html" target="_blank">Yahoo Finance — Stock Market Today, June 2: Chipmakers Drive S&P 500 to Another Record Close</a></li>
+        <li><a href="https://www.barchart.com/story/news/2267573/how-major-us-stock-indexes-fared-tuesday-6-2-2026" target="_blank">Barchart — How major US stock indexes fared Tuesday 6/2/2026</a></li>
+        <li><a href="https://www.fool.com/coverage/stock-market-today/2026/06/02/stock-market-today-june-2-chipmakers-drive-s-and-p-500-to-another-record-close/" target="_blank">Motley Fool — Stock Market Today, June 2</a></li>
+        <li><a href="https://www.cnbc.com/2026/06/01/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for June 2, 2026</a></li>
+        <li><a href="https://247wallst.com/investing/2026/06/02/stock-market-live-june-2-2026-sp-500-spy-slips-after-testing-record-highs/" target="_blank">247 Wall St. — Stock Market Live June 2, 2026</a></li>
+      </ul>
+    </div>
+
+    <div class="source-group">
+      <h4>Marvell / Jensen Huang</h4>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/06/02/jensen-huang-nvidia-marvell-technology-trillion-dollar-ai.html" target="_blank">CNBC — Marvell stock jumps on Jensen Huang's trillion-dollar forecast</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-06-02/marvell-surges-after-huang-calls-it-the-next-1-trillion-company" target="_blank">Bloomberg — Marvell Soars the Most Since 2000 After $1 Trillion Stock Call</a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/articles/marvell-shares-surge-nvidia-jensen-111417825.html" target="_blank">Yahoo Finance — Marvell Shares Surge After Nvidia's Jensen Huang</a></li>
+        <li><a href="https://www.theglobeandmail.com/investing/article-marvell-technology-surges-after-nvidias-huang-calls-it-next-trillion/" target="_blank">The Globe and Mail — Marvell Technology surges after Huang's trillion-dollar call</a></li>
+      </ul>
+    </div>
+
+    <div class="source-group">
+      <h4>Alphabet / Berkshire</h4>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/markets/stocks/articles/alphabet-raises-80-billion-stock-114907547.html" target="_blank">Yahoo Finance — Alphabet raises $80 billion in stock to fund AI infrastructure</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-06-01/alphabet-to-raise-80-billion-in-equity-capital-for-ai-spending" target="_blank">Bloomberg — Alphabet's $80 Billion AI Raise Gets $10 Billion Berkshire Bet</a></li>
+        <li><a href="https://www.cnbc.com/2026/06/01/alphabet-to-raise-80-billion-from-stock-sales-to-fund-ai-buildout.html" target="_blank">CNBC — Alphabet plans to raise $80 billion from stock sales</a></li>
+        <li><a href="https://www.cnbc.com/2026/06/01/berkshire-hathaway-alphabet-investment.html" target="_blank">CNBC — Berkshire Hathaway invests extra $10 billion in Alphabet</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/0001652044/000119312526251733/d160205dfwp.htm" target="_blank">SEC Filing — Alphabet Form FWP FY2026</a></li>
+      </ul>
+    </div>
+
+    <div class="source-group">
+      <h4>HPE 財報</h4>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/06/01/hpe-stock-earnings-q2.html" target="_blank">CNBC — HPE skyrockets 30% on biggest earnings beat since 2018</a></li>
+        <li><a href="https://www.cnbc.com/2026/06/02/hpe-stock-earnings-ai-cloud-servers.html" target="_blank">CNBC — HPE surges 19% after Monday's blowout earnings</a></li>
+        <li><a href="https://www.gurufocus.com/news/8894987/hewlett-packard-enterprise-hpe-reports-recordbreaking-q2-2026-earnings" target="_blank">GuruFocus — HPE Reports Record-Breaking Q2 2026 Earnings</a></li>
+        <li><a href="https://www.fool.com/investing/2026/06/02/why-hewlett-packard-enterprise-stock-just-popped/" target="_blank">Motley Fool — Why Hewlett Packard Enterprise Stock Just Popped</a></li>
+      </ul>
+    </div>
+
+    <div class="source-group">
+      <h4>Cisco / PANW / Broadcom</h4>
+      <ul class="sources">
+        <li><a href="https://247wallst.com/investing/2026/06/02/cisco-advances-5-to-record-highs-on-ai-cybersecurity-push-arista-climbs-as-networking-trade-extends/" target="_blank">247 Wall St. — Cisco Advances 5% to Record Highs on AI Cybersecurity Push</a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/articles/cisco-advances-5-record-highs-173804971.html" target="_blank">Yahoo Finance — Cisco Advances 5% to Record Highs</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/cisco-rolls-out-software-tools-to-protect-it-systems-from-ai-agents-4722114" target="_blank">Reuters/Investing.com — Cisco rolls out software tools to protect IT systems from AI agents</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/0001327567/000132756726000012/ex991q326earningsrelease.htm" target="_blank">SEC 8-K — Palo Alto Networks Q3 FY2026 Earnings Release</a></li>
+        <li><a href="https://www.barchart.com/story/news/2268202/ahead-of-broadcom-earnings-heres-what-barchart-data-says-comes-next-for-avgo-stock" target="_blank">Barchart — Ahead of Broadcom Earnings: AVGO Stock</a></li>
+      </ul>
+    </div>
+
+    <div class="source-group">
+      <h4>宏觀經濟 / Fed / 地緣政治</h4>
+      <ul class="sources">
+        <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm" target="_blank">Federal Reserve — FOMC Statement April 29, 2026</a></li>
+        <li><a href="https://www.bls.gov/news.release/jolts.nr0.htm" target="_blank">BLS — JOLTS April 2026 Summary</a></li>
+        <li><a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank">BLS — Employment Situation Summary April 2026</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/4/30/oil-prices-soar-on-fears-of-long-supply-disruption-us-siege-of-iran-ports" target="_blank">Al Jazeera — Oil prices soar on fears of long supply disruption</a></li>
+        <li><a href="https://www.nbcnews.com/business/business-news/oil-markets-gas-prices-450-us-iran-near-deal-end-war-hormuz-rcna343819" target="_blank">NBC News — Oil plunges on report U.S. and Iran near deal</a></li>
+        <li><a href="https://www.morganstanley.com/insights/articles/iran-war-oil-inflation-stock-market-2026" target="_blank">Morgan Stanley — Iran Conflict: Oil Price Impacts and Inflation</a></li>
+        <li><a href="https://www.goldmansachs.com/insights/articles/how-will-the-iran-conflict-impact-oil-prices" target="_blank">Goldman Sachs — How Will the Iran Conflict Impact Oil Prices?</a></li>
+      </ul>
+    </div>
+
+    <div class="source-group">
+      <h4>川普 AI 行政命令</h4>
+      <ul class="sources">
+        <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" target="_blank">White House — Promoting Advanced Artificial Intelligence Innovation and Security</a></li>
+        <li><a href="https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order" target="_blank">NPR — Trump's new AI safety order seeks voluntary review of new models</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-06-02/trump-signs-order-on-ai-security-stops-short-of-mandatory-tests" target="_blank">Bloomberg — Trump Signs Order on AI Security, Stops Short of Mandatory Tests</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 數據已交叉比對多個來源 | 僅供參考，非投資建議</footer>
+
+</div>
+</body>
+</html>
