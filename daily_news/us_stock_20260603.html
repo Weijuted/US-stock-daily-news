@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-03</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.97rem; font-weight: 700; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; display: block; margin-bottom: 4px; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 8px; }
+    .stock-card { background: #f8faff; border: 1px solid #dce3f5; border-radius: 8px; padding: 14px 16px; font-size: 0.88rem; line-height: 1.6; }
+    .stock-card .ticker { font-size: 1rem; font-weight: 700; color: #0f3460; margin-bottom: 4px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .sector-tag { padding: 6px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; }
+    .sector-down { background: #fee2e2; color: #b91c1c; }
+    .sector-up { background: #dcfce7; color: #15803d; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: disc; margin-left: 18px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .summary-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; font-size: 0.9rem; line-height: 1.7; color: #78350f; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-06-03（週三）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- 摘要 -->
+  <div class="card">
+    <h2>市場摘要</h2>
+    <div class="summary-box">
+      美股6月3日全面回落，終止連續兩日歷史高點的漲勢。主要壓力來自：伊朗對科威特、巴林發動導彈攻擊引發地緣政治風險升溫；WTI原油突破96美元壓制風險情緒；ADP就業數據強勁推升聯準會升息預期；加上Broadcom盤後財報大跌8%拖累科技板塊信心。
+    </div>
+  </div>
+
+  <!-- 指數表現 -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業指數（DJIA）</td>
+          <td class="down">▼ -1.21%</td>
+          <td>三大指數跌幅最大</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td class="down">▼ -0.74%</td>
+          <td>前日收7,609.78點歷史高位後回落</td>
+        </tr>
+        <tr>
+          <td>那斯達克（Nasdaq）</td>
+          <td class="down">▼ -0.89%</td>
+          <td>科技股承壓，Broadcom盤後拖累情緒</td>
+        </tr>
+        <tr>
+          <td>羅素2000（Russell 2000）</td>
+          <td class="down">▼ -1.25%</td>
+          <td>小型股跌幅最深</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 重大市場事件 -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>地緣政治衝擊：伊朗攻擊波斯灣盟國</strong>
+        伊朗對科威特及巴林發射導彈，部分被美軍與巴林防空系統攔截，但造成基礎設施損毀與至少一人死亡。此為2026年2月美以對伊展開空戰以來衝突的延續。霍木茲海峽自2月28日起實際關閉，正常過境流量每日17.8百萬桶已降至不足十分之一，全球原油庫存日均流失約850萬桶，IEA警告若持續封鎖庫存將達臨界水平。
+      </li>
+      <li>
+        <strong>ADP 5月就業報告（優於預期）</strong>
+        私人部門新增就業12.2萬人（前月10.9萬），年薪資增長+4.4%。就業亮點在教育醫療（+5.7萬）及運輸貿易（+3.6萬）。數據優於預期，但同步推升市場對聯準會升息的擔憂，美國10年期公債殖利率升至4.49%高點。
+      </li>
+      <li>
+        <strong>WTI 原油三連漲，突破96美元</strong>
+        WTI原油期貨漲至96.05–96.29美元/桶，當日漲幅約2.5%，為三連漲。油價飆升直接壓制股市，能源股逆勢走強，科技、通訊、金融、軟件板塊均遭拋售。
+      </li>
+      <li>
+        <strong>Broadcom（AVGO）財報盤後大跌8%</strong>
+        Q2 FY2026總營收220億美元（+48% YoY），AI半導體收入達108億美元（+143%），但軟件收入71.8億略低於預期73.2億，成為股價重挫主因。Q3指引收入約294億（+84% YoY），AI半導體指引160億雖亮眼，但軟件疲弱引發投資人獲利了結，盤後股價自479.23美元跌至445.17美元低點。
+      </li>
+    </ul>
+  </div>
+
+  <!-- 宏觀因素 -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會（Fed）動態</h3>
+    <ul class="event-list">
+      <li>
+        <strong>基準利率維持3.5%–3.75%</strong>
+        4月29日FOMC決議維持不變（8票贊成、4票反對，為1992年10月以來最大分歧）。5月20日公布的會議紀要顯示多數官員認為若通膨因能源危機持續惡化，升息將是必要選項。市場定價顯示2027年Q1前升息機率約30%。
+      </li>
+    </ul>
+
+    <h3>通膨與利率</h3>
+    <ul class="event-list">
+      <li>
+        <strong>4月CPI通膨率3.8%</strong>，高於聯準會2%目標，部分反映能源價格衝擊。10年期美國公債殖利率升至4.49%，對科技股估值形成明顯壓力。
+      </li>
+    </ul>
+  </div>
+
+  <!-- 個股動態 -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <div class="stock-grid">
+      <div class="stock-card">
+        <div class="ticker">AVGO — Broadcom</div>
+        Q2 FY2026：總營收 220億（+48% YoY），AI半導體108億（+143%）。<br>
+        軟件收入 71.8億（低於預期73.2億）→ 盤後跌逾8%<br>
+        Q3指引：294億（+84%）、AI半導體160億
+      </div>
+      <div class="stock-card">
+        <div class="ticker">CRWD — CrowdStrike</div>
+        Q1 FY2027：營收13.9億（+26%），非GAAP EPS $1.10（超預期$0.88 +25%）。<br>
+        淨新增ARR 2.56億（+32%，Q1紀錄）<br>
+        董事會批准<strong>四比一股票分拆</strong>，7月2日起生效
+      </div>
+      <div class="stock-card">
+        <div class="ticker">VEEV — Veeva Systems</div>
+        Q1 CY2026：營收 8.829億（+16.3%），非GAAP EPS $2.24（超預期）。<br>
+        全年指引上調至36.4億美元<br>
+        盤後股價跌約5%至172.03美元（市場期待更高增速）
+      </div>
+      <div class="stock-card">
+        <div class="ticker">AI — C3.ai</div>
+        FY2026 Q4：總營收 5,160萬（年減52.5%），訂閱收入佔94%。<br>
+        GAAP每股虧損 -$3.35；現金6.73億<br>
+        Thomas Siebel 重掌 CEO
+      </div>
+      <div class="stock-card">
+        <div class="ticker">M — Macy's</div>
+        Q1 CY2026：營收 48.9億（+2.1%），可比銷售+3.0%（四年最強Q1）。<br>
+        Bloomingdale's 可比銷售+10.2%<br>
+        全年指引上調：215–217.5億，EPS $2.00–$2.20
+      </div>
+    </div>
+
+    <h3>板塊輪動</h3>
+    <div class="sector-row">
+      <span class="sector-tag sector-down">科技 ▼</span>
+      <span class="sector-tag sector-down">通訊 ▼</span>
+      <span class="sector-tag sector-down">金融 ▼</span>
+      <span class="sector-tag sector-down">軟件 ▼</span>
+      <span class="sector-tag sector-up">能源 ▲</span>
+    </div>
+  </div>
+
+  <!-- 風險因素 -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>中東地緣政治持續升溫：</strong>伊朗與波斯灣盟國衝突恐進一步擴大，霍木茲海峽若持續關閉，全球原油庫存將達臨界水平，能源供給衝擊難以逆轉。</li>
+      <li><strong>聯準會政策轉向風險：</strong>若通膨因油價持續高企而黏著，聯準會被迫升息的可能性將大幅上升，壓縮股票估值空間，尤其對高本益比科技股不利。</li>
+      <li><strong>科技巨頭財報壓力：</strong>Broadcom軟件業務疲弱顯示科技企業非AI業務復甦不均，市場對下個財季能否達到高期望仍存在不確定性。</li>
+      <li><strong>美國公債殖利率走高：</strong>10年期公債殖利率攀升至4.49%，對成長股與科技股估值形成持續壓力，可能引發更大規模的板塊輪動。</li>
+      <li><strong>6月5日非農就業報告：</strong>ADP數據強勁後，本週五的非農數據將是市場關鍵觀測點，若再度超預期，升息預期將進一步升溫。</li>
+    </ul>
+  </div>
+
+  <!-- 資料來源 -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-03-2026" target="_blank">TheStreet — Stock Market Today (June 3, 2026): Earnings liveblog for Broadcom, CrowdStrike, and Veeva</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-3-172640083.html" target="_blank">Yahoo Finance — Stock Market Today, June 3: Stocks Slip at Midday on Fresh Geopolitical Tensions</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html" target="_blank">CNBC — Broadcom stock plunges on weak software sales</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/03/adp-jobs-report-may-2026-payrolls-increase-by-122000.html" target="_blank">CNBC — ADP jobs report May 2026: Payrolls increase by 122,000</a></li>
+      <li><a href="https://www.stocktitan.net/news/AVGO/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial-if4yrbje8hq6.html" target="_blank">StockTitan — Broadcom Q2 2026 revenue up 48%, guides to $29.4B</a></li>
+      <li><a href="https://www.techtimes.com/articles/317703/20260603/broadcom-earnings-record-ai-revenue-hits-108b-stock-slips-software-miss.htm" target="_blank">TechTimes — Broadcom Earnings: Record AI Revenue Hits $10.8B as Stock Slips on Software Miss</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000022/crwd-20260603xex991.htm" target="_blank">SEC EDGAR — CrowdStrike Form 8-K FY2026 Q1 Results</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-20260603.htm" target="_blank">SEC EDGAR — Broadcom Form 8-K Q2 FY2026 Results</a></li>
+      <li><a href="https://www.businesswire.com/news/home/20260603380058/en/C3-AI-Announces-Fiscal-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results" target="_blank">BusinessWire — C3.ai Q4 FY2026 Results</a></li>
+      <li><a href="https://markets.financialcontent.com/stocks/article/stockstory-2026-6-3-veeva-systems-nyseveev-posts-better-than-expected-sales-in-q1-cy2026" target="_blank">FinancialContent / StockStory — Veeva Systems Q1 CY2026 Results</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/article/macys-earnings-defy-consumer-concerns-as-ceo-says-not-all-customers-are-equal-145740786.html" target="_blank">Yahoo Finance — Macy's Q1 2026 Earnings</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/20/fed-officials-see-rate-hike-ahead-if-inflation-stays-elevated-minutes-show.html" target="_blank">CNBC — Fed officials see rate hike ahead if inflation stays elevated (FOMC Minutes)</a></li>
+      <li><a href="https://www.aljazeera.com/news/2026/3/12/iran-targets-gulf-nations-with-missiles-drones-as-oil-prices-soar" target="_blank">Al Jazeera — Iran targets Gulf nations with missiles, drones as oil prices soar</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" target="_blank">Wikipedia — 2026 Strait of Hormuz crisis</a></li>
+      <li><a href="https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html" target="_blank">T. Rowe Price — Global Markets Weekly Update</a></li>
+      <li><a href="https://www.benzinga.com/insights/earnings/26/06/52964815/earnings-scheduled-for-june-3-2026" target="_blank">Benzinga — Earnings Scheduled For June 3, 2026</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/261944759-avgo-q2-earnings-broadcom-outlook-investors-ai-stock-after-tradingkey" target="_blank">TradingKey — Broadcom Q2 Net Profit Surges 88% YoY, Shares Slump 8% After Hours</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料截至 2026-06-03 | 僅供參考，非投資建議</footer>
+
+</div>
+</body>
+</html>
