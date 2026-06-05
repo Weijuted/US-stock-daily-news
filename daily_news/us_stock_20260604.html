@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-04</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-record { background: #fef3c7; color: #92400e; }
+    .event-block { padding: 14px 16px; margin-bottom: 12px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-block strong { color: #0f3460; }
+    .macro-table td:first-child { font-weight: 600; width: 38%; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-tag { display: inline-block; padding: 1px 7px; border-radius: 3px; font-size: 0.78rem; margin-right: 4px; }
+    .sector-up { background: #dcfce7; color: #166534; }
+    .sector-down { background: #fee2e2; color: #991b1b; }
+    .sources { list-style: none; font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 6px 10px; background: #f9fafb; border-radius: 4px; }
+    .sources li::before { content: "🔗 "; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .summary-banner { background: linear-gradient(90deg, #f0f4ff, #fff); border: 1px solid #dce3f5; border-radius: 8px; padding: 14px 18px; margin-bottom: 18px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight { background: #fef9c3; padding: 1px 4px; border-radius: 2px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年6月4日（週四）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- SUMMARY BANNER -->
+  <div class="summary-banner">
+    <strong>市場總結：</strong>道瓊指數創歷史收盤新高（+1.73%），主因資金從 AI/半導體板塊大規模輪動至醫療保健、金融等傳統板塊。Broadcom（AVGO）因 AI 指引不如最激進預期大跌 12.59%，拖累 Nasdaq 成為唯一收跌的主要指數（-0.09%）。UnitedHealth（UNH）獲美銀升評大漲 5.8%，領銜醫療保健板塊勁升 3.14%。
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數 (DJIA)</strong></td>
+          <td>51,561.93</td>
+          <td class="up">▲ +1.73%（+874.86 點）</td>
+          <td><span class="badge badge-record">歷史收盤新高</span></td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,584.31</td>
+          <td class="up">▲ +0.41%</td>
+          <td>8 大板塊上漲</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>26,830.96</td>
+          <td class="down">▼ -0.09%</td>
+          <td>唯一收跌主要指數</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>約 2,939</td>
+          <td class="up">▲ 約 +1.59%</td>
+          <td>小型股隨輪動反彈</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px; font-size:0.8rem; color:#6b7280;">數據已由 TheStreet、CNBC、Yahoo Finance、FX Street、IBTimes 等至少 5 個獨立來源交叉驗證確認。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <h3>1. Broadcom（AVGO）財報引發 AI 估值重評</h3>
+    <div class="event-block">
+      Broadcom 於 6月3日盤後公布 FY2026 Q2 財報，AI 半導體收入達 <strong>108億美元（YoY +143%）</strong>創紀錄，但軟體業務收入 71.8億美元<strong>低於預期</strong>（共識 73.2億元），整體營收 221.87億元亦未達標。CEO Hock Tan <strong>未上調</strong>全年 AI 晶片銷售目標（維持 1,000億美元），Q3 AI 指引 160億美元低於市場最激進預期。AVGO 週四<span class="highlight">重挫 12.59%</span>（收 $418.91），成交量為三個月均量的 214%，成為當日市場最大拖累。
+    </div>
+
+    <h3>2. CrowdStrike（CRWD）財報後指引疲軟</h3>
+    <div class="event-block">
+      CrowdStrike 同於 6月3日盤後公布 FY2027 Q1 財報，新增淨 ARR 創紀錄達 2.56億美元，自由現金流 4.68億美元，但<strong>下季度指引持平且費用攀升</strong>，引發市場悲觀情緒，<span class="highlight">CRWD 下跌約 11%</span>。
+    </div>
+
+    <h3>3. 大規模板塊輪動：離科技、進傳統股</h3>
+    <div class="event-block">
+      Broadcom 財報觸發市場重新評估 AI 股估值，大量資金從半導體/AI 相關股流出，轉向防禦性與傳統板塊。S&amp;P 500 11大板塊中，8個上漲：
+      <div style="margin-top: 10px;">
+        <span class="sector-tag sector-up">醫療保健 +3.14%</span>
+        <span class="sector-tag sector-up">金融 +2.67%</span>
+        <span class="sector-tag sector-up">房地產 +1.87%</span>
+        <span class="sector-tag sector-up">公用事業 上漲</span>
+        <span class="sector-tag sector-up">消費必需品 上漲</span>
+        <span class="sector-tag sector-down">半導體 下跌</span>
+        <span class="sector-tag sector-down">能源 承壓</span>
+      </div>
+    </div>
+
+    <h3>4. UnitedHealth（UNH）獲美銀升評，領銜醫療板塊</h3>
+    <div class="event-block">
+      美國銀行分析師 Kevin Fischbeck 將 UNH 從「中性」升評至「<strong>買入</strong>」，目標價提升至 <strong>$450</strong>（較當時約有 13% 上漲空間）。理由：醫療成本趨勢改善、Medicare Advantage 前景向好、2026年盈利能力估計比先前展望高出 50%。<span class="highlight">UNH 大漲約 +5.8%</span>（至約 $397），成為道瓊指數最大貢獻者。
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會動態</h3>
+    <div class="event-block">
+      <strong>Kevin Warsh</strong> 已於 2026年5月22日就任新任聯準會主席（接替 Jerome Powell）。6月16-17日的 FOMC 將是 Warsh 主持的首次會議。CME FedWatch 顯示，<strong>超過 80%</strong> 的市場參與者預期 6月及7月均按兵不動，但至年底隱含升息機率升至約 <strong>42%</strong>。背景：核心 PCE 通脹已升至 <strong>3.8%</strong>（4月），聯準會陷入通脹升溫與避免過度緊縮的兩難。
+    </div>
+
+    <h3>當日重要經濟數據</h3>
+    <table class="macro-table" style="margin-top:4px;">
+      <thead>
+        <tr>
+          <th>數據項目</th>
+          <th>結果</th>
+          <th>市場解讀</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>初次申請失業救濟金（週至5月30日）</td>
+          <td class="down">225,000 人（+13,000，四個月高點）</td>
+          <td>分析師認為與陣亡將士紀念日假期波動有關，非趨勢性惡化</td>
+        </tr>
+        <tr>
+          <td>ADP 私人就業（5月，6月3日公布）</td>
+          <td class="up">新增 122,000 人（預期 117,000）</td>
+          <td>勞動市場穩健，強化聯準會謹慎立場</td>
+        </tr>
+        <tr>
+          <td>ISM 服務業 PMI（5月，6月3日公布）</td>
+          <td class="up">54.5（前值 53.6，三個月最高）</td>
+          <td>服務業持續擴張；但就業子指數 47.9（萎縮），通膨壓力子指數升至近四年高點</td>
+        </tr>
+        <tr>
+          <td>美國10年期公債殖利率</td>
+          <td>約 4.45%（盤中 -3.8 個基點）</td>
+          <td>以色列-黎巴嫩停火消息帶動殖利率小幅回落</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>地緣政治</h3>
+    <div class="event-block">
+      <strong>以色列－黎巴嫩停火（6月4日）：</strong>雙方於週三深夜達成停火，市場視為美伊更廣泛停火談判前兆，帶動油價下跌。WTI 原油跌 0.81% 至 <strong>$95.24/桶</strong>，Brent 跌至 <strong>$96.92/桶</strong>（-0.89%）。前一日（6月3日）伊朗向科威特、巴林發射飛彈，美軍曾打擊霍爾木茲海峽附近目標，緊張局勢稍緩。市場同步關注明日（6月5日）公布的 5月非農就業報告，預期新增約 <strong>105,000 個職位</strong>。
+    </div>
+  </div>
+
+  <!-- STOCKS TABLE -->
+  <div class="card">
+    <h2>重要個股表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>個股 / 板塊</th>
+          <th>表現</th>
+          <th>驅動因素</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>UnitedHealth (UNH)</strong></td>
+          <td class="up">▲ +5.8%（至約 $397）</td>
+          <td>美銀升評至「買入」，目標價 $450</td>
+        </tr>
+        <tr>
+          <td><strong>JPMorgan Chase (JPM)</strong></td>
+          <td class="up">▲ +2.7%</td>
+          <td>金融板塊輪動受惠</td>
+        </tr>
+        <tr>
+          <td><strong>Walmart (WMT)</strong></td>
+          <td class="up">▲ +1.4%</td>
+          <td>油價回落帶動消費類股上漲</td>
+        </tr>
+        <tr>
+          <td><strong>Broadcom (AVGO)</strong></td>
+          <td class="down">▼ -12.59%（至 $418.91）</td>
+          <td>AI/軟體指引低於激進預期，成交量暴增 214%</td>
+        </tr>
+        <tr>
+          <td><strong>CrowdStrike (CRWD)</strong></td>
+          <td class="down">▼ 約 -11%</td>
+          <td>財報後指引平淡、費用上升</td>
+        </tr>
+        <tr>
+          <td><strong>半導體板塊</strong></td>
+          <td class="down">整體下跌</td>
+          <td>AVGO 財報引發 AI 估值重評，資金外流</td>
+        </tr>
+        <tr>
+          <td><strong>醫療保健板塊</strong></td>
+          <td class="up">▲ +3.14%</td>
+          <td>UNH 領漲，美銀看好整體 MCO 類股</td>
+        </tr>
+        <tr>
+          <td><strong>金融板塊</strong></td>
+          <td class="up">▲ +2.67%</td>
+          <td>資金輪動、JPMorgan 帶頭</td>
+        </tr>
+        <tr>
+          <td><strong>房地產板塊</strong></td>
+          <td class="up">▲ +1.87%</td>
+          <td>公債殖利率小幅下滑支撐</td>
+        </tr>
+        <tr>
+          <td><strong>能源板塊</strong></td>
+          <td class="down">整體承壓</td>
+          <td>以黎停火後油價回落</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>AI 估值泡沫化疑慮：</strong>Broadcom 財報未能滿足最激進的 AI 預期，引發市場反思 AI 相關股的高估值是否可持續，後續財報季壓力持續。</li>
+      <li><strong>通脹頑固性與聯準會兩難：</strong>核心 PCE 通脹達 3.8%，ISM 服務業通膨壓力子指數升至四年高點，但勞動市場有降溫跡象，聯準會政策路徑高度不確定。新主席 Warsh 面臨「利率家族爭議」，市場年底升息機率達 42%。</li>
+      <li><strong>中東地緣政治持續升溫：</strong>儘管以黎停火，伊朗-美國軍事衝突風險未解除，霍爾木茲海峽局勢仍可能影響油價及全球供應鏈。</li>
+      <li><strong>非農就業報告（明日公布）：</strong>5月非農預期新增 105,000 人（低於4月的 115,000），若數據大幅偏離預期，將直接影響聯準會政策預期及市場走向。</li>
+      <li><strong>初次申請失業救濟金升至四個月高點：</strong>225,000 人為近期高點，雖官方解讀為假期波動，但若下週持續攀升，勞動市場降溫擔憂將加劇。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-june-4-2026-nasdaq-futures-slide-amid-iran-war-concerns" target="_blank">Stock Market Today (June 4, 2026) — TheStreet</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/03/stock-market-today-live-updates.html" target="_blank">Dow surges nearly 900 points for record close as investors rotate away from tech — CNBC</a></li>
+      <li><a href="https://www.fxstreet.com/news/dow-jones-industrial-average-hits-record-as-investors-rotate-out-of-chips-202606041610" target="_blank">Dow Jones Industrial Average hits record as investors rotate out of chips — FX Street</a></li>
+      <li><a href="https://www.ibtimes.com/dow-jones-jumps-while-nasdaq-edges-down-investors-rotate-tech-3803740" target="_blank">Dow Jones Jumps While Nasdaq Edges Down As Investors Rotate From Tech — IBTimes</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-4-212339994.html" target="_blank">Stock Market Today, June 4: Broadcom Shares Plunge After AI Outlook Misses — Yahoo Finance</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/unitedhealth-group-shares-gain-bank-170400415.html" target="_blank">UnitedHealth Group shares gain on Bank of America upgrade — Yahoo Finance</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/04/unitedhealth-to-rise-on-successful-strategy-bank-of-america-says.html" target="_blank">UnitedHealth to rise on successful strategy, Bank of America says — CNBC</a></li>
+      <li><a href="https://www.techtimes.com/articles/317703/20260603/broadcom-earnings-record-ai-revenue-hits-108b-stock-slips-software-miss.htm" target="_blank">Broadcom Earnings: Record AI Revenue Hits $10.8B as Stock Slips on Software Miss — TechTimes</a></li>
+      <li><a href="https://www.gurufocus.com/news/8900297/broadcom-avgo-earnings-miss-expectations-amid-ai-growth" target="_blank">Broadcom (AVGO) Earnings Miss Expectations Amid AI Growth — GuruFocus</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/06/04/oil-falls-as-lebanon-and-israel-agree-to-implement-ceasefire.html" target="_blank">Oil falls as Lebanon and Israel agree to implement ceasefire — CNBC</a></li>
+      <li><a href="https://money.usnews.com/investing/news/articles/2026-06-04/us-weekly-jobless-claims-increase-more-than-expected-labor-market-remains-stable" target="_blank">US Weekly Jobless Claims Increase to Four-Month High — US News Money</a></li>
+      <li><a href="https://mediacenter.adp.com/2026-06-03-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-122,000-Jobs-in-May-Annual-Pay-was-Up-4-4" target="_blank">ADP National Employment Report: Private Sector Added 122,000 Jobs in May — ADP Media Center</a></li>
+      <li><a href="https://www.barchart.com/story/news/2276982/s-p-futures-tick-lower-as-fresh-u-s-iran-hostilities-lift-oil-and-bond-yields-adp-jobs-report-and-broadcom-earnings-on-tap" target="_blank">S&amp;P Futures Muted as Fresh U.S.-Iran Hostilities Lift Oil and Bond Yields — Barchart</a></li>
+      <li><a href="https://www.cbsnews.com/news/kevin-warsh-federal-reserve-inflation-challenges/" target="_blank">Kevin Warsh is now leading the Fed — CBS News</a></li>
+      <li><a href="https://insight.factset.com/total-nonfarm-payrolls-for-may-2026-are-projected-to-rise-by-105000" target="_blank">Total Nonfarm Payrolls for May 2026 Are Projected to Rise By 105,000 — FactSet</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000022/crwd-20260603xex991.htm" target="_blank">CrowdStrike Holdings Q1 FY2027 Earnings (Form 8-K) — SEC Edgar</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 資料來源已交叉比對，指數數據獲至少 5 個獨立英文來源確認 | 僅供參考，非投資建議
+  </footer>
+
+</div>
+</body>
+</html>
