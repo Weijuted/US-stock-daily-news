@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026年6月5日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .badge { display: inline-block; margin-top: 12px; background: rgba(220,38,38,0.85); color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.03em; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf5; padding-bottom: 8px; }
+    h3 { font-size: 0.97rem; font-weight: 700; margin: 16px 0 8px; color: #1e3a5f; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .highlight-row td { background: #fff8f8; }
+    p { font-size: 0.92rem; line-height: 1.7; color: #374151; margin-bottom: 10px; }
+    .event-block { background: #f8f9ff; border-left: 4px solid #3b82f6; border-radius: 4px; padding: 14px 18px; margin-bottom: 14px; }
+    .event-block.red { background: #fff5f5; border-color: #ef4444; }
+    .event-block.amber { background: #fffbeb; border-color: #f59e0b; }
+    .event-block h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 6px; color: #1a1a2e; }
+    .event-block p { margin-bottom: 0; font-size: 0.88rem; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 600px) { .sector-grid { grid-template-columns: 1fr; } }
+    .sector-card { background: #f8f9ff; border-radius: 8px; padding: 14px; }
+    .sector-card.down-sector { background: #fff5f5; }
+    .sector-card.up-sector { background: #f0fdf4; }
+    .sector-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 8px; color: #374151; }
+    .sector-card p { font-size: 0.83rem; margin-bottom: 4px; }
+    .macro-table td:first-child { font-weight: 600; color: #0f3460; width: 40%; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; }
+    .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-right: 4px; vertical-align: middle; }
+    .tag.red { background: #fee2e2; color: #b91c1c; }
+    .tag.blue { background: #dbeafe; color: #1d4ed8; }
+    .tag.green { background: #dcfce7; color: #15803d; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年6月5日（星期五）| 由 Claude Routine 自動生成</div>
+    <div class="badge">⚠ 年度最差單日 — 納斯達克自2025年4月以來最大跌幅</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>變動點數</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>50,866.78</td>
+          <td class="down">▼ 695.15</td>
+          <td class="down">-1.35%</td>
+          <td class="neutral">科技拖累、防禦護盤</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,383.74</td>
+          <td class="down">▼ 200.57</td>
+          <td class="down">-2.64%</td>
+          <td class="neutral">年度最大單日跌幅</td>
+        </tr>
+        <tr class="highlight-row">
+          <td><strong>納斯達克 (Nasdaq)</strong></td>
+          <td>25,709.43</td>
+          <td class="down">▼ 1,121.53</td>
+          <td class="down">-4.18%</td>
+          <td class="neutral">自2025年4月以來最大跌幅</td>
+        </tr>
+        <tr>
+          <td><strong>羅素2000 (Russell 2000)</strong></td>
+          <td>—</td>
+          <td class="down">—</td>
+          <td class="down">-3.47%</td>
+          <td class="neutral">小型股同步重挫</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:14px; font-size:0.85rem; color:#6b7280;">
+      📊 週線：S&amp;P 500 本週下跌約 2.6%，終結連續 9 週上漲（近 10 週首個虧損週）。
+    </p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <div class="event-block red">
+      <h4><span class="tag red">主因 #1</span> 超強就業報告震驚市場</h4>
+      <p>美國勞工部公布 2026 年 5 月非農就業報告：<strong>新增就業 172,000 人</strong>，市場預期僅 80,000 人，實際值遠超預期逾 2 倍。前期（4月）數據上調至 179,000 人，失業率維持 4.3%，薪資增長持續高於聯準會目標。強勁數據令市場重估聯準會升息路徑，引發債市殖利率急升，高倍數科技股估值遭大規模重定價。</p>
+    </div>
+
+    <div class="event-block red">
+      <h4><span class="tag red">主因 #2</span> 博通（Broadcom）AI晶片指引令市場失望</h4>
+      <p>博通（AVGO）Q2 財報雖優於預期，但 <strong>Q3 AI晶片銷售指引僅 160 億美元</strong>，低於分析師預估的 172 億美元，且未上調全年 AI 晶片銷售預測。「利好出盡」式賣壓於 6 月 4 日（週四）盤後引爆，股價暴跌 14%，6 月 5 日持續拖累整個半導體板塊，加上就業報告衝擊，形成雙重利空。</p>
+    </div>
+
+    <div class="event-block amber">
+      <h4><span class="tag blue">結果</span> 半導體板塊兩日市值蒸發逾 1 兆美元</h4>
+      <p>半導體類股遭遇 2020 年 3 月以來最慘烈單日拋售。SOXX（半導體 ETF）單日重挫 <strong>-10.44%</strong>。Nvidia（NVDA）-6%，AMD -11%，Intel -11%，Marvell -16%，Micron -13%（兩日合計 -21%）。兩日累計蒸發市值超過 <strong>1 兆美元</strong>，為史上最大兩日損失之一。</p>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <h3>聯準會（Fed）動態：升息預期急速升溫</h3>
+    <table class="macro-table">
+      <tbody>
+        <tr>
+          <td>6/16–17 FOMC 按兵不動概率</td>
+          <td><strong>99.2%</strong>（幾乎確定不動）</td>
+        </tr>
+        <tr>
+          <td>2026 年內升息概率（Kalshi）</td>
+          <td class="down"><strong>25.3% → 52%</strong>（當日急升）</td>
+        </tr>
+        <tr>
+          <td>2026 年底前升息概率（CME FedWatch）</td>
+          <td class="down"><strong>約 70%</strong>（盤中高位）</td>
+        </tr>
+        <tr>
+          <td>現任聯準會主席</td>
+          <td>Kevin Warsh（面臨政策考驗）</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>債券市場劇烈反應</h3>
+    <table class="macro-table">
+      <tbody>
+        <tr>
+          <td>10 年期美債殖利率</td>
+          <td class="down"><strong>4.54–4.55%</strong>（突破 4.5% 關鍵阻力）</td>
+        </tr>
+        <tr>
+          <td>30 年期美債殖利率</td>
+          <td class="down"><strong>突破 5%</strong>（威脅 AI 基礎建設投資回報）</td>
+        </tr>
+        <tr>
+          <td>5 年期殖利率</td>
+          <td class="down">單日上升 <strong>+9 個基點</strong></td>
+        </tr>
+        <tr>
+          <td>美元指數（DXY）</td>
+          <td class="up">上漲 <strong>+0.64%</strong></td>
+        </tr>
+        <tr>
+          <td>比特幣（BTC）</td>
+          <td class="down">暴跌逾 <strong>-5%</strong>，跌破 $60,000</td>
+        </tr>
+        <tr>
+          <td>黃金（Gold）</td>
+          <td class="down">下跌逾 <strong>-3.5%</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px;">核心邏輯：強勁就業數據 → 通膨壓力持續 → 聯準會被迫維持高利率甚至升息 → 高估值科技股折現率上升 → 大規模拋售。</p>
+  </div>
+
+  <!-- SECTOR & STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <div class="sector-grid">
+      <div class="sector-card down-sector">
+        <h4>🔴 重挫板塊 — 半導體 / 科技</h4>
+        <p><span class="down">SOXX（半導體ETF）</span> <strong>-10.44%</strong></p>
+        <p><span class="down">科技板塊（XLK）</span> -6.66%</p>
+        <p><span class="down">Marvell (MRVL)</span> -16%</p>
+        <p><span class="down">Micron (MU)</span> -13%（兩日 -21%）</p>
+        <p><span class="down">Intel (INTC)</span> -11%</p>
+        <p><span class="down">AMD</span> -11%</p>
+        <p><span class="down">Nvidia (NVDA)</span> -5.93%～-6%</p>
+        <p><span class="down">Broadcom (AVGO)</span> -3.8%（前日 -14%）</p>
+      </div>
+      <div class="sector-card up-sector">
+        <h4>🟢 逆勢板塊 — 防禦 / 金融</h4>
+        <p><span class="up">醫療保健（XLV）</span> <strong>+3.1%</strong></p>
+        <p><span class="up">金融板塊（XLF）</span> +2.6%</p>
+        <p><span class="up">消費必需品（XLP）</span> +1.71%</p>
+        <p><span class="up">UnitedHealth (UNH)</span> +5.2%</p>
+        <p><span class="up">Colgate-Palmolive (CL)</span> +4%</p>
+        <p><span class="up">Coca-Cola (KO)</span> +3%+</p>
+        <p><span class="up">Eli Lilly (LLY)</span> ~+3%</p>
+        <p><span class="up">Insulet (PODD)</span> ~+5%</p>
+      </div>
+    </div>
+    <p style="margin-top:14px; font-size:0.88rem; color:#374151;">資金輪動明顯：資金從高倍數成長股流向防禦性股票（醫療、必需消費、公用事業）。道瓊跌幅顯著小於納斯達克，主因 UnitedHealth（+5.2%）等防禦股提供緩衝。</p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>升息風險重估：</strong>強就業數據打破「聯準會今年降息」共識，市場需重新定價 2026 年利率路徑。升息概率已從 25% 急升至逾 50%。</li>
+      <li><strong>AI 泡沫疑慮：</strong>博通指引令市場質疑 AI 資本支出高峰期是否已過。英偉達等 AI 基礎建設股估值在高利率環境下承壓。</li>
+      <li><strong>半導體周期下行：</strong>Micron、Marvell 等記憶體及資料中心晶片股領跌，顯示業績預期被下修，或預示半導體庫存周期轉向。</li>
+      <li><strong>技術面壓力：</strong>S&amp;P 500 從高點（約 7,584 點）快速回落，跌破短期支撐，終結 9 週連漲走勢，技術面轉弱。</li>
+      <li><strong>FOMC 聲明風險：</strong>2026 年 6 月 16–17 日 FOMC 會議雖幾乎確定按兵不動，但聲明措辭若偏鷹派，將進一步打壓市場情緒。</li>
+      <li><strong>風險資產全面拋售：</strong>黃金 -3.5%、比特幣 -5%+，顯示拋售已蔓延至傳統避險資產，資金湧向美元及短期公債。</li>
+    </ul>
+  </div>
+
+  <!-- MARKET SENTIMENT -->
+  <div class="card">
+    <h2>市場情緒</h2>
+    <p><strong>CNN 恐懼與貪婪指數：</strong>當日急速跌入「<span class="down">恐懼（Fear）</span>」區間，與前數週的「貪婪」形成鮮明對比。</p>
+    <p><strong>下一個關鍵時點：</strong>2026 年 6 月 16–17 日 FOMC 會議，市場將緊盯聯準會主席 Kevin Warsh 的措辭，以判斷升息時程。</p>
+    <p><strong>週線回顧：</strong>S&amp;P 500 本週下跌約 2.6%，終結連續 9 週上漲，為近 10 週以來首個虧損週，技術面支撐待觀察。</p>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-05-2026" target="_blank">TheStreet — Stock Market Today (June 5, 2026): Nasdaq falls 4% as semiconductor slide wipes $1T from markets</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-201832062.html" target="_blank">Yahoo Finance — How major US stock indexes fared Friday 6/5/2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-jun-5-135800200.html" target="_blank">Yahoo Finance — Stock Market News for Jun 5, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/04/stock-market-today-live-updates.html" target="_blank">CNBC — Nasdaq falls 4% and suffers worst day since April 2025: Live updates</a></li>
+      <li><a href="https://www.cnn.com/2026/06/05/markets/stock-market-sell-off-fed" target="_blank">CNN Business — Nasdaq, S&amp;P 500 suffer worst day of year as AI stocks tumble and Fed rate-hike odds rise</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-sink-as-jobs-report-fuels-fed-hike-bets-chip-stocks-sell-off-230134285.html" target="_blank">Yahoo Finance Live — Stock market today: Nasdaq plunges 4%, Dow and S&amp;P 500 sink</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/06/05/stock-market-today-june-5-strong-jobs-data-drives-broad-sell-off-at-midday/" target="_blank">The Motley Fool — Stock Market Today, June 5: Strong Jobs Data Drives Broad Sell-Off</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/05/odds-of-a-fed-hike-this-year-jump-on-prediction-markets-.html" target="_blank">CNBC — Odds of a Fed hike this year jump on prediction markets</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/06/05/hot-jobs-report-puts-fed-cuts-further-out-of-reach-as-chair-warsh-faces-policy-tests.html" target="_blank">CNBC — Hot jobs report puts Fed cuts further out of reach</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/05/jobs-report-may-2026.html" target="_blank">CNBC — Jobs report May 2026</a></li>
+      <li><a href="https://money.usnews.com/investing/news/articles/2026-06-05/chip-selloff-erases-over-1-trillion-in-stock-market-value" target="_blank">US News — Chip Selloff Erases Over $1 Trillion in Stock Market Value</a></li>
+      <li><a href="https://wolfstreet.com/2026/06/05/semiconductor-stocks-roll-over-micron-broadcom-tank-20-in-2-days-drag-rest-of-market-along/" target="_blank">Wolf Street — Semiconductor Stocks Roll Over: Micron, Broadcom Tank 20% in 2 Days</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-nvidia-stock-drops-6-in-ugly-day-for-chip-stocks-100000734.html" target="_blank">Yahoo Finance — Tech stocks today: Nvidia stock drops 6%</a></li>
+      <li><a href="https://congress.net/chip-sector-suffers-worst-single-day-collapse-in-six-years-as-marvell-mrvl-and-micron-mu-lead-losses/" target="_blank">Congress.net — Chip Sector Suffers Worst Single-Day Collapse In Six Years</a></li>
+      <li><a href="https://currentlogic.substack.com/p/dispersion-brief-jun-5-2026" target="_blank">CurrentLogic Substack — Stock Market June 5, 2026: Tech Sinks, Defensives Rise</a></li>
+      <li><a href="https://congress.net/investors-flee-tech-stocks-and-rotate-into-defensive-sectors-as-rate-fears-return/" target="_blank">Congress.net — Investors Flee Tech Stocks And Rotate Into Defensive Sectors</a></li>
+      <li><a href="https://www.morningstar.com/economy/may-jobs-report-shows-strong-hiring-fed-rate-hike-isnt-done-deal" target="_blank">Morningstar — May Jobs Report Shows Strong Hiring</a></li>
+      <li><a href="https://fortune.com/2026/06/05/tech-stocks-market-bloodbath-fed-rate-hikes-jobs-report-ai-fueled-chip-boom/" target="_blank">Fortune — Tech stocks lead market bloodbath</a></li>
+      <li><a href="https://www.cnn.com/2026/06/05/economy/us-jobs-may-final" target="_blank">CNN — The US economy added 172,000 jobs last month</a></li>
+      <li><a href="https://www.nasdaq.com/articles/chartstopper-june-5-2026" target="_blank">Nasdaq.com — Chartstopper: June 5, 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 數據來源：TheStreet、Yahoo Finance、CNBC、CNN Business、US News、Morningstar | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
