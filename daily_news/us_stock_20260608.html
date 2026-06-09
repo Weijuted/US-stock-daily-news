@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-08</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .event-block { padding: 14px 16px; margin-bottom: 12px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.7; }
+    .event-block:last-child { margin-bottom: 0; }
+    .event-block .label { font-weight: 700; color: #0f3460; margin-bottom: 4px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li:last-child { margin-bottom: 0; }
+    .sector-table td:first-child { font-weight: 600; }
+    .note { font-size: 0.82rem; color: #6b7280; margin-top: 10px; padding-top: 10px; border-top: 1px solid #eef0f5; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding-left: 12px; position: relative; }
+    .sources li::before { content: "•"; position: absolute; left: 0; color: #94a3b8; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; margin-left: 8px; }
+    .badge-red { background: #fee2e2; color: #dc2626; }
+    .badge-green { background: #dcfce7; color: #16a34a; }
+    .badge-gray { background: #f1f5f9; color: #64748b; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-06-08（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業（DJIA）</strong></td>
+          <td>50,786.01</td>
+          <td class="down">▼ −80.77</td>
+          <td class="down">−0.16%</td>
+          <td>蘋果拖累，唯一收跌主要指數</td>
+        </tr>
+        <tr>
+          <td><strong>S&P 500</strong></td>
+          <td>7,405.73</td>
+          <td class="up">▲ +22.22</td>
+          <td class="up">+0.30%</td>
+          <td>小幅收紅，晶片股反彈撐盤</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克（Nasdaq）</strong></td>
+          <td>25,929.66</td>
+          <td class="up">▲ +221.59</td>
+          <td class="up">+0.86%</td>
+          <td>科技 / 晶片股領漲</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000（Russell 2000）</strong></td>
+          <td>—</td>
+          <td class="up">▲ —</td>
+          <td class="up">+0.85%</td>
+          <td>小型股同步反彈</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">背景：上週五（6/6）那斯達克重挫 4.18%，費城半導體指數崩跌 10.4%，蒸發逾 1 兆美元市值。6/8 週一為「跌後技術性反彈」，但整體力道仍有限。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <div class="event-block">
+      <div class="label">🍎 Apple WWDC 2026 — AI Siri 發表，「賣消息」賣壓顯現</div>
+      Apple 在 WWDC 2026 正式發表全新 AI 版 Siri 及「Apple Intelligence」平台，盤中一度漲至 317 美元，但最終<strong>收跌 1.89%，報 301.54 美元</strong>（成交量 7,660 萬股，較三個月均量高 68%）。Apple 另宣布與 Google 合作推出次世代 AI 平台，但未能提振股價。市場普遍認為 AI Siri 升級不如預期，為典型「買預期、賣事實（buy the rumor, sell the news）」走勢，是拖累道指收跌的主因。
+    </div>
+
+    <div class="event-block">
+      <div class="label">⚡ Intel 獲 Google 逾 300 萬顆 TPU 大單 — 晶片股最大催化劑</div>
+      《The Information》報導，Google 已向 Intel 下單，委託代工製造逾 <strong>300 萬顆 TPU（張量處理器）</strong>，預計 2028 年交付。此單對 Intel 晶圓代工（Foundry）業務意義重大，直接挑戰台積電（TSMC）的市場地位。Intel 股價<strong>盤前飆漲逾 13%，終場收漲約 12.3%，報 110.81 美元</strong>附近。另有消息指 Nvidia 也正評估採用 Intel 製程為 Feynman 架構 GPU 代工。
+    </div>
+
+    <div class="event-block">
+      <div class="label">💾 半導體板塊全面反彈</div>
+      受 Intel-Google 消息帶動，整個半導體板塊跌深反彈：<strong>VanEck 半導體 ETF（SMH）上漲約 5%</strong>；Micron Technology（MU）上漲近 10%（上週五曾重挫 13%）；Nvidia 上漲約 2%。晶片股是帶動那斯達克收紅的主要引擎。
+    </div>
+
+    <div class="event-block">
+      <div class="label">🌍 中東停火協議破裂——亞洲市場重挫</div>
+      伊朗於 6/7 向以色列一空軍基地發射飛彈，被視為今年 4 月停火以來最嚴重的違約行為，以色列隨即予以報復。此消息重創亞洲市場，<strong>南韓 KOSPI 盤中大跌 8.8%，觸發 2026 年以來第三次熔斷</strong>。地緣政治風險升溫，但美股盤中消息指伊朗已停止攻擊，部分緩和市場恐慌。
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會（Fed）動態 — 升息預期急速升溫</h3>
+    <table>
+      <thead>
+        <tr><th>指標</th><th>數值</th><th>市場影響</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5 月非農就業（NFP）</td>
+          <td class="up">+172,000（預期 +85,000）</td>
+          <td>大幅超預期，升息預期驟升</td>
+        </tr>
+        <tr>
+          <td>失業率</td>
+          <td class="flat">4.3%</td>
+          <td>維持穩定</td>
+        </tr>
+        <tr>
+          <td>年底升息機率（CME FedWatch）</td>
+          <td class="down">~57–70%（前週 ~45%）</td>
+          <td>市場重新定價升息路徑</td>
+        </tr>
+        <tr>
+          <td>10 年期美債殖利率</td>
+          <td class="down">4.54%（跳升）</td>
+          <td>利率上行壓制成長股估值</td>
+        </tr>
+        <tr>
+          <td>現貨黃金</td>
+          <td class="down">大跌 3.25%</td>
+          <td>強美元 + 升息預期壓抑金價</td>
+        </tr>
+        <tr>
+          <td>白銀</td>
+          <td class="down">重挫逾 8%</td>
+          <td>貴金屬全面受壓</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>能源市場</h3>
+    <table>
+      <thead>
+        <tr><th>商品</th><th>價格</th><th>漲跌幅</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WTI 原油</td>
+          <td>$91.32 / 桶</td>
+          <td class="up">+0.86%</td>
+        </tr>
+        <tr>
+          <td>布蘭特原油</td>
+          <td>$94.63 / 桶</td>
+          <td class="up">+1.65%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">中東局勢緊張推升油價，但能源股板塊整體走跌（E&amp;P -0.74%，油服 -0.45%），反映市場擔憂升息衝擊需求前景。</p>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+    <table class="sector-table">
+      <thead>
+        <tr><th>板塊 / 個股</th><th>表現</th><th>主要原因</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>半導體 ETF（SMH）</td>
+          <td class="up">+5.0%</td>
+          <td>Intel-Google TPU 大單帶動整個板塊反彈</td>
+        </tr>
+        <tr>
+          <td>Intel（INTC）</td>
+          <td class="up">+12.3% → $110.81</td>
+          <td>Google TPU 代工大單，晶圓代工業務重估</td>
+        </tr>
+        <tr>
+          <td>Micron Technology（MU）</td>
+          <td class="up">+~10%</td>
+          <td>上週五跌 13% 後跌深反彈</td>
+        </tr>
+        <tr>
+          <td>Nvidia（NVDA）</td>
+          <td class="up">+~2%</td>
+          <td>晶片板塊整體情緒改善</td>
+        </tr>
+        <tr>
+          <td>Apple（AAPL）</td>
+          <td class="down">−1.89% → $301.54</td>
+          <td>WWDC AI Siri 發表不如預期，「賣消息」</td>
+        </tr>
+        <tr>
+          <td>油氣 E&amp;P 板塊</td>
+          <td class="down">−0.74%</td>
+          <td>升息預期壓制需求前景，能源股逆油價走跌</td>
+        </tr>
+        <tr>
+          <td>油氣精煉板塊</td>
+          <td class="up">+0.17%</td>
+          <td>微漲，相對抗跌</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>升息風險重燃：</strong>5 月非農新增 172,000 個職缺，遠超預期 85,000，4 月數據同步上修。市場升息預期大幅重新定價，CME FedWatch 顯示年內某次升息機率升至約 57–70%，利率上行壓力持續衝擊成長股估值。</li>
+      <li><strong>中東地緣政治不穩：</strong>伊朗-以色列停火協議出現嚴重違約，南韓 KOSPI 盤中觸發熔斷，地緣衝突升溫可能引發新一輪市場避險情緒。</li>
+      <li><strong>科技巨頭分歧與 AI 期望落差：</strong>Apple WWDC 展示的 AI Siri 被市場認為「不如預期」，顯示 AI 商業化落地的不確定性，以及高估值下市場對任何失望的容忍度極低。</li>
+      <li><strong>即將公布的 CPI 數據：</strong>本週即將出爐的消費者物價指數（CPI）將進一步決定升息路徑，若通膨數據高於預期，市場可能面臨新一輪拋售壓力。</li>
+      <li><strong>上週五半導體重挫後遺症：</strong>費城半導體指數上週五崩跌 10.4%，蒸發逾 1 兆美元市值，6/8 的反彈尚未彌補全部跌幅，技術面修復仍不完整。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-08-2026" target="_blank">TheStreet — Stock Market Today (June 8, 2026): Nasdaq, Russell 2000 book small comeback</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/07/stock-market-today-live-updates.html" target="_blank">CNBC — S&P 500 closes higher as chips stage a comeback, Iran stops strikes on Israel</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-june-8-dow-sp-500-nasdaq-jump-085310403.html" target="_blank">Yahoo Finance — Stock market today: S&P 500, Nasdaq rise on chip stock rebound, Dow slips</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-bounce-back-181721515.html" target="_blank">Yahoo Finance — Nasdaq and S&P 500 Bounce Back On Monday as Chip Stocks Shake Off Friday's Hangover</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-futures-climb-102103095.html" target="_blank">Yahoo Finance — Wall St gains as chips rebound, Middle East tensions ease</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-apple-stock-falls-after-a-long-awaited-ai-siri-update-120420037.html" target="_blank">Yahoo Finance — Tech stocks today: Apple stock falls after AI Siri update</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/06/08/stock-market-today-june-8-apple-falls-after-unveiling-ai-siri-and-apple-intelligence-at-wwdc/" target="_blank">Motley Fool — Stock Market Today, June 8: Apple Falls After Unveiling AI Siri and Apple Intelligence at WWDC</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/08/stock-market-live-june-8-2026-sp-500-spy-rebounds-with-chip-stocks/" target="_blank">247 Wall St — Stock Market Live June 8, 2026: S&P 500 Rebounds with Chip Stocks</a></li>
+      <li><a href="https://sherwood.news/markets/market-wrap-2026-06-08-sp500-qqq/" target="_blank">Sherwood News — Market wrap June 8 2026</a></li>
+      <li><a href="https://www.republicworld.com/tech/google-s-rumoured-tpu-order-gives-intel-foundry-ambitions-a-major-boost-2026-06-08-127429" target="_blank">Republic World — Google's Rumoured TPU Order Gives Intel Foundry Ambitions a Major Boost</a></li>
+      <li><a href="https://www.gurufocus.com/news/8905498/intel-intc-secures-major-ai-chip-order-from-google-shares-surge" target="_blank">GuruFocus — Intel Secures Major AI Chip Order from Google</a></li>
+      <li><a href="https://www.interactivebrokers.com/campus/traders-insight/securities/macro/may-jobs-report-nonfarm-payrolls-surge-172000-smashing-estimates-updated/" target="_blank">IBKR Campus — May Jobs Report: Nonfarm Payrolls Surge 172,000</a></li>
+      <li><a href="https://finance.biggo.com/news/1TDTm54BDXrLZJaADZA3" target="_blank">BigGo Finance — Nonfarm Payrolls Ignite Rate-Hike Fears: AI Stocks Plunge on 'Black Friday'</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/06/08/treasury-yields-rise-as-traders-weigh-inflationary-pressures.html" target="_blank">CNBC — Treasury yields little changed as traders weigh rate outlook, fresh Iran tensions</a></li>
+      <li><a href="https://www.icmarkets.com/blog/ic-markets-global-europe-fundamental-forecast-08-june-2026/" target="_blank">IC Markets — Europe Fundamental Forecast 08 June 2026</a></li>
+      <li><a href="https://www.ig.com/en/news-and-trade-ideas/markets-face-a-perfect-storm--rate-hikes-oil-and-ai-s-reality-ch-260605" target="_blank">IG International — Markets face perfect storm of rate fears and Middle East risk</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
