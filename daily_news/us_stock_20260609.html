@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-09</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+    .sector-card { padding: 12px 14px; border-radius: 6px; font-size: 0.88rem; line-height: 1.6; }
+    .sector-up { background: #f0fdf4; border-left: 3px solid #16a34a; }
+    .sector-down { background: #fff5f5; border-left: 3px solid #dc2626; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: 600; margin-right: 6px; }
+    .tag-macro { background: #e0e7ff; color: #3730a3; }
+    .tag-geo { background: #fef3c7; color: #92400e; }
+    .tag-tech { background: #dbeafe; color: #1e40af; }
+    .tag-earnings { background: #d1fae5; color: #065f46; }
+    .tag-fed { background: #f3e8ff; color: #6b21a8; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) { .sector-grid { grid-template-columns: 1fr; } header { padding: 20px; } .card { padding: 16px; } }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-06-09（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌幅</th>
+          <th>日中最大跌幅</th>
+          <th>走勢摘要</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>~50,872</td>
+          <td class="up">+0.17%（+86 點）</td>
+          <td class="down">曾跌約 575 點</td>
+          <td>防禦/工業板塊撐盤，收漲</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,386.65</td>
+          <td class="down">−0.26%</td>
+          <td class="down">最深曾跌逾 2.2%</td>
+          <td>逢低買盤回補，收縮損失</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>25,678.82</td>
+          <td class="down">−0.97%</td>
+          <td class="down">盤中最深 −3.6%</td>
+          <td>Apple + 晶片股拖累；收盤前大幅反彈</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>~284（IWM 284.11）</td>
+          <td class="up">+0.20%</td>
+          <td>—</td>
+          <td>小型股相對抗跌，受益輪動資金</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.78rem;color:#9ca3af;margin-top:10px;">資料來源：TheStreet、Yahoo Finance、CNN Business 交叉驗證。日中振幅極大，以收盤點位為準。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <span class="tag tag-geo">地緣政治</span>
+        <strong>美伊緊張局勢劇烈鋸齒震盪（當日最大催化劑）</strong><br>
+        川普總統日中先宣稱美伊談判可望在「兩三天內」達成協議、霍爾木茲海峽即將重新開放，引發盤中急反彈。隨後急轉直下，宣布將對伊朗發動報復打擊（伊朗擊落美軍阿帕契直升機），市場再度重摔。美軍於收盤後完成打擊行動。全日呈典型「whipsaw（鋸齒）」走勢，Nasdaq 盤中最大跌幅 3.6%，收盤前大幅縮小至 −0.97%。
+      </li>
+      <li>
+        <span class="tag tag-tech">科技</span>
+        <strong>Apple WWDC 2026 — 新 Siri AI 令市場失望，AAPL 跌約 3.42%</strong><br>
+        蘋果在年度開發者大會推出整合 Google Gemini 的全新 Siri AI 助理（支援文字指令互動）。投資人普遍認為更新屬「漸進式」，缺乏能推動 iPhone 換機潮的革命性功能，對貨幣化前景存疑。分析師（Morgan Stanley 目標 $360，維持買入）持謹慎樂觀，但市場反應顯著負面，AAPL 當日收跌約 3.42%。
+      </li>
+      <li>
+        <span class="tag tag-tech">晶片</span>
+        <strong>AI 晶片輪動賣壓持續 — Nvidia、Broadcom、Micron 再度走低</strong><br>
+        上週 Broadcom Q2 AI 網路營收（41 億美元）遜於預期（48 億美元），引爆連日半導體拋售（費城半導體指數本週累跌 14%）。6/9 賣壓延續。Nvidia（NVDA）雖有 Morgan Stanley、JPMorgan 重申「超配/Overweight」，日中仍一度跌近 3.9%。AI 樂觀情緒與升息疑慮形成持續拉鋸。
+      </li>
+      <li>
+        <span class="tag tag-macro">經濟數據</span>
+        <strong>NFIB 小企業樂觀指數（5 月）遜於預期</strong><br>
+        5 月 NFIB 小企業樂觀指數 95.3，低於預期 96.0，較 4 月下滑 0.6 點，連續第三個月低於 52 年均值 98.0。計畫調漲售價的業主比例飆升至淨 36%（月增 6 個百分點），為 2023 年 3 月以來新高，通膨壓力升溫。僱用計畫及職缺降至 6 年低點，顯示勞動市場轉趨保守。
+      </li>
+      <li>
+        <span class="tag tag-earnings">財報</span>
+        <strong>J.M. Smucker (SJM) Q4 財報亮眼，大漲逾 10%</strong><br>
+        Smucker 公布 FY2026 Q4 財報（截至 4/30）：淨銷售額 23 億美元（年增 6%），調整後 EPS $2.77（年增 20%），大幅超越市場預期，成為當日 S&amp;P 500 中少數上漲逾 10% 的亮點個股。
+      </li>
+      <li>
+        <span class="tag tag-tech">新股 / IPO</span>
+        <strong>OpenAI、Anthropic 相繼提交 IPO 文件；Quantinuum 本週登陸那斯達克</strong><br>
+        OpenAI 與 Anthropic 接續 SpaceX 提交 IPO 申請文件，為 AI 賽道注入話題。量子計算公司 Quantinuum 於 6/4 完成那斯達克掛牌。量子運算股 D-Wave（QBTS）+8.13%、Rigetti（RGTI）+5.25% 表現突出。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素與聯準會動態</h2>
+    <ul class="event-list">
+      <li>
+        <span class="tag tag-fed">聯準會</span>
+        <strong>新主席 Kevin Warsh「蜜月期結束」— 通膨壓力升溫</strong><br>
+        Kevin Warsh 於 5 月 22 日就任第 17 任聯準會主席。6/9 當日 24/7 Wall St. 報導「新通膨數據確認 Warsh 蜜月期結束」，聯準會預測通膨年增率約 4.05%，遠超 2% 目標。6 月 16–17 日 FOMC 會議市場普遍預期不升息，但降息已完全出局；CME FedWatch 顯示年底前至少升息一次的概率達 57%–70%。
+      </li>
+      <li>
+        <span class="tag tag-macro">就業</span>
+        <strong>5 月非農就業（6/5 公布）持續發酵</strong><br>
+        5 月新增非農 172,000 人（預期 85,000），失業率 4.3%，平均時薪月增 0.3%（$37.53）。強勁數據已推升 10 年期公債殖利率至 4.544%（5/21 以來新高）、2 年期至 4.162%，本週市場仍承受其後續影響。
+      </li>
+      <li>
+        <span class="tag tag-geo">能源</span>
+        <strong>油價因伊朗談判消息回落 — WTI 跌 3.4% 至 $88.20</strong><br>
+        川普日中暗示協議在即及霍爾木茲海峽可能重開，油價反而下跌。WTI 原油期貨跌約 3.4% 至 $88.20/桶；布蘭特原油跌約 2.97% 至 $91.45/桶。能源股短線承壓，但 2026 年以來能源板塊仍累計上漲約 21.7%。
+      </li>
+      <li>
+        <span class="tag tag-macro">前瞻</span>
+        <strong>5 月 CPI 數據明日（6/10）公布，市場高度關注</strong><br>
+        NFIB 通膨指標已亮起紅燈，加上就業市場強勁，市場對隔日 CPI 數據神經緊繃，可能成為近期最重要的政策轉折訊號。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+    <div class="sector-grid">
+      <div class="sector-card sector-down">
+        <strong>科技 / 半導體（弱勢）</strong><br>
+        Apple (AAPL) −3.42%（WWDC 失望）<br>
+        Nvidia (NVDA) 走低（盤中曾跌 3.9%）<br>
+        Broadcom (AVGO) 走低<br>
+        Micron (MU) 走低<br>
+        費城半導體指數 本週累跌 14%<br>
+        <span style="font-size:0.8rem;color:#6b7280;">AI 輪動賣壓 + 升息疑慮</span>
+      </div>
+      <div class="sector-card sector-up">
+        <strong>工業 / 國防（強勢）</strong><br>
+        LMT (Lockheed Martin) YTD +14.9%<br>
+        iShares 國防 ETF (ITA) YTD +14%<br>
+        工業板塊 2026 年持續領跑大盤<br>
+        <span style="font-size:0.8rem;color:#6b7280;">地緣政治 + 政府支出題材</span>
+      </div>
+      <div class="sector-card sector-up">
+        <strong>量子運算（亮點）</strong><br>
+        D-Wave (QBTS) +8.13%<br>
+        Rigetti (RGTI) +5.25%<br>
+        Quantinuum 本週掛牌（QNT）<br>
+        <span style="font-size:0.8rem;color:#6b7280;">美政府 20 億美元量子投資計畫</span>
+      </div>
+      <div class="sector-card sector-up">
+        <strong>消費必需品（財報驅動）</strong><br>
+        J.M. Smucker (SJM) +10%+<br>
+        消費防禦、工業類相對抗跌<br>
+        輪動資金持續流入非科技板塊<br>
+        <span style="font-size:0.8rem;color:#6b7280;">防禦性輪動趨勢延續</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>明日 CPI 數據（最近期風險）：</strong>5 月消費者物價指數排定 6/10 公布，若高於預期，聯準會升息概率將進一步飆升，可能觸發新一輪科技股拋售。</li>
+      <li><strong>聯準會升息風險：</strong>年底前升息概率高達 57%–70%，高利率環境對高估值成長股估值構成持續壓力，市場對後續 FOMC 聲明極度敏感。</li>
+      <li><strong>美伊地緣政治不確定性：</strong>川普的矛盾信號（一會兒談協議、一會兒談打擊）難以預測，若衝突擴大，將同時拉升油價與避險需求，進一步壓抑風險資產。</li>
+      <li><strong>AI 晶片需求重估：</strong>Broadcom 財報遜色引發市場對 AI 資本支出泡沫化的擔憂，若 Microsoft、Google 等大廠相繼下修 AI 採購預測，晶片股將面臨更深的重估壓力。</li>
+      <li><strong>Apple AI 變現困境：</strong>WWDC 更新被視為漸進式，缺乏明確的 iPhone 升機換代驅動力，若後續季度 iPhone 出貨持續低迷，AAPL 估值將承壓。</li>
+      <li><strong>科技輪動持續：</strong>資金持續從科技流向能源、工業及消費防禦，若輪動加速（尤其在 CPI 公布後），Nasdaq 可能打開新一輪回調空間。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-09-2026" target="_blank">TheStreet — Stock Market Today (June 9, 2026): Nasdaq, S&amp;P 500 plummet after Trump teases new Iran strikes</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-june-9-dow-sp-500-nasdaq-rise-ai-225640870.html" target="_blank">Yahoo Finance — Stock market today: Dow rises, S&amp;P 500, Nasdaq fall as tech rotation trade resumes, US-Iran tensions flare</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/06/09/stock-market-today-june-9-apple-falls-as-siri-ai-update-raises-iphone-upgrade-questions/" target="_blank">The Motley Fool — Stock Market Today, June 9: Apple Falls as Siri AI Update Raises iPhone Upgrade Questions</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-june-9-214057921.html" target="_blank">Yahoo Finance / Motley Fool — Stock Market Today, June 9: Risk-Off Sentiment Pressures Nasdaq</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/09/stock-market-live-june-9-2026-sp-500-spy-bouncing-back-with-tech/" target="_blank">24/7 Wall St. — Stock Market Live June 9, 2026: S&amp;P 500 (SPY) Bouncing Back with Tech</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/09/new-inflation-data-confirms-the-end-of-kevin-warshs-honeymoon/" target="_blank">24/7 Wall St. — New Inflation Data Confirms the end of Kevin Warsh's Honeymoon</a></li>
+      <li><a href="https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53097245/apple-stock-falls-after-wwdc-analyst-says-step-in-the-right-direction-but-monetization-questions-remain" target="_blank">Benzinga — Apple Stock Falls After WWDC: Analyst Says 'Step In The Right Direction,' But Monetization Questions Remain</a></li>
+      <li><a href="https://www.gurufocus.com/news/8908076/apples-stock-aapl-declines-over-3-after-wwdc-2026-announcement" target="_blank">GuruFocus — Apple's Stock (AAPL) Declines Over 3% After WWDC 2026 Announcement</a></li>
+      <li><a href="https://www.tradingkey.com/news/market-movers/261956276-market-movers-aapl-20260609" target="_blank">TradingKey — Apple Inc Stock (AAPL) Moved Down by 3.42% on Jun 9</a></li>
+      <li><a href="https://investinglive.com/news/us-may-nfib-small-business-optimism-index-953-vs-960-expected-20260609/" target="_blank">InvestingLive — NFIB Small Business Optimism Index May 2026: 95.3 vs 96.0 expected</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/09/oil-prices-iran-war-strait-hormuz-trump-israel-lebanon.html" target="_blank">CNBC — Oil falls as Trump tries to convince market an Iran deal is close</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-05/us-adds-172-000-jobs-in-may-beating-all-economists-estimates" target="_blank">Bloomberg — US Jobs Report May 2026: 172,000 Added, Unemployment Rate Holds at 4.3%</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/05/treasury-yields-ease-as-traders-await-key-labor-market-data-.html" target="_blank">CNBC — 10-year Treasury yield surges above 4.53% as hot jobs report dents hopes for rate cuts</a></li>
+      <li><a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank">U.S. Bureau of Labor Statistics — Employment Situation Summary, May 2026</a></li>
+      <li><a href="https://finance.yahoo.com/economy/policy/article/kevin-warsh-sworn-in-as-fed-chair-as-inflation-worries-raise-the-volume-on-possible-rate-hikes-164303530.html" target="_blank">Yahoo Finance — Kevin Warsh sworn in as Fed chair as inflation worries raise volume on possible rate hikes</a></li>
+      <li><a href="https://www.morganstanley.com/insights/articles/iran-war-oil-inflation-stock-market-2026" target="_blank">Morgan Stanley — Iran Conflict: Oil Price Impacts and Inflation</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/iran-war-led-market-volatility-180000103.html" target="_blank">Yahoo Finance — Iran War-Led Market Volatility: Top 3 Sectors and Stocks for 2026</a></li>
+      <li><a href="https://www.kavout.com/market-lens/what-triggered-the-recent-semiconductor-sell-off" target="_blank">Kavout — What Triggered the Recent Semiconductor Sell-Off</a></li>
+      <li><a href="https://intellectia.ai/blog/semiconductor-stocks-selloff-june-2026" target="_blank">Intellectia AI — Semiconductor Stocks Selloff June 2026: $1.3T Wiped Out in AI Chip Crash</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0000091419/000009141926000047/sjm06092026exhibit991.htm" target="_blank">SEC EDGAR — J.M. Smucker Co. Form 8-K FY2026 Q4 Earnings (June 9, 2026)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html" target="_blank">CNBC — Quantinuum closes flat in Nasdaq debut, after upsized offering</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 數據截至 2026-06-09 收盤 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
