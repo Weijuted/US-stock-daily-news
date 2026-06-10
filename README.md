@@ -1,4 +1,4 @@
-US Stock Daily News Repository
+**US Stock Daily News Repository**
 This repository serves as a comprehensive platform for tracking and analyzing daily news updates related to the US stock market. It's designed to help investors, traders, and financial enthusiasts stay informed about market movements, economic indicators, and company-specific developments that impact stock prices.
 
 Purpose
