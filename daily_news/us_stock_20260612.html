@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026年6月12日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 4px solid #0f3460; padding-left: 10px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 8px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 4px; font-size: 0.91rem; line-height: 1.65; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.55; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 4px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e7ff; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #0f3460; }
+    .macro-item .note { font-size: 0.8rem; color: #6b7280; margin-top: 2px; }
+    .sector-table td:last-child { font-weight: 600; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; margin-left: 6px; vertical-align: middle; }
+    .badge-green { background: #dcfce7; color: #16a34a; }
+    .badge-red { background: #fee2e2; color: #dc2626; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    .highlight-box { background: linear-gradient(135deg, #fef3c7, #fde68a); border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; border: 1px solid #f59e0b; }
+    .highlight-box .title { font-size: 0.8rem; font-weight: 700; color: #92400e; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .highlight-box .content { font-size: 0.92rem; color: #78350f; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; border-bottom: 1px dotted #0f3460; }
+    .sources a:hover { color: #1d4ed8; }
+    .sources li { margin-bottom: 8px; padding: 6px 0; border-bottom: 1px solid #f3f4f6; line-height: 1.5; }
+    .sources li:last-child { border-bottom: none; }
+    .week-context { font-size: 0.88rem; line-height: 1.7; color: #374151; }
+    .week-context .day { font-weight: 700; color: #0f3460; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      header { padding: 24px 20px; }
+      .card { padding: 18px 16px; }
+      .macro-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026年6月12日（星期五）｜ 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>週線</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>51,202.26</td>
+          <td class="up">+353.51</td>
+          <td class="up">+0.70%</td>
+          <td class="up">收週正值</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,431.46</td>
+          <td class="up">+37.16</td>
+          <td class="up">+0.50%</td>
+          <td class="up">收週正值</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克 (Nasdaq)</strong></td>
+          <td>25,809.66</td>
+          <td class="up">+641.86</td>
+          <td class="up">+2.54%</td>
+          <td class="up">週線最強</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>約 2,143–2,145</td>
+          <td class="up">—</td>
+          <td class="up">+0.79%（估）</td>
+          <td class="up">收週正值</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.78rem; color:#9ca3af; margin-top:10px;">※ 數據來源：BBN Times、FX Leaders、TheStreet、Bloomingbit 交叉驗證。Russell 2000 確切收盤點數仍待核實。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <div class="highlight-box">
+      <div class="title">⭐ 最重大事件</div>
+      <div class="content">SpaceX（SPCX）史上最大規模 IPO 上市，募資 $750 億美元，首日收盤大漲 19%，推動那斯達克單日暴漲 2.54%。</div>
+    </div>
+
+    <ul class="event-list">
+      <li>
+        <strong>🚀 SpaceX（SPCX）IPO 上市 — 史上最大規模</strong><br>
+        SpaceX 於那斯達克正式掛牌，IPO 定價每股 <strong>$135</strong>，募資總額 <strong>$750 億美元</strong>，創下史上最大 IPO 紀錄。開盤即衝至 $150，盤中高點觸及 <strong>$176.52</strong>（一度漲逾 30%），最終收於 <strong>$160.95</strong>，<span class="badge badge-green">首日 +19%</span>。此次上市使 SpaceX 市值一度逼近 <strong>$2.25 兆美元</strong>，創辦人 Elon Musk 因此成為全球首位兆萬富翁（Trillionaire）。SpaceX IPO 帶動整體科技股風險情緒大幅升溫，是那斯達克強勁漲幅的最主要驅動力。
+      </li>
+      <li>
+        <strong>🕊️ 美國－伊朗和平協議談判進展</strong><br>
+        川普（Trump）於盤中暗示，美伊和平協議最快可在<strong>當週末達成</strong>，談判涵蓋核計畫、制裁解除及霍爾木茲海峽（Strait of Hormuz）開放等關鍵議題。外交進展帶動風險情緒全面升溫，同時令<strong>原油價格大幅下跌</strong>：WTI 原油跌向 $83–86 桶/美元，布蘭特原油跌至約 $88 桶/美元，接近兩個月低點。能源成本下行預期進一步支撐通膨回落展望，利多科技與消費類股。
+      </li>
+      <li>
+        <strong>📊 5 月 CPI 通膨數據消化（6/10 公布後續影響）</strong><br>
+        本週三（6/10）公布的 5 月 CPI 年增率達 <strong>4.2%</strong>（三年來最高），月增 +0.5%，略低於市場預期的 +0.6%。核心 CPI（剔除食品與能源）年增 2.9%。市場至本週五（6/12）已逐步消化此數據，並將焦點轉至地緣政治與 SpaceX IPO 帶來的正面情緒。
+      </li>
+      <li>
+        <strong>📅 下週 FOMC 會議前瞻（6/16–17）</strong><br>
+        市場靜待下週聯準會政策會議，這也是新任主席 <strong>Kevin Warsh</strong>（5/22 就任，取代 Powell）首次主持的 FOMC 會議。市場共識為<strong>維持利率不變</strong>，目前聯邦基金利率在 3.50%–3.75%，已連續三次會議（1 月、3 月、4 月）按兵不動。期貨市場顯示 2026 年內降息機率低於 10%。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境指標</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯邦基金利率</div>
+        <div class="value">3.50% – 3.75%</div>
+        <div class="note">連三次 FOMC 維持不變；下次會議 6/16–17</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">5 月 CPI（年增率）</div>
+        <div class="value up">+4.2%</div>
+        <div class="note">三年高點；核心 CPI +2.9%（月增 +0.2%）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10 年期美債殖利率</div>
+        <div class="value">約 4.49%</div>
+        <div class="note">小幅上升 +0.02 個百分點</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">WTI 原油</div>
+        <div class="value down">$83–86 / 桶</div>
+        <div class="note">受美伊和談預期壓制；全週跌近 $10</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTORS & STOCKS -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+    <h3>板塊輪動概覽</h3>
+    <table class="sector-table">
+      <thead>
+        <tr>
+          <th>板塊</th>
+          <th>當日表現</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>科技（Technology）</td>
+          <td class="up">強勢領漲</td>
+          <td>受 SpaceX IPO 與 AI 需求帶動，那斯達克 +2.54%</td>
+        </tr>
+        <tr>
+          <td>材料（Materials）</td>
+          <td class="up">週線領漲</td>
+          <td>週線表現最強板塊之一</td>
+        </tr>
+        <tr>
+          <td>工業（Industrials）</td>
+          <td class="up">週線強勢</td>
+          <td>受和平期望帶動</td>
+        </tr>
+        <tr>
+          <td>能源（Energy）</td>
+          <td class="neutral">當日落後</td>
+          <td>受油價下跌拖累；但 XLE ETF 年初至今仍 +29%</td>
+        </tr>
+        <tr>
+          <td>防禦類股</td>
+          <td class="down">跑輸大盤</td>
+          <td>風險偏好回升，資金流出避險板塊</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>值得關注個股</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>個股</th>
+          <th>漲跌幅</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SpaceX（SPCX）</strong></td>
+          <td class="up">+19.0%</td>
+          <td>IPO 首日，定價 $135，收盤 $160.95，高點 $176.52</td>
+        </tr>
+        <tr>
+          <td>Micron（MU）</td>
+          <td class="up">+9.9%</td>
+          <td>AI 相關記憶體晶片需求強勁（週間累積）</td>
+        </tr>
+        <tr>
+          <td>Marvell（MRVL）</td>
+          <td class="up">+9.6%</td>
+          <td>AI 晶片需求持續爆發</td>
+        </tr>
+        <tr>
+          <td>AMD</td>
+          <td class="up">+5.1%</td>
+          <td>AI/資料中心晶片需求帶動</td>
+        </tr>
+        <tr>
+          <td>Broadcom（AVGO）</td>
+          <td class="up">+2.8%</td>
+          <td>AI 網路晶片持續受市場追捧</td>
+        </tr>
+        <tr>
+          <td>Exxon Mobil（XOM）／Chevron（CVX）</td>
+          <td class="neutral">小幅上漲</td>
+          <td>雖油價下跌，大型能源股仍韌性維持；XLE 年初至今 +29%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.78rem; color:#9ca3af; margin-top:10px;">※ 部分個股漲幅為週間累積數字，非單日漲幅。</p>
+  </div>
+
+  <!-- WEEK CONTEXT -->
+  <div class="card">
+    <h2>本週市場脈絡（6/9–6/12）</h2>
+    <div class="week-context">
+      <p><span class="day">週一（6/9）：</span>以色列－伊朗衝突再起，油價飆升、股市承壓，市場情緒趨於謹慎。</p>
+      <br>
+      <p><span class="day">週三（6/10）：</span>5 月 CPI 公布達三年高點（+4.2% YoY），引發通膨再升溫擔憂，市場短暫震盪。</p>
+      <br>
+      <p><span class="day">週四（6/11）：</span>川普宣布暫停計劃中的軍事行動，伊朗談判出現重大突破，道瓊暴漲約 900 點，那斯達克大漲近 3%。</p>
+      <br>
+      <p><span class="day">週五（6/12）：</span>SpaceX 史上最大 IPO 上市（+19% 首日收盤）加上美伊和平預期持續升溫，三大指數全面收紅，順利收週線正值。布蘭特原油全週跌幅接近 $10 桶，創近期低點。</p>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>通膨黏著風險：</strong>5 月 CPI 年增 4.2% 為三年高點，能源漲幅 +23.5%，若美伊談判破局油價反彈，通膨壓力可能重新升溫，壓縮聯準會降息空間。</li>
+      <li><strong>聯準會政策轉向風險：</strong>新任主席 Warsh 首次主持 FOMC（6/16–17）；部分官員暗示政策基調將從「寬鬆傾向」轉向中性，市場需重新定價利率路徑。</li>
+      <li><strong>美伊談判破局風險：</strong>若美伊和平協議未能在週末達成，油價可能大幅反彈，地緣風險情緒逆轉，對股市形成打壓。</li>
+      <li><strong>SpaceX（SPCX）IPO 後鎖定期到期風險：</strong>IPO 初期熱情消退後，早期投資人鎖定期結束可能引發獲利了結賣壓，對科技情緒造成影響。</li>
+      <li><strong>美債殖利率走高壓力：</strong>10 年期美債殖利率維持 4.49% 高位，若通膨持續，殖利率進一步攀升可能壓抑高本益比科技股估值。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源（已交叉驗證）</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-12-2026" target="_blank">TheStreet — Stock Market Today: Dow Jones, S&amp;P 500, Nasdaq Updates June 12, 2026</a></li>
+      <li><a href="https://www.bbntimes.com/global-economy/s-p-500-index-closes-at-7-431-46-0-50-amid-spacex-ipo-and-iran-peace-talks" target="_blank">BBN Times — S&amp;P 500 Closes at 7,431.46 (+0.50%) Amid SpaceX IPO and Iran Peace Talks</a></li>
+      <li><a href="https://www.fxleaders.com/news/2026/06/12/dow-jones-sp-500-and-nasdaq-finish-week-in-green-as-iran-deal-progress-and-spacex-ipo-boost-risk-appetite/" target="_blank">FX Leaders — Dow, S&amp;P 500 and Nasdaq Finish Week in Green</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-june-12-dow-sp-500-nasdaq-spacex-ipo-230015001.html" target="_blank">Yahoo Finance — SpaceX IPO Live Updates June 12, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html" target="_blank">CNBC — SpaceX IPO: SPCX Closes at $161, Jumping 19%</a></li>
+      <li><a href="https://www.nbcnews.com/business/markets/spacex-ipo-stock-price-rcna349760" target="_blank">NBC News — SpaceX Stock Gains 19% on Its First Trading Day</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html" target="_blank">CNBC — CPI Inflation Report May 2026: Prices Rose 4.2% Annually</a></li>
+      <li><a href="https://www.bls.gov/news.release/archives/cpi_06102026.htm" target="_blank">U.S. Bureau of Labor Statistics (BLS) — Consumer Price Index Summary, May 2026</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/06/11/kevin-warsh-early-test-will-new-fed-chief-defy-trump-raise-rates/" target="_blank">Washington Post — Kevin Warsh's Early Test: Will New Fed Chief Raise Rates?</a></li>
+      <li><a href="https://www.chase.com/personal/investments/learning-and-insights/article/kevin-warsh-first-federal-reserve-meeting-as-chair-june-2026" target="_blank">J.P. Morgan Chase — What to Expect at Kevin Warsh's First Fed Meeting</a></li>
+      <li><a href="https://en.bloomingbit.io/feed/news/114054" target="_blank">Bloomingbit — U.S. Stocks Close Higher; Nasdaq Jumps 2.54%</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Stocks on Track for Positive Week Amid Peace Hopes</a></li>
+      <li><a href="https://econcurrents.substack.com/p/12-june-2026-market-close-and-major" target="_blank">EconCurrents — June 12, 2026 Market Close &amp; Major Headlines</a></li>
+      <li><a href="https://www.babypips.com/analysis/weekly-market-recap-2026-june-8-12-us-iran-deal-possibilities" target="_blank">BabyPips — Weekly Market Recap June 8–12, 2026</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/12/energy-refuses-to-quit-xle-up-29-ytd-as-oil-stocks-wake-up/" target="_blank">247 Wall St — Energy Refuses to Quit: XLE Up 29% YTD</a></li>
+      <li><a href="https://seekingalpha.com/article/4899204-us-iran-peace-agreement-market-implications-and-strategic-scenarios" target="_blank">Seeking Alpha — US-Iran Peace Agreement: Market Implications &amp; Strategic Scenarios</a></li>
+      <li><a href="https://tradingeconomics.com/commodity/crude-oil/news/527563" target="_blank">Trading Economics — Oil Falls as Traders Weigh Iran Nuclear Prospects</a></li>
+      <li><a href="https://www.benzinga.com/markets/prediction-markets/26/06/53160378/sp500-june-12-open-up-or-down-polymarket-spacex-ipo-iran-deal" target="_blank">Benzinga — S&amp;P 500 June 12 Open Prediction: SpaceX IPO &amp; Iran Deal</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料截至 2026年6月12日收盤 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
