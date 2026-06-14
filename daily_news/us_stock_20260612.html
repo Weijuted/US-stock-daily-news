@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-12</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; border-left: 3px solid #0f3460; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-bottom: 14px; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-item { padding: 14px 16px; margin-bottom: 12px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-item .event-title { font-weight: 700; color: #0f3460; margin-bottom: 6px; font-size: 0.95rem; }
+    .macro-item { padding: 12px 16px; margin-bottom: 10px; background: #f9fafb; border-radius: 6px; border: 1px solid #e5e7eb; font-size: 0.9rem; line-height: 1.6; }
+    .macro-label { font-weight: 700; color: #374151; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-up { background: #dcfce7; color: #16a34a; }
+    .badge-down { background: #fee2e2; color: #dc2626; }
+    .badge-neutral { background: #fef3c7; color: #92400e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+    .sector-box { padding: 12px 14px; border-radius: 6px; font-size: 0.88rem; }
+    .sector-box.outperform { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .sector-box.underperform { background: #fff5f5; border: 1px solid #fecaca; }
+    .sector-box .sector-label { font-weight: 700; margin-bottom: 4px; }
+    .sources { font-size: 0.82rem; color: #6b7280; padding-left: 0; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .data-highlight { font-size: 1.4rem; font-weight: 700; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .verify-badge { display: inline-block; background: #dcfce7; color: #15803d; font-size: 0.75rem; padding: 2px 7px; border-radius: 20px; font-weight: 600; margin-left: 6px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年6月12日（週五）| 由 Claude Routine 自動生成 · 多來源交叉驗證</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 DJIA</strong></td>
+          <td>51,202.26</td>
+          <td class="up">+353.51</td>
+          <td><span class="up">+0.70%</span></td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,431.46</td>
+          <td class="up">+37.16</td>
+          <td><span class="up">+0.50%</span></td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克 Nasdaq</strong></td>
+          <td>25,888.84</td>
+          <td class="up">+79.18</td>
+          <td><span class="up">+0.31%</span></td>
+        </tr>
+        <tr>
+          <td><strong>羅素2000 Russell 2000</strong></td>
+          <td>2,943.99</td>
+          <td class="up">+22.96</td>
+          <td><span class="up">+0.79%</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;color:#6b7280;">四大指數全面收漲，羅素2000與道瓊領漲。那斯達克漲幅相對落後，因蘋果（-1.52%）等大型科技股表現疲弱。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>📰 重大市場事件與催化劑</h2>
+
+    <div class="event-item">
+      <div class="event-title">🚀 SpaceX（SPCX）史上最大規模 IPO 掛牌 <span class="badge badge-up">重大利多</span></div>
+      SpaceX 於 6月12日（週五）在那斯達克以股票代號 <strong>SPCX</strong> 正式掛牌，成為美股史上規模最大的 IPO（募資約 <strong>750億美元</strong>，估值超 <strong>1.5兆美元</strong>）。
+      <br/><br/>
+      發行價：<strong>$135</strong> → 開盤：<strong>$150（+11%）</strong> → 收盤：約 <strong>$161（+19.2%）</strong>
+      <br/><br/>
+      首日交易量超過 2億股，SpaceX IPO 主導當日市場敘事，帶動科技與航太板塊情緒走揚。
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">🕊️ 美伊和平協議談判取得重大進展 <span class="badge badge-up">利多</span></div>
+      美國與伊朗傳出已就和平協議草案達成共識，草案涵蓋 <strong>14點條款</strong>，包括取消對伊朗的石油制裁，以及承諾在協議生效後 <strong>30天內</strong>重新開放荷姆茲海峽。川普總統公開表達樂觀，預期協議將於本週末 <strong>G7峰會（法國）</strong>場邊正式簽署。
+      <br/><br/>
+      消息帶動油價大跌逾 4%，WTI 原油跌破 <strong>$84/桶</strong>（八週低點），整體市場風險情緒明顯升溫。
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">🎬 DOJ 無條件批准 Paramount–WBD 千億合併案 <span class="badge badge-up">利多</span></div>
+      美國司法部（DOJ）於 6月12日宣布，<strong>無條件批准</strong> Paramount Skydance 收購 Warner Bros. Discovery，合併案估值約 <strong>1,100–1,110億美元</strong>，歷經約 8個月反壟斷審查，最終零附帶條件通過。
+      <br/><br/>
+      合併後實體將整合旗下 HBO、Paramount+、CNN、CBS、Paramount Pictures 及 Warner Bros. Pictures，形成好萊塢最大媒體集團之一。合併案仍待部分州監管機構及歐盟審查。媒體板塊受消息大幅提振。
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>🌐 宏觀因素</h2>
+
+    <h3>聯準會動態</h3>
+    <div class="macro-item">
+      <span class="macro-label">聯邦基金利率：</span> <strong>3.50%–3.75%</strong>（維持不變）<br/>
+      由於 PPI 通膨高漲加上就業市場強勁，聯準會維持鷹派按兵不動立場。期貨市場顯示首次降息最早可能在 Q3 2026，但機率仍低。
+    </div>
+
+    <h3>通膨數據</h3>
+    <div class="macro-item">
+      <span class="macro-label">CPI 5月（6月10日公布）：</span><br/>
+      年增 <strong class="down">+4.2%</strong> YoY｜月增 <strong>+0.5%</strong> MoM（季調）｜核心CPI年增 <strong>+2.9%</strong>
+    </div>
+    <div class="macro-item">
+      <span class="macro-label">PPI 5月（6月11日公布）：</span> <span class="badge badge-down">高於預期</span><br/>
+      年增 <strong class="down">+6.5%</strong> YoY（2022年11月以來最高）｜月增 <strong class="down">+1.1%</strong> MoM（共識：+0.7%）<br/>
+      核心PPI月增 <strong>+0.4%</strong>（略低於預期的 +0.5%）<br/>
+      主要推手：能源價格月漲 <strong>+10.7%</strong>，佔整體 PPI 加速約八成
+    </div>
+
+    <h3>消費者信心</h3>
+    <div class="macro-item">
+      <span class="macro-label">密西根大學消費者信心指數（6月初步值）：</span> <span class="data-highlight up">48.9</span> <span class="badge badge-up">優於預期</span><br/>
+      前月 5月：44.8（歷史新低）｜市場預期：46.0<br/>
+      一年期通膨預期：4.6%（前月 4.8%）｜長期通膨預期：3.4%（前月 3.9%）<br/>
+      連跌四個月後首次回升，主因為月初油價下跌緩解汽油支出壓力。整體信心仍比一年前低 19%。
+    </div>
+
+    <h3>地緣政治與貿易</h3>
+    <div class="macro-item">
+      <span class="macro-label">美伊外交：</span> 和平協議草案共識（見上）帶動油價與風險情緒顯著改善。<br/><br/>
+      <span class="macro-label">貿易關稅：</span> 美國貿易關稅仍處二戰以來最高水準；加拿大（對美國鋼鐵/商品加徵 25% 關稅）及歐盟（對波本威士忌、機車等加徵報復性關稅）持續反制，但 6月12日當天貿易摩擦並非主要市場驅動因素。
+    </div>
+  </div>
+
+  <!-- STOCKS & SECTORS -->
+  <div class="card">
+    <h2>📈 重要個股與板塊動態</h2>
+
+    <h3>道瓊成分股漲跌幅</h3>
+    <table>
+      <thead>
+        <tr><th>排行</th><th>股票</th><th>漲跌幅</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>漲幅第1</td><td>Goldman Sachs (GS)</td><td class="up">+2.57%</td></tr>
+        <tr><td>漲幅第2</td><td>Verizon (VZ)</td><td class="up">+2.49%</td></tr>
+        <tr><td>漲幅第3</td><td>JPMorgan Chase (JPM)</td><td class="up">+2.25%</td></tr>
+        <tr><td>跌幅第1</td><td>Nike (NKE)</td><td class="down">-2.24%</td></tr>
+        <tr><td>跌幅第2</td><td>Apple (AAPL)</td><td class="down">-1.52%</td></tr>
+        <tr><td>跌幅第3</td><td>Merck (MRK)</td><td class="down">-1.42%</td></tr>
+      </tbody>
+    </table>
+
+    <h3>焦點個股</h3>
+    <table>
+      <thead>
+        <tr><th>股票</th><th>事件</th><th>表現</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SpaceX (SPCX)</strong></td>
+          <td>史上最大 IPO 首日掛牌，發行價 $135，開盤 $150</td>
+          <td class="up">收盤 ~$161（+19.2%）</td>
+        </tr>
+        <tr>
+          <td><strong>Paramount (PARA)</strong></td>
+          <td>DOJ 無條件批准與 WBD 合併</td>
+          <td class="up">媒體板塊大漲</td>
+        </tr>
+        <tr>
+          <td><strong>Warner Bros. Discovery (WBD)</strong></td>
+          <td>DOJ 無條件批准與 Paramount 合併</td>
+          <td class="up">媒體板塊大漲</td>
+        </tr>
+        <tr>
+          <td><strong>Marvell Technology (MRVL)</strong></td>
+          <td>前週黃仁勳喊話帶動 AI 晶片題材持續發酵</td>
+          <td class="up">AI/半導體板塊強勢</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊表現概覽</h3>
+    <div class="sector-grid">
+      <div class="sector-box outperform">
+        <div class="sector-label" style="color:#16a34a;">↑ 領漲板塊</div>
+        金融（Financials）<br/>
+        媒體娛樂（Media/Entertainment）<br/>
+        公用事業（Utilities）<br/>
+        材料（Materials）<br/>
+        航太 / AI 晶片
+      </div>
+      <div class="sector-box underperform">
+        <div class="sector-label" style="color:#dc2626;">↓ 落後板塊</div>
+        能源（Energy）— 受油價大跌壓制<br/>
+        消費品（Consumer）— Nike 拖累<br/>
+        醫療（Healthcare）— Merck 下跌<br/>
+        部分大型科技 — Apple 走弱
+      </div>
+    </div>
+
+    <div class="macro-item" style="margin-top:14px;">
+      <span class="macro-label">WTI 原油：</span> <strong class="down">低於 $84/桶</strong>（跌逾 4%，八週低點）<br/>
+      受美伊和平協議可能重新開放伊朗石油出口預期壓制；能源板塊全日承壓。
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>通膨居高不下：</strong>PPI 年增 +6.5% 創 2022年11月以來新高，能源成本飆升可能向下游傳遞，延後聯準會降息時間表。</li>
+      <li><strong>消費者信心疲弱：</strong>密大信心指數 48.9 雖優於預期，但仍處歷史低位，比一年前低 19%，消費支出持續承壓。</li>
+      <li><strong>美伊協議不確定性：</strong>美伊和談若破局或談判延誤，油價可能急速反彈，市場已提前消化樂觀預期存在回調風險。</li>
+      <li><strong>Paramount–WBD 監管尾端風險：</strong>DOJ 已批准，但仍待部分州政府及歐盟監管審查，合併完成時間有不確定性。</li>
+      <li><strong>貿易關稅拉鋸：</strong>美國關稅維持高位，加拿大、歐盟等主要貿易夥伴報復性關稅持續，供應鏈成本壓力未消。</li>
+      <li><strong>SpaceX 估值風險：</strong>SpaceX IPO 以逾 1.5兆美元超高估值掛牌，後市能否維持高位仍待觀察，高估值 IPO 歷史上波動性偏高。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📋 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-12-2026" target="_blank">TheStreet — Stock Market Today (June 12, 2026): SpaceX jumps nearly 20% in biggest IPO in history</a></li>
+      <li><a href="https://econcurrents.substack.com/p/12-june-2026-market-close-and-major" target="_blank">EconCurrents Substack — 12 June 2026 Market Close &amp; Major Financial Headlines</a></li>
+      <li><a href="https://www.home.saxo/content/articles/macro/market-quick-take---12-june-2026-12062026" target="_blank">Saxo Bank — Market Quick Take, 12 June 2026</a></li>
+      <li><a href="https://www.trading-revealed.com/site-news/daily-market-brief-june-12-2026/" target="_blank">Trading Revealed — Daily Market Brief, June 12, 2026</a></li>
+      <li><a href="https://www.tradingview.com/news/te_news:558797:0-the-dow-jones-index-closes-0-70-higher/" target="_blank">TradingView News — The Dow Jones Index Closes 0.70% Higher</a></li>
+      <li><a href="https://www.wallstreetzen.com/stock-screener/biggest-stock-losers-today" target="_blank">WallStreetZen — Biggest Losers/Gainers Today Jun 12, 2026</a></li>
+      <li><a href="https://stockmarketwatch.com/indices/dowjones/today" target="_blank">StockMarketWatch — Dow Jones Today Jun 12, 2026 Live Chart &amp; Movers</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html" target="_blank">CNBC — SpaceX IPO: SPCX closes at $161, jumping 19% after record debut</a></li>
+      <li><a href="https://www.nbcnews.com/business/markets/spacex-ipo-stock-price-rcna349760" target="_blank">NBC News — SpaceX stock gains 19% its first trading day, closing out a historic IPO</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/article/spacex-ipo-set-to-price-thursday-night-ahead-of-friday-nasdaq-debut--heres-whats-next-101955450.html" target="_blank">Yahoo Finance — SpaceX stock jumps nearly 20% following largest IPO ever</a></li>
+      <li><a href="https://financer.com/invest/spacex-ipo/" target="_blank">Financer.com — SpaceX IPO 2026: Date, Price &amp; How to Buy SPCX Stock</a></li>
+      <li><a href="https://thenextweb.com/news/paramount-warner-bros-merger-doj-cleared" target="_blank">The Next Web — DOJ clears Paramount's $110B purchase of Warner Bros. Discovery without conditions</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/12/paramount-wbd-merger-approval-doj.html" target="_blank">CNBC — Paramount-WBD merger wins approval from DOJ</a></li>
+      <li><a href="https://variety.com/2026/tv/news/doj-approves-paramount-warner-bros-discovery-merger-1236780234/" target="_blank">Variety — DOJ Antitrust Division Approves Paramount-Warner Bros. Discovery Merger</a></li>
+      <li><a href="https://www.foxbusiness.com/entertainment/doj-clears-paramount-warner-bros-merger-after-8-month-antitrust-probe-says-deal-could-boost-competition" target="_blank">Fox Business — DOJ clears Paramount-Warner Bros merger after 8-month antitrust probe</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/11/producer-price-index-may-2026-.html" target="_blank">CNBC — Producer Price Index May 2026</a></li>
+      <li><a href="https://www.bls.gov/news.release/ppi.nr0.htm" target="_blank">BLS.gov — Producer Price Index News Release Summary</a></li>
+      <li><a href="https://www.advisorperspectives.com/dshort/updates/2026/06/11/ppi-producer-price-index-wholesale-inflation-may-2026" target="_blank">Advisor Perspectives — PPI Wholesale Inflation Hits Highest Level Since November 2022</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/10/cpi-inflation-report-may-2026.html" target="_blank">CNBC — CPI inflation report May 2026: Prices rose 4.2% annually</a></li>
+      <li><a href="https://www.indexbox.io/blog/us-consumer-sentiment-improves-in-early-june-2026-after-four-month-decline-1/" target="_blank">IndexBox — Consumer Sentiment Rises to 48.9 in June 2026</a></li>
+      <li><a href="https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/78908-university-of-michigan-consumer-sentiment-preliminary-results-for-june-2026-rises-month-over-month-inflation-worries-persist-sentiment-under-trump-is-down-19-year-over-year-and-28-lower-than-biden-in-june-2024" target="_blank">GoldRushCam — University of Michigan Consumer Sentiment Preliminary June 2026</a></li>
+      <li><a href="https://www.axios.com/2026/06/12/gas-prices-consumer-sentiment" target="_blank">Axios — Gas prices, consumer sentiment (June 12, 2026)</a></li>
+      <li><a href="https://tradingeconomics.com/united-states/stock-market" target="_blank">TradingEconomics — United States Stock Market Index</a></li>
+      <li><a href="https://fred.stlouisfed.org/series/SP500" target="_blank">FRED St. Louis Fed — S&amp;P 500 Series</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證（多來源交叉確認）| 2026-06-14 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
