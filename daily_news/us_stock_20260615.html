@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-15</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-ath { background: #fef9c3; color: #854d0e; }
+    .badge-record { background: #dcfce7; color: #166534; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.secondary { border-color: #a7f3d0; background: #f0fdf4; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #1e40af; }
+    .event-card.secondary h4 { color: #065f46; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.energy { background: #fef3c7; color: #92400e; }
+    .tag.tech { background: #ede9fe; color: #5b21b6; }
+    .tag.cruise { background: #dcfce7; color: #166534; }
+    .tag.ma { background: #fce7f3; color: #9d174d; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #0f3460, #1e40af); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 6 月 15 日（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>川普宣布美伊初步和平協議，霍爾木茲海峽重新開放，油價暴跌 4.8%，全球股市大漲。SpaceX（SPCX）上市第二日再漲約 20%，市值突破 2 兆美元。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>51,671.03</td>
+          <td class="up">+468.77</td>
+          <td class="up">+0.92%</td>
+          <td><span class="badge badge-ath">歷史新高</span></td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,554.29</td>
+          <td class="up">+約 +123</td>
+          <td class="up">+1.65%</td>
+          <td>強勁反彈</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>26,683.94</td>
+          <td class="up">+約 +795</td>
+          <td class="up">+3.07%</td>
+          <td>三大指數領漲</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>~2,965.09</td>
+          <td class="up">+21.09</td>
+          <td class="up">+~0.72%</td>
+          <td><span class="badge badge-record">歷史新高</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+      <div class="event-card primary" style="grid-column: span 2;">
+        <h4>🕊️ 美伊和平框架協議（主要催化劑）</h4>
+        <ul>
+          <li>川普宣布與伊朗達成初步停火協議，終止自 2026 年 2 月以來的武裝衝突</li>
+          <li><strong>霍爾木茲海峽免費重新開放</strong>（全球約 20% 原油通過此處）</li>
+          <li>解除對伊朗石油的美國制裁，釋放 240 億美元凍結資產</li>
+          <li>正式簽署計畫於 6 月 19 日在日內瓦舉行；副總統 JD Vance 確認長期免費開放</li>
+          <li><strong>國際市場反應：</strong>日經 225 +5.5%、韓國 KOSPI +5.7%、歐洲股市大漲</li>
+        </ul>
+      </div>
+      <div class="event-card secondary">
+        <h4>🚀 SpaceX（SPCX）上市第二日</h4>
+        <ul>
+          <li>IPO 定價 $135（6/11），首日收 $160.95（+19%）—— 史上最大 IPO，籌資約 750 億美元</li>
+          <li>6 月 15 日（第二交易日）再漲約 <strong>+20%</strong>，股價達 $177–$192.50</li>
+          <li>市值突破 <strong>2 兆美元</strong>；馬斯克成為全球首位<strong>兆萬富翁</strong></li>
+          <li>大幅帶動納斯達克和科技板塊情緒</li>
+        </ul>
+      </div>
+      <div class="event-card">
+        <h4>📺 福斯集團（FOX）斥資 220 億美元收購 Roku</h4>
+        <ul>
+          <li>每股 $160（現金 $96 + 0.9693 股 FOX），總企業價值約 <strong>220 億美元</strong></li>
+          <li>結合 Fox News、Tubi、NFL/MLB 版權與 Roku 逾 1 億串流家庭</li>
+          <li>FOX 股價當日下跌 <strong>-11% 至 -20%</strong>（市場對稀釋/估值存疑）</li>
+          <li>預計 2027 年上半年完成；SEC 已提交 8-K 文件</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>其他重要 M&amp;A 交易</h3>
+    <table class="stock-table">
+      <thead>
+        <tr><th>交易</th><th>金額</th><th>說明</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>美國運通（AMEX）收購 TheFork</td>
+          <td>7 億美元</td>
+          <td>從 Tripadvisor 收購歐洲餐飲平台，擴大 Amex 餐飲網路；TRIP 盤前大漲 ~12%</td>
+        </tr>
+        <tr>
+          <td>Nuvei 收購 Payoneer（PAYO）</td>
+          <td>27.5 億美元</td>
+          <td>每股 $7.40 現金，打造跨境支付平台</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">WTI 原油</div>
+        <div class="value down">$80.75</div>
+        <div class="change down">-4.8%（伊朗協議）</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">布蘭特原油</div>
+        <div class="value down">$83.17</div>
+        <div class="change down">-4.7%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">VIX 恐慌指數</div>
+        <div class="value up">16.20</div>
+        <div class="change up">-8.37%（風險偏好上升）</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">10 年期公債殖利率</div>
+        <div class="value">4.42%</div>
+        <div class="change up">月內最低（通膨預期降溫）</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">美元指數（DXY）</div>
+        <div class="value">99.56</div>
+        <div class="change down">-0.19%（接近 100 關口）</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">聯準會利率（現行）</div>
+        <div class="value">3.50–3.75%</div>
+        <div class="change">6/16–17 FOMC 會議（新主席 Warsh）</div>
+      </div>
+    </div>
+
+    <h3>聯準會動態</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      Kevin Warsh（2026 年 5 月 22 日就任，參院以 54-45 通過確認）將主持其上任後首次 FOMC 會議（6 月 16-17 日）。市場定價 <strong>98.3% 機率維持利率不變</strong>（3.50%–3.75%）。Warsh 傾向轉向中性政策立場，可能終止前瞻指引與點陣圖；2026 年無降息預期，首次降息最早至 2027 年中；12 月升息為尾部風險。
+    </p>
+
+    <h3>近期重要經濟數據</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>數據</th><th>發布日期</th><th>結果</th><th>vs 預期</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>非農就業（5 月）</td>
+          <td>6/5</td>
+          <td class="up">+17.2 萬人</td>
+          <td>大幅優於預估 +8 萬人</td>
+        </tr>
+        <tr>
+          <td>失業率（5 月）</td>
+          <td>6/5</td>
+          <td>4.3%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>CPI 年增率（5 月）</td>
+          <td>6/10</td>
+          <td class="down"><strong>+4.2%（三年新高）</strong></td>
+          <td>月增 +0.5%；核心 CPI 年增 +2.9%</td>
+        </tr>
+        <tr>
+          <td>PPI 年增率（5 月）</td>
+          <td>6/11</td>
+          <td class="down"><strong>+6.5%（2022 年 11 月以來最高）</strong></td>
+          <td>月增 +1.1%，優於預估 +0.7%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:8px;">注：CPI/PPI 高企主因為霍爾木茲海峽封鎖導致能源價格飆升。美伊協議若落實，有望緩解通膨壓力。</p>
+
+    <h3>貿易政策背景</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      美中關稅（芬太尼 + 對等關稅）合計 30%，仍維持中；更高關稅暫停 60 天（6 月 11 日宣布）。最高法院已推翻 IEEPA 授權關稅，政府正研擬替代方案。2026 年整體關稅負擔約每戶 1,500 美元。
+    </p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+
+    <h3>道指成分股領漲/領跌</h3>
+    <table class="stock-table">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>催化劑</th><th>板塊</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>波音（BA）</strong></td>
+          <td class="up">+4.66%</td>
+          <td>道指最大漲幅；威奇托擴產消息</td>
+          <td><span class="tag">工業</span></td>
+        </tr>
+        <tr>
+          <td><strong>Nvidia（NVDA）</strong></td>
+          <td class="up">+3.40%</td>
+          <td>AI 情緒回升；晶片股反彈（上週 -12%）</td>
+          <td><span class="tag tech">科技/半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>亞馬遜（AMZN）</strong></td>
+          <td class="up">+3.12%</td>
+          <td>風險偏好上升；科技板塊整體走強</td>
+          <td><span class="tag tech">科技</span></td>
+        </tr>
+        <tr>
+          <td><strong>雪佛龍（CVX）</strong></td>
+          <td class="down">-3.60% 至 -5%</td>
+          <td>油價暴跌；霍爾木茲重開</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>默克（MRK）</strong></td>
+          <td class="down">-3.37%</td>
+          <td>醫療保健表現落後</td>
+          <td><span class="tag">醫療</span></td>
+        </tr>
+        <tr>
+          <td><strong>威訊（VZ）</strong></td>
+          <td class="down">-2.06%</td>
+          <td>防禦性電信股遭輪動</td>
+          <td><span class="tag">電信</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>其他重要個股動態</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>說明</th><th>標籤</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SpaceX（SPCX）</strong></td>
+          <td class="up">+約 +20%</td>
+          <td>上市第二日，股價達 $177–$192.50，市值超 2 兆美元</td>
+          <td><span class="tag tech">IPO</span></td>
+        </tr>
+        <tr>
+          <td><strong>Wolfspeed（WOLF）</strong></td>
+          <td class="up">+14.65% 至 +15.52%</td>
+          <td>GE 航太 SiC 碳化矽協議；第五代 SiC 發布</td>
+          <td><span class="tag tech">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>皇家加勒比（RCL）</strong></td>
+          <td class="up">+4.29% → $307</td>
+          <td>油價下跌 → 燃料成本降低 → 郵輪股受惠</td>
+          <td><span class="tag cruise">郵輪/旅遊</span></td>
+        </tr>
+        <tr>
+          <td><strong>嘉年華郵輪（CCL）</strong></td>
+          <td class="up">+4.55% → $30.51</td>
+          <td>同上</td>
+          <td><span class="tag cruise">郵輪/旅遊</span></td>
+        </tr>
+        <tr>
+          <td><strong>挪威郵輪（NCLH）</strong></td>
+          <td class="up">+4.78% → $20.36</td>
+          <td>同上</td>
+          <td><span class="tag cruise">郵輪/旅遊</span></td>
+        </tr>
+        <tr>
+          <td><strong>Tripadvisor（TRIP）</strong></td>
+          <td class="up">盤前 +約 12%</td>
+          <td>以 7 億美元將 TheFork 出售給美國運通</td>
+          <td><span class="tag ma">M&amp;A</span></td>
+        </tr>
+        <tr>
+          <td><strong>ExxonMobil（XOM）</strong></td>
+          <td class="down">約 -5%</td>
+          <td>伊朗和平協議 → 原油價格暴跌</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>Roku（ROKU）</strong></td>
+          <td class="up">收購溢價</td>
+          <td>FOX 以每股 $160 現金+股票收購，較收購前溢價</td>
+          <td><span class="tag ma">M&amp;A</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊表現總結</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>板塊</th><th>表現</th><th>主要驅動</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>科技 / 半導體</td><td class="up">大幅領漲（帶動 Nasdaq +3%）</td><td>SpaceX 效應；AI 情緒回升；上週晶片股 -12% 後反彈</td></tr>
+        <tr><td>消費／旅遊</td><td class="up">強勢</td><td>油價下跌 → 燃料成本降低</td></tr>
+        <tr><td>工業</td><td class="up">強勢</td><td>Boeing +4.66%</td></tr>
+        <tr><td>能源</td><td class="down">大幅落後 -3% 至 -5%</td><td>WTI 原油 -4.8%；伊朗協議</td></tr>
+        <tr><td>醫療保健</td><td class="down">落後</td><td>防禦性板塊遭輪動</td></tr>
+        <tr><td>電信</td><td class="down">落後</td><td>防禦性板塊遭輪動</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>美伊協議尚未正式簽署：</strong>框架協議仍待 6 月 19 日日內瓦正式簽署，若談判破裂或條款生變，油價可能迅速反彈，市場將面臨急速回調壓力。</li>
+      <li><strong>新聯準會主席 Warsh 首次 FOMC（6/16–17）不確定性：</strong>Warsh 傾向廢除前瞻指引與點陣圖，政策溝通框架改變可能引發市場波動；在 CPI 4.2%、PPI 6.5% 背景下，年底升息成為尾部風險。</li>
+      <li><strong>通膨仍居高位：</strong>即使油價下跌，CPI 年增 4.2%（三年新高）、PPI 6.5% 的壓力不會立即消散；若能源降溫幅度不如預期，高利率環境將持續更長時間。</li>
+      <li><strong>美中貿易關稅持續拖累：</strong>30% 對中關稅依然實施，Supreme Court 裁決 IEEPA 關稅違憲後政府尋求替代授權，法律與政策不確定性仍高；每戶約 1,500 美元關稅負擔壓制消費。</li>
+      <li><strong>SpaceX（SPCX）IPO 後波動風險：</strong>上市兩日已累漲逾 40%，市值超 2 兆美元，估值過度延伸可能引發獲利了結，並對科技板塊產生連鎖效應。</li>
+      <li><strong>地緣政治尾部風險：</strong>黎巴嫩局勢尚未全面穩定；霍爾木茲海峽實際疏通「需數週至數月」（PBS NewsHour），期間供應不確定性仍存。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <p class="source-category">主要財經新聞</p>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-15-2026" target="_blank">TheStreet — Stock Market Today June 15, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/14/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news live updates June 15, 2026</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/06/15/us-iran-deal-stocks-bonds-oil.html" target="_blank">CNBC — Markets cheer US-Iran agreement</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/06/15/stock-market-today-june-15-spacex-surges-at-midday-after-blockbuster-ipo/" target="_blank">Motley Fool — Stock Market Today June 15: SpaceX Surges</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/spacex-ipo-debuts-iran-peace-114049778.html" target="_blank">Yahoo Finance — SpaceX IPO debuts as Iran peace deal lifts markets</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/15/stock-market-live-june-15-2026-sp-500-spy-rocketing-on-end-of-war-news/" target="_blank">24/7 Wall St. — Stock Market Live June 15, 2026</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-14/stock-market-moves-on-from-spacex-with-iran-deal-fed-in-focus/" target="_blank">Bloomberg — Stock Market Moves On From SpaceX to Focus On Iran Deal, Fed</a></li>
+      <li><a href="https://www.aljazeera.com/economy/2026/6/15/stock-markets-soar-oil-falls-as-us-iran-confirm-deal-to-end-war" target="_blank">Al Jazeera — Stock markets soar, oil falls as US and Iran announce framework</a></li>
+      <li><a href="https://www.cbsnews.com/news/oil-prices-today-stocks-trump-us-iran-deal/" target="_blank">CBS News — Oil prices sink, stocks soar after Trump announces deal with Iran</a></li>
+      <li><a href="https://www.theepochtimes.com/bright/how-major-us-stock-indexes-fared-june-15-post-6048393" target="_blank">Epoch Times — How Major US Stock Indexes Fared June 15</a></li>
+    </ul>
+
+    <p class="source-category">SpaceX IPO</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html" target="_blank">CNBC — SpaceX IPO closes at $161, jumping 19%</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/15/spacex-stock-record-ipo-debut.html" target="_blank">CNBC — SpaceX stock jumps 20% in first full day of trading</a></li>
+    </ul>
+
+    <p class="source-category">FOX / Roku 收購</p>
+    <ul class="sources">
+      <li><a href="https://www.foxbusiness.com/markets/fox-corporation-announces-22b-acquisition-roku-landmark-streaming-live-tv-deal" target="_blank">Fox Business — Fox acquires Roku for $22B</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/fox-corporation-to-acquire-roku-inc-302800220.html" target="_blank">PRNewswire — FOX CORPORATION TO ACQUIRE ROKU</a></li>
+      <li><a href="https://variety.com/2026/tv/news/fox-acquiring-roku-1236781308/" target="_blank">Variety — Fox Is Buying Roku in $22 Billion Deal</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001754301/000119312526270285/d151410dex991.htm" target="_blank">SEC Filing — Fox Corp Form 8-K</a></li>
+    </ul>
+
+    <p class="source-category">M&amp;A — TheFork / Payoneer</p>
+    <ul class="sources">
+      <li><a href="https://www.prnewswire.com/news-releases/tripadvisor-enters-into-agreement-to-sell-thefork-to-american-express-for-700-million-302799948.html" target="_blank">PRNewswire — Tripadvisor Sells TheFork to American Express for $700M</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/nuvei-to-acquire-payoneer-for-2-75-billion-creating-a-leading-global-platform-for-local-and-cross-border-commerce-302800166.html" target="_blank">PRNewswire — Nuvei to Acquire Payoneer for $2.75 Billion</a></li>
+    </ul>
+
+    <p class="source-category">總體經濟 / 聯準會 / 個股</p>
+    <ul class="sources">
+      <li><a href="https://www.fxstreet.com/analysis/kevin-warsh-opens-first-fed-meeting-june-16-with-rate-hold-expected-202606151326" target="_blank">FXStreet — Kevin Warsh Opens First Fed Meeting June 16</a></li>
+      <li><a href="https://www.bls.gov/news.release/archives/cpi_06102026.htm" target="_blank">BLS — CPI May 2026</a></li>
+      <li><a href="https://www.bls.gov/news.release/archives/ppi_06112026.htm" target="_blank">BLS — PPI May 2026</a></li>
+      <li><a href="https://www.bls.gov/news.release/archives/empsit_06052026.htm" target="_blank">BLS — Employment Situation May 2026</a></li>
+      <li><a href="https://www.benzinga.com/trading-ideas/movers/26/06/53190744/cruise-stocks-rally-as-u-s-iran-peace-agreement-sends-oil-prices-tumbling" target="_blank">Benzinga — Cruise Stocks Rally as Iran Peace Deal Sends Oil Tumbling</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/energy/articles/exxon-mobil-chevron-fall-5-181337458.html" target="_blank">Yahoo Finance — Exxon Mobil and Chevron Fall 5% on Iran Deal</a></li>
+      <li><a href="https://www.pbs.org/newshour/amp/world/even-with-a-deal-to-reopen-the-strait-of-hormuz-it-could-take-weeks-or-months-for-oil-to-fully-flow" target="_blank">PBS NewsHour — Strait of Hormuz reopening timeline</a></li>
+      <li><a href="https://www.clearbrookglobal.com/weekly-market-commentary-june-15-2026/" target="_blank">Clearbrook Global — Weekly Market Commentary June 15</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 · 2026-06-16 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
