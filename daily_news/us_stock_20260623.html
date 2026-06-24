@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-23</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 10px 14px; margin-bottom: 8px; background: #f0f7ff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } }
+    .macro-item { background: #f8faff; border: 1px solid #dce3f5; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #0f3460; }
+    .macro-item .detail { font-size: 0.82rem; color: #4b5563; margin-top: 3px; }
+    .sector-bar { display: flex; align-items: center; margin-bottom: 7px; font-size: 0.87rem; }
+    .sector-name { width: 140px; flex-shrink: 0; color: #374151; }
+    .bar-wrap { flex: 1; height: 14px; background: #f0f4ff; border-radius: 4px; overflow: hidden; margin: 0 10px; }
+    .bar-fill { height: 100%; border-radius: 4px; }
+    .bar-up { background: #16a34a; }
+    .bar-down { background: #dc2626; }
+    .sector-pct { width: 60px; text-align: right; font-weight: 600; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding-left: 0; }
+    .sources li::before { content: "🔗 "; }
+    .tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+    .tag-down { background: #fee2e2; color: #dc2626; }
+    .tag-up { background: #dcfce7; color: #16a34a; }
+    .highlight-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-box strong { color: #92400e; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-06-23（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌幅</th>
+          <th>日內表現</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>51,666.84</td>
+          <td class="down">▼ -0.09%</td>
+          <td>防禦型成分股撐盤，跌幅有限</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,365.46</td>
+          <td class="down">▼ -1.44%</td>
+          <td>科技權重拖累，顯著走弱</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>25,587.04</td>
+          <td class="down">▼ -2.21%</td>
+          <td>AI/半導體族群重挫，單日最大跌幅</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>—</td>
+          <td class="down">▼ -0.96%</td>
+          <td>小型股跟跌，精確收盤點位待確認</td>
+        </tr>
+        <tr>
+          <td><strong>VIX 恐慌指數</strong></td>
+          <td>19.49</td>
+          <td class="down">▲ +12.79%</td>
+          <td>市場恐慌程度顯著攀升</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box" style="margin-top:18px;">
+      <strong>整體解讀：</strong>典型「科技大輪跌 + 防禦輪動」結構。道瓊因 Walmart、J&amp;J 等防禦型成分股撐盤，跌幅僅 -0.09%；但科技重倉的 Nasdaq 與 S&amp;P 500 雙雙重挫。VIX 單日飆升逾 12%，顯示市場風險情緒急遽惡化。
+    </div>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊表現（S&amp;P 500 11 大板塊）</h2>
+    <div style="margin-top:8px;">
+      <div class="sector-bar">
+        <span class="sector-name">消費必需品</span>
+        <div class="bar-wrap"><div class="bar-fill bar-up" style="width:75%"></div></div>
+        <span class="sector-pct up">+1.60%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">房地產</span>
+        <div class="bar-wrap"><div class="bar-fill bar-up" style="width:68%"></div></div>
+        <span class="sector-pct up">+1.45%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">醫療保健</span>
+        <div class="bar-wrap"><div class="bar-fill bar-up" style="width:58%"></div></div>
+        <span class="sector-pct up">+1.24%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">能源</span>
+        <div class="bar-wrap"><div class="bar-fill bar-up" style="width:40%"></div></div>
+        <span class="sector-pct up">+0.84%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">公用事業</span>
+        <div class="bar-wrap"><div class="bar-fill bar-up" style="width:31%"></div></div>
+        <span class="sector-pct up">+0.67%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">金融</span>
+        <div class="bar-wrap"><div class="bar-fill bar-up" style="width:21%"></div></div>
+        <span class="sector-pct up">+0.45%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">通訊服務</span>
+        <div class="bar-wrap"><div class="bar-fill bar-up" style="width:1%"></div></div>
+        <span class="sector-pct neutral">+0.01%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">消費非必需品</span>
+        <div class="bar-wrap"><div class="bar-fill bar-down" style="width:26%"></div></div>
+        <span class="sector-pct down">-0.56%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">材料</span>
+        <div class="bar-wrap"><div class="bar-fill bar-down" style="width:35%"></div></div>
+        <span class="sector-pct down">-0.75%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">工業</span>
+        <div class="bar-wrap"><div class="bar-fill bar-down" style="width:58%"></div></div>
+        <span class="sector-pct down">-1.23%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">資訊科技</span>
+        <div class="bar-wrap"><div class="bar-fill bar-down" style="width:100%"></div></div>
+        <span class="sector-pct down">-2.61%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <h3>主要催化劑：全球半導體 / AI 股賣壓</h3>
+    <ul class="event-list">
+      <li>韓國 KOSPI 指數隔夜重挫 <strong>-4.07%</strong>，SK Hynix 與三星電子各跌逾 4%，觸發全球記憶體晶片連鎖賣壓，Micron (MU) 單日重挫逾 10%。</li>
+      <li><strong>Bank of America 升息注意報告</strong>在盤中引發市場警覺，市場對聯準會 9 月升息的定價從 29% 急升至 <strong>68%</strong>，恐慌情緒擴大。</li>
+      <li>投資人開始質疑超大型科技商（hyperscalers）能否持續維持 AI 基礎建設支出規模，AI 投資回報可持續性受挑戰，拖累整個 AI 概念族群。</li>
+      <li>歐洲科技股早盤跌逾 <strong>-2.7%</strong>，進一步強化跨市場賣壓。</li>
+    </ul>
+
+    <h3>個股重大事件</h3>
+    <ul class="event-list">
+      <li><strong>Alphabet (GOOGL) 約 -5%</strong>：報導指兩名高知名度 AI 研究員跳槽競爭對手，市場憂慮 Google AI 人才流失與技術競爭力下滑。</li>
+      <li><strong>AMC Entertainment (AMC) -24%</strong>：宣布以配售方式籌資 2 億美元以減輕債務，股權稀釋衝擊股價。</li>
+      <li><strong>Definium Therapeutics +55.35%</strong>：以 LSD 為基礎的迷幻藥物治療抑鬱症第三期臨床試驗數據正面，強勁拉升。</li>
+    </ul>
+
+    <h3>防禦輪動</h3>
+    <ul class="event-list">
+      <li>資金從科技轉入防禦型板塊，Walmart (+2%+)、Johnson &amp; Johnson (+2%+)、Coca-Cola (+0.6%) 等消費必需品與醫療保健股逆勢走強。</li>
+    </ul>
+  </div>
+
+  <!-- INDIVIDUAL STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>股票代碼</th>
+          <th>公司</th>
+          <th>漲跌幅</th>
+          <th>主要原因</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AMC</strong></td>
+          <td>AMC Entertainment</td>
+          <td class="down">▼ -24%</td>
+          <td>宣布以配售方式籌資 2 億美元減債，股權稀釋</td>
+        </tr>
+        <tr>
+          <td><strong>MU</strong></td>
+          <td>Micron Technology</td>
+          <td class="down">▼ &gt;-10%</td>
+          <td>6/5 以來最慘單日；韓國晶片股連鎖賣壓</td>
+        </tr>
+        <tr>
+          <td><strong>SNDK</strong></td>
+          <td>SanDisk</td>
+          <td class="down">▼ -11%</td>
+          <td>全球記憶體晶片族群普跌</td>
+        </tr>
+        <tr>
+          <td><strong>MRVL</strong></td>
+          <td>Marvell Technology</td>
+          <td class="down">▼ -8%</td>
+          <td>AI/半導體族群集體殺跌</td>
+        </tr>
+        <tr>
+          <td><strong>GOOGL</strong></td>
+          <td>Alphabet</td>
+          <td class="down">▼ ~-5%</td>
+          <td>AI 研究員出走，市場憂慮競爭地位</td>
+        </tr>
+        <tr>
+          <td><strong>ORCL</strong></td>
+          <td>Oracle</td>
+          <td class="down">▼ ~-5%</td>
+          <td>科技板塊普跌波及</td>
+        </tr>
+        <tr>
+          <td><strong>NVDA</strong></td>
+          <td>Nvidia</td>
+          <td class="down">▼ -3.2%</td>
+          <td>收 $201.97；AI 基礎建設支出疑慮打壓</td>
+        </tr>
+        <tr>
+          <td><strong>DFIN</strong></td>
+          <td>Definium Therapeutics</td>
+          <td class="up">▲ +55.35%</td>
+          <td>LSD 基礎迷幻療法第三期臨床試驗數據亮眼</td>
+        </tr>
+        <tr>
+          <td><strong>WMT</strong></td>
+          <td>Walmart</td>
+          <td class="up">▲ &gt;+2%</td>
+          <td>避險輪動，消費必需品防禦買盤湧入</td>
+        </tr>
+        <tr>
+          <td><strong>JNJ</strong></td>
+          <td>Johnson &amp; Johnson</td>
+          <td class="up">▲ &gt;+2%</td>
+          <td>醫療保健板塊成避風港</td>
+        </tr>
+        <tr>
+          <td><strong>KO</strong></td>
+          <td>Coca-Cola</td>
+          <td class="up">▲ +0.6%</td>
+          <td>防禦性配置受青睞</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會動態（FOMC — 6 月 17 日決議，距本日 6 天）</h3>
+    <div class="macro-grid" style="margin-bottom:16px;">
+      <div class="macro-item">
+        <div class="label">基準利率區間</div>
+        <div class="value">3.50% – 3.75%</div>
+        <div class="detail">維持不變，投票 12-0 全票通過</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">點陣圖 — 2026 年末利率中位數</div>
+        <div class="value">3.8%</div>
+        <div class="detail">從「降息一次」轉為「零降息」，暗示年內可能升息</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">9 月升息市場定價（6/23）</div>
+        <div class="value">68%</div>
+        <div class="detail">前一週僅 29%，BoFA 報告後急速飆升</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Fed 主席</div>
+        <div class="value">Kevin Warsh</div>
+        <div class="detail">新任主席，首次 FOMC 會議，基調偏鷹</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">2026 年通膨預測（整體）</div>
+        <div class="value">3.6%</div>
+        <div class="detail">3 月預測 2.7%，大幅上修；主因伊朗衝突能源衝擊</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">2026 年通膨預測（核心）</div>
+        <div class="value">3.3%</div>
+        <div class="detail">3 月預測 2.7%，同步上修</div>
+      </div>
+    </div>
+
+    <h3>最新經濟數據</h3>
+    <table>
+      <thead>
+        <tr><th>指標</th><th>數值</th><th>說明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CPI（5 月，年增）</td><td class="down">+4.2%</td><td>4 月為 3.8%，持續走升；能源佔月增 60% 以上</td></tr>
+        <tr><td>CPI（5 月，月增）</td><td class="down">+0.5%</td><td>伊朗衝突推升油價，能源分項貢獻最大</td></tr>
+        <tr><td>ISM 製造業 PMI（5 月）</td><td class="up">54.0</td><td>2022 年 5 月以來最高，製造業擴張加速</td></tr>
+        <tr><td>ISM 服務業 PMI（5 月）</td><td class="up">54.5</td><td>穩健擴張，服務業需求持續強勁</td></tr>
+        <tr><td>Q1 2026 GDP 年增率</td><td>+1.6%</td><td>受貿易摩擦拖累，增速不及預期</td></tr>
+        <tr><td>10 年期美債殖利率</td><td class="down">4.5%</td><td>近兩週高點，反映市場鷹派預期升溫</td></tr>
+        <tr><td>美元指數（DXY）</td><td>101.38 (+0.36%)</td><td>高通膨 + 鷹派 Fed 支撐美元走強</td></tr>
+        <tr><td>WTI 原油（6/23）</td><td class="up">$73.15/桶 (-0.95%)</td><td>美伊簽署 MOU，荷姆茲海峽重開，油價回落</td></tr>
+      </tbody>
+    </table>
+
+    <h3>地緣政治</h3>
+    <ul class="event-list" style="margin-top:10px;">
+      <li><strong>伊朗衝突與荷姆茲海峽</strong>：衝突停火已逾五週，但荷姆茲海峽航運量仍僅衝突前 5%。<strong>6/23 當日，美伊雙方正式簽署備忘錄（MOU），宣布結束海上封鎖並重開荷姆茲海峽</strong>，油價應聲下跌，WTI 回落至 $73.15（月內從 6/9 高點 $95.06 大幅回落）。</li>
+      <li><strong>中美貿易戰</strong>：6/11 達成貿易協議，維持 30% 關稅（20% 芬太尼關稅 + 10% 互惠關稅），暫停更高關稅 60 天，市場持續觀察後續落實情況。</li>
+      <li><strong>新 Section 301 關稅（6/2 提案）</strong>：針對 60 個國家強迫勞動貿易行為，市場仍在評估影響範圍。</li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會升息風險</strong>：9 月升息概率從 29% 飆升至 68%，若通膨數據持續超預期，緊縮政策可能打壓風險資產。</li>
+      <li><strong>AI 投資回報疑慮</strong>：市場開始質疑超大型科技商 AI 基礎建設支出的可持續性與投資回報，AI 泡沫風險升溫。</li>
+      <li><strong>AI 人才競爭加劇</strong>：Alphabet 高知名度 AI 研究員流失，顯示大型科技公司面臨 AI 人才爭奪戰白熱化，技術護城河受威脅。</li>
+      <li><strong>全球晶片供應鏈</strong>：韓國晶片股暴跌觸發連鎖反應，全球半導體供應鏈景氣與庫存調整風險持續。</li>
+      <li><strong>高通膨持續性</strong>：CPI 年增率 4.2%，遠高於 Fed 2% 目標，伊朗局勢若再度惡化，能源通膨可能反彈。</li>
+      <li><strong>荷姆茲海峽重開後市場適應</strong>：儘管 MOU 已簽署，航運量恢復需時，且地緣政治局勢仍存在反覆風險。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-23-2026" target="_blank">TheStreet — 市場今日總覽（2026-06-23）</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-jun-23-132400480.html" target="_blank">Yahoo Finance — 股市新聞 2026-06-23</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/23/stock-market-live-june-23-2026-sp-500-spy-futures-under-significant-pressure/" target="_blank">24/7 Wall St. — 盤中直播：S&amp;P 500 承壓</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/22/stock-market-today-live-updates.html" target="_blank">CNBC — 市場即時更新</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/06/23/wall-street-stocks-dow-nasdaq/f9b76c76-6f40-11f1-8730-e7fd0e2a6404_story.html" target="_blank">Washington Post — 收盤彙整</a></li>
+      <li><a href="https://ts2.tech/en/stock-market-today-23-06-2026/" target="_blank">TS2 Tech — 市場今日彙整（2026-06-23）</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-23/us-stock-futures-today-amd-coreweave-micron-nvidia-tesla" target="_blank">Bloomberg — 美股盤前動態（AMD、Micron、Nvidia、Tesla）</a></li>
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve — FOMC 聲明 2026-06-17</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm" target="_blank">Federal Reserve — 點陣圖 2026-06-17</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html" target="_blank">CNBC — Fed 利率決定 2026-06-17</a></li>
+      <li><a href="https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html" target="_blank">US Bank — Warsh 時代 Fed 政策分析</a></li>
+      <li><a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank">BLS — CPI 5 月報告</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-may-2026-ism-manufacturing-pmi-report-302786165.html" target="_blank">ISM — 製造業 PMI 5 月（54.0）</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/services-pmi-at-54-5-may-2026-ism-services-pmi-report-302789082.html" target="_blank">ISM — 服務業 PMI 5 月（54.5）</a></li>
+      <li><a href="https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/" target="_blank">Tax Foundation — 關稅追蹤器</a></li>
+      <li><a href="https://fortune.com/article/price-of-oil-06-22-2026/" target="_blank">Fortune — 原油價格（2026-06-22）</a></li>
+      <li><a href="https://www.advisorperspectives.com/dshort/updates/2026/06/18/feds-interest-rate-decision-june-17-2026" target="_blank">Advisor Perspectives — Fed 決策深度分析</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 資料經 5 個獨立代理人交叉確認 | 僅供參考，非投資建議<br>
+    生成時間：2026-06-24 UTC
+  </footer>
+
+</div>
+</body>
+</html>
