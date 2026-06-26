@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-25</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 960px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 700; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 700; }
+    .down { color: #dc2626; font-weight: 700; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-list li .tag { font-weight: 700; color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 11px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.55; }
+    .macro-list { list-style: none; }
+    .macro-list li { padding: 11px 14px; margin-bottom: 8px; background: #f0fdf4; border-left: 3px solid #22c55e; border-radius: 4px; font-size: 0.9rem; line-height: 1.55; }
+    .info-list { list-style: none; }
+    .info-list li { padding: 11px 14px; margin-bottom: 8px; background: #f8faff; border-left: 3px solid #60a5fa; border-radius: 4px; font-size: 0.9rem; line-height: 1.55; }
+    .highlight-box { background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%); border: 1px solid #fbbf24; border-radius: 8px; padding: 15px 18px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.65; }
+    .highlight-box .label { font-weight: 700; color: #92400e; margin-bottom: 5px; font-size: 0.95rem; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; margin-right: 4px; vertical-align: middle; }
+    .tag-up { background: #dcfce7; color: #15803d; }
+    .tag-down { background: #fee2e2; color: #b91c1c; }
+    .tag-flat { background: #f3f4f6; color: #4b5563; }
+    .tag-gold { background: #fef3c7; color: #92400e; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    .mini-stat { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e7ff; }
+    .mini-stat .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .mini-stat .val { font-size: 1.25rem; font-weight: 700; }
+    .mini-stat .chg { font-size: 0.85rem; margin-top: 3px; }
+    @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 5px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; line-height: 1.45; }
+    .sources li:last-child { border-bottom: none; }
+    .note { font-size: 0.8rem; color: #9ca3af; margin-top: 10px; line-height: 1.4; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; line-height: 1.7; }
+    .divider { border: none; border-top: 1px solid #f0f0f0; margin: 16px 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🗞 美股日報 — 2026 年 06 月 25 日（週四）</h1>
+    <div class="subtitle">由 Claude Routine 自動搜索、交叉驗證後生成 &nbsp;|&nbsp; 資料來源：AP 通訊、CNBC、Bloomberg、TheStreet、SEC EDGAR 等多方交叉比對</div>
+  </header>
+
+  <!-- ========== 指數總覽 ========== -->
+  <div class="card">
+    <h2>📊 主要指數收盤（2026-06-25）</h2>
+
+    <div class="two-col" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="mini-stat">
+        <div class="label">道瓊工業 DJIA</div>
+        <div class="val">51,920.62</div>
+        <div class="chg up">▲ +71.72 pts &nbsp;(+0.14%)</div>
+      </div>
+      <div class="mini-stat">
+        <div class="label">標普 500 S&P 500</div>
+        <div class="val">7,357.49</div>
+        <div class="chg flat">▬ −0.73 pts &nbsp;(−0.01%)</div>
+      </div>
+      <div class="mini-stat">
+        <div class="label">那斯達克 Nasdaq</div>
+        <div class="val">25,358.60</div>
+        <div class="chg down">▼ −118 pts &nbsp;(−0.46%)</div>
+      </div>
+      <div class="mini-stat">
+        <div class="label">羅素 2000 Russell</div>
+        <div class="val">3,007.86</div>
+        <div class="chg up">▲ +21.23 pts &nbsp;(+0.71%)</div>
+      </div>
+    </div>
+
+    <table style="margin-top:16px;">
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌（點）</th>
+          <th>漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 DJIA</strong></td>
+          <td>51,920.62</td>
+          <td class="up">+71.72</td>
+          <td class="up">+0.14%</td>
+          <td><span class="tag tag-gold">盤中創歷史新高</span> 工業/金融驅動</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500</strong></td>
+          <td>7,357.49</td>
+          <td class="flat">−0.73</td>
+          <td class="flat">−0.01%</td>
+          <td>科技拖累抵消其他板塊漲幅</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合</strong></td>
+          <td>25,358.60</td>
+          <td class="down">−118</td>
+          <td class="down">−0.46%</td>
+          <td><span class="tag tag-down">連跌第四日</span> 自2026年2月以來最長</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000</strong></td>
+          <td>3,007.86</td>
+          <td class="up">+21.23</td>
+          <td class="up">+0.71%</td>
+          <td>6/22 首破 3,000 里程碑後續守穩</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">* 道瓊指數來源：AP 通訊電訊稿，多家媒體（ABC News、Washington Post、WDRB）交叉驗證。羅素 2000 來自 AP 電訊稿（IBTimes AU 版本）。</p>
+  </div>
+
+  <!-- ========== 核心主題 ========== -->
+  <div class="card">
+    <h2>⚡ 當日核心主題：「RAMageddon」撕裂科技板塊</h2>
+    <div class="highlight-box">
+      <div class="label">分裂市場：記憶體晶片商暴漲 vs 消費科技大廠受壓</div>
+      AI 數據中心帶動 DRAM/HBM 需求爆炸式成長，每季記憶體成本漲幅逾 50%，市場稱之為「RAMageddon」。
+      此現象同時造就兩種截然不同的命運：Micron 技術（供給側）因此創下歷史財報高峰，飆漲逾 16%；
+      Apple 與 Microsoft（需求側）被迫宣布漲價，股價分別重挫 6% 與 3%。
+      道瓊受工業、金融、醫療保健板塊支撐，盤中更創歷史新高；那斯達克卻因 Mag 7 拖累連跌四日。
+    </div>
+  </div>
+
+  <!-- ========== 重大事件 ========== -->
+  <div class="card">
+    <h2>🔥 重大市場事件</h2>
+
+    <h3>📈 強勢個股與催化劑</h3>
+    <table>
+      <thead>
+        <tr><th style="width:18%">股票</th><th style="width:10%">漲跌</th><th>催化劑</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Micron (MU)</strong><br><small>記憶體</small></td>
+          <td class="up">+16% 以上<br><small>(盤中創 52 週高點 $1,255)</small></td>
+          <td>
+            <strong>Q3 FY2026 歷史財報：</strong>調整後 EPS $25.11（預期 $20.28，超出 24%）；
+            營收 $41.46B（預期 $35.25B，年增 346% 由 $9.3B 躍升）；毛利率 84.6%（歷史新高）。
+            <strong>Q4 指引：</strong>營收 ~$49–51B（vs 市場預期 $43.2B）。
+            2026 年全年 HBM 訂單已全數售罄；共簽 16 份長期數據中心合約；剩餘履約義務達 $100B。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Qualcomm (QCOM)</strong><br><small>半導體</small></td>
+          <td class="up">+5%（盤中一度 +11% 至 $219）</td>
+          <td>
+            舉辦 <strong>投資人日</strong>：宣佈 Meta 為其 Dragonfly C1000 晶片首家數據中心 CPU 客戶；
+            2029 年非手機業務收入目標翻倍至 $40B（前次 $22B），數據中心目標逾 $15B；
+            以 ~$40 億美元收購 AI 軟體新創 <strong>Modular</strong>（瞄準 NVIDIA CUDA 生態）；
+            Microsoft 也確認為晶片架構客戶（HBC 晶片，2027 年中交付）。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Caterpillar (CAT)</strong><br><small>工業機械</small></td>
+          <td class="up">+4.42%～+6%</td>
+          <td>道瓊指數當日最大貢獻股；AI 基礎設施建設（數據中心電力/冷卻設備）需求強勁，疊加農業設備關稅由 25% 下調至 15% 的利多，並宣布股息上調 12 美分。</td>
+        </tr>
+        <tr>
+          <td><strong>Honeywell (HON)</strong><br><small>工業</small></td>
+          <td class="up">+2.69%</td>
+          <td>道瓊第二大正向貢獻；工業板塊輪動受惠。</td>
+        </tr>
+        <tr>
+          <td><strong>UnitedHealth (UNH)</strong><br><small>醫療保健</small></td>
+          <td class="up">+2.65%</td>
+          <td>醫療保健板塊整體強勢，資金自科技板塊輪動流入。</td>
+        </tr>
+        <tr>
+          <td><strong>銀行股（JPM、GS、MS）</strong><br><small>金融</small></td>
+          <td class="up">普遍上漲</td>
+          <td>
+            <strong>Fed 年度壓力測試全數通過：</strong>32 家受測銀行均過關（情境：商業地產 -39%、房市 -30%、失業率峰值 10%，合計承受損失逾 $7,080 億仍告安全）。
+            隨即宣布股息：JPMorgan +10% 至 $1.65/股 + $500 億回購計畫；Goldman Sachs +11% 至 $5/股；Morgan Stanley +15%。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Bio-Techne (BTEC)</strong><br><small>生命科學</small></td>
+          <td class="up">+19.47%</td>
+          <td>Merck 宣布以 $113 億美元收購 Bio-Techne。</td>
+        </tr>
+        <tr>
+          <td><strong>SK Hynix（港/韓）</strong><br><small>記憶體</small></td>
+          <td class="up">+11%</td>
+          <td>宣布赴美發行 ADR 上市計畫，目標籌資最多 $294 億美元，預計 7 月 10 日開始 ADR 交易。</td>
+        </tr>
+        <tr>
+          <td><strong>Wendy's (WEN)</strong><br><small>餐飲</small></td>
+          <td class="up">前日 +25.7%<br><small>（當日回吐部分）</small></td>
+          <td>WallStreetBets「救溫蒂」迷因操盤延燒；新任 CFO Steve Cirulis（曾推動 Potbelly 漲幅逾 500%）上任激勵；約 34% 空頭倉位，第二高零售淨買入紀錄。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="divider">
+
+    <h3>📉 弱勢個股與催化劑</h3>
+    <table>
+      <thead>
+        <tr><th style="width:18%">股票</th><th style="width:10%">漲跌</th><th>催化劑</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Apple (AAPL)</strong><br><small>消費電子</small></td>
+          <td class="down">−6.12%<br><small>(~$265B 市值蒸發)</small></td>
+          <td>
+            宣布 Mac 與 iPad <strong>漲價最高達 $300</strong>（MacBook Air +$200、MacBook Pro 14" +$300、iMac +$200、iPad Pro 11" +$200），
+            明確說明原因為 AI 數據中心需求造成記憶體成本暴升。
+            iPhone、Apple Watch、AirPods <em>暫不</em>漲價，但暗示後續可能跟進。此為自 2025 年 4 月 10 日以來最大單日跌幅。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Microsoft (MSFT)</strong><br><small>科技平台</small></td>
+          <td class="down">−3.23%～−3.46%</td>
+          <td>宣布 8 月 1 日起 Xbox 主機漲價（512GB 版 +$100、1TB 版 +$150），坦承記憶體成本上漲 2.5 倍以上，預計至 2027 年底前再翻倍。Stifel 下調目標價至 $400（前 $415）。</td>
+        </tr>
+        <tr>
+          <td><strong>Nvidia (NVDA)</strong></td>
+          <td class="down">−2.08%</td>
+          <td>科技板塊整體輪動賣壓；散戶傳出賣出 NVDA、MSFT、Oracle 以換購 SpaceX 股票。</td>
+        </tr>
+        <tr>
+          <td><strong>Alphabet (GOOGL)</strong></td>
+          <td class="down">−0.46%（盤中一度 −6%）</td>
+          <td>超大型科技股 AI 資本支出焦慮（2026 年超大型科技股合計資本支出逾 $4,520 億）；DJIA 成分調整（6/29 正式取代 VZ）。</td>
+        </tr>
+        <tr>
+          <td><strong>Amazon (AMZN)</strong></td>
+          <td class="down">−2.24%～−4%</td>
+          <td>超大型科技資本支出焦慮，無個股特定催化劑。</td>
+        </tr>
+        <tr>
+          <td><strong>Oracle (ORCL)</strong></td>
+          <td class="down">−2.36%</td>
+          <td>同上輪動賣壓。</td>
+        </tr>
+        <tr>
+          <td><strong>Trip.com (TCOM)</strong></td>
+          <td class="down">−12%～−13.5%</td>
+          <td>Q1 2026 非 GAAP EPS CNY 5.73（低於市場預期 CNY 6.07）；Q2 營收指引 +3%～+8% 年增，遠遜於市場預期 CNY 171.9B；另受中國市場監管調查拖累。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="divider">
+
+    <h3>🤝 重要 M&A 與企業事件</h3>
+    <ul class="info-list">
+      <li><strong>onsemi (ON) 宣布以全股方式、約 $70 億美元收購 Synaptics (SYNA)（6 月 25 日公告）：</strong>固定換股比例 1.350 股 ON 換 1 股 SYNA；Synaptics 股東將持有合併後公司約 12%；預計年化協同效益 ~$2 億；預計 2027 年中完成（待監管批准）。</li>
+      <li><strong>H.B. Fuller (FUL) 宣布以 £7.15 億（約 $9.43 億）收購 Advanced Medical Solutions（英國）：</strong>以現金溢價收購；拓展醫療黏合劑市場（TAM 擴大至 $950 億）；FUL 股價因槓桿疑慮跌約 8%。</li>
+      <li><strong>道瓊成分股調整：</strong>S&amp;P Dow Jones Indices 宣布 Alphabet（GOOG）將於 <strong>6 月 29 日</strong> 市場開盤前正式取代 Verizon（VZ）。</li>
+    </ul>
+  </div>
+
+  <!-- ========== 板塊表現 ========== -->
+  <div class="card">
+    <h2>🏭 板塊漲跌一覽</h2>
+    <table>
+      <thead>
+        <tr><th>板塊</th><th>漲跌幅</th><th>說明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>工業</strong></td><td class="up">+3.00%</td><td>Caterpillar +4.42%、Honeywell +2.69% 引領；AI 基礎設施建設需求驅動</td></tr>
+        <tr><td><strong>醫療保健</strong></td><td class="up">+2.18%</td><td>UnitedHealth +2.65%；Merck 收購 Bio-Techne（+2.5%）</td></tr>
+        <tr><td><strong>金融</strong></td><td class="up">+1.71%</td><td>Fed 壓力測試全數通過；銀行普遍上調股息與宣布回購</td></tr>
+        <tr><td><strong>消費循環</strong></td><td class="up">+1.02%</td><td>輪動資金流入；Wendy's 迷因行情延燒</td></tr>
+        <tr><td><strong>公用事業</strong></td><td class="up">+0.72%</td><td>防禦型板塊小幅受惠</td></tr>
+        <tr><td><strong>房地產</strong></td><td class="up">+0.31%</td><td>利率預期暫告穩定</td></tr>
+        <tr><td><strong>必需消費</strong></td><td class="up">+0.55%</td><td>防禦型資金流入</td></tr>
+        <tr><td><strong>能源</strong></td><td class="down">−2.17%</td><td>布蘭特原油 $73.74 下滑；霍爾木茲海峽逐步恢復運輸平靜降低供應風險溢價</td></tr>
+        <tr><td><strong>基礎材料</strong></td><td class="down">−1.61%</td><td>大宗商品回落拖累</td></tr>
+        <tr><td><strong>通訊服務</strong></td><td class="down">−0.61%</td><td>Alphabet 賣壓</td></tr>
+        <tr><td><strong>科技</strong></td><td class="down">−0.68%</td><td>Apple −6%、Microsoft −3.5% 壓制；Micron 漲幅未能完全抵消</td></tr>
+      </tbody>
+    </table>
+    <p class="note">市場廣度偏負：49.6% 個股下跌 vs 46.2% 上漲（全市場）。</p>
+  </div>
+
+  <!-- ========== 宏觀因素 ========== -->
+  <div class="card">
+    <h2>🌐 宏觀因素</h2>
+
+    <h3>📊 6 月 25 日重要數據發布</h3>
+    <ul class="macro-list">
+      <li>
+        <strong>PCE 通膨（5 月 2026）——聯準會最偏好指標：</strong>
+        整體 PCE 年增 <strong>+4.1%</strong>（2023 年 4 月以來最高；月增 +0.4%）；
+        核心 PCE 年增 <strong>+3.3%～+3.4%</strong>（月增 +0.3%），遠高於 Fed 2% 目標。
+        芝加哥聯準會主席 Goolsbee 在 CNBC 表示核心通膨「過高」且「走勢向錯誤方向」，強化市場對鷹派前景的疑慮。
+      </li>
+      <li>
+        <strong>Q1 2026 GDP 第三次修正（BEA，6 月 25 日發布）：</strong>
+        年化成長率 <strong>+2.1%</strong>，較第二次修正（+1.6%）<em>上修 0.5 個百分點</em>（主因進口下修）。
+        前一季（Q4 2025）成長僅 +0.5%，顯示經濟有所回穩，但仍受高通膨制約。
+      </li>
+      <li>
+        <strong>S&amp;P Global 6 月份閃估 PMI：</strong>
+        綜合 PMI <strong>52.2</strong>（5 月 51.5），持續擴張；
+        製造業 PMI <strong>55.7</strong>（2022 年 5 月以來最高，勝預期 54.8）；
+        服務業 PMI <strong>51.3</strong>（勝預期 51.0）。
+        警示：製造業就業人數降速為 2020 年 5 月以來最快，需求持續性存疑。
+      </li>
+    </ul>
+
+    <h3>🏦 聯準會動態（最新：6 月 17 日 FOMC）</h3>
+    <ul class="macro-list">
+      <li><strong>利率維持 3.50%～3.75%</strong>（第四度連續暫停），12 比 0 票通過。這是新任主席 <strong>Kevin Warsh</strong> 就任後首次主持的 FOMC 會議。</li>
+      <li><strong>鷹派轉向：</strong>點陣圖顯示 <strong>18 名官員中有 9 人</strong>預測 2026 年底前需再升息一次；6 人預測需升息兩次以上。年底利率中位數預測由 3.4% 上修至 <strong>3.8%</strong>，2026 年降息展望全數退場。</li>
+      <li><strong>通膨預測大幅上修：</strong>整體通膨預測至 3.6%（前 2.7%）、核心至 3.3%（前 2.7%）；GDP 預測下修至 +2.2%（前 2.4%）。</li>
+      <li>17 名官員認為通膨風險「偏向上行」；Warsh 本人未提交點陣圖。</li>
+    </ul>
+
+    <h3>🛢️ 地緣政治：伊朗與霍爾木茲海峽</h3>
+    <ul class="macro-list">
+      <li>
+        <strong>2026 年伊朗危機脈絡：</strong>2 月 28 日美以空襲後，伊朗伊斯蘭革命衛隊（IRGC）封閉霍爾木茲海峽，全球每日原油供應缺口達 <strong>1,400 萬桶</strong>，IEA 稱為「石油市場歷史最大供應中斷」。
+        4 月 7 日停火後，海峽逐步恢復通航，但伊朗於 <strong>6 月 1 日暫停核談判</strong>，地緣風險溢價回升。
+      </li>
+      <li>
+        <strong>6 月 25 日新衝突：</strong>IRGC 在阿曼 Dahit 東南方 攻擊新加坡籍貨輪「Ever Lovely」，國際海事組織（IMO）凍結約 1.1 萬名船員的撤離計畫。
+        布蘭特原油尾盤 $73.74（−4.33%），WTI $70.34（−3.92%）；油價一度因事件短暫反彈。
+      </li>
+      <li><strong>JPMorgan 將布蘭特原油年底目標下調至 $64/桶</strong>，認為霍爾木茲逐步恢復通航已部分抵消供應衝擊。</li>
+    </ul>
+
+    <h3>📦 貿易政策背景</h3>
+    <ul class="macro-list">
+      <li>
+        <strong>美中貿易：</strong>6 月 11 日 Trump 宣布美中貿易協議：維持 20% 芬太尼相關關稅 + 10% 對等關稅（合計 30%），高關稅暫緩 60 天。
+        6 月 2 日 USTR 公開徵詢美中貿易委員會設立方案。中國有效關稅率約 24%（為主要貿易夥伴最高）。
+      </li>
+      <li>
+        <strong>藥品關稅警示：</strong>製藥品關稅可能於 2026 年中至下半年升至 <strong>200%</strong>；農業設備關稅由 25% 降至 15%；工業/移動設備新納入 15% 關稅。
+      </li>
+      <li><strong>最高法院裁定（2026 年 2 月）：</strong>以 6 比 3 裁決總統不得援引 IEEPA 單方面課徵關稅，政策執行路徑存在法律不確定性。</li>
+    </ul>
+
+    <h3>🤖 AI 產業動態</h3>
+    <ul class="macro-list">
+      <li><strong>Anthropic 指控阿里巴巴蒸餾攻擊：</strong>Anthropic 致函美國官員，指阿里巴巴進行「迄今最大規模已知蒸餾攻擊」，試圖非法提取 Claude 模型核心能力。阿里巴巴港股跌逾 4%，加劇中美 AI 競爭張力。</li>
+      <li><strong>OpenAI IPO 傳延至 2027 年：</strong>《紐約時報》報導 OpenAI 傾向推遲上市至 2027 年。</li>
+      <li>2026 年四大超大型科技股（Google、Microsoft、Amazon、Meta）合計資本支出逾 <strong>$4,520 億</strong>，引發市場對回報時程與AI 泡沫化的疑慮，6 月中旬全球一度出現科技股同步賣壓（那斯達克最大跌 2.2%、韓國 KOSPI 一度重挫 10%）。</li>
+    </ul>
+  </div>
+
+  <!-- ========== 風險因素 ========== -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>通膨高居不下、Fed 升息風險回歸：</strong>PCE 4.1%、CPI 4.2% 遠超 Fed 2% 目標；點陣圖 9 名官員預測 2026 年升息。若 6 月通膨數據（7 月 14 日發布）再度偏高，7 月或 9 月 FOMC 升息機率將大幅升溫，壓制成長股估值。</li>
+      <li><strong>那斯達克連跌動能延伸：</strong>本週連跌四日為今年最長跌勢；若蘋果後續下修需求展望或漲價引發需求萎縮，科技板塊修正恐進一步深化。</li>
+      <li><strong>中東地緣政治再度升溫：</strong>伊朗 6 月 1 日暫停核談判，6 月 25 日再對外籍油輪動武，霍爾木茲海峽恢復通航的進程充滿變數；若全面再度封鎖，油價急漲可能推升通膨、加速 Fed 鷹派轉向。</li>
+      <li><strong>記憶體漲價二次傳遞效應：</strong>Apple、Microsoft 消費電子產品漲價已是開端；若 Samsung、SK Hynix 亦調漲，漲價效應可能擴散至更多消費電子品類，衝擊終端需求與企業毛利。</li>
+      <li><strong>超大型科技 AI 資本支出回報疑慮：</strong>年化超過 $4,520 億的 AI 資本支出能否在 2026–2028 年間產生對應的盈利貢獻，市場尚存疑。若回報時程繼續遞延，可能觸發更大規模的 Mag 7 拋售。</li>
+      <li><strong>Alphabet 納入道瓊被動調倉效應：</strong>6 月 29 日 GOOG 正式替換 VZ，追蹤道瓊指數的被動基金被迫大規模調整倉位，短期供需失衡可能放大 VZ 賣壓與 GOOG 買盤波動。</li>
+      <li><strong>Q2 財報季壓力測試（7 月啟動）：</strong>主要科技大廠 Q2 財報預計 7 月中下旬起陸續發布，市場對 AI 資本支出指引與消費電子需求前景極為敏感，任何低於預期的數字都可能引發大幅震盪。</li>
+    </ul>
+  </div>
+
+  <!-- ========== 資料來源 ========== -->
+  <div class="card">
+    <h2>📎 資料來源（已交叉驗證）</h2>
+    <ul class="sources">
+      <li><a href="https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-thursday-6252026-134220440" target="_blank">ABC News（AP 通訊電訊稿）— How major US stock indexes fared Thursday 6/25/2026</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/06/25/wall-street-stocks-dow-nasdaq/90909508-70d3-11f1-8730-e7fd0e2a6404_story.html" target="_blank">Washington Post（AP 電訊）— How major US stock indexes fared Thursday 6/25/2026</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-25-2026" target="_blank">TheStreet — Stock Market Today (June 25, 2026): Mag7 falls after Apple, Microsoft announce price increases</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/24/stock-market-today-live-updates.html" target="_blank">CNBC — Nasdaq falls for a fourth day as Apple drop overshadows Micron's booming earnings: Live updates</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/25/stock-market-today-live-updates.html" target="_blank">CNBC — S&P 500 futures little changed as index heads for losing week: Live updates (June 25)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/25/5-things-to-know-before-the-stock-market-opens.html" target="_blank">CNBC — 5 things to know before the stock market opens, June 25</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/25/apple-macbook-ipad-price-hike-memory.html" target="_blank">CNBC — Apple stock sinks 6% after price hikes on MacBook and iPad</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/25/microsoft-lifts-price-of-xbox-consoles-due-to-soaring-component-costs.html" target="_blank">CNBC — Microsoft lifts price of Xbox consoles due to soaring component costs</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-24/us-stock-futures-surge-on-micron-s-strong-forecast-markets-wrap" target="_blank">Bloomberg — Stock Market Today: Dow, S&P Live Updates for June 25</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-25/apple-raises-mac-and-ipad-prices-to-counter-memory-shortages" target="_blank">Bloomberg — Apple Hikes Mac, iPad Prices on Memory Shortage; Shares Fall</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-25/us-stock-futures-today-ars-bio-techne-micron-qualcomm-wendy-s" target="_blank">Bloomberg — US Premarket Movers for June 25, 2026</a></li>
+      <li><a href="https://www.cnn.com/2026/06/25/tech/apple-hikes-the-prices-of-macbooks-and-ipads-because-of-memory-chip-shortage" target="_blank">CNN Business — Apple hikes MacBook and iPad prices due to memory chip shortage</a></li>
+      <li><a href="https://www.nbcnews.com/business/consumer/apple-stock-ipad-macbook-price-hikes-rcna351786" target="_blank">NBC News — Apple shares plunge after it hikes prices on iPads and laptops</a></li>
+      <li><a href="https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/" target="_blank">CBS News — Apple and Microsoft are raising prices as chip costs soar</a></li>
+      <li><a href="https://www.investing.com/news/transcripts/earnings-call-transcript-micron-tops-q3-2026-estimates-shares-jump-146-93CH-4759504" target="_blank">Investing.com — Micron tops Q3 2026 estimates, shares jump 14.6%</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000013/a2026q3ex991-pressrelease.htm" target="_blank">SEC EDGAR — Micron Technology Form 8-K FY2026 Q3 Press Release</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/25/qualcomm-jumps-11-then-pulls-back-amid-meta-platforms-data-center-deal-and-wave-of-analyst-target-hikes/" target="_blank">24/7 Wall St. — Qualcomm jumps 11% then pulls back amid Meta data center deal</a></li>
+      <li><a href="https://seekingalpha.com/news/4606942-qualcomm-goes-all-in-on-data-center-infrastructure-microsoft-meta-revealed-as-early-customers" target="_blank">Seeking Alpha — Qualcomm goes all-in on data center: Microsoft, Meta revealed as customers</a></li>
+      <li><a href="https://cryptobriefing.com/fed-stress-test-2026-banks-pass-dividends-buybacks/" target="_blank">CryptoBriefing — Fed Stress Tests 2026: Banks Pass, Dividends &amp; Buybacks Incoming</a></li>
+      <li><a href="https://www.gurufocus.com/news/8930765/major-us-banks-increase-dividends-after-fed-stress-tests" target="_blank">GuruFocus — Major US Banks Increase Dividends after Fed Stress Tests</a></li>
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve — FOMC Statement June 17, 2026</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm" target="_blank">Federal Reserve — FOMC June 2026 Projections (Dot Plot)</a></li>
+      <li><a href="https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-1st" target="_blank">BEA — GDP Third Estimate Q1 2026 (+2.1% revised)</a></li>
+      <li><a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank">BLS — Consumer Price Index Summary May 2026 (CPI +4.2% YoY)</a></li>
+      <li><a href="https://www.cbsnews.com/news/pce-report-report-may-2026-federal-reserve-inflation/" target="_blank">CBS News — Fed's preferred inflation gauge at fastest pace in 3 years (PCE)</a></li>
+      <li><a href="https://www.pmi.spglobal.com/Public/Home/PressRelease/0f8762edff954b619d90d12531497919" target="_blank">S&P Global — US Composite PMI June 2026 Flash: 52.2</a></li>
+      <li><a href="https://investinglive.com/commodities/icymi-iran-fires-on-cargo-ship-in-hormuz-strait-un-halts-evacuation-as-oil-price-bounce-20260625/" target="_blank">InvestingLive — Iran fires on cargo ship in Hormuz strait, UN halts evacuation</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" target="_blank">Wikipedia — 2026 Strait of Hormuz Crisis</a></li>
+      <li><a href="https://www.gurufocus.com/news/8932422/onsemi-on-to-acquire-synaptics-in-7-billion-allstock-deal" target="_blank">GuruFocus — onsemi (ON) to Acquire Synaptics in $7 Billion All-Stock Deal</a></li>
+      <li><a href="https://www.zacks.com/stock/news/2942728/stock-market-news-for-jun-25-2026" target="_blank">Zacks — Stock Market News for Jun 25, 2026</a></li>
+      <li><a href="https://ts2.tech/en/stock-market-today-25-06-2026/" target="_blank">ts2.tech — US Stock Market Today: Live Updates 25.06.2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-dow-and-sp-500-rise-nasdaq-slips-as-pce-comes-in-hot-big-tech-falters-232650645.html" target="_blank">Yahoo Finance — Dow rises, S&P 500 and Nasdaq slip as PCE comes in hot, big tech falters</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-22-2026" target="_blank">TheStreet — Russell 2000 closes at 3,000 for the first time ever (June 22, 2026)</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude Routine 自動研究、多方交叉驗證後生成 &nbsp;|&nbsp; 資料截至 2026-06-25 美東時間收盤
+    <br>僅供資訊參考，不構成任何投資建議；過去表現不代表未來獲利。
+  </footer>
+
+</div>
+</body>
+</html>
