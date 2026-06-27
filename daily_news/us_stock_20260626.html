@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-26</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8ecf8; padding-bottom: 10px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-block { padding: 14px 16px; margin-bottom: 14px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-block .event-title { font-weight: 700; color: #0f3460; margin-bottom: 6px; font-size: 0.95rem; }
+    .macro-table th { background: #f5f0ff; color: #5b21b6; border-bottom-color: #d8b4fe; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .movers-up td:first-child { color: #16a34a; font-weight: 700; }
+    .movers-down td:first-child { color: #dc2626; font-weight: 700; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; margin-left: 6px; }
+    .badge-up { background: #dcfce7; color: #15803d; }
+    .badge-down { background: #fee2e2; color: #b91c1c; }
+    .confidence { font-size: 0.8rem; color: #9ca3af; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding-left: 16px; position: relative; }
+    .sources li::before { content: '›'; position: absolute; left: 0; color: #0f3460; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .summary-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+    .summary-chip { flex: 1; min-width: 160px; background: #f0f4ff; border-radius: 8px; padding: 12px 16px; text-align: center; }
+    .summary-chip .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .summary-chip .val { font-size: 1.15rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026 年 6 月 26 日（週五） | 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- QUICK SUMMARY -->
+  <div class="summary-bar">
+    <div class="summary-chip">
+      <div class="label">道瓊 DJIA</div>
+      <div class="val down">51,876 <span style="font-size:0.85rem">▼0.09%</span></div>
+    </div>
+    <div class="summary-chip">
+      <div class="label">標普 S&P 500</div>
+      <div class="val down">7,354 <span style="font-size:0.85rem">▼0.05%</span></div>
+    </div>
+    <div class="summary-chip">
+      <div class="label">那斯達克 Nasdaq</div>
+      <div class="val down">25,298 <span style="font-size:0.85rem">▼0.24%</span></div>
+    </div>
+    <div class="summary-chip">
+      <div class="label">羅素 2000</div>
+      <div class="val up">3,010 <span style="font-size:0.85rem">▲0.07%</span></div>
+    </div>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌幅（日）</th>
+          <th>本週表現</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 DJIA</strong></td>
+          <td>51,876.11</td>
+          <td class="down">▼ −0.09%</td>
+          <td class="up">▲ +0.6%</td>
+          <td>本週唯一正報酬主要指數</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 S&P 500</strong></td>
+          <td>7,354.02</td>
+          <td class="down">▼ −0.05%</td>
+          <td class="down">▼ −2.0%</td>
+          <td>66.2% 成分股當日收漲，資金輪動明顯</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克 Nasdaq</strong></td>
+          <td>25,297.62</td>
+          <td class="down">▼ −0.24%</td>
+          <td class="down">▼ −4.6%</td>
+          <td>連跌五個交易日；科技股持續受壓</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 Russell 2000</strong></td>
+          <td>3,010.08</td>
+          <td class="up">▲ +0.07%</td>
+          <td class="neutral">持平</td>
+          <td>小型股相對抗跌，Russell 年度指數重組生效</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <div class="event-block">
+      <div class="event-title">① OpenAI IPO 可能延至 2027 年 → SoftBank 崩跌 −12%</div>
+      《紐約時報》報導，OpenAI 銀行顧問向執行長 Sam Altman 提出兩個方案：A）盡快上市但估值低於 $1 兆；B）等至 2027 年目標維持 $1 兆估值。消息傳出後，SoftBank（SFTBY）東京盤一度重挫 14%，最終收跌逾 12%，單日蒸發市值約 <strong>380 億美元</strong>。SoftBank 持有 OpenAI 公允價值達 796 億美元（成本 346 億），並背負 400 億美元橋接貸款（2027/3 到期），財務壓力引發投資人恐慌。參照 SpaceX 6/12 以 $1.77 兆估值上市後股價已從高點回落逾 32%，市場對超高估值 IPO 信心明顯動搖。
+    </div>
+
+    <div class="event-block">
+      <div class="event-title">② Apple 宣布 Mac / iPad 漲價逾 20%，AAPL 單日崩跌 −6.1%</div>
+      AI 資料中心擴張導致記憶體晶片（DRAM/HBM）需求暴增、供給吃緊，Apple 宣布旗下多款產品大幅調漲售價：
+      <ul style="margin: 8px 0 0 16px; font-size:0.88rem; line-height:1.8;">
+        <li>MacBook Air 基本款：$1,099 → <strong>$1,299</strong>（+18%）</li>
+        <li>MacBook Pro 基本款：$1,699 → <strong>$1,999</strong>（+18%）</li>
+        <li>iPad Air：$599 → <strong>$749</strong>（+25%）</li>
+        <li>iPad Pro：$999 → <strong>$1,199</strong>（+20%）</li>
+        <li>Mac Studio M3 Ultra：$3,999 → <strong>$5,299</strong>（+33%）</li>
+      </ul>
+      Apple 聲明：「我們從未見過元件價格上漲如此之快，已竭力保護消費者，但現在不得不調整售價。」微軟（MSFT）同步宣布 Xbox 主機漲價最多 $150。AAPL 收跌 <strong>−6.1%</strong>，為逾一年來最差單日表現。
+    </div>
+
+    <div class="event-block">
+      <div class="event-title">③ Moderna mRNA 流感疫苗獲 FDA 顧問委員會全票通過，MRNA 暴漲 +14.9%</div>
+      FDA 顧問委員會以<strong>全票</strong>通過背書 Moderna 的 mFlusiva mRNA 流感疫苗（適用 50 歲以上成人）。PDUFA 正式審查截止日訂於 8 月 5 日。同日 Moderna Science Day 亦展示腫瘤與自體免疫新管線，Jefferies 上調目標價至 $53。MRNA 單日急漲 <strong>+14.9%</strong>，成為 S&P 500 當日最大漲幅貢獻者。
+    </div>
+
+    <div class="event-block">
+      <div class="event-title">④ AbbVie 以 109 億美元收購 Apogee Therapeutics</div>
+      AbbVie 宣布以 <strong>109 億美元</strong>收購 Apogee Therapeutics（APGE），取得其免疫學管線（包括 atopic dermatitis 與 asthma 候選藥物）。APGE 股價當日暴漲 <strong>+46.7%</strong>，為整個生技板塊帶來正面情緒。
+    </div>
+
+    <div class="event-block">
+      <div class="event-title">⑤ FTSE Russell 年度指數成分股重組（Russell Reconstitution）</div>
+      6 月 26 日美股收盤後，FTSE Russell 實施 2026 年半年度指數調整。科技與工業板塊公司晉升最多（Russell 2000 → Russell 1000）。被動資金大規模重配推動盤尾結構性成交量，Russell 2000 為主要受益指數，收小幅上漲。
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會（Fed）動態</h3>
+    <p style="font-size:0.9rem; line-height:1.6; margin-bottom:12px;">
+      6 月 17 日 FOMC 維持聯邦基金利率目標區間於 <strong>3.50%–3.75%</strong>，並移除先前的降息展望。最新點陣圖中位數顯示 2026 年底利率升至 <strong>3.8%</strong>（3 月預測為 3.4%），暗示年內仍有升息可能；2026 年 PCE 通膨預測上調 0.9 個百分點至 <strong>3.6%</strong>；實質 GDP 下修 0.2 至 <strong>2.2%</strong>。偏鷹派立場持續壓制高估值成長股。
+    </p>
+
+    <h3>6/26 公布重要經濟數據：BEA 5 月個人收支報告</h3>
+    <table class="macro-table">
+      <thead>
+        <tr>
+          <th>指標</th>
+          <th>數值</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PCE 通膨（年率）</td>
+          <td class="down"><strong>4.1%</strong></td>
+          <td>2023 年 4 月以來最高</td>
+        </tr>
+        <tr>
+          <td>核心 PCE（不含食品＆能源）</td>
+          <td class="down"><strong>3.4%</strong></td>
+          <td>2023 年 10 月以來最高</td>
+        </tr>
+        <tr>
+          <td>個人所得月增</td>
+          <td class="up"><strong>+0.7%</strong></td>
+          <td>新增 $181.6 億，優於預期</td>
+        </tr>
+        <tr>
+          <td>個人消費支出月增</td>
+          <td><strong>+0.7%</strong></td>
+          <td>新增 $156.1 億，高於通膨顯示消費韌性</td>
+        </tr>
+        <tr>
+          <td>個人儲蓄率</td>
+          <td><strong>3.0%</strong></td>
+          <td>略升</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem; color:#6b7280; margin-top:10px;">PCE 持續升溫確認聯準會鷹派立場有其依據，但消費同步強勁使市場難以判斷下一步。</p>
+
+    <h3>地緣政治</h3>
+    <p style="font-size:0.9rem; line-height:1.6;">
+      中東緊張局勢升溫推升能源價格，增添通膨供給面壓力，並將長端公債殖利率推至近二十年高位。USMCA 協議六年定期審查增加北美貿易規則不確定性；出口管制持續擴散，半導體與電子供應鏈面臨額外變數。
+    </p>
+  </div>
+
+  <!-- MOVERS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+
+    <h3>當日主要上漲個股</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>個股</th>
+          <th>漲跌幅</th>
+          <th>原因</th>
+        </tr>
+      </thead>
+      <tbody class="movers-up">
+        <tr>
+          <td>Definium Therapeutics</td>
+          <td class="up">+55.4%</td>
+          <td>以 LSD 為基礎的憂鬱症藥物第三期臨床試驗正面數據</td>
+        </tr>
+        <tr>
+          <td>Apogee Therapeutics（APGE）</td>
+          <td class="up">+46.7%</td>
+          <td>AbbVie 宣布以 109 億美元收購</td>
+        </tr>
+        <tr>
+          <td>Moderna（MRNA）</td>
+          <td class="up">+14.9%</td>
+          <td>FDA 顧問委員會全票通過 mRNA 流感疫苗 mFlusiva；Science Day 新管線展示；Jefferies 上調目標價至 $53</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top:18px;">當日主要下跌個股</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>個股</th>
+          <th>漲跌幅</th>
+          <th>原因</th>
+        </tr>
+      </thead>
+      <tbody class="movers-down">
+        <tr>
+          <td>Apple（AAPL）</td>
+          <td class="down">−6.1%</td>
+          <td>Mac / iPad 系列大幅漲價逾 20%，引發消費需求擔憂</td>
+        </tr>
+        <tr>
+          <td>Alamos Gold（AGI）</td>
+          <td class="down">−12.3%</td>
+          <td>公司特定利空</td>
+        </tr>
+        <tr>
+          <td>SoftBank（SFTBY）</td>
+          <td class="down">−12.0%</td>
+          <td>OpenAI IPO 可能延至 2027 年，衝擊 796 億美元 OpenAI 持倉估值</td>
+        </tr>
+        <tr>
+          <td>AngloGold Ashanti（AU）</td>
+          <td class="down">−6.5%</td>
+          <td>黃金股震盪</td>
+        </tr>
+        <tr>
+          <td>Marvell Technology（MRVL）</td>
+          <td class="down">−5.0%</td>
+          <td>AI 晶片過熱擔憂，整體半導體估值修正</td>
+        </tr>
+        <tr>
+          <td>Micron（MU）</td>
+          <td class="down">−5.0%+</td>
+          <td>週四盤後財報後大漲，週五因科技賣壓回落；全週劇烈震盪</td>
+        </tr>
+        <tr>
+          <td>AMD</td>
+          <td class="down">−2.6%</td>
+          <td>AI 晶片估值修正持續</td>
+        </tr>
+        <tr>
+          <td>Arm Holdings（ARM）</td>
+          <td class="down">−4.0%</td>
+          <td>半導體整體賣壓</td>
+        </tr>
+        <tr>
+          <td>Intel（INTC）</td>
+          <td class="down">−3.0%</td>
+          <td>半導體整體賣壓</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top:18px;">板塊輪動觀察</h3>
+    <p style="font-size:0.9rem; line-height:1.6;">
+      科技/半導體板塊全週持續受壓，Nasdaq 週跌 −4.6%。資金明顯轉入防禦板塊——道瓊（金融、消費必需、工業權重較高）為本週唯一正報酬主要指數（+0.6%）。生技板塊受 Moderna 領漲及多起收購消息激活，情緒轉正。S&P 500 當日有 66.2% 成分股上漲，顯示賣壓集中於大型科技股而非全面性下跌。
+    </p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>AI 晶片估值修正持續：</strong>Nasdaq 連跌五日，半導體股（AMD、ARM、INTC、MRVL）全面受壓，AI 資本支出過熱疑慮尚未消散。</li>
+      <li><strong>PCE 通膨升至 4.1%，聯準會鷹派壓力加劇：</strong>聯準會點陣圖暗示 2026 年底利率達 3.8%，高利率長期維持壓制成長股估值倍數。</li>
+      <li><strong>Apple 漲價引發硬體需求收縮疑慮：</strong>消費電子全面漲價是否壓制換機需求，將是下季財報關鍵觀察點。</li>
+      <li><strong>OpenAI / SoftBank 財務槓桿風險：</strong>SoftBank 400 億美元橋接貸款 2027 年 3 月到期，OpenAI IPO 若延後將使其再融資壓力加劇。</li>
+      <li><strong>中東地緣政治推升能源通膨：</strong>供給面衝擊疊加強勁消費支出，通膨二次上行（sticky inflation）風險尚未排除。</li>
+      <li><strong>USMCA 貿易規則不確定性：</strong>北美供應鏈重組成本可能轉嫁至消費者，加劇通膨壓力。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-26-2026" target="_blank">TheStreet — Stock Market Today: Dow Jones, S&P 500, Nasdaq Updates June 26, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/25/stock-market-today-live-updates.html" target="_blank">CNBC — Nasdaq posts fifth losing session Friday: Live updates</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/26/global-tech-stocks-ai-infrastructure-costs-selloff-softbank-apple.html" target="_blank">CNBC — Nvidia, Alphabet sit out megacap tech bounce as chip stocks sink</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/26/micron-stock-earnings-tech-selloff-ai.html" target="_blank">CNBC — Micron sinks 6%, wrapping a wild week</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html" target="_blank">CNBC — Fed holds rates steady June 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/25/pce-inflation-report-may-2026-.html" target="_blank">CNBC — PCE inflation report May 2026</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/261992650-openai-ipo-delayed-2027-softbank-ai-bet-valuation-test-stock-price-plummets-12-tradingkey" target="_blank">TradingKey — OpenAI IPO delayed to 2027, SoftBank drops 12%</a></li>
+      <li><a href="https://qz.com/softbank-stock-openai-ipo-delay-2027-062626" target="_blank">Quartz — SoftBank stock falls on possible OpenAI IPO delay</a></li>
+      <li><a href="https://seekingalpha.com/news/4607637-softbank-shares-plunge-13-as-openai-reportedly-weighs-ipo-delay-to-2027" target="_blank">Seeking Alpha — SoftBank plunges 13% on OpenAI IPO delay</a></li>
+      <li><a href="https://www.techtimes.com/articles/319145/20260626/openai-ipo-delay-sends-softbank-down-38-billion-altman-refuses-any-cut-1-trillion-target.htm" target="_blank">TechTimes — OpenAI IPO Delay Sends SoftBank Down $38 Billion</a></li>
+      <li><a href="https://www.aljazeera.com/economy/2026/6/26/apple-microsoft-hike-prices-over-surging-chip-costs" target="_blank">Al Jazeera — Apple, Microsoft hike prices over surging chip costs</a></li>
+      <li><a href="https://www.cbsnews.com/news/apple-price-hikes-macbook-ipad-2026/" target="_blank">CBS News — Apple and Microsoft raising prices as chip costs soar</a></li>
+      <li><a href="https://www.axios.com/2026/06/26/apple-microsoft-prices-ai" target="_blank">Axios — The AI price shock is here</a></li>
+      <li><a href="https://www.macrumors.com/2026/06/25/apple-just-increased-prices/" target="_blank">MacRumors — Apple Just Increased Prices on MacBooks, iPads, and More</a></li>
+      <li><a href="https://247wallst.com/investing/2026/06/26/moderna-is-up-13-today-is-it-outperforming-other-vaccine-stocks-like-merck-and-pfizer/" target="_blank">247 Wall St — Moderna Is Up 14.9% Today</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/moderna-14-today-outperforming-other-160113892.html" target="_blank">Yahoo Finance — Moderna stock news MRNA June 26</a></li>
+      <li><a href="https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026" target="_blank">BEA — Personal Income and Outlays, May 2026（官方數據）</a></li>
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve — June 17, 2026 FOMC Statement（官方聲明）</a></li>
+      <li><a href="https://www.lseg.com/en/insights/ftse-russell/russell-reconstitution-june-2026-larger-leaders-stronger-small-caps" target="_blank">LSEG — Russell Reconstitution June 2026</a></li>
+      <li><a href="https://www.stocktitan.net/news/2026-06-26/" target="_blank">StockTitan — Stock Market News June 26, 2026</a></li>
+      <li><a href="https://intellectia.ai/blog/semiconductor-stocks-selloff-june-2026" target="_blank">Intellectia AI — Semiconductor Stocks Selloff June 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料截至 2026-06-26 收盤 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
