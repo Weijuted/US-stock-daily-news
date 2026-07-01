@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-06-30</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .badge-row { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; padding: 4px 14px; font-size: 0.8rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 3px solid #3b82f6; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 14px 16px; margin-bottom: 10px; background: #f8faff; border-left: 4px solid #3b82f6; border-radius: 6px; font-size: 0.9rem; line-height: 1.65; }
+    .event-list li .event-title { font-weight: 700; color: #0f3460; margin-bottom: 5px; font-size: 0.95rem; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .sector-item { padding: 9px 14px; background: #f8faff; border-radius: 6px; font-size: 0.87rem; display: flex; justify-content: space-between; align-items: center; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 11px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.55; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+    .macro-item { background: #f0f4ff; border-radius: 8px; padding: 13px 15px; }
+    .macro-item .label { font-size: 0.77rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .macro-item .value { font-size: 0.92rem; font-weight: 600; color: #1a1a2e; line-height: 1.45; }
+    .highlight-box { background: linear-gradient(135deg, #eff6ff, #dbeafe); border: 1px solid #bfdbfe; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; }
+    .hl-title { font-weight: 700; color: #1e40af; margin-bottom: 5px; font-size: 0.9rem; }
+    .hl-body { font-size: 0.88rem; color: #1e3a8a; line-height: 1.65; }
+    .stock-row { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px solid #eef0f5; font-size: 0.9rem; }
+    .stock-row:last-child { border-bottom: none; }
+    .ticker { font-weight: 700; font-size: 0.88rem; background: #f0f4ff; color: #0f3460; padding: 2px 8px; border-radius: 4px; min-width: 52px; text-align: center; }
+    .stock-desc { flex: 1; color: #374151; line-height: 1.45; }
+    .stock-chg { font-weight: 700; min-width: 65px; text-align: right; }
+    .manda-item { padding: 12px 16px; margin-bottom: 10px; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 6px; font-size: 0.9rem; line-height: 1.6; }
+    .manda-item .deal-title { font-weight: 700; color: #166534; margin-bottom: 4px; }
+    .econ-table td:first-child { font-weight: 600; color: #374151; width: 42%; }
+    .sources { font-size: 0.82rem; color: #6b7280; padding-left: 0; }
+    .sources li { list-style: none; padding: 5px 0 5px 18px; border-bottom: 1px solid #f0f0f0; position: relative; }
+    .sources li:last-child { border-bottom: none; }
+    .sources li::before { content: "›"; position: absolute; left: 4px; color: #9ca3af; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      .sector-grid, .macro-grid { grid-template-columns: 1fr; }
+      header { padding: 22px 18px; }
+      .card { padding: 16px 14px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-06-30（週二）| 由 Claude Routine 自動生成</div>
+    <div class="badge-row">
+      <span class="badge">Q2 2026 季末結算日</span>
+      <span class="badge">道瓊史上首次收上 52,000</span>
+      <span class="badge">史上最佳單季之一</span>
+    </div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>單日漲跌（點）</th>
+          <th>單日漲跌幅</th>
+          <th>年初至今</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業（DJIA）</strong></td>
+          <td><strong>52,319.20</strong></td>
+          <td class="up">+136 點</td>
+          <td class="up">+0.26%</td>
+          <td class="up">+8.85%</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td><strong>7,499.36</strong></td>
+          <td class="up">+58.93 點</td>
+          <td class="up">+0.79%</td>
+          <td class="up">+9.5%（H1）</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td><strong>26,213.72</strong></td>
+          <td class="up">+393.58 點</td>
+          <td class="up">+1.52%</td>
+          <td class="up">+12.8%（H1）</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 100</strong></td>
+          <td>—</td>
+          <td class="up">—</td>
+          <td class="up">+1.70%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td><strong>~3,024</strong></td>
+          <td class="up">—</td>
+          <td class="up">~+0.46%</td>
+          <td class="up">+21%+（H1，1991年以來最佳）</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem;color:#9ca3af;margin-top:10px;">※ 道瓊史上首度收盤站上 52,000 點，創第二個連續歷史新高；6月為 S&amp;P 500 兩個月來首個下跌月份，但 Q2 整季仍為 2020 年以來最佳。</p>
+  </div>
+
+  <!-- Q2 HIGHLIGHT -->
+  <div class="card">
+    <h2>Q2 2026 季度回顧</h2>
+    <div class="highlight-box">
+      <div class="hl-title">S&amp;P 500 Q2 2026：+約 13.5–14%（2020 年以來最佳季度）</div>
+      <div class="hl-body">AI 資本支出熱潮全面驅動科技估值，科技板塊 Q2 大漲 28%、Nasdaq Q2 累漲約 20%。半導體指數創下史上最佳單季，SK Hynix Q2 累漲約 240%，三星 6/30 單日飆漲超 5%、整季漲幅突破 100%。亞太 MSCI Asia Pacific 指數 Q2 更創 17 年來最強季度。</div>
+    </div>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">道瓊 Q2 漲幅</div>
+        <div class="value up">+12.9%（H1 +8.85%）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">S&amp;P 500 Q2 漲幅</div>
+        <div class="value up">+14.8%（H1 +9.5%）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Nasdaq Q2 漲幅</div>
+        <div class="value up">+21.4%（H1 +12.8%）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Russell 2000 H1 漲幅</div>
+        <div class="value up">+21%+（1991年以來最佳上半年）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">費城半導體指數（SOX）Q2</div>
+        <div class="value up">+74%（史上最佳單季）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Q2 每股盈餘預期成長</div>
+        <div class="value up">+21.2% YoY；營收 +10.8%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <div class="event-title">AI／半導體強勢反彈 — Nvidia +2.6%、AMAT +3.5%、AMD +3.4%</div>
+        科技與 AI 相關股在連跌五日後全線回升，市場重拾 AI 基礎建設長線信心。AI 工作負載預計到 2026 年底將消耗全球高階 DRAM 約 70%；Applied Materials 當週亦推出新 AI 晶片系統（DRAM 外延工具、CMP/沉積工具、電子束檢測），全年股價已累漲約 144%。
+      </li>
+      <li>
+        <div class="event-title">美伊停火 — 荷姆茲海峽恢復通航</div>
+        美國與伊朗達成協議，商業船隻恢復通過荷姆茲海峽，能源供應鏈風險顯著降低。布蘭特原油 Q2 邁向疫情以來最大單季跌幅；通訊服務板塊 ETF 單日飆升 3.1%、非必需消費品板塊 +2.7%。
+      </li>
+      <li>
+        <div class="event-title">Alphabet 加入道瓊 — 取代 Verizon</div>
+        Alphabet（GOOGL）自 6/29 起正式取代 Verizon 成為道瓊成份股。GOOGL 股價約 $350，影響力約是 Verizon（$46）的 7 倍；GOOGL 當週漲約 4.8%，直接推升道瓊點數。Verizon 同時承認 Q2 國際有線業務非現金損失達 7–8 億美元，股價跌 5.3%。
+      </li>
+      <li>
+        <div class="event-title">季末機構大規模再平衡 — 估計賣股達 1,650 億美元</div>
+        JPMorgan 策略師警告，退休基金、主權財富基金、共同基金與對沖基金同步季末調倉，潛在賣股規模高達約 <strong>1,650 億美元</strong>，造成尾盤流動性衝擊與異常波動。
+      </li>
+      <li>
+        <div class="event-title">AeroVironment（AVAV）單日暴漲 +20.6%</div>
+        Q4 FY2026 財報大幅超預期：營收年增逾一倍至 6.42 億美元，資金積壓訂單增加 65% 至 12 億美元。國防支出熱潮外溢效應帶動 Kratos Defense +4%、Unusual Machines +12%。
+      </li>
+      <li>
+        <div class="event-title">Nike Q4 FY2026 財報大幅超預期（盤後）</div>
+        EPS $0.20 vs. 預期 $0.13（大幅超預期）；營收 $10.97B vs. 預期 $10.86B。毛利率年增 8.9%，其中包含最高法院裁定川普時代關稅無效後的約 9.86 億美元退稅。儘管如此，市場因 FY2027 Q1–Q2 指引「持平」及大中華區業績下滑 12% 而小幅賣壓。
+      </li>
+    </ul>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <p style="font-size:0.85rem;color:#6b7280;margin-bottom:12px;font-weight:600;">▲ 主要上漲個股</p>
+    <div class="stock-row">
+      <span class="ticker">AVAV</span>
+      <span class="stock-desc">AeroVironment — Q4 FY26 財報大超預期；營收翻倍、訂單積壓 +65%</span>
+      <span class="stock-chg up">+20.6%</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">GOOGL</span>
+      <span class="stock-desc">Alphabet — 正式加入道瓊，AI 基礎設施信心持續；週漲幅</span>
+      <span class="stock-chg up">+4.8%（週）</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">AMAT</span>
+      <span class="stock-desc">Applied Materials — AI晶片製程設備需求強勁，全年累漲逾144%</span>
+      <span class="stock-chg up">+3.54%</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">AMD</span>
+      <span class="stock-desc">AMD — 隨半導體板塊整體反彈</span>
+      <span class="stock-chg up">+3.4%</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">NVDA</span>
+      <span class="stock-desc">Nvidia — AI算力需求旺盛，S&amp;P 500 當日最大貢獻股</span>
+      <span class="stock-chg up">+2.6%</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">CMCSA</span>
+      <span class="stock-desc">Comcast — 宣布分拆 NBCUniversal 及 Sky 為獨立上市公司</span>
+      <span class="stock-chg up">+9%（前日）</span>
+    </div>
+    <p style="font-size:0.85rem;color:#6b7280;margin:14px 0 12px;font-weight:600;">▼ 主要下跌個股</p>
+    <div class="stock-row">
+      <span class="ticker">CNXC</span>
+      <span class="stock-desc">Concentrix — Q2 營收略低於預期，全年 EPS 指引下修約 9%；客戶削減外包支出</span>
+      <span class="stock-chg down">-22~25%</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">VZ</span>
+      <span class="stock-desc">Verizon — 移出道瓊；國際有線業務列為待售，Q2 非現金損失達 7–8 億美元</span>
+      <span class="stock-chg down">-5.3%</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">DLR</span>
+      <span class="stock-desc">Digital Realty Trust — 長端利率上升壓制 REIT 估值</span>
+      <span class="stock-chg down">-4.2%</span>
+    </div>
+    <div class="stock-row">
+      <span class="ticker">NSC</span>
+      <span class="stock-desc">Norfolk Southern — 工業類股承壓，長債殖利率走高</span>
+      <span class="stock-chg down">-8.4%</span>
+    </div>
+  </div>
+
+  <!-- M&A -->
+  <div class="card">
+    <h2>重大企業併購與公告</h2>
+    <div class="manda-item">
+      <div class="deal-title">Rocket Lab（RKLB）以 80 億美元收購 Iridium Communications（IRDM）</div>
+      每股 $54（$27 現金 + 股票對換）。合併後將整合 Rocket Lab 的火箭發射與衛星製造能力，以及 Iridium 全球 66 顆低軌衛星網路與頻譜資產，直接挑戰 SpaceX 星鏈霸主地位。預計 2027 年中完成。
+    </div>
+    <div class="manda-item">
+      <div class="deal-title">Patrick Industries（PATK）+ LCI Industries（LCII）81 億美元全股票合併</div>
+      兩大 RV 零件龍頭合併，預期年度協同效益逾 1.5 億美元。合併後 PATK 股東持股約 52%、LCII 約 48%。
+    </div>
+    <div class="manda-item">
+      <div class="deal-title">Comcast 分拆 NBCUniversal 及 Sky 為獨立上市公司</div>
+      免稅分拆，Comcast 保留 Xfinity 及 Comcast Business；NBCUniversal 涵蓋 NBC 電視、Sky 歐洲及環球主題公園。兩家新公司合計 6,500 萬訂戶，約 1 年後完成上市。Comcast 前日因此飆漲 9%。
+    </div>
+    <div class="manda-item">
+      <div class="deal-title">Verizon + BT Group 國際有線業務合資公司</div>
+      雙方將各自的國際有線連線業務注入新合資公司；Verizon 另支付 6.25 億美元現金予 BT。
+    </div>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊表現</h2>
+    <p style="font-size:0.85rem;color:#374151;font-weight:600;margin-bottom:10px;">6/30 當日 SPDR 板塊 ETF 漲跌</p>
+    <div class="sector-grid">
+      <div class="sector-item"><span>通訊服務（XLC）</span><span class="up">+3.1%</span></div>
+      <div class="sector-item"><span>非必需消費品（XLY）</span><span class="up">+2.7%</span></div>
+      <div class="sector-item"><span>資訊科技（XLK）</span><span class="up">+1.7%</span></div>
+      <div class="sector-item"><span>醫療保健（XLV）</span><span class="up">小漲</span></div>
+      <div class="sector-item"><span>能源（XLE）</span><span class="down">油價走低，落後</span></div>
+      <div class="sector-item"><span>公用事業（XLU）</span><span class="down">長債利率壓制</span></div>
+    </div>
+    <p style="font-size:0.85rem;color:#374151;font-weight:600;margin:14px 0 10px;">6月整月板塊漲跌</p>
+    <div class="sector-grid">
+      <div class="sector-item"><span>資訊科技（唯一兩位數）</span><span class="up">+19.76%</span></div>
+      <div class="sector-item"><span>醫療保健</span><span class="up">+2.38%</span></div>
+      <div class="sector-item"><span>非必需消費品</span><span class="up">+2.13%</span></div>
+      <div class="sector-item"><span>通訊服務</span><span class="down">-0.70%</span></div>
+      <div class="sector-item"><span>金融</span><span class="down">-1.06%</span></div>
+      <div class="sector-item"><span>工業</span><span class="down">-0.83%</span></div>
+      <div class="sector-item"><span>公用事業</span><span class="down">-5.19%</span></div>
+      <div class="sector-item"><span>能源</span><span class="down">-5.63%</span></div>
+    </div>
+  </div>
+
+  <!-- MACRO & ECONOMIC DATA -->
+  <div class="card">
+    <h2>總體經濟數據與聯準會動向</h2>
+    <p style="font-size:0.85rem;color:#374151;font-weight:600;margin-bottom:10px;">6/30 當日公布數據</p>
+    <table class="econ-table" style="margin-bottom:16px;">
+      <thead><tr><th>指標</th><th>實際值</th><th>市場預期</th><th>解讀</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>JOLTS 職缺數（5月）</td>
+          <td class="up"><strong>759.4 萬</strong></td>
+          <td>728.0 萬</td>
+          <td class="up">2年新高；大幅超預期，就業市場仍強健</td>
+        </tr>
+        <tr>
+          <td>消費者信心指數（6月）</td>
+          <td class="neutral"><strong>91.2</strong></td>
+          <td>~92</td>
+          <td class="neutral">略低於預期；「難找工作」比例升至 5.5 年高點</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;color:#374151;font-weight:600;margin-bottom:10px;">本週前後關鍵數據（6/25 公布）</p>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">PCE 通膨（5月）</div>
+        <div class="value down">整體 +4.1% YoY（↑ vs 4月 3.8%）<br>核心 +3.4% YoY</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Q1 2026 GDP（最終修訂）</div>
+        <div class="value up">+2.1%（年化，較初估上修 0.5 個百分點）</div>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:#374151;font-weight:600;margin-bottom:10px;">聯準會現況</p>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯邦基金利率目標區間</div>
+        <div class="value">3.50%–3.75%（6/17 例會維持不變）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">點陣圖暗示</div>
+        <div class="value down">2026 年底中位利率升至 3.8%，市場預期 10 月可能再升 1 碼</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Fed 主席 Warsh</div>
+        <div class="value">7/1 出席歐央行 Sintra 論壇，市場密切關注政策信號</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">下一重要數據</div>
+        <div class="value">7/2（週四）非農就業報告——獨立紀念日前公布，料引發市場劇烈反應</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GEOPOLITICAL / TRADE -->
+  <div class="card">
+    <h2>地緣政治與貿易動態</h2>
+    <ul class="event-list">
+      <li>
+        <div class="event-title">美伊和談進展 — 中東能源風險大幅降溫</div>
+        US-伊朗停火協議及荷姆茲海峽重開，化解自 2025 年以來最嚴重的能源危機，布蘭特原油 Q2 跌幅奔向疫情以來最大。
+      </li>
+      <li>
+        <div class="event-title">美加貿易談判重啟</div>
+        加拿大取消針對美國科技公司的數位服務稅（DST）後，美方宣布恢復雙邊貿易談判，北美緊張局勢稍緩。
+      </li>
+      <li>
+        <div class="event-title">銅關稅決策迫在眉睫</div>
+        美商務部銅進口關稅調查報告送交白宮，Trump 可能隨時宣布新關稅，銅交易商高度警戒。
+      </li>
+      <li>
+        <div class="event-title">歐盟對中鋼鐵關稅升級：25% → 50%（7/1 起生效）</div>
+        中歐貿易部長 6/30 在布魯塞爾會談，惟協議仍待達成。
+      </li>
+      <li>
+        <div class="event-title">美中貿易戰持續衝擊</div>
+        美對華關稅令每戶美國家庭年均承擔約 $1,500 額外支出；USTR 另就強制勞動議題提議對 60 個經濟體（含加拿大）徵收 10–12.5% 新關稅。
+      </li>
+      <li>
+        <div class="event-title">長端國債殖利率：近 20 年高點</div>
+        通膨黏性、財政赤字擴張與央行政策重估三重壓力，推升先進國家長端殖利率至近 20 年高點，持續壓制成長股估值。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MEDICARE GLP1 HIGHLIGHT -->
+  <div class="card">
+    <h2>其他重要事件</h2>
+    <ul class="event-list">
+      <li>
+        <div class="event-title">Medicare 7/1 起首度涵蓋 GLP-1 肥胖用藥（LLY、NVO 重大利多）</div>
+        美國 Medicare Part D 將自 7/1 起以 $50/月共付額補貼 GLP-1 肥胖藥物，涵蓋禮來（Zepbound）及諾和諾德（Wegovy、Foundayo），為 18 個月試行計畫，預計大幅擴大用藥滲透率。
+      </li>
+      <li>
+        <div class="event-title">中國 PMI 回升至 50.3（AI/電腦拉動）</div>
+        6 月中國製造業 PMI 由 50.0 升至 50.3，主要受 AI 晶片與電腦需求強勁帶動，顯示科技供應鏈訂單持續回暖。
+      </li>
+      <li>
+        <div class="event-title">Google DeepMind、OpenAI AI 人才流動加劇</div>
+        諾貝爾獎得主 John Jumper（AlphaFold 主要貢獻者）離開 Google DeepMind 轉投 Anthropic；Noam Shazeer（Google Brain 共同創辦人）於 6/18 加入 OpenAI，AI 人才戰再度升溫。
+      </li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>AI 估值過熱：</strong>科技股 6 月曾連跌五日，估值已大幅拉伸（科技板塊 Q2 漲 28%），若 Q2 財報季 AI 盈利未能兌現，估值修正風險不容忽視。</li>
+      <li><strong>通膨高於預期（PCE 4.1%）：</strong>5 月 PCE 年增率升至 4.1%，高於 Fed 目標 2%，點陣圖暗示年內可能再升 1 碼（10 月），壓縮降息空間。</li>
+      <li><strong>長端利率高企（近 20 年高點）：</strong>對成長股、REIT 及消費信用構成持續壓力，亦可能抑制企業資本支出。</li>
+      <li><strong>季末再平衡衝擊：</strong>JPMorgan 估算高達 1,650 億美元機構賣股壓力，可能在短期引發異常波動與流動性風險。</li>
+      <li><strong>非農就業（7/2）數據不確定性：</strong>若就業數據意外強勁，將壓低降息預期，可能引發債市與股市同步修正。</li>
+      <li><strong>地緣政治反覆：</strong>美伊停火脆弱，一旦荷姆茲海峽再度封鎖，油價和通膨將再度飆升；中東局勢仍是最大尾部風險。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-30-2026" target="_blank">TheStreet — Stock Market Today (June 30, 2026): U.S. indexes wrap best quarter since 2020</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Stocks Open Flat to End Best Quarter in Years</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-jun-30-133900372.html" target="_blank">Yahoo Finance — Stock Market News for Jun 30, 2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/investors-could-sell-165bn-123854574.html" target="_blank">Yahoo Finance — Investors could sell $165bn amid June quarter-end rebalancing: JPMorgan</a></li>
+      <li><a href="https://www.bnnbloomberg.ca/markets/2026/06/30/us-stocks-are-drifting-to-the-close-of-a-weak-june/" target="_blank">BNN Bloomberg — Wall Street drifts toward the finish of a tough June</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/06/30/wall-street-stocks-dow-nasdaq/52951156-74c1-11f1-b665-5f8be87f3787_story.html" target="_blank">Washington Post — How major US stock indexes fared Tuesday 6/30/2026</a></li>
+      <li><a href="https://www.home.saxo/content/articles/macro/market-quick-take---30-june-2026-30062026" target="_blank">Saxo Bank — Market Quick Take, 30 June 2026</a></li>
+      <li><a href="https://www.tickmill.com/blog/daily-market-outlook-june-30-2026" target="_blank">Tickmill — Daily Market Outlook, June 30, 2026</a></li>
+      <li><a href="https://www.cnbc.com/video/2026/06/30/the-pre-market-rundown-june-30-2026.html" target="_blank">CNBC — The Pre-Market Rundown: June 30, 2026</a></li>
+      <li><a href="https://www.cnbc.com/video/2026/06/30/tuesday-june-30-2026-cramer.html" target="_blank">CNBC — Cramer says to own this memory stock (June 30, 2026)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/30/nike-nke-q4-2026-earnings.html" target="_blank">CNBC — Nike (NKE) Q4 2026 Earnings</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/29/comcast-announces-it-will-spin-off-media-and-tech-wings-into-separate-public-companies.html" target="_blank">CNBC — Comcast Jumps 9% on NBCUniversal Spinoff</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/23/alphabet-verizon-dow-djia.html" target="_blank">CNBC — Alphabet Joins Dow Jones Industrial Average</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/30/medicare-obesity-drug-glp-1-coverage-starting-july-1.html" target="_blank">CNBC — Medicare GLP-1 Obesity Drug Coverage Starting July 1</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html" target="_blank">CNBC — Fed Holds Rates Steady at June 2026 Meeting</a></li>
+      <li><a href="https://www.bls.gov/news.release/jolts.htm" target="_blank">BLS — JOLTS May 2026 Job Openings News Release</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/us-consumer-confidence-inched-up-in-june-302814510.html" target="_blank">PR Newswire — Consumer Confidence June 2026 (Conference Board)</a></li>
+      <li><a href="https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026" target="_blank">BEA — Personal Income &amp; Outlays May 2026 (PCE)</a></li>
+      <li><a href="https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-1st" target="_blank">BEA — Q1 2026 GDP Third Estimate</a></li>
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve — FOMC Statement June 17, 2026</a></li>
+      <li><a href="https://www.gurufocus.com/news/8938906/aerovironment-avav-sees-impressive-206-surge-in-stock-price" target="_blank">GuruFocus — AeroVironment (AVAV) +20.6% Surge</a></li>
+      <li><a href="https://www.chartmill.com/news/CNXC/Chartmill-50420-Concentrix-NASDAQCNXC-Plunges-25-After-Q2-Earnings-Miss-and-Weak-Guidance" target="_blank">ChartMill — Concentrix (CNXC) Plunges 25% After Earnings Miss</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/rocket-lab-to-acquire-iridium-in-historic-deal-creating-a-fully-vertically-integrated-space-powerhouse-primed-for-growth-302813075.html" target="_blank">PR Newswire — Rocket Lab Acquires Iridium in $8B Deal</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-30/winnebago-suppliers-patrick-industries-lci-agree-to-merger" target="_blank">Bloomberg — Patrick Industries + LCI Industries $8.1B Merger</a></li>
+      <li><a href="https://www.bloomberg.com/news/newsletters/2026-06-30/copper-traders-gear-up-for-another-round-of-tariff-turmoil" target="_blank">Bloomberg — Copper Traders Gear Up for Another Round of Tariff Turmoil</a></li>
+      <li><a href="https://advocacy.calchamber.com/2026/06/29/trade-update-june-30-2026/" target="_blank">California Chamber of Commerce — Trade Update, June 30, 2026</a></li>
+      <li><a href="https://www.earlymorningwithdave.com/p/best-quarter-for-s-and-p-500-in-six" target="_blank">Early Morning with Dave — Best Quarter for S&amp;P 500 in Six Years; Best for Asia-Pac in Seventeen Years</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/previewing-2026-q2-earnings-season-224600034.html" target="_blank">Yahoo Finance — Previewing the 2026 Q2 Earnings Season</a></li>
+      <li><a href="https://alexandriacapital.com/blogs/weekly-market-note/2026-mid-year-review-second-half-outlook" target="_blank">Alexandria Capital — 2026 Mid-Year Review &amp; Second-Half Outlook</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 多源搜索交叉驗證 | 數據以各來源所引述之最終收盤數值為準 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
