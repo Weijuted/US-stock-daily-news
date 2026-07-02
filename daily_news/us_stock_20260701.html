@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-01</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 4px solid #0f3460; padding-left: 10px; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #1e3a5f; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-top: 10px; }
+    .macro-table th { background: #f0f4ff; padding: 9px 12px; text-align: left; font-weight: 600; color: #0f3460; border-bottom: 2px solid #dce3f5; }
+    .macro-table td { padding: 9px 12px; border-bottom: 1px solid #eef0f5; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-hawk { background: #fee2e2; color: #b91c1c; }
+    .badge-miss { background: #fef3c7; color: #92400e; }
+    .badge-beat { background: #d1fae5; color: #065f46; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 7px; padding-left: 14px; position: relative; }
+    .sources li::before { content: "→"; position: absolute; left: 0; color: #9ca3af; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+    .sector-card { padding: 12px 16px; border-radius: 8px; font-size: 0.88rem; line-height: 1.5; }
+    .sector-up { background: #f0fdf4; border: 1px solid #86efac; }
+    .sector-down { background: #fef2f2; border: 1px solid #fca5a5; }
+    .sector-card .label { font-weight: 700; margin-bottom: 4px; font-size: 0.9rem; }
+    .geopolitics { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 12px 14px; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; margin-top: 10px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      header { padding: 20px; }
+      .card { padding: 18px; }
+      .sector-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026年7月1日（週三）Q3 2026 開盤首日 | 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤表現</h2>
+    <p style="font-size:0.85rem;color:#6b7280;margin-bottom:12px;">盤中曾廣泛走高，但午後半導體族群急跌拖累 Nasdaq 翻黑，道瓊與 S&amp;P 500 近平盤收跌。</p>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數</strong></td>
+          <td>52,305.24</td>
+          <td class="down">▼ -13.96</td>
+          <td class="down">-0.03%</td>
+          <td>盤中曾觸及 52,742 歷史高點</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,483.23</td>
+          <td class="down">▼ -16.46</td>
+          <td class="down">-0.22%</td>
+          <td>高點回落，科技股拖累</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>26,040.03</td>
+          <td class="down">▼ -173.08</td>
+          <td class="down">-0.66%</td>
+          <td>半導體急跌為主要拖累</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000（小型股）</strong></td>
+          <td>3,012.59</td>
+          <td class="down">▼ 微幅</td>
+          <td class="flat">勉強守住 3,000</td>
+          <td>指數重組後首日表現偏弱</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🏃 Nike（NKE）財報大幅超預期 +5.09%</strong><br>
+        Q4 每股盈餘超出分析師預估 59 美分，營收亦優於預期。股價收漲 5.09% 至 43.14 美元，成交量達三個月均量的 181%（約 7,450 萬股）。唯大中華區銷售額季度衰退 -12%，中國市場仍為隱憂。
+      </li>
+      <li>
+        <strong>🔴 半導體 / AI 板塊爆發大規模獲利了結</strong><br>
+        2026 上半年半導體 ETF（SMH、SOXX）累計漲幅達 70–100%，成為最擁擠交易。7月1日資金大舉撤出：Micron（MU）跌約 -6%（年初至今仍漲逾 260%）、AMD 與 Intel 同步下挫，半導體 ETF 跌逾 5%，為 Nasdaq 最大拖累。
+      </li>
+      <li>
+        <strong>🚜 Caterpillar（CAT）急跌近 -7%，拖累道瓊</strong><br>
+        AI 基礎建設受益股獲利回吐，盤中跌幅最大，導致道瓊從歷史高點大幅回落，最終收平附近。
+      </li>
+      <li>
+        <strong>📅 Q3 2026 首個交易日：延續前季紀錄後的慣性賣壓</strong><br>
+        Q2 2026 S&amp;P 500 與 Nasdaq 創下 2020 年以來最大季度漲幅；道瓊創 2022 年以來最大季度漲幅。季初「登高獲利賣出」的慣性在半導體族群中最為明顯。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>🏦 聯準會動態 — Fed 主席 Kevin Warsh 葡萄牙辛特拉 ECB 論壇演講</h3>
+    <ul class="event-list">
+      <li>
+        <span class="badge badge-hawk">偏鷹派</span>
+        明確表態「<strong>美國通膨仍過高（too high）</strong>」，強調「維護物價穩定是聯準會核心任務」。刻意迴避 7 月升 / 降息任何暗示，延續「不提供前瞻指引」策略，與 ECB 總裁拉加德立場呼應。美元因此獲得支撐，市場降息預期進一步降溫。
+      </li>
+    </ul>
+
+    <h3>📊 重要經濟數據（7月1日發布）</h3>
+    <table class="macro-table">
+      <thead>
+        <tr>
+          <th>數據</th>
+          <th>實際值</th>
+          <th>市場預期</th>
+          <th>解讀</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>ADP 6月民間就業</strong><span class="badge badge-miss">低於預期</span></td>
+          <td>+98,000 人</td>
+          <td>+110,000 人</td>
+          <td>就業降溫但非崩潰；非農前瞻值偏低</td>
+        </tr>
+        <tr>
+          <td><strong>JOLTS 5月職位空缺</strong><span class="badge badge-beat">優於預期</span></td>
+          <td>760 萬個</td>
+          <td>低於此</td>
+          <td>職缺/失業比率升至 1.03，職缺多於失業者</td>
+        </tr>
+        <tr>
+          <td><strong>ISM 製造業 PMI（6月）</strong><span class="badge badge-miss">低於預期</span></td>
+          <td>53.3</td>
+          <td>54.0</td>
+          <td>較 5月（54.0）放緩；47% 企業提及地緣政治風險</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.83rem;color:#6b7280;margin-top:8px;">⚠️ 6月非農就業報告（NFP）定於 7月2日（週四）公布，為下一大市場焦點。</p>
+
+    <h3>🌐 地緣政治：美伊衝突降溫，談判仍持續</h3>
+    <div class="geopolitics">
+      2026年2-6月：美國與以色列對伊朗發動空襲，伊朗封鎖荷姆茲海峽，油價飆至 120 美元/桶。<br>
+      <strong>6月17日</strong>：美伊簽署 14 點停火備忘錄，海峽重啟。<br>
+      <strong>7月1日</strong>：卡達與巴基斯坦斡旋下，美伊間接技術性談判在多哈持續進行。<br>
+      布倫特原油從高峰跌逾 20%，現約 <strong>83-84 美元/桶</strong>。市場仍保留部分地緣政治尾部風險溢價。
+    </div>
+  </div>
+
+  <!-- SECTORS & STOCKS -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+
+    <div class="sector-grid">
+      <div class="sector-card sector-up">
+        <div class="label up">強勢板塊</div>
+        <strong>通訊服務</strong> — 當日最強板塊，支撐道瓊與 S&amp;P 500<br>
+        <strong>金融</strong> — 受聯準會偏鷹派立場提振<br>
+        <strong>醫療保健</strong> — Russell 2000 重組後最大類別（含 8 家健保公司）
+      </div>
+      <div class="sector-card sector-down">
+        <div class="label down">弱勢板塊</div>
+        <strong>半導體 / 科技</strong> — SMH/SOXX ETF 跌逾 5%，Nasdaq 跌 0.66%<br>
+        <strong>工業</strong> — Caterpillar -7%，AI 基礎建設受益股獲利回吐<br>
+        <strong>休閒 / 酒店</strong> — ADP 數據顯示 6月僅增加 2,000 個職位
+      </div>
+    </div>
+
+    <h3>個股亮點</h3>
+    <table>
+      <thead>
+        <tr><th>個股</th><th>代號</th><th>漲跌幅</th><th>動態說明</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Nike</strong></td>
+          <td>NKE</td>
+          <td class="up">+5.09%</td>
+          <td>Q4 財報大幅超預期，EPS 超估 59 美分；中國業務仍疲弱（-12%）</td>
+        </tr>
+        <tr>
+          <td><strong>Caterpillar</strong></td>
+          <td>CAT</td>
+          <td class="down">約 -7%</td>
+          <td>AI 基礎建設受益股盤中跌幅最大，拖累道瓊</td>
+        </tr>
+        <tr>
+          <td><strong>Micron Technology</strong></td>
+          <td>MU</td>
+          <td class="down">約 -6%</td>
+          <td>AI 晶片獲利了結；收至 1,037 美元；年初至今仍漲 260%+</td>
+        </tr>
+        <tr>
+          <td><strong>AMD</strong></td>
+          <td>AMD</td>
+          <td class="down">下跌</td>
+          <td>半導體族群同步獲利回吐</td>
+        </tr>
+        <tr>
+          <td><strong>Intel</strong></td>
+          <td>INTC</td>
+          <td class="down">下跌</td>
+          <td>半導體族群同步獲利回吐</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會政策不確定性：</strong>Warsh 明確表示通膨仍過高，拒絕提供降息時程暗示，市場降息預期持續降溫，高利率環境維持壓力。</li>
+      <li><strong>6月非農就業報告（NFP）即將公布：</strong>7月2日（週四）公布，ADP 數據低於預期增添不確定性；若 NFP 大幅低於預期，可能引發新一輪波動。</li>
+      <li><strong>半導體/AI 板塊過熱估值：</strong>SMH/SOXX 上半年漲幅達 70–100%，獲利了結壓力龐大，若外部衝擊觸發，跌幅可能擴大。</li>
+      <li><strong>美伊談判破局風險：</strong>多哈談判若陷入僵局，荷姆茲海峽重新封鎖疑慮可能使油價急反彈，輸入型通膨壓力重燃。</li>
+      <li><strong>中國市場疲軟傳導效應：</strong>Nike 大中華區銷售衰退 -12% 為警示指標，跨國企業中國業務壓力可能在下半年財報中更廣泛顯現。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-july-1-2026-nasdaq-futures-slip-after-strongest-quarter-since-2020" target="_blank">TheStreet — Stock Market Today (July 1, 2026): Dow, S&amp;P 500 rise to start Q3 2026</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/01/stock-market-live-july-1-2026-sp-500-spy-lower-as-investors-wait-on-the-fed-and-fresh-economic-data/" target="_blank">247 Wall St. — Stock Market Live July 1, 2026: S&amp;P 500 Lower as Investors Wait on the Fed</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/30/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for July 1, 2026（Dow closes little changed; Nasdaq slides）</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/01/kevin-warsh-ecb-forum-live-updates.html" target="_blank">CNBC — Fed Chief Kevin Warsh declines to hint at July rate decision, says inflation 'too high'</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/01/private-payrolls-rose-by-98000-in-june-less-than-expected-adp-reports.html" target="_blank">CNBC — Private payrolls rose by 98,000 in June, less than expected, ADP reports</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Schwab — Stocks Lower Early as Focus Turns to Warsh</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/07/01/stock-market-today-july-1-nike-jumps-after-quarterly-results-beat-analyst-estimates/" target="_blank">Motley Fool — Stock Market Today, July 1: Nike Jumps After Quarterly Results Beat Analyst Estimates</a></li>
+      <li><a href="https://www.fxstreet.com/news/kevin-warsh-offers-no-policy-clues-why-markets-still-got-their-answer-202607011626" target="_blank">FXStreet — Kevin Warsh offers no policy clues: Why markets still got their answer</a></li>
+      <li><a href="https://sundayguardianlive.com/business/us-stock-market-today-why-are-chip-stocks-down-today-semiconductor-stocks-fall-on-profit-booking-after-massive-ai-rally-as-micron-amd-intel-decline-amid-nasdaq-weakness-223040/" target="_blank">Sunday Guardian Live — Why Are Chip Stocks Down Today? Semiconductor Stocks Fall on Profit Booking</a></li>
+      <li><a href="https://finance.yahoo.com/economy/articles/adp-june-2026-private-payrolls-122828638.html" target="_blank">Yahoo Finance — ADP June 2026 private payrolls miss expectations at 98,000</a></li>
+      <li><a href="https://www.foxbusiness.com/economy/private-sector-added-98000-jobs-june-below-expectations-adp-says/" target="_blank">Fox Business — ADP report June 2026: Private sector adds 98,000 jobs</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/261996333-ai-chip-stocks-retreated-micron-technology-falling-6-june-nfp-data-market-focus-tradingkey" target="_blank">TradingKey — AI Chip Stocks Pull Back, Micron Falls Over 6%, June Non-Farm Payroll Data Becomes Market Focus</a></li>
+      <li><a href="https://money.usnews.com/investing/news/articles/2026-07-01/warsh-hits-the-international-stage-with-peers-sharing-an-inflation-problem" target="_blank">US News / Money — Warsh Hits the International Stage With Peers Sharing an Inflation Problem</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/29/oil-prices-iran-ceasefire-us-trump-strait-hormuz-energy-costs.html" target="_blank">CNBC — Oil drops 20% from 2026 peak on optimism over U.S.-Iran ceasefire talks</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Economic_impact_of_the_2026_Iran_war" target="_blank">Wikipedia — Economic impact of the 2026 Iran war</a></li>
+      <li><a href="https://www.mitrade.com/au/insights/news/live-news/article-6-1853397-20260629" target="_blank">Mitrade — Kevin Warsh isn't expected to say much in Sintra: That's exactly why markets will listen</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 · 2026年7月1日 美國股市收盤報告<br>
+    僅供參考，非投資建議 | Generated by Claude Routine
+  </footer>
+
+</div>
+</body>
+</html>
