@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026年7月2日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .highlight { margin-top: 18px; background: rgba(255,255,255,0.10); border-radius: 8px; padding: 14px 18px; font-size: 0.93rem; line-height: 1.7; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 4px solid #0f3460; padding-left: 10px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 8px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 700; }
+    .down { color: #dc2626; font-weight: 700; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin-right: 6px; vertical-align: middle; }
+    .tag-bull { background: #dcfce7; color: #15803d; }
+    .tag-bear { background: #fee2e2; color: #b91c1c; }
+    .tag-macro { background: #e0f2fe; color: #0369a1; }
+    .tag-geo { background: #fef9c3; color: #92400e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; margin-top: 4px; }
+    .sector-card { padding: 12px 16px; border-radius: 8px; font-size: 0.88rem; }
+    .sector-up { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .sector-down { background: #fff1f2; border: 1px solid #fecdd3; }
+    .sector-name { font-weight: 600; color: #1a1a2e; }
+    .sentiment-row { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
+    .sentiment-box { flex: 1; min-width: 180px; background: #f8faff; border: 1px solid #dce3f5; border-radius: 8px; padding: 14px 18px; text-align: center; }
+    .sentiment-val { font-size: 1.6rem; font-weight: 800; margin: 6px 0 4px; }
+    .sentiment-label { font-size: 0.78rem; color: #6b7280; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources li { margin-bottom: 8px; padding-left: 14px; position: relative; }
+    .sources li::before { content: "▸"; position: absolute; left: 0; color: #0f3460; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .data-note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; font-size: 0.82rem; color: #78350f; margin-top: 14px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 8px; }
+    .macro-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-top: 8px; }
+    .macro-table th { text-align: left; padding: 8px 12px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    .macro-table td { padding: 8px 12px; border-bottom: 1px solid #eef0f5; }
+    .beat { color: #dc2626; }
+    .miss { color: #dc2626; }
+    .ok { color: #16a34a; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年7月2日（週四）| 由 Claude Routine 自動生成</div>
+    <div class="highlight">
+      <strong>今日關鍵主題：</strong> 道瓊以 +1.14% 創收盤歷史新高（52,900.07），但科技/半導體股遭雙重打擊重挫，那斯達克下跌 0.80%。六月非農就業人數僅 +57,000（遠低於預期 +115,000），油價回落至 $68 附近。市場呈現典型「老經濟 vs 科技」板塊大輪動，獨立日長週末前夕情緒審慎。
+    </div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點數</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>52,900.07</td>
+          <td class="up">+594.83</td>
+          <td class="up">+1.14%</td>
+          <td>創歷史收盤新高；盤中 ATH 52,903.85</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,483.23</td>
+          <td class="down">約 -16</td>
+          <td class="down">約 -0.21%</td>
+          <td>科技股拖累，略微下滑</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>25,832.67</td>
+          <td class="down">約 -208</td>
+          <td class="down">約 -0.80%</td>
+          <td>半導體 / 科技賣壓持續</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>2,996.11</td>
+          <td class="down">-16.48</td>
+          <td class="down">-0.55%</td>
+          <td>小型股走弱</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="data-note">⚠️ 資料說明：道瓊創歷史新高已由 Yahoo Finance、TheStreet、CNBC 三方獨立確認。S&amp;P 500 與那斯達克跌幅經跨來源比對後取中位值。</div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <span class="tag tag-macro">總經</span>
+        <strong>六月非農就業報告（8:30 AM ET）——重大低於預期</strong><br>
+        實際值：<strong class="down">+57,000 人</strong>（市場預期：+115,000 人；差距 -58,000）。失業率 4.2%（因勞動參與率降至 61.5%、2021年3月以來最低而微降）。平均時薪年增 +3.5%（$37.64/小時），薪資增速仍具黏性。最大拖累：休閒與酒店業（-61,000 人）；最大貢獻：專業及商業服務（+36,000）、社會援助（+25,000）、醫療保健（+22,000）。初步反應：開盤前期貨走高（聯準會轉鴿預期），但科技股賣壓覆蓋利好情緒。
+      </li>
+      <li>
+        <span class="tag tag-bear">利空</span>
+        <strong>半導體板塊連續第二日重挫</strong><br>
+        SMH（VanEck半導體ETF）-4.5%、SOXX -6%、費城半導體指數（SOX）跌逾 7%。個股：Teradyne -13.6%、KLA -11.5%、Marvell Technology（MRVL）約 -10%、Intel（INTC）約 -5%、Nvidia（NVDA）約 -2%。驅動因素：① SK 海力士據報放緩 HBM/AI 記憶體擴產；② 花旗分析師報告質疑大型雲端 AI 投資回報率；③ Meta 雲端業務引發算力供應過剩疑慮。
+      </li>
+      <li>
+        <span class="tag tag-bear">利空</span>
+        <strong>Meta「Meta Compute」雲端業務宣布衝擊 Neocloud 股</strong><br>
+        Meta 宣布進軍雲端市場，將剩餘 AI 算力向外出售（GPU 時租、AI 模型存取），消息於 7/1 盤後發酵並持續衝擊雲端公司：CoreWeave（CRWV）跌 <strong class="down">13.9%</strong> 至 $85.68（持有 Meta $210 億合約，客戶轉為競爭對手）；Nebius Group（NBIS）跌約 <strong class="down">17%</strong> 至 $229.18（持有 Meta $270 億協議）。IREN 等新雲端公司同步大跌。
+      </li>
+      <li>
+        <span class="tag tag-bear">利空</span>
+        <strong>Tesla（TSLA）Q2 交付超預期但股價跌逾 7%</strong><br>
+        Q2 2026 交付量：<strong>480,000 輛以上</strong>（遠超市場預期約 400,000 輛）。儘管交付強勁，股價當日仍下跌逾 7%（最多 -7.3%）。市場解讀：漲多獲利了結（sell-the-news）+ 科技 / 成長股整體賣壓。
+      </li>
+      <li>
+        <span class="tag tag-bull">利多</span>
+        <strong>Rivian（RIVN）Q2 交付超標，股價盤中大漲 +15%</strong><br>
+        Q2 交付量：<strong>12,194 輛</strong>（超越前期指引 9,000–11,000 輛）；Q2 產量：12,613 輛。全年交付指引上調至 65,000–70,000 輛（原 62,000–67,000 輛）；R2 SUV 開始交付推動需求。股價盤中漲至 $19.79，為 2026年1月9日以來最高，終場漲幅仍達雙位數。
+      </li>
+      <li>
+        <span class="tag tag-bull">利多</span>
+        <strong>道瓊創歷史收盤新高，金融 / 工業板塊領漲</strong><br>
+        就業弱數據引發聯準會轉鴿預期，金融股（+1.58%）、房地產（+1.20%）、工業（+0.31%）等老經濟板塊逆市走強，拉抬道瓊以 52,900.07 創新收盤高點，盤中紀錄為 52,903.85。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會動態</h3>
+    <p>現任主席 <strong>Kevin Warsh</strong>（鷹派，已取代 Powell）主導下，市場隱含第二次 2026 年升息機率已達 <strong>約 85%</strong>（近期從 60% 大幅躍升）。儘管就業數據疲弱，聯準會緊縮立場未鬆動——原因在於 PCE 通膨 2026 年終預測已上調至 3.6%（3 月時僅預測 2.7%），伊朗戰爭引發能源成本上升及關稅壓力持續推高通膨。</p>
+
+    <h3>主要經濟數據</h3>
+    <table class="macro-table">
+      <thead>
+        <tr><th>指標</th><th>數值</th><th>前值 / 預期</th><th>解讀</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>六月 NFP（非農就業）</td><td class="down">+57,000 人</td><td>預期 +115,000</td><td class="down">重大低於預期（Miss）</td></tr>
+        <tr><td>失業率</td><td>4.2%</td><td>前值 4.3%</td><td class="neutral">表面改善，實為參與率下降</td></tr>
+        <tr><td>勞動參與率</td><td class="down">61.5%</td><td>2021/3 以來最低</td><td class="down">勞動市場真實走弱</td></tr>
+        <tr><td>平均時薪（YoY）</td><td>+3.5%</td><td>+$37.64/小時</td><td class="down">薪資仍具通膨黏性</td></tr>
+        <tr><td>ISM 製造業 PMI（6 月，7/1 發布）</td><td class="ok">53.3</td><td>前值 54.0</td><td class="ok">持續擴張，略有放緩</td></tr>
+        <tr><td>Q1 2026 GDP（三次修正，年化）</td><td class="ok">+2.1%</td><td>BEA 第三次估算</td><td class="ok">經濟展現韌性</td></tr>
+        <tr><td>WTI 原油（收盤）</td><td>約 $68.11/桶</td><td>近期高峰約 $85</td><td class="ok">已從高峰回落 ~20%</td></tr>
+      </tbody>
+    </table>
+
+    <h3>地緣政治：2026 年伊朗戰爭</h3>
+    <p>2026 年全年最重要的宏觀背景事件。美國 / 以色列對伊朗的軍事行動（約始於 2026 年 3–4 月）初期推高油價、引發衰退恐慌與通膨預期急升。7 月初停火談判取得進展，霍木茲海峽航運逐步恢復，WTI 自高峰已回落約 20% 至 $68 附近，為 2026年2月底以來最低。ISM 調查顯示 47% 製造業企業在調查中提及伊朗戰爭，18% 提及關稅。美國經濟至今尚未陷入衰退，但聯準會面臨「增長放緩 + 通膨頑固」兩難困境。</p>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊表現</h2>
+    <div class="sector-grid">
+      <div class="sector-card sector-up">
+        <div class="sector-name">金融</div>
+        <div class="up">+1.58%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px">Fed 轉鴿預期；道瓊成分股拉抬</div>
+      </div>
+      <div class="sector-card sector-up">
+        <div class="sector-name">房地產</div>
+        <div class="up">+1.20%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px">利率預期敏感，隨就業走弱受益</div>
+      </div>
+      <div class="sector-card sector-up">
+        <div class="sector-name">能源</div>
+        <div class="up">+0.86%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px">油價穩定，部分逢低買盤</div>
+      </div>
+      <div class="sector-card sector-up">
+        <div class="sector-name">工業</div>
+        <div class="up">+0.31%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px">小幅上漲</div>
+      </div>
+      <div class="sector-card sector-down">
+        <div class="sector-name">消費者非必需品</div>
+        <div class="down">-0.81%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px">Tesla 跌逾 7% 主要拖累</div>
+      </div>
+      <div class="sector-card sector-down">
+        <div class="sector-name">通訊服務</div>
+        <div class="down">-0.83%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px">Meta、Alphabet 受壓</div>
+      </div>
+      <div class="sector-card sector-down">
+        <div class="sector-name">信息科技</div>
+        <div class="down">-1.46%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px">半導體大跌（SOX -7%+）主要拖累</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARKET SENTIMENT -->
+  <div class="card">
+    <h2>市場情緒指標</h2>
+    <div class="sentiment-row">
+      <div class="sentiment-box">
+        <div class="sentiment-label">恐貪指數（Fear &amp; Greed）</div>
+        <div class="sentiment-val down">32</div>
+        <div class="sentiment-label">Fear（恐懼）</div>
+      </div>
+      <div class="sentiment-box">
+        <div class="sentiment-label">VIX 波動率指數</div>
+        <div class="sentiment-val neutral">16.59</div>
+        <div class="sentiment-label">溫和（歷史均值 ~20）</div>
+      </div>
+      <div class="sentiment-box">
+        <div class="sentiment-label">道瓊週線</div>
+        <div class="sentiment-val up">+</div>
+        <div class="sentiment-label">全週收漲（長週末前）</div>
+      </div>
+    </div>
+    <p style="margin-top:14px;font-size:0.87rem;color:#6b7280;">VIX 雖相對溫和，但恐貪指數降至「恐懼」區間，反映投資者在科技股持續賣壓與聯準會緊縮不確定性下情緒偏謹慎。全週儘管週四那斯達克下跌，整體仍錄得正報酬。</p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會升息風險（85% 機率第二次升息）：</strong> Kevin Warsh 鷹派立場下，PCE 通膨預估 3.6%，緊縮政策持續恐壓縮估值，尤其衝擊高本益比科技股。</li>
+      <li><strong>AI 算力供需疑慮：</strong> Meta 進軍雲端業務引發市場重估 AI 算力長期需求，半導體 / Neocloud 公司可能面臨持續估值調整。</li>
+      <li><strong>勞動市場走弱：</strong> 六月 NFP 大幅低於預期，勞動參與率觸及多年低點，若持續惡化或引發消費萎縮，衝擊整體企業盈利。</li>
+      <li><strong>伊朗戰爭停火脆弱性：</strong> 停火談判仍具不確定性；若談判破裂，油價可能再度急升，通膨壓力將反彈並對市場造成新一輪衝擊。</li>
+      <li><strong>ISM 服務業 PMI（7/6 發布）：</strong> 延遲至獨立日後公布，若數據大幅低於預期，將強化經濟走弱敘事，觸發新一波賣壓。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-2-223136955.html" target="_blank">Yahoo Finance — Stock Market Today, Thursday July 2, 2026（即時市場頁）</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-indexes-rise-104305800.html" target="_blank">Yahoo Finance — "Dow Jumps 600 Points to Record, Tech Sell-Off Sends Nasdaq Lower"</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-2-2026" target="_blank">TheStreet — Stock Market Today: Dow closes at all-time high ahead of Independence Day holiday</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/02/stock-market-live-july-2-2026-sp-500-spy-flat-with-new-jobs-data/" target="_blank">24/7 Wall St. — Stock Market Live July 2, 2026: S&amp;P 500 Flat with New Jobs Data</a></li>
+      <li><a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank">美國勞工統計局（BLS）— 就業情況摘要 June 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html" target="_blank">CNBC — June 2026 Jobs Report Coverage</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/01/nebius-coreweave-and-iren-tumble-on-metas-cloud-ambitions-is-this-the-end-of-the-neocloud-boom/" target="_blank">24/7 Wall St. — Nebius, CoreWeave and IREN Tumble on Meta's Cloud Ambitions</a></li>
+      <li><a href="https://www.gurufocus.com/news/8943543/rivian-rivn-raises-2026-delivery-guidance-stock-surges-over-15" target="_blank">GuruFocus — Rivian Raises 2026 Delivery Guidance, Stock Surges Over 15%</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/07/02/stock-market-today-july-2-rivian-jumps-on-raised-2026-delivery-guidance/" target="_blank">Motley Fool — Stock Market Today, July 2: Rivian Jumps on Raised 2026 Delivery Guidance</a></li>
+      <li><a href="https://www.financialcontent.com/article/stockstory-2026-7-2-intel-marvell-technology-and-amd-stocks-trade-down-what-you-need-to-know" target="_blank">StockStory / FinancialContent — Intel, Marvell Technology and AMD stocks trade down</a></li>
+      <li><a href="https://www.fxstreet.com/analysis/the-iran-war-failed-to-trigger-a-recession-can-the-us-economy-keep-defying-expectations-202607031112" target="_blank">FXStreet — The Iran War Failed to Trigger a Recession: Can the US Economy Keep Defying Expectations?</a></li>
+      <li><a href="https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/" target="_blank">ISM — Manufacturing PMI June 2026 Report</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/02/rivian-lucid-q2-deliveries-demand.html" target="_blank">CNBC — Rivian, Lucid Q2 Deliveries</a></li>
+      <li><a href="https://www.schwab.com/learn/story/iran-war-potential-impact-on-global-equities" target="_blank">Charles Schwab — Iran War: Potential Impact on Global Equities</a></li>
+      <li><a href="https://www.cnn.com/markets/fear-and-greed" target="_blank">CNN Fear &amp; Greed Index</a></li>
+      <li><a href="https://www.cboe.com/tradable-products/vix/" target="_blank">Cboe — VIX Volatility Index</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 ·&nbsp; 僅供參考，非投資建議&nbsp; · &nbsp;生成時間：2026年7月5日</footer>
+</div>
+</body>
+</html>
