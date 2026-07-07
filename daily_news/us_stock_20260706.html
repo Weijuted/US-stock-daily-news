@@ -11,25 +11,26 @@
     header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
     header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
     header .subtitle { font-size: 0.95rem; opacity: 0.75; }
-    header .badge { display: inline-block; margin-top: 12px; background: rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 14px; font-size: 0.82rem; }
+    header .badge { display: inline-block; margin-top: 12px; background: rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 14px; font-size: 0.82rem; margin-right: 8px; }
     .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
     h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf7; padding-bottom: 10px; }
     table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
     th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
-    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; vertical-align: top; }
     tr:last-child td { border-bottom: none; }
     .up { color: #16a34a; font-weight: 600; }
     .down { color: #dc2626; font-weight: 600; }
     .neutral { color: #6b7280; font-weight: 600; }
     .record { background: #fef9c3; }
-    .record td:first-child::after { content: " ★"; color: #d97706; font-size: 0.8rem; }
     .event-list { list-style: none; }
     .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
-    .event-list li .tag { display: inline-block; background: #dbeafe; color: #1e40af; font-size: 0.75rem; font-weight: 600; border-radius: 4px; padding: 1px 7px; margin-right: 8px; vertical-align: middle; }
-    .event-list li .tag.tech { background: #dcfce7; color: #166534; }
-    .event-list li .tag.macro { background: #fef3c7; color: #92400e; }
-    .event-list li .tag.policy { background: #f3e8ff; color: #6b21a8; }
-    .event-list li .tag.corp { background: #fee2e2; color: #991b1b; }
+    .event-list li .tag { display: inline-block; font-size: 0.75rem; font-weight: 600; border-radius: 4px; padding: 1px 7px; margin-right: 8px; vertical-align: middle; }
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-green { background: #dcfce7; color: #166534; }
+    .tag-yellow { background: #fef3c7; color: #92400e; }
+    .tag-purple { background: #f3e8ff; color: #6b21a8; }
+    .tag-red { background: #fee2e2; color: #991b1b; }
+    .tag-gray { background: #f3f4f6; color: #374151; }
     .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; }
     .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 18px; }
     .macro-item .label { font-size: 0.78rem; color: #6b7280; font-weight: 500; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
@@ -38,17 +39,19 @@
     .risk-list { list-style: none; }
     .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
     .risk-list li strong { color: #b91c1c; }
-    .stocks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 8px; }
+    .stocks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 12px; margin-top: 8px; }
     .stock-chip { background: #f8faff; border-radius: 8px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; }
     .stock-chip .ticker { font-weight: 700; font-size: 0.95rem; color: #1a1a2e; }
     .stock-chip .change { font-weight: 700; font-size: 0.95rem; }
     .stock-chip .name { font-size: 0.75rem; color: #6b7280; margin-top: 2px; }
+    .highlight-box { margin-top: 16px; background: #f0f9ff; border-radius: 8px; padding: 14px 16px; font-size: 0.88rem; color: #0369a1; border-left: 3px solid #38bdf8; }
     .sources { font-size: 0.82rem; color: #6b7280; }
     .sources a { color: #0f3460; text-decoration: none; }
     .sources a:hover { text-decoration: underline; }
     .sources li { margin-bottom: 8px; padding: 6px 0; border-bottom: 1px solid #f3f4f6; list-style: none; }
     .sources li:last-child { border-bottom: none; }
     .sources .src-label { display: inline-block; background: #f0f4ff; color: #0f3460; border-radius: 3px; padding: 1px 6px; font-size: 0.75rem; margin-right: 6px; }
+    .confidence { display: inline-block; font-size: 0.72rem; color: #16a34a; background: #dcfce7; border-radius: 3px; padding: 1px 5px; margin-left: 4px; }
     footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; line-height: 1.7; }
     @media (max-width: 600px) {
       .macro-grid { grid-template-columns: 1fr; }
@@ -64,7 +67,10 @@
   <header>
     <h1>🇺🇸 美股新聞簡報</h1>
     <div class="subtitle">2026年7月6日（週一）| 獨立日假期後首個交易日</div>
-    <div class="badge">道瓊指數突破 53,000 點 創歷史新高 ★</div>
+    <div style="margin-top:12px;">
+      <span class="badge">道瓊首破 53,000 點 ★ 歷史新高</span>
+      <span class="badge">川普首次白宮敲鐘開市</span>
+    </div>
   </header>
 
   <!-- INDEX TABLE -->
@@ -86,64 +92,68 @@
           <td><strong>53,055.91</strong></td>
           <td class="up">+155.84</td>
           <td class="up">+0.29%</td>
-          <td style="font-size:0.82rem;color:#d97706;">歷史收盤新高</td>
+          <td style="font-size:0.82rem;color:#d97706;font-weight:600;">史上首次收破53,000點 創歷史新高</td>
         </tr>
         <tr>
           <td><strong>標普 500 指數</strong><br><span style="font-size:0.78rem;color:#6b7280;">S&amp;P 500 Index</span></td>
           <td><strong>7,537.43</strong></td>
-          <td class="up">+53.79</td>
+          <td class="up">—</td>
           <td class="up">+0.72%</td>
-          <td style="font-size:0.82rem;color:#6b7280;">科技股帶動</td>
+          <td style="font-size:0.82rem;color:#6b7280;">科技股與AI基礎設施帶動</td>
         </tr>
         <tr>
           <td><strong>那斯達克綜合指數</strong><br><span style="font-size:0.78rem;color:#6b7280;">Nasdaq Composite</span></td>
           <td><strong>26,121.16</strong></td>
-          <td class="up">+289.71</td>
+          <td class="up">—</td>
           <td class="up">+1.12%</td>
-          <td style="font-size:0.82rem;color:#6b7280;">半導體動能帶動</td>
+          <td style="font-size:0.82rem;color:#6b7280;">半導體設備與AI類股推升</td>
         </tr>
         <tr>
           <td><strong>羅素 2000 指數</strong><br><span style="font-size:0.78rem;color:#6b7280;">Russell 2000 Index</span></td>
-          <td><strong>—</strong></td>
-          <td class="neutral">—</td>
-          <td class="neutral">—</td>
-          <td style="font-size:0.82rem;color:#6b7280;">數據待確認</td>
+          <td><strong>3,009.54</strong></td>
+          <td class="up">—</td>
+          <td class="up">+0.45%</td>
+          <td style="font-size:0.82rem;color:#6b7280;">重回3,000點以上（1991年以來罕見）</td>
         </tr>
       </tbody>
     </table>
+    <div class="highlight-box" style="margin-top:14px;">
+      <strong>市場基調：</strong>四大指數全線收漲。道瓊史上首次收盤突破53,000點；羅素2000重回3,000點為1991年以來罕見里程碑。市場情緒受「川普帳戶」啟動、白宮開市儀式及ISM服務業數據支撐，假期後開盤氣氛正面。
+    </div>
   </div>
 
   <!-- KEY EVENTS -->
   <div class="card">
-    <h2>🔔 重大市場事件</h2>
+    <h2>🔔 重大市場事件與催化劑</h2>
     <ul class="event-list">
       <li>
-        <span class="tag tech">科技／指數</span>
-        <strong>SpaceX（代碼：SPCX）正式納入那斯達克100指數</strong>——採3倍流通股乘數計算，創造約2,670億美元的指數部位，為指數成分股調整帶來大規模資金流動。
+        <span class="tag tag-purple">歷史性事件</span>
+        <strong>川普首次從白宮同時敲響紐交所與那斯達克開市鐘</strong><br>
+        美國總統川普在橢圓辦公室同時敲響NYSE與Nasdaq開市鐘，慶祝「川普帳戶（Trump Accounts）」正式啟動——這是美國史上首次總統從白宮主持股市開市儀式。超過600萬個川普帳戶已為18歲以下兒童開立，其中140萬戶將獲得1,000美元聯邦試點補助。高盛、摩根士丹利、貝萊德、摩根大通等大型企業承諾為員工子女匹配補助。SpaceX總裁蕭特維爾宣布將向逾200萬個帳戶捐贈SpaceX股份。
       </li>
       <li>
-        <span class="tag corp">個股</span>
-        <strong>Dell（DELL）大漲 +7.7%</strong>——美國總統川普在紐交所開盤鈴聲儀式上公開推薦Dell電腦，帶動股價強勁上漲，成為當日最大漲幅個股之一。
+        <span class="tag tag-red">個股</span>
+        <strong>Dell（DELL）大漲 +8%</strong> — 川普在開市儀式上公開喊話「快去買一台戴爾電腦」，戴爾CEO麥可·戴爾同日承諾向川普帳戶計畫捐贈逾60億美元。股價從開盤$395.19飆至盤中高點$428.29，收盤約$427.50。注意：川普本人Q1已個人持有至少100萬美元戴爾股票（依財務申報）。
       </li>
       <li>
-        <span class="tag tech">半導體</span>
-        <strong>AI晶片股出現獲利了結</strong>——那斯達克雖整體上漲，但半導體龍頭遭遇回調：Micron（MU）-5.5%、AMD -4.3%、Intel（INTC）-5.3%，市場對AI股估值偏高有所警惕。
+        <span class="tag tag-green">科技</span>
+        <strong>Astera Labs（ALAB）暴漲 +10.5%</strong> — 美國銀行（BofA）將目標價從$240大幅上調至街頭最高的$450，分析師對AI數據中心資本支出至2028年維持高度信心，帶動AI基礎設施相關類股全面上揚。
       </li>
       <li>
-        <span class="tag corp">媒體</span>
-        <strong>Netflix（NFLX）飆漲 +4.7%</strong>——Comcast宣布收購英國廣播公司，確認不競購NBCUniversal，消除市場對Netflix潛在競爭壓力，股價應聲大漲。
+        <span class="tag tag-green">科技</span>
+        <strong>Western Digital（WDC）大漲 +9.2%</strong> — AI儲存需求持續強勁，加上半導體設備股（Lam Research、Applied Materials、KLA）普遍上漲約4%，半導體設備板塊全面回升。
       </li>
       <li>
-        <span class="tag tech">供應鏈</span>
-        <strong>博通（Broadcom）與Apple延長合作至2031年</strong>——雙方宣布供應鏈夥伴關係延長，鞏固半導體供應合作，對兩家公司中長期營收展望正面。
+        <span class="tag tag-blue">企業</span>
+        <strong>微軟（MSFT）宣布裁員4,800人（約佔全球員工2.1%）</strong> — Xbox部門受衝擊最大（本財年累計裁員約3,200人，佔Xbox員工約20%），並計畫分拆四間遊戲工作室。裁員原因為優先押注AI基礎設施投資，同時應對華爾街削減運營支出壓力。MSFT收跌 -1.7%，背景為過去九個月股價已下跌約30%，市值蒸發逾1.2兆美元。
       </li>
       <li>
-        <span class="tag corp">加密採礦</span>
-        <strong>IREN股價盤前大幅上漲</strong>——受加密貨幣市場情緒改善及AI算力需求升溫帶動，IREN在盤前交易中表現搶眼。
+        <span class="tag tag-yellow">經濟數據</span>
+        <strong>ISM服務業PMI（6月）：54.0%</strong> — 連續第24個月維持擴張（高於50榮枯線）；就業分項51.2%為四個月來首次擴張。ISM製造業PMI亦維持53.3%擴張。數據顯示美國服務業韌性仍強，支撐市場信心。
       </li>
       <li>
-        <span class="tag macro">市場氣氛</span>
-        <strong>川普出席紐交所／那斯達克開盤鈴聲儀式</strong>——節後首個交易日投資人情緒樂觀，市場氛圍正向，三大指數普遍開高。
+        <span class="tag tag-gray">能源/地緣</span>
+        <strong>油價因中東局勢緩和略降</strong> — 北海布蘭特原油維持約每桶105美元（受中東衝突影響偏高），但7月6日出現部分緩和跡象，油價下跌改善了市場整體情緒，降低通膨憂慮。
       </li>
     </ul>
   </div>
@@ -153,101 +163,139 @@
     <h2>🌐 總體經濟與宏觀環境</h2>
     <div class="macro-grid">
       <div class="macro-item">
-        <div class="label">聯準會（Fed）利率</div>
+        <div class="label">聯準會（Fed）主席</div>
+        <div class="value">凱文·瓦什 Kevin Warsh</div>
+        <div class="note">鷹派立場；強調價格穩定優先</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">聯邦基金利率</div>
         <div class="value">3.50% – 3.75%</div>
-        <div class="note">6月17日FOMC會議維持不動；下次決策日：7月28-29日</div>
+        <div class="note">6月17日第四次連續維持不動；下次FOMC：7月下旬</div>
       </div>
       <div class="macro-item">
-        <div class="label">6月非農就業（7/2公布）</div>
-        <div class="value">57,000 人</div>
-        <div class="note">大幅低於市場預期約190,000人；失業率4.2%</div>
+        <div class="label">Fed政策信號</div>
+        <div class="value">鷹派轉向</div>
+        <div class="note">18位委員中9位支持2026年升息（3月時為零），市場降息押注大幅縮減</div>
       </div>
       <div class="macro-item">
-        <div class="label">5月消費者物價指數（CPI）</div>
-        <div class="value">+4.2% YoY</div>
-        <div class="note">高於4月的3.8%；能源價格大漲+23.5%；核心CPI 2.9%</div>
+        <div class="label">ISM服務業PMI（6月）</div>
+        <div class="value">54.0%</div>
+        <div class="note">連第24月擴張；就業分項51.2%四個月來首次擴張</div>
       </div>
       <div class="macro-item">
-        <div class="label">薪資成長 vs 通膨</div>
-        <div class="value">3.5% vs 4.2%</div>
-        <div class="note">薪資成長持續落後通膨，實質購買力受壓縮</div>
+        <div class="label">布蘭特原油</div>
+        <div class="value">~$105 / 桶</div>
+        <div class="note">中東衝突推升；7/6有所緩和，利好市場情緒</div>
       </div>
       <div class="macro-item">
-        <div class="label">30年期房貸利率</div>
-        <div class="value">6.664%</div>
-        <div class="note">7月6日報價；預計7月維持高檔</div>
+        <div class="label">USMCA貿易協定</div>
+        <div class="value">未續約</div>
+        <div class="note">7月1日截止未正式續簽（涵蓋2兆美元北美貿易）；改為逐年審查至2036年</div>
       </div>
       <div class="macro-item">
-        <div class="label">Fed 政策展望</div>
-        <div class="value">維持觀望</div>
-        <div class="note">就業數據疲軟使升息預期降溫；市場押注年內降息</div>
+        <div class="label">關稅動態</div>
+        <div class="value">301條款新關稅</div>
+        <div class="note">7月6日為公眾意見截止日，針對59國及歐盟強迫勞動進口商品</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">美中關係</div>
+        <div class="value">謹慎穩定</div>
+        <div class="note">7月2日美中外交官通話；川習5月峰會後關係改善但仍脆弱</div>
       </div>
     </div>
-    <div style="margin-top:16px; background:#f0f9ff; border-radius:8px; padding:14px 16px; font-size:0.88rem; color:#0369a1; border-left:3px solid #38bdf8;">
-      <strong>市場解讀：</strong>6月就業數據遠低於預期（57K vs 190K），雖顯示勞動市場降溫，但也同步壓低了Fed繼續升息的必要性。這一訊號被市場解讀為「利空出盡」，支撐了假期後的開盤買盤。下一關鍵數據為7月14日公布的CPI報告。
+    <div class="highlight-box">
+      <strong>市場解讀：</strong>Fed鷹派立場明確（瓦什主席強調價格穩定、9位委員支持升息），市場已大幅縮減年內降息預期。然而ISM服務業連24月擴張顯示經濟仍有韌性，加上7月6日油價略降，整體市場得以在假期後反彈。USMCA未續約帶來供應鏈不確定性，是潛在的下行風險。
     </div>
   </div>
 
   <!-- INDIVIDUAL STOCKS -->
   <div class="card">
     <h2>📈 重要個股動態</h2>
+    <div style="margin-bottom:12px;font-size:0.85rem;color:#374151;font-weight:600;">主要上漲股 Gainers</div>
     <div class="stocks-grid">
       <div class="stock-chip">
         <div>
           <div class="ticker">DELL</div>
           <div class="name">戴爾科技</div>
         </div>
-        <div class="change up">+7.7%</div>
+        <div class="change up">+8.0%</div>
       </div>
       <div class="stock-chip">
         <div>
-          <div class="ticker">NFLX</div>
-          <div class="name">Netflix</div>
+          <div class="ticker">ALAB</div>
+          <div class="name">Astera Labs</div>
         </div>
-        <div class="change up">+4.7%</div>
+        <div class="change up">+10.5%</div>
       </div>
       <div class="stock-chip">
         <div>
-          <div class="ticker">SPCX</div>
-          <div class="name">SpaceX</div>
+          <div class="ticker">WDC</div>
+          <div class="name">Western Digital</div>
         </div>
-        <div class="change up">納入NDX</div>
+        <div class="change up">+9.2%</div>
       </div>
       <div class="stock-chip">
         <div>
-          <div class="ticker">AVGO</div>
-          <div class="name">博通 Broadcom</div>
+          <div class="ticker">IBM</div>
+          <div class="name">IBM</div>
         </div>
-        <div class="change up">↑ Apple合作</div>
+        <div class="change up">+3.64%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">LRCX</div>
+          <div class="name">Lam Research</div>
+        </div>
+        <div class="change up">~+4%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">AMAT</div>
+          <div class="name">Applied Materials</div>
+        </div>
+        <div class="change up">~+4%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">KLAC</div>
+          <div class="name">KLA Corporation</div>
+        </div>
+        <div class="change up">~+4%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">SMH</div>
+          <div class="name">半導體ETF</div>
+        </div>
+        <div class="change up">+2.7%</div>
+      </div>
+    </div>
+    <div style="margin-top:16px;margin-bottom:12px;font-size:0.85rem;color:#374151;font-weight:600;">主要下跌股 Decliners</div>
+    <div class="stocks-grid">
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">MSFT</div>
+          <div class="name">微軟（裁員4,800人）</div>
+        </div>
+        <div class="change down">-1.7%</div>
       </div>
       <div class="stock-chip">
         <div>
           <div class="ticker">MU</div>
-          <div class="name">美光科技</div>
+          <div class="name">美光（後市承壓）</div>
         </div>
-        <div class="change down">-5.5%</div>
-      </div>
-      <div class="stock-chip">
-        <div>
-          <div class="ticker">AMD</div>
-          <div class="name">超微半導體</div>
-        </div>
-        <div class="change down">-4.3%</div>
+        <div class="change down">續跌</div>
       </div>
       <div class="stock-chip">
         <div>
           <div class="ticker">INTC</div>
-          <div class="name">英特爾</div>
+          <div class="name">英特爾（後市承壓）</div>
         </div>
-        <div class="change down">-5.3%</div>
+        <div class="change down">續跌</div>
       </div>
-      <div class="stock-chip">
-        <div>
-          <div class="ticker">IREN</div>
-          <div class="name">IREN（加密採礦）</div>
-        </div>
-        <div class="change up">盤前大漲</div>
-      </div>
+    </div>
+    <div class="highlight-box" style="background:#fff7ed;color:#92400e;border-left-color:#f59e0b;margin-top:16px;">
+      <strong>重要說明：</strong>Micron、Intel等個股的大幅跌幅（各約13%、9%）發生於6月24-26日的科技股集中拋售期，並非7月6日當天事件。7月6日半導體板塊整體向上（設備股普漲4%），AI晶片大廠則有溫和的後市承壓。請留意日期歸屬，避免誤讀。
     </div>
   </div>
 
@@ -255,73 +303,101 @@
   <div class="card">
     <h2>⚠️ 風險與不確定因素</h2>
     <ul class="risk-list">
-      <li><strong>通膨壓力持續：</strong>5月CPI年增4.2%，遠高於Fed 2%目標，且較4月進一步升溫；能源價格暴漲+23.5%成為最大推手，增加生活成本壓力。</li>
-      <li><strong>勞動市場急速降溫：</strong>6月僅新增57,000個工作，大幅不及預期190,000個，顯示經濟動能可能正在減弱，需警惕衰退信號。</li>
-      <li><strong>AI晶片股估值泡沫風險：</strong>Micron、AMD、Intel等半導體龍頭單日跌幅達4-6%，顯示市場開始質疑AI相關股票的高估值，後市波動性可能加劇。</li>
-      <li><strong>實質薪資負成長：</strong>薪資成長3.5%持續低於通膨4.2%，消費者購買力實質下滑，可能影響下半年消費支出與企業獲利。</li>
-      <li><strong>聯準會政策不確定性：</strong>7月28-29日FOMC會議前，市場將密切關注7月14日CPI數據，任何通膨數據超預期都可能重燃升息疑慮。</li>
-      <li><strong>地緣政治與貿易風險：</strong>特朗普政府貿易政策動向持續牽動市場情緒，企業供應鏈調整壓力未消。</li>
+      <li><strong>Fed鷹派立場升溫：</strong>18位FOMC委員中有9位支持2026年升息（3月時為零），主席瓦什的「價格穩定」措辭已使市場大幅縮減降息預期，利率維持高位更長時間的情境概率上升。</li>
+      <li><strong>通膨與能源衝擊：</strong>中東衝突推升布蘭特原油至約105美元/桶，持續對通膨形成上行壓力，削弱Fed轉鴿空間，霍爾木茲海峽（全球20%石油流量）為關鍵風險節點。</li>
+      <li><strong>USMCA未續約——北美供應鏈風險：</strong>涵蓋2兆美元北美貿易的USMCA在7月1日截止日未正式續簽，改為逐年審查至2036年，增加企業供應鏈規劃不確定性。</li>
+      <li><strong>微軟AI轉型陣痛：</strong>微軟裁員4,800人反映大型科技企業正在以犧牲短期就業換取AI投資，過去九個月MSFT股價已下跌約30%、市值蒸發逾1.2兆美元，顯示AI轉型的高成本與市場疑慮。</li>
+      <li><strong>大型科技AI股估值與動能風險：</strong>市場資金正從大型AI龍頭（MSFT、INTC、MU）輪動至AI基礎設施與設備股（ALAB、WDC、LRCX），輪動過程可能引發波動。</li>
+      <li><strong>川普政策干預股市風險：</strong>川普白宮開市儀式、公開推薦DELL個股，並持有相關股票，引發利益衝突爭議；此類政策驅動的股市動作難以預測，增加市場不穩定性。</li>
+      <li><strong>美中台緊張局勢：</strong>台灣緊張局勢持續，若出現地緣政治升級，對半導體供應鏈影響將十分深遠。</li>
     </ul>
   </div>
 
   <!-- SOURCES -->
   <div class="card">
-    <h2>📋 資料來源</h2>
+    <h2>📋 資料來源（多來源交叉驗證）</h2>
     <ul class="sources">
       <li>
         <span class="src-label">TheStreet</span>
-        <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-6-2026" target="_blank">Stock Market Today (July 6, 2026): Dow surpasses 53K; sets new closing record after holiday weekend</a>
-      </li>
-      <li>
-        <span class="src-label">Yahoo Finance</span>
-        <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-6-064600457.html" target="_blank">Stock Market News for July 6, 2026</a>
-      </li>
-      <li>
-        <span class="src-label">Motley Fool</span>
-        <a href="https://www.fool.com/coverage/stock-market-today/2026/07/06/stock-market-today-july-6-semiconductor-momentum-lifts-nasdaq-as-dow-closes-above-53-000/" target="_blank">Stock Market Today, July 6: Semiconductor Momentum Lifts Nasdaq as Dow Closes Above 53,000</a>
+        <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-6-2026" target="_blank">Stock Market Today (July 6, 2026): Dow surpasses 53K; sets new closing record</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
         <span class="src-label">CNBC</span>
-        <a href="https://www.cnbc.com/2026/07/05/stock-market-today-live-updates.html" target="_blank">Stock market news for July 6, 2026 — Live Updates</a>
+        <a href="https://www.cnbc.com/2026/07/06/trump-opening-bell-ceo-nyse-nasdaq-stocks-accounts.html" target="_blank">Trump plugs Dell at first-ever White House opening bell ceremony</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
-        <span class="src-label">Bloomberg</span>
-        <a href="https://www.bloomberg.com/news/articles/2026-07-05/stock-market-today-dow-s-p-live-updates" target="_blank">Stock Market Today: Dow, S&amp;P Live Updates for July 6</a>
+        <span class="src-label">CNN Business</span>
+        <a href="https://www.cnn.com/2026/07/06/business/trump-accounts-launch" target="_blank">Trump rings opening bell to mark first day of trading for Trump Accounts</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
-        <span class="src-label">Weiss Ratings</span>
-        <a href="https://weissratings.com/en/weiss-ratings-daily/something-momentous-is-happening-in-the-stock-market-on-july-6-2026" target="_blank">Something Momentous Is Happening in the Stock Market on July 6, 2026</a>
+        <span class="src-label">Fox Business</span>
+        <a href="https://www.foxbusiness.com/politics/trump-rings-nyse-nasdaq-opening-bells-celebrate-launch-trump-accounts" target="_blank">Trump rings NYSE, Nasdaq opening bells from White House</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
-        <span class="src-label">BLS</span>
-        <a href="https://www.bls.gov/news.release/archives/empsit_07022026.htm" target="_blank">Employment Situation Summary — June 2026 (Released July 2, 2026)</a>
+        <span class="src-label">WhiteHouse.gov</span>
+        <a href="https://www.whitehouse.gov/releases/2026/07/president-trump-rings-in-trump-accounts-with-historic-opening-bell-ceremony-from-the-oval-office/" target="_blank">President Trump Rings in Trump Accounts with Historic Opening Bell Ceremony</a>
+        <span class="confidence">高信心</span>
+      </li>
+      <li>
+        <span class="src-label">Yahoo Finance</span>
+        <a href="https://finance.yahoo.com/markets/stocks/articles/dell-stock-surges-trump-endorsement-150202801.html" target="_blank">Dell stock surges on Trump endorsement... again</a>
+        <span class="confidence">高信心</span>
+      </li>
+      <li>
+        <span class="src-label">TechCrunch</span>
+        <a href="https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/" target="_blank">Microsoft lays off nearly 5,000 employees across Xbox, commercial sales</a>
+        <span class="confidence">高信心</span>
+      </li>
+      <li>
+        <span class="src-label">CNBC</span>
+        <a href="https://www.cnbc.com/2026/07/06/microsoft-cuts-2point1percent-of-employees-as-xbox-unit-plans-to-spin-studios.html" target="_blank">Microsoft cuts 4,800 jobs as Xbox unit plans to spin studios</a>
+        <span class="confidence">高信心</span>
+      </li>
+      <li>
+        <span class="src-label">Yahoo Finance</span>
+        <a href="https://finance.yahoo.com/markets/stocks/articles/bank-america-gives-astera-labs-123817559.html" target="_blank">Bank of America Gives Astera Labs Stock a Stunning Street-High Price Target ($450)</a>
+        <span class="confidence">高信心</span>
+      </li>
+      <li>
+        <span class="src-label">Motley Fool</span>
+        <a href="https://www.fool.com/investing/2026/07/06/the-russell-2000-just-did-something-for-the-first/" target="_blank">The Russell 2000 Just Did Something for the First Time Since 1991</a>
+        <span class="confidence">高信心</span>
+      </li>
+      <li>
+        <span class="src-label">PR Newswire</span>
+        <a href="https://www.prnewswire.com/news-releases/services-pmi-at-54-june-2026-ism-services-pmi-report-302817275.html" target="_blank">Services PMI® at 54%; June 2026 ISM® Report On Business®</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
         <span class="src-label">Federal Reserve</span>
         <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve FOMC Statement — June 17, 2026</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
-        <span class="src-label">CNBC</span>
-        <a href="https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html" target="_blank">Fed interest rate decision June 2026: Fed holds rates steady</a>
+        <span class="src-label">Washington Post</span>
+        <a href="https://www.washingtonpost.com/business/2026/07/01/trump-ignores-deadline-extending-usmca-seeks-improved-deal/" target="_blank">Fate of $2 trillion North American trade deal in doubt as July 1 deadline passes</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
-        <span class="src-label">Yahoo Finance</span>
-        <a href="https://finance.yahoo.com/markets/article/its-a-bull-market-wall-street-sees-more-upside-in-stocks-for-the-second-half-of-2026-120220657.html" target="_blank">'It's a bull market': Wall Street sees more upside in stocks for the second half of 2026</a>
+        <span class="src-label">S&amp;P Global</span>
+        <a href="https://www.spglobal.com/ratings/en/regulatory/article/global-economic-outlook-q2-2026-middle-east-war-dents-the-forecast-s101677805" target="_blank">Global Economic Outlook Q2 2026: Middle East War Dents the Forecast</a>
+        <span class="confidence">高信心</span>
       </li>
       <li>
-        <span class="src-label">TipRanks</span>
-        <a href="https://www.tipranks.com/news/why-is-iren-stock-rising-in-pre-market-today-july-6-2026" target="_blank">Why Is IREN Stock Rising in Pre-Market Today — July 6, 2026?</a>
-      </li>
-      <li>
-        <span class="src-label">NBC News</span>
-        <a href="https://www.nbcnews.com/business/economy/june-jobs-report-stable-hiring-rcna352603" target="_blank">U.S. adds just 57,000 jobs in June, a worrying sign as wage growth remains slow</a>
+        <span class="src-label">C-SPAN</span>
+        <a href="https://www.c-span.org/clip/white-house-event/trump-rings-stock-market-bell-to-mark-launch-of-trump-accounts/5202364" target="_blank">Trump Rings Stock Market Bell to Mark Launch of "Trump Accounts"</a>
+        <span class="confidence">高信心</span>
       </li>
     </ul>
   </div>
 
   <footer>
-    由 Claude evidence-researcher agent 自動搜索驗證 · 多來源交叉核對<br>
-    資料涵蓋：TheStreet、Yahoo Finance、Motley Fool、CNBC、Bloomberg、BLS、Federal Reserve<br>
+    由 Claude evidence-researcher agent 多搜尋引擎並行查詢 + 主要來源交叉驗證<br>
+    資料涵蓋：WhiteHouse.gov、CNBC、CNN、Fox Business、TheStreet、TechCrunch、Yahoo Finance、Motley Fool、BLS、Federal Reserve、ISM、Washington Post<br>
     <strong>⚠️ 僅供參考，非投資建議。市場有風險，投資須謹慎。</strong>
   </footer>
 
