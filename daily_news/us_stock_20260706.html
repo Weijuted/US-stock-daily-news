@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-06</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .badge { display: inline-block; margin-top: 12px; background: rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 14px; font-size: 0.82rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf7; padding-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .record { background: #fef9c3; }
+    .record td:first-child::after { content: " ★"; color: #d97706; font-size: 0.8rem; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li .tag { display: inline-block; background: #dbeafe; color: #1e40af; font-size: 0.75rem; font-weight: 600; border-radius: 4px; padding: 1px 7px; margin-right: 8px; vertical-align: middle; }
+    .event-list li .tag.tech { background: #dcfce7; color: #166534; }
+    .event-list li .tag.macro { background: #fef3c7; color: #92400e; }
+    .event-list li .tag.policy { background: #f3e8ff; color: #6b21a8; }
+    .event-list li .tag.corp { background: #fee2e2; color: #991b1b; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 18px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; font-weight: 500; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-item .note { font-size: 0.78rem; color: #6b7280; margin-top: 3px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li strong { color: #b91c1c; }
+    .stocks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 8px; }
+    .stock-chip { background: #f8faff; border-radius: 8px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; }
+    .stock-chip .ticker { font-weight: 700; font-size: 0.95rem; color: #1a1a2e; }
+    .stock-chip .change { font-weight: 700; font-size: 0.95rem; }
+    .stock-chip .name { font-size: 0.75rem; color: #6b7280; margin-top: 2px; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 8px; padding: 6px 0; border-bottom: 1px solid #f3f4f6; list-style: none; }
+    .sources li:last-child { border-bottom: none; }
+    .sources .src-label { display: inline-block; background: #f0f4ff; color: #0f3460; border-radius: 3px; padding: 1px 6px; font-size: 0.75rem; margin-right: 6px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; line-height: 1.7; }
+    @media (max-width: 600px) {
+      .macro-grid { grid-template-columns: 1fr; }
+      .stocks-grid { grid-template-columns: 1fr 1fr; }
+      header { padding: 24px 20px; }
+      .card { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026年7月6日（週一）| 獨立日假期後首個交易日</div>
+    <div class="badge">道瓊指數突破 53,000 點 創歷史新高 ★</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="record">
+          <td><strong>道瓊工業平均指數</strong><br><span style="font-size:0.78rem;color:#6b7280;">Dow Jones Industrial Average</span></td>
+          <td><strong>53,055.91</strong></td>
+          <td class="up">+155.84</td>
+          <td class="up">+0.29%</td>
+          <td style="font-size:0.82rem;color:#d97706;">歷史收盤新高</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 指數</strong><br><span style="font-size:0.78rem;color:#6b7280;">S&amp;P 500 Index</span></td>
+          <td><strong>7,537.43</strong></td>
+          <td class="up">+53.79</td>
+          <td class="up">+0.72%</td>
+          <td style="font-size:0.82rem;color:#6b7280;">科技股帶動</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合指數</strong><br><span style="font-size:0.78rem;color:#6b7280;">Nasdaq Composite</span></td>
+          <td><strong>26,121.16</strong></td>
+          <td class="up">+289.71</td>
+          <td class="up">+1.12%</td>
+          <td style="font-size:0.82rem;color:#6b7280;">半導體動能帶動</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 指數</strong><br><span style="font-size:0.78rem;color:#6b7280;">Russell 2000 Index</span></td>
+          <td><strong>—</strong></td>
+          <td class="neutral">—</td>
+          <td class="neutral">—</td>
+          <td style="font-size:0.82rem;color:#6b7280;">數據待確認</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>🔔 重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <span class="tag tech">科技／指數</span>
+        <strong>SpaceX（代碼：SPCX）正式納入那斯達克100指數</strong>——採3倍流通股乘數計算，創造約2,670億美元的指數部位，為指數成分股調整帶來大規模資金流動。
+      </li>
+      <li>
+        <span class="tag corp">個股</span>
+        <strong>Dell（DELL）大漲 +7.7%</strong>——美國總統川普在紐交所開盤鈴聲儀式上公開推薦Dell電腦，帶動股價強勁上漲，成為當日最大漲幅個股之一。
+      </li>
+      <li>
+        <span class="tag tech">半導體</span>
+        <strong>AI晶片股出現獲利了結</strong>——那斯達克雖整體上漲，但半導體龍頭遭遇回調：Micron（MU）-5.5%、AMD -4.3%、Intel（INTC）-5.3%，市場對AI股估值偏高有所警惕。
+      </li>
+      <li>
+        <span class="tag corp">媒體</span>
+        <strong>Netflix（NFLX）飆漲 +4.7%</strong>——Comcast宣布收購英國廣播公司，確認不競購NBCUniversal，消除市場對Netflix潛在競爭壓力，股價應聲大漲。
+      </li>
+      <li>
+        <span class="tag tech">供應鏈</span>
+        <strong>博通（Broadcom）與Apple延長合作至2031年</strong>——雙方宣布供應鏈夥伴關係延長，鞏固半導體供應合作，對兩家公司中長期營收展望正面。
+      </li>
+      <li>
+        <span class="tag corp">加密採礦</span>
+        <strong>IREN股價盤前大幅上漲</strong>——受加密貨幣市場情緒改善及AI算力需求升溫帶動，IREN在盤前交易中表現搶眼。
+      </li>
+      <li>
+        <span class="tag macro">市場氣氛</span>
+        <strong>川普出席紐交所／那斯達克開盤鈴聲儀式</strong>——節後首個交易日投資人情緒樂觀，市場氛圍正向，三大指數普遍開高。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🌐 總體經濟與宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯準會（Fed）利率</div>
+        <div class="value">3.50% – 3.75%</div>
+        <div class="note">6月17日FOMC會議維持不動；下次決策日：7月28-29日</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">6月非農就業（7/2公布）</div>
+        <div class="value">57,000 人</div>
+        <div class="note">大幅低於市場預期約190,000人；失業率4.2%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">5月消費者物價指數（CPI）</div>
+        <div class="value">+4.2% YoY</div>
+        <div class="note">高於4月的3.8%；能源價格大漲+23.5%；核心CPI 2.9%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">薪資成長 vs 通膨</div>
+        <div class="value">3.5% vs 4.2%</div>
+        <div class="note">薪資成長持續落後通膨，實質購買力受壓縮</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">30年期房貸利率</div>
+        <div class="value">6.664%</div>
+        <div class="note">7月6日報價；預計7月維持高檔</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Fed 政策展望</div>
+        <div class="value">維持觀望</div>
+        <div class="note">就業數據疲軟使升息預期降溫；市場押注年內降息</div>
+      </div>
+    </div>
+    <div style="margin-top:16px; background:#f0f9ff; border-radius:8px; padding:14px 16px; font-size:0.88rem; color:#0369a1; border-left:3px solid #38bdf8;">
+      <strong>市場解讀：</strong>6月就業數據遠低於預期（57K vs 190K），雖顯示勞動市場降溫，但也同步壓低了Fed繼續升息的必要性。這一訊號被市場解讀為「利空出盡」，支撐了假期後的開盤買盤。下一關鍵數據為7月14日公布的CPI報告。
+    </div>
+  </div>
+
+  <!-- INDIVIDUAL STOCKS -->
+  <div class="card">
+    <h2>📈 重要個股動態</h2>
+    <div class="stocks-grid">
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">DELL</div>
+          <div class="name">戴爾科技</div>
+        </div>
+        <div class="change up">+7.7%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">NFLX</div>
+          <div class="name">Netflix</div>
+        </div>
+        <div class="change up">+4.7%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">SPCX</div>
+          <div class="name">SpaceX</div>
+        </div>
+        <div class="change up">納入NDX</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">AVGO</div>
+          <div class="name">博通 Broadcom</div>
+        </div>
+        <div class="change up">↑ Apple合作</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">MU</div>
+          <div class="name">美光科技</div>
+        </div>
+        <div class="change down">-5.5%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">AMD</div>
+          <div class="name">超微半導體</div>
+        </div>
+        <div class="change down">-4.3%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">INTC</div>
+          <div class="name">英特爾</div>
+        </div>
+        <div class="change down">-5.3%</div>
+      </div>
+      <div class="stock-chip">
+        <div>
+          <div class="ticker">IREN</div>
+          <div class="name">IREN（加密採礦）</div>
+        </div>
+        <div class="change up">盤前大漲</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>通膨壓力持續：</strong>5月CPI年增4.2%，遠高於Fed 2%目標，且較4月進一步升溫；能源價格暴漲+23.5%成為最大推手，增加生活成本壓力。</li>
+      <li><strong>勞動市場急速降溫：</strong>6月僅新增57,000個工作，大幅不及預期190,000個，顯示經濟動能可能正在減弱，需警惕衰退信號。</li>
+      <li><strong>AI晶片股估值泡沫風險：</strong>Micron、AMD、Intel等半導體龍頭單日跌幅達4-6%，顯示市場開始質疑AI相關股票的高估值，後市波動性可能加劇。</li>
+      <li><strong>實質薪資負成長：</strong>薪資成長3.5%持續低於通膨4.2%，消費者購買力實質下滑，可能影響下半年消費支出與企業獲利。</li>
+      <li><strong>聯準會政策不確定性：</strong>7月28-29日FOMC會議前，市場將密切關注7月14日CPI數據，任何通膨數據超預期都可能重燃升息疑慮。</li>
+      <li><strong>地緣政治與貿易風險：</strong>特朗普政府貿易政策動向持續牽動市場情緒，企業供應鏈調整壓力未消。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📋 資料來源</h2>
+    <ul class="sources">
+      <li>
+        <span class="src-label">TheStreet</span>
+        <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-6-2026" target="_blank">Stock Market Today (July 6, 2026): Dow surpasses 53K; sets new closing record after holiday weekend</a>
+      </li>
+      <li>
+        <span class="src-label">Yahoo Finance</span>
+        <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-6-064600457.html" target="_blank">Stock Market News for July 6, 2026</a>
+      </li>
+      <li>
+        <span class="src-label">Motley Fool</span>
+        <a href="https://www.fool.com/coverage/stock-market-today/2026/07/06/stock-market-today-july-6-semiconductor-momentum-lifts-nasdaq-as-dow-closes-above-53-000/" target="_blank">Stock Market Today, July 6: Semiconductor Momentum Lifts Nasdaq as Dow Closes Above 53,000</a>
+      </li>
+      <li>
+        <span class="src-label">CNBC</span>
+        <a href="https://www.cnbc.com/2026/07/05/stock-market-today-live-updates.html" target="_blank">Stock market news for July 6, 2026 — Live Updates</a>
+      </li>
+      <li>
+        <span class="src-label">Bloomberg</span>
+        <a href="https://www.bloomberg.com/news/articles/2026-07-05/stock-market-today-dow-s-p-live-updates" target="_blank">Stock Market Today: Dow, S&amp;P Live Updates for July 6</a>
+      </li>
+      <li>
+        <span class="src-label">Weiss Ratings</span>
+        <a href="https://weissratings.com/en/weiss-ratings-daily/something-momentous-is-happening-in-the-stock-market-on-july-6-2026" target="_blank">Something Momentous Is Happening in the Stock Market on July 6, 2026</a>
+      </li>
+      <li>
+        <span class="src-label">BLS</span>
+        <a href="https://www.bls.gov/news.release/archives/empsit_07022026.htm" target="_blank">Employment Situation Summary — June 2026 (Released July 2, 2026)</a>
+      </li>
+      <li>
+        <span class="src-label">Federal Reserve</span>
+        <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve FOMC Statement — June 17, 2026</a>
+      </li>
+      <li>
+        <span class="src-label">CNBC</span>
+        <a href="https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html" target="_blank">Fed interest rate decision June 2026: Fed holds rates steady</a>
+      </li>
+      <li>
+        <span class="src-label">Yahoo Finance</span>
+        <a href="https://finance.yahoo.com/markets/article/its-a-bull-market-wall-street-sees-more-upside-in-stocks-for-the-second-half-of-2026-120220657.html" target="_blank">'It's a bull market': Wall Street sees more upside in stocks for the second half of 2026</a>
+      </li>
+      <li>
+        <span class="src-label">TipRanks</span>
+        <a href="https://www.tipranks.com/news/why-is-iren-stock-rising-in-pre-market-today-july-6-2026" target="_blank">Why Is IREN Stock Rising in Pre-Market Today — July 6, 2026?</a>
+      </li>
+      <li>
+        <span class="src-label">NBC News</span>
+        <a href="https://www.nbcnews.com/business/economy/june-jobs-report-stable-hiring-rcna352603" target="_blank">U.S. adds just 57,000 jobs in June, a worrying sign as wage growth remains slow</a>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 · 多來源交叉核對<br>
+    資料涵蓋：TheStreet、Yahoo Finance、Motley Fool、CNBC、Bloomberg、BLS、Federal Reserve<br>
+    <strong>⚠️ 僅供參考，非投資建議。市場有風險，投資須謹慎。</strong>
+  </footer>
+
+</div>
+</body>
+</html>
