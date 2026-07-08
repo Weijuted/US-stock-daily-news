@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-07</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-high { background: #dcfce7; color: #166534; }
+    .badge-mid { background: #fef9c3; color: #854d0e; }
+    .badge-low { background: #fee2e2; color: #991b1b; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #fca5a5; background: #fff5f5; }
+    .event-card.warning { border-color: #fcd34d; background: #fffbeb; }
+    .event-card.positive { border-color: #86efac; background: #f0fdf4; }
+    .event-card.neutral { border-color: #93c5fd; background: #eff6ff; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #991b1b; }
+    .event-card.warning h4 { color: #92400e; }
+    .event-card.positive h4 { color: #065f46; }
+    .event-card.neutral h4 { color: #1e40af; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.semi { background: #ede9fe; color: #5b21b6; }
+    .tag.bio { background: #dcfce7; color: #166534; }
+    .tag.ma { background: #fce7f3; color: #9d174d; }
+    .tag.space { background: #e0f2fe; color: #0369a1; }
+    .tag.energy { background: #fef3c7; color: #92400e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #7f1d1d, #991b1b); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+    .sox-warning { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-size: 0.88rem; color: #78350f; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 7 月 7 日（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>三星 Q2 財報雖創歷史新高，卻遠不及市場「耳語預期」，加上 DeepSeek 宣布自研 AI 晶片，雙重利空重創半導體板塊。費城半導體指數（SOX）單日暴跌約 6%，拖累納斯達克下跌逾 1%。道瓊在非科技股支撐下相對抗跌，前日甫突破 53,000 點歷史新高。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>52,925.15</td>
+          <td class="down">-130.76</td>
+          <td class="down">-0.25%</td>
+          <td>相對抗跌；前日剛創 53,000 歷史新高</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,503.85</td>
+          <td class="down">—</td>
+          <td class="down">-0.45%</td>
+          <td>科技股拖累</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>25,818.69</td>
+          <td class="down">—</td>
+          <td class="down">-1.16%</td>
+          <td>晶片板塊重挫主因</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>~2,996</td>
+          <td class="down">—</td>
+          <td class="down">約 -1.2%</td>
+          <td>小型股跟隨科技板塊下跌</td>
+        </tr>
+        <tr>
+          <td><strong>費城半導體指數 (SOX)</strong></td>
+          <td>—</td>
+          <td class="down">—</td>
+          <td class="down">-5.7% 至 -6%</td>
+          <td>四週低點；單日市值蒸發約 8,000 億美元</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+      <div class="event-card primary" style="grid-column: span 2;">
+        <h4>💥 三星 Q2 財報「史上最強但低於耳語預期」——引爆全球晶片崩跌（主要催化劑）</h4>
+        <ul>
+          <li>三星電子預測 Q2 營業利潤約 <strong>89.4 兆韓元（約 590 億美元）</strong>，年增約 19 倍，超越同期蘋果與輝達</li>
+          <li>然而過去一年股價已翻倍至三倍，市場「耳語預期」遠高於券商共識，實際數字雖創紀錄仍令市場失望</li>
+          <li>三星股價當日下跌 <strong>-7% 至 -8%</strong>；韓國 KOSPI 指數暴跌近 <strong>-5%</strong></li>
+          <li>衝擊波擴散：Intel <strong>-10%</strong>、Applied Materials <strong>-10%</strong>、AMD <strong>-8%</strong>、Lam Research <strong>-6%+</strong>、Marvell <strong>-6%+</strong></li>
+          <li>費城半導體指數（SOX）下跌約 <strong>-5.7% 至 -6%</strong>，創四週低點，估計單日市值蒸發近 <strong>8,000 億美元</strong></li>
+        </ul>
+      </div>
+      <div class="event-card warning">
+        <h4>🤖 DeepSeek 宣布自研 AI 晶片（次要催化劑）</h4>
+        <ul>
+          <li>中國 AI 新創 DeepSeek 宣布正在開發自有 AI 推論晶片，目標降低對輝達及華為的依賴</li>
+          <li>消息加劇半導體板塊恐慌，市場重新評估 AI 晶片長期需求</li>
+          <li>Meta 亦傳出考慮將多餘算力商業化，雙重利空疊加壓低科技股</li>
+        </ul>
+      </div>
+      <div class="event-card neutral">
+        <h4>🚀 SpaceX 正式加入納斯達克 100 指數</h4>
+        <ul>
+          <li>SpaceX（SPCX）於 7 月 7 日開市前正式納入 Nasdaq-100，交易所新「快速入選」規則首例</li>
+          <li>6 月中旬完成史上最大 IPO（募資 750 億美元），IPO 首日大漲逾 50%</li>
+          <li>截至入選日，股價已從歷史高點下跌約 <strong>28-29%</strong></li>
+          <li>被動資金買入：摩根大通估計約 <strong>43 億美元</strong>（僅 QQQ）；法巴估計合計約 <strong>80 億美元</strong></li>
+          <li>因公開流通股比例極小，指數權重僅約 1%，實際衝擊受限</li>
+        </ul>
+      </div>
+      <div class="event-card positive">
+        <h4>💊 Vertex 以 100 億美元收購 Crinetics（M&amp;A）</h4>
+        <ul>
+          <li>Vertex Pharmaceuticals（VRTX）宣布以每股 <strong>85 美元全現金</strong>收購 Crinetics（CRNX）</li>
+          <li>總交易金額約 <strong>100 億美元</strong>（扣除現金後約 88 億美元）</li>
+          <li>Crinetics 主打罕見內分泌疾病，核心產品 PALSONIFY（paltusotine）已於 2025 年 9 月獲 FDA 批准</li>
+          <li>兩項藥物潛在年銷售峰值逾 50 億美元；提振生技板塊整體情緒</li>
+        </ul>
+      </div>
+      <div class="event-card neutral" style="grid-column: span 2;">
+        <h4>⚡ 輝達否認 Kyber 平台延期報告（日內波動）</h4>
+        <ul>
+          <li>媒體報導輝達旗艦 AI 平台 Kyber NVL144 將延至 2028 年推出，盤前股價一度下跌約 <strong>-1.5%</strong></li>
+          <li>輝達隨後強力否認，確認開發進程如期，股價反彈逾 <strong>+1%</strong>，收盤約 <strong>198 美元</strong></li>
+          <li>高盛同日指出 21.7 倍本益比具吸引力，維持買進評級</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">WTI 原油</div>
+        <div class="value">$68.84</div>
+        <div class="change up">+0.26%（中東緊張）</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">布蘭特原油</div>
+        <div class="value">$72.29</div>
+        <div class="change up">+0.39%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">聯準會基準利率</div>
+        <div class="value">3.50–3.75%</div>
+        <div class="change neutral">6/17 FOMC 維持不變</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">CPI 年增率</div>
+        <div class="value down">4.2%</div>
+        <div class="change down">仍遠高於 2% 目標</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">PCE 年增率（3 月）</div>
+        <div class="value down">3.5%</div>
+        <div class="change down">通膨壓力持續</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">6 月非農就業</div>
+        <div class="value down">+57,000</div>
+        <div class="change down">遠低於預期 +115,000</div>
+      </div>
+    </div>
+
+    <h3>聯準會動態——鷹派轉向衝擊</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      新任聯準會主席 <strong>凱文·沃什（Kevin Warsh）</strong>於 6 月 16-17 日主持首次 FOMC 會議，一致投票<strong>維持利率於 3.50%–3.75%</strong>。然而鷹派信號震撼市場：18 位官員中有 <strong>9 位預測 2026 年將升息</strong>（3 月份所有官員均預測持平或降息的重大逆轉）。2026 年底利率中位數預測上調至 <strong>3.8%</strong>（3 月預測 3.4%）。沃什主導下聲明大幅精簡，刪除先前「降息指引」，改採純粹「數據依賴」中性立場。<strong>下次 FOMC：7 月 28-29 日。</strong>
+    </p>
+
+    <h3>6 月就業報告（7 月 2 日發布）</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>數據</th><th>結果</th><th>vs 預期</th><th>解讀</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>非農就業人數</td>
+          <td class="down"><strong>+57,000</strong></td>
+          <td>遠低於預期 +115,000</td>
+          <td>四個月最低；就業市場明顯降溫</td>
+        </tr>
+        <tr>
+          <td>失業率</td>
+          <td>4.2%</td>
+          <td>—</td>
+          <td>但主因勞動參與率降至 61.5%（2021/3 以來最低）</td>
+        </tr>
+        <tr>
+          <td>休閒住宿業就業</td>
+          <td class="down">-61,000</td>
+          <td>意外負值</td>
+          <td>世界盃賽事影響季節性僱傭</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>地緣政治——中東緊張升溫</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      卡達國家航運公司旗下一艘 LNG 油輪在<strong>霍爾木茲海峽</strong>出口附近遭不明物體撞擊，更新市場對伊朗衝突擴大的擔憂。伊朗外長警告若地緣政治威脅持續，最終和平談判將陷入僵局。世界銀行警告中東戰事可能引發四年內最大規模能源價格飆升。油價因此溫和上漲，構成額外的通膨憂慮。
+    </p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+
+    <h3>半導體板塊（領跌）</h3>
+    <div class="sox-warning">⚠️ 費城半導體指數（SOX）單日暴跌約 -5.7% 至 -6%，估計市值蒸發近 8,000 億美元，創四週最大跌幅。</div>
+    <table class="stock-table">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>催化劑</th><th>板塊</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>英特爾（INTC）</strong></td>
+          <td class="down">-10%</td>
+          <td>三星財報引發晶片板塊崩跌</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>應用材料（AMAT）</strong></td>
+          <td class="down">-10%</td>
+          <td>半導體設備股受累</td>
+          <td><span class="tag semi">半導體設備</span></td>
+        </tr>
+        <tr>
+          <td><strong>超微半導體（AMD）</strong></td>
+          <td class="down">-8%</td>
+          <td>晶片股板塊崩跌拖累</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>三星電子（Samsung）</strong></td>
+          <td class="down">-7% 至 -8%</td>
+          <td>財報大幅超越 EPS 預期，卻不及「耳語預期」</td>
+          <td><span class="tag semi">記憶體</span></td>
+        </tr>
+        <tr>
+          <td><strong>萊姆研究（LRCX）</strong></td>
+          <td class="down">-6%+</td>
+          <td>半導體設備股崩跌</td>
+          <td><span class="tag semi">半導體設備</span></td>
+        </tr>
+        <tr>
+          <td><strong>邁威爾科技（MRVL）</strong></td>
+          <td class="down">-6%+</td>
+          <td>半導體板塊整體賣壓</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>輝達（NVDA）</strong></td>
+          <td class="up">盤前 -1.5% → 收盤 +1%+（約 $198）</td>
+          <td>公司強力否認 Kyber 延期報告後反彈；高盛推薦</td>
+          <td><span class="tag semi">AI 晶片</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>其他重要個股</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>股票</th><th>動態</th><th>說明</th><th>標籤</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SpaceX（SPCX）</strong></td>
+          <td class="neutral">正式入選 Nasdaq-100</td>
+          <td>被動資金買入預估 43-80 億美元；但股價較 ATH 已跌約 29%</td>
+          <td><span class="tag space">指數入選</span></td>
+        </tr>
+        <tr>
+          <td><strong>Vertex（VRTX）</strong></td>
+          <td class="neutral">M&amp;A 消息</td>
+          <td>宣布 100 億美元全現金收購 Crinetics</td>
+          <td><span class="tag ma">M&amp;A</span></td>
+        </tr>
+        <tr>
+          <td><strong>Crinetics（CRNX）</strong></td>
+          <td class="up">大幅上漲（溢價收購）</td>
+          <td>Vertex 以每股 85 美元全現金收購，大幅高於市價</td>
+          <td><span class="tag ma">M&amp;A</span></td>
+        </tr>
+        <tr>
+          <td><strong>Alphabet（GOOGL）</strong></td>
+          <td class="neutral">戰略投資</td>
+          <td>參與 Proxima Fusion 核融合公司 4.11 億歐元融資輪</td>
+          <td><span class="tag space">科技</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊表現總結</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>板塊</th><th>表現</th><th>主要驅動</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>半導體 / 科技硬體</td><td class="down">大幅落後（SOX -6%）</td><td>三星財報不如耳語預期；DeepSeek 自研晶片消息</td></tr>
+        <tr><td>生技 / 醫療</td><td class="up">相對抗跌</td><td>Vertex-Crinetics 100 億美元 M&amp;A 提振情緒</td></tr>
+        <tr><td>能源</td><td class="up">小幅上漲</td><td>油價溫和上漲，中東地緣政治支撐</td></tr>
+        <tr><td>工業 / 消費</td><td class="neutral">表現平穩</td><td>道瓊相對抗跌（非科技成分股支撐）</td></tr>
+        <tr><td>AI / 雲端</td><td class="down">受牽連</td><td>半導體崩跌拖累整體科技股，DeepSeek 晶片新聞引發 AI 需求疑慮</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會鷹派轉向——升息尾部風險上升：</strong>18 位官員中 9 位預測 2026 年升息，2026 年底利率中位預測上調至 3.8%，與 3 月份立場形成重大逆轉。若通膨持續居高，下次 FOMC（7 月 28-29 日）前景不明，市場可能面臨進一步再定價壓力。</li>
+      <li><strong>半導體板塊估值泡沫風險：</strong>三星財報事件顯示，即便獲利創歷史新高，若不及「耳語預期」市場仍可能暴力修正。AI 晶片需求長期可見度下降，SOX 估值若繼續修正，將對整體科技板塊形成拖累。</li>
+      <li><strong>DeepSeek 自研晶片削弱 AI 晶片壟斷格局：</strong>若中國 AI 新創能成功開發替代晶片，輝達等 AI 晶片龍頭的長期定價能力與市佔率將受到結構性挑戰，市場對「AI 晶片超級周期」的共識存在被顛覆風險。</li>
+      <li><strong>就業市場降溫 vs. 通膨持高的矛盾困境：</strong>6 月 NFP 僅 +57,000（低於預期逾 50%），顯示就業市場明顯降溫；但 CPI 4.2%、PCE 3.5% 仍遠高於目標。聯準會在「升息抗通膨」與「降溫救就業」之間面臨兩難，政策失誤風險升高。</li>
+      <li><strong>中東地緣政治緊張——霍爾木茲海峽再起波瀾：</strong>LNG 油輪遭撞擊事件顯示中東局勢未完全平息。若霍爾木茲海峽局勢再度升溫，油價可能急劇飆升，加速通膨惡化並打壓市場情緒。</li>
+      <li><strong>SpaceX（SPCX）高估值與被動資金扭曲：</strong>入選 Nasdaq-100 帶來的 43-80 億美元被動買入雖為短期支撐，但股價已較高點跌約 29%，且市值仍位於高水位。若指數被動資金買入完成後散戶跟進轉賣，可能引發新一波修正，並透過 QQQ 等 ETF 衝擊大盤。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <p class="source-category">主要財經新聞</p>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-7-2026" target="_blank">TheStreet — Stock Market Today July 7, 2026: Chip rout continues as Samsung earnings fail to turn around Nasdaq, S&amp;P 500</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-futures-slip-after-samsung-results-spark-chip-sell-off-223015294.html" target="_blank">Yahoo Finance — Stock market today: Dow, S&amp;P 500, Nasdaq fall as Samsung, DeepSeek spark chip sell-off</a></li>
+      <li><a href="https://www.marketscreener.com/news/nasdaq-slides-over-1-as-chip-rout-deepens-ce7f5ed8da8cf620" target="_blank">MarketScreener — Nasdaq slides over 1% as chip rout deepens</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/07/intel-and-applied-materials-dive-10-amd-craters-8-as-samsung-earnings-trigger-chip-selloff/" target="_blank">24/7 Wall St. — Intel and Applied Materials Dive 10%, AMD Craters 8% as Samsung Earnings Trigger Chip Selloff</a></li>
+    </ul>
+
+    <p class="source-category">三星財報與晶片板塊</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/07/07/chip-stocks-ai-selloff-samsung.html" target="_blank">CNBC — Chip stocks sell off after Samsung earnings fall short of high AI bar</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/chip-stocks-sell-off-globally-113723045.html" target="_blank">Yahoo Finance — Chip stocks sell off globally after Samsung earnings disappoint</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-07/tech-weakness-resumes-after-samsung-misses-lofty-ai-expectations" target="_blank">Bloomberg — Samsung Misses AI Expectations, Pressures Tech Stocks as Nasdaq Futures Drop</a></li>
+      <li><a href="https://seekingalpha.com/news/4611886-ai-memory-chip-stocks-fall-despite-samsungs-q2-profit-surge-as-worries-around-ai-boom-loom" target="_blank">Seeking Alpha — AI memory, chip stocks fall despite Samsung's Q2 profit surge</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/07/samsung-just-out-earned-apple-and-nvidia-and-the-stock-tanked-7/" target="_blank">24/7 Wall St. — Samsung Just Out-Earned Apple and Nvidia, and the Stock Tanked 7%</a></li>
+      <li><a href="https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/07/60307608/samsung-record-memory-profit-selloff-forward-pe" target="_blank">Benzinga — Samsung's Record Memory Profit Sparks A 7% Selloff</a></li>
+    </ul>
+
+    <p class="source-category">DeepSeek 自研晶片</p>
+    <ul class="sources">
+      <li><a href="https://www.xtb.com/en/market-analysis/nasdaq-selloff-deepseek-and-samsung-earnings-reaction-sink-semiconductor-stocks" target="_blank">XTB — Nasdaq selloff: DeepSeek and Samsung earnings reaction sink semiconductor stocks</a></li>
+      <li><a href="https://www.analyticsinsight.net/stocks/us-stock-market-today-nasdaq-drops-as-deepseek-chip-ambitions-and-samsung-selloff-shake-investor-sentiment" target="_blank">Analytics Insight — US Stock Market Today: NASDAQ Drops as DeepSeek Chip Ambitions</a></li>
+      <li><a href="https://techstartups.com/2026/07/07/deepseek-is-building-its-own-ai-chip-to-cut-reliance-on-nvidia-and-huawei/" target="_blank">TechStartups — DeepSeek is building its own AI chip to cut reliance on Nvidia and Huawei</a></li>
+    </ul>
+
+    <p class="source-category">SpaceX 加入 Nasdaq-100</p>
+    <ul class="sources">
+      <li><a href="https://www.fool.com/investing/2026/07/06/spacex-joins-the-nasdaq-100-on-july-7-here-is-what/" target="_blank">Motley Fool — SpaceX Joins the Nasdaq-100 on July 7. Here Is What This Means for QQQ Investors</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/06/spacex-joins-the-nasdaq-100-on-tuesday-what-it-means-for-the-stock.html" target="_blank">CNBC — SpaceX joins the Nasdaq-100 on Tuesday. Here's what it means for the stock</a></li>
+      <li><a href="https://www.cnn.com/2026/07/07/economy/spacex-nasdaq-100-stocks" target="_blank">CNN Business — SpaceX is joining the Nasdaq 100. Here's what to know</a></li>
+      <li><a href="https://www.coindesk.com/markets/2026/07/06/spacex-s-nasdaq-100-inclusion-comes-with-a-historical-warning" target="_blank">CoinDesk — SpaceX joins the Nasdaq 100, but history suggests caution</a></li>
+    </ul>
+
+    <p class="source-category">輝達 (Nvidia) 動態</p>
+    <ul class="sources">
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262015350-nvidia-nvda-stock-forecast-july-2026-kyber-denial-goldman-tradingkey" target="_blank">TradingKey — NVIDIA NVDA Stock Forecast July 2026: Goldman Says 21.7x Is 'Compelling' After Kyber Delay Denied</a></li>
+    </ul>
+
+    <p class="source-category">Vertex / Crinetics M&amp;A</p>
+    <ul class="sources">
+      <li><a href="https://www.biopharmadive.com/news/vertex-crinetics-acquire-deal-palsonify-acromegaly/824545/" target="_blank">BioPharma Dive — Vertex to acquire Crinetics in $10B foray into endocrine disease drugs</a></li>
+      <li><a href="https://www.statnews.com/2026/07/06/vertex-acquires-crinetics-pharmaceuticals/" target="_blank">STAT News — Vertex acquires Crinetics Pharmaceuticals for $10 billion</a></li>
+      <li><a href="https://endpoints.news/vertex-makes-10b-deal-for-commercial-endocrinology-biotech-crinetics/" target="_blank">Endpoints News — Vertex makes $10B deal for commercial endocrinology biotech Crinetics</a></li>
+    </ul>
+
+    <p class="source-category">總體經濟 / 聯準會 / 就業</p>
+    <ul class="sources">
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve — FOMC Statement June 17, 2026</a></li>
+      <li><a href="https://finance.yahoo.com/economy/policy/articles/warsh-hawkish-shock-9-fed-180221394.html" target="_blank">Yahoo Finance — Warsh Hawkish Shock: 9 Fed Officials Signal 2026 Rate Hike</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/17/here-are-the-five-big-takeaways-from-kevin-warshs-first-meeting-as-fed-chairman.html" target="_blank">CNBC — Five big takeaways from Kevin Warsh's first meeting as Fed chairman</a></li>
+      <li><a href="https://www.pimco.com/us/en/insights/hawkish-leaning-committee-reform-minded-chair-warshs-first-fed-meeting" target="_blank">PIMCO — Hawkish-Leaning Committee, Reform-Minded Chair: Warsh's First Fed Meeting</a></li>
+      <li><a href="https://finance.yahoo.com/economy/article/june-jobs-report-us-payrolls-rose-by-57000-missing-expectations-190000748.html" target="_blank">Yahoo Finance — June jobs report: US payrolls rose by 57,000, missing expectations</a></li>
+      <li><a href="https://www.bls.gov/news.release/archives/empsit_07022026.htm" target="_blank">BLS — Employment Situation Summary June 2026</a></li>
+      <li><a href="https://www.indexbox.io/blog/us-job-growth-slows-more-than-expected-in-june-2026/" target="_blank">IndexBox — June 2026 Jobs Report: Nonfarm Payrolls Rise by 57,000</a></li>
+    </ul>
+
+    <p class="source-category">原油 / 地緣政治</p>
+    <ul class="sources">
+      <li><a href="https://fortune.com/article/price-of-oil-07-07-2026/" target="_blank">Fortune — Current price of oil as of July 7, 2026</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/07/07/oil-prices-gain-as-focus-shifts-to-supply-recovery-and-demand.html" target="_blank">CNBC — Oil prices gain as focus shifts to supply recovery and demand</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 · 2026-07-08 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
