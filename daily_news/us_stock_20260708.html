@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-08</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #374151; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-warn { background: #fef3c7; color: #92400e; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.danger { border-color: #fca5a5; background: #fff5f5; }
+    .event-card.positive { border-color: #86efac; background: #f0fdf4; }
+    .event-card.info { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.neutral-card { border-color: #d1d5db; background: #f9fafb; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; }
+    .event-card.danger h4 { color: #991b1b; }
+    .event-card.positive h4 { color: #166534; }
+    .event-card.info h4 { color: #1e40af; }
+    .event-card.neutral-card h4 { color: #374151; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.energy { background: #fef3c7; color: #92400e; }
+    .tag.tech { background: #ede9fe; color: #5b21b6; }
+    .tag.airline { background: #fce7f3; color: #9d174d; }
+    .tag.cruise { background: #fee2e2; color: #991b1b; }
+    .tag.ev { background: #dcfce7; color: #166534; }
+    .tag.build { background: #fef3c7; color: #78350f; }
+    .tag.earn { background: #e0e7ff; color: #3730a3; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #7f1d1d, #991b1b); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+    .highlight-bar-green { background: linear-gradient(135deg, #14532d, #166534); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .verify-note { background: #f0f9ff; border: 1px solid #7dd3fc; border-radius: 6px; padding: 10px 14px; font-size: 0.8rem; color: #0c4a6e; margin-top: 12px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 7 月 8 日（週三）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>川普於北約峰會宣告伊朗停火「已結束」，油價單日暴漲逾 5%，道瓊重挫 576 點、羅素 2000 跌約 1%。納斯達克逆勢小漲，得益於蘋果宣布斥逾 <strong>300 億美元</strong>與博通簽訂多年晶片大單，博通股價當日飆升 +4.8%。另外聯準會 6 月 FOMC 紀要出爐，顯示 9 名官員傾向年底前再升息一次。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>52,348.39</td>
+          <td class="down">-576.76</td>
+          <td class="down">-1.09%</td>
+          <td>能源、航空、建築、郵輪股大幅下挫</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,482.71</td>
+          <td class="down">-21（估）</td>
+          <td class="down">-0.28%</td>
+          <td>能源板塊上漲部分抵銷跌幅</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>25,870.65</td>
+          <td class="up">+52（估）</td>
+          <td class="up">+0.20%</td>
+          <td>蘋果/博通大單帶動科技股逆勢抗跌</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>2,952.90</td>
+          <td class="down">-29.58</td>
+          <td class="down">-0.99%</td>
+          <td>小型股受地緣政治風險拖累明顯</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="verify-note">✅ 交叉驗證：指數數據由 CNBC、Yahoo Finance、NBC News、US News、Bloomberg 等多方來源核實。</div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+
+      <div class="event-card danger" style="grid-column: span 2;">
+        <h4>💥 川普宣布伊朗停火「已結束」——當日最大負面催化劑</h4>
+        <ul>
+          <li>川普在<strong>土耳其安卡拉北約峰會</strong>場邊表示：「我認為停火已經結束。」稱談判是「浪費時間」</li>
+          <li>起因：伊朗攻擊霍爾木茲海峽過境商船，川普對海峽未能完全開放深感憤怒</li>
+          <li>美軍當夜再次空襲伊朗目標；川普揚言可能<strong>奪取 Kharg 島</strong>（伊朗承擔約 90% 原油出口的樞紐）</li>
+          <li>北約在土耳其因吉爾利克空軍基地附近擊落伊朗無人機與導彈；北約秘書長呂特稱打擊行動「完全必要」</li>
+          <li>川普威脅重新對霍爾木茲海峽實施美國海軍封鎖，霍爾木茲再度封閉風險大幅上升</li>
+          <li><strong>市場即時反應：</strong>道瓊盤中一度跌逾 600 點，油價飆漲 4–5%，航空、郵輪、建築股重挫</li>
+        </ul>
+      </div>
+
+      <div class="event-card positive">
+        <h4>🍎 蘋果與博通簽署 $300 億+ 晶片大單</h4>
+        <ul>
+          <li>蘋果（AAPL）宣布與博通（AVGO）簽署多年定製晶片協議，金額<strong>超過 300 億美元</strong></li>
+          <li>為蘋果「美國製造計畫（AMP）」迄今<strong>最大單筆承諾</strong></li>
+          <li>協議涵蓋在美製造<strong>超過 150 億顆晶片</strong>（射頻元件/FBAR 濾波器、無線連接晶片）</li>
+          <li>博通將投入 <strong>15 億美元</strong>擴建科羅拉多州 Fort Collins 廠</li>
+          <li>博通（AVGO）當日大漲 <strong>+4.8%</strong>，提振納斯達克逆勢收漲</li>
+        </ul>
+      </div>
+
+      <div class="event-card info">
+        <h4>🏦 聯準會 6 月 FOMC 紀要發布</h4>
+        <ul>
+          <li>7 月 8 日公開新主席 Warsh 首次主持（6/16–17）的 FOMC 會議紀要</li>
+          <li>利率維持 <strong>3.50–3.75%</strong> 不變（連續第 4 次凍結）</li>
+          <li>18 名提交預測的官員中，<strong>9 人</strong>預計 2026 年底前至少再升息一次，8 人預計不變，1 人預計降息</li>
+          <li>Warsh 本人<strong>未提交</strong>利率點陣圖預測；政策聲明僅 130 字、零前瞻指引</li>
+          <li>市場開始定價 <strong>9 月升息風險</strong>；首次降息時程可能延至 2027 年</li>
+        </ul>
+      </div>
+
+      <div class="event-card neutral-card">
+        <h4>🚀 SpaceX（SPCX）納入那斯達克 100 首日大跌</h4>
+        <ul>
+          <li>7 月 7 日正式加入那斯達克 100 指數（IPO 後不到一個月）</li>
+          <li>指數納入首個交易日股價反跌 <strong>-6.8%</strong>，收 <strong>$148</strong>，跌破首日掛牌收盤價 $150</li>
+          <li>距 6 月 16 日高點 $201.80 已回落約 <strong>-26.6%</strong></li>
+          <li>摩根士丹利給予增持評級，目標價 <strong>$300</strong></li>
+          <li>典型「納入效應消退」（buy the rumor, sell the news）現象</li>
+        </ul>
+      </div>
+
+      <div class="event-card neutral-card">
+        <h4>🚗 Rivian（RIVN）增發暴跌 -18.1%</h4>
+        <ul>
+          <li>宣布增發 <strong>7,500 萬股</strong>新股，大幅稀釋現有股東</li>
+          <li>市場憂慮電動車公司持續消耗現金、資本需求無底洞</li>
+          <li>電動車板塊整體承壓</li>
+        </ul>
+      </div>
+
+      <div class="event-card neutral-card">
+        <h4>👕 李維史特勞斯（LEVI）Q2 財報優預期盤後仍跌</h4>
+        <ul>
+          <li>EPS $0.28 vs 預期 $0.24（超出 $0.04）</li>
+          <li>營收 $15.6 億美元，高於預期 $15.2 億</li>
+          <li>公布全年 EPS 指引 $1.46–$1.52</li>
+          <li>儘管財報亮眼，盤後仍下跌逾 <strong>-5%</strong>（宏觀不確定性壓制估值）</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">WTI 原油</div>
+        <div class="value up">$73.52</div>
+        <div class="change up">+4.37%（伊朗衝突升溫）</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">布蘭特原油</div>
+        <div class="value up">$78.19</div>
+        <div class="change up">+5.43%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">聯準會利率（現行）</div>
+        <div class="value">3.50–3.75%</div>
+        <div class="change">連續第 4 次維持不變</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">9 月升息定價</div>
+        <div class="value down">偏鷹</div>
+        <div class="change down">9/18 委員傾向升息一次</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">航空燃油壓力</div>
+        <div class="value down">急升</div>
+        <div class="change down">油價+5% 衝擊航空業利潤</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">霍爾木茲封鎖風險</div>
+        <div class="value down">急劇升高</div>
+        <div class="change down">停火破裂後重新浮現</div>
+      </div>
+    </div>
+
+    <h3>聯準會動態</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      主席 Kevin Warsh 7 月初在 ECB 論壇表示通膨「仍然過高」，明確表示聯準會不會接受 2% 以上的通膨。6 月 FOMC 紀要（7 月 8 日公開）顯示，Warsh 拒絕提交點陣圖預測，政策聲明僅 130 字且零前瞻指引，政策不透明度創近年新高。18 名委員中有 9 人傾向年底前升息一次，會議紀要被部分分析師視為「幾年來最鷹派的信號」。市場開始定價 9 月 FOMC 升息可能性。
+    </p>
+
+    <h3>地緣政治背景</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      2026 年 2 月美伊衝突爆發後，6 月 18 日雙方曾簽署停火諒解備忘錄（MOU），一度緩解全球能源供應鏈壓力。然而 7 月 8 日，川普在北約峰會公開宣告停火「已結束」，伊朗再度攻擊霍爾木茲海峽過境商船為直接導火索。伊朗全球原油出口的 20% 須途經此海峽，若再度封閉，全球通膨壓力將面臨新一輪衝擊。美中關稅合計仍維持 30%，貿易不確定性持續。
+    </p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+
+    <h3>📈 能源板塊（當日領漲）</h3>
+    <table class="stock-table">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>催化劑</th><th>板塊</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>博通（AVGO）</strong></td>
+          <td class="up">+4.8%</td>
+          <td>蘋果 $300 億晶片大單（非能源但為當日最大個股漲幅之一）</td>
+          <td><span class="tag tech">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>Diamondback Energy（FANG）</strong></td>
+          <td class="up">+3%+</td>
+          <td>WTI 漲 4.37%；霍爾木茲風險升高推升油價</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>APA Corporation（APA）</strong></td>
+          <td class="up">+2.5%+</td>
+          <td>同上</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>Occidental Petroleum（OXY）</strong></td>
+          <td class="up">+2.5%+</td>
+          <td>同上</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>雪佛龍（CVX）</strong></td>
+          <td class="up">+2%+</td>
+          <td>布蘭特漲 5.43%；中東衝突升溫</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>ExxonMobil（XOM）</strong></td>
+          <td class="up">+1.5%</td>
+          <td>同上</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>📉 受創板塊（航空、建築、郵輪等）</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>說明</th><th>標籤</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>美國航空（AAL）</strong></td>
+          <td class="down">-4%</td>
+          <td>油價暴漲衝擊燃油成本；地緣政治壓制旅遊需求</td>
+          <td><span class="tag airline">航空</span></td>
+        </tr>
+        <tr>
+          <td><strong>聯合航空（UAL）</strong></td>
+          <td class="down">-2.5%</td>
+          <td>同上</td>
+          <td><span class="tag airline">航空</span></td>
+        </tr>
+        <tr>
+          <td><strong>達美/西南/捷藍 (DAL/LUV/JBLU)</strong></td>
+          <td class="down">各約 -2%</td>
+          <td>同上</td>
+          <td><span class="tag airline">航空</span></td>
+        </tr>
+        <tr>
+          <td><strong>Builders FirstSource（BLDR）</strong></td>
+          <td class="down">-5.4%</td>
+          <td>油價→公債殖利率上升→房貸利率承壓→建築需求轉弱</td>
+          <td><span class="tag build">建築</span></td>
+        </tr>
+        <tr>
+          <td><strong>PulteGroup（PHM）</strong></td>
+          <td class="down">-5.4%</td>
+          <td>同上；XHB ETF 跌破 200 日均線（$107 → $105.47）</td>
+          <td><span class="tag build">建築</span></td>
+        </tr>
+        <tr>
+          <td><strong>D.R. Horton（DHI）</strong></td>
+          <td class="down">-4.6%</td>
+          <td>同上</td>
+          <td><span class="tag build">建築</span></td>
+        </tr>
+        <tr>
+          <td><strong>Carnival Corp.（CCL）</strong></td>
+          <td class="down">-3.5%</td>
+          <td>燃油成本飆升 + 中東旅遊信心受損</td>
+          <td><span class="tag cruise">郵輪</span></td>
+        </tr>
+        <tr>
+          <td><strong>挪威郵輪（NCLH）</strong></td>
+          <td class="down">-3%</td>
+          <td>同上</td>
+          <td><span class="tag cruise">郵輪</span></td>
+        </tr>
+        <tr>
+          <td><strong>大衛塔（DVA）</strong></td>
+          <td class="down">-5.7%</td>
+          <td>醫療保健個股走弱</td>
+          <td><span class="tag">醫療</span></td>
+        </tr>
+        <tr>
+          <td><strong>西方聯合銀行（WAL）</strong></td>
+          <td class="down">-3.5%</td>
+          <td>升息預期升溫衝擊中小型銀行</td>
+          <td><span class="tag">金融</span></td>
+        </tr>
+        <tr>
+          <td><strong>Ollie's Bargain Outlet（OLLI）</strong></td>
+          <td class="down">-5%</td>
+          <td>折扣零售承壓；消費者信心受通膨疑慮衝擊</td>
+          <td><span class="tag">零售</span></td>
+        </tr>
+        <tr>
+          <td><strong>Rivian（RIVN）</strong></td>
+          <td class="down">-18.1%</td>
+          <td>宣布增發 7,500 萬股，股權大幅稀釋</td>
+          <td><span class="tag ev">電動車</span></td>
+        </tr>
+        <tr>
+          <td><strong>SpaceX（SPCX）</strong></td>
+          <td class="down">-6.8%</td>
+          <td>那斯達克 100 納入首日反跌；收 $148（低於 IPO 首日收盤 $150）</td>
+          <td><span class="tag tech">科技</span></td>
+        </tr>
+        <tr>
+          <td><strong>李維史特勞斯（LEVI）</strong></td>
+          <td class="down">-5%+（盤後）</td>
+          <td>Q2 財報優於預期，但宏觀不確定性壓制估值</td>
+          <td><span class="tag earn">財報</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊表現總結</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>板塊</th><th>方向</th><th>主要驅動</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>能源 Energy</td><td class="up">大幅領漲 +2%～+3%</td><td>WTI +4.37%、Brent +5.43%；霍爾木茲封鎖風險</td></tr>
+        <tr><td>半導體/科技</td><td class="up">逆勢抗跌</td><td>博通 +4.8%（蘋果大單）；納斯達克 +0.2%</td></tr>
+        <tr><td>航空</td><td class="down">重挫 -2%～-4%</td><td>油價急漲衝擊燃油成本 + 旅遊信心受損</td></tr>
+        <tr><td>住宅建築</td><td class="down">重跌 -4.6%～-5.4%</td><td>利率上升預期 → 房貸成本攀高 → 訂單壓力</td></tr>
+        <tr><td>郵輪/旅遊</td><td class="down">大跌 -3%～-3.5%</td><td>燃油成本上升 + 地緣政治風險</td></tr>
+        <tr><td>電動車</td><td class="down">Rivian -18.1%（增發）</td><td>股權稀釋事件</td></tr>
+        <tr><td>金融</td><td class="down">分化偏弱</td><td>升息預期 → 中小銀行承壓</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>霍爾木茲海峽再封鎖風險（最高優先）：</strong>川普宣告停火「已結束」並揚言攻占 Kharg 島。若海峽再次中斷，全球約 20% 原油通過受阻，油價可能衝破 $100/桶，引發輸入性通膨劇烈飆升，聯準會將面臨在衰退邊緣升息的兩難困境。</li>
+      <li><strong>聯準會 9 月升息風險上升：</strong>FOMC 紀要顯示 9/18 委員傾向年底前再升息一次；油價若持續高企，通膨更難回落，市場對 9 月 FOMC 升息的定價將快速上調，對利率敏感資產（房地產、小型股、高槓桿企業）形成壓力。</li>
+      <li><strong>通膨二次抬頭（滯脹隱憂）：</strong>油價單日急漲 5%，疊加先前 CPI 年增 4.2%（三年高位）、PPI 年增 6.5%，若能源成本持續居高，可能出現「油價推高通膨 → 聯準會被迫升息 → 抑制經濟增長」的滯脹格局，對企業盈利形成雙重打擊。</li>
+      <li><strong>北約/外交不確定性：</strong>川普在峰會上的即興言論顯示政策難以預測。美歐在如何處理伊朗問題上存在分歧，若盟友關係出現裂縫，市場的地緣政治風險溢酬將進一步擴大。</li>
+      <li><strong>SpaceX（SPCX）高估值消化：</strong>股價距 6 月高點 $201.80 已回落逾 26%，雖有摩根士丹利給予 $300 目標價，但散戶獲利賣壓與機構被動再平衡將持續施壓。若伊朗衝突升溫引發整體市場風險規避，成長股首當其衝。</li>
+      <li><strong>電動車板塊資本結構隱患：</strong>Rivian 增發 7,500 萬股顯示現金消耗嚴峻，市場可能重估其他電動車企的融資風險，帶動板塊情緒惡化。</li>
+      <li><strong>住宅市場降溫加速：</strong>XHB ETF 跌破 200 日均線，若公債殖利率在停火崩潰後進一步上升，房貸利率走高將壓制購屋需求，住宅建築商面臨訂單取消風險。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <p class="source-category">主要市場數據</p>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-8-2026" target="_blank">TheStreet — Stock Market Today (July 8, 2026): Trump suggests Iran strikes could continue</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednedsay-july-8-230111117.html" target="_blank">Yahoo Finance — Stock market today (July 8): Nasdaq rises, Dow and S&amp;P 500 retreat</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-8-095100764.html" target="_blank">Yahoo Finance — Stock Market News for July 8, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/07/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for July 8, 2026 (live updates)</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/08/stock-market-live-july-8-2026-sp-500-spy-slips-on-end-of-ceasefire/" target="_blank">24/7 Wall St. — Stock Market Live July 8, 2026: S&amp;P 500 Slips on End of Ceasefire</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-08/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow, S&amp;P Live Updates</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/trump-ends-iran-ceasefire-dow-112700183.html" target="_blank">Yahoo Finance — Stocks drop, oil prices jump as Trump says Iran ceasefire is "over"</a></li>
+    </ul>
+
+    <p class="source-category">伊朗停火破裂 / 地緣政治 / 油價</p>
+    <ul class="sources">
+      <li><a href="https://www.nbcnews.com/business/business-news/oil-prices-surge-stocks-tumble-trump-iran-ceasefire-over-hormuz-rcna353446" target="_blank">NBC News — Oil prices surge, stocks slide after Trump says Iran ceasefire is "over"</a></li>
+      <li><a href="https://www.cnn.com/2026/07/08/world/live-news/iran-war-nato-summit-ukraine-trump" target="_blank">CNN — Live: Trump at NATO summit; US launches new Iran strikes</a></li>
+      <li><a href="https://time.com/article/2026/07/08/us-iran-ceasefire-over-trump-strikes-strait-of-hormuz/" target="_blank">TIME — US Carries Out New Strikes Against Iran; Ceasefire Declared 'Over'</a></li>
+      <li><a href="https://spectrumlocalnews.com/me/maine/business/2026/07/08/oil-prices-jump-iran-ceasefire" target="_blank">Spectrum News — U.S. markets retreat, oil prices jump more than 5%</a></li>
+      <li><a href="https://www.euronews.com/business/2026/07/08/oil-spikes-and-european-stock-markets-slide-as-trump-says-iran-ceasefire-over" target="_blank">Euronews — Oil spikes as Trump says Iran ceasefire over</a></li>
+      <li><a href="https://www.npr.org/2026/07/08/nx-s1-5885946/iran-trump-oil-stock-inflation-gas-federal-reserve" target="_blank">NPR — Tensions with Iran add fresh uncertainty to already shaky global economy</a></li>
+    </ul>
+
+    <p class="source-category">蘋果/博通晶片大單</p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-08/apple-aapl-chip-deal-with-broadcom-avgo-expected-to-exceed-30-billion" target="_blank">Bloomberg — Apple's Broadcom Chip Deal Expected to Exceed $30 Billion</a></li>
+      <li><a href="https://www.macrumors.com/2026/07/08/apple-announces-30-billion-broadcom-deal/" target="_blank">MacRumors — Apple Announces $30B Broadcom Chip Manufacturing Deal</a></li>
+      <li><a href="https://finance.yahoo.com/technology/articles/apple-commits-30-billion-broadcom-111309451.html" target="_blank">Yahoo Finance — Apple commits $30 billion to Broadcom</a></li>
+      <li><a href="https://www.nbcnews.com/tech/tech-news/apple-spend-30-billion-broadcom-chips-deal-rcna353469" target="_blank">NBC News — Apple to spend $30 billion in Broadcom chip deal</a></li>
+      <li><a href="https://appleinsider.com/articles/26/07/08/30-billion-broadcom-chip-deal-is-apple-biggest-amp-fund-investment" target="_blank">Apple Insider — Apple's Biggest AMP Investment: $30B Broadcom Deal</a></li>
+    </ul>
+
+    <p class="source-category">聯準會 / FOMC 紀要</p>
+    <ul class="sources">
+      <li><a href="https://fortune.com/2026/07/08/laura-ullrich-fed-reserve-kevin-warsh-minutes-fomc/" target="_blank">Fortune — Kevin Warsh's Unusual Promise in Fed Minutes</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/08/fed-minutes-june-2026-.html" target="_blank">CNBC — Fed Minutes: June 2026 FOMC Meeting</a></li>
+      <li><a href="https://www.axios.com/2026/07/08/warsh-fomc-minutes-policy" target="_blank">Axios — Warsh's Fed Minutes Show Internal Policy Debate</a></li>
+      <li><a href="https://goldsilver.com/industry-news/goldsilver-news/gold-price-fomc-minutes-july-2026/" target="_blank">GoldSilver.com — Warsh Sat Out the Dot Plot; FOMC Minutes Drop Wednesday</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/01/kevin-warsh-ecb-forum-live-updates.html" target="_blank">CNBC — Fed Chair Warsh declines to hint at July rate decision, says inflation "too high"</a></li>
+    </ul>
+
+    <p class="source-category">SpaceX / 那斯達克 100 / 個股</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/07/08/spacex-stock-nasdaq-100-ipo.html" target="_blank">CNBC — SpaceX stock closes below debut price at $148 after Nasdaq-100 inclusion</a></li>
+      <li><a href="https://www.fool.com/investing/2026/07/08/spacex-officially-joined-the-nasdaq-100-and-receiv/" target="_blank">Motley Fool — SpaceX Officially Joined the Nasdaq-100; Here's Why the Stock Is Falling</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/spacex-joins-nasdaq-100-july-133000124.html" target="_blank">Yahoo Finance — SpaceX Joins the Nasdaq-100 on July 7</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude Routine 自動搜索驗證 · 2026-07-09 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
