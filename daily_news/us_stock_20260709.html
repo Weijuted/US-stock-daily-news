@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-09</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-ipo { background: #fef3c7; color: #92400e; }
+    .badge-warn { background: #fee2e2; color: #991b1b; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.secondary { border-color: #a7f3d0; background: #f0fdf4; }
+    .event-card.warning { border-color: #fca5a5; background: #fff1f2; }
+    .event-card.purple { border-color: #c4b5fd; background: #f5f3ff; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #1e40af; }
+    .event-card.secondary h4 { color: #065f46; }
+    .event-card.warning h4 { color: #991b1b; }
+    .event-card.purple h4 { color: #5b21b6; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.chip { background: #ede9fe; color: #5b21b6; }
+    .tag.energy { background: #fef3c7; color: #92400e; }
+    .tag.consumer { background: #dcfce7; color: #166534; }
+    .tag.ipo { background: #fce7f3; color: #9d174d; }
+    .tag.earnings { background: #e0f2fe; color: #0369a1; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #0f3460, #1e40af); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+    .note { font-size: 0.82rem; color: #6b7280; margin-top: 8px; font-style: italic; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 7 月 9 日（週四）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>SK Hynix 美國 IPO 定價 $149，史上最大外國公司赴美掛牌；Micron 宣布 2,500 億美元美國本土投資計畫；半導體族群帶動 Nasdaq 上漲 1.3%。四大指數全線收漲，但美伊衝突升溫、聯準會鷹派訊號持續形成逆風。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>52,487.41</td>
+          <td class="up">+139.02</td>
+          <td class="up">+0.27%</td>
+          <td>漲幅最小；PepsiCo 財報拖累</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,543.64</td>
+          <td class="up">—</td>
+          <td class="up">+0.81%</td>
+          <td>穩健上漲</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>26,206.89</td>
+          <td class="up">+約 +337</td>
+          <td class="up">+1.30%</td>
+          <td>半導體族群領漲</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>2,992.55</td>
+          <td class="up">—</td>
+          <td class="up">+1.22%</td>
+          <td>小型股同步走強</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">來源交叉驗證：TheStreet、CNBC、Yahoo Finance、ts2.tech 四個獨立來源均回報相同數字，一致性高。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+      <div class="event-card primary" style="grid-column: span 2;">
+        <h4>🏭 SK Hynix 美國 IPO 定價（最強催化劑）</h4>
+        <ul>
+          <li>南韓記憶體晶片大廠 SK Hynix 為其美國存託股份（ADS）定價 <strong>每股 $149</strong>，計畫於 7 月 10 日（週五）在 Nasdaq 掛牌，代號 <strong>SKHY</strong></li>
+          <li>目標募資 <strong>$28–29 億美元</strong>，為史上規模最大的外國公司美國掛牌 IPO，認購倍率超過 <strong>7 倍</strong> 超額認購</li>
+          <li>SK Hynix 掌握全球 HBM（高頻寬記憶體）市場 <strong>56.4%</strong> 份額，是 Nvidia GPU 的主要 HBM 供應商</li>
+          <li>本次 IPO 凸顯市場對 AI 記憶體晶片的強烈需求，帶動整體半導體族群情緒大幅升溫</li>
+        </ul>
+      </div>
+      <div class="event-card secondary">
+        <h4>💡 Micron 宣布 $2,500 億美元美國投資</h4>
+        <ul>
+          <li>計畫於 2035 年前在美國投資逾 <strong>$2,500 億美元</strong></li>
+          <li>紐約州 Clay 市新建晶圓廠於 7 月 9 日正式澆築首批混凝土，預計成為美國史上最大半導體製造基地</li>
+          <li>德州擴建晶圓廠，並與 GlobalWafers 簽署 10 年矽晶圓供應協議（$5 億美元）</li>
+          <li>MU 股價當日上漲約 <strong>+5%</strong></li>
+        </ul>
+      </div>
+      <div class="event-card warning">
+        <h4>⚠️ 對等關稅 90 天暫停期到期</h4>
+        <ul>
+          <li>美國與主要貿易夥伴的「對等關稅」90 天暫停期於本日正式到期</li>
+          <li>現行依據《1974 年貿易法》第 122 條徵收的 <strong>10% 全面附加稅</strong> 效期至 7 月 24 日，未延期將自動失效</li>
+          <li>Section 232 關稅（鋼鐵、鋁、銅、汽車、半導體、木材）及 Section 301 中國關稅仍全面生效</li>
+          <li>中國有效稅率維持 <strong>35–110%</strong>；最高法院已裁定 IEEPA 不授權關稅徵收</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>財報表現</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>公司</th><th>實際 EPS</th><th>預期 EPS</th><th>實際營收</th><th>預期營收</th><th>結果</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PepsiCo (PEP)</strong></td>
+          <td class="down">$2.20</td>
+          <td>$2.23</td>
+          <td class="up">$241.8 億</td>
+          <td>$239.5 億</td>
+          <td>EPS 略遜、營收超標；CEO 提及北美消費者因通膨縮減預算</td>
+        </tr>
+        <tr>
+          <td><strong>AZZ Inc (AZZ)</strong></td>
+          <td class="up">$1.85</td>
+          <td>$1.69</td>
+          <td class="up">$4.485 億</td>
+          <td>$4.345 億</td>
+          <td>全面超越預期，全年指引上調，股價顯著上漲</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">WTI 原油</div>
+        <div class="value">~$70/桶</div>
+        <div class="change down">略有回落，霍爾木茲危機下仍偏高</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">布蘭特原油</div>
+        <div class="value">~$74/桶</div>
+        <div class="change neutral">美伊衝突支撐油價</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">5 月 CPI 年增率</div>
+        <div class="value down">4.2%</div>
+        <div class="change down">能源成本年增近 24%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">初領失業金（7/4 週）</div>
+        <div class="value up">21.5 萬</div>
+        <div class="change up">低於預期 21.8 萬</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">9 月升息概率</div>
+        <div class="value down">68.8%</div>
+        <div class="change down">較前日 62% 跳升</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">聯準會基準利率</div>
+        <div class="value">3.50–3.75%</div>
+        <div class="change neutral">維持不變（6 月 FOMC 決議）</div>
+      </div>
+    </div>
+
+    <h3>聯準會（Fed）動態</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      7 月 8 日（週三）聯準會發布 6 月 FOMC 會議紀錄，持續主導 7 月 9 日市場情緒。18 位 FOMC 委員中，<strong>9 人預測年內至少升息一次</strong>，8 人預測維持不變，1 人預測降息——幾乎五五分。Fed 主席 Kevin Warsh 異常地未提交利率點陣圖預測，並已批評點陣圖的政策溝通侷限性（聲明長度僅約 130 字，約前任一半）。核心 PCE 預測修正至 3.3%（3 月時預測 2.7%）；市場現定價 <strong>12 月升息概率 85.3%</strong>，首次降息預期延至 2027 年以後。
+    </p>
+
+    <h3>地緣政治：美伊衝突與霍爾木茲海峽</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      7 月 7 日：卡達籍 LNG 油輪 Al Rekayat 及沙烏地阿拉伯油輪 Wedyan 在霍爾木茲海峽遭到攻擊，美軍隨後對伊朗軍事目標實施空襲。7 月 9 日美伊雙方繼續交火，但油輪通行未完全中斷，市場認為全面戰爭風險仍可控，保持相對冷靜。6 月 17 日川普與伊朗達成的「伊斯蘭馬巴德備忘錄」停火協議已實際瓦解。油價雖高於海峽危機前水準，但 7 月 9 日當日略有回落。
+    </p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+
+    <h3>半導體/科技個股（全面領漲）</h3>
+    <table class="stock-table">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>催化劑</th><th>板塊</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sandisk (SNDK)</strong></td>
+          <td class="up">+7.6%</td>
+          <td>AI 記憶體需求、SK Hynix IPO 帶動整體情緒</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>Micron (MU)</strong></td>
+          <td class="up">+~5%</td>
+          <td>$2,500 億美元美國投資計畫公告，紐約廠正式破土</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>Applied Materials (AMAT)</strong></td>
+          <td class="up">+3.2%</td>
+          <td>半導體設備族群整體回暖</td>
+          <td><span class="tag chip">設備</span></td>
+        </tr>
+        <tr>
+          <td><strong>VanEck 半導體 ETF (SMH)</strong></td>
+          <td class="up">+2.5%</td>
+          <td>晶片族群第二日連漲</td>
+          <td><span class="tag chip">ETF</span></td>
+        </tr>
+        <tr>
+          <td><strong>ARM Holdings、Marvell、KLA、Lam Research</strong></td>
+          <td class="up">同步上漲</td>
+          <td>受惠 AI 晶片需求題材；7 月 7 日（三星財報拖累）跌後反彈</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">注：7 月 7 日（週一）三星財報引發記憶體股大跌（MU -7%、AMAT -10%），7 月 9 日的漲勢為部分跌幅之回補。</p>
+
+    <h3>財報個股</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>股票</th><th>表現</th><th>說明</th><th>標籤</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PepsiCo (PEP)</strong></td>
+          <td class="down">承壓</td>
+          <td>EPS $2.20 略遜於 $2.23 預期；北美消費者因通膨縮減預算</td>
+          <td><span class="tag consumer">消費品</span><span class="tag earnings">財報</span></td>
+        </tr>
+        <tr>
+          <td><strong>AZZ Inc (AZZ)</strong></td>
+          <td class="up">顯著上漲</td>
+          <td>EPS $1.85 超 $1.69 預期；營收 $4.485 億超 $4.345 億；全年指引上調</td>
+          <td><span class="tag earnings">財報</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊表現總結</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>板塊</th><th>表現</th><th>主要驅動</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>資訊科技 / 半導體</td><td class="up">大幅領漲（帶動 Nasdaq +1.3%）</td><td>SK Hynix IPO 定價、Micron 投資計畫；7/7 大跌後反彈</td></tr>
+        <tr><td>能源 (XLE)</td><td class="up">+2.8%（相對強勢）</td><td>美伊衝突持續，油價仍偏高</td></tr>
+        <tr><td>醫療保健 (XLV)</td><td class="up">+1.5%</td><td>防禦性板塊補漲</td></tr>
+        <tr><td>房地產 (XLRE)</td><td class="up">+1.4%</td><td>利率走勢觀望下的輪動</td></tr>
+        <tr><td>消費必需品</td><td class="down">承壓</td><td>PepsiCo 財報遜色，通膨壓力仍高</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會鷹派升息風險上升：</strong>6 月 FOMC 紀錄顯示 18 位委員中 9 人傾向年內升息；9 月升息概率已達 68.8%、12 月達 85.3%。在 CPI 4.2%、核心 PCE 預測 3.3% 的背景下，升息可能壓制股市估值，尤其對高本益比科技族群衝擊最大。</li>
+      <li><strong>美伊衝突升溫、霍爾木茲海峽風險：</strong>停火協議實際瓦解，雙方持續交火。若霍爾木茲海峽通行受阻，全球約 20% 原油供應將中斷，能源通膨可能進一步惡化，並衝擊全球供應鏈。</li>
+      <li><strong>對等關稅截止後的政策不確定性：</strong>90 天暫停期已到期，10% 全面附加稅效期至 7 月 24 日。若國會未延期且政府未尋得替代授權，貿易政策真空將引發市場不確定性；對中國的高關稅（35–110%）持續拖累消費成本。</li>
+      <li><strong>通膨黏性風險：</strong>CPI 年增 4.2%（主因能源成本年增 24%），若美伊局勢未能緩和，油價將持續支撐通膨，美聯準會將面臨更大升息壓力，市場估值承壓風險加大。</li>
+      <li><strong>半導體族群集中度過高：</strong>SK Hynix IPO 和 Micron 投資計畫在短期內大幅拉升半導體板塊，市場對 AI 晶片需求的預期可能存在過度樂觀的風險。若實際需求不及預期或競爭格局惡化，板塊回調幅度可能較大。</li>
+      <li><strong>消費者需求走軟：</strong>PepsiCo 管理層指出北美消費者因通膨而縮減預算，反映高通膨、高利率對消費端的持續侵蝕，可能預示更多消費品公司財報承壓。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <p class="source-category">主要財經新聞</p>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-9-2026" target="_blank">TheStreet — Stock Market Today July 9, 2026（指數數據）</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-9-093800837.html" target="_blank">Yahoo Finance — Stock Market News July 9, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/08/stock-market-today-live-updates.html" target="_blank">CNBC — S&amp;P 500 股市即時更新 7 月 9 日</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — 市場更新：海峽攻擊/晶片領漲</a></li>
+      <li><a href="https://ts2.tech/en/stock-market-today-09-07-2026/" target="_blank">ts2.tech — Stock Market Today 09.07.2026（獨立指數驗證）</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-08/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today Dow/S&amp;P Live Updates</a></li>
+      <li><a href="https://www.gurufocus.com/news/8951502/market-update-mixed-open-for-us-stocks-amid-geopolitical-tensions" target="_blank">Gurufocus — Market Update: Mixed Open Amid Geopolitical Tensions</a></li>
+      <li><a href="https://investrade.com/morning-preview-july-09-2026/" target="_blank">Investrade — Morning Preview July 9, 2026</a></li>
+    </ul>
+
+    <p class="source-category">SK Hynix IPO</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/article/sk-hynix-seeks-28-billion-in-us-ipo-listing-as-memory-maker-rides-ai-wave-132016294.html" target="_blank">Yahoo Finance — SK Hynix Seeks $28B in US IPO, Rides AI Wave</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-06/memory-chipmaker-sk-hynix-starts-marketing-us-listing" target="_blank">Bloomberg — Memory Chipmaker SK Hynix Starts Marketing US Listing</a></li>
+    </ul>
+
+    <p class="source-category">Micron 投資計畫</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/07/09/micron-stock-us-chipmaking.html" target="_blank">CNBC — Micron Announces $250B US Investment Plan</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/article/micron-sandisk-marvell-stocks-jump-leading-chip-sector-gains-135433074.html" target="_blank">Yahoo Finance — Micron, Sandisk, Marvell Stocks Jump Leading Chip Gains</a></li>
+      <li><a href="https://yournews.com/2026/07/09/7103061/nasdaq-climbs-more-than-300-points-as-micron-leads-chip/" target="_blank">YourNews — Nasdaq Climbs 300+ Points as Micron Leads Chip Sector</a></li>
+    </ul>
+
+    <p class="source-category">財報</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/pepsico-q2-2026-earnings-revenue-121112189.html" target="_blank">Yahoo Finance — PepsiCo Q2 2026 Earnings &amp; Revenue</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/09/pepsico-pep-q2-2026-earnings.html" target="_blank">CNBC — PepsiCo Q2 2026 Earnings</a></li>
+      <li><a href="https://stockstory.org/us/stocks/nyse/azz/news/earnings/azz-nyseazz-surprises-with-strong-q2-cy2026-stock-soars" target="_blank">StockStory — AZZ Q2 2026 Earnings Surprise, Stock Soars</a></li>
+    </ul>
+
+    <p class="source-category">聯準會 / 宏觀經濟</p>
+    <ul class="sources">
+      <li><a href="https://www.forbes.com/sites/tylerroush/2026/07/08/fed-minutes-signal-no-interest-rate-cuts-until-2027-as-renewed-iran-conflict-spikes-rate-hike-odds/" target="_blank">Forbes — Fed Minutes Signal No Rate Cuts Until 2027; Iran Conflict Spikes Hike Odds</a></li>
+      <li><a href="https://www.techtimes.com/articles/319827/20260707/fed-minutes-due-wednesday-nine-hawkish-dots-warshs-deliberate-silence.htm" target="_blank">TechTimes — FOMC Minutes: Nine Hawkish Dots, Warsh's Deliberate Silence</a></li>
+      <li><a href="https://www.usnews.com/news/national-news/articles/2026-07-08/fed-split-on-direction-of-interest-rates-at-june-meeting" target="_blank">US News — Fed Split on Interest Rate Direction at June Meeting</a></li>
+      <li><a href="https://wsau.com/2026/07/09/us-weekly-jobless-claims-fall-amid-stable-labor-market-conditions/" target="_blank">WSAU — US Weekly Jobless Claims Fall Amid Stable Labor Market</a></li>
+      <li><a href="https://www.interactivecrypto.com/fed-minutes-and-may-cpi-reveal-a-fed-divided-on-rates-as-inflation-remains-stubborn-jul-2026" target="_blank">Interactive Crypto — Fed Minutes &amp; May CPI: Fed Divided on Rates</a></li>
+    </ul>
+
+    <p class="source-category">地緣政治 / 關稅</p>
+    <ul class="sources">
+      <li><a href="https://www.aljazeera.com/economy/2026/6/29/oil-prices-rise-as-us-iranian-strikes-threaten-strait-of-hormuz-reopening" target="_blank">Al Jazeera — Oil Prices Rise as US-Iranian Strikes Threaten Strait of Hormuz</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/07/oil-prices-iran-strait-hormuz.html" target="_blank">CNBC — Oil Prices, Iran &amp; Strait of Hormuz</a></li>
+      <li><a href="https://www.zencargo.com/resources/u-s-reciprocal-tariffs-july-9th-implementation-and-what-happens-next/" target="_blank">Zencargo — US Reciprocal Tariffs: July 9th Implementation &amp; What Happens Next</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證（24 個獨立來源）· 2026-07-10 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
