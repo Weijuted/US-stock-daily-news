@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-10</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .badge { display: inline-block; margin-top: 12px; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; display: flex; align-items: center; gap: 8px; }
+    h2::before { content: ''; display: inline-block; width: 4px; height: 18px; background: #0f3460; border-radius: 2px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 14px 16px; margin-bottom: 10px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 0 6px 6px 0; font-size: 0.92rem; line-height: 1.65; }
+    .event-list li strong { display: block; margin-bottom: 4px; color: #0f3460; font-size: 0.95rem; }
+    .event-list li .tag { display: inline-block; font-size: 0.72rem; background: #e0e7ff; color: #3730a3; padding: 2px 8px; border-radius: 12px; margin-bottom: 6px; font-weight: 600; letter-spacing: 0.03em; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } }
+    .macro-box { background: #f8faff; border: 1px solid #dce3f5; border-radius: 8px; padding: 14px 16px; }
+    .macro-box h3 { font-size: 0.88rem; font-weight: 700; color: #0f3460; margin-bottom: 8px; }
+    .macro-box p { font-size: 0.87rem; line-height: 1.6; color: #374151; }
+    .stock-table tbody tr:hover { background: #f8faff; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.55; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 7px; padding-left: 14px; position: relative; }
+    .sources li::before { content: '↗'; position: absolute; left: 0; color: #9ca3af; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .summary-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+    .summary-pill { flex: 1; min-width: 140px; background: #f0f4ff; border-radius: 8px; padding: 12px 14px; text-align: center; }
+    .summary-pill .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .summary-pill .value { font-size: 1.15rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年7月10日（星期五）| 由 Claude Routine 自動生成</div>
+    <div class="badge">本週收盤日 · S&P 500 +0.42% · Nasdaq +0.29%</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="summary-bar">
+      <div class="summary-pill">
+        <div class="label">道瓊（DJIA）</div>
+        <div class="value up">+0.29%</div>
+      </div>
+      <div class="summary-pill">
+        <div class="label">S&P 500</div>
+        <div class="value up">+0.42%</div>
+      </div>
+      <div class="summary-pill">
+        <div class="label">那斯達克</div>
+        <div class="value up">+0.29%</div>
+      </div>
+      <div class="summary-pill">
+        <div class="label">Russell 2000</div>
+        <div class="value down">-0.50%</div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>週線</th>
+        </tr>
+      </thead>
+      <tbody class="stock-table">
+        <tr>
+          <td><strong>道瓊工業（DJIA）</strong></td>
+          <td>52,637.01</td>
+          <td class="up">+149.60</td>
+          <td class="up">+0.29%</td>
+          <td class="down">-0.50%</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,575.39</td>
+          <td class="up">+31.75</td>
+          <td class="up">+0.42%</td>
+          <td class="up">+週線正報酬</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>26,281.61</td>
+          <td class="up">—</td>
+          <td class="up">+0.29%</td>
+          <td class="up">+1%+</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>2,977.81</td>
+          <td class="down">-14.74</td>
+          <td class="down">-0.50%</td>
+          <td class="neutral">持平</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <span class="tag">IPO 歷史事件</span>
+        <strong>SK Hynix 登陸 Nasdaq，締造美國史上最大外國 IPO</strong>
+        韓國記憶體晶片巨頭 SK Hynix 以代號 SKHYV（週一起改為 SKHY）於 Nasdaq 正式掛牌，IPO 定價為每 ADS $149，共募資 <strong>265 億美元</strong>，超越 2014 年阿里巴巴 250 億美元紀錄，成為美國史上最大外國企業 IPO。首日收盤約 $168，<span class="up">上漲 13%</span>，認購倍率達 7 倍，顯示市場對 AI 記憶體晶片的強烈需求。
+      </li>
+      <li>
+        <span class="tag">科技 / AI</span>
+        <strong>Meta Platforms 宣布成立 AI 算力雲端部門，股價大漲 6%</strong>
+        Meta 宣布成立 <em>Meta Compute</em> 雲端服務部門，將對外銷售 AI 算力與大型語言模型服務。同時揭露：2026 年 9 月開始量產自研 AI 晶片，2027 年算力目標達 14 GW。Meta 股價當日 <span class="up">+約 6%</span>，本週累計上漲近 <span class="up">15%</span>，創 2024 年初以來最佳周漲幅。
+      </li>
+      <li>
+        <span class="tag">半導體 / 製造業</span>
+        <strong>Micron Technology 擴大美國投資計劃至 2,500 億美元</strong>
+        Micron 宣布截至 2035 年在美投資總額由 2,000 億美元提升至 <strong>2,500 億美元以上</strong>，並計劃在德州 Sherman 新建 300mm 晶圓廠（投入 50 億美元），目標 40% DRAM 在美生產，預計創造逾 9 萬個就業機會。MU 股價 <span class="up">+約 8%</span>。
+      </li>
+      <li>
+        <span class="tag">出口管制</span>
+        <strong>美國放寬對阿聯酋 AI 晶片出口限制，提振 Nvidia</strong>
+        拜登時代收緊的 AI 晶片出口管制迎來鬆綁，美方批准對阿聯酋更大規模的 AI 晶片出口授權，市場視此為 Nvidia 中東需求強勁的信號。Nvidia（NVDA）股價<span class="up"> +約 3.5–4%</span>，市值重回逾 1 兆美元。
+      </li>
+      <li>
+        <span class="tag">能源 / 地緣政治</span>
+        <strong>美伊停火談判進展，油價回軟</strong>
+        全週油價受美伊軍事衝突影響累計上漲約 5%（霍爾木茲海峽嚴重受阻），但 7 月 10 日停火技術性談判傳出積極消息，Brent 原油回落至約 $76/桶，WTI 跌至 $72 以下，能源板塊承壓但市場整體情緒轉暖。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素分析</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <h3>聯準會（Fed）動態</h3>
+        <p>現行利率維持 <strong>3.50%–3.75%</strong>（自 6 月 FOMC 後不變）。下次會議為 7 月 28–29 日，市場估升息機率約 25–30%。6 月非農就業數據僅新增 57,000 人（遠低於預期 110,000 人），大幅降低升息預期，支撐股市。</p>
+      </div>
+      <div class="macro-box">
+        <h3>地緣政治</h3>
+        <p>美伊軍事衝突導致<strong>霍爾木茲海峽</strong>通航嚴重受阻（佔全球約 20% 油氣貿易通道）。川普總統稱協議「已破局」，但雙方技術層級談判持續進行。週五停火談判消息緩解能源市場緊張。</p>
+      </div>
+      <div class="macro-box">
+        <h3>AI 半導體供應鏈</h3>
+        <p>SK Hynix IPO、Micron 擴廠計劃、Meta 自研晶片與 Nvidia 出口管制鬆綁四大消息匯聚，使 AI 記憶體供應鏈全線受到提振。HBM（高頻寬記憶體）需求持續超越供應端預期。</p>
+      </div>
+      <div class="macro-box">
+        <h3>油價與通膨</h3>
+        <p>WTI 原油 $72 以下，Brent ~$76/桶。油價回落有助於緩解通膨壓力，為聯準會維持現行利率政策提供空間。能源成本下降也利好企業利潤率。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>個股 / 板塊</th>
+          <th>代號</th>
+          <th>當日表現</th>
+          <th>主要驅動因素</th>
+        </tr>
+      </thead>
+      <tbody class="stock-table">
+        <tr>
+          <td><strong>Nvidia</strong></td>
+          <td>NVDA</td>
+          <td class="up">+3.5%–4%</td>
+          <td>AI 晶片出口管制鬆綁；SK Hynix 上市帶動 AI 記憶體熱情</td>
+        </tr>
+        <tr>
+          <td><strong>Meta Platforms</strong></td>
+          <td>META</td>
+          <td class="up">+約 6%</td>
+          <td>宣布 Meta Compute 雲端 AI 部門；自研晶片進度提前</td>
+        </tr>
+        <tr>
+          <td><strong>Micron Technology</strong></td>
+          <td>MU</td>
+          <td class="up">+約 8%</td>
+          <td>$2,500 億美國投資計劃；德州 Sherman 新廠計劃</td>
+        </tr>
+        <tr>
+          <td><strong>SK Hynix（首日）</strong></td>
+          <td>SKHYV</td>
+          <td class="up">+約 13%</td>
+          <td>Nasdaq 掛牌首日，收 $168（IPO 定價 $149）</td>
+        </tr>
+        <tr>
+          <td><strong>AI / 半導體板塊</strong></td>
+          <td>—</td>
+          <td class="up">普遍走強</td>
+          <td>多重正面催化劑聚集，板塊資金流入明顯</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000 小型股</strong></td>
+          <td>IWM</td>
+          <td class="down">-0.50%</td>
+          <td>資金集中流向大型科技 AI 股，小型股相對落後</td>
+        </tr>
+        <tr>
+          <td><strong>能源板塊</strong></td>
+          <td>XLE</td>
+          <td class="down">承壓</td>
+          <td>油價週五走軟；但全週仍上漲約 5%（地緣政治帶動）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>美伊地緣政治風險：</strong>霍爾木茲海峽仍受衝突影響，若談判破裂油價可能急速回升，帶動通膨預期反轉，對股市形成壓力。</li>
+      <li><strong>聯準會 7 月 28–29 日 FOMC 決策：</strong>市場估升息機率約 25–30%，若就業或通膨數據意外走強，可能重新拉高升息預期並衝擊股市。</li>
+      <li><strong>AI 估值過高疑慮：</strong>Meta 週漲 15%、SK Hynix 首日漲 13%，AI 主題股短線漲幅過大，存在獲利了結風險。</li>
+      <li><strong>Russell 2000 落後分化：</strong>小型股連續落後大型科技股，顯示市場廣度不足，若 AI 熱潮降溫，市場整體補跌風險上升。</li>
+      <li><strong>AI 晶片出口管制政策不確定性：</strong>對阿聯酋出口鬆綁為政策風向轉變，但相關法規尚未定案，後續可能有政策反覆。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-july-10-dow-sp-nasdaq-113921604.html" target="_blank">Yahoo Finance — Stock Market Today: Dow, S&amp;P 500, Nasdaq Rise to Cap Choppy Week (July 10, 2026)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-10-075400187.html" target="_blank">Yahoo Finance — Stock Market News for July 10, 2026</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/07/10/stock-market-today-july-10-markets-edge-higher-and-sk-hynix-soars-on-debut/" target="_blank">The Motley Fool — Stock Market Today, July 10: Markets Edge Higher and SK Hynix Soars on Debut</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html" target="_blank">CNBC — SK Hynix rises 13% in Nasdaq debut</a></li>
+      <li><a href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/" target="_blank">TechCrunch — SK Hynix raises $26.5B in the biggest foreign IPO in US history</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/07/60375612/micron-increases-us-investment-plan-to-250-billion-accelerates-domestic-chip-push-as-ai-race-heats-up" target="_blank">Benzinga — Micron Increases US Investment Plan to $250 Billion</a></li>
+      <li><a href="https://www.gurufocus.com/news/8953977/strong-gains-for-major-tech-stocks-boost-us-markets-nvidia-nvda-leads-the-charge" target="_blank">Gurufocus — Strong Gains for Major Tech Stocks Boost US Markets, NVIDIA Leads the Charge</a></li>
+      <li><a href="https://stockstotrade.com/news/meta-platforms-inc-meta-news-2026_07_10/" target="_blank">StocksToTrade — META Stock Jumps As AI Cloud And Chip Ambitions Accelerate</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html" target="_blank">CNBC — Fed holds rates steady (June 2026 decision)</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-09/latest-oil-market-news-and-analysis-for-july-10" target="_blank">Bloomberg — Latest Oil Market News and Analysis for July 10</a></li>
+      <li><a href="https://www.nbcpalmsprings.com/2026/07/10/dow-sp-500-and-nasdaq-close-higher-to-end-the-week" target="_blank">NBC Palm Springs — Dow, S&amp;P 500 and Nasdaq close higher to end the week</a></li>
+      <li><a href="https://www.theepochtimes.com/bright/how-major-us-stock-indexes-fared-july-10-post-6060358" target="_blank">The Epoch Times — How Major US Stock Indexes Fared July 10</a></li>
+      <li><a href="https://sundayguardianlive.com/business/us-stock-market-prediction-today-july-10-sp-500-futures-hold-flat-as-nasdaq-100-slips-03-dow-futures-gain-94-points-while-oil-cools-on-renewed-us-iran-deal-hopes-232918/" target="_blank">Sunday Guardian Live — US Stock Market Prediction July 10 (Futures Outlook)</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 · 多來源交叉比對 | 僅供參考，非投資建議<br/>
+    生成時間：2026-07-11 | Claude Routine 自動任務
+  </footer>
+
+</div>
+</body>
+</html>
