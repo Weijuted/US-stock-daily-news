@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-10</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-item { padding: 14px 16px; margin-bottom: 12px; background: #f8f9ff; border-left: 4px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-item .event-title { font-weight: 700; color: #0f3460; margin-bottom: 4px; font-size: 0.95rem; }
+    .event-item.highlight { border-left-color: #f59e0b; background: #fffbeb; }
+    .event-item.fed { border-left-color: #7c3aed; background: #faf5ff; }
+    .event-item.geo { border-left-color: #dc2626; background: #fff5f5; }
+    .movers-table td:first-child { font-weight: 600; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-up { background: #dcfce7; color: #15803d; }
+    .badge-down { background: #fee2e2; color: #b91c1c; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li strong { color: #b91c1c; }
+    .macro-note { background: #f0f4ff; border: 1px solid #dce3f5; border-radius: 6px; padding: 12px 16px; margin-top: 12px; font-size: 0.88rem; color: #374151; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; columns: 2; column-gap: 24px; }
+    .sources li { margin-bottom: 6px; break-inside: avoid; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .verify-note { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; font-size: 0.82rem; color: #166534; margin-top: 14px; }
+    .weekly-bar { display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
+    .weekly-item { flex: 1; min-width: 120px; background: #f0f4ff; border-radius: 8px; padding: 10px 14px; text-align: center; }
+    .weekly-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .weekly-item .value { font-size: 1.1rem; font-weight: 700; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      .sources { columns: 1; }
+      header { padding: 24px 20px; }
+      .card { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026-07-10（週五）| 由 Claude Routine 自動生成 | 資料經多源交叉驗證</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均 (DJIA)</strong></td>
+          <td>52,637.01</td>
+          <td class="up">+149.60</td>
+          <td class="up">▲ +0.29%</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,575.39</td>
+          <td class="up">+31.75</td>
+          <td class="up">▲ +0.42%</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合 (Nasdaq Composite)</strong></td>
+          <td>26,281.61</td>
+          <td class="up">+74.72</td>
+          <td class="up">▲ +0.29%</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>2,977.81</td>
+          <td class="down">—</td>
+          <td class="down">▼ -0.49%</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="macro-note">
+      <strong>週度表現（截至 7/10 收盤）：</strong>那斯達克綜合 <span class="up">+1.74%</span>、S&amp;P 500 <span class="up">+1.23%</span>、道瓊週線略偏平/微跌。本週大型科技股領漲，小型股相對落後。<br>
+      ⚠️ <em>注意：網路上流傳的那斯達克「+1.3%」係指那斯達克 100（NDX/QQQ），非那斯達克綜合指數，已完成驗證排除。</em>
+    </div>
+  </div>
+
+  <!-- KEY MOVERS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <table class="movers-table">
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>單日漲跌</th>
+          <th>驅動原因</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SK Hynix <span class="badge badge-up">SKHYV</span></td>
+          <td class="up">▲ +13%</td>
+          <td>在那斯達克掛牌上市（史上最大外國企業美股 IPO，募資 265 億美元），AI 高頻寬記憶體（HBM）需求爆發</td>
+        </tr>
+        <tr>
+          <td>Meta Platforms <span class="badge badge-up">META</span></td>
+          <td class="up">▲ +6%（週漲 +15%）</td>
+          <td>宣布推出雲端業務「Meta Compute」、自研「Iris」AI 晶片（9 月起量產）及「Muse Spark」AI 模型，市場對 AI 商業化高度樂觀</td>
+        </tr>
+        <tr>
+          <td>EquipmentShare <span class="badge badge-up">EQPT</span></td>
+          <td class="up">▲ +14%～+17%</td>
+          <td>上調 2026 全年業績指引（營收、租賃收入、EBITDA），同步宣布 5 億美元股票回購計畫</td>
+        </tr>
+        <tr>
+          <td>WD-40 <span class="badge badge-up">WDFC</span></td>
+          <td class="up">▲ +11%</td>
+          <td>Q3 財報超預期，盈利強勁</td>
+        </tr>
+        <tr>
+          <td>Micron Technology <span class="badge badge-down">MU</span></td>
+          <td class="down">▼ 下跌</td>
+          <td>投資人資金轉向 SK Hynix 新股，競爭格局壓力上升</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+
+    <div class="event-item highlight">
+      <div class="event-title">🔥 SK Hynix 美股 IPO 首日掛牌 — 史上最大外國企業赴美上市</div>
+      南韓記憶體巨頭 SK Hynix 以臨時代碼 <strong>SKHYV</strong> 在那斯達克正式掛牌，共募資 <strong>265 億美元</strong>，打破歷史紀錄。ADR 發行價 149 美元，開盤即以 170 美元成交，收盤漲幅約 +13%（約 168 美元）。本次發行超額認購達 <strong>7 倍</strong>，公司主席向 CNBC 表示「需求極為強勁」。下週一起將以永久代碼 <strong>SKHY</strong> 交易。背景動力：全球 AI 算力建設帶動對 HBM 需求急增。
+    </div>
+
+    <div class="event-item highlight">
+      <div class="event-title">🤖 Meta 宣布 AI 三連擊：雲端業務 + 自研晶片 + 新 AI 模型</div>
+      Meta 宣布三項重大 AI 戰略：① <strong>Meta Compute</strong>——對外出售 AI 運算資源及模型的雲端業務；② 自研 <strong>Iris AI 晶片</strong>，預計 2026 年 9 月起量產；③ 推出 <strong>Muse Spark</strong> AI 模型，定位對標 OpenAI 和 Anthropic。週五單日大漲 +6%，本週累計大漲 +15%，創 2024 年初以來最佳週線表現，年初至今轉為正報酬。
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">📊 EquipmentShare 上調業績指引 + 宣布回購</div>
+      近期 IPO 的設備租賃平台 EquipmentShare 大幅上修 2026 全年展望，包括營收、租賃收入及 EBITDA 均超原預期，並宣布 <strong>5 億美元股票回購計畫</strong>。股價單日大漲 14%～17%。
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">📈 板塊動態：科技 &amp; 通訊領漲，能源受地緣加持，小型股落後</div>
+      資訊科技（IT）及通訊服務板塊領漲 S&amp;P 500，SK Hynix IPO 及 Meta 上漲帶動氣氛；能源板塊漲約 +1.8%（伊朗地緣衝突提供溢價）。材料、醫療保健偏弱，羅素 2000 下跌 0.49%，顯示市場資金高度集中在大型科技龍頭，不及於廣泛市場。
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境與政策動態</h2>
+
+    <div class="event-item fed">
+      <div class="event-title">🏦 聯準會半年期貨幣政策報告（Warsh 新任主席時代首份）</div>
+      聯準會發佈 2026 年半年期貨幣政策報告，這是新任主席 <strong>Kevin Warsh</strong>（2026 年 6 月正式接任）任內第一份。核心要點：
+      <ul style="margin-top: 8px; padding-left: 18px; line-height: 1.8;">
+        <li>通膨「今春進一步升溫」，三大驅動力：關稅、伊朗戰爭能源成本、AI 建設需求</li>
+        <li>聯準會偏好通膨指標 <strong>PCE 約 4%</strong>，約為 2% 目標兩倍</li>
+        <li>GDP 成長約 <strong>+2.1%</strong>（年化），受 AI 投資支撐但住房停滯、消費疲軟</li>
+        <li>6 月失業率 <strong>4.2%</strong>，勞動市場大致平衡</li>
+        <li>利率自 <strong>2025 年 12 月</strong>起維持不變；市場定價為 2026 年下半年可能<strong>升息</strong></li>
+        <li>Warsh 成立五個內部工作組，聚焦：溝通、資產負債表、數據品質、通膨衡量、AI 生產力</li>
+      </ul>
+      Bloomberg 標題：「Fed Vows to Deliver Price Stability（聯準會誓言實現物價穩定）」。Warsh 下週二（眾院）、週三（參院）出席國會聽證，7 月 14 日 CPI 數據隨後公佈。
+    </div>
+
+    <div class="event-item geo">
+      <div class="event-title">⚔️ 美伊衝突：停火瓦解，荷姆茲海峽攻擊持續</div>
+      美伊停火（2026 年 6 月 17 日生效）於 <strong>7 月 8 日崩潰</strong>，伊朗關聯勢力重新攻擊荷姆茲海峽商業航運，7 月 10 日攻擊事件持續。過境海峽商船大幅減少，但美伊雙方仍維持外交談判。<br><br>
+      <strong>油價：</strong>WTI 原油約 75 美元/桶，布蘭特約 79 美元/桶——高於衝突前水平，但遠低於衝突高峰的 116 美元/桶。聯準會報告明確將伊朗戰爭列為通膨升溫三大原因之一。
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">📦 關稅持續施壓通膨</div>
+      特朗普政府關稅政策仍為結構性通膨背景因素，聯準會報告與伊朗局勢、AI 建設並列為通膨「三大驅動力」。目前未有新關稅公告，市場對關稅影響已有一定預期。
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>通膨高企 / 聯準會升息風險：</strong>PCE 約 4%，遠超目標，市場定價下半年升息可能，壓制估值擴張空間，尤其對高成長科技股形成隱憂。</li>
+      <li><strong>伊朗衝突升級 / 荷姆茲中斷：</strong>荷姆茲海峽為全球 20% 石油供應通道，若局勢再度升溫，油價可能急漲，推升通膨並打壓企業信心。</li>
+      <li><strong>小型股持續落後：</strong>羅素 2000 本日下跌，顯示市場廣度不足，資金過度集中少數科技龍頭，整體市場脆弱性上升。</li>
+      <li><strong>AI 記憶體競爭加劇：</strong>SK Hynix 成功赴美上市後，與三星、Micron 在 HBM 市場的競爭可能加劇，壓縮各方利潤率。</li>
+      <li><strong>7 月 14 日 CPI 數據：</strong>距 CPI 公佈僅剩週末，若數據再次超預期，將直接影響 Warsh 國會聽證論調及市場對利率路徑的判斷。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源（28 項，經交叉驗證）</h2>
+    <div class="verify-note">✅ 本報告由 evidence-researcher agent 從 8+ 個獨立來源交叉驗證。已排除錯誤的「那斯達克 +1.3%」（係那斯達克 100 數據）及「S&amp;P 500 收 7,543.64」（已確認為 7,575.39）。</div>
+    <ul class="sources" style="margin-top: 14px;">
+      <li><a href="https://finance.yahoo.com/news/live/stock-market-today-friday-july-10-dow-sp-nasdaq-113921604.html" target="_blank">Yahoo Finance: Stock Market Today — July 10</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/07/10/stock-market-today-july-10-markets-edge-higher-and-sk-hynix-soars-on-debut/" target="_blank">Motley Fool: Markets Edge Higher, SK Hynix Soars on Debut</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-july-10-212505206.html" target="_blank">Yahoo Finance: Stock Market Today — July 10 (article)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-10-075400187.html" target="_blank">Yahoo Finance: Stock Market News — July 10</a></li>
+      <li><a href="https://www.nbcpalmsprings.com/2026/07/10/dow-sp-500-and-nasdaq-close-higher-to-end-the-week" target="_blank">NBC Palm Springs: Dow, S&amp;P 500 and Nasdaq Close Higher</a></li>
+      <li><a href="https://econcurrents.substack.com/p/10-july-2026-market-close-and-major" target="_blank">EconCurrents Substack: July 10 Market Close &amp; Headlines</a></li>
+      <li><a href="https://investrade.com/market-review-july-10-2026/" target="_blank">Investrade: Market Review July 10, 2026</a></li>
+      <li><a href="https://www.theepochtimes.com/bright/how-major-us-stock-indexes-fared-july-10-post-6060358" target="_blank">Epoch Times: How Major US Stock Indexes Fared July 10</a></li>
+      <li><a href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/" target="_blank">TechCrunch: SK Hynix raises $26.5B — largest foreign IPO in US history</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html" target="_blank">CNBC: SK Hynix rises 13% in Nasdaq debut</a></li>
+      <li><a href="https://www.fastcompany.com/91571722/sk-hynix-stock-price-nasdaq-trading-start-time-skhy-ipo-update" target="_blank">Fast Company: SK Hynix stock soars in Nasdaq debut</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/10/meta-shares-surge-6percent-as-optimism-grows-on-it.html" target="_blank">CNBC: Meta shares surge 6%</a></li>
+      <li><a href="https://www.fool.com/investing/2026/07/10/why-meta-platforms-stock-jumped-on-friday/" target="_blank">Motley Fool: Why Meta Platforms Stock Jumped on Friday</a></li>
+      <li><a href="https://www.benzinga.com/markets/guidance/26/07/60377428/equipmentshare-raises-2026-outlook-launches-500-million-buyback" target="_blank">Benzinga: EquipmentShare Raises 2026 Outlook, Launches $500M Buyback</a></li>
+      <li><a href="https://www.tipranks.com/news/company-announcements/equipmentshare-raises-2026-outlook-launches-share-buyback" target="_blank">TipRanks: EquipmentShare Raises 2026 Outlook</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/files/20260710_mprfullreport.pdf" target="_blank">Federal Reserve: Monetary Policy Report — July 2026 (PDF)</a></li>
+      <li><a href="https://money.usnews.com/investing/news/articles/2026-07-10/fed-report-cites-stepped-up-inflation" target="_blank">US News: Fed Report Cites Stepped-Up Inflation</a></li>
+      <li><a href="https://wsau.com/2026/07/10/fed-report-cites-stepped-up-inflation/" target="_blank">WSAU: Fed report cites stepped-up inflation</a></li>
+      <li><a href="https://www.ksl.com/article/51596357/fed-report-cites-stepped-up-inflation-due-to-tariffs-iran-war-ai-buildout" target="_blank">KSL: Fed report — tariffs, Iran war, AI buildout</a></li>
+      <li><a href="https://www.933thedrive.com/2026/07/10/fed-report-cites-stepped-up-inflation/" target="_blank">93.3 The Drive: Fed report cites stepped-up inflation</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-10/fed-vows-to-deliver-price-stability-in-monetary-policy-report" target="_blank">Bloomberg: Fed Vows to Deliver Price Stability</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-11/warsh-and-us-inflation-will-set-tone-for-july-fed-decision" target="_blank">Bloomberg: Warsh and US Inflation to Set Tone for July Fed Decision</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/01/kevin-warsh-ecb-forum-live-updates.html" target="_blank">CNBC: Fed Chief Warsh declines to hint at July rate decision</a></li>
+      <li><a href="https://www.ig.com/uk/trading-strategies/iran-ceasefire-collapse-oil-price-energy-stocks-portfolio-260709" target="_blank">IG UK: Iran ceasefire collapse — oil, energy stocks impact</a></li>
+      <li><a href="https://thehill.com/policy/energy-environment/5960020-iran-ceasefire-gas-prices-strait-of-hormuz/" target="_blank">The Hill: US-Iran tensions hike oil prices, Strait of Hormuz</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" target="_blank">Wikipedia: 2026 Strait of Hormuz Crisis</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab: Market on Edge Watching Strait as Chip Firm Debuts</a></li>
+      <li><a href="https://www.usnews.com/news/national-news/articles/2026-06-22/warsh-begins-a-new-era-at-the-federal-reserve" target="_blank">US News: Warsh Begins a New Era at the Federal Reserve</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證（28 項來源，8+ 獨立平台）| 2026-07-10 美股收盤報告<br>
+    僅供參考，非投資建議 · Generated by Claude Routine
+  </footer>
+
+</div>
+</body>
+</html>
