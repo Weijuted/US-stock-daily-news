@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-15</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #f0f4ff; padding-bottom: 8px; }
+    h3 { font-size: 0.97rem; font-weight: 700; margin: 18px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-list li strong { color: #0f3460; }
+    .event-list li.negative { background: #fff5f5; border-left-color: #dc2626; }
+    .event-list li.positive { background: #f0fdf4; border-left-color: #16a34a; }
+    .event-list li.warning { background: #fffbeb; border-left-color: #d97706; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } }
+    .macro-box { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-box h4 { font-size: 0.88rem; font-weight: 700; color: #0f3460; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .macro-box p, .macro-box li { font-size: 0.87rem; line-height: 1.6; color: #374151; }
+    .macro-box ul { list-style: disc; padding-left: 16px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-row { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .sector-box { flex: 1; padding: 12px 14px; border-radius: 8px; font-size: 0.87rem; }
+    .sector-box.up-sector { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .sector-box.down-sector { background: #fff5f5; border: 1px solid #fecaca; }
+    .sector-box h4 { font-weight: 700; margin-bottom: 6px; font-size: 0.85rem; }
+    .sector-box.up-sector h4 { color: #15803d; }
+    .sector-box.down-sector h4 { color: #b91c1c; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: disc; margin-left: 18px; }
+    .sources-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+    @media (max-width: 600px) { .sources-grid { grid-template-columns: 1fr; } }
+    .sources-section { margin-bottom: 14px; }
+    .sources-section h4 { font-size: 0.83rem; font-weight: 700; color: #374151; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 20px; margin-left: 6px; font-weight: 600; vertical-align: middle; }
+    .tag-up { background: #dcfce7; color: #15803d; }
+    .tag-down { background: #fee2e2; color: #b91c1c; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年7月15日（週三）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均指數 (DJIA)</td>
+          <td>52,658.64</td>
+          <td class="up">+150.37</td>
+          <td class="up">+0.29%</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,572.40</td>
+          <td class="up">+28.81</td>
+          <td class="up">+0.38%</td>
+        </tr>
+        <tr>
+          <td>Nasdaq 綜合指數</td>
+          <td>26,269.23</td>
+          <td class="up">+162.22</td>
+          <td class="up">+0.62%</td>
+        </tr>
+        <tr>
+          <td>Russell 2000</td>
+          <td>2,976.26</td>
+          <td class="up">+11.50</td>
+          <td class="up">+0.40%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.83rem; color:#6b7280; margin-top:12px;">四大指數全面收紅，Nasdaq 由科技巨頭及 AI 相關類股帶動漲幅最為突出。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li class="positive">
+        <strong>🍎 蘋果（AAPL）創歷史新高 +約 4%</strong><br>
+        中國網信辦（CAC）批准蘋果「Apple Intelligence」在中國上線，搭載百度及阿里巴巴 AI 模型，歷時約 22 個月取得監管批准。二季度中國 iPhone 出貨量年增 24.4%，消除市場長期關注的政策不確定性。同步帶動 Alphabet（GOOGL）上漲近 3%，市場對大型科技股 AI 預期整體升溫。
+      </li>
+      <li class="positive">
+        <strong>📦 ASML 年度指引二度上調 +約 4%</strong><br>
+        荷蘭半導體設備巨頭 ASML 公布優於預期的二季度業績（季營收 93 億歐元，淨利 29 億歐元，毛利率 54.0%），並大幅上調 2026 年全年淨收入指引至 <strong>430–450 億歐元</strong>（原 360–400 億歐元，中值升幅 16%），同時宣布未來兩年每年擴充 EUV/DUV 產能 30%。
+      </li>
+      <li class="positive">
+        <strong>💼 貝萊德（BLK）Q2 大幅超預期 +6–7%</strong><br>
+        EPS $13.91（超預估 $12.70）；季營收 70.84 億美元（超預估 67.68 億美元）；管理資產（AUM）攀升至歷史新高 <strong>15.3 兆美元</strong>；運營利潤率 45.9% 為近五年峰值。股價單日漲幅為逾一年來最佳表現。
+      </li>
+      <li class="positive">
+        <strong>🏦 摩根士丹利（MS）Q2 優於預期 +約 1%</strong><br>
+        EPS $3.46（超預估 $2.94）；淨營收 213.5 億美元（超預估 196.4 億美元），較去年同期大幅成長（去年 $16.8B 營收、$2.13 EPS）。
+      </li>
+      <li class="positive">
+        <strong>💳 PayPal（PYPL）暴漲 +16–17%：Stripe 聯合 Advent International 發出 530 億美元收購要約</strong><br>
+        路透社獨家：Stripe（私有）與私募股權公司 Advent International 聯合向 PayPal 提出收購要約，要約價 <strong>每股 60.50 美元</strong>（溢價 28%），整體估值逾 <strong>530 億美元</strong>，附約 500 億美元銀行貸款承諾。PayPal 董事會預計 7 月 20 日討論要約。
+      </li>
+      <li class="negative">
+        <strong>🚀 SpaceX（SPCX）首次跌破 IPO 發行價 -約 1%</strong><br>
+        SpaceX 股價連跌四個交易日，盤中最低觸及 132.15 美元，首次跌破 6 月 IPO 發行價 135 美元（最終收 ~135.27 美元）。上市三天暴漲 50% 後累計跌幅近 34%。IPO 曾籌資 860 億美元，創美股史上最大募資紀錄。
+      </li>
+      <li class="negative">
+        <strong>💾 記憶體類股全面崩跌</strong><br>
+        SK Hynix（SKHY）-10.7%、SanDisk（SNDK）-12.4%、西部數據（WDC）-7.7%、美光科技（MU）-7.3%。背景：韓國券商 KIS 報告指 SK Hynix Q2 獲利預估低於共識 8%，主因 HBM4 高頻寬記憶體出貨低於預期。多股已從高點累計下跌 20%+ 進入技術性熊市。
+      </li>
+      <li class="negative">
+        <strong>🔧 Pentair（PNR）重挫 -20.7%</strong><br>
+        水處理解決方案商下調 Q2 及全年財務指引，並宣布財務長 Nicholas Brazis 辭職，雙重利空重創股價。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素分析</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <h4>📊 6月生產者物價指數（PPI）</h4>
+        <ul>
+          <li>整體 PPI（月比）：<strong>-0.3%</strong>（2025年8月來首次下滑）</li>
+          <li>整體 PPI（年比）：+5.5%（前月高點 +6.5%）</li>
+          <li>核心 PPI（月比）：+0.2%（低於預估 0.3%）</li>
+          <li>核心 PPI（年比）：+4.7%（低於預估 5.1%）</li>
+          <li>能源分項：-6.4%；汽油：-12.0%</li>
+        </ul>
+        <p style="margin-top:8px; color:#15803d; font-weight:600;">通膨降溫信號，市場降息預期升溫</p>
+      </div>
+      <div class="macro-box">
+        <h4>🏛️ 聯準會主席 Warsh 參院聽證</h4>
+        <ul>
+          <li>聯準會主席 Kevin Warsh 出席參議院銀行委員會</li>
+          <li>就任後首次半年度貨幣政策國會作證</li>
+          <li>重申抗通膨承諾，移除傳統前瞻指引</li>
+          <li>維持「純數據依賴」立場</li>
+          <li><strong>利率目標維持 3.50%–3.75%</strong></li>
+        </ul>
+        <p style="margin-top:8px; color:#374151;">民主黨議員 Warren 批評 Warsh 倫理問題</p>
+      </div>
+      <div class="macro-box">
+        <h4>🌍 地緣政治與能源</h4>
+        <ul>
+          <li>伊美衝突後霍爾木茲海峽緊張局勢短暫緩和</li>
+          <li>布蘭特原油回落至 70 美元初段</li>
+          <li>能源價格下降為 PPI 下滑主因之一</li>
+          <li>中國限制對日本部分出貨，美中科技競爭持續</li>
+        </ul>
+      </div>
+      <div class="macro-box">
+        <h4>⚖️ 關稅與貿易不確定性</h4>
+        <ul>
+          <li>美國國際貿易法院裁定川普援用《貿易法》§122 加徵關稅超越授權</li>
+          <li>案件進入上訴程序，市場不確定性持續</li>
+          <li>前一日 6月 CPI 亦低於預期，連續溫和通膨信號</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+    <div class="sector-row">
+      <div class="sector-box up-sector">
+        <h4>▲ 領漲板塊</h4>
+        <ul style="list-style:none; font-size:0.86rem; line-height:1.7;">
+          <li>科技：AAPL +4%、GOOGL +3%</li>
+          <li>金融：BLK +6–7%、MS +1%</li>
+          <li>半導體設備：ASML +4%</li>
+          <li>支付：PYPL +16–17%（收購消息）</li>
+        </ul>
+      </div>
+      <div class="sector-box down-sector">
+        <h4>▼ 領跌板塊</h4>
+        <ul style="list-style:none; font-size:0.86rem; line-height:1.7;">
+          <li>記憶體：SKHY -10.7%、SNDK -12.4%</li>
+          <li>記憶體：MU -7.3%、WDC -7.7%</li>
+          <li>航太：SPCX -1%（跌破 IPO 價）</li>
+          <li>工業：PNR -20.7%（指引下調）</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:0.86rem; color:#6b7280; margin-top:4px;">整體市場情緒正面，通膨降溫 + 財報季開門紅為主要驅動力；短期利率預期下降推動成長股走揚。</p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>記憶體板塊（HBM4 出貨低於預期）持續承壓，SK Hynix、美光、三星等多股進入技術性熊市，可能反映 AI 基礎設施需求降溫預期。</li>
+      <li>SpaceX 上市後大幅回撤，IPO 估值過高疑慮升溫，可能波及其他太空/高成長概念股。</li>
+      <li>聯準會主席 Warsh 拒絕給出明確利率路徑，移除前瞻指引增加市場不確定性；聯準會內部分歧（Bowman 倫理爭議）亦引發關注。</li>
+      <li>美國關稅政策面臨司法挑戰，上訴結果未明，供應鏈與企業資本支出規劃受影響。</li>
+      <li>伊朗—美國衝突情勢若再度升溫，油價反彈風險將抵消通膨降溫效果。</li>
+      <li>Pentair 指引下調暗示工業需求走弱，為相關板塊潛在示警信號。</li>
+      <li>PayPal 收購要約能否獲董事會批准存在不確定性；若告吹，PYPL 可能大幅回調。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源（交叉驗證，30+ 獨立來源）</h2>
+    <div class="sources-grid">
+      <div class="sources-section">
+        <h4>指數數據</h4>
+        <ul class="sources">
+          <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-15-dow-sp-nasdaq-091813320.html" target="_blank">Yahoo Finance — Stock Market Today Wednesday July 15</a></li>
+          <li><a href="https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-7152026-134796014" target="_blank">ABC News / AP — US Stock Indexes Wednesday 7/15/2026</a></li>
+          <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-15-2026" target="_blank">TheStreet — Stock Market Today July 15 2026</a></li>
+          <li><a href="https://www.cnbc.com/2026/07/14/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market Live Updates</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-07-15/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Dow S&amp;P Live Updates</a></li>
+        </ul>
+      </div>
+      <div class="sources-section">
+        <h4>蘋果 / Apple Intelligence 中國</h4>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/07/15/apples-china-breakthrough-provides-another-tailwind-for-its-stock.html" target="_blank">CNBC — Apple's China AI Breakthrough</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-07-15/apple-gets-approval-for-alibaba-powered-iphone-ai-tools-in-china" target="_blank">Bloomberg — Apple Gets China AI Approval</a></li>
+          <li><a href="https://www.benzinga.com/markets/tech/26/07/60476015/apple-stock-hits-52-week-high-heres-why" target="_blank">Benzinga — Apple 52-Week High</a></li>
+        </ul>
+      </div>
+      <div class="sources-section">
+        <h4>ASML 業績</h4>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/07/15/asml-2q-earnings-ai-chips-orders.html" target="_blank">CNBC — ASML 2Q Earnings AI Chips</a></li>
+          <li><a href="https://www.techtimes.com/articles/320577/20260715/asml-raises-full-year-guidance-intel-ships-first-high-na-euv-logic-chip.htm" target="_blank">TechTimes — ASML Raises Full-Year Guidance</a></li>
+          <li><a href="https://www.rappler.com/technology/asml-raises-2026-forecast-expands-capacity-ai-chip-demand/" target="_blank">Rappler — ASML 2026 Forecast</a></li>
+        </ul>
+      </div>
+      <div class="sources-section">
+        <h4>貝萊德 Q2 財報</h4>
+        <ul class="sources">
+          <li><a href="https://americanbazaaronline.com/2026/07/15/blackrock-beats-q2-earnings-estimates-484645/" target="_blank">American Bazaar — BlackRock Q2 Beats</a></li>
+          <li><a href="https://qz.com/blackrock-record-assets-q2-earnings-071526" target="_blank">QZ — BlackRock Q2 Record $15.34T</a></li>
+          <li><a href="https://www.investing.com/news/company-news/blackrock-q2-2026-slides-record-flows-drive-459-margin-peak-93CH-4793442" target="_blank">Investing.com — BlackRock Q2 2026 Slides</a></li>
+        </ul>
+      </div>
+      <div class="sources-section">
+        <h4>PayPal 收購要約</h4>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" target="_blank">CNBC — Stripe &amp; Advent $53B PayPal Offer</a></li>
+          <li><a href="https://finance.yahoo.com/markets/stocks/articles/stripe-advent-international-53-billion-111839458.html" target="_blank">Yahoo Finance — Stripe Advent $53B Bid</a></li>
+          <li><a href="https://seekingalpha.com/news/4613804-stripe-and-advent-offer-to-buy-paypal-for-53b-reuters-reports" target="_blank">Seeking Alpha — PayPal $53B Bid</a></li>
+        </ul>
+      </div>
+      <div class="sources-section">
+        <h4>SpaceX IPO / 記憶體股</h4>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/07/15/spacex-spcx-stock-ipo-price.html" target="_blank">CNBC — SpaceX Falls Below IPO Price</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-07-15/spacex-shares-fall-below-ipo-price-for-first-time-as-hype-fades" target="_blank">Bloomberg — SpaceX Below IPO Price</a></li>
+          <li><a href="https://247wallst.com/investing/2026/07/13/micron-sandisk-western-digital-fall-6-as-sk-hynixs-weak-outlook-rattles-memory-stocks/" target="_blank">247 Wall St — Memory Stocks Bear Market</a></li>
+          <li><a href="https://finance.yahoo.com/markets/article/micron-samsung-sk-hynix-just-dragged-memory-stocks-into-a-bear-market-154549356.html" target="_blank">Yahoo Finance — Memory Stocks Bear Market</a></li>
+        </ul>
+      </div>
+      <div class="sources-section">
+        <h4>PPI 數據</h4>
+        <ul class="sources">
+          <li><a href="https://www.bls.gov/news.release/archives/ppi_07152026.htm" target="_blank">BLS 官方 — PPI News Release July 2026</a></li>
+          <li><a href="https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html" target="_blank">CNBC — Wholesale Prices -0.3% June</a></li>
+        </ul>
+      </div>
+      <div class="sources-section">
+        <h4>聯準會 / 宏觀</h4>
+        <ul class="sources">
+          <li><a href="https://www.federalreserve.gov/newsevents/testimony/warsh20260714a.htm" target="_blank">Federal Reserve — Warsh Senate Testimony</a></li>
+          <li><a href="https://www.cnbc.com/2026/07/15/watch-fed-chairman-kevin-warsh-testify-live-before-senate-banking-committee.html" target="_blank">CNBC — Warsh Senate Banking Testimony</a></li>
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0000895421/000089542126000207/a2q26msearningsrelease.htm" target="_blank">SEC EDGAR — Morgan Stanley Q2 8-K</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證，來源超過 30 個 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
