@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-16</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 1rem; font-weight: 700; margin: 18px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .event-block { margin-bottom: 20px; padding: 16px 18px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 0 6px 6px 0; }
+    .event-block:last-child { margin-bottom: 0; }
+    .event-block p { font-size: 0.9rem; line-height: 1.65; color: #374151; margin-top: 6px; }
+    .event-tag { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-bottom: 6px; }
+    .tag-tech { background: #dbeafe; color: #1d4ed8; }
+    .tag-macro { background: #fef9c3; color: #854d0e; }
+    .tag-sector { background: #dcfce7; color: #166534; }
+    .tag-earnings { background: #f3e8ff; color: #6b21a8; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li:last-child { margin-bottom: 0; }
+    .sector-table { margin-top: 4px; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+    .sources li:last-child { border-bottom: none; }
+    .badge { display: inline-block; background: #0f3460; color: #fff; font-size: 0.72rem; padding: 1px 7px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .summary-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+    .summary-pill { flex: 1; min-width: 160px; background: #f0f4ff; border-radius: 8px; padding: 12px 16px; text-align: center; }
+    .summary-pill .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .summary-pill .value { font-size: 1.1rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-07-16（週四）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- SUMMARY PILLS -->
+  <div class="summary-bar">
+    <div class="summary-pill">
+      <div class="label">道瓊工業指數</div>
+      <div class="value down">52,552.97 ▼0.20%</div>
+    </div>
+    <div class="summary-pill">
+      <div class="label">S&amp;P 500</div>
+      <div class="value down">7,533.77 ▼0.51%</div>
+    </div>
+    <div class="summary-pill">
+      <div class="label">Nasdaq</div>
+      <div class="value down">25,881.95 ▼1.47%</div>
+    </div>
+    <div class="summary-pill">
+      <div class="label">Russell 2000</div>
+      <div class="value flat">2,976.42 ▲0.01%</div>
+    </div>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌幅</th>
+          <th>市場解讀</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業指數 (DJIA)</td>
+          <td>52,552.97</td>
+          <td class="down">▼ 0.20%（-105.67 點）</td>
+          <td>Abbott (+11%) 撐盤，科技股拖累有限</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,533.77</td>
+          <td class="down">▼ 0.51%</td>
+          <td>科技與通訊服務板塊拖累整體</td>
+        </tr>
+        <tr>
+          <td>Nasdaq 綜合指數</td>
+          <td>25,881.95</td>
+          <td class="down">▼ 1.47%</td>
+          <td>跌幅最重；半導體、AI 股遭雙重打擊</td>
+        </tr>
+        <tr>
+          <td>Russell 2000</td>
+          <td>2,976.42</td>
+          <td class="flat">▲ 0.01%（幾乎持平）</td>
+          <td>小型股相對抗跌；2026 YTD 漲幅仍達 +22%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>🔥 重大市場事件</h2>
+
+    <div class="event-block">
+      <span class="event-tag tag-earnings">財報</span>
+      <h3>TSMC Q2 2026 — 業績超預期，擴產指引嚇壞市場</h3>
+      <p>
+        台積電 Q2 營收 <strong>404 億美元</strong>（年增 33.7%），淨利潤率 55.6%、毛利率 67.7%，EPS ADR US$4.31，全數超過市場預期。然而全年資本支出指引由原先 520–560 億美元<strong>大幅上調至 600–640 億美元</strong>，引發市場對供給端成本壓力與晶圓廠投資過熱的憂慮。VanEck 半導體 ETF（SMH）單日重挫約 <strong>4%</strong>，ARM Holdings 跌逾 <strong>5%</strong>，帶動整個半導體板塊下殺。
+      </p>
+    </div>
+
+    <div class="event-block">
+      <span class="event-tag tag-tech">科技</span>
+      <h3>Alphabet（Google）— Gemini 3.5 Pro 延遲發布，市值蒸發逾 2,250 億美元</h3>
+      <p>
+        Bloomberg 獨家報導：Alphabet 旗艦 AI 模型 <strong>Gemini 3.5 Pro</strong> 因程式碼生成能力未達內部目標，延後發布（原訂 6 月）。Google DeepMind、Cloud、Android、Search 多團隊同步開發 AI 工具，導致資源重疊與執行延遲，加上 DeepMind 人才持續出走，市場信心受挫。<strong>Alphabet 股價單日下跌逾 4%</strong>。
+      </p>
+    </div>
+
+    <div class="event-block">
+      <span class="event-tag tag-earnings">財報</span>
+      <h3>Netflix（NFLX）盤後財報 — 指引令市場失望</h3>
+      <p>
+        Q2 營收 126 億美元（略低於預期），EPS 0.80 美元（略超預期）。關鍵落差在於 <strong>Q3 營收成長指引僅 12%</strong>，為連續第二季放緩；全年營收指引收窄為 510–514 億美元。Netflix 同時宣布未來將減少定期公布用戶參與度數據，進一步引發透明度疑慮。<strong>盤後股價重挫逾 8%</strong>。
+      </p>
+    </div>
+
+    <div class="event-block">
+      <span class="event-tag tag-earnings">財報</span>
+      <h3>Abbott Laboratories（ABT）— 強勁財報提振醫療板塊</h3>
+      <p>
+        Q2 調整後 EPS $1.31（超過預期 $1.28）；營收 125.9 億美元（超過預期 125.2 億美元），年增 13%。全年 EPS 指引上調至 $5.45–$5.60。<strong>ABT 股價單日飆漲近 11%</strong>，成為道瓊指數中少數抵抗跌勢的支柱，醫療保健板塊全日表現亮眼。
+      </p>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🌍 宏觀環境</h2>
+
+    <h3>聯準會動態</h3>
+    <p style="font-size:0.9rem;line-height:1.65;color:#374151;margin-bottom:14px;">
+      聯準會 7 月 10 日向國會提交《2026 年 7 月貨幣政策報告》，確認「<strong>higher for longer</strong>」基調。6 月 FOMC 會議紀要顯示就業市場穩健、經濟持續擴張，但通膨仍高於 2% 目標。CPI 年增率維持在 <strong>4.2%</strong>（至 2026 年 5 月），為 2023 年 4 月以來最高。市場共識：2026 年頂多降息一次，10 年期美債殖利率預計全年維持 4%–4.5%。
+    </p>
+
+    <h3>6 月零售銷售數據</h3>
+    <p style="font-size:0.9rem;line-height:1.65;color:#374151;margin-bottom:14px;">
+      6 月零售銷售月增 <strong>+0.2%</strong>，低於市場預期的 +0.3%，為偏弱訊號。消費需求邊際放緩加上高利率環境，對風險性資產形成壓力。
+    </p>
+
+    <h3>地緣政治：美伊衝突激化，油價飆升</h3>
+    <p style="font-size:0.9rem;line-height:1.65;color:#374151;">
+      本週以來美軍對伊朗持續空中打擊，7 月 16 日更直接打擊一艘位於波斯灣、靠近伊朗主要出口終端的超大型油輪（Supertanker）。伊朗先前攻擊霍爾木茲海峽商船，擾亂正常航運。美國財政部授權伊朗原油交易至 8 月 21 日，期滿後全面禁止。<strong>Brent 原油本週累計漲逾 5%，一度突破 85 美元/桶</strong>；WTI 維持 80 美元上下。油價上漲推升通膨預期，美債殖利率走升，對股市形成額外壓力，能源板塊則相對受惠。
+    </p>
+  </div>
+
+  <!-- SECTOR TABLE -->
+  <div class="card">
+    <h2>📈 板塊與個股動態</h2>
+    <table class="sector-table">
+      <thead>
+        <tr>
+          <th>板塊 / 個股</th>
+          <th>方向</th>
+          <th>幅度</th>
+          <th>主要驅動</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>半導體（SMH ETF）</td>
+          <td class="down">▼ 重挫</td>
+          <td class="down">約 -4%</td>
+          <td>TSMC 擴產資本支出指引大幅上調</td>
+        </tr>
+        <tr>
+          <td>ARM Holdings</td>
+          <td class="down">▼ 下跌</td>
+          <td class="down">逾 -5%</td>
+          <td>半導體板塊連帶下殺</td>
+        </tr>
+        <tr>
+          <td>Alphabet (GOOG)</td>
+          <td class="down">▼ 下跌</td>
+          <td class="down">逾 -4%</td>
+          <td>Gemini 3.5 Pro 延遲，AI 競爭力疑慮</td>
+        </tr>
+        <tr>
+          <td>Netflix (NFLX)</td>
+          <td class="down">▼ 盤後重挫</td>
+          <td class="down">逾 -8%（盤後）</td>
+          <td>Q3 成長指引連續第二季放緩</td>
+        </tr>
+        <tr>
+          <td>Abbott Labs (ABT)</td>
+          <td class="up">▲ 強勢</td>
+          <td class="up">近 +11%</td>
+          <td>Q2 財報全面超預期，上調全年指引</td>
+        </tr>
+        <tr>
+          <td>能源板塊</td>
+          <td class="up">▲ 受益</td>
+          <td class="up">隨油價走強</td>
+          <td>美伊衝突，Brent 原油突破 85 美元</td>
+        </tr>
+        <tr>
+          <td>醫療保健板塊</td>
+          <td class="up">▲ 強勢</td>
+          <td class="up">全日表現亮眼</td>
+          <td>Abbott 強勁財報帶動板塊</td>
+        </tr>
+        <tr>
+          <td>小型股 (Russell 2000)</td>
+          <td class="flat">▲ 相對抗跌</td>
+          <td class="flat">幾乎持平</td>
+          <td>受科技跌勢影響較小；YTD +22%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>AI 競爭焦慮加劇：</strong>Google Gemini 3.5 Pro 延遲暴露出大型科技公司 AI 研發執行風險，市場重新評估 AI 溢價是否合理，科技板塊估值承壓。</li>
+      <li><strong>半導體資本支出過熱疑慮：</strong>TSMC 大幅上調資本支出指引，引發市場對晶圓廠供給過剩與投資回報週期的擔憂，恐拖累相關供應鏈。</li>
+      <li><strong>聯準會「higher for longer」政策：</strong>通膨黏性（CPI 4.2%）持續高於目標，降息時程延後，高利率環境對成長型資產持續形成壓力。</li>
+      <li><strong>地緣政治風險（美伊衝突）：</strong>波斯灣航運中斷風險升高，油價若持續上漲將推升通膨預期，形成「滯脹」隱憂，進一步制約聯準會降息空間。</li>
+      <li><strong>消費需求放緩：</strong>6 月零售銷售低於預期，Netflix 指引疲弱印證消費者支出謹慎，若後續數據持續走弱，市場獲利前景將面臨下修。</li>
+      <li><strong>財報季盤後波動：</strong>Netflix 盤後重挫逾 8%，為次一交易日帶來額外下行壓力，通訊服務板塊恐連帶受累。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📋 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-16-dow-sp-500-nasdaq-103116735.html" target="_blank">Yahoo Finance — Stock Market Today: July 16, 2026 (三大指數收盤、TSMC、Alphabet)</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-16-2026" target="_blank">TheStreet — Stock Market Today: Dow Jones, S&amp;P 500, Nasdaq Updates (2026-07-16)</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/15/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market Today Live Updates (2026-07-16)</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-15/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Dow S&amp;P Live Updates (2026-07-16)</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html" target="_blank">CNBC — Alphabet shares fall on Gemini 3.5 Pro delay</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals" target="_blank">Bloomberg — Google Gemini Launch Delayed (原始報導)</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/07/60512118/alphabet-stock-sinks-on-reports-of-google-gemini-delays" target="_blank">Benzinga — Alphabet Stock Sinks on Gemini Delay Reports</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/16/netflix-nflx-earnings-q2-2026.html" target="_blank">CNBC — Netflix Q2 2026 Earnings</a></li>
+      <li><a href="https://www.thestreet.com/latest-news/netflix-nflx-q2-2026-earnings-call-updates" target="_blank">TheStreet — Netflix Q2 2026 Earnings Call Updates</a></li>
+      <li><a href="https://finance.yahoo.com/healthcare/articles/abbott-raises-2026-earnings-outlook-124310151.html" target="_blank">Yahoo Finance — Abbott Raises 2026 Earnings Outlook</a></li>
+      <li><a href="https://www.gurufocus.com/news/8963204/abbott-laboratories-abt-shares-surge-over-10-after-strong-q2-earnings" target="_blank">GuruFocus — Abbott Laboratories (ABT) Shares Surge Over 10%</a></li>
+      <li><a href="https://www.fool.com/investing/2026/07/13/taiwan-semiconductor-reports-earnings-july-16-here/" target="_blank">The Motley Fool — TSMC Earnings Preview Q2 2026</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000451/a2q26e_withguidancexfinal.htm" target="_blank">SEC — TSMC Form 6-K (Q2 2026 官方財報)</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/files/20260710_mprfullreport.pdf" target="_blank">Federal Reserve — Monetary Policy Report July 2026</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm" target="_blank">Federal Reserve — FOMC Minutes June 16–17, 2026</a></li>
+      <li><a href="https://www.aljazeera.com/news/2026/7/8/oil-prices-surge-as-us-strikes-iran-reversing-fall-to-pre-war-levels" target="_blank">Al Jazeera — Oil Surges as US Strikes Iran</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-15/latest-oil-market-news-and-analysis-for-july-16" target="_blank">Bloomberg — Latest Oil Market News and Analysis (July 16)</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/09/oil-rises-as-iran-us-tensions-raise-concerns-over-supply-disruptions-.html" target="_blank">CNBC — Oil Rises as Iran-US Tensions Raise Supply Disruption Concerns</a></li>
+      <li><a href="https://www.ibtimes.com.au/russell-2000-historic-surge-small-cap-stocks-2026-1872416" target="_blank">International Business Times AU — Russell 2000 &amp; Small Cap Stocks 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/16/best-stock-market-trades-small-caps.html" target="_blank">CNBC — Best Stock Market Trades: Small Caps (July 16)</a></li>
+      <li><a href="https://ts2.tech/en/stock-market-today-16-07-2026/" target="_blank">TS2 Space — Stock Market Today 16.07.2026</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議<br>
+    生成時間：2026-07-17 | weijuted/us-stock-daily-news
+  </footer>
+
+</div>
+</body>
+</html>
