@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-17</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-bear { background: #fee2e2; color: #991b1b; }
+    .badge-warn { background: #fef3c7; color: #92400e; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.danger { border-color: #fca5a5; background: #fff5f5; }
+    .event-card.neutral { border-color: #fde68a; background: #fffbeb; }
+    .event-card.energy { border-color: #6ee7b7; background: #f0fdf4; }
+    .event-card.media { border-color: #c4b5fd; background: #f5f3ff; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #991b1b; }
+    .event-card.neutral h4 { color: #92400e; }
+    .event-card.energy h4 { color: #065f46; }
+    .event-card.media h4 { color: #5b21b6; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.energy { background: #d1fae5; color: #065f46; }
+    .tag.chip { background: #ede9fe; color: #5b21b6; }
+    .tag.media { background: #fce7f3; color: #9d174d; }
+    .tag.geo { background: #fef3c7; color: #92400e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #7f1d1d, #991b1b); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+    .weekly-note { font-size: 0.82rem; color: #6b7280; margin-top: 8px; font-style: italic; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 7 月 17 日（週五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>費城半導體指數正式進入熊市（距 6 月 22 日高點跌逾 20%），科技板塊重挫約 4.3%，拖累三大指數週線全線收跌。AI 資本支出回報疑慮、Netflix 財報引導低迷、中國 AI 模型競爭壓力，構成三重利空夾擊。油價因美國對伊朗軍事打擊飆升 +2.77%，能源板塊逆勢走強。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>單日漲跌</th>
+          <th>漲跌幅</th>
+          <th>週漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>52,146.42</td>
+          <td class="down">-406.55</td>
+          <td class="down">-0.77%</td>
+          <td class="down">-0.9%</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,457.69</td>
+          <td class="down">—</td>
+          <td class="down">-1.01%</td>
+          <td class="down">-1.6%</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>25,520.24</td>
+          <td class="down">—</td>
+          <td class="down">-1.40%</td>
+          <td class="down">-2.9%</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>—</td>
+          <td class="flat">≈ 平盤</td>
+          <td class="flat">-0.06%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>費城半導體指數 (SOX)</strong></td>
+          <td>—</td>
+          <td class="down">盤中 -5.7%</td>
+          <td class="down"><span class="badge badge-bear">進入熊市</span></td>
+          <td class="down">SMH ETF 單週 -9%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="weekly-note">※ SOX 自 2026 年 6 月 22 日歷史高點累計跌幅已逾 20%，全球半導體股市值蒸發約 3.3 兆美元。半導體 ETF（SMH）7 月整月跌幅已超 17%。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+      <div class="event-card danger" style="grid-column: span 2;">
+        <h4>🔴 費城半導體指數正式進入熊市（最主要拖累力量）</h4>
+        <ul>
+          <li>SOX 從 6 月 22 日歷史高點累計下跌逾 <strong>20%</strong>，正式進入技術性熊市，全球晶片股市值自高點蒸發約 <strong>3.3 兆美元</strong></li>
+          <li>當日個股盤中最大跌幅：<strong>AMD -5%</strong>、<strong>Intel -4%</strong>（收盤 -3.86%）、<strong>NVIDIA -3%</strong>（部分收盤前回補）</li>
+          <li>市場核心疑慮：AI 資本支出能否轉換為實際獲利——為連續第三個交易日的拋售壓力</li>
+          <li>半導體 ETF（SMH）單週跌 <strong>-9%</strong>，7 月月累計跌幅超 <strong>-17%</strong></li>
+        </ul>
+      </div>
+      <div class="event-card neutral">
+        <h4>🏭 台積電（TSMC）大幅上調資本支出</h4>
+        <ul>
+          <li>2026 年資本支出上調至 <strong>600-640 億美元</strong>（原 520-560 億，上調約 15%）</li>
+          <li>全年營收成長預測上修至「超過 40%」（原超過 30%）</li>
+          <li>市場矛盾解讀：資本支出大增引發自由現金流疑慮，部分投資者視為估值過高信號，股價承壓下滑</li>
+        </ul>
+      </div>
+      <div class="event-card media">
+        <h4>📺 Netflix（NFLX）財報引導失望</h4>
+        <ul>
+          <li>Q2 EPS $0.80（微超預期 $0.79），Q2 營收 $125.6 億（略低於預期 $126 億）</li>
+          <li><strong>Q3 營收成長展望 +12%</strong>，低於市場預期，引發成長動能疑慮</li>
+          <li>公司宣布將減少公布用戶參與度數據頻率，加劇透明度疑慮</li>
+          <li>股價盤中跌幅一度達 <strong>-12.2%</strong>，收盤跌幅約 <strong>-9% 至 -10%</strong></li>
+          <li>股價觸及 52 週低點</li>
+        </ul>
+      </div>
+      <div class="event-card energy" style="grid-column: span 2;">
+        <h4>🛢️ 油價飆升——美國對伊朗軍事打擊，霍爾木茲海峽告急</h4>
+        <ul>
+          <li>美國對伊朗發動軍事打擊，並撤銷伊朗石油臨時制裁豁免，自 7 月 17 日起全面禁止相關交易</li>
+          <li><strong>WTI 原油單日上漲 +2.77%</strong> 至每桶 <strong>$81.14</strong>；單週大漲 <strong>+13.44%</strong></li>
+          <li>霍爾木茲海峽局勢緊張：全球約 <strong>20% 的石油消耗量</strong>途經此處，供應中斷風險高企</li>
+          <li>能源板塊逆勢上漲，成為當日少數飄紅板塊（埃克森美孚、雪佛龍等走高）</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>中國 AI 競爭加劇</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;background:#f8fafc;border-radius:8px;padding:12px 16px;border:1px solid #e2e8f0;">
+      中國 AI 新創公司<strong>月之暗面（Moonshot AI）</strong>發布最新大型語言模型 <strong>Kimi K3</strong>，宣稱為全球最大規模 AI 模型，能力對標 Anthropic 前沿模型。此消息進一步加深市場對「美國 AI 主導地位受威脅」及「AI 投資回報率」的疑慮，為半導體板塊的拋售情緒雪上加霜，並引發科技投資人對美系 AI 基礎設施股估值的重新評估。
+    </p>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">WTI 原油</div>
+        <div class="value down">$81.14</div>
+        <div class="change down">單日 +2.77%；週漲 +13.44%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">聯準會基準利率</div>
+        <div class="value">3.50–3.75%</div>
+        <div class="change">連續四次會議按兵不動</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">PCE 通膨預測 (2026)</div>
+        <div class="value down">3.6%</div>
+        <div class="change down">遠高於 2% 目標</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">市場升息預期（7 月）</div>
+        <div class="value">25–30%</div>
+        <div class="change">期貨定價升息機率</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">霍爾木茲海峽風險</div>
+        <div class="value down">高度緊張</div>
+        <div class="change down">美伊軍事衝突爆發</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">S&amp;P 500 科技板塊</div>
+        <div class="value down">-4.3%</div>
+        <div class="change down">當日領跌，11 板塊中最差</div>
+      </div>
+    </div>
+
+    <h3>聯準會（Fed）動態</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      Fed 主席 <strong>Kevin Warsh</strong>（2026 年接任鮑威爾）主導當前貨幣政策，聯邦基金利率維持 <strong>3.50%–3.75%</strong>，已連續四次 FOMC 會議按兵不動。PCE 通膨全年預測 3.6%，仍遠高於 2% 政策目標。期貨市場定價 7 月升息機率約 25–30%，預計利率將在 10 月升至約 3.8%，年底接近 4%。油價飆升（WTI 單週 +13.44%）引發能源通膨二次衝擊擔憂，Fed 官員正密切監視相關動態，市場緊盯下次 FOMC 會議信號。
+    </p>
+
+    <h3>地緣政治與油價衝擊</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>事件</th><th>影響</th><th>市場反應</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>美國對伊朗軍事打擊</td>
+          <td>撤銷石油制裁豁免，中東緊張升溫</td>
+          <td class="down">WTI +2.77%；全球能源供應疑慮</td>
+        </tr>
+        <tr>
+          <td>霍爾木茲海峽局勢</td>
+          <td>全球 20% 石油途經此處，面臨中斷風險</td>
+          <td class="down">油價單週大漲 +13.44%</td>
+        </tr>
+        <tr>
+          <td>中國 AI 模型 Kimi K3 發布</td>
+          <td>月之暗面挑戰美系 AI 主導地位</td>
+          <td class="down">科技/半導體拋售壓力加劇</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊整體表現（S&amp;P 500 11 大板塊）</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>板塊</th><th>表現</th><th>主要驅動</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>能源</td><td class="up">上漲（逆勢）</td><td>油價飆升（WTI +2.77%）；美伊軍事衝突</td></tr>
+        <tr><td>必需消費品</td><td class="up">上漲（防禦性）</td><td>資金輪動至防禦性板塊</td></tr>
+        <tr><td>醫療保健、公用事業等</td><td class="up">多板塊上漲</td><td>避險輪動（S&amp;P 500 共 8 個板塊上漲）</td></tr>
+        <tr><td>科技 / 半導體</td><td class="down">大跌 -4.3%（當日最差）</td><td>SOX 熊市；TSMC 資本支出擔憂；AI 回報疑慮</td></tr>
+        <tr><td>通訊服務</td><td class="down">受拖累</td><td>Netflix -9%；科技情緒蔓延</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+
+    <h3>半導體板塊（全線承壓）</h3>
+    <table class="stock-table">
+      <thead>
+        <tr><th>股票</th><th>盤中最大跌幅</th><th>收盤</th><th>說明</th><th>標籤</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AMD</strong></td>
+          <td class="down">-5%</td>
+          <td class="down">部分收盤前回補</td>
+          <td>AI 晶片需求前景疑慮；SOX 熊市拖累</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>英特爾（Intel, INTC）</strong></td>
+          <td class="down">-4%</td>
+          <td class="down">-3.86%</td>
+          <td>三連跌；AI 晶片市占憂慮</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>輝達（NVIDIA, NVDA）</strong></td>
+          <td class="down">-3%</td>
+          <td class="down">部分回補</td>
+          <td>AI 投資回報疑慮；Kimi K3 競爭壓力</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>台積電（TSM）</strong></td>
+          <td class="down">股價承壓</td>
+          <td class="down">下跌</td>
+          <td>資本支出大增至 $60-64B，現金流疑慮</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>其他重要個股</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>說明</th><th>標籤</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Netflix（NFLX）</strong></td>
+          <td class="down">盤中 -12.2%；收盤約 -9~-10%</td>
+          <td>Q3 營收成長展望 +12% 低於預期；觸 52 週低點；減少用戶數據披露</td>
+          <td><span class="tag media">流媒體</span></td>
+        </tr>
+        <tr>
+          <td><strong>埃克森美孚（XOM）</strong></td>
+          <td class="up">上漲</td>
+          <td>油價飆升受惠；美伊衝突推升能源股</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>雪佛龍（CVX）</strong></td>
+          <td class="up">上漲</td>
+          <td>油價飆升受惠；與 6/15 跌勢逆轉</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+        <tr>
+          <td><strong>微軟（MSFT）/ 亞馬遜（AMZN）/ Alphabet（GOOGL）</strong></td>
+          <td class="down">跟跌</td>
+          <td>科技板塊整體拋售，大型科技股無一倖免</td>
+          <td><span class="tag chip">科技</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>半導體熊市延伸風險：</strong>SOX 已累跌逾 20%，若 AI 資本支出回報疑慮持續發酵，晶片股可能面臨進一步拋售；SMH ETF 7 月跌幅已達 17%，市場信心脆弱。AMD、NVIDIA 等關鍵個股財報將是下一個檢驗點。</li>
+      <li><strong>油價二次通膨衝擊：</strong>WTI 單週大漲 13.44%，美伊軍事衝突及霍爾木茲海峽供應風險可能持續推升能源成本，Fed 面臨「抗通膨 vs. 支撐經濟」兩難，升息尾部風險上升。</li>
+      <li><strong>聯準會政策收緊：</strong>在 PCE 通膨 3.6%、油價飆升的背景下，市場已定價 7 月升息機率 25–30%，年底利率預期接近 4%。若油價持續上行，Fed 可能被迫更積極升息，壓制估值。</li>
+      <li><strong>中東地緣政治局勢升溫：</strong>美國對伊朗直接軍事打擊標誌著衝突升級，霍爾木茲海峽若實際封鎖，全球能源供應鏈將面臨嚴峻衝擊，引發更廣泛的通膨與經濟衰退風險。</li>
+      <li><strong>中國 AI 競爭加劇：</strong>Moonshot Kimi K3 的出現延續了 DeepSeek 等模型對美系 AI 敘事的衝擊，若中國 AI 持續縮小差距，對 NVIDIA/AMD 的需求前景及大型科技公司 AI 資本支出的合理性將受到更深挑戰。</li>
+      <li><strong>科技股財報季風險：</strong>Netflix 財報引導低迷為科技財報季蒙上陰影，後續微軟、Alphabet、Meta、亞馬遜等大型科技公司財報若同樣引導保守，可能引發更大規模拋售。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+
+    <p class="source-category">主要財經新聞</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html" target="_blank">Yahoo Finance — Stock market today: Dow, S&amp;P 500, Nasdaq post weekly losses as semiconductors get smoked (July 17, 2026)</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-16/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow, S&amp;P Live Updates for July 17</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-17/chips-stocks-tumble-into-bear-market-as-105-ai-rally-fizzles" target="_blank">Bloomberg — Chips Stocks Sink Into Bear Market as 105% AI Rally Fizzles</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-17-2026" target="_blank">TheStreet — Stock Market Today (July 17, 2026): Energy stocks rise as oil prices spike; global tech sell-off deepens</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/07/17/stock-market-today-july-17-stocks-slide-as-semiconductor-rout-deepens/" target="_blank">Motley Fool — Stock Market Today, July 17: Stocks Slide as Semiconductor Rout Deepens</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/16/stock-market-today-live-updates.html" target="_blank">CNBC — S&amp;P 500 closes lower, Nasdaq falls more than 1% as chip stocks suffer</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/17/amd-falls-5-intel-drops-4-nvidia-slides-3-before-recovering-as-rotation-hits-semiconductor-stocks/" target="_blank">24/7 Wall St. — AMD Falls 5%, Intel Drops 4%, NVIDIA Slides 3%</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Falling Chips, Rising Oil, Netflix All Weigh Early</a></li>
+      <li><a href="https://www.tipranks.com/news/ai-chip-sell-off-enters-third-straight-session-why-are-nvda-amd-intel-micron-and-sndk-falling-today-7-17-26" target="_blank">TipRanks — AI Chip Sell-Off Enters Third Straight Session (7/17/26)</a></li>
+    </ul>
+
+    <p class="source-category">Netflix 財報</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/07/16/netflix-nflx-earnings-q2-2026.html" target="_blank">CNBC — Netflix Q2 2026 Earnings</a></li>
+      <li><a href="https://fortune.com/2026/07/17/netflix-stock-hit-52-week-low-after-earnings-analysts-say-investors-missing-big-picture-cfo/" target="_blank">Fortune — Netflix stock hits a 52-week low after earnings</a></li>
+    </ul>
+
+    <p class="source-category">台積電與半導體</p>
+    <ul class="sources">
+      <li><a href="https://www.trendforce.com/news/2026/07/16/news-tsmc-lifts-2026-capex-15-to-60-64b-hikes-sales-outlook-to-over-40-despite-q3-margin-dip/" target="_blank">TrendForce — TSMC Lifts 2026 Capex 15% to $60-64B, Hikes Sales Outlook to Over 40%</a></li>
+    </ul>
+
+    <p class="source-category">地緣政治 / 油價</p>
+    <ul class="sources">
+      <li><a href="https://www.aljazeera.com/news/2026/7/8/oil-prices-surge-as-us-strikes-iran-reversing-fall-to-pre-war-levels" target="_blank">Al Jazeera — Oil surges as US strikes Iran, reversing fall to pre-war levels</a></li>
+    </ul>
+
+    <p class="source-category">總體經濟 / 聯準會</p>
+    <ul class="sources">
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm" target="_blank">Federal Reserve — FOMC Statement June 17, 2026</a></li>
+    </ul>
+
+    <p class="source-category">中文財經媒體（交叉驗證）</p>
+    <ul class="sources">
+      <li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-07-17/doc-inihzvzt8152115.shtml" target="_blank">新浪財經 — 7月17日收盤：美股收跌科技股領跌，芯片股再遭拋售</a></li>
+      <li><a href="https://news.cnyes.com/news/id/6537276" target="_blank">鉅亨網 — 美股重點新聞摘要 2026 年 7 月 17 日</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 · 2026-07-18 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
