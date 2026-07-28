@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-27</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #78716c; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-mixed { background: #fef3c7; color: #92400e; }
+    .badge-down { background: #fee2e2; color: #991b1b; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.danger { border-color: #fca5a5; background: #fff5f5; }
+    .event-card.warning { border-color: #fcd34d; background: #fffbeb; }
+    .event-card.neutral { border-color: #a7f3d0; background: #f0fdf4; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #1e40af; }
+    .event-card.danger h4 { color: #991b1b; }
+    .event-card.warning h4 { color: #92400e; }
+    .event-card.neutral h4 { color: #065f46; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; font-weight: 600; }
+    .tag-air { background: #dbeafe; color: #1e40af; }
+    .tag-cruise { background: #dcfce7; color: #166534; }
+    .tag-chip { background: #fee2e2; color: #991b1b; }
+    .tag-mem { background: #fce7f3; color: #9d174d; }
+    .tag-ai { background: #ede9fe; color: #5b21b6; }
+    .tag-other { background: #fef3c7; color: #92400e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #0f3460, #1e40af); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+    .week-ahead { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 20px; }
+    .week-ahead-item { display: flex; gap: 12px; margin-bottom: 10px; font-size: 0.88rem; line-height: 1.5; }
+    .week-ahead-date { font-weight: 700; color: #0f3460; min-width: 60px; }
+    .cross-verify { background: #f0f4ff; border-radius: 8px; padding: 12px 16px; font-size: 0.82rem; color: #374151; margin-top: 12px; border: 1px solid #dce3f5; }
+    .cross-verify strong { color: #0f3460; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 7 月 27 日（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>美伊停火提振油價大跌，道瓊與 Russell 2000 收漲；但中國記憶體巨頭 CXMT 百億美元上海 IPO 引發晶片股重挫，Nvidia 跌逾 5% 拖累 Nasdaq 收黑，S&amp;P 500 幾乎持平。市場進入等待模式，聯準會利率決定（7/29）與四大科技巨頭財報本週陸續登場。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>52,210.08</td>
+          <td class="up">+262.83</td>
+          <td class="up">+0.51%</td>
+          <td>航空、能源消費股領漲</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,413.18</td>
+          <td class="flat">+1.20</td>
+          <td class="flat">+0.02%</td>
+          <td>幾乎持平，雙向拉扯</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>24,932.08</td>
+          <td class="down">−43.74</td>
+          <td class="down">−0.18%</td>
+          <td><span class="badge badge-down">晶片股拖累</span></td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000（小型股）</strong></td>
+          <td>2,948.03</td>
+          <td class="up">+18.04</td>
+          <td class="up">+0.61%</td>
+          <td>小型股相對強勢</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="macro-grid" style="margin-top: 18px;">
+      <div class="macro-box">
+        <div class="label">VIX 恐慌指數</div>
+        <div class="value">19.19</div>
+        <div class="change up">+0.61</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">WTI 原油（美元/桶）</div>
+        <div class="value">~$84</div>
+        <div class="change down">▼ ~5–7%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">黃金（美元/盎司）</div>
+        <div class="value">$4,080</div>
+        <div class="change up">+$9.20</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+
+      <div class="event-card primary">
+        <h4>🕊️ 美伊停火暫停軍事行動</h4>
+        <p>美國與伊朗宣布暫停互相軍事打擊，為外交談判創造空間。道指期貨盤前一度大漲逾 550 點，WTI 原油下跌 5–7% 至每桶約 $84，Brent 跌至約 $88。直接提振航空、郵輪等能源消費型股票。</p>
+      </div>
+
+      <div class="event-card danger">
+        <h4>💣 中國 CXMT 上海 IPO 重挫記憶體股</h4>
+        <p>中國長鑫存儲（CXMT）在上海科創板完成約 100 億美元 IPO，上市首日暴漲 500%+，市值達約 850 億美元，刷新中國半導體公司最大 A 股上市紀錄。引發全球記憶體股恐慌性賣出：</p>
+        <ul>
+          <li>SanDisk (SNDK)：<strong class="down">−11%~−12%</strong></li>
+          <li>Micron Technology (MU)：<strong class="down">−5%</strong></li>
+          <li>SK Hynix（韓國）：<strong class="down">−8%</strong></li>
+        </ul>
+      </div>
+
+      <div class="event-card danger">
+        <h4>🔴 Nvidia 大跌 5%，拖累 Nasdaq</h4>
+        <p>Nvidia (NVDA) 下跌逾 5%，為 2026 年 2 月以來最大單日跌幅。主要原因：</p>
+        <ul>
+          <li>AI 循環融資隱憂：Nvidia 與 SK Group 宣布 $5,000 億美元合作，同時傳出與 OpenAI 商談 $2,500 億美元擔保協議，引發市場對商業模式的疑慮。</li>
+          <li>費城半導體指數（SOX）隨之下跌約 2.2%。</li>
+        </ul>
+      </div>
+
+      <div class="event-card warning">
+        <h4>📅 本週「超級週」啟動</h4>
+        <p>本週將集中釋放大量關鍵資訊，市場情緒趨於謹慎：</p>
+        <ul>
+          <li>聯準會 FOMC 利率決定（7/29）</li>
+          <li>Microsoft、Meta 財報（7/29 盤後）</li>
+          <li>Apple、Amazon 財報（7/30 盤後）</li>
+          <li>Q2 GDP 初值 + Core PCE（7/30）</li>
+        </ul>
+      </div>
+
+      <div class="event-card neutral">
+        <h4>🤝 NAVER × NVIDIA × Brookfield 合作</h4>
+        <p>NVIDIA 投資 $10 億美元入股 NAVER，Brookfield 出資最多 $90 億美元，合力擴建韓國世宗市國家 AI Factory，目標從 55 MW 擴至 200 MW（2028 年），長期目標 1 GW。NAVER 股票盤前大漲逾 12%。</p>
+      </div>
+
+      <div class="event-card neutral">
+        <h4>✈️ 航空與郵輪股大漲</h4>
+        <p>直接受惠於油價大幅下滑：</p>
+        <ul>
+          <li>Delta (DAL)：<strong class="up">+4.5%</strong></li>
+          <li>American Airlines (AAL)：<strong class="up">+4.5%</strong></li>
+          <li>United Airlines (UAL)：<strong class="up">+4.5%</strong></li>
+          <li>Southwest Airlines (LUV)：<strong class="up">+4%</strong></li>
+          <li>Royal Caribbean (RCL)：<strong class="up">+3.2%</strong></li>
+          <li>Carnival (CCL)：<strong class="up">+3.2%</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>🏦 聯準會（Fed）動態</h3>
+    <p style="font-size:0.9rem; line-height:1.7; margin-bottom:14px;">聯準會主席 Kevin Warsh（已接替 Jerome Powell）主持 7月28–29日 FOMC 例會。市場壓倒性預期維持利率區間不變（3.50%–3.75%）。市場焦點在於 Warsh 記者會措辭：若中東局勢再起或通膨升溫，9月是否存在升息空間。本週 Core PCE 及 Q2 GDP 初值數據將是判斷依據。</p>
+
+    <h3>📊 重要經濟數據（本週）</h3>
+    <div class="week-ahead">
+      <div class="week-ahead-item">
+        <div class="week-ahead-date">7/28 週二</div>
+        <div>消費者信心指數（Consumer Confidence）發布</div>
+      </div>
+      <div class="week-ahead-item">
+        <div class="week-ahead-date">7/29 週三</div>
+        <div>FOMC 利率決定（預計下午 2 時）；MSFT、META 盤後財報</div>
+      </div>
+      <div class="week-ahead-item">
+        <div class="week-ahead-date">7/30 週四</div>
+        <div>Q2 GDP 初值、Core PCE 通膨數據；AAPL、AMZN 盤後財報</div>
+      </div>
+      <div class="week-ahead-item">
+        <div class="week-ahead-date">7/31 週五</div>
+        <div>就業成本指數（ECI）；Exxon、Chevron 財報</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:18px;">🌍 地緣政治</h3>
+    <p style="font-size:0.9rem; line-height:1.7;">美伊衝突自 2026 年 2 月 28 日爆發，已造成美國平均油價上漲 38%（截至本週一油價 $4.11/加侖）。本次停火暫停是今年地緣風險溢價最大單日消散，上週油價漲逾 9%，Brent 一度逼近 $102，本日單日反轉近 8%。市場對停火持久性持觀望態度。</p>
+  </div>
+
+  <!-- STOCK MOVERS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>代碼</th>
+          <th>公司</th>
+          <th>漲跌幅</th>
+          <th>原因</th>
+          <th>板塊</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>DAL</strong></td>
+          <td>Delta Air Lines</td>
+          <td class="up">+4.5%</td>
+          <td>油價大跌，成本壓力驟降</td>
+          <td><span class="tag tag-air">航空</span></td>
+        </tr>
+        <tr>
+          <td><strong>AAL</strong></td>
+          <td>American Airlines</td>
+          <td class="up">+4.5%</td>
+          <td>油價大跌，成本壓力驟降</td>
+          <td><span class="tag tag-air">航空</span></td>
+        </tr>
+        <tr>
+          <td><strong>UAL</strong></td>
+          <td>United Airlines</td>
+          <td class="up">+4.5%</td>
+          <td>油價大跌，成本壓力驟降</td>
+          <td><span class="tag tag-air">航空</span></td>
+        </tr>
+        <tr>
+          <td><strong>LUV</strong></td>
+          <td>Southwest Airlines</td>
+          <td class="up">+4.0%</td>
+          <td>油價下滑，受惠美伊停火</td>
+          <td><span class="tag tag-air">航空</span></td>
+        </tr>
+        <tr>
+          <td><strong>RCL</strong></td>
+          <td>Royal Caribbean</td>
+          <td class="up">+3.2%</td>
+          <td>中東緊張緩解，郵輪旅遊需求預期回升</td>
+          <td><span class="tag tag-cruise">郵輪</span></td>
+        </tr>
+        <tr>
+          <td><strong>CCL</strong></td>
+          <td>Carnival Corp</td>
+          <td class="up">+3.2%</td>
+          <td>油價下跌降低營運成本</td>
+          <td><span class="tag tag-cruise">郵輪</span></td>
+        </tr>
+        <tr>
+          <td><strong>NVDA</strong></td>
+          <td>Nvidia</td>
+          <td class="down">−5.0%</td>
+          <td>AI 循環融資疑慮、SK Group/OpenAI 巨額擔保案引發商業模式隱憂</td>
+          <td><span class="tag tag-chip">晶片</span><span class="tag tag-ai">AI</span></td>
+        </tr>
+        <tr>
+          <td><strong>SNDK</strong></td>
+          <td>SanDisk</td>
+          <td class="down">−11%~−12%</td>
+          <td>中國 CXMT 百億美元 IPO 引發全球記憶體競爭恐慌</td>
+          <td><span class="tag tag-mem">記憶體</span></td>
+        </tr>
+        <tr>
+          <td><strong>MU</strong></td>
+          <td>Micron Technology</td>
+          <td class="down">−5.0%</td>
+          <td>CXMT IPO 衝擊，DRAM/NAND 供過於求疑慮升溫</td>
+          <td><span class="tag tag-mem">記憶體</span></td>
+        </tr>
+        <tr>
+          <td><strong>PLTR</strong></td>
+          <td>Palantir</td>
+          <td class="up">+4.0%</td>
+          <td>獲美國國防情報局（DIA）大型合約</td>
+          <td><span class="tag tag-ai">AI</span><span class="tag tag-other">防務</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>美伊停火持久性存疑：</strong>本次停火是暫時性「暫停」而非正式停戰協議，若談判破裂，油價與地緣風險溢價可能迅速反彈，全球市場面臨重新定價壓力。</li>
+      <li><strong>聯準會鷹派風險：</strong>Warsh 記者會若釋放偏鷹派信號（利率在更長時間維持高位或暗示 9 月升息），可能引發股債同跌。油價回落雖有助通膨降溫，但若停火失效則油價反彈重燃通膨。</li>
+      <li><strong>大科技財報不及預期：</strong>MSFT、META、AAPL、AMZN 財報若 AI 資本支出指引不如預期，或雲端收入成長放緩，可能引發科技股新一輪拋售，進一步打壓 Nasdaq。</li>
+      <li><strong>中國記憶體競爭加劇：</strong>CXMT 上市後若積極擴大產能出口，可能造成 DRAM/NAND 全球報價下滑，長期壓制 Micron、SanDisk 等西方記憶體廠商獲利能力。</li>
+      <li><strong>AI 資本支出循環融資疑慮：</strong>Nvidia 超大規模 AI 融資擔保案（SK Group $5,000 億、OpenAI $2,500 億）引發市場質疑：客戶是否真正具備還款能力，或已形成高風險的循環融資結構，可能成為潛在系統性風險。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+
+    <p class="source-category">指數收盤數據</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-27-132000679.html" target="_blank">Stock Market News for July 27, 2026 — Yahoo Finance</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/07/27/stock-market-today-july-27-dow-rises-on-oil-retreat-and-sandisk-plunges-11-on-memory-weakness/" target="_blank">Stock Market Today, July 27 — The Motley Fool</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/07/27/wall-street-stocks-dow-nasdaq/504db546-89f8-11f1-8912-d71e69d679d7_story.html" target="_blank">How major US stock indexes fared Monday 7/27/2026 — Washington Post (AP)</a></li>
+      <li><a href="https://www.ktvb.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-monday-7272026/616-25fbc4e4-9b71-4394-ba41-69d568d1a50a" target="_blank">How major US stock indexes fared Monday 7/27/2026 — KTVB (AP)</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/26/stock-market-today-live-updates.html" target="_blank">Stock market news for July 27, 2026 — CNBC</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-27/stock-market-today-dow-s-p-live-updates" target="_blank">Stock Market Today: Dow, S&amp;P Live Updates — Bloomberg</a></li>
+    </ul>
+
+    <p class="source-category">美伊停火 / 油價</p>
+    <ul class="sources">
+      <li><a href="https://247wallst.com/investing/2026/07/27/stock-market-live-july-27-2026-sp-500-spy-rallying-on-u-s-iran-war-pause/" target="_blank">Stock Market Live July 27, 2026: S&amp;P 500 Rallying on US-Iran War Pause — 24/7 Wall St.</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-us-085939852.html" target="_blank">Wall St futures rise as US, Iran pause hostilities — Yahoo Finance</a></li>
+      <li><a href="https://www.nbcnews.com/world/iran/oil-prices-slide-us-iran-pause-strikes-trump-diplomacy-hormuz-red-sea-rcna589383" target="_blank">Oil prices slide as U.S. and Iran pause strikes — NBC News</a></li>
+      <li><a href="https://www.cbsnews.com/news/oil-prices-tumble-us-iran-pause/" target="_blank">Oil prices tumble as pause in U.S.-Iran fighting sparks market relief — CBS News</a></li>
+      <li><a href="https://invezz.com/news/2026/07/27/dow-futures-surge-550-points-5-things-to-know-before-wall-street-opens/" target="_blank">Dow futures surge 550 points: 5 things to know — Invezz</a></li>
+    </ul>
+
+    <p class="source-category">航空 / 郵輪板塊</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/airline-stocks-soar-u-iran-141527515.html" target="_blank">United, Delta and Southwest Rally as Iran Deal Lifts Travel Stocks — Yahoo Finance</a></li>
+      <li><a href="https://www.theglobeandmail.com/investing/markets/stocks/UAL/pressreleases/3482441/royal-caribbean-carnival-norwegian-cruise-line-american-airlines-and-delta-shares-are-soaring-what-you-need-to-know/" target="_blank">Royal Caribbean, Carnival, American Airlines, Delta Soaring — Globe and Mail</a></li>
+    </ul>
+
+    <p class="source-category">CXMT IPO / 記憶體股</p>
+    <ul class="sources">
+      <li><a href="https://247wallst.com/investing/2026/07/27/sandisk-sinks-12-micron-drops-5-sk-hynix-falls-8-as-chinas-cxmt-ipo-rattles-memory-stocks/" target="_blank">SanDisk Sinks 12%, Micron Drops 5%, SK Hynix Falls 8% as China's CXMT IPO Rattles Memory Stocks — 24/7 Wall St.</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/sandisk-sinks-12-micron-drops-150749991.html" target="_blank">SanDisk Sinks 12%, Micron Drops 5% — Yahoo Finance</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/cxmt-blockbuster-ipo-hits-mu-195532122.html" target="_blank">CXMT's Blockbuster IPO Hits MU, SNDK, WDC — Yahoo Finance</a></li>
+      <li><a href="https://www.fool.com/investing/2026/07/26/an-85-billion-chinese-dram-rival-starts-trading-mo/" target="_blank">An $85 Billion Chinese DRAM Rival Starts Trading — The Motley Fool</a></li>
+      <li><a href="https://www.benzinga.com/trading-ideas/movers/26/07/60701139/nvidia-stock-falls-5-how-credit-risk-sharing-is-impacting-the-ai-trade" target="_blank">Nvidia Stock Falls 5%: How Credit Risk Sharing Is Impacting the AI Trade — Benzinga</a></li>
+    </ul>
+
+    <p class="source-category">聯準會 / 本週展望 / NVIDIA-NAVER</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/07/24/stock-market-next-week-outlook-for-july-27-31-2026.html" target="_blank">Stock market next week: Outlook for July 27–31, 2026 — CNBC</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262054300-weekly-preview-fed-apple-microsoft-meta-amazon-earnings-reports-tradingkey" target="_blank">The Week Ahead: Fed Rate Decision, Apple, Microsoft, Meta, Amazon Earnings — TradingKey</a></li>
+      <li><a href="https://finance.yahoo.com/markets/article/4-big-tech-earnings-reports-a-fed-meeting-and-100-oil-its-the-busiest-week-of-the-quarter-100000261.html" target="_blank">4 Big Tech earnings, a Fed meeting, and $100 oil: Busiest week of the quarter — Yahoo Finance</a></li>
+      <li><a href="https://nvidianews.nvidia.com/news/naver-nvidia-and-brookfield-to-expand-koreas-national-ai-factory-infrastructure-buildout" target="_blank">NAVER, NVIDIA and Brookfield to Expand Korea's National AI Factory — NVIDIA Newsroom</a></li>
+    </ul>
+
+    <div class="cross-verify">
+      <strong>數據交叉驗證說明：</strong>本報告指數收盤數據經 CNBC、AP、Motley Fool、Yahoo Finance、Bloomberg 五個獨立來源交叉確認，DJIA +262.83/+0.51%、S&amp;P 500 +1.20/+0.02%、Nasdaq −43.74/−0.18%、Russell 2000 +18.04/+0.61% 四組數字各來源一致。
+    </div>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料截止：2026-07-27 收盤 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
