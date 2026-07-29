@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-28</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 4px solid #0f3460; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.92rem; line-height: 1.6; }
+    .event-list li .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin-right: 8px; vertical-align: middle; }
+    .tag-earnings { background: #d1fae5; color: #065f46; }
+    .tag-sector { background: #dbeafe; color: #1e40af; }
+    .tag-macro { background: #fef3c7; color: #92400e; }
+    .tag-geo { background: #fce7f3; color: #9d174d; }
+    .tag-fed { background: #ede9fe; color: #5b21b6; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+    .stock-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e2e8f0; }
+    .stock-item .name { font-weight: 700; font-size: 0.9rem; color: #1a1a2e; margin-bottom: 4px; }
+    .stock-item .ticker { font-size: 0.78rem; color: #6b7280; margin-bottom: 6px; }
+    .stock-item .change { font-size: 1rem; font-weight: 700; }
+    .stock-item .note { font-size: 0.8rem; color: #6b7280; margin-top: 4px; line-height: 1.4; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li strong { color: #dc2626; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e2e8f0; }
+    .macro-item .label { font-size: 0.8rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-item .value { font-size: 0.95rem; font-weight: 600; color: #1a1a2e; line-height: 1.4; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: disc; margin-left: 16px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .summary-banner { background: linear-gradient(90deg, #0f3460, #16213e); color: #fff; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.7; }
+    .summary-banner strong { color: #93c5fd; }
+    @media (max-width: 600px) {
+      header { padding: 20px; }
+      header h1 { font-size: 1.4rem; }
+      .macro-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>📊 美股新聞簡報</h1>
+    <div class="subtitle">2026-07-28（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- SUMMARY BANNER -->
+  <div class="summary-banner">
+    <strong>當日摘要：</strong>美股週二收盤漲跌不一。道瓊在可口可樂與Sherwin-Williams財報強勁帶動下大漲約537點；但那斯達克因半導體股拖累小幅收跌。費城半導體指數重挫逾4%，連跌四日，Nvidia跌約5%、AMD與Micron各跌逾7-8%。油價因伊朗與沙烏地、阿曼就荷莫茲海峽談判消息大幅回落，道瓊藍籌股獲得支撐。聯準會7月政策會議正式展開（28-29日），市場靜待利率決策。
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均 (DJIA)</td>
+          <td>52,747.32</td>
+          <td class="up">▲ 537.24</td>
+          <td class="up">+1.03%</td>
+          <td>可口可樂、Sherwin-Williams財報推升</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,428.78</td>
+          <td class="up">▲ 15.61</td>
+          <td class="up">+0.21%</td>
+          <td>藍籌消費股挺升，科技股走弱</td>
+        </tr>
+        <tr>
+          <td>那斯達克綜合 (Nasdaq)</td>
+          <td>24,876.91</td>
+          <td class="down">▼ 54.73</td>
+          <td class="down">−0.22%</td>
+          <td>半導體板塊連四日重挫</td>
+        </tr>
+        <tr>
+          <td>羅素 2000 (Russell 2000)</td>
+          <td>2,970.82</td>
+          <td class="down">▼ 5.44</td>
+          <td class="down">−0.18%</td>
+          <td>小型股小幅回落；2026年迄今仍漲逾22%</td>
+        </tr>
+        <tr>
+          <td>費城半導體指數 (SOX)</td>
+          <td>—</td>
+          <td class="down">—</td>
+          <td class="down">−4.5%</td>
+          <td>連跌四日，盤中一度跌逾6.5%</td>
+        </tr>
+        <tr>
+          <td>VanEck 半導體 ETF (SMH)</td>
+          <td>—</td>
+          <td class="down">—</td>
+          <td class="down">−3%+</td>
+          <td>AI晶片股信心受挫</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <span class="tag tag-earnings">財報</span>
+        <strong>可口可樂（KO）大漲5%</strong>：Q2營收與獲利雙雙超預期，並上調全年展望，帶動道瓊藍籌股反彈。
+      </li>
+      <li>
+        <span class="tag tag-earnings">財報</span>
+        <strong>Sherwin-Williams（SHW）大漲8%</strong>：Q2業績超預期，成為當日道瓊最強個股，帶動整體藍籌指數跳升。
+      </li>
+      <li>
+        <span class="tag tag-sector">板塊輪動</span>
+        <strong>半導體板塊連四日下跌</strong>：Nvidia跌約5%、AMD跌逾7%、Micron跌逾8%，市場對AI資本支出水平及中國半導體技術加速追趕的憂慮加劇。輝達傳聞正洽談逾7,500億美元AI基礎建設大單，但未能提振信心。
+      </li>
+      <li>
+        <span class="tag tag-sector">板塊輪動</span>
+        <strong>資金從科技/AI大幅外流</strong>：華爾街明顯「棄AI轉他處」，資金輪動至消費必需品、工業等傳統防禦板塊，道瓊表現顯著優於那斯達克。
+      </li>
+      <li>
+        <span class="tag tag-geo">地緣政治</span>
+        <strong>布蘭特原油重跌近9%</strong>：傳出伊朗正與沙烏地阿拉伯及阿曼就荷莫茲海峽問題進行談判，市場緊張情緒降溫，油價大幅回落；油價下跌壓低通膨預期，對股市總體偏正面。
+      </li>
+      <li>
+        <span class="tag tag-fed">聯準會</span>
+        <strong>聯準會7月政策會議正式啟動</strong>：2026年第五次FOMC會議（7/28–7/29），市場靜待隔日（7/29）利率決策聲明。市場加息概率升至約38%，高於前月預期，顯示降息預期分歧加大。
+      </li>
+      <li>
+        <span class="tag tag-macro">總經</span>
+        <strong>Big Tech財報週進入關鍵期</strong>：微軟、Meta、Apple、Amazon等科技巨頭財報陸續將於本週公布，市場已進入觀望模式；半導體股弱勢部分源於財報踩雷疑慮。
+      </li>
+    </ul>
+  </div>
+
+  <!-- INDIVIDUAL STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <div class="stock-grid">
+      <div class="stock-item">
+        <div class="name">可口可樂</div>
+        <div class="ticker">KO · NYSE</div>
+        <div class="change up">▲ +5%</div>
+        <div class="note">Q2營收獲利雙超預期，上調全年展望，帶動道瓊指數</div>
+      </div>
+      <div class="stock-item">
+        <div class="name">Sherwin-Williams</div>
+        <div class="ticker">SHW · NYSE</div>
+        <div class="change up">▲ +8%</div>
+        <div class="note">Q2業績超預期，當日道瓊最強個股</div>
+      </div>
+      <div class="stock-item">
+        <div class="name">Nvidia</div>
+        <div class="ticker">NVDA · Nasdaq</div>
+        <div class="change down">▼ −5%</div>
+        <div class="note">AI晶片股信心疲軟，半導體板塊全面失血</div>
+      </div>
+      <div class="stock-item">
+        <div class="name">Advanced Micro Devices</div>
+        <div class="ticker">AMD · Nasdaq</div>
+        <div class="change down">▼ −7%+</div>
+        <div class="note">費半指數領跌，連四日下挫</div>
+      </div>
+      <div class="stock-item">
+        <div class="name">Micron Technology</div>
+        <div class="ticker">MU · Nasdaq</div>
+        <div class="change down">▼ −8%</div>
+        <div class="note">記憶體股受拖累，跌幅居半導體前列</div>
+      </div>
+      <div class="stock-item">
+        <div class="name">VanEck 半導體 ETF</div>
+        <div class="ticker">SMH · Nasdaq</div>
+        <div class="change down">▼ −3%+</div>
+        <div class="note">連四日下跌，AI支出疑慮持續壓制</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>總體經濟與宏觀因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">🏦 聯準會動態</div>
+        <div class="value">7月FOMC會議啟動（28–29日）；市場加息概率升至38%，降息預期分歧擴大。決策將於7/29公布。</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">🛢 能源/油價</div>
+        <div class="value">布蘭特原油大跌近9%，WTI亦顯著回落。伊朗與沙烏地、阿曼就荷莫茲海峽外交接觸，地緣風險溢價消退。</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">🌏 地緣政治</div>
+        <div class="value">伊朗-沙烏地-阿曼三方就荷莫茲海峽進行談判，原油供應擔憂降溫；但美伊緊張局勢仍是潛在變數。</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">💻 AI/科技支出</div>
+        <div class="value">市場對AI資本支出規模的疑慮加劇，加上中國半導體加速追趕，引發資金撤出AI相關股票。</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">📈 Big Tech 財報週</div>
+        <div class="value">微軟、Meta、Apple、Amazon等科技巨頭財報本週陸續公布，市場正評估AI投資回報率能否撐起高估值。</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">📦 板塊輪動</div>
+        <div class="value">資金從科技/半導體流向消費必需品與工業板塊，道瓊明顯優於那斯達克，輪動信號持續增強。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>半導體持續走弱：</strong>費城半導體指數連跌四日，跌幅累積可觀，若Big Tech財報中AI支出指引下調，可能引發更大範圍拋售。</li>
+      <li><strong>聯準會政策不確定性：</strong>7/29利率決策及鮑威爾記者會措辭，將直接左右短期市場走向；市場加息概率升至38%，高於前月，顯示分歧加大。</li>
+      <li><strong>地緣政治反轉風險：</strong>伊朗-沙烏地談判若破裂，油價可能迅速反彈，重新對整體通膨預期形成壓力。</li>
+      <li><strong>AI估值泡沫疑慮：</strong>輝達傳聞洽談7,500億美元AI大單，但股價反跌5%；市場已開始質疑AI資本支出能否產生足夠回報，相關高估值股票面臨修正風險。</li>
+      <li><strong>中國科技追趕：</strong>中國半導體與AI技術加速發展，持續對美國晶片龍頭的競爭優勢構成長期壓力。</li>
+      <li><strong>Big Tech財報踩雷風險：</strong>本週微軟、Meta、Apple、Amazon財報密集公布，任何業績或展望不及預期均可能引爆較大波動。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html" target="_blank">CNBC – Stock market news for July 28, 2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-28-dow-sp-500-nasdaq-082832371.html" target="_blank">Yahoo Finance – Stock Market Today: Nasdaq bounces back, S&amp;P 500 and Dow rise (July 28)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-28-131500501.html" target="_blank">Yahoo Finance – Stock Market News for July 28, 2026</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/07/28/wall-street-stocks-dow-nasdaq/2f633d00-8ac1-11f1-8912-d71e69d679d7_story.html" target="_blank">The Washington Post – How major US stock indexes fared Tuesday 7/28/2026</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-27/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg – Stock Market Today: Dow, S&amp;P Live Updates for July 28</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-28-2026" target="_blank">TheStreet – Stock Market Today (July 28, 2026): Dow rises amid earnings reports, chip sell-off</a></li>
+      <li><a href="https://qz.com/dow-jones-rally-coca-cola-sherwin-williams-chip-stocks-072826" target="_blank">Quartz – Dow Jones rises on Coca-Cola, Sherwin-Williams earnings</a></li>
+      <li><a href="https://www.fxleaders.com/news/2026/07/28/coca-cola-and-sherwin-williams-earnings-lift-dow-jones-358-points/" target="_blank">FX Leaders – Coca-Cola and Sherwin-Williams Earnings Lift Dow Jones</a></li>
+      <li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-07-28/doc-inikhuhn8262425.shtml" target="_blank">新浪財經 – 7月28日收盤：美股漲跌不一道指收高 油價大幅回落</a></li>
+      <li><a href="https://finance.sina.com.cn/jjxw/2026-07-28/doc-inikiewm2631855.shtml" target="_blank">新浪財經 – 投資避雷針：費城半導體指數創5月20日以來收盤新低 英偉達跌約5%</a></li>
+      <li><a href="https://news.cnyes.com/news/id/6547182" target="_blank">鉅亨網 – 美股重點新聞摘要 2026年7月28日</a></li>
+      <li><a href="https://vocus.cc/article/6a688bdefd897800017c3073" target="_blank">Vocus – 2026年7月28日 美股半導體大跌延續亞洲股市暴跌</a></li>
+      <li><a href="https://www.washingtontimes.com/news/2026/jul/28/wall-streets-flip-ai-stocks-elsewhere-accelerates-oil-prices-ease/" target="_blank">Washington Times – Wall Street's flip from AI stocks to elsewhere accelerates, while oil prices ease</a></li>
+      <li><a href="https://www.kiplinger.com/investing/live/fed-meeting-updates-and-commentary-july-2026" target="_blank">Kiplinger – July Fed Meeting: Live Updates and Commentary</a></li>
+      <li><a href="https://www.ibtimes.com.au/russell-2000-historic-surge-small-cap-stocks-2026-1872416" target="_blank">International Business Times – Russell 2000 Slips 0.18% to 2,970</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料來源：CNBC、Yahoo Finance、Bloomberg、新浪財經、鉅亨網等 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
