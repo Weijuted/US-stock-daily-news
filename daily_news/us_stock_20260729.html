@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-29</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .summary-badges { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+    header .badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 5px 14px; font-size: 0.82rem; }
+    header .badge.red { background: rgba(220,38,38,0.35); border-color: rgba(220,38,38,0.5); }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; display: flex; align-items: center; gap: 8px; }
+    h2::before { content: ''; display: inline-block; width: 4px; height: 18px; background: #0f3460; border-radius: 2px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+
+    .event-item { padding: 14px 18px; margin-bottom: 12px; background: #f8faff; border-left: 4px solid #3b82f6; border-radius: 6px; }
+    .event-item:last-child { margin-bottom: 0; }
+    .event-item h3 { font-size: 0.95rem; font-weight: 700; color: #1e3a8a; margin-bottom: 6px; }
+    .event-item p { font-size: 0.88rem; line-height: 1.6; color: #374151; }
+    .event-item.red { border-left-color: #ef4444; background: #fff7f7; }
+    .event-item.red h3 { color: #991b1b; }
+    .event-item.orange { border-left-color: #f97316; background: #fffbf5; }
+    .event-item.orange h3 { color: #9a3412; }
+
+    .sector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+    .sector-card { padding: 12px 14px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .sector-card .name { font-size: 0.82rem; color: #6b7280; margin-bottom: 4px; }
+    .sector-card .change { font-size: 1.1rem; font-weight: 700; }
+    .sector-card.up-card { background: #f0fdf4; border-color: #bbf7d0; }
+    .sector-card.down-card { background: #fef2f2; border-color: #fecaca; }
+
+    .stock-item { display: flex; justify-content: space-between; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #f0f0f0; }
+    .stock-item:last-child { border-bottom: none; }
+    .stock-info { flex: 1; }
+    .stock-info .ticker { font-weight: 700; font-size: 0.95rem; color: #0f3460; }
+    .stock-info .desc { font-size: 0.85rem; color: #6b7280; margin-top: 2px; line-height: 1.4; }
+    .stock-change { font-weight: 700; font-size: 0.95rem; min-width: 70px; text-align: right; }
+
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li:last-child { margin-bottom: 0; }
+
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } }
+    .macro-item { padding: 14px; background: #f8faff; border-radius: 8px; }
+    .macro-item .label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: #6b7280; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-item .note { font-size: 0.8rem; color: #6b7280; margin-top: 4px; line-height: 1.4; }
+
+    .earnings-note { font-size: 0.82rem; color: #6b7280; padding: 10px 14px; background: #fffbeb; border-left: 3px solid #f59e0b; border-radius: 4px; margin-top: 14px; line-height: 1.5; }
+
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources li { margin-bottom: 8px; padding: 6px 10px; background: #f9fafb; border-radius: 4px; }
+    .sources a { color: #0f3460; text-decoration: none; word-break: break-all; }
+    .sources a:hover { text-decoration: underline; }
+
+    .verify-note { font-size: 0.82rem; color: #6b7280; padding: 10px 14px; background: #f0fdf4; border-left: 3px solid #22c55e; border-radius: 4px; margin-top: 14px; line-height: 1.5; }
+
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026 年 7 月 29 日（週三）| 由 Claude Routine 自動生成</div>
+    <div class="summary-badges">
+      <span class="badge red">道瓊 ▼ 2.19%</span>
+      <span class="badge red">S&P 500 ▼ 1.52%</span>
+      <span class="badge red">Nasdaq ▼ 1.74%</span>
+      <span class="badge red">Russell 2000 ▼ 1.61%</span>
+      <span class="badge">油價 ▲ 6.6%</span>
+      <span class="badge">聯準會 維持利率不變</span>
+    </div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數 (DJIA)</strong></td>
+          <td>51,594.14</td>
+          <td class="down">▼ 1,153.18</td>
+          <td class="down">▼ 2.19%</td>
+        </tr>
+        <tr>
+          <td><strong>S&P 500</strong></td>
+          <td>7,316.15</td>
+          <td class="down">▼ —</td>
+          <td class="down">▼ 1.52%</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合指數 (Nasdaq)</strong></td>
+          <td>24,442.94</td>
+          <td class="down">▼ —</td>
+          <td class="down">▼ 1.74%</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>2,906.31</td>
+          <td class="down">▼ 47.49</td>
+          <td class="down">▼ 1.61%</td>
+        </tr>
+        <tr>
+          <td><strong>布蘭特原油期貨</strong></td>
+          <td>$89.61 / 桶</td>
+          <td class="up">▲ —</td>
+          <td class="up">▲ 6.6%</td>
+        </tr>
+        <tr>
+          <td><strong>黃金期貨</strong></td>
+          <td>$4,034.70 / 盎司</td>
+          <td class="down">▼ —</td>
+          <td class="down">▼（連續第 2 日下跌）</td>
+        </tr>
+        <tr>
+          <td><strong>10 年期公債殖利率</strong></td>
+          <td>4.657%</td>
+          <td class="up">▲ 上升</td>
+          <td class="neutral">接近年度高點</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+
+    <div class="event-item red">
+      <h3>🏦 聯準會 FOMC：維持利率，但三位委員罕見異議要求升息</h3>
+      <p>聯準會在 7 月 29 日宣布，以 <strong>9 票對 3 票</strong>決議維持基準利率於 <strong>3.50%～3.75%</strong>（連續第五次會議維持不變）。三位地區聯準行長明確要求立即升息 25 個基點，分別為：克利夫蘭聯準行 <strong>Beth Hammack</strong>、明尼阿波利斯聯準行 <strong>Neel Kashkari</strong>、達拉斯聯準行 <strong>Lorie Logan</strong>。此為 <strong>2016 年 9 月以來首次有三位決策者同方向異議</strong>，市場解讀為委員會內部鷹派立場明顯升溫，公債殖利率隨即走升，股市受壓。</p>
+    </div>
+
+    <div class="event-item orange">
+      <h3>🛢️ 美伊停火終止，中東局勢急升，油價暴衝 6.6%</h3>
+      <p>川普總統宣布伊朗對美軍發動「突襲企圖」，並宣告停火協議「終止」，威脅將嚴厲反擊。此消息直接推動布蘭特原油期貨單日飆升 <strong>+6.6%</strong> 至 <strong>每桶 $89.61 美元</strong>；WTI 原油亦上漲 <strong>+6.4%</strong> 至 <strong>$84.31 美元</strong>。地緣政治風險急遽升溫，市場對波斯灣能源供應中斷的擔憂明顯加劇。</p>
+    </div>
+
+    <div class="event-item">
+      <h3>📉 費城半導體指數重挫 4.5%，科技股遭廣泛拋售</h3>
+      <p>資訊科技板塊（XLK）下跌 <strong>1.8%</strong>，費城半導體指數（SOX）單日大幅下跌 <strong>4.5%</strong>，成為當日表現最差的板塊。高利率預期加劇、科技股估值承壓，資金持續撤出成長型股票。</p>
+    </div>
+
+    <div class="event-item">
+      <h3>🍎 蘋果（AAPL）市值短暫突破 5 兆美元里程碑</h3>
+      <p>蘋果公司盤中市值短暫突破 <strong>5 兆美元</strong>，成為史上第二家達成此市值里程碑的上市公司。儘管大盤走跌，蘋果因市場期待隔日（7 月 30 日）財報表現而相對抗跌。</p>
+    </div>
+
+    <div class="event-item">
+      <h3>📊 盤後重磅財報：微軟大超預期，Meta EPS 遜色</h3>
+      <p><strong>微軟（MSFT）</strong>財報亮眼，Azure 雲端服務首次單季收入突破 <strong>1,000 億美元</strong>大關，優於市場預期。<strong>Meta Platforms（META）</strong> EPS 為 $6.18，低於市場預期的 $7.18（差距約 -14%），但總營收 $608 億美元略優於預期 $602.9 億。<strong>Qualcomm（QCOM）</strong>則報告 EPS $2.21（符合預期），營收 $99 億（略優於預期 $96 億）。</p>
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯準會基準利率</div>
+        <div class="value">3.50% – 3.75%</div>
+        <div class="note">第五次連續會議維持不變；3 位委員異議要求升息，為 2016 年來首見</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10 年期公債殖利率</div>
+        <div class="value" style="color:#dc2626;">4.657%</div>
+        <div class="note">接近年度高點；2 年期殖利率上升約 3 個基點至 4.3%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">布蘭特原油</div>
+        <div class="value" style="color:#f97316;">$89.61 / 桶</div>
+        <div class="note">單日飆升 +6.6%；美伊關係破裂，波斯灣供應風險升溫</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">次日重要數據（7/30）</div>
+        <div class="value">GDP + PCE</div>
+        <div class="note">美商務部公布第二季 GDP 初值及 6 月 PCE 通膨指數（聯準會最重視指標）</div>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:#6b7280;margin-top:14px;line-height:1.6;">
+      <strong>通膨背景：</strong>美國通膨持續高於聯準會 2% 目標已逾五年。著名債券投資人 Jeffrey Gundlach 公開表示：「債券市場在告訴聯準會主席沃許，聯準會必須對通膨採取行動。」勞動市場方面，2026 年第一季平均月增私人非農就業人數，較 2025 年全年月均值高出約 2.5 倍，就業市場仍展現強勁韌性。
+    </p>
+  </div>
+
+  <!-- SECTORS & STOCKS -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+    <p style="font-size:0.85rem;font-weight:600;color:#374151;margin-bottom:10px;">板塊表現（ETF）</p>
+    <div class="sector-grid">
+      <div class="sector-card down-card">
+        <div class="name">費城半導體指數（SOX）</div>
+        <div class="change down">▼ 4.5%</div>
+      </div>
+      <div class="sector-card down-card">
+        <div class="name">資訊科技（XLK）</div>
+        <div class="change down">▼ 1.8%</div>
+      </div>
+      <div class="sector-card down-card">
+        <div class="name">能源（XLE）</div>
+        <div class="change down">▼ 1.4%</div>
+      </div>
+      <div class="sector-card up-card">
+        <div class="name">醫療保健（XLV）</div>
+        <div class="change up">▲ 2.4%</div>
+      </div>
+      <div class="sector-card up-card">
+        <div class="name">必需消費品（XLP）</div>
+        <div class="change up">▲ 2.0%</div>
+      </div>
+      <div class="sector-card up-card">
+        <div class="name">通訊服務（XLC）</div>
+        <div class="change up">▲ 1.9%</div>
+      </div>
+    </div>
+
+    <p style="font-size:0.85rem;font-weight:600;color:#374151;margin:18px 0 10px;">重要個股</p>
+    <div class="stock-item">
+      <div class="stock-info">
+        <div class="ticker">CAT — 卡特彼勒</div>
+        <div class="desc">Baird 券商將評級下調，引發大幅賣壓，為道瓊指數最大拖累股之一</div>
+      </div>
+      <div class="stock-change down">▼ 6.4%<br><span style="font-size:0.8rem;font-weight:400">$787.19</span></div>
+    </div>
+    <div class="stock-item">
+      <div class="stock-info">
+        <div class="ticker">AAPL — 蘋果</div>
+        <div class="desc">盤中市值短暫突破 5 兆美元里程碑（史上第二）；市場等待 7/30 財報</div>
+      </div>
+      <div class="stock-change up">相對抗跌</div>
+    </div>
+    <div class="stock-item">
+      <div class="stock-info">
+        <div class="ticker">MSFT — 微軟（盤後）</div>
+        <div class="desc">Azure 首次單季突破 1,000 億美元；EPS 及營收均優於預期</div>
+      </div>
+      <div class="stock-change up">盤後大漲</div>
+    </div>
+    <div class="stock-item">
+      <div class="stock-info">
+        <div class="ticker">META — Meta Platforms（盤後）</div>
+        <div class="desc">EPS $6.18 遜於預期 $7.18（差距 -14%）；營收 $608 億略優預期</div>
+      </div>
+      <div class="stock-change down">盤後下跌</div>
+    </div>
+    <div class="stock-item">
+      <div class="stock-info">
+        <div class="ticker">QCOM — Qualcomm（盤後）</div>
+        <div class="desc">EPS $2.21 符合預期；營收 $99 億略優預期 $96 億</div>
+      </div>
+      <div class="stock-change neutral">符合預期</div>
+    </div>
+
+    <div class="earnings-note">
+      ⚠️ 注意：微軟、Meta、Qualcomm 財報均於 7 月 29 日收盤後公布，主要影響為 7 月 30 日（次日）開盤走勢。黃金（$4,034.70）在地緣政治風險升溫下未能扮演傳統避險角色，資金流向美元與公債而非黃金。
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會鷹派轉向風險：</strong>三位委員異議為 2016 年來首見，市場擔憂 9 月或 11 月 FOMC 會議可能出現升息動作，高利率環境持續或加劇股市承壓。</li>
+      <li><strong>中東地緣政治升溫：</strong>美伊停火協議破裂，波斯灣原油供應中斷風險上升，油價持續高位可能進一步推升通膨壓力，形成惡性循環。</li>
+      <li><strong>通膨頑固不退：</strong>美國通膨高於 2% 目標已逾五年，7 月 30 日公布的 PCE 指數若高於預期，將對市場形成新一輪衝擊。</li>
+      <li><strong>科技股估值重估：</strong>費城半導體指數單日重挫 4.5%，高利率與地緣政治雙重壓力下，高估值科技與成長股面臨進一步修正風險。</li>
+      <li><strong>財報季不確定性：</strong>Meta EPS 明顯遜色，顯示大型科技公司獲利不再齊頭並進；蘋果、亞馬遜等重磅財報仍在陸續公布，結果好壞對指數有直接影響。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-29-dow-sp-500-nasdaq-082009165.html" target="_blank">Stock market today: Dow plunges 1,100 points, S&P 500 and Nasdaq sink — Yahoo Finance</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-29-2026stock-market-today-july-29-2026" target="_blank">Stock Market Today (July 29, 2026): Dow tumbles 800 points — TheStreet</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/07/29/wall-street-stocks-dow-nasdaq/7aafba20-8b8b-11f1-8912-d71e69d679d7_story.html" target="_blank">How major US stock indexes fared Wednesday 7/29/2026 — The Washington Post</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/07/29/stock-market-today-july-29-stocks-slide-on-hawkish-fed-and-increased-middle-east-tensions/" target="_blank">Stock Market Today, July 29: Stocks Slide on Hawkish Fed and Middle East Tensions — Motley Fool</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-july-29-212135780.html" target="_blank">Stock Market Today, July 29 — Yahoo Finance / Motley Fool</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html" target="_blank">Fed rate decision July 2026: Divided Fed holds rates steady — CNBC</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html" target="_blank">Fed meeting recap: July 2026 — CNBC</a></li>
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a1.htm" target="_blank">Federal Reserve Implementation Note issued July 29, 2026 — Federal Reserve</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-29/key-takeaways-from-fed-decision-to-hold-rates-steady" target="_blank">Key Takeaways From Fed Decision to Hold Rates Steady — Bloomberg</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html" target="_blank">Brent oil jumps back above $90 after Trump threatens to hit Iran hard — CNBC</a></li>
+      <li><a href="https://www.nbcnews.com/business/business-news/oil-prices-surge-stocks-tumble-trump-iran-ceasefire-over-hormuz-rcna353446" target="_blank">Oil prices surge, stocks slide after Trump says Iran ceasefire is 'over' — NBC News</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/29/gundlach-says-the-bond-market-is-signaling-the-fed-has-to-act-on-inflation.html" target="_blank">Gundlach says the bond market is signaling the Fed has to act on inflation — CNBC</a></li>
+      <li><a href="https://finance.yahoo.com/technology/live/tech-stocks-today-big-tech-earnings-134611080.html" target="_blank">Tech stocks today: Microsoft, Meta, Qualcomm report earnings — Yahoo Finance</a></li>
+      <li><a href="https://sg.finance.yahoo.com/news/stock-market-news-july-29-132000674.html" target="_blank">Stock Market News for July 29, 2026 — Yahoo Finance</a></li>
+      <li><a href="https://ts2.tech/en/stock-market-today-29-07-2026/" target="_blank">Stock Market Today: Live Updates 29.07.2026 — ts2.tech</a></li>
+      <li><a href="https://www.benzinga.com/markets/equities/26/07/60554062/energy-overtakes-tech-best-sector-2026" target="_blank">Energy Overtakes Tech As 2026's Best Sector — Benzinga</a></li>
+    </ul>
+    <div class="verify-note">
+      ✅ <strong>資料交叉驗證說明：</strong>收盤指數數字已透過 Yahoo Finance、The Washington Post 及 TheStreet 交叉核對，三來源吻合。聯準會異議票數（9:3）已由美聯儲官網及 CNBC、Fox Business 多重確認。油價漲幅已由 CNBC 及 NBC News 相互印證。盤後財報數字已由 Yahoo Finance 與 Seeking Alpha 交叉驗證。
+    </div>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議<br>生成時間：2026-07-30</footer>
+</div>
+</body>
+</html>
