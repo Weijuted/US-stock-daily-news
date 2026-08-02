@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-07-31</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-earn { background: #fef9c3; color: #854d0e; }
+    .badge-miss { background: #fee2e2; color: #991b1b; }
+    .badge-hold { background: #e0f2fe; color: #0369a1; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.success { border-color: #6ee7b7; background: #f0fdf4; }
+    .event-card.warning { border-color: #fcd34d; background: #fffbeb; }
+    .event-card.danger { border-color: #fca5a5; background: #fff5f5; }
+    .event-card.purple { border-color: #c4b5fd; background: #f5f3ff; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #1e40af; }
+    .event-card.success h4 { color: #065f46; }
+    .event-card.warning h4 { color: #92400e; }
+    .event-card.danger h4 { color: #991b1b; }
+    .event-card.purple h4 { color: #5b21b6; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.tech { background: #ede9fe; color: #5b21b6; }
+    .tag.energy { background: #fef3c7; color: #92400e; }
+    .tag.macro { background: #dcfce7; color: #166534; }
+    .tag.earn { background: #fce7f3; color: #9d174d; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #0f3460, #1e40af); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+    .monthly-note { font-size: 0.78rem; color: #6b7280; font-style: italic; }
+    .yield-table td:first-child { width: 120px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 7 月 31 日（週五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>Amazon Q2 財報大幅超預期，AI 雲端業務強勁，股價單日暴漲逾 +13%，帶動 Nasdaq 上揚；Apple 因服務業務疲軟及 Q4 前瞻低於預期，股價重挫 -7%~-8%；FOMC 7/29 以 9-3 票維持利率不變，但聯準會內部鷹鴿分歧加劇，債市殖利率走升壓制小型股。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅（當日）</th>
+          <th>7 月月績效</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>52,485.03</td>
+          <td class="up">+276.97</td>
+          <td class="up">+0.53%</td>
+          <td class="up">+0.32%</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,489.72</td>
+          <td class="up">+約 +52</td>
+          <td class="up">+0.70%</td>
+          <td class="down">-0.13%</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>25,373.85</td>
+          <td class="up">+約 +254</td>
+          <td class="up">+1.00%~+1.32%</td>
+          <td class="down">-3.20%</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>2,931.34</td>
+          <td class="down">-14.76</td>
+          <td class="down">-0.50%</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="monthly-note" style="margin-top:10px;">※ 道瓊當日交易區間：51,996 — 52,623；小型股 Russell 2000 收跌，顯示漲幅集中於大型科技股。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+      <div class="event-card success">
+        <h4>📦 Amazon (AMZN) Q2 財報爆漲 +13%</h4>
+        <ul>
+          <li>Q2 EPS 與營收大幅超預期，AWS 雲端業務 AI 需求強勁</li>
+          <li>AI 基礎設施資本支出投資獲市場充分肯定</li>
+          <li>股價升至約 <strong>263.07 美元</strong>，為當日全場最強個股</li>
+          <li>帶動「Magnificent 7」整體指數單日上漲 <strong>+3.2%</strong></li>
+          <li>連帶拉升消費非必需品板塊（+2.88%）</li>
+        </ul>
+      </div>
+      <div class="event-card danger">
+        <h4>🍎 Apple (AAPL) 財報失望重挫 -7%~-8%</h4>
+        <ul>
+          <li>iPhone 單機收入年增 22%，但服務業務（Services）表現疲軟</li>
+          <li>Q4 前瞻指引低於市場共識預期 <strong>12%</strong></li>
+          <li>AI 晶片供應緊縮壓縮硬體供應鏈，令市場失望</li>
+          <li>為當日道指與 S&amp;P 500 最大單一拖累個股</li>
+          <li>科技板塊（Technology）當日收跌 <strong>-0.76%</strong></li>
+        </ul>
+      </div>
+      <div class="event-card purple" style="grid-column: span 2;">
+        <h4>🇰🇷 南韓 KOSPI 單日歷史最大漲幅 +17.9%</h4>
+        <ul>
+          <li>KOSPI 指數大漲 <strong>+17.9%，收報 6,695.45</strong>，創下有紀錄以來單日最大漲幅</li>
+          <li><strong>三星電子 +28%、SK Hynix +30%</strong>，韓國半導體雙雄全面爆發</li>
+          <li>起因：前三日 KOSPI 因 AI 泡沫擔憂及中國競爭疑慮合計重挫超 17%</li>
+          <li>Microsoft 與 Amazon 財報確認 AI 雲端需求旺盛，AI 基礎設施投資週期持續，市場信心強力回補</li>
+          <li>此波韓國科技股反彈連帶提振全球半導體板塊情緒</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>本週其他重要科技財報（影響延伸至 7/31）</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>公司</th><th>財報日</th><th>股價反應</th><th>關鍵指標</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Microsoft (MSFT)</strong></td>
+          <td>7/29</td>
+          <td class="up">本週 +約 9%</td>
+          <td>Azure capex 規模獲市場認可；雲端業務超預期</td>
+        </tr>
+        <tr>
+          <td><strong>Meta (META)</strong></td>
+          <td>7/29</td>
+          <td class="down">股價承壓</td>
+          <td>營收 606 億美元（+28% YoY）超預期；但 EPS 6.18 低於預期 7.18</td>
+        </tr>
+        <tr>
+          <td><strong>Alphabet (GOOGL)</strong></td>
+          <td>7/22</td>
+          <td class="down">本週初 -15%</td>
+          <td>CapEx 飆至 2,050 億美元且自由現金流轉負；雲端年增 82% 但不敵市場疑慮</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:8px;">※ 四大科技巨頭（Alphabet、Microsoft、Amazon、Meta）2026 年合計 AI 資本支出預估約 <strong>7,240 億美元</strong>，2027 年預估逼近 <strong>9,500 億美元</strong>。</p>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">WTI 原油</div>
+        <div class="value">$84.33</div>
+        <div class="change down">中東緊張持續走高</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">布蘭特原油</div>
+        <div class="value">$92.85</div>
+        <div class="change down">伊朗威脅荷姆茲封鎖</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">10 年期公債殖利率</div>
+        <div class="value down">4.74%~4.75%</div>
+        <div class="change down">單日 +5 bp；壓制小型股</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">30 年期公債殖利率</div>
+        <div class="value down">5.25%~5.28%</div>
+        <div class="change down">利率敏感板塊承壓</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">聯準會利率（現行）</div>
+        <div class="value">3.50–3.75%</div>
+        <div class="change">7/29 FOMC 維持不變</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">Q2 財報 EPS 超預期率</div>
+        <div class="value up">86%</div>
+        <div class="change up">61% S&amp;P 500 已公布</div>
+      </div>
+    </div>
+
+    <h3>聯準會動態（FOMC 7/29 決議）</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      聯準會 7 月 29 日以 <strong>9 票贊成、3 票反對</strong>決議維持利率於 3.50%~3.75% 不變，為連續第五次按兵不動。<br>
+      三位鷹派委員（<strong>Hammack、Kashkari、Logan</strong>）主張升息，異議票數為近期最多。Fed 主席 Kevin Warsh 形容本次決議為「家庭內部激烈爭論」（"good family fight"）。7 月 31 日當日，部分 Fed 官員公開發言，表示秋季升息的必要性，引發市場對利率前景的再度擔憂，推升債市殖利率並壓制小型股廣度。
+    </p>
+
+    <h3>國債殖利率快照（7/31）</h3>
+    <table class="stock-table yield-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>期限</th><th>殖利率</th><th>走勢</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1 年期</td><td>4.05%</td><td class="flat">—</td></tr>
+        <tr><td>2 年期</td><td>4.28%~4.29%</td><td class="down">隱含升息預期</td></tr>
+        <tr><td>5 年期</td><td>4.46%</td><td class="down">▲</td></tr>
+        <tr><td><strong>10 年期</strong></td><td class="down"><strong>4.74%~4.75%</strong></td><td class="down">單日 +5 bp</td></tr>
+        <tr><td><strong>30 年期</strong></td><td class="down"><strong>5.25%~5.28%</strong></td><td class="down">長端利率顯著走高</td></tr>
+      </tbody>
+    </table>
+
+    <h3>油價與中東地緣政治</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      伊朗自 2026 年 3 月起持續威脅封鎖荷姆茲海峽（全球約 27% 海運原油過境此地），雖曾短暫宣布暫停攻擊，但市場擔憂情緒持續。油價居高不下加重通膨壓力，與 Fed 鷹派立場共同形成美國債市殖利率上行動力。
+    </p>
+
+    <h3>Q2 財報季整體表現</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      截至 7/31，S&amp;P 500 中已有 <strong>61% 企業公布財報</strong>，其中 <strong>86% EPS 超預期</strong>（遠高於歷史均值）。混合 EPS 成長率 <strong>+47.4% YoY</strong>（若排除 Alphabet 與 Amazon 則為 +28.8%）。季營收預期年增 +12.2%，若確認將是 2022 Q2 以來最高。AI 資本支出為市場最核心討論議題。
+    </p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+
+    <h3>主要科技財報股</h3>
+    <table class="stock-table">
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>說明</th><th>標籤</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Amazon (AMZN)</strong></td>
+          <td class="up">+12%~+13%</td>
+          <td>Q2 EPS 超預期；AWS AI 需求強勁；股價約 $263.07</td>
+          <td><span class="tag earn">財報</span><span class="tag tech">科技</span></td>
+        </tr>
+        <tr>
+          <td><strong>Apple (AAPL)</strong></td>
+          <td class="down">-7%~-8%</td>
+          <td>服務業務疲軟；Q4 前瞻低於共識 12%；AI 晶片供應緊縮</td>
+          <td><span class="tag earn">財報</span><span class="tag tech">科技</span></td>
+        </tr>
+        <tr>
+          <td><strong>Microsoft (MSFT)</strong></td>
+          <td class="up">本週 +約 9%</td>
+          <td>Azure capex 成長獲市場肯定；財報後持續走強</td>
+          <td><span class="tag earn">財報</span><span class="tag tech">雲端</span></td>
+        </tr>
+        <tr>
+          <td><strong>Meta (META)</strong></td>
+          <td class="down">股價承壓</td>
+          <td>營收 606 億（+28% YoY）超預期；EPS 6.18 低於預期 7.18</td>
+          <td><span class="tag earn">財報</span><span class="tag tech">科技</span></td>
+        </tr>
+        <tr>
+          <td><strong>Alphabet (GOOGL)</strong></td>
+          <td class="down">本週初 -15%</td>
+          <td>CapEx 2,050 億美元且自由現金流轉負；雲端年增 82%</td>
+          <td><span class="tag earn">財報</span><span class="tag tech">科技</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊表現（2026-07-31）</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>板塊</th><th>當日表現</th><th>7 月月績效</th><th>主要驅動</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>非必需消費品（Consumer Discretionary）</td><td class="up"><strong>+2.88%</strong></td><td class="up">+4.68%</td><td>Amazon 財報爆漲帶動；資金從大型科技輪入</td></tr>
+        <tr><td>通訊服務（Communications）</td><td class="up">+0.87%</td><td>—</td><td>Meta、Alphabet 部分回穩</td></tr>
+        <tr><td>工業（Industrials）</td><td class="up">+0.47%</td><td>—</td><td>穩健表現</td></tr>
+        <tr><td>能源（Energy）</td><td class="flat">持平</td><td class="up">+0.36%</td><td>油價高位持穩，中東緊張支撐</td></tr>
+        <tr><td>科技（Technology）</td><td class="down"><strong>-0.76%</strong></td><td class="down">-0.49%</td><td>Apple 重挫 -7%~-8% 拖累；Alphabet 持續疲弱</td></tr>
+        <tr><td>醫療（Healthcare）</td><td class="down"><strong>-1.18%</strong></td><td class="down">-0.78%</td><td>防禦板塊輪出；殖利率走高</td></tr>
+        <tr><td>基礎材料（Basic Materials）</td><td>—</td><td class="down">-2.06%</td><td>7 月整體落後</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會鷹鴿分歧加劇 — 秋季升息尾部風險上升：</strong>FOMC 7/29 以 9-3 票維持不變，但三位鷹派委員明確主張升息，且部分官員於 7/31 公開表達秋季升息必要性。若 8 月就業與通膨數據持續強勁，9 月升息機率將快速攀升，對股市估值形成壓力。</li>
+      <li><strong>長端殖利率持續走高 — 壓制廣度與估值：</strong>10 年期殖利率達 4.74%~4.75%，30 年期達 5.25%~5.28%，Russell 2000 當日已率先收跌 -0.50%。若殖利率突破關鍵阻力，利率敏感板塊（房地產、公用事業、小型股）恐面臨更大賣壓。</li>
+      <li><strong>Apple 財報前瞻疲弱 — 科技板塊信心動搖：</strong>Apple 作為全球市值最大公司之一，Q4 前瞻低於共識 12%，加上 AI 晶片供應緊縮訊號，引發市場對科技硬體供應鏈的擔憂。若下半年 iPhone 需求繼續走軟，可能波及台積電（TSMC）、博通（AVGO）等供應鏈個股。</li>
+      <li><strong>中東地緣政治 — 油價居高不下通膨風險：</strong>伊朗封鎖荷姆茲海峽威脅持續（全球 27% 海運原油受影響），Brent 原油維持約 92 美元高位，加劇通膨壓力，制約 Fed 降息空間，並可能引發市場突發性風險規避情緒。</li>
+      <li><strong>AI 資本支出泡沫化爭議：</strong>四大科技巨頭 2026 年合計 CapEx 逾 7,240 億美元，2027 年預估逼近 9,500 億美元，Alphabet 自由現金流已轉負。若 AI 商業化進度不及資本支出擴張速度，投資者可能重估科技股估值。</li>
+      <li><strong>Nasdaq 7 月月跌 -3.2% — 科技超買回調風險：</strong>Nasdaq 雖當日收漲，但整個 7 月仍下跌 3.2%，反映市場對高估值科技股持謹慎態度。若宏觀逆風（高利率、油價）持續，科技股二季度財報季結束後可能缺乏新催化劑。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <p class="source-category">主要財經新聞 — 市場收盤</p>
+    <ul class="sources">
+      <li><a href="https://www.washingtonpost.com/business/2026/07/31/wall-street-stocks-dow-nasdaq/ee08da40-8d1d-11f1-8912-d71e69d679d7_story.html" target="_blank">Washington Post — How Major US Stock Indexes Fared Friday 7/31/2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-july-31-134200801.html" target="_blank">Yahoo Finance — Stock Market News for July 31, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/30/stock-market-today-live-updates.html" target="_blank">CNBC — S&amp;P 500 closes higher Friday as Amazon surges; Dow posts fourth straight winning month</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-31-2026" target="_blank">TheStreet — Stock Market Today: Dow Jones, S&amp;P 500, Nasdaq Updates July 31, 2026</a></li>
+      <li><a href="https://econcurrents.substack.com/p/31-july-2026-market-close-and-major" target="_blank">EconCurrents Substack — 31 July 2026 Market Close &amp; Major Financial Headlines</a></li>
+      <li><a href="https://investrade.com/market-review-july-31-2026/" target="_blank">Investrade — Market Review: July 31, 2026</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-07-30/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today Dow S&amp;P Live Updates July 31</a></li>
+      <li><a href="https://fxdailyreport.com/us-stock-market-technical-analysis-july-31-2026/" target="_blank">FX Daily Report — US Stock Market Technical Analysis July 31, 2026</a></li>
+    </ul>
+
+    <p class="source-category">科技財報</p>
+    <ul class="sources">
+      <li><a href="https://qz.com/amazon-apple-earnings-stock-market-073126" target="_blank">Quartz — Amazon stock surges 13% on Q2 earnings, Apple stock drops 7%</a></li>
+      <li><a href="https://247wallst.com/investing/2026/07/31/apple-sinks-8-amazon-soars-12-as-traders-pick-tech-earnings-winners-and-losers/" target="_blank">24/7 Wall St. — Apple Sinks 8%, Amazon Soars 12%</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/31/apple-aapl-amazon-amzn-stock-today.html" target="_blank">CNBC — Alphabet, Amazon, Microsoft added nearly $1.5 trillion in combined value</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262067315-big-tech-earnings-scorecard-microsoft-amazon-apple-july-31-2026-tradingkey" target="_blank">TradingKey — Big Tech Earnings Scorecard: MSFT, AMZN, AAPL July 31, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html" target="_blank">CNBC — Meta Q2 Earnings Report 2026</a></li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-06302026xexhibit991.htm" target="_blank">SEC Filing — Meta Reports Second Quarter 2026 Results</a></li>
+    </ul>
+
+    <p class="source-category">聯準會 FOMC</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/07/29/fed-rate-decision-july-2026.html" target="_blank">CNBC — Fed rate decision July 2026: Divided Fed holds interest rates steady</a></li>
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm" target="_blank">Federal Reserve — FOMC Statement July 29, 2026（官方聲明）</a></li>
+      <li><a href="https://finance.yahoo.com/economy/live/fed-meeting-live-federal-reserve-july-interest-rate-decision-141813444.html" target="_blank">Yahoo Finance — Fed meeting live: Warsh gets the 'good family fight'</a></li>
+    </ul>
+
+    <p class="source-category">國債殖利率</p>
+    <ul class="sources">
+      <li><a href="https://www.advisorperspectives.com/dshort/updates/2026/07/31/treasury-yields-snapshot-july-31-2026" target="_blank">Advisor Perspectives — Treasury Yields Snapshot: July 31, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/07/31/treasury-yields-inflation-interest-rates-federal-reserve.html" target="_blank">CNBC — Treasury yields follow oil prices higher</a></li>
+    </ul>
+
+    <p class="source-category">南韓 KOSPI 歷史性漲幅</p>
+    <ul class="sources">
+      <li><a href="https://abcnews.com/Business/wireStory/south-koreas-kospi-index-jumps-16-surge-chipmaking-135247652" target="_blank">ABC News — South Korea's Kospi index jumps more than 16%</a></li>
+      <li><a href="https://intellectia.ai/blog/ai-chip-stocks-rally-kospi-surge-2026" target="_blank">Intellectia — AI Chip Stocks Rally: Kospi Surges 18% on AI Optimism</a></li>
+    </ul>
+
+    <p class="source-category">油價與地緣政治</p>
+    <ul class="sources">
+      <li><a href="https://fortune.com/article/price-of-oil-07-31-2026/" target="_blank">Fortune — Current price of oil July 31, 2026</a></li>
+      <li><a href="https://www.npr.org/2026/07/08/nx-s1-5885946/iran-trump-oil-stock-inflation-gas-federal-reserve" target="_blank">NPR — Tensions with Iran add fresh uncertainty to global economy</a></li>
+    </ul>
+
+    <p class="source-category">財報季統計</p>
+    <ul class="sources">
+      <li><a href="https://insight.factset.com/sp-500-earnings-season-update-july-31-2026" target="_blank">FactSet — S&amp;P 500 Earnings Season Update: July 31, 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 · 2026-08-02 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
