@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-08-05</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-record { background: #fef3c7; color: #92400e; }
+    .badge-intraday { background: #dbeafe; color: #1e40af; }
+    .event-block { padding: 14px 16px; margin-bottom: 12px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-block strong { color: #0f3460; }
+    .event-block.oil { border-left-color: #d97706; background: #fffbeb; }
+    .event-block.earnings-up { border-left-color: #16a34a; background: #f0fdf4; }
+    .event-block.earnings-down { border-left-color: #dc2626; background: #fff5f5; }
+    .event-block.geopo { border-left-color: #7c3aed; background: #faf5ff; }
+    .macro-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 6px; }
+    .macro-chip { flex: 1; min-width: 180px; background: #f8faff; border: 1px solid #dce3f5; border-radius: 8px; padding: 12px 16px; }
+    .macro-chip .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-chip .value { font-size: 1.05rem; font-weight: 700; }
+    .macro-chip .change { font-size: 0.82rem; margin-top: 2px; }
+    .movers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 600px) { .movers-grid { grid-template-columns: 1fr; } }
+    .movers-col h3 { margin-top: 0; }
+    .mover-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; margin-bottom: 6px; border-radius: 6px; font-size: 0.88rem; }
+    .mover-item.up-bg { background: #f0fdf4; }
+    .mover-item.down-bg { background: #fff5f5; }
+    .mover-ticker { font-weight: 700; font-family: monospace; }
+    .mover-reason { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+    .mover-right { text-align: right; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-tag { display: inline-block; padding: 1px 7px; border-radius: 3px; font-size: 0.78rem; margin-right: 4px; }
+    .sector-up { background: #dcfce7; color: #166534; }
+    .sector-down { background: #fee2e2; color: #991b1b; }
+    .sources { list-style: none; font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 6px 10px; background: #f9fafb; border-radius: 4px; }
+    .sources li::before { content: "🔗 "; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .summary-banner { background: linear-gradient(90deg, #f0f4ff, #fff); border: 1px solid #dce3f5; border-radius: 8px; padding: 14px 18px; margin-bottom: 18px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight { background: #fef9c3; padding: 1px 4px; border-radius: 2px; }
+    .note { font-size: 0.8rem; color: #6b7280; margin-top: 10px; padding: 8px 12px; background: #f9fafb; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年8月5日（週三）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- 摘要 -->
+  <div class="card">
+    <div class="summary-banner">
+      <strong>當日摘要：</strong>道瓊創<span class="highlight">第三連續收盤歷史新高</span>（+263點），主因美伊霍爾木茲海峽談判取得重大進展，油價暴跌逾5%。惟科技股財報表現分歧——禮來（LLY）爆強、AMD與SpaceX（SPCX）指引失望——拖累 S&amp;P 500 與 Nasdaq 中斷四連漲。
+    </div>
+
+    <!-- 指數表格 -->
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌幅</th>
+          <th>點數變化</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>54,349.06</td>
+          <td class="up">+0.49%</td>
+          <td class="up">+263.18</td>
+          <td><span class="badge badge-record">第3連創歷史收盤新高</span></td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,723.52</td>
+          <td class="down">−0.17%</td>
+          <td class="down">−13.00</td>
+          <td><span class="badge badge-intraday">盤中高 7,793.68（歷史紀錄）</span></td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>~26,363</td>
+          <td class="down">−0.83%</td>
+          <td class="down">−221.55</td>
+          <td>中斷四連漲，科技股拖累</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>~3,032.68</td>
+          <td class="down">−0.14%</td>
+          <td class="flat">—</td>
+          <td><span class="badge badge-intraday">盤中創歷史高</span>，收盤轉跌</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">* 道指漲幅79%由 AMGN（+5.16%）、GS、NVDA（+3.84%）三股貢獻，廣度偏弱。</p>
+  </div>
+
+  <!-- 重大市場事件 -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <div class="event-block geopo">
+      <strong>🌍 地緣政治：美伊霍爾木茲海峽談判突破</strong><br>
+      川普表示協議「今天就可能達成」；財政部長貝森特稱海峽「自由暢通」；伊朗與阿曼外長確認進入最終草擬階段。油價因此暴跌5%+，帶動道指創新高，但同時重傷能源板塊。
+    </div>
+
+    <div class="event-block earnings-up">
+      <strong>💊 禮來（LLY）— 財報爆強</strong><br>
+      Q2 EPS $8.38 vs 預期 $6.07（超出約38%）；營收 $230億，年增48%；公司大幅上調全年業績指引。GLP-1減肥藥與Donanemab持續帶動成長。
+    </div>
+
+    <div class="event-block earnings-down">
+      <strong>🔴 AMD — 財報佳但指引失望</strong><br>
+      Q2 營收 $115億（YoY +50%），高於預期，惟 Q3 指引約 $130億，遠低於市場耳語值 $140億。股價收跌 6%，至 $486.60。
+    </div>
+
+    <div class="event-block earnings-down">
+      <strong>🚀 SpaceX（SPCX）— 首次公開財報失望</strong><br>
+      首份公開財報顯示虧損擴大，Q2 資本支出逾 $180億；市場難以估值，股價暴跌 13.6%，成當日最大跌幅個股。
+    </div>
+
+    <div class="event-block earnings-up">
+      <strong>🎬 迪士尼（DIS）— 獲利超預期</strong><br>
+      財報優於預期，流媒體部門持續獲利，股價收漲 3.64%。
+    </div>
+
+    <div class="event-block earnings-down">
+      <strong>🤖 Alphabet（GOOG）— AI人事重組</strong><br>
+      公司宣布 AI 部門重大人事變動（資深科學家 Jeff Dean 離職），引發市場對 AI 戰略穩定性疑慮，股價收跌 3.59%。
+    </div>
+  </div>
+
+  <!-- 宏觀因素 -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>原油市場</h3>
+    <div class="macro-row">
+      <div class="macro-chip">
+        <div class="label">布蘭特原油 (Brent)</div>
+        <div class="value">$79.50</div>
+        <div class="change down">−5%+ | 三週低點</div>
+      </div>
+      <div class="macro-chip">
+        <div class="label">西德州原油 (WTI)</div>
+        <div class="value">$75.77</div>
+        <div class="change down">−5.5%+ | 三週低點</div>
+      </div>
+    </div>
+
+    <h3>聯準會（Fed）動態</h3>
+    <div class="event-block">
+      當日無 FOMC 會議；市場關注 8月6日（隔日）即將發布的利率相關經濟數據。市場靜待更多訊號以判斷後續降息路徑。
+    </div>
+
+    <h3>AI 板塊輪動</h3>
+    <div class="event-block">
+      輝達（NVDA）因 SpaceX 財報中揭示大規模 Blackwell 採購而受惠，漲 3.84%。相對地，AMD（指引）與 Alphabet（人事）走弱，市場對 AI 估值及業績指引的審查更趨嚴格。
+    </div>
+
+    <h3>小型股強勢</h3>
+    <div class="event-block">
+      羅素 2000（Russell 2000）年初至今漲幅約 20%，遠超 S&amp;P 500 的約11%，創 2003年以來最佳同期步調，顯示資金正在輪動至中小型股。
+    </div>
+  </div>
+
+  <!-- 個股動態 -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <div class="movers-grid">
+      <div class="movers-col">
+        <h3 class="up">上漲個股</h3>
+        <div class="mover-item up-bg">
+          <div>
+            <div class="mover-ticker">AMGN（安進）</div>
+            <div class="mover-reason">Q2 財報超預期</div>
+          </div>
+          <div class="mover-right"><span class="up">+5.16%</span></div>
+        </div>
+        <div class="mover-item up-bg">
+          <div>
+            <div class="mover-ticker">NVDA（輝達）</div>
+            <div class="mover-reason">SpaceX 大規模 Blackwell 採購背書</div>
+          </div>
+          <div class="mover-right"><span class="up">+3.84%</span></div>
+        </div>
+        <div class="mover-item up-bg">
+          <div>
+            <div class="mover-ticker">DIS（迪士尼）</div>
+            <div class="mover-reason">財報優於預期，流媒體獲利</div>
+          </div>
+          <div class="mover-right"><span class="up">+3.64%</span></div>
+        </div>
+        <div class="mover-item up-bg">
+          <div>
+            <div class="mover-ticker">LLY（禮來）</div>
+            <div class="mover-reason">Q2 EPS 超預期38%，全年指引上調</div>
+          </div>
+          <div class="mover-right"><span class="up">大漲</span></div>
+        </div>
+      </div>
+      <div class="movers-col">
+        <h3 class="down">下跌個股</h3>
+        <div class="mover-item down-bg">
+          <div>
+            <div class="mover-ticker">SPCX（SpaceX）</div>
+            <div class="mover-reason">首次公開財報虧損擴大</div>
+          </div>
+          <div class="mover-right"><span class="down">−13.6%</span></div>
+        </div>
+        <div class="mover-item down-bg">
+          <div>
+            <div class="mover-ticker">AMD</div>
+            <div class="mover-reason">Q3 指引低於市場耳語值</div>
+          </div>
+          <div class="mover-right"><span class="down">−6.0%</span></div>
+        </div>
+        <div class="mover-item down-bg">
+          <div>
+            <div class="mover-ticker">GOOG（Alphabet）</div>
+            <div class="mover-reason">AI 部門人事重組，Jeff Dean 離職</div>
+          </div>
+          <div class="mover-right"><span class="down">−3.59%</span></div>
+        </div>
+        <div class="mover-item down-bg">
+          <div>
+            <div class="mover-ticker">CVX（雪佛龍）</div>
+            <div class="mover-reason">油價暴跌拖累能源股</div>
+          </div>
+          <div class="mover-right"><span class="down">−2.05%</span></div>
+        </div>
+        <div class="mover-item down-bg">
+          <div>
+            <div class="mover-ticker">AMZN（亞馬遜）</div>
+            <div class="mover-reason">科技板塊整體承壓</div>
+          </div>
+          <div class="mover-right"><span class="down">−1.66%</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 風險與不確定因素 -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>道指廣度偏弱：</strong>當日漲幅79%集中於安進（AMGN）、高盛（GS）、輝達（NVDA）三檔，反映市場集中度風險，指數上漲不代表整體市況強健。</li>
+      <li><strong>美伊談判不確定性：</strong>霍爾木茲協議雖接近完成但尚未簽署，若談判破局，油價將反彈，能源通膨預期升溫，對市場構成衝擊。</li>
+      <li><strong>AI 估值重評：</strong>AMD 指引失望與 Alphabet 人事動盪顯示市場對 AI 股的要求門檻提高，高估值科技股面臨業績兌現壓力。</li>
+      <li><strong>SpaceX 財報衝擊：</strong>SPCX 首次公開財報顯示資本支出極高、虧損擴大，市場對未上市科技獨角獸估值的信心可能受挫。</li>
+      <li><strong>聯準會政策路徑：</strong>8月6日將發布重要利率相關數據，若數據超預期，可能推遲市場對年底降息的預期，對高估值板塊形成壓力。</li>
+      <li><strong>能源板塊資金外流：</strong>油價大跌雖利好通膨，但能源股（CVX、XOM 等）短線承壓，資金重新配置可能引發板塊輪動波動。</li>
+    </ul>
+  </div>
+
+  <!-- 資料來源 -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://ca.finance.yahoo.com/news/stock-market-today-wednesday-august-5-dow-sp-500-nasdaq-oil-hormuz-093653327.html" target="_blank">Yahoo Finance — Stock market today: Dow posts record, S&amp;P 500 and Nasdaq snap 4-day rally</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-5-2026" target="_blank">TheStreet — Stock Market Today (Aug. 5, 2026)</a></li>
+      <li><a href="https://www.schaeffersresearch.com/content/ezines/2026/08/05/dow-stays-hot-as-s-p-500-nasdaq-hang-back" target="_blank">Schaeffer's — Dow Stays Hot as S&amp;P 500, Nasdaq Hang Back</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/08/05/stock-market-midday-aug-5-eli-lilly-pops-and-amd-drops-in-mixed-morning-markets/" target="_blank">Motley Fool — Stock Market Midday, Aug. 5: Eli Lilly Pops and AMD Drops</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html" target="_blank">CNBC — Iran, Oman say Strait of Hormuz talks in final stages</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/amd-drops-6-despite-record-142036039.html" target="_blank">Yahoo Finance — AMD Drops 6% Despite Record Quarter as NVIDIA Gains 4%</a></li>
+      <li><a href="https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full" target="_blank">Eli Lilly IR — Lilly Q2 2026 Financial Results</a></li>
+      <li><a href="https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results" target="_blank">AMD IR — AMD Q2 2026 Financial Results</a></li>
+      <li><a href="https://finance.yahoo.com/technology/live/tech-stocks-today-google-shakes-up-ai-leadership-spacex-plunges-140419479.html" target="_blank">Yahoo Finance Tech — Google shakes up AI leadership, SpaceX plunges</a></li>
+      <li><a href="https://www.staradvertiser.com/2026/08/05/breaking-news/dow-hits-new-closing-record-while-tech-stocks-pull-down-nasdaq/" target="_blank">Honolulu Star-Advertiser — Dow hits new closing record while tech stocks pull down Nasdaq</a></li>
+      <li><a href="https://fxdailyreport.com/us-stock-market-technical-analysis-august-05-2026/" target="_blank">FX Daily Report — US Stock Market Technical Analysis Aug 05 2026</a></li>
+      <li><a href="https://zacks.com/stock/news/2968209/stock-market-news-for-aug-5-2026" target="_blank">Zacks — Stock Market News for Aug 5, 2026</a></li>
+      <li><a href="https://www.tradingkey.com/news/market-movers/262078807-market-movers-dis-20260805" target="_blank">TradingKey — DIS Moved Up 3.64% on Aug 5</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262078132-us-stock-pre-market-nvda-circle-amd-spacex-earnings-trump-iran-tradingkey" target="_blank">TradingKey — US Pre-Market: Nvidia, SpaceX, AMD Post-Earnings</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 交叉引用 14 個來源 | 僅供參考，非投資建議
+  </footer>
+</div>
+</body>
+</html>
