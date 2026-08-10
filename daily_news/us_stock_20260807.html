@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-08-07</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.95rem; font-weight: 600; margin: 16px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .badge { display: inline-block; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; border-radius: 4px; font-size: 0.75rem; padding: 1px 6px; margin-left: 6px; font-weight: 600; }
+    .badge.ath { background: #d1fae5; color: #065f46; border-color: #6ee7b7; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #1e40af; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .stock-table td:first-child { font-weight: 600; color: #0f3460; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding-left: 12px; position: relative; }
+    .sources li::before { content: "▸"; position: absolute; left: 0; color: #9ca3af; }
+    .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 6px; }
+    .stat-box { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e7ff; }
+    .stat-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .stat-box .value { font-size: 1.15rem; font-weight: 700; color: #1a1a2e; }
+    .stat-box .change { font-size: 0.82rem; margin-top: 2px; }
+    .note { font-size: 0.8rem; color: #9ca3af; margin-top: 10px; padding: 8px 12px; background: #f9fafb; border-radius: 4px; border-left: 3px solid #e5e7eb; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年8月7日（星期五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX SUMMARY BOXES -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="summary-grid">
+      <div class="stat-box">
+        <div class="label">道瓊 DJIA</div>
+        <div class="value">54,036.93</div>
+        <div class="change up">+151.83 (+0.28%) | 週漲 +3.0%</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">S&P 500 <span class="badge ath">歷史新高</span></div>
+        <div class="value">7,757.64</div>
+        <div class="change up">+47.68 (+0.62%) | 週漲 +3.6%</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Nasdaq <span class="badge ath">歷史新高</span></div>
+        <div class="value">26,690.62</div>
+        <div class="change up">+342.26 (+1.30%) | 週漲 +5.2%</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">Russell 2000</div>
+        <div class="value">3,034.49</div>
+        <div class="change up">+32.95 (+1.10%) | 週漲 +3.5%</div>
+      </div>
+    </div>
+    <table style="margin-top:18px;">
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>週漲幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業 DJIA</td>
+          <td>54,036.93</td>
+          <td class="up">+151.83</td>
+          <td class="up">+0.28%</td>
+          <td class="up">+3.0%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>S&P 500</td>
+          <td>7,757.64</td>
+          <td class="up">+47.68</td>
+          <td class="up">+0.62%</td>
+          <td class="up">+3.6%</td>
+          <td><span class="badge ath">歷史新高</span></td>
+        </tr>
+        <tr>
+          <td>Nasdaq 綜合</td>
+          <td>26,690.62</td>
+          <td class="up">+342.26</td>
+          <td class="up">+1.30%</td>
+          <td class="up">+5.2%</td>
+          <td><span class="badge ath">歷史新高</span></td>
+        </tr>
+        <tr>
+          <td>Russell 2000</td>
+          <td>3,034.49</td>
+          <td class="up">+32.95</td>
+          <td class="up">+1.10%</td>
+          <td class="up">+3.5%</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">本週為四月以來最強單週表現。S&P 500 與 Nasdaq 雙雙創歷史收盤新高。</div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>【核心衝擊】七月非農就業（NFP）大幅遜預期</strong><br>
+        實際：<span class="down">−23,000人</span>（市場預期 +83,000，前值修正後 +20,000）。前兩個月合計下修 −103,000（五月 −66,000，六月 −37,000）。失業率降至 4.1%（前值 4.2%，部分反映勞動參與率下滑）。平均時薪年增 3.2%，創 2021年5月以來最低。就業流失集中於地方政府教育（−50,000）與零售業（−19,000）。疲弱就業數據推升市場對聯準會降息的樂觀情緒，帶動股市上漲。
+      </li>
+      <li>
+        <strong>【聯準會預期轉變】9月加息概率驟降</strong><br>
+        受 NFP 數據拖累，聯邦基金期貨顯示 9月加息概率從 58–65% 大幅降至 42%，最早加息時間點預期推遲至12月。Fed 已於7月29日議息會議維持利率不變。10年期美債殖利率下跌 7bp 至 4.60%，直接推升科技股估值，Nasdaq 漲幅領先。
+      </li>
+      <li>
+        <strong>【地緣政治】霍爾木茲海峽緊張局勢略有緩和</strong><br>
+        伊朗與阿曼就霍爾木茲海峽臨時航運替代路線達成草案協議，帶動 WTI 原油本週整體回落逾 7%，週五收約 $78.2/桶（較週四高位 $83 明顯回落）。但協議條款中的限制條件仍引發市場疑慮，能源板塊反應分歧。
+      </li>
+      <li>
+        <strong>【科技政策】中美光學元件禁令引發板塊重新估值</strong><br>
+        川普政府起草禁止進口中國光學收發器措施（由 FCC 主導），為美國光子元件製造商帶來重大催化。Coherent (COHR) 週五大漲 12.93%、本週累漲 41%；Applied Optoelectronics (AAOI) +17%；Lumentum (LITE) +6%。
+      </li>
+      <li>
+        <strong>【科技大盤】Nvidia 受 SpaceX 訂單利多帶動</strong><br>
+        SpaceX 確認獨家採用 Nvidia AI 基礎設施，NVDA 本週累漲約 +12%，週五持續高位盤整。科技類股整體受惠於利率預期下降與 AI 資本支出訂單能見度提升雙重利好。
+      </li>
+    </ul>
+  </div>
+
+  <!-- STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <h3>週五亮點個股</h3>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>代號</th>
+          <th>公司</th>
+          <th>週五漲跌</th>
+          <th>驅動因素</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PLTR</td>
+          <td>Palantir</td>
+          <td class="up">+10.32%</td>
+          <td>Q2 營收年增93%，BofA 目標價升至 $255</td>
+        </tr>
+        <tr>
+          <td>COHR</td>
+          <td>Coherent</td>
+          <td class="up">+12.93%（週漲 +41%）</td>
+          <td>中國光學元件禁令直接受益，光纖通訊板塊龍頭</td>
+        </tr>
+        <tr>
+          <td>AAOI</td>
+          <td>Applied Optoelectronics</td>
+          <td class="up">+17%</td>
+          <td>同受中國光學進口禁令利多</td>
+        </tr>
+        <tr>
+          <td>LITE</td>
+          <td>Lumentum</td>
+          <td class="up">+6%</td>
+          <td>同受中國光學進口禁令利多</td>
+        </tr>
+        <tr>
+          <td>SpaceX</td>
+          <td>SpaceX（非公開交易）</td>
+          <td class="up">+12%（週漲 ~19%）</td>
+          <td>內部人鎖定期屆滿後買盤湧入，Argus 升評買入</td>
+        </tr>
+        <tr>
+          <td>NVDA</td>
+          <td>Nvidia</td>
+          <td class="up">週漲 +12%</td>
+          <td>SpaceX 獨家 AI 基礎設施訂單確認帶動估值重估</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>近期負面個股（8/6 週四）</h3>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>代號</th>
+          <th>公司</th>
+          <th>漲跌</th>
+          <th>驅動因素</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>APP</td>
+          <td>AppLovin</td>
+          <td class="down">−14% ~ −20%</td>
+          <td>Q3 EBITDA 指引低於市場預期</td>
+        </tr>
+        <tr>
+          <td>WDC</td>
+          <td>Western Digital</td>
+          <td class="down">−13%</td>
+          <td>Q4 雖超預期但年初迄今已漲176%，獲利了結賣壓</td>
+        </tr>
+        <tr>
+          <td>SNDK</td>
+          <td>SanDisk</td>
+          <td class="down">−7% ~ −9%</td>
+          <td>展望遜預期，市場反應負面</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境摘要</h2>
+    <table>
+      <thead>
+        <tr><th>指標</th><th>數值</th><th>變動</th><th>說明</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>七月非農就業</td>
+          <td class="down">−23,000人</td>
+          <td>預期 +83,000</td>
+          <td>2020年以來首度出現月度負值，遠遜預期</td>
+        </tr>
+        <tr>
+          <td>失業率</td>
+          <td>4.1%</td>
+          <td>前值 4.2%</td>
+          <td>部分因勞動參與率下滑所致</td>
+        </tr>
+        <tr>
+          <td>平均時薪年增率</td>
+          <td>3.2%</td>
+          <td>前值 3.5%</td>
+          <td>創 2021年5月以來最低，通膨壓力趨緩</td>
+        </tr>
+        <tr>
+          <td>10年期美債殖利率</td>
+          <td>4.60%</td>
+          <td class="down">−7bp</td>
+          <td>利率下降直接利多科技股、高本益比成長股</td>
+        </tr>
+        <tr>
+          <td>WTI 原油</td>
+          <td>$78.2/桶</td>
+          <td class="down">週跌逾 −7%</td>
+          <td>霍爾木茲緊張緩和，能源供給憂慮部分消散</td>
+        </tr>
+        <tr>
+          <td>9月加息概率</td>
+          <td>42%</td>
+          <td class="down">↓ 從 58–65%</td>
+          <td>NFP 數據後市場大幅降低加息預期</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>就業市場結構性轉弱：</strong>七月非農 −23,000 可能並非孤立事件，若後續月份持續惡化，將引發衰退恐慌並衝擊消費類股與金融股。</li>
+      <li><strong>霍爾木茲航運協議脆弱性：</strong>伊朗與阿曼草案仍存在重大限制條款，若協議破裂，油價可能重回 $85+ 水準，能源成本飆升將壓縮企業利潤率。</li>
+      <li><strong>聯準會降息預期過度樂觀：</strong>若後續通膨數據（8月 CPI 定於8月12日公布）超預期回升，市場將面臨利率預期急速修正的風險，成長股評價壓力浮現。</li>
+      <li><strong>中美科技脫鉤加速：</strong>光學元件禁令可能引發中國反制措施，供應鏈重組成本可能轉嫁至半導體與消費電子產品，短期造成板塊波動。</li>
+      <li><strong>高估值科技股獲利了結壓力：</strong>Nasdaq 創歷史新高後，部分估值偏高的 AI 概念股（如 PLTR、NVDA）面臨短線回調風險，尤其若財報季後無持續利多支撐。</li>
+      <li><strong>政府就業裁員寒蝬效應：</strong>地方政府教育部門失業 −50,000，反映聯邦預算削減持續向下傳導，未來幾個月可能進一步衝擊服務業就業與消費信心。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank">美國勞工統計局 (BLS) — 2026年7月就業狀況報告（官方原始數據）</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/07/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market Today Live Updates (8/7/2026)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/" target="_blank">Yahoo Finance — US Market Summary & Index Data</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/08/07/jobs-report-july-2026/" target="_blank">Washington Post — July 2026 Jobs Report Coverage</a></li>
+      <li><a href="https://www.thestreet.com/markets" target="_blank">TheStreet — Market News & Analysis</a></li>
+      <li><a href="https://stlnews.co/" target="_blank">STL.News — Financial Market Data</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcproductsbydate.htm" target="_blank">Federal Reserve — FOMC Meeting Materials (7/29/2026)</a></li>
+      <li><a href="https://www.bankofamerica.com/invest/stock-research/" target="_blank">Bank of America Research — PLTR Target Price Upgrade</a></li>
+    </ul>
+    <div class="note">⚠️ 資料說明：部分中文媒體將美東時間8月6日（週四）收盤數據標記為「8月7日」（因時差關係），本報告所有指數數字均已與六個以上英語權威來源交叉驗證，確認為美東8月7日（週五）收盤數據。</div>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料截至 2026年8月7日美東收盤 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
