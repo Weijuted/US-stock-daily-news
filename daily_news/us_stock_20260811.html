@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-08-11</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 10px 14px; margin-bottom: 8px; background: #f8faff; border-left: 3px solid #4b7cf3; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-table td:first-child { font-weight: 500; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; margin-right: 4px; }
+    .tag-down { background: #fee2e2; color: #dc2626; }
+    .tag-up { background: #dcfce7; color: #16a34a; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; line-height: 1.4; }
+    .summary-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; font-size: 0.92rem; line-height: 1.7; color: #78350f; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年8月11日（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="card">
+    <h2>市場摘要</h2>
+    <div class="summary-box">
+      美股週二整體小幅下跌，美伊霍爾木茲海峽僵局持續令市場陷入觀望，能源板塊逆市上揚，科技與通訊服務板塊明顯受壓。Alphabet、AppLovin 等重量級科技股大幅回落，而小型股羅素 2000 指數則逆流上漲 0.4%，展現市場資金輪動跡象。投資者目光鎖定週三即將公佈的 7 月 CPI 通膨數據，料將對聯準會後續利率走向產生關鍵影響。
+    </div>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>趨勢</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業指數 (DJIA)</td>
+          <td>53,791.85</td>
+          <td>▼ 184.13</td>
+          <td class="down">−0.34%</td>
+          <td><span class="tag tag-down">下跌</span></td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,728.20</td>
+          <td>▼ 25.1</td>
+          <td class="down">−0.32%</td>
+          <td><span class="tag tag-down">下跌</span></td>
+        </tr>
+        <tr>
+          <td>納斯達克綜合指數 (Nasdaq)</td>
+          <td>26,445.45</td>
+          <td>▼ 159.9</td>
+          <td class="down">−0.60%</td>
+          <td><span class="tag tag-down">下跌</span></td>
+        </tr>
+        <tr>
+          <td>羅素 2000 (Russell 2000)</td>
+          <td>—</td>
+          <td>▲ 小幅</td>
+          <td class="up">+0.40%</td>
+          <td><span class="tag tag-up">上漲</span></td>
+        </tr>
+        <tr>
+          <td>費城半導體指數 (SOX)</td>
+          <td>—</td>
+          <td>▼ 重挫</td>
+          <td class="down">≈ −3.00%</td>
+          <td><span class="tag tag-down">下跌</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊表現</h2>
+    <table class="sector-table">
+      <thead>
+        <tr>
+          <th>板塊</th>
+          <th>表現</th>
+          <th>主要動態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>通訊服務</td>
+          <td class="down">▼ &gt;−2.00%</td>
+          <td>Alphabet 跌 3.8%、AppLovin 跌近 6%</td>
+        </tr>
+        <tr>
+          <td>資訊科技</td>
+          <td class="down">▼ 下跌</td>
+          <td>Nvidia 跌 2.86%、Apple 跌 1.5%；費城半導體指數跌近 3%</td>
+        </tr>
+        <tr>
+          <td>能源</td>
+          <td class="up">▲ +1.93%</td>
+          <td>霍爾木茲局勢升溫，WTI 原油突破 83 美元</td>
+        </tr>
+        <tr>
+          <td>醫療保健</td>
+          <td class="up">▲ +0.86%</td>
+          <td>防禦性需求帶動小幅上漲</td>
+        </tr>
+        <tr>
+          <td>工業</td>
+          <td class="down">▼ −0.70%</td>
+          <td>大型工業股獲利回吐</td>
+        </tr>
+        <tr>
+          <td>中概股</td>
+          <td class="up">▲ 約 +2.00%</td>
+          <td>中概股指數逆市上漲約 2%，阿里巴巴漲約 3%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🛢️ 美伊霍爾木茲海峽僵局持續</strong><br>
+        伊朗重申將繼續封鎖霍爾木茲海峽，直至美方滿足其條件。巴基斯坦稱美伊雙方「接近達成某種安排」，但談判仍無實質進展。WTI 原油盤中漲幅逾 5%，收創 8 月以來新高，突破 83 美元；布倫特原油連漲四天；歐洲天然氣盤中大漲逾 10%。
+      </li>
+      <li>
+        <strong>📉 Alphabet 大跌，AI 部門重組持續衝擊</strong><br>
+        Alphabet（Google 母公司）股價跌 3.8%，連續四個交易日中第四度下跌。上週 Google 宣布對人工智慧部門進行重大重組，引發市場持續擔憂。通訊服務板塊因而成為 S&amp;P 500 當日表現最差板塊，整體跌逾 2%。
+      </li>
+      <li>
+        <strong>📱 AppLovin 閃崩，Nvidia 下挫</strong><br>
+        行動廣告科技公司 AppLovin 股價重挫近 6%。Nvidia 在費城半導體指數大跌近 3% 的背景下，股價收跌 2.86%，成交額達 303.1 億美元。另有消息指英偉達正與六家金融機構聯手，籌劃 5000 億美元 AI 基礎設施融資計畫。
+      </li>
+      <li>
+        <strong>🚀 SpaceX 上市後首份財報超預期</strong><br>
+        SpaceX 於上週登陸納斯達克後，週二發布首份季報，營收數據超出市場預期，推動股價大漲 4.23%，成交額高達 227.48 億美元，成為當日市場一大亮點。
+      </li>
+      <li>
+        <strong>💻 微軟 Maia 300 晶片即將公開發布</strong><br>
+        微軟計劃最快於今年秋季公開發布新款 Maia 300 AI 晶片，最快可能下個月亮相，已與台積電協商確保逾 30 萬顆晶片的 2027 年交貨產能。
+      </li>
+      <li>
+        <strong>📊 CPI 通膨數據前夕市場謹慎觀望</strong><br>
+        市場靜待週三（8 月 12 日）公布的美國 7 月消費者物價指數（CPI）。預期 CPI 月增 0.1%（前月為 −0.4%），年增率為 3.4%（前月 3.5%）。週四另有 PPI 生產者物價數據公布，兩項數據將對聯準會後續利率走向產生關鍵影響。
+      </li>
+      <li>
+        <strong>🇨🇳 中概股逆市走強</strong><br>
+        中概股指數上漲近 2%，阿里巴巴漲約 3%，為當日市場逆風中的亮眼表現。小型股羅素 2000 指數同步上揚 0.4%，顯示資金有輪動至價值型及小型股的跡象。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <h3>聯準會（Fed）動態</h3>
+    <ul class="event-list">
+      <li>市場持續關注聯準會的利率走向，等待通膨數據進一步明確降息時間表。貨幣市場目前對今年內降息路徑尚不明確，CPI 數據將成為關鍵指引。</li>
+    </ul>
+    <h3>地緣政治</h3>
+    <ul class="event-list">
+      <li>美伊霍爾木茲海峽談判陷入僵局，能源供給風險推升油價，令整體市場情緒趨於保守。伊朗態度強硬，而美方與伊朗的斡旋進展仍不明朗。</li>
+    </ul>
+    <h3>商品市場</h3>
+    <ul class="event-list">
+      <li>WTI 原油突破 83 美元，盤中漲幅逾 5%，收創 8 月新高。黃金小幅反彈，從前一日近一週低點回升，部分受益於油價回落帶來的通膨緩解預期。歐洲天然氣盤中飆漲逾 10%，顯示能源市場高度緊張。</li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🌊 <strong>霍爾木茲海峽局勢惡化風險</strong>：若美伊談判破裂，海峽長期關閉將嚴重衝擊全球能源供應，拉高通膨，加大聯準會政策兩難困境。</li>
+      <li>🔥 <strong>CPI 數據超預期上行風險</strong>：若 7 月 CPI 高於預期，降息預期將進一步推遲，壓制成長股估值，尤其衝擊科技股。</li>
+      <li>🤖 <strong>AI 板塊重組及財報不確定性</strong>：Alphabet 宣布 AI 部門重組後仍承壓，若科技巨頭後續財報或策略調整未達市場期望，恐引發更大範圍的科技股拋售。</li>
+      <li>📉 <strong>費城半導體指數技術面轉弱</strong>：半導體指數單日重挫近 3%，若跌破關鍵支撐，可能引發技術性賣壓，波及 Nvidia、AMD 等核心持股。</li>
+      <li>🌏 <strong>地緣政治擴散風險</strong>：中東局勢若外溢至其他地區，或引發更廣泛的避險情緒，推升美元與黃金，壓制風險資產。</li>
+    </ul>
+  </div>
+
+  <!-- KEY STOCKS -->
+  <div class="card">
+    <h2>重點個股一覽</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>漲跌幅</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alphabet (GOOGL)</td>
+          <td class="down">−3.80%</td>
+          <td>AI 部門重組持續影響，第四度於近五交易日收跌</td>
+        </tr>
+        <tr>
+          <td>AppLovin (APP)</td>
+          <td class="down">≈ −6.00%</td>
+          <td>當日科技板塊最大跌幅之一</td>
+        </tr>
+        <tr>
+          <td>Nvidia (NVDA)</td>
+          <td class="down">−2.86%</td>
+          <td>費城半導體指數重挫拖累；籌劃 5000 億 AI 基建融資</td>
+        </tr>
+        <tr>
+          <td>Apple (AAPL)</td>
+          <td class="down">−1.50%</td>
+          <td>機構調降評級後繼續承壓</td>
+        </tr>
+        <tr>
+          <td>Microsoft (MSFT)</td>
+          <td class="up">+1.00%+</td>
+          <td>Maia 300 晶片消息提振，逆市收漲</td>
+        </tr>
+        <tr>
+          <td>Amazon (AMZN)</td>
+          <td class="up">+1.00%+</td>
+          <td>科技巨頭中表現較佳，逆市收漲</td>
+        </tr>
+        <tr>
+          <td>SpaceX</td>
+          <td class="up">+4.23%</td>
+          <td>上市後首份財報營收超預期，成為當日大贏家</td>
+        </tr>
+        <tr>
+          <td>阿里巴巴 (BABA)</td>
+          <td class="up">≈ +3.00%</td>
+          <td>中概股逆市走強，領漲中概板塊</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-11-dow-sp-500-nasdaq-102827503.html" target="_blank">Yahoo Finance — Stock market today: Dow, S&P 500, Nasdaq slip amid US-Iran impasse, Alphabet stock sinks</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-11-2026" target="_blank">TheStreet — Stock Market Today (Aug. 11, 2026): Russell 2000 sneaks out modest gain as large caps fall</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/08/11/wall-street-stocks-dow-nasdaq/cd13af98-95c1-11f1-9ef9-1be722184483_story.html" target="_blank">The Washington Post — How major US stock indexes fared Tuesday 8/11/2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/10/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for Aug. 11, 2026</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-08-10/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow, S&P Live Updates for August 11</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Oil Edges Up, Stocks Down on Lack of Iran Progress</a></li>
+      <li><a href="https://investrade.com/mid-morning-look-august-11-2026/" target="_blank">Investrade — Mid-Morning Look: August 11, 2026</a></li>
+      <li><a href="https://investrade.com/morning-preview-august-11-2026/" target="_blank">Investrade — Morning Preview: August 11, 2026</a></li>
+      <li><a href="https://m.cnyes.com/news/id/6568841" target="_blank">鉅亨網 — 美股重點新聞摘要 2026年8月11日</a></li>
+      <li><a href="https://finance.sina.com.cn/world/2026-08-11/doc-inimwuhv7710247.shtml" target="_blank">新浪財經 — 8月11日美股成交額前20：英伟達聯手六家金融機構籌劃5000億美元AI基建融資</a></li>
+      <li><a href="https://finance.sina.com.cn/tech/roll/2026-08-11/doc-inimwyqr0786088.shtml" target="_blank">新浪科技 — 8.11周二早盤必讀</a></li>
+      <li><a href="https://vittarthi.com/markets/us" target="_blank">Vittarthi — US Stock Market Today Aug 11, 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 · 資料截至 2026-08-11 美股收盤 | 僅供參考，非投資建議
+  </footer>
+
+</div>
+</body>
+</html>
