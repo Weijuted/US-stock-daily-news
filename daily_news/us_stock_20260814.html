@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-08-14</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-block { background: #f8faff; border-radius: 6px; padding: 14px 18px; margin-bottom: 12px; border-left: 4px solid #0f3460; font-size: 0.9rem; line-height: 1.7; }
+    .macro-block strong { color: #0f3460; }
+    .badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-left: 6px; }
+    .badge-record { background: #dcfce7; color: #16a34a; }
+    .badge-hot { background: #fef3c7; color: #d97706; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; }
+    .weekly-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+    .summary-item { background: #f0f4ff; border-radius: 6px; padding: 12px 16px; font-size: 0.88rem; }
+    .summary-item .label { color: #6b7280; font-size: 0.8rem; margin-bottom: 4px; }
+    .summary-item .value { font-weight: 700; font-size: 1.05rem; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-08-14（星期五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- 主要指數收盤 -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數</strong></td>
+          <td>53,732</td>
+          <td class="down">▼ -108</td>
+          <td class="down">-0.20%</td>
+          <td>週五小幅回落</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,786</td>
+          <td class="down">▼ -14</td>
+          <td class="down">-0.17%</td>
+          <td>前日（8/13）剛創收盤歷史新高 7,800</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>26,729</td>
+          <td class="down">▼ -75</td>
+          <td class="down">-0.28%</td>
+          <td>Broadcom 拖累科技板塊</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>3,052.85</td>
+          <td class="up">▲ +7.36</td>
+          <td class="up">+0.24%</td>
+          <td>當日唯一上漲，再創歷史新高 <span class="badge badge-record">歷史新高</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 16px;">
+      <h3>本週綜合表現（8/10－8/14）</h3>
+      <div class="weekly-summary">
+        <div class="summary-item">
+          <div class="label">S&amp;P 500 週線</div>
+          <div class="value up">連續第三週收漲</div>
+        </div>
+        <div class="summary-item">
+          <div class="label">能源板塊 (XLE) 週線</div>
+          <div class="value up">▲ +6%+</div>
+        </div>
+        <div class="summary-item">
+          <div class="label">Russell 2000 2026年迄今</div>
+          <div class="value up">已超越 Nasdaq 100</div>
+        </div>
+        <div class="summary-item">
+          <div class="label">本週最強板塊</div>
+          <div class="value">醫療保健 (週線最佳)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 重大市場事件 -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>Russell 2000 再創歷史新高</strong><span class="badge badge-record">里程碑</span><br>
+        小型股指數獨霸週五盤面，收漲 0.24% 至 3,052.85，為本週第二次創歷史新高。2026年迄今 Russell 2000 表現已全面超越 Nasdaq 100，反映資金持續輪動至小型股與價值股，市場廣度持續擴張。
+      </li>
+      <li>
+        <strong>Reddit (RDDT) 宣布納入 S&amp;P 500 指數</strong><span class="badge badge-hot">重大事件</span><br>
+        S&amp;P Dow Jones Indices 宣布 Reddit 將於 8月18日開盤前正式加入 S&amp;P 500，股價盤中一度大漲 14%，終場收漲 10.4%，為當日個股最大亮點。指數成分股調整帶來的被動型基金強制買盤，短期形成技術性買壓支撐。
+      </li>
+      <li>
+        <strong>Nu Holdings (NU) 財報驚艷，季度利潤首破 10 億美元</strong><br>
+        巴西金融科技龍頭 Nu Holdings 公布創紀錄第二季財報，季度凈利潤首次突破 10 億美元大關，股價飆升約 12%，成為新興市場金融科技板塊的強力信心訊號。
+      </li>
+      <li>
+        <strong>Broadcom (AVGO) 大跌 5-6%，成科技板塊拖累主因</strong><br>
+        晶片巨頭 Broadcom 股價下跌約 5-6%，市場憂慮其下季營收高度仰賴 AI 業務，需貢獻約 72% 的成長動能，市場預期壓力龐大。此跌勢顯著拖累 Nasdaq 與大型科技股表現。
+      </li>
+      <li>
+        <strong>SanDisk (SNDK) 強勢反彈 7%</strong><br>
+        SanDisk 無特定重大消息驅動，但股價單日強勢上漲 7%，帶動半導體板塊部分個股走強，與 Broadcom 的跌勢形成強烈反差，顯示半導體板塊內部分化加劇。
+      </li>
+    </ul>
+  </div>
+
+  <!-- 宏觀因素 -->
+  <div class="card">
+    <h2>宏觀經濟與政策因素</h2>
+
+    <h3>聯準會（Fed）動態</h3>
+    <div class="macro-block">
+      <strong>貨幣政策前景複雜化：</strong>本週稍早公布的 7月PPI（生產者物價指數）降溫，使 9月升息預期大幅降低，週四帶動市場顯著上漲。然而 8月14日弱勢的零售銷售與消費者信心數據，使市場意識到 Fed 既難升息、也難快速降息的兩難困境，進一步壓抑週五盤面情緒。
+    </div>
+
+    <h3>8月14日關鍵經濟數據</h3>
+    <div class="macro-block">
+      <strong>7月零售銷售（月減 0.6%）：</strong>為逾一年來最大單月降幅，遠遜於市場預期，顯示美國消費者支撐力道明顯減弱。美元指數隨數據公布後下跌，國債殖利率走低。
+    </div>
+    <div class="macro-block">
+      <strong>8月密歇根大學消費者信心指數初值（51）：</strong>低於市場預期的 55，也低於前月的 55.2，為三個月來首次下滑。通脹壓力持續侵蝕家庭購買力，加上就業市場不確定性升溫，消費者情緒明顯偏向保守。
+    </div>
+
+    <h3>地緣政治：霍爾木茲海峽危機</h3>
+    <div class="macro-block">
+      <strong>石油供應受到史無前例的干擾：</strong>2026年初美伊戰爭爆發後，霍爾木茲海峽通行嚴重受阻。美國自 4月13日起對伊朗實施海上封鎖，導致海峽每日通行船隻從戰前的 130-140 艘驟降至僅約 8 艘。8月14日又有兩艘商船遭伊朗攻擊，美國宣布封鎖可能無限期延續。國際能源署（IEA）將此定性為「全球石油市場史上最大供應中斷」，布蘭特原油突破每桶 <strong>120 美元</strong>，大幅推升能源板塊至當日最強（+1.55%）。
+    </div>
+  </div>
+
+  <!-- 板塊與個股動態 -->
+  <div class="card">
+    <h2>板塊與重要個股動態</h2>
+
+    <h3>板塊表現</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>板塊</th>
+          <th>當日表現</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>能源 (Energy)</td>
+          <td class="up">▲ +1.55%</td>
+          <td>當日最強板塊，受高油價（布蘭特 >$120）驅動，週線漲幅逾 6%</td>
+        </tr>
+        <tr>
+          <td>基礎材料 (Materials)</td>
+          <td class="up">小幅收漲</td>
+          <td>受惠大宗商品需求</td>
+        </tr>
+        <tr>
+          <td>醫療保健 (Healthcare)</td>
+          <td class="down">▼ -0.50%</td>
+          <td>週線為本週最佳板塊，但當日小幅拉回</td>
+        </tr>
+        <tr>
+          <td>科技 (Technology)</td>
+          <td class="down">▼ -0.53%</td>
+          <td>Broadcom 大跌拖累整體科技板塊</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>重點個股</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>公司</th>
+          <th>代碼</th>
+          <th>當日漲跌</th>
+          <th>驅動事件</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reddit</td>
+          <td>RDDT</td>
+          <td class="up">▲ +10.4%</td>
+          <td>宣布將於 8/18 納入 S&amp;P 500 指數成分股</td>
+        </tr>
+        <tr>
+          <td>Nu Holdings</td>
+          <td>NU</td>
+          <td class="up">▲ +12%</td>
+          <td>Q2 凈利首次突破 10 億美元，財報遠超預期</td>
+        </tr>
+        <tr>
+          <td>SanDisk</td>
+          <td>SNDK</td>
+          <td class="up">▲ +7%</td>
+          <td>強勢技術性反彈，半導體板塊資金流入</td>
+        </tr>
+        <tr>
+          <td>Broadcom</td>
+          <td>AVGO</td>
+          <td class="down">▼ -5~6%</td>
+          <td>市場擔憂下季 AI 業務需承擔 72% 成長壓力</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>海外市場概況</h3>
+    <div class="macro-block">
+      <strong>亞洲：</strong>南韓、日本半導體類股引領亞股走強；香港、中國、澳洲、印度收跌，表現疲弱，全球市場呈現明顯分化。
+    </div>
+  </div>
+
+  <!-- 風險與不確定因素 -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>霍爾木茲海峽封鎖持續：</strong>美伊衝突僵局若持續，全球能源供應將長期受壓，布蘭特原油 120 美元以上的高位將持續推升通脹，壓縮 Fed 降息空間，進而衝擊企業獲利與估值。</li>
+      <li><strong>消費者信心與零售銷售雙雙惡化：</strong>7月零售銷售月減 0.6% 為逾一年最大跌幅，8月密大消費信心僅 51，若下一期數據仍低迷，市場對經濟軟著陸的預期可能逆轉為衰退擔憂。</li>
+      <li><strong>Fed 政策走鋼索風險：</strong>通脹壓力（油價高位）與消費疲軟並存，Fed 面臨升息有礙成長、降息加劇通脹的兩難，政策誤判風險上升，可能引發市場劇烈波動。</li>
+      <li><strong>大型科技股估值承壓：</strong>Broadcom 財測警示 AI 業務成長壓力高度集中，若其他半導體或科技大廠陸續出現類似訊號，可能觸發科技板塊更大規模修正。</li>
+      <li><strong>S&amp;P 500 於歷史高位獲利了結壓力：</strong>S&amp;P 500 剛在 8/13 創下 7,800 的歷史收盤新高，短線獲利了結賣壓可能加劇震盪，技術面面臨阻力測試。</li>
+    </ul>
+  </div>
+
+  <!-- 資料來源 -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-14-103100309.html" target="_blank">Yahoo Finance — Stock Market News for Aug 14, 2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-aug-14-213018651.html" target="_blank">Yahoo Finance — Stock Market Today, Aug. 14: Rally Stalls</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html" target="_blank">Yahoo Finance — S&amp;P 500 slips from record but caps 3rd weekly gain</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-aug-14-163537995.html" target="_blank">Yahoo Finance — Stock Market Midday, Aug. 14: Stocks Wobble, Reddit Jumps</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026" target="_blank">TheStreet — Russell 2000 notches fresh record (Aug 14, 2026)</a></li>
+      <li><a href="https://www.detroitnews.com/story/business/2026/08/14/wall-street-subdued-as-markets-pause-after-sp-record-high/91303379007/" target="_blank">Detroit News — U.S. Stocks fall; S&amp;P 500 down 0.2%</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html" target="_blank">CNBC — S&amp;P 500 closes lower, posts third straight weekly gain</a></li>
+      <li><a href="https://www.benzinga.com/markets/market-summary/26/08/61220081/russell-2000-record-highs-sandisk-corp-stocks-rallies-friday" target="_blank">Benzinga — Russell 2000 Extends Records, SanDisk Rallies 7%</a></li>
+      <li><a href="https://www.benzinga.com/etfs/specialty-etfs/26/08/61181756/quick-spark-russell-2000-hits-new-record-highs-beats-nasdaq-100-in-2026" target="_blank">Benzinga — Russell 2000 Tops Nasdaq 100 in 2026</a></li>
+      <li><a href="https://investinglive.com/stocks/us-stocks-end-the-week-mixed-russell-2000-closes-at-a-record/" target="_blank">InvestingLive — US stocks end the week mixed; Russell 2000 at record</a></li>
+      <li><a href="https://247wallst.com/investing/2026/08/14/the-russell-2000-hits-all-time-highs-4-ultra-high-yield-dividend-stocks-to-buy-hand-over-fist/" target="_blank">24/7 Wall St. — The Russell 2000 Hits All-Time High</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/why-nu-holdings-stock-jumped-151830156.html" target="_blank">Yahoo Finance — Why Nu Holdings Stock Jumped 13% Today</a></li>
+      <li><a href="https://ts2.tech/en/nu-holdings-stock-jumps-10-as-margin-rebound-drives-1-billion-profit/" target="_blank">ts2.tech — Nu Holdings Shares Surge on $1B Profit</a></li>
+      <li><a href="https://ts2.tech/en/broadcom-stock-falls-5-as-ai-must-supply-72-of-next-quarters-growth/" target="_blank">ts2.tech — Broadcom Shares Slide 5% on AI Growth Concerns</a></li>
+      <li><a href="https://www.americanbanker.com/news/markets-eye-fed-hold-after-retail-sales-consumer-confidence-fall" target="_blank">American Banker — Markets eye Fed hold after retail sales, consumer confidence fall</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-08-14/treasuries-gain-as-weak-retail-sales-data-erode-rate-hike-bets" target="_blank">Bloomberg — Treasuries Rise as Weak Retail Sales Dampen Rate-Hike Expectations</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-08-14/us-consumer-sentiment-declines-for-first-time-in-three-months" target="_blank">Bloomberg — US Consumer Sentiment Drops to 3-Month Low</a></li>
+      <li><a href="https://features.financialjuice.com/2026/08/14/stocks-stop-rallying-after-signs-of-consumer-slowdown-us-market-wrap/" target="_blank">FinancialJuice — Stocks stop rallying after signs of consumer slowdown</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/08/14/stock-market-midday-aug-14-stocks-wobble-as-retail-sales-disappoint-reddit-jumps-14/" target="_blank">Motley Fool — Stock Market Midday Aug 14: Retail Sales Disappoint, Reddit Jumps 14%</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis" target="_blank">Wikipedia — 2026 Strait of Hormuz Crisis</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_United_States_naval_blockade_of_Iran" target="_blank">Wikipedia — 2026 United States Naval Blockade of Iran</a></li>
+      <li><a href="https://www.onmanorama.com/news/world/2026/08/14/us-warns-iran-of-indefinite-naval-blockade-as-strait-of-hormuz-deadlock-continues.html" target="_blank">Onmanorama — US warns Iran of indefinite naval blockade</a></li>
+      <li><a href="https://seekingalpha.com/news/4633392-when-will-the-us-lift-its-naval-blockade-on-iran-markets-are-pricing-the-odds" target="_blank">Seeking Alpha — When will the US lift its naval blockade on Iran?</a></li>
+      <li><a href="https://www.riotimesonline.com/usa-canada-intelligence-brief-friday-august-14-2026/" target="_blank">The Rio Times — USA Intelligence Brief August 14, 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料來源：Yahoo Finance、TheStreet、CNBC、Bloomberg、Benzinga 等 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
