@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-08-14</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .week-tag { display: inline-block; margin-top: 12px; background: rgba(255,255,255,0.15); border-radius: 6px; padding: 4px 12px; font-size: 0.85rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-record { background: #dcfce7; color: #166534; }
+    .badge-slip { background: #fef3c7; color: #92400e; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.secondary { border-color: #a7f3d0; background: #f0fdf4; }
+    .event-card.warning { border-color: #fca5a5; background: #fff5f5; }
+    .event-card.neutral-card { border-color: #d1d5db; background: #f9fafb; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #1e40af; }
+    .event-card.secondary h4 { color: #065f46; }
+    .event-card.warning h4 { color: #991b1b; }
+    .event-card.neutral-card h4 { color: #374151; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.tech { background: #ede9fe; color: #5b21b6; }
+    .tag.bank { background: #d1fae5; color: #065f46; }
+    .tag.energy { background: #fef3c7; color: #92400e; }
+    .tag.social { background: #fce7f3; color: #9d174d; }
+    .tag.semi { background: #e0e7ff; color: #3730a3; }
+    .tag.it { background: #f3e8ff; color: #6b21a8; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .risk-list li:last-child { margin-bottom: 0; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding-left: 16px; position: relative; }
+    .sources li::before { content: "▸"; position: absolute; left: 0; color: #93c5fd; }
+    .summary-bar { background: linear-gradient(90deg, #eff6ff, #f0fdf4); border: 1px solid #bfdbfe; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.7; color: #1e3a5f; }
+    .weekly-strip { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .weekly-item { background: #f0f4ff; border-radius: 6px; padding: 6px 12px; font-size: 0.82rem; }
+    .weekly-item span { font-weight: 700; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-08-14（週五）| 由 Claude Routine 自動生成</div>
+    <div class="week-tag">連續第三週上漲 · Russell 2000 創歷史新高 · 密西根消費者信心遜預期</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="card">
+    <h2>市場概況摘要</h2>
+    <div class="summary-bar">
+      週五（8/14），S&amp;P 500、道瓊及那斯達克在密西根大學消費者信心初值遠低預期（51.0 vs 預估 55.0）的衝擊下，小幅回落道瓊前一日創下的歷史高位。儘管如此，三大指數仍錄得連續第三週正報酬，而 Russell 2000 小型股指數逆勢創下歷史新高，反映市場對聯準會 9 月暫停升息的預期升溫。整週宏觀數據（CPI、PPI）均優於預期，但週末消費數據疲弱提醒市場消費者信心可能出現裂縫。
+    </div>
+    <div class="weekly-strip">
+      <div class="weekly-item">週漲跌 S&amp;P 500：<span class="up">+0.4%</span></div>
+      <div class="weekly-item">週漲跌 Nasdaq：<span class="up">+0.1%</span></div>
+      <div class="weekly-item">週漲跌 Russell 2000：<span class="up">大幅跑贏</span></div>
+      <div class="weekly-item">9 月升息概率：<span class="neutral">約 40%</span>（前週 54%）</div>
+    </div>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤（2026-08-14）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數</strong><br><small style="color:#6b7280">Dow Jones Industrial Average</small></td>
+          <td>53,732.41</td>
+          <td class="down">▼ 107.58</td>
+          <td class="down">−0.20%</td>
+          <td><span class="badge badge-slip">較前日高點回落</span></td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong><br><small style="color:#6b7280">標普 500</small></td>
+          <td>7,786.53</td>
+          <td class="down">▼ 13.23</td>
+          <td class="down">−0.17%</td>
+          <td><span class="badge badge-slip">前日剛破歷史高</span></td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合指數</strong><br><small style="color:#6b7280">Nasdaq Composite</small></td>
+          <td>26,729.16</td>
+          <td class="down">▼ 73.86</td>
+          <td class="down">−0.28%</td>
+          <td>Broadcom 拖累科技板塊</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000</strong><br><small style="color:#6b7280">Russell 2000</small></td>
+          <td>3,068.00</td>
+          <td class="up">▲ 15.56</td>
+          <td class="up">+0.51%</td>
+          <td><span class="badge badge-record">歷史新高 🏆</span> 連漲四日</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+
+      <div class="event-card warning">
+        <h4>📉 密西根消費者信心急跌</h4>
+        <p>8 月初值跌至 <strong>51.0</strong>，遠低預估 55.0，結束連續兩個月回升。一年期通膨預期升至 <strong>4.3%</strong>；5-10 年期預期維持 3.3%。各政治色彩、年齡與收入群體均現下滑，共和黨選民降幅最大，為伊朗衝突以來最低。本報告成為週五大盤走弱主要催化劑。</p>
+      </div>
+
+      <div class="event-card warning">
+        <h4>📉 零售銷售數據令人失望</h4>
+        <p>7 月零售銷售數據同步遜於預期，顯示美國消費者在通膨壓力下消費意願下滑。這兩份數據讓投資者擔憂，即使利率壓力緩解，消費支出疲軟可能對企業獲利形成逆風。</p>
+      </div>
+
+      <div class="event-card primary">
+        <h4>📈 Reddit（RDDT）加入 S&amp;P 500</h4>
+        <p>S&amp;P Dow Jones Indices 宣布 Reddit（NYSE: RDDT）將於 <strong>8 月 18 日（週二）開市前</strong>正式納入 S&amp;P 500，取代 AvalonBay Communities（AVB）。Reddit 成為繼 Meta 之後第二家純社群媒體公司進入標普 500。消息一出，RDDT 股價大漲 <strong>+10.4%</strong>。</p>
+      </div>
+
+      <div class="event-card secondary">
+        <h4>💰 Nu Holdings（NU）創季度盈利紀錄</h4>
+        <p>拉丁美洲數位銀行 Nubank 公布 Q2 2026 業績，淨利潤首度突破 <strong>10 億美元（$1.06B）</strong>，同比增長 49%（貨幣中性）。EPS $0.22 超越預估 $0.20；營收 $5.88B 同樣優於市場預期。風險調整後淨利息差距（NIM）升至紀錄高位 12.4%。NU 股價單日上漲約 <strong>+9.5～12%</strong>。</p>
+      </div>
+
+      <div class="event-card primary">
+        <h4>💽 SanDisk（SNDK）Investor Day 大漲</h4>
+        <p>SanDisk 舉行 2026 年投資人日（Investor Day），管理層提出樂觀的長期財務目標，強調儲存晶片需求在 AI 基礎設施建設下將持續擴張。SNDK 股價當日上漲 <strong>+7%</strong>，為科技板塊少數亮點之一。</p>
+      </div>
+
+      <div class="event-card warning">
+        <h4>📡 Broadcom（AVGO）重挫逾 5%</h4>
+        <p>博通股價下跌約 <strong>5.1～6%</strong>，跌破 $400 關口，原因包括：① VMware 安全漏洞（CVE-2026-59310）已被駭客積極利用；② 市場憂慮 AI 收入高度依賴 XPV 融資平台的可持續性；③ Bank of America 下調博通債券評級，指出 AI XPV 平台風險。AVGO 為那斯達克下跌主因之一。</p>
+      </div>
+
+    </div>
+
+    <h3 style="margin-top:20px;">個股漲跌速覽</h3>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>代碼</th>
+          <th>漲跌</th>
+          <th>主要原因</th>
+          <th>板塊</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reddit</td>
+          <td>RDDT</td>
+          <td class="up">+10.4%</td>
+          <td>宣布加入 S&amp;P 500（8/18 生效）</td>
+          <td><span class="tag social">社群媒體</span></td>
+        </tr>
+        <tr>
+          <td>Nu Holdings</td>
+          <td>NU</td>
+          <td class="up">+9.5%～12%</td>
+          <td>Q2 淨利首破 $1B，創歷史紀錄</td>
+          <td><span class="tag bank">金融科技</span></td>
+        </tr>
+        <tr>
+          <td>SanDisk</td>
+          <td>SNDK</td>
+          <td class="up">+7.0%</td>
+          <td>Investor Day 樂觀長期展望</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td>Broadcom</td>
+          <td>AVGO</td>
+          <td class="down">−5.1%～6%</td>
+          <td>VMware 漏洞、XPV 平台風險、BofA 降評</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td>Globant</td>
+          <td>GLOB</td>
+          <td class="down">−12.6%</td>
+          <td>Q2 財報令人失望</td>
+          <td><span class="tag it">IT 服務</span></td>
+        </tr>
+        <tr>
+          <td>Range Resources</td>
+          <td>RRC</td>
+          <td class="down">−7.3%</td>
+          <td>天然氣價格低迷、供給過剩、分析師調降目標價</td>
+          <td><span class="tag energy">能源</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO SECTION -->
+  <div class="card">
+    <h2>宏觀因素與聯準會動態</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">密西根消費信心（8 月初值）</div>
+        <div class="value down">51.0</div>
+        <div class="change down">↓ 遠低預估 55.0</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">1 年期通膨預期</div>
+        <div class="value down">4.3%</div>
+        <div class="change neutral">↑ 較前期上升</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">5–10 年期通膨預期</div>
+        <div class="value neutral">3.3%</div>
+        <div class="change neutral">→ 維持不變</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">9 月升息市場概率</div>
+        <div class="value up">約 40%</div>
+        <div class="change up">↓ 較前週 54% 下降</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">7 月 CPI（本週公布）</div>
+        <div class="value up">低於預期</div>
+        <div class="change up">↓ 通膨降溫訊號</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">7 月 PPI（週四公布）</div>
+        <div class="value up">低於預期</div>
+        <div class="change up">↓ 推動週四 S&amp;P 破紀錄</div>
+      </div>
+    </div>
+
+    <div class="event-grid" style="margin-top: 4px;">
+      <div class="event-card neutral-card">
+        <h4>🏦 聯準會政策展望</h4>
+        <ul>
+          <li>聯準會 9 月升息概率已從前週 54% 降至約 40%</li>
+          <li>本週 CPI、PPI 雙雙低於預期，緩解緊縮壓力</li>
+          <li>但密西根通膨預期（4.3%）仍高，Fed 仍將保持觀望</li>
+          <li>5-10 年期通膨預期 3.3% 尚未回到 2% 目標附近</li>
+        </ul>
+      </div>
+      <div class="event-card neutral-card">
+        <h4>🌏 地緣政治與外部風險</h4>
+        <ul>
+          <li>伊朗衝突持續影響消費者情緒，共和黨群體降幅最深</li>
+          <li>國際油價走低，部分抵消地緣風險對通膨的上行壓力</li>
+          <li>VMware 安全漏洞（CVE-2026-59310）遭積極利用，影響 Broadcom</li>
+          <li>AI 科技股估值壓力持續，投資人對高度依賴單一平台的企業更趨審慎</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>
+        <strong>消費者信心急降</strong>——密西根消費信心初值 51.0，結束連兩月回升，遠低市場預期，顯示美國民眾對通膨及經濟前景的擔憂加劇，若終值延續下行趨勢，可能引發市場對消費類股的再次重新定價。
+      </li>
+      <li>
+        <strong>零售銷售疲弱</strong>——7 月零售數據遜於預期，與消費信心惡化相互印證，若後續消費支出持續不振，企業獲利預測可能面臨下修壓力。
+      </li>
+      <li>
+        <strong>通膨黏性風險</strong>——一年期通膨預期升至 4.3%，雖然 CPI/PPI 降溫，但若消費者對長期通膨的預期無法錨定，聯準會的「暫停升息」立場可能受到質疑。
+      </li>
+      <li>
+        <strong>AI 股集中度風險</strong>——Broadcom（AVGO）重挫 5%+ 提醒市場，高度依賴 AI 業務成長的大型科技股存在估值脆弱性，尤其在財務杠桿或融資模式受到質疑時。
+      </li>
+      <li>
+        <strong>伊朗地緣衝突</strong>——持續的地緣政治緊張局勢對消費者信心造成不對稱影響，若局勢升級，可能波及能源市場並推升通膨預期。
+      </li>
+      <li>
+        <strong>S&amp;P 500 指數調整換血衝擊</strong>——Reddit 取代 AvalonBay 加入標普 500（8/18 生效），相關被動型基金需在有限時間內完成大規模換倉，可能造成流動性波動。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-august-14-dow-sp-500-nasdaq-102635519.html" target="_blank">Yahoo Finance — Stock market today: S&P 500 slips from record high but caps third straight week of gains</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-14-2026" target="_blank">TheStreet — Stock Market Today (Aug. 14, 2026): Russell 2000 notches fresh record to cap off week</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-aug-14-213018651.html" target="_blank">Yahoo Finance / Motley Fool — Stock Market Today, Aug. 14: Rally Stalls on Disappointing Consumer Data, Broadcom Falls 6%</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/08/14/stock-market-midday-aug-14-stocks-wobble-as-retail-sales-disappoint-reddit-jumps-14/" target="_blank">Motley Fool Midday — Stocks Wobble on Falling Consumer Confidence, Reddit Jumps 14%</a></li>
+      <li><a href="https://www.fool.com/investing/2026/08/14/sp-500-eases-off-its-record-as-the-consumer-blinks/" target="_blank">Motley Fool — S&P 500 Eases Off Its Record as the Consumer Finally Blinks</a></li>
+      <li><a href="https://spectrumlocalnews.com/us/snplus/business/2026/08/14/u-mich-consumer-sentiment-august-2026" target="_blank">Spectrum News — Consumer sentiment and retail spending are down (University of Michigan preliminary)</a></li>
+      <li><a href="https://qz.com/us-consumer-sentiment-august-2026-iran-inflation-081426" target="_blank">QZ — U.S. consumer sentiment falls in August 2026, ending recovery</a></li>
+      <li><a href="https://cryptobriefing.com/michigan-consumer-sentiment-august-decline/" target="_blank">Crypto Briefing — Michigan consumer sentiment falls to 51 in August, below estimates</a></li>
+      <li><a href="https://www.benzinga.com/markets/market-summary/26/08/61220081/russell-2000-record-highs-sandisk-corp-stocks-rallies-friday" target="_blank">Benzinga — Russell 2000 Extends Records, SanDisk Rallies 7%</a></li>
+      <li><a href="https://investinglive.com/stocks/us-stocks-end-the-week-mixed-russell-2000-closes-at-a-record/" target="_blank">Investing Live — US stocks end the week mixed; Russell 2000 closes at a record</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/nu-holdings-shares-surge-first-101818296.html" target="_blank">Yahoo Finance — Nu Holdings Shares Surge After First $1 Billion Quarterly Profit</a></li>
+      <li><a href="https://www.morningstar.com/news/business-wire/20260814586211/reddit-will-be-added-to-the-sp-500" target="_blank">Morningstar / Business Wire — Reddit Will Be Added to the S&P 500</a></li>
+      <li><a href="https://www.tipranks.com/news/why-broadcom-avgo-stock-is-sinking-today-august-14-2026" target="_blank">TipRanks — Why Broadcom (AVGO) Stock Is Sinking Today</a></li>
+      <li><a href="https://www.fxleaders.com/news/2026/08/14/avgo-stock-falls-below-400-as-broadcoms-ai-revenue-dependence-raises-new-risks/" target="_blank">FX Leaders — AVGO Stock Falls Below $400 as Broadcom's AI Revenue Dependence Raises New Risks</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/broadcom-falls-6-ai-trade-195640614.html" target="_blank">Yahoo Finance — Broadcom Falls 6% as AI Trade Cools</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/13/stock-market-today-live-updates.html" target="_blank">CNBC — S&P 500 closes lower, but posts third straight weekly gain: Live updates</a></li>
+      <li><a href="https://www.nbcnews.com/business/markets/stocks-bonds-ppi-inflation-rcna592331" target="_blank">NBC News — Stocks rise and interest rates slide after inflation report (週四 PPI 報告)</a></li>
+      <li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-08-14/doc-ininfmmw4338336.shtml" target="_blank">新浪財經 — 8月14日收盤：标普500指数创历史新高（週四收盤報導）</a></li>
+      <li><a href="https://www.ctdsb.net/c1666_202608/2831163.html" target="_blank">极目新闻 — 纽约股市三大股指8月14日下跌</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 · 2026-08-16 生成 | 僅供參考，非投資建議</footer>
+
+</div>
+</body>
+</html>
