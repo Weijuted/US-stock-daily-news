@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-08-20</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 16px 0 8px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { display: block; margin-bottom: 4px; color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-table th { background: #f0fdf4; color: #166534; border-bottom: 2px solid #bbf7d0; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sector-item { padding: 12px 14px; background: #f8faff; border-radius: 6px; font-size: 0.88rem; line-height: 1.5; }
+    .sector-item .label { font-weight: 600; color: #0f3460; margin-bottom: 4px; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; line-height: 1.5; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; margin-left: 6px; }
+    .badge-down { background: #fee2e2; color: #991b1b; }
+    .badge-up { background: #dcfce7; color: #166534; }
+    .highlight-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-box strong { color: #92400e; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) { .sector-grid { grid-template-columns: 1fr; } header { padding: 24px 20px; } .card { padding: 18px 16px; } }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 8 月 20 日（星期四）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- 市場摘要 -->
+  <div class="card">
+    <div class="highlight-box">
+      <strong>📋 當日市場摘要：</strong>美股三大指數全線收跌。財政部債券回購效應快速消退、殖利率反彈、沃爾瑪財報重挫 8% 三重打壓下，道瓊重挫逾 700 點。能源板塊因制裁伊朗傳言推升油價仍維持相對強勢。市場目光轉向 8 月 27–29 日 Jackson Hole 年會。
+    </div>
+  </div>
+
+  <!-- 指數表現 -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>狀態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均 (DJIA)</strong></td>
+          <td>52,759.21</td>
+          <td>-703.84</td>
+          <td class="down">-1.32%</td>
+          <td><span class="badge badge-down">↓ 下跌</span></td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,641.16</td>
+          <td>約 -67</td>
+          <td class="down">-0.87%</td>
+          <td><span class="badge badge-down">↓ 下跌</span></td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>26,067.17</td>
+          <td>約 -263</td>
+          <td class="down">-1.00%</td>
+          <td><span class="badge badge-down">↓ 下跌</span></td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>約 3,005–3,020</td>
+          <td>前日收 3,032.94</td>
+          <td class="down">與大盤同向下跌</td>
+          <td><span class="badge badge-down">↓ 下跌</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.78rem;color:#9ca3af;margin-top:10px;">* Russell 2000 精確收盤價待 Yahoo Finance/Bloomberg 確認；8/14 曾創歷史新高 3,052.85</p>
+  </div>
+
+  <!-- 公債殖利率 -->
+  <div class="card">
+    <h2>📈 公債殖利率（當日）</h2>
+    <table>
+      <thead>
+        <tr><th>期限</th><th>殖利率</th><th>日變化</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10 年期美國公債</td>
+          <td><strong>4.71%</strong></td>
+          <td class="down">+6 bps（反彈）</td>
+        </tr>
+        <tr>
+          <td>30 年期美國公債</td>
+          <td><strong>5.26%</strong></td>
+          <td class="down">+7 bps（反彈）</td>
+        </tr>
+        <tr>
+          <td>Brent 原油</td>
+          <td><strong>超過 $91/桶</strong></td>
+          <td class="down">2026 年迄今累漲 +50%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 重大市場事件 -->
+  <div class="card">
+    <h2>⚡ 重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>A. 財政部債券回購效應快速消退（主要催化劑）</strong>
+        8 月 19 日財政部長 Scott Bessent 宣布長期公債回購規模「至少翻倍」，觸發殖利率短暫急跌。但 8/20 效應完全失效：10 年期殖利率反彈 6 bps 至 4.71%，30 年期升 7 bps 至 5.26%，逼近本週 20 個月高點。市場擔憂回購無法抵消龐大赤字融資壓力。背景：美國公共債務本週首次突破 <strong>40 兆美元</strong>。
+      </li>
+      <li>
+        <strong>B. 沃爾瑪（Walmart, WMT）財報重挫 -8%</strong>
+        沃爾瑪財報大幅低於市場預期：美國同店銷售額遜於 FactSet 共識，Q3 及全年調整後 EPS 指引均弱於預期。股價單日暴跌約 <strong>-8%</strong>，創逾四年來最差單日表現，成為道指最大拖累，並拖累整體零售及消費防禦板塊。
+      </li>
+      <li>
+        <strong>C. 川普施壓伊朗 → 原油價格攀升</strong>
+        川普總統宣示對伊朗實施更嚴厲的經濟制裁，推升 Brent 原油突破每桶 91 美元，美國汽油零售價較年初上漲 <strong>37%</strong>。能源成本高漲再度引發市場對通膨「再加速」的擔憂。
+      </li>
+      <li>
+        <strong>D. 亞洲市場反向大漲（對比美股）</strong>
+        日本日經 225 收漲 <strong>+1.36%</strong>（66,216.79）；韓國 Kospi 大漲 <strong>+5.89%</strong>（6,852.58），三星電子 +9.49%、SK Hynix 接近 +13%，受 AI 晶片需求題材強力驅動。
+      </li>
+      <li>
+        <strong>E. Jackson Hole 年會倒計時（下一關鍵催化劑）</strong>
+        聯準會主席 Powell 預計於 8 月 27–29 日 Jackson Hole 全球央行年會上發表重要演說，市場屏息等待利率路徑最新信號。
+      </li>
+    </ul>
+  </div>
+
+  <!-- 宏觀因素 -->
+  <div class="card">
+    <h2>🌐 宏觀因素分析</h2>
+    <table class="macro-table">
+      <thead>
+        <tr><th>因素</th><th>詳情</th><th>市場影響</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>聯準會（Fed）動態</strong></td>
+          <td>無新聲明；Jackson Hole 年會（8/27–29）為下一關鍵節點</td>
+          <td class="neutral">觀望</td>
+        </tr>
+        <tr>
+          <td><strong>公債殖利率</strong></td>
+          <td>10Y: 4.71%（+6bps）；30Y: 5.26%（+7bps）；接近 20 個月高點</td>
+          <td class="down">利空股票估值</td>
+        </tr>
+        <tr>
+          <td><strong>通膨壓力</strong></td>
+          <td>PCE 數據顯示核心通膨 2025/11–2026/3 異常攀升；能源價格居高</td>
+          <td class="down">黏性通膨，壓制降息預期</td>
+        </tr>
+        <tr>
+          <td><strong>財政赤字</strong></td>
+          <td>美國公共債務首破 40 兆美元；財政可持續性疑慮升溫</td>
+          <td class="down">殖利率結構性上行</td>
+        </tr>
+        <tr>
+          <td><strong>地緣政治</strong></td>
+          <td>美伊制裁威脅推升油價；中東不確定性持續</td>
+          <td class="down">能源通膨風險</td>
+        </tr>
+        <tr>
+          <td><strong>零售財報季</strong></td>
+          <td>本週為大型零售商密集財報期；沃爾瑪表現令市場失望</td>
+          <td class="down">消費信心隱憂</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 個股與板塊動態 -->
+  <div class="card">
+    <h2>📌 重要個股與板塊動態</h2>
+    <h3>🔴 主要下跌個股</h3>
+    <table>
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>原因</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Walmart (WMT)</strong></td>
+          <td class="down">約 -8%</td>
+          <td>財報大幅低於預期；同店銷售及全年 EPS 指引雙雙遜色；創四年多最差單日表現</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top:18px;">🟢 主要上漲個股（亞洲市場）</h3>
+    <table>
+      <thead>
+        <tr><th>股票</th><th>漲跌幅</th><th>原因</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>三星電子 (Samsung)</strong></td>
+          <td class="up">+9.49%</td>
+          <td>AI 記憶體晶片需求強勁；半導體板塊題材驅動</td>
+        </tr>
+        <tr>
+          <td><strong>SK Hynix</strong></td>
+          <td class="up">接近 +13%</td>
+          <td>AI 高頻寬記憶體（HBM）需求爆發；與三星電子連動</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top:18px;">📂 板塊表現</h3>
+    <div class="sector-grid">
+      <div class="sector-item">
+        <div class="label">⛽ 能源板塊</div>
+        2026 年迄今累漲逾 +22%；Exxon Mobil、Chevron 領漲。當日受油價上漲（伊朗制裁題材）支撐，相對抗跌。
+      </div>
+      <div class="sector-item">
+        <div class="label">🛒 零售/消費防禦</div>
+        受沃爾瑪重挫拖累全面承壓；消費者支出信心動搖。
+      </div>
+      <div class="sector-item">
+        <div class="label">💻 科技/AI</div>
+        Nasdaq 跌 1%；AI 基礎建設主題（Broadcom、核電概念）全月相對強勢，但當日跟隨大盤下跌。
+      </div>
+      <div class="sector-item">
+        <div class="label">📦 小型股（Russell 2000）</div>
+        8/14 曾創歷史新高 3,052.85，2026 年累漲約 +23%，領先 S&amp;P 500 逾 9 個百分點。殖利率回升對小型股衝擊通常更大。
+      </div>
+    </div>
+  </div>
+
+  <!-- 風險與不確定因素 -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>公債殖利率持續攀升：</strong>10 年期接近 4.75%、30 年期逼近 5.30%，高殖利率持續壓制股票相對吸引力，尤其對高本益比科技股衝擊更大。</li>
+      <li><strong>通膨「再加速」風險：</strong>油價 2026 年累漲逾 50%，汽油零售價年漲 37%，PCE 核心通膨黏性強，降息時程恐再度推遲。</li>
+      <li><strong>美國財政可持續性：</strong>公共債務破 40 兆美元，赤字融資需求龐大，財政部回購措施被市場快速看穿為「緩兵之計」。</li>
+      <li><strong>消費力道疲弱：</strong>沃爾瑪財報暗示消費者實際支出受壓，若其他零售商財報同樣低迷，將進一步打壓市場情緒。</li>
+      <li><strong>地緣政治升溫：</strong>美伊制裁局勢若進一步惡化，油價可能突破 100 美元，加重全球通膨壓力。</li>
+      <li><strong>Jackson Hole 鷹派風險：</strong>若 Powell 於 8/27–29 演說暗示更長時間維持高利率，市場可能面臨新一波拋售。</li>
+    </ul>
+  </div>
+
+  <!-- 資料來源 -->
+  <div class="card">
+    <h2>🔗 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-20-dow-sp-500-nasdaq-081139322.html" target="_blank">Yahoo Finance — Stock market today Aug. 20: Dow, S&P, Nasdaq slide</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-20-2026" target="_blank">TheStreet — Stock Market Today (Aug. 20, 2026): Nasdaq, S&P 500 slip as Treasury rally fades</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market today: Live updates (Aug. 20)</a></li>
+      <li><a href="https://www.benzinga.com/markets/equities/26/08/61338062/bond-rescue-scott-bessent-walmart-craters-treasury-yields-oil-markets-thursday" target="_blank">Benzinga — Stock Market Today: Bessent's Bond Plan Fizzles, Walmart Craters</a></li>
+      <li><a href="https://www.detroitnews.com/story/business/2026/08/20/wall-st-slips-on-rising-bond-yields-walmart-results-weigh/91384966007/" target="_blank">Detroit News — Wall St slips on rising bond yields; Walmart results weigh</a></li>
+      <li><a href="https://yournews.com/2026/08/20/7170940/wall-street-retreats-as-treasury-yields-climb-walmart-misses-estimates/" target="_blank">YourNews — Wall Street Retreats as Treasury Yields Climb, Walmart Misses Estimates</a></li>
+      <li><a href="https://finance.yahoo.com/markets/article/stocks-dip-as-bond-yields-and-oil-rise-walmart-earnings-drag-on-retail-alphacheck-140142173.html" target="_blank">Yahoo Finance AlphaCheck — Stocks dip as bond yields and oil rise</a></li>
+      <li><a href="https://qz.com/dow-falls-yields-rise-walmart-stock-082026" target="_blank">QZ — Dow drops 350+ points as Treasury yields rise, Walmart stock falls</a></li>
+      <li><a href="https://www.nbcnews.com/business/economy/bonds-bessent-treasury-debt-repurchase-rcna593319" target="_blank">NBC News — Bond yields fall after Treasury announces surprise buyback move</a></li>
+      <li><a href="https://www.cfr.org/articles/what-the-treasurys-buyback-surprise-says-about-the-bond-market" target="_blank">CFR — What the Treasury's Buyback Surprise Says About the Bond Market</a></li>
+      <li><a href="https://www.euronews.com/business/2026/08/11/oil-prices-and-us-bond-yields-rise-as-trump-and-iran-trade-reparations-demands" target="_blank">Euronews — Oil prices and US bond yields rise as Trump and Iran trade reparations demands</a></li>
+      <li><a href="https://kalkine.com/news/premium/week-ahead-august-17-to-21-walmart-earnings-fed-minutes-and-major-ex-dividend-dates-converge-ahead-of-jackson-hole" target="_blank">Kalkine — Week Ahead: Walmart Earnings, Fed Minutes, Jackson Hole</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/30/small-cap-stocks-enjoy-best-first-half-since-1991-as-ai-trade-expands.html" target="_blank">CNBC — Small-cap stocks enjoy best first half in 35 years (Russell 2000 context)</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 資料截至 2026-08-20 收盤 &nbsp;|&nbsp; 僅供參考，非投資建議<br/>
+    Generated: 2026-08-21 | Repository: weijuted/us-stock-daily-news
+  </footer>
+
+</div>
+</body>
+</html>
