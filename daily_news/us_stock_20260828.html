@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-08-28</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { display: block; margin-bottom: 4px; color: #0f3460; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #0f3460; }
+    .macro-item .sub { font-size: 0.78rem; color: #9ca3af; margin-top: 2px; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+    .stock-chip { background: #f8faff; border-radius: 6px; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; font-size: 0.88rem; }
+    .stock-chip .ticker { font-weight: 700; color: #16213e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 0.75rem; font-weight: 600; }
+    .badge-hawk { background: #fee2e2; color: #991b1b; }
+    .badge-ai { background: #dbeafe; color: #1e40af; }
+    .badge-data { background: #d1fae5; color: #065f46; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .week-badge { display: inline-block; padding: 2px 8px; background: #d1fae5; color: #065f46; border-radius: 99px; font-size: 0.75rem; font-weight: 600; margin-left: 8px; }
+    .week-badge.neg { background: #fee2e2; color: #991b1b; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026年8月28日（星期五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>點數變化</th>
+          <th>漲跌幅</th>
+          <th>週表現</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊指數 (DJIA)</strong></td>
+          <td>53,559.99</td>
+          <td class="down">▼ −9.45</td>
+          <td class="down">−0.02%</td>
+          <td><span class="week-badge">週 +0.5%</span></td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500 (SPX)</strong></td>
+          <td>7,711.76</td>
+          <td class="down">▼ −19.28</td>
+          <td class="down">−0.25%</td>
+          <td><span class="week-badge">週 +0.5%</span></td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>26,402.42</td>
+          <td class="down">▼ −138.93</td>
+          <td class="down">−0.52%</td>
+          <td><span class="week-badge">週 +0.9%</span></td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000 (RUT)</strong></td>
+          <td>2,972.37</td>
+          <td class="down">▼ −41.97</td>
+          <td class="down">−1.39%</td>
+          <td><span class="week-badge neg">週落後</span></td>
+        </tr>
+        <tr>
+          <td><strong>VIX 恐慌指數</strong></td>
+          <td>14.35</td>
+          <td class="down">▼ −0.16</td>
+          <td class="down">−1.10%</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:12px;">S&amp;P 500 當日小跌，但整週仍收漲 0.5%。Russell 2000 為當日表現最差指數（−1.39%）。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>📰 重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🏔️ Warsh 傑克遜霍爾演講 <span class="badge badge-hawk">主要催化劑</span></strong>
+        Fed 主席 Kevin Warsh 在傑克遜霍爾年會發表主題演講，稱 PCE 通膨 3.7% 「令人擔憂」，重申 2% 通膨目標，並表示「聯準會仍有更多工作要做」，拒絕提供前瞻指引。其鷹派立場超出預期，引發市場對再升息可能性的重新定價，壓抑午後股市。
+      </li>
+      <li>
+        <strong>🤖 NVIDIA Q2 財報（前一交易日衝擊延續）<span class="badge badge-ai">AI 題材</span></strong>
+        NVIDIA 於週四盤後公布 Q2 財報：EPS $2.22（vs. 預期 $2.09），營收 $96.22B，並預測 FY2028 年收入成長 70%。週四股價大漲 8.7%。週五受 Warsh 鷹派言論拖累，半導體板塊部分回吐，AMD 跌 2.3%，AVGO 跌 0.7%。
+      </li>
+      <li>
+        <strong>📈 PCE 通膨數據（8/26 公布）<span class="badge badge-data">經濟數據</span></strong>
+        7月整體 PCE 年增 3.7%（月增 +0.2%）；核心 PCE 年增 3.3%。實際消費者支出月增率持平（前值 +0.4%），顯示需求降溫。此數據為 Warsh 鷹派基調提供依據。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🌐 宏觀環境因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯準會立場</div>
+        <div class="value">偏鷹</div>
+        <div class="sub">Warsh：「仍有更多工作要做」，年內再升息可能性上升</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">PCE 通膨 (YoY)</div>
+        <div class="value" style="color:#dc2626;">3.7%</div>
+        <div class="sub">高於聯準會 2% 目標 170bps；核心 PCE 3.3%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">CPI (7月)</div>
+        <div class="value">3.4%</div>
+        <div class="sub">前月 3.5%，小幅回落</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">美國 GDP 追蹤</div>
+        <div class="value" style="color:#16a34a;">+2.3~2.4%</div>
+        <div class="sub">Fed 最新中位數預測上調至 2.4%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">消費者支出 (7月)</div>
+        <div class="value">持平</div>
+        <div class="sub">實際支出 MoM 0.0%，前值 +0.4%，需求降溫信號</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">地緣政治</div>
+        <div class="value" style="color:#d97706;">美伊緊張趨緩</div>
+        <div class="sub">5月衝突高峰 CPI 升至 4.2%；8月能源價格回落</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>📈 重要個股與板塊動態</h2>
+    <h3>當日個股漲跌（2026-08-28）</h3>
+    <div class="stock-grid">
+      <div class="stock-chip"><span class="ticker">AMZN</span><span class="up">+4.0%</span></div>
+      <div class="stock-chip"><span class="ticker">MSFT</span><span class="up">+1.7%</span></div>
+      <div class="stock-chip"><span class="ticker">GOOGL</span><span class="up">+1.5%</span></div>
+      <div class="stock-chip"><span class="ticker">META</span><span class="up">+1.2%</span></div>
+      <div class="stock-chip"><span class="ticker">NVDA</span><span class="up">微漲</span></div>
+      <div class="stock-chip"><span class="ticker">AMD</span><span class="down">−2.3%</span></div>
+      <div class="stock-chip"><span class="ticker">AVGO</span><span class="down">−0.7%</span></div>
+      <div class="stock-chip"><span class="ticker">SMH ETF</span><span class="down">週 −3%+</span></div>
+    </div>
+
+    <h3>當週板塊表現（2026-08-24 至 08-28）</h3>
+    <table style="margin-top:8px;">
+      <thead>
+        <tr>
+          <th>板塊</th>
+          <th>表現</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>通訊服務 (Communication Services)</td><td class="up">↑ 領漲</td></tr>
+        <tr><td>非必需消費品 (Consumer Discretionary)</td><td class="up">↑ 強勢</td></tr>
+        <tr><td>資訊科技 (Information Technology)</td><td class="up">↑ 受 AI 題材支撐</td></tr>
+        <tr><td>公用事業 (Utilities)</td><td class="down">↓ −1.1%</td></tr>
+        <tr><td>工業 (Industrials)</td><td class="down">↓ −1.0%</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:10px;">S&amp;P 500 11個板塊中，當週僅3個板塊收紅。</p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會政策不確定性：</strong>Warsh 明確拒絕前瞻指引，市場難以預判升息節奏。若通膨未如期回落，年底前再升息風險實質上升，對估值偏高的科技股構成壓力。</li>
+      <li><strong>PCE 通膨黏性：</strong>PCE 3.7% 距 2% 目標仍有相當距離。核心通膨 3.3% 顯示服務業通膨仍具黏性，難以快速回落。</li>
+      <li><strong>消費動能轉弱：</strong>7月實際消費者支出持平（前值 +0.4%），若趨勢延續，可能拖累下半年 GDP 成長及企業獲利。</li>
+      <li><strong>地緣政治尾部風險：</strong>美伊緊張局勢雖有緩和，但仍是潛在油價震盪來源。一旦升溫，可能再次推升通膨，壓縮聯準會操作空間。</li>
+      <li><strong>小型股流動性風險：</strong>Russell 2000 本週明顯跑輸，高利率對小型股融資成本衝擊更大，信用條件收緊下小型股下行風險偏高。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📚 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/08/27/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market News Aug. 28, 2026 (Live Updates)</a></li>
+      <li><a href="https://www.cnbc.com/2026/08/28/kevin-warsh-jackson-hole-fed-inflation-rate-hike.html" target="_blank">CNBC — Warsh Jackson Hole Analysis: Fed Inflation & Rate Hike</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-aug-28-133400922.html" target="_blank">Yahoo Finance — Market News Aug 28, 2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-august-28-dow-sp-500-nasdaq-dip-fed-warsh-jackson-hole-speech-081514091.html" target="_blank">Yahoo Finance — Live Updates: Dow, S&amp;P 500, Nasdaq Dip on Warsh Speech</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-08-27/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow & S&amp;P Live Updates</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-08-26/key-us-inflation-gauge-posts-muted-advance-spending-stalls" target="_blank">Bloomberg — Key US Inflation Gauge (PCE) Posts Muted Advance, Spending Stalls</a></li>
+      <li><a href="https://vistapglobal.com/weekly-market-summary-friday-august-28-2026-u-s-stocks-finish-lower-as-jackson-hole-revives-inflation-and-rate-concerns-amwl-docs-nvda-ysg/" target="_blank">Vista Partners — Weekly Market Summary Aug 28, 2026</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/08/28/stock-market-midday-aug-28-stocks-edge-higher-on-fed-s-clear-inflation-message/" target="_blank">Motley Fool — Stock Market Midday Aug 28</a></li>
+      <li><a href="https://www.nbcnews.com/business/economy/trumps-kevin-warsh-jackson-hole-inflation-rcna594135" target="_blank">NBC News — Warsh Jackson Hole Speech on Inflation</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/08/28/fed-chair-warsh-speaks-jackson-hole-conference/" target="_blank">Washington Post — Fed Chair Warsh Speaks at Jackson Hole Conference</a></li>
+      <li><a href="https://www.cnn.com/2026/08/28/business/fed-chairman-kevin-warsh-jackson-hole" target="_blank">CNN Business — Fed Chairman Warsh on Inflation at Jackson Hole</a></li>
+      <li><a href="https://www.cnn.com/2026/08/26/economy/pce-consumer-spending-inflation-july" target="_blank">CNN — PCE Consumer Spending & Inflation (July)</a></li>
+      <li><a href="https://www.forbes.com/sites/tylerroush/2026/08/28/fed-chair-kevin-warsh-says-inflation-still-too-high-in-first-jackson-hole-speech/" target="_blank">Forbes — Fed Chair Warsh Says Inflation Still Too High (First Jackson Hole Speech)</a></li>
+      <li><a href="https://www.npr.org/2026/08/28/nx-s1-5947903/federal-reserve-inflation-jackson-hole-interest-rates" target="_blank">NPR — Federal Reserve Inflation & Jackson Hole Interest Rates</a></li>
+      <li><a href="https://vittarthi.com/markets/us" target="_blank">Vittarthi — US Market Close Aug 28</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議<br>生成時間：2026-08-29</footer>
+</div>
+</body>
+</html>
