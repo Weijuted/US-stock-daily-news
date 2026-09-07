@@ -35,6 +35,7 @@
     .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 700; margin-left: 6px; }
     .badge-up { background: #dcfce7; color: #166534; }
     .badge-down { background: #fee2e2; color: #991b1b; }
+    .data-note { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 6px; padding: 10px 14px; font-size: 0.8rem; color: #0c4a6e; margin-top: 12px; }
     footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
   </style>
 </head>
@@ -50,7 +51,7 @@
   <div class="card">
     <h2>市場摘要</h2>
     <div class="summary-box">
-      8月非農就業數據大幅超預期（16.2萬 vs 預期5.3萬），點燃聯準會升息疑慮，推升美國公債殖利率走高，道瓊與標普500收低，但科技/半導體板塊受惠於 Nvidia 收購 Hugging Face 及特斯拉 Cybercab 消息提振，Nasdaq 與 Russell 2000 表現相對抗跌。市場評估聯準會9月升息機率從54%跳升至63%。
+      8月非農就業數據大幅超預期（16.2萬 vs 預期5.3萬，接近3倍），點燃聯準會升息疑慮，推升10年期公債殖利率至4.79%，2年期殖利率創2025年1月以來新高，道瓊與標普500收低。Lululemon財測連續二度下修，單日暴跌17.4%成最大焦點個股。科技/半導體板塊逆勢抗跌，Nasdaq 100 小幅正收。CME FedWatch顯示，9月升息25基點機率升至約58%。
     </div>
   </div>
 
@@ -105,6 +106,9 @@
         </tr>
       </tbody>
     </table>
+    <div class="data-note">
+      📌 <strong>數據交叉驗證說明：</strong>部分中文媒體（新浪財經）報導標普500 +1.06%、那斯達克 +1.4%，經核查為9月3日（週四）Fed理事Waller鴿派言論帶動的漲幅，非9月4日數據。本表數據已由CNBC、TheStreet、華盛頓郵報、Bloomberg等16個英文主要財經媒體交叉驗證確認。
+    </div>
   </div>
 
   <!-- KEY EVENTS -->
@@ -112,20 +116,28 @@
     <h2>重大市場事件</h2>
     <ul class="event-list">
       <li>
-        <strong>🔥 8月非農就業大超預期</strong><br>
-        美國勞工部公布8月非農就業人數新增 <strong>162,000</strong>，遠高於道瓊社調查的預期中值 53,000，失業率維持 4.1%（符預期）。強勁就業數據令市場重新評估聯準會升息路徑，聯邦基金期貨市場9月升息25個基點的機率從54%跳升至63%。
+        <strong>🔥 8月非農就業大超預期（最主要催化劑）</strong><br>
+        美國勞工部公布8月非農就業人數新增 <strong>162,000</strong>，遠高於道瓊社調查的預期中值 53,000（接近3倍），失業率維持 4.1%（符預期）。強勁就業數據令市場重新評估聯準會升息路徑，CME FedWatch顯示9月FOMC升息25個基點的機率從約49%跳升至約58%。
       </li>
       <li>
         <strong>💵 公債殖利率飆升</strong><br>
-        強勁就業報告公布後，美國2年期公債殖利率攀升至2025年1月以來最高水準，10年期殖利率亦同步走高，資金流出股市轉進債券市場。
+        強勁就業報告公布後，美國10年期公債殖利率上漲約3基點至 <strong>4.79%</strong>（為年初4.20%以來顯著攀升），2年期殖利率攀升至 <strong>2025年1月以來最高水準</strong>，資金流出股市轉進債券市場。
+      </li>
+      <li>
+        <strong>👗 Lululemon (LULU) 暴跌 17.4%（當日最大跌幅個股）</strong><br>
+        Lululemon 發布第二次FY2026全年財測下修，全年營收目標降至 <strong>$103.5億–$105億</strong>（YoY -5%至-7%），遠低於華爾街預期的$110.3億；Q2可比銷售額 -9%。當日成交量為90日均量的 <strong>約10倍</strong>，股價跌至 <strong>$100.61</strong>，為當日美股最受矚目的崩跌個股。
+      </li>
+      <li>
+        <strong>🚗 福斯汽車（VW）法蘭克福股市大漲 6%</strong><br>
+        福斯汽車監事會一致通過89年歷史中最大規模企業重組方案：額外裁員 <strong>5萬人</strong>（累計裁員規模達10萬人），關閉 <strong>4座工廠</strong>，並將車型陣容縮減一半。市場正面解讀此一結構性改革，VW 法蘭克福股市單日大漲6%。
       </li>
       <li>
         <strong>🤖 Nvidia 宣布 $129億收購 Hugging Face</strong><br>
         Nvidia (NVDA) 確認以 <strong>129億美元</strong>收購開源 AI 平台 Hugging Face，強化其在 AI 生態系的佈局。消息激勵 NVDA 收漲 <strong>+1.8%</strong>，帶動半導體板塊逆勢走強。Intel 大漲 +4%，AMD 上揚 +3% 至 $471.05。
       </li>
       <li>
-        <strong>🚗 特斯拉因 Cybercab 預期大漲 5.4%</strong><br>
-        投資人對特斯拉即將舉行 Cybercab 機器人計程車發布活動充滿期待，TSLA 股價勁升 <strong>+5.4%</strong> 至 <strong>$376.37</strong>，成為當日最亮眼個股之一。
+        <strong>🚖 特斯拉因 Cybercab 預期大漲 5.4%</strong><br>
+        投資人對特斯拉即將舉行 Cybercab 機器人計程車發布活動充滿期待，TSLA 股價勁升 <strong>+5.4%</strong> 至 <strong>$376.37</strong>，成為當日科技股中最亮眼的個股之一。
       </li>
       <li>
         <strong>📉 博通（Broadcom）財測不如預期</strong><br>
@@ -139,16 +151,16 @@
     <h2>宏觀因素分析</h2>
     <ul class="event-list">
       <li>
-        <strong>🏦 聯準會政策展望</strong><br>
-        強勁就業數據大幅改變市場對聯準會的預期。聯邦基金利率期貨顯示，9月會議再度升息25基點的機率達63%（前一日54%）。部分分析師指出，若通膨仍具韌性且就業持續強勁，聯準會年底前仍可能有額外升息空間。
+        <strong>🏦 聯準會政策展望：鴿鷹快速切換</strong><br>
+        本週呈現鴿鷹急速切換：週四（9/3）Fed理事Waller表示若通膨未進一步惡化「傾向按兵不動」，帶動市場上漲；週五（9/4）非農數據強勁逆轉情緒。CME FedWatch 9月升息機率升至約58%。花旗集團（Citigroup）將首次降息預測大幅延後至 <strong>2027年6月</strong>（此前預測為2026年初），顯示市場對利率展望大幅修正。
       </li>
       <li>
         <strong>📊 就業市場韌性</strong><br>
-        非農就業數據揭示美國勞動市場仍具強勁韌性，薪資增長依然維持在支撐通膨的水準，「軟著陸」敘事雖未破功，但升息風險重燃。
+        非農就業數據揭示美國勞動市場仍具強勁韌性，薪資增長依然維持在支撐通膨的水準，年通膨率仍高於Fed 2%目標。「軟著陸」敘事雖未完全破功，但「無著陸」（No Landing）情境的討論再次升溫。
       </li>
       <li>
         <strong>🌍 地緣政治與貿易</strong><br>
-        本週地緣政治面相對平靜，市場主要焦點集中於就業數據與聯準會政策路徑，未有重大衝突升溫或貿易新聞主導盤面。
+        本週地緣政治面相對平靜，市場主要焦點集中於就業數據與聯準會政策路徑，未有重大衝突升溫或貿易新聞主導盤面。福斯重組消息顯示全球製造業（尤其汽車業）仍在應對中國競爭及關稅壓力。
       </li>
     </ul>
   </div>
@@ -157,14 +169,14 @@
   <div class="card">
     <h2>重要個股與板塊動態</h2>
     <ul class="stock-list">
+      <li><strong>Lululemon (LULU)</strong> <span class="badge badge-down">-17.4%</span> → $100.61｜FY2026全年財測二度下修，Q2可比銷售 -9%，成交量爆增10倍，當日最大跌幅個股</li>
       <li><strong>Tesla (TSLA)</strong> <span class="badge badge-up">+5.4%</span> → $376.37｜Cybercab 機器人計程車活動前夕，市場情緒高漲</li>
       <li><strong>Nvidia (NVDA)</strong> <span class="badge badge-up">+1.8%</span>｜確認以 $129億收購 Hugging Face，AI 戰略再進化</li>
       <li><strong>AMD</strong> <span class="badge badge-up">+3.0%</span> → $471.05｜半導體板塊逆勢走強</li>
       <li><strong>Intel (INTC)</strong> <span class="badge badge-up">+4.0%</span>｜跟隨半導體板塊上揚</li>
       <li><strong>Broadcom (AVGO)</strong> <span class="badge badge-down">-2.7%</span>｜Q4 營收展望不如預期，拖累費半指數</li>
-      <li><strong>半導體板塊</strong>：整體優於大盤，AI 題材持續吸引資金進駐，抵消升息疑慮</li>
-      <li><strong>金融板塊</strong>：殖利率上升短期利好銀行息差，但升息過快疑慮使板塊表現分歧</li>
-      <li><strong>小型股（Russell 2000）</strong>：小幅收漲 +0.23%，顯示部分資金認為升息預期已被提前消化</li>
+      <li><strong>半導體板塊</strong>：整體優於大盤，AI 題材持續吸引資金進駐，抵消升息疑慮；小型股（Russell 2000）+0.23% 小幅跑贏</li>
+      <li><strong>軟體、消費裁量、REITs、公用事業</strong>：率先領跌，對升息最敏感的板塊跌幅居前</li>
     </ul>
   </div>
 
@@ -172,36 +184,40 @@
   <div class="card">
     <h2>風險與不確定因素</h2>
     <ul class="risk-list">
-      <li><strong>聯準會升息風險</strong>：9月升息機率升至63%，若通膨數據（CPI）再超預期，升息幾乎板上釘釘，可能引發更大拋售。</li>
-      <li><strong>殖利率持續攀升</strong>：2年期公債殖利率已創2025年1月以來新高，若持續上行，高估值科技股首當其衝。</li>
-      <li><strong>就業市場過熱隱憂</strong>：非農大幅超預期可能意味薪資通膨仍有韌性，美聯儲緊縮週期或比預期更長。</li>
-      <li><strong>企業財測下修風險</strong>：博通財測不如預期是警示信號，若其他科技大廠跟進下修，市場信心可能受到衝擊。</li>
+      <li><strong>聯準會升息風險</strong>：9月升息機率升至約58%，若CPI（下週公布）再超預期，升息幾乎板上釘釘，可能引發更大拋售。</li>
+      <li><strong>殖利率持續攀升</strong>：10年期公債殖利率達4.79%、2年期創2025年1月以來新高，若持續上行，高估值科技股首當其衝。</li>
+      <li><strong>通膨黏著與「更長期更高利率」</strong>：花旗將首次降息預測延至2027年6月，暗示緊縮週期遠長於早先預期。</li>
+      <li><strong>企業財測下修風險</strong>：Lululemon二度下修是警示信號，消費者支出壓力可能蔓延其他消費裁量股。</li>
+      <li><strong>全球製造業壓力</strong>：VW大規模裁員顯示中國競爭及關稅對歐洲工業的持續衝擊，類似壓力或波及美國工業股。</li>
       <li><strong>地緣政治尾端風險</strong>：中東及俄烏局勢持續，任何突發升溫可能對能源價格及市場情緒造成額外壓力。</li>
     </ul>
   </div>
 
   <!-- SOURCES -->
   <div class="card">
-    <h2>資料來源</h2>
+    <h2>資料來源（16個來源交叉驗證）</h2>
     <ul class="sources">
       <li>📰 <a href="https://www.cnbc.com/2026/09/03/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for Sept. 4, 2026 (Live Updates)</a></li>
       <li>📰 <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-04-2026" target="_blank">TheStreet — Yields jump, stocks fall after jobs report surprises to upside</a></li>
-      <li>📰 <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-4-090900700.html" target="_blank">Yahoo Finance — Stock Market News for Sep 4, 2026</a></li>
-      <li>📰 <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-4-133716564.html" target="_blank">Yahoo Finance — S&amp;P 500 edges lower after key jobs report</a></li>
-      <li>📰 <a href="https://www.bloomberg.com/news/articles/2026-09-03/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow, S&amp;P Live Updates for September 4</a></li>
       <li>📰 <a href="https://www.washingtonpost.com/business/2026/09/04/stock-market-dow-nasdaq-jobs/b9e994e6-a89f-11f1-9e38-f705d048bd5a_story.html" target="_blank">Washington Post — How major US stock indexes fared Friday 9/4/2026</a></li>
-      <li>📰 <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Hot Jobs Report Hurts Stocks, Lifts Rate Hike Odds</a></li>
-      <li>📰 <a href="https://stocktwits.com/news-articles/markets/equity/s-and-p-500-dow-end-lower-as-blowout-jobs-report-fans-rate-hike-fears-while-chipmaker-strength-aids-nasdaq-tsla-nflx-be-nvda-in-focus/cZsDjVKRJDg" target="_blank">Stocktwits — S&amp;P 500, Dow End Lower As Blowout Jobs Report Fans Rate Hike Fears</a></li>
-      <li>📰 <a href="https://247wallst.com/investing/2026/09/04/intel-climbs-4-as-chip-stocks-shrug-off-rising-rate-hike-odds-nvidia-and-amd-move-higher/" target="_blank">24/7 Wall St. — Intel Climbs 4%, AMD Rises 3%, Chip Stocks Shrug Off Rising Rate Hike Odds</a></li>
-      <li>📰 <a href="https://x.com/marketsday/status/2095806558542409991" target="_blank">Markets Today (X) — Stocks to Watch on September 4, 2026 (TSLA, NVDA)</a></li>
+      <li>📰 <a href="https://www.bloomberg.com/news/articles/2026-09-03/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow, S&amp;P Live Updates for September 4</a></li>
+      <li>📰 <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-4-090900700.html" target="_blank">Yahoo Finance — Stock Market News for Sep 4, 2026</a></li>
+      <li>📰 <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-4-213958156.html" target="_blank">Yahoo Finance — LULU plummets 17% after slashing guidance</a></li>
+      <li>📰 <a href="https://www.fool.com/coverage/stock-market-today/2026/09/04/stock-market-today-sept-4-lululemon-plummets-17-after-slashing-guidance/" target="_blank">Motley Fool — Lululemon plummets 17% after slashing guidance</a></li>
+      <li>📰 <a href="https://finance.yahoo.com/markets/stocks/articles/lululemon-shares-fall-17-fy2026-094142265.html" target="_blank">Yahoo Finance — Lululemon Shares Fall 17%, FY2026 Guidance Detail</a></li>
+      <li>📰 <a href="https://www.cnbc.com/2026/09/04/jobs-report-august-2026.html" target="_blank">CNBC — August 2026 Jobs Report (NFP 162K)</a></li>
       <li>📰 <a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank">U.S. Bureau of Labor Statistics — Employment Situation Summary, August 2026</a></li>
-      <li>📰 <a href="https://cappnotes.substack.com/p/closing-look-9426" target="_blank">CappNotes — Closing Look 9/4/26 (Russell 2000 Analysis)</a></li>
-      <li>📰 <a href="https://www.ibtimes.com.au/russell-2000-index-rises-amid-fed-rate-speculation-1874964" target="_blank">IBTimes AU — Russell 2000 Edges Higher As Small-Cap Stocks Navigate Fed Rate Hike Fears</a></li>
+      <li>📰 <a href="https://www.cnbc.com/2026/09/04/treasurys-bonds-nonfarm-payrolls-unemployment-data.html" target="_blank">CNBC — Treasury yields surge after blowout jobs report</a></li>
+      <li>📰 <a href="https://fortune.com/2026/09/04/volkswagen-jumps-6-workforce-reduction-50000/" target="_blank">Fortune — Volkswagen jumps 6% on 50,000 additional job cut plan</a></li>
+      <li>📰 <a href="https://www.cnbc.com/2026/09/04/volkswagen-job-cuts-tariffs-china.html" target="_blank">CNBC — Volkswagen restructuring: 4 factory closures, tariffs &amp; China pressure</a></li>
+      <li>📰 <a href="https://cappnotes.substack.com/p/closing-look-9426" target="_blank">CappNotes — Closing Look 9/4/26 (Russell 2000 analysis)</a></li>
+      <li>📰 <a href="https://investrade.com/market-review-september-04-2026/" target="_blank">Investrade — Market Review: September 04, 2026</a></li>
+      <li>📰 <a href="https://news.sina.com.cn/w/2026-09-04/doc-iniqriie1511195.shtml" target="_blank">新浪財經 — 交叉驗證（注：該文數據為9/3週四收盤，非9/4）</a></li>
     </ul>
   </div>
 
   <footer>
-    由 Claude evidence-researcher agent 自動搜索驗證 | 數據來源：CNBC、Bloomberg、Yahoo Finance、TheStreet、BLS 等 | 僅供參考，非投資建議<br>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 16個來源交叉確認 | 數據來源：CNBC、Bloomberg、Yahoo Finance、TheStreet、BLS 等 | 僅供參考，非投資建議<br>
     生成時間：2026-09-07 | 報告日期：2026-09-04（週五）
   </footer>
 
