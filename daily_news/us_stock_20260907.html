@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-07</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 16px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #d97706; font-weight: 600; }
+    .holiday-banner { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px; font-size: 0.93rem; color: #92400e; }
+    .holiday-banner strong { color: #78350f; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.91rem; line-height: 1.6; }
+    .event-list li .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; background: #0f3460; color: #fff; border-radius: 3px; padding: 1px 7px; margin-bottom: 5px; letter-spacing: 0.03em; }
+    .event-list li .tag.macro { background: #7c3aed; }
+    .event-list li .tag.ai { background: #0891b2; }
+    .event-list li .tag.energy { background: #b45309; }
+    .event-list li .tag.geo { background: #b91c1c; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .stock-table td:first-child { font-weight: 600; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; }
+    .calendar-table td { font-size: 0.89rem; }
+    .calendar-table td:first-child { font-weight: 600; color: #0f3460; white-space: nowrap; }
+    .badge { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 2px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
+    .badge-red { background: #fee2e2; color: #b91c1c; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-09-07（勞工節） | 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- HOLIDAY NOTICE + INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤 <span class="badge badge-red">美股今日休市</span></h2>
+    <div class="holiday-banner">
+      ⚠️ <strong>2026年9月7日（星期一）為美國勞工節（Labor Day）</strong>，NYSE 及 Nasdaq 全天休市，債券市場同樣關閉。以下數據為最近一個交易日 <strong>2026年9月4日（週五）</strong> 收盤表現。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均（DJIA）</td>
+          <td>53,414.25</td>
+          <td class="down">▼ −271.86</td>
+          <td class="down">−0.51%</td>
+          <td>強勁就業數據引發升息擔憂</td>
+        </tr>
+        <tr>
+          <td>標普500（S&amp;P 500）</td>
+          <td>7,718.60</td>
+          <td class="down">▼</td>
+          <td class="down">−0.38%</td>
+          <td>科技股壓低指數</td>
+        </tr>
+        <tr>
+          <td>納斯達克綜合（Nasdaq）</td>
+          <td>26,506.99</td>
+          <td class="down">▼</td>
+          <td class="down">−0.29%</td>
+          <td>跌幅三大指數中最小</td>
+        </tr>
+        <tr>
+          <td>羅素2000（Russell 2000）</td>
+          <td>—</td>
+          <td class="up">▲</td>
+          <td class="up">約 +0.20%</td>
+          <td>小型股相對抗跌，表現優於大盤</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#9ca3af;margin-top:12px;">* 資料日期：2026年9月4日（週五）收盤。下一交易日為2026年9月8日（週二）09:30 ET 開盤。</p>
+  </div>
+
+  <!-- GLOBAL MARKETS (SEPT 7) -->
+  <div class="card">
+    <h2>全球市場動態（2026-09-07）</h2>
+    <p style="font-size:0.88rem;color:#6b7280;margin-bottom:12px;">美股休市期間，全球其他市場正常交易。</p>
+    <table>
+      <thead>
+        <tr><th>市場</th><th>指數/品種</th><th>表現</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>日本</td><td>日經225期貨</td><td class="up">~66,085（前收 65,020）</td></tr>
+        <tr><td>南韓</td><td>KOSPI</td><td class="up">+4.61%（大幅修復反彈）</td></tr>
+        <tr><td>中國</td><td>滬深300 CSI 300</td><td class="up">+0.59%</td></tr>
+        <tr><td>香港</td><td>恆生指數期貨</td><td class="neutral">~25,667（前收 25,650）</td></tr>
+        <tr><td>法國</td><td>CAC 40</td><td class="up">+0.33%</td></tr>
+        <tr><td>義大利</td><td>FTSE MIB</td><td class="up">+0.25%</td></tr>
+        <tr><td>英國</td><td>FTSE 100</td><td class="down">−0.10%</td></tr>
+        <tr><td>德國</td><td>DAX</td><td class="down">−0.25%</td></tr>
+        <tr><td>原油（WTI）</td><td>現貨</td><td class="up">$92.64/桶，+1.27%（中東局勢驅動）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <div class="tag macro">宏觀 / 就業</div>
+        <strong>8月非農就業報告（9月4日發布）：</strong>新增就業 162,000 人，大幅超越市場預期的 55,000 人。失業率維持 4.1%。強勁就業數據重燃聯準會 9月升息預期，為美股假期前收盤下跌的主要原因。
+      </li>
+      <li>
+        <div class="tag ai">AI / 科技</div>
+        <strong>OpenAI 發布 GPT-6 Astra（重大 AI 催化劑）：</strong>全新一代大型語言模型正式推出，底層硬件完全基於 Nvidia 架構。提振全球半導體供應鏈，Nvidia（NVDA）日漲 +0.63% 至約 $229.9，並宣布每股 $0.25 股息。Micron、Sandisk 等 HBM/NAND 廠商出現技術性買入訊號。
+      </li>
+      <li>
+        <div class="tag ai">AI / IPO</div>
+        <strong>SB Energy（SoftBank）提交 IPO 文件：</strong>SoftBank 旗下 AI 能源子公司 SB Energy 於 9月1日向 SEC 提交申請，計劃在 Nasdaq 掛牌（代號：SBE），目標募資 $50–70 億。Nvidia 承諾投資 $30 億，並為 OpenAI 俄亥俄州數據中心（8.0 GW-IT 容量）提供 $1,050 億融資，OpenAI 簽署 20 年租約。
+      </li>
+      <li>
+        <div class="tag energy">核能立法</div>
+        <strong>美國國會核能法案全票通過委員會：</strong>六項核能法案在眾議院能源和商業委員會獲跨黨派全票支持，加速下一代核反應堆監管審批流程。受益股：NuScale Power（SMR）、Oklo（OKLO）、GE Vernova（GEV）。OKLO 此前曾因核管理委員會批准 Aurora 反應堆單日大漲 +12%。
+      </li>
+      <li>
+        <div class="tag geo">地緣政治</div>
+        <strong>中東衝突升溫，油價漲至7週高點：</strong>伊朗相關武裝衝突重啟，有報導顯示對沙特阿美能源基礎設施的打擊，WTI 原油在假期前一週大漲約 10%，至 $92.64/桶。霍爾木茲海峽供應擔憂支撐能源板塊，但同步加劇通膨壓力，使聯準會處境更為複雜。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素詳析</h2>
+    <h3>聯準會（Fed）動態</h3>
+    <table>
+      <tbody>
+        <tr><td style="width:40%;font-weight:600;">當前聯邦基金利率</td><td>3.50% – 3.75%（連續5次會議維持不變）</td></tr>
+        <tr><td style="font-weight:600;">7月FOMC決議</td><td>維持利率不變，但 3 位委員異議，主張升息 25bp</td></tr>
+        <tr><td style="font-weight:600;">下次FOMC日期</td><td>2026年9月15–16日</td></tr>
+        <tr><td style="font-weight:600;">市場升息概率</td><td><strong style="color:#dc2626;">約 58–65%</strong> 機率升息 25bp（強勁就業數據後上升）</td></tr>
+        <tr><td style="font-weight:600;">7月CPI</td><td>同比 3.4%（仍高於 2% 目標）</td></tr>
+        <tr><td style="font-weight:600;">8月CPI（預告）</td><td>預計 <strong>9月11日</strong> 發布，為 9月FOMC 最後重要數據</td></tr>
+      </tbody>
+    </table>
+
+    <h3>關鍵後續日程</h3>
+    <table class="calendar-table">
+      <thead>
+        <tr><th>日期</th><th>事件</th><th>重要性</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>9月8日（週二）</td><td>美股市場恢復正常交易（09:30 ET）</td><td>★★★★</td></tr>
+        <tr><td>9月11日（週四）</td><td>8月CPI 通膨數據發布</td><td>★★★★★</td></tr>
+        <tr><td>9月15–16日</td><td>FOMC 利率決議（升息概率約 60%）</td><td>★★★★★</td></tr>
+        <tr><td>近期</td><td>SB Energy（SBE）IPO 正式掛牌</td><td>★★★</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <table class="stock-table">
+      <thead>
+        <tr><th>個股 / 板塊</th><th>代號</th><th>動態說明</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nvidia</td>
+          <td>NVDA</td>
+          <td><span class="up">+0.63%</span>，約 $229.9；GPT-6 Astra 使用其硬件全力驅動；宣布 $0.25 股息</td>
+        </tr>
+        <tr>
+          <td>Oklo</td>
+          <td>OKLO</td>
+          <td>核能立法 + Meta 1.2GW 俄亥俄微型反應堆合約帶動強勁表現；NRC Aurora 批准後曾單日 +12%</td>
+        </tr>
+        <tr>
+          <td>NuScale Power</td>
+          <td>SMR</td>
+          <td>田納西流域管理局 6GW 合約在身；AI 電力供應主題熱門標的</td>
+        </tr>
+        <tr>
+          <td>GE Vernova</td>
+          <td>GEV</td>
+          <td>AI 電力基礎設施受益股，核能立法利好</td>
+        </tr>
+        <tr>
+          <td>Micron Technology</td>
+          <td>MU</td>
+          <td>GPT-6 Astra 帶動 HBM 需求預期，技術買入訊號出現</td>
+        </tr>
+        <tr>
+          <td>Sandisk</td>
+          <td>SNDK</td>
+          <td>NAND 需求受 AI 基礎設施擴張提振，技術面轉強</td>
+        </tr>
+        <tr>
+          <td>能源板塊</td>
+          <td>XLE</td>
+          <td>中東衝突 + 油價漲至 $92.64，油服股跟漲，相對大盤強勢</td>
+        </tr>
+        <tr>
+          <td>公用事業 / 房地產</td>
+          <td>XLU / XLRE</td>
+          <td>受強勁就業數據和升息預期壓制，利率敏感板塊承壓</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會升息風險：</strong>8月非農超預期，市場已定價 58–65% 概率升息 25bp；若 9月11日 CPI 數據再次偏高，升息幾乎已成定局，將對估值偏高的科技和成長股造成壓力。</li>
+      <li><strong>中東地緣政治：</strong>伊朗相關衝突持續，若霍爾木茲海峽遭封鎖或進一步升溫，油價可能突破 $100/桶，加劇全球通膨並打壓消費信心。</li>
+      <li><strong>AI 估值泡沫疑慮：</strong>GPT-6 Astra 帶動 Nvidia 等 AI 股持續上漲，但市場對 AI 資本支出回報的疑慮仍未消散，存在估值修正風險。</li>
+      <li><strong>勞工節後流動性驟增：</strong>市場重開後交易量可能出現異常波動，尤其是期貨滾倉和機構重新入場可能加劇短期震盪。</li>
+      <li><strong>ECB 利率決定：</strong>本週歐洲央行利率會議，市場已完全定價升息 25bp，若意外暫停或態度轉鴿，可能影響全球資金流向。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.benzinga.com/markets/equities/26/09/61646501/is-stock-market-open-today-labor-day-2026-september-7" target="_blank">Benzinga — Labor Day 2026 市場休市確認</a></li>
+      <li><a href="https://sundayguardianlive.com/business/dow-jones-today-is-the-us-stock-market-open-or-closed-on-labor-day-september-7-2026-check-dow-jones-sp-500-nasdaq-wall-street-trading-schedule-279373/" target="_blank">Sunday Guardian Live — 勞工節休市/重開時間表</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262154011-" target="_blank">TradingKey — 美股全天休市說明</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-4-133716564.html" target="_blank">Yahoo Finance — Sept 4, 2026 股市當日動態</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-04-2026" target="_blank">TheStreet — 殖利率飆升、股市因就業報告下跌（9月4日）</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/03/stock-market-today-live-updates.html" target="_blank">CNBC — 道瓊因強勁就業數據大跌（9月4日）</a></li>
+      <li><a href="https://www.fool.com/investing/2026/09/04/the-nasdaq-sp-500-and-dow-all-fell-slightly-friday/" target="_blank">Motley Fool — 那斯達克、S&amp;P 500 及道瓊微跌（9月4日週五）</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm" target="_blank">美聯準 — 2026年7月FOMC會議紀錄</a></li>
+      <li><a href="https://www.chase.com/personal/investments/learning-and-insights/article/september-2026-rate-hike-now-expected-amid-energy-shocks" target="_blank">Chase — 能源衝擊下，9月升息預期升溫</a></li>
+      <li><a href="https://coingape.com/fomc-meeting-sept-2026-date-schedule-expectations-and-how-to-watch/" target="_blank">CoinGape — 2026年9月FOMC會議日程與預期</a></li>
+      <li><a href="https://www.forbes.com/sites/billconerly/2026/08/12/why-the-fed-will-raise-rates-in-september-despite-cooler-cpi/" target="_blank">Forbes — 聯準會為何可能在9月升息</a></li>
+      <li><a href="https://us.plus500.com/en/newsandmarketinsights/how-the-2026-middle-east-conflict-moved-crude-oil-prices" target="_blank">Plus500 — 2026中東衝突對原油價格的影響</a></li>
+      <li><a href="https://www.cnbcafrica.com/2026/oil-prices-fall-more-than-5-as-middle-east-tensions-ebb-on-diplomatic-efforts" target="_blank">CNBC Africa — 外交努力使中東緊張情勢緩和，油價走低</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/01/sb-energy-ipo-softbank-open-ai-nvidia.html" target="_blank">CNBC — SoftBank SB Energy IPO：Nvidia 與 OpenAI 支持</a></li>
+      <li><a href="https://finance.yahoo.com/technology/ai/articles/softbank-8217-sb-energy-ipo-145941881.html" target="_blank">Yahoo Finance — SB Energy IPO 申請 8.8 GW AI 電力</a></li>
+      <li><a href="https://en.bloomingbit.io/feed/news/119786" target="_blank">BloomingBit — Nvidia、OpenAI GPT-6 Astra 半導體供應鏈</a></li>
+      <li><a href="https://tradersunion.com/news/stocks/show/3253557-nvidia-up-0-63percent-today-to/" target="_blank">TradersUnion — Nvidia 今日上漲 +0.63% 至 GPT-6 相關高點</a></li>
+      <li><a href="https://www.foreignpolicyjournal.com/2026/09/03/three-nuclear-power-stocks-positioned-to-ride-ai-energy-demand-in-september-2026-nyse-smr-nyse-oklo-nyse-gev/" target="_blank">Foreign Policy Journal — 核能三雄：SMR、OKLO、GEV（2026年9月）</a></li>
+      <li><a href="https://www.fool.com/investing/2026/09/05/the-nuclear-energy-boom-where-the-industry-really/" target="_blank">Motley Fool — 核能榮景：AI 電力需求與產業現況</a></li>
+      <li><a href="https://247wallst.com/investing/2026/05/06/oklo-advances-12-on-nrc-aurora-approval-is-this-the-ai-infrastructure-nuclear-play/" target="_blank">247WallSt — Oklo 因 NRC Aurora 批准大漲 +12%</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料以 2026-09-04 收盤為基準（09-07 勞工節休市）| 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
