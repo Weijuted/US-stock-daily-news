@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-09</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 4px solid #0f3460; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-item { padding: 12px 16px; margin-bottom: 12px; background: #f8faff; border-left: 4px solid #3b82f6; border-radius: 6px; }
+    .event-item h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; color: #1e40af; }
+    .event-item p { font-size: 0.88rem; line-height: 1.6; color: #374151; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } }
+    .macro-card { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #dce3f5; }
+    .macro-card h3 { font-size: 0.88rem; font-weight: 700; color: #0f3460; margin-bottom: 8px; }
+    .macro-card p { font-size: 0.85rem; line-height: 1.6; color: #374151; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .stock-table td:first-child { font-weight: 700; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px dotted #e5e7eb; }
+    .sources li:last-child { border-bottom: none; }
+    .badge { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 99px; font-weight: 600; margin-left: 8px; }
+    .badge-down { background: #fee2e2; color: #dc2626; }
+    .badge-up { background: #dcfce7; color: #16a34a; }
+    .summary-box { background: linear-gradient(135deg, #eff6ff, #f0fdf4); border: 1px solid #bfdbfe; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.7; color: #1e3a5f; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 9 月 9 日（星期三）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary-box">
+    📊 <strong>今日摘要：</strong>美股三大指數連續第三日收跌。油價突破每桶 $101 美元、10 年期公債殖利率升至 4.85%（19 個月高點），加上伊朗軍事衝突升溫，推升市場風險規避情緒。
+    Russell 2000 小型股跌幅最深 (-1.30%)，顯示市場對「利率更高更久」的敏感度。Meta 因推出 AI 助理 Muse 逆勢大漲，Apple 發布 $2,000 折疊機 iPhone Duo，股價小跌 -0.28%。
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>52,380.66</td>
+          <td class="down">▼ 405.41</td>
+          <td class="down">-0.77%</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,636.36</td>
+          <td class="down">▼ 37.00</td>
+          <td class="down">-0.48%</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>26,253.34</td>
+          <td class="down">▼ 169.00</td>
+          <td class="down">-0.64%</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>2,921.50</td>
+          <td class="down">▼ 38.00</td>
+          <td class="down">-1.30%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem;color:#6b7280;margin-top:10px;">＊ 連續第三日收黑；VIX 恐慌指數上升 4.58% 至 16.44</p>
+  </div>
+
+  <!-- SECTOR TABLE -->
+  <div class="card">
+    <h2>S&amp;P 500 板塊表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>板塊</th>
+          <th>當日漲跌</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>能源 (Energy)</td>
+          <td class="up">+0.63%</td>
+          <td>油價飆升受益</td>
+        </tr>
+        <tr>
+          <td>科技 (Technology)</td>
+          <td class="up">+0.29%</td>
+          <td>Meta、Marvell、Dell 帶動</td>
+        </tr>
+        <tr>
+          <td>通訊服務 (Communication Services)</td>
+          <td class="neutral">-0.04%</td>
+          <td>接近持平</td>
+        </tr>
+        <tr>
+          <td>工業 (Industrials)</td>
+          <td class="down">-1.01%</td>
+          <td>貿易戰關稅壓力</td>
+        </tr>
+        <tr>
+          <td>非必需消費品 (Consumer Discretionary)</td>
+          <td class="down">-1.05%</td>
+          <td>消費信心疲軟</td>
+        </tr>
+        <tr>
+          <td>必需消費品 (Consumer Staples)</td>
+          <td class="down">-1.11%</td>
+          <td>防禦型輪動不明顯</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem;color:#6b7280;margin-top:10px;">＊ 11 個板塊中僅 2 個收漲，呈現典型風險規避格局</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+
+    <div class="event-item">
+      <h3>📱 Apple 發布首款折疊式 iPhone — iPhone Duo（$2,000）</h3>
+      <p>Apple 在年度硬體發表會正式推出 <strong>iPhone Duo</strong>，售價 <strong>$2,000 美元</strong>，內螢幕 7.6 吋、外螢幕 5.4 吋，搭載全新 A20 Pro 晶片。這是 Apple 自 iPhone 問世以來最重大的外型重新設計。IDC 預測首年可出貨 1,000 萬台。儘管如此，<strong>AAPL 股價小跌 -0.28%（約 $315.34）</strong>，市場出現「買預期、賣事實」（sell the news）效應。</p>
+    </div>
+
+    <div class="event-item">
+      <h3>🤖 Meta 推出 AI 助理 Muse，股價大漲</h3>
+      <p>Meta Platforms 宣布推出全新 AI 助理 <strong>Muse</strong>，市場反應熱烈。<strong>META 開盤大漲 +5.63%</strong>，盤中高點 $651.79，收盤仍維持約 +2% 漲幅（約 $645.92），為當日大盤中罕見亮點。</p>
+    </div>
+
+    <div class="event-item">
+      <h3>💻 Dell 創歷史新高，Marvell 上調營收目標</h3>
+      <p><strong>Dell Technologies (DELL)</strong> 股價創歷史新高，Evercore 分析師維持看多，目標價上看 <strong>$1,000/股</strong>，認為 Dell 在 AI 基礎設施採購浪潮中持續受益。<strong>Marvell Technology (MRVL)</strong> 亦因上調營收目標而獲市場正向回應。</p>
+    </div>
+
+    <div class="event-item" style="border-left-color: #dc2626;">
+      <h3>📉 Alphabet (GOOGL) 下跌 -2.28%</h3>
+      <p>Alphabet 收跌至 $330.65（-2.28%），AI 競爭加劇持續對 Google 估值形成壓力，為科技板塊拖累項。</p>
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀因素分析</h2>
+    <div class="macro-grid">
+      <div class="macro-card">
+        <h3>🏦 聯準會（Fed）動態</h3>
+        <p>Fed 以 <strong>11 比 1</strong> 票決定維持利率不變，目標區間維持於 <strong>3.50%–3.75%</strong>。聲明指出「中東局勢對美國經濟的影響仍不確定」，市場擔憂油價通膨將使 Fed 更難降息。</p>
+      </div>
+      <div class="macro-card">
+        <h3>🛢️ 原油價格飆升</h3>
+        <p><strong>Brent 原油突破 $101/桶</strong>（盤中高峰），為 7 月以來首次突破百元關卡。WTI 原油漲幅達 +3.93%。主因：胡塞武裝攻擊沙烏地阿拉伯能源設施，疊加美伊緊張局勢。</p>
+      </div>
+      <div class="macro-card">
+        <h3>📈 美債殖利率創 19 個月新高</h3>
+        <p>10 年期美國公債殖利率升至約 <strong>4.85%</strong>，創 2024 年 10 月以來最高點。殖利率走高對成長股及小型股估值形成系統性壓力，Russell 2000 跌幅最重。</p>
+      </div>
+      <div class="macro-card">
+        <h3>🌍 美伊軍事衝突與地緣政治</h3>
+        <p>美伊衝突持續至 9 月，胡塞武裝持續攻擊中東能源基礎設施，推升油價、通膨預期及殖利率。此連鎖效應是本日市場承壓的核心來源。</p>
+      </div>
+      <div class="macro-card">
+        <h3>🇨🇦 美加貿易戰關稅</h3>
+        <p>加拿大報復性關稅於勞動節後正式生效，工業及消費品板塊受拖累，市場情緒轉趨保守。</p>
+      </div>
+      <div class="macro-card">
+        <h3>🇪🇺 歐洲央行（ECB）升息預期</h3>
+        <p>市場對 ECB 週四（9/10）升息機率定價接近 100%（至少升 25 個基點），助推全球債市殖利率走高，對美股形成外溢壓力。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INDIVIDUAL STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>股票代號</th>
+          <th>當日表現</th>
+          <th>收盤價（約）</th>
+          <th>事件</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>META</td>
+          <td class="up">+2.1%（開盤 +5.63%）</td>
+          <td>~$645.92</td>
+          <td>推出 AI 助理 Muse</td>
+        </tr>
+        <tr>
+          <td>MRVL</td>
+          <td class="up">上漲</td>
+          <td>—</td>
+          <td>上調營收目標</td>
+        </tr>
+        <tr>
+          <td>DELL</td>
+          <td class="up">上漲（歷史新高）</td>
+          <td>—</td>
+          <td>AI 需求強勁，目標價 $1,000</td>
+        </tr>
+        <tr>
+          <td>AAPL</td>
+          <td class="down">-0.28%</td>
+          <td>~$315.34</td>
+          <td>iPhone Duo 折疊機發布，賣事實效應</td>
+        </tr>
+        <tr>
+          <td>GOOGL</td>
+          <td class="down">-2.28%</td>
+          <td>$330.65</td>
+          <td>AI 競爭壓力持續</td>
+        </tr>
+        <tr>
+          <td>USO（油ETF）</td>
+          <td class="up">大幅走強</td>
+          <td>—</td>
+          <td>原油突破 $100/桶受益</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>⚠️ <strong>油價通膨螺旋：</strong>Brent 突破 $101/桶，若持續走高將使 Fed 更難降息，甚至可能重啟升息討論，衝擊整體股市估值。</li>
+      <li>⚠️ <strong>殖利率持續走高：</strong>10 年期殖利率於 4.85% 的 19 個月高點，對高估值科技股及小型股的壓力尚未完全釋放。</li>
+      <li>⚠️ <strong>美伊軍事衝突升溫：</strong>中東局勢如進一步惡化，可能推升避險需求，造成能源供應中斷及更大的市場波動。</li>
+      <li>⚠️ <strong>美加貿易戰延燒：</strong>報復性關稅影響供應鏈及成本結構，製造業及消費品板塊面臨持續壓力。</li>
+      <li>⚠️ <strong>ECB 升息外溢效應：</strong>全球央行同步偏鷹可能引發跨市場資本重新配置，壓制風險性資產。</li>
+      <li>⚠️ <strong>Apple 折疊機需求不確定性：</strong>iPhone Duo 售價 $2,000 遠超一般消費者接受度，換機週期能否縮短仍待觀察，若出貨不如預期將衝擊蘋果供應鏈。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-wednesday-9-9-2026" target="_blank">WTOP News — How major US stock indexes fared Wednesday 9/9/2026</a></li>
+      <li><a href="https://vistapglobal.com/stock-market-today-sept-9-2026-sp-500-dow-and-nasdaq-fall-as-oil-rallies-rates-rise-and-risk-appetite-fades-dell-ser-soc-uso-vix-rise/" target="_blank">VistaPGlobal — Stock Market Today (Sept. 9, 2026)</a></li>
+      <li><a href="https://247wallst.com/cards/the-dow-shed-627-points-while-the-nasdaq-finished-within-a-r-gspc-market-bell-01m219x3rgtwd54k697hs1gjtq" target="_blank">24/7 Wall St. — S&amp;P 500 Closes Down 0.6% as the Dow Takes the Real Hit</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026" target="_blank">TheStreet — Stock Market Today: Dow, Russell 2000 fall as Brent passes $101/bbl</a></li>
+      <li><a href="https://econcurrents.substack.com/p/09-september-2026-market-close-and" target="_blank">EconCurrents Substack — 09 September 2026 Market Close &amp; Major Financial Headlines</a></li>
+      <li><a href="https://tradingstrategyguides.com/stock-market-recap-september-9-2026-yield-spike-sinks-stocks/" target="_blank">Trading Strategy Guides — Stock Market Recap September 9, 2026: Yield Spike Sinks Stocks</a></li>
+      <li><a href="https://investrade.com/market-review-september-09-2026/" target="_blank">Investrade — Market Review: September 09, 2026</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-apple-unveils-iphone-duo-foldable-and-iphone-18-pro-with-ai-upgrades/" target="_blank">The Motley Fool — Stock Market Today (Sept. 9): Apple Unveils iPhone Duo Foldable</a></li>
+      <li><a href="https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/" target="_blank">Fortune — Apple Unveils $2,000 iPhone Duo, its first foldable smartphone</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-09-09/apple-s-rally-pressures-new-ceo-to-deliver-on-foldable-iphone" target="_blank">Bloomberg — Apple's Rally Pressures New CEO to Deliver on Foldable iPhone</a></li>
+      <li><a href="https://www.tradingkey.com/news/market-movers/262158571-market-movers-meta-20260909" target="_blank">TradingKey — Meta Platforms Inc Stock Opened Up by 5.63% on Sep 9</a></li>
+      <li><a href="https://qz.com/dow-futures-iran-war-canada-tariffs-markets-090826" target="_blank">Quartz — Dow Futures Drop as Iran War, Canada Tariffs Hit Wall Street</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/09/02/us-iran-trump-war-escalation-latest-fed-rate-g20-bessent-yen-.html" target="_blank">CNBC — U.S.-Iran Strikes Send Oil, Yields Surging as Fed Turns Hawkish</a></li>
+      <li><a href="https://gulfnews.com/business/markets/us-federal-reserve-keeps-key-interest-rate-unchanged-amid-iran-us-war-1.500479138" target="_blank">Gulf News — US Federal Reserve Keeps Key Interest Rate Unchanged Amid Iran-US War</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Crude Hits $100, Denting Stocks Before Apple Event</a></li>
+      <li><a href="https://algotradealert.substack.com/p/stock-market-update-wednesday-september-b09" target="_blank">AlgoTradeAlert Substack — Daily Algo Stock Market Update</a></li>
+      <li><a href="https://www.confluenceinvestment.com/daily-comment-sep-8-2026/" target="_blank">Confluence Investment Management — Daily Comment (September 8, 2026)</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議<br>
+    生成時間：2026-09-10 UTC
+  </footer>
+
+</div>
+</body>
+</html>
