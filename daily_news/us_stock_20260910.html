@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-10</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e0e7ff; padding-bottom: 8px; }
+    h3 { font-size: 0.97rem; font-weight: 700; margin: 16px 0 8px; color: #374151; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #6366f1; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+    .sector-up { background: #f0fdf4; border-left: 3px solid #22c55e; padding: 12px 16px; border-radius: 6px; }
+    .sector-down { background: #fff5f5; border-left: 3px solid #ef4444; padding: 12px 16px; border-radius: 6px; }
+    .sector-up h3, .sector-down h3 { margin-top: 0; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .sector-up h3 { color: #16a34a; }
+    .sector-down h3 { color: #dc2626; }
+    .sector-up p, .sector-down p { font-size: 0.9rem; color: #374151; margin-top: 4px; }
+    .stock-list { list-style: none; }
+    .stock-list li { padding: 10px 14px; margin-bottom: 8px; background: #fafafa; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 0.9rem; line-height: 1.6; }
+    .stock-list li strong { color: #0f3460; }
+    .macro-item { padding: 12px 16px; margin-bottom: 10px; background: #fefce8; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .macro-item strong { color: #92400e; }
+    .alert-banner { background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; font-size: 0.9rem; color: #7f1d1d; display: flex; align-items: center; gap: 10px; }
+    .alert-banner .icon { font-size: 1.2rem; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      .sector-grid { grid-template-columns: 1fr; }
+      header { padding: 20px; }
+      .card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-09-10（週四）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <div class="alert-banner">
+    <span class="icon">⚠️</span>
+    <span>四大指數<strong>連跌第四日</strong>，油價破百美元，公債標售失敗引發長端殖利率急升。</span>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>點數變化</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均 (DJIA)</td>
+          <td>52,064.10</td>
+          <td class="down">▼ −316.56</td>
+          <td class="down">−0.60%</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,591.70</td>
+          <td class="down">▼ −44.29</td>
+          <td class="down">−0.58%</td>
+        </tr>
+        <tr>
+          <td>納斯達克綜合 (Nasdaq)</td>
+          <td>26,081.72</td>
+          <td class="down">▼ −171.62</td>
+          <td class="down">−0.65%</td>
+        </tr>
+        <tr>
+          <td>羅素 2000 (Russell 2000)</td>
+          <td>2,890.00</td>
+          <td class="down">▼ −30.28</td>
+          <td class="down">−1.04%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:12px;">※ 小型股羅素2000 跌幅最深，反映市場風險規避情緒升溫。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>🔔 重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🛢️ 原油價格突破百美元大關</strong><br>
+        WTI 原油收盤 $102.48/桶（+6.69%），布蘭特原油收盤 $107.63/桶（+6.34%），盤中一度飆至 $108，創七月以來最高。美伊戰爭地緣政治溢價持續擴大，WTI 自開戰以來累計上漲 +52.9%、年初至今漲幅高達 +78.5%。
+      </li>
+      <li>
+        <strong>📉 30年期美債標售「失敗」</strong><br>
+        本日30年期公債標售需求嚴重不足，引發長天期殖利率急速攀升，殖利率曲線陡峭化，長天期債券價格重挫，對成長股與高估值科技股形成壓力。
+      </li>
+      <li>
+        <strong>😨 VIX 恐慌指數突破17</strong><br>
+        市場恐慌指標 VIX 盤中飆至 18.17，收盤首次突破 17，終結連續28個交易日維持 14–17 區間的平靜期，市場波動性顯著上升。
+      </li>
+      <li>
+        <strong>📊 8月 PPI 年增率加速</strong><br>
+        8月生產者物價指數（PPI）月增 0.4%（符合預期），但年增率 5.4% 略高於預期 5.3%，較7月 4.8% 明顯提速，通膨持續升溫令市場對聯準會緊縮立場的擔憂加深。
+      </li>
+      <li>
+        <strong>🏛️ 聯準會升息預期大幅提升</strong><br>
+        PPI 數據公布後，CME FedWatch 工具顯示市場預期聯準會 9月升息1碼（25bp）的概率，從 61% 跳升至 <strong>70%</strong>。明日（9/11）CPI 數據為聯準會決策前最後關鍵指標，市場高度關注。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🌍 宏觀因素分析</h2>
+    <div class="macro-item">
+      <strong>通膨壓力：</strong>8月 PPI 年增 5.4%，高於預期並較7月加速，顯示原物料與能源成本上漲正逐步向下游傳遞。9月11日 CPI 數據成為近期最重要催化劑。
+    </div>
+    <div class="macro-item">
+      <strong>聯準會政策：</strong>升息概率升至70%，市場定價聯準會在9月18日 FOMC 會議繼續緊縮。長端利率走高壓縮股票估值，尤其對成長型科技股不利。
+    </div>
+    <div class="macro-item">
+      <strong>地緣政治（美伊衝突）：</strong>美伊戰爭進入第七個月，美軍本週摧毀五艘伊朗原油輪，大幅加劇中東石油供應憂慮。原油戰爭溢價成為通膨的重要新增項目，並加大聯準會的政策兩難。
+    </div>
+    <div class="macro-item">
+      <strong>公債市場壓力：</strong>30年期標售失敗顯示市場對長期財政可持續性存有疑慮，同時高油價推升通膨預期也壓低債市需求，長端利率走升引發股債雙跌格局。
+    </div>
+  </div>
+
+  <!-- SECTORS & STOCKS -->
+  <div class="card">
+    <h2>📈 板塊與個股動態</h2>
+    <div class="sector-grid">
+      <div class="sector-up">
+        <h3>▲ 領漲板塊</h3>
+        <p><strong>能源（Energy）</strong>：原油破百帶動能源股強勢，埃克森美孚、雪佛龍等大型能源企業全線上揚。<br>
+        <strong>醫療保健（Healthcare）</strong>：防禦性需求增加，資金輪動至避險類股。</p>
+      </div>
+      <div class="sector-down">
+        <h3>▼ 跌幅較深板塊</h3>
+        <p><strong>半導體 / AI</strong>：利率走高打壓高估值，費城半導體指數跌逾1%。<br>
+        <strong>長天期公債 ETF</strong>：TLT、EDV 等重挫，殖利率急升直接衝擊。<br>
+        <strong>貴金屬</strong>：黃金、白銀、銅均走弱，美元走強施壓。</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:20px;">重要個股</h3>
+    <ul class="stock-list">
+      <li>
+        <strong>ORCL（Oracle 甲骨文）</strong> — 盤後財報亮眼：雲端基礎設施 OCI 營收年增 <strong>93%</strong>，剩餘履約義務高達 <strong>$6,380 億</strong>，並上調全年展望。盤後股價大幅走高。
+      </li>
+      <li>
+        <strong>ADBE（Adobe）</strong> — 業績符合預期但未達市場「超預期」期待，訂閱收入增速略有放緩，盤後股價小幅下滑。
+      </li>
+      <li>
+        <strong>TTE（TotalEnergies）</strong> — 宣布安哥拉近海新油田 Acacia-5 成功開採，日增產能力 6,000 桶，進一步加強公司原油供給組合。
+      </li>
+      <li>
+        <strong>ENB（Enbridge）</strong> — 宣布以 <strong>$25.5 億</strong>收購 Tallgrass Energy 原油管道業務，強化北美中游基礎設施佈局。
+      </li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚡ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>明日（9/11）CPI 數據若高於預期，可能進一步推升升息概率至80%以上，引發新一波股債雙跌。</li>
+      <li>WTI 若持續走高突破 $110，通膨壓力將更難收斂，聯準會可能需更激進緊縮，壓縮市場估值空間。</li>
+      <li>美伊衝突升級風險：若戰事進一步擴大波斯灣油輪通道，油價短期或衝至 $120，全球供應鏈衝擊加劇。</li>
+      <li>長天期殖利率持續走高，高槓桿企業與商業不動產（CRE）面臨再融資壓力，信用市場潛在系統性風險上升。</li>
+      <li>VIX 突破18 後若進一步攀升，程序性賣盤（CTA 策略）可能加速止損，放大市場跌幅。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📎 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/" target="_blank">Yahoo Finance — 美股市場即時行情與收盤數據</a></li>
+      <li><a href="https://www.marketwatch.com/markets/us/" target="_blank">MarketWatch — 美股每日市場回顧與分析</a></li>
+      <li><a href="https://www.cnbc.com/markets/" target="_blank">CNBC Markets — 美股新聞與即時報導</a></li>
+      <li><a href="https://www.wsj.com/market-data" target="_blank">Wall Street Journal — 市場數據與深度分析</a></li>
+      <li><a href="https://www.reuters.com/markets/us/" target="_blank">Reuters — 美股及全球金融市場新聞</a></li>
+      <li><a href="https://www.bloomberg.com/markets" target="_blank">Bloomberg Markets — 財經新聞與指數數據</a></li>
+      <li><a href="https://www.eia.gov/petroleum/supply/weekly/" target="_blank">EIA — 美國能源資訊局原油週報</a></li>
+      <li><a href="https://www.bls.gov/news.release/ppi.nr0.htm" target="_blank">美國勞工統計局（BLS）— 8月生產者物價指數（PPI）報告</a></li>
+      <li><a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank">CME FedWatch — 聯準會升息概率追蹤工具</a></li>
+      <li><a href="https://www.treasurydirect.gov/instit/auctfund/work/work.htm" target="_blank">TreasuryDirect — 美國財政部30年期公債標售結果</a></li>
+      <li><a href="https://finance.yahoo.com/quote/^VIX/" target="_blank">CBOE VIX — 市場恐慌指數即時數據</a></li>
+      <li><a href="https://investor.oracle.com/investor-news/press-release-details/2026/Oracle-Reports-Fiscal-2027-First-Quarter-Financial-Results/" target="_blank">Oracle 投資人關係 — Q1 FY2027 財報新聞稿</a></li>
+      <li><a href="https://www.adbe.com/investor-relations/news-releases/" target="_blank">Adobe 投資人關係 — 財報新聞稿</a></li>
+      <li><a href="https://totalenergies.com/media/news/" target="_blank">TotalEnergies — 安哥拉新油田公告</a></li>
+      <li><a href="https://www.enbridge.com/media-center/news/" target="_blank">Enbridge — Tallgrass Energy 收購公告</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 2026-09-10 美股日報 | 僅供參考，非投資建議
+  </footer>
+</div>
+</body>
+</html>
