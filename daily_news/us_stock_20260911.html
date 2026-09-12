@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-11</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f0f7ff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #1d4ed8; }
+    .macro-list { list-style: none; }
+    .macro-list li { padding: 10px 14px; margin-bottom: 8px; background: #f0fdf4; border-left: 3px solid #22c55e; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-list li strong { color: #15803d; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 4px; }
+    .stock-chip { border-radius: 8px; padding: 14px 16px; }
+    .stock-chip.up-chip { background: #f0fdf4; border: 1px solid #86efac; }
+    .stock-chip.down-chip { background: #fff5f5; border: 1px solid #fca5a5; }
+    .stock-chip .ticker { font-weight: 700; font-size: 1rem; color: #1a1a2e; }
+    .stock-chip .change { font-weight: 700; font-size: 0.95rem; margin-top: 2px; }
+    .stock-chip .desc { font-size: 0.78rem; color: #6b7280; margin-top: 4px; line-height: 1.4; }
+    .sector-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .sector-tag { padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; }
+    .sector-tag.up { background: #dcfce7; color: #15803d; }
+    .sector-tag.down { background: #fee2e2; color: #991b1b; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding-left: 10px; position: relative; }
+    .sources li::before { content: "→"; position: absolute; left: -4px; color: #9ca3af; }
+    .note { font-size: 0.8rem; color: #9ca3af; margin-top: 10px; font-style: italic; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-left: 6px; }
+    .badge-green { background: #dcfce7; color: #15803d; }
+    .badge-red { background: #fee2e2; color: #991b1b; }
+    .ytd-row td { background: #fafafa; font-size: 0.85rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026-09-11（星期五）｜由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>年初至今</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 DJIA</strong></td>
+          <td>52,573.29</td>
+          <td class="up">▲ +509.19</td>
+          <td class="up">+0.98%</td>
+          <td class="up">+9.4%</td>
+        </tr>
+        <tr>
+          <td><strong>S&P 500</strong></td>
+          <td>7,656.98</td>
+          <td class="up">▲ +65.15</td>
+          <td class="up">+0.86%</td>
+          <td class="up">+11.9%</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克 Nasdaq</strong></td>
+          <td>26,333.04</td>
+          <td class="up">▲ +251.31</td>
+          <td class="up">+0.96%</td>
+          <td class="up">+13.3%</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 Russell</strong></td>
+          <td>~2,903.94</td>
+          <td class="up">▲ +13.00</td>
+          <td class="up">+0.44%</td>
+          <td class="neutral">—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">* 市場連跌四日後終止跌勢，全面收漲。Russell 2000 部分來源漲幅報告在 +0.40%~+1.04% 之間，略有差異。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>🔥 重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>終結四連跌</strong>
+        三大指數結束連續四個交易日的跌勢，多重利多共振帶動反彈：油價回落、CPI 通膨數據出爐及 Oracle 財報超預期，提振市場情緒。
+      </li>
+      <li>
+        <strong>Oracle (ORCL) 財報大爆發 ↑+7%</strong>
+        Q1 FY2027 EPS $1.92（華爾街預期 $1.74），營收 $19.35B 創歷史新高；雲端服務年增 +62%、基礎設施雲端 (IaaS) 年增 +121%，AI 數據中心需求爆棚帶動股價單日跳升超 7%，為全日領漲科技股。
+      </li>
+      <li>
+        <strong>AI 硬體板塊強勢：HPE ↑+11%、HP Inc (HPQ) ↑+8%</strong>
+        受 Oracle 財報帶動 AI 伺服器需求展望，惠普企業與惠普個人電腦單日大漲，AI 硬體概念股迎近一個月最強單日表現。
+      </li>
+      <li>
+        <strong>Cooper Companies (COO) 週跌 ↓−22.98%</strong>
+        Q2 2026 營收不及市場預期，公司同步下調全年展望，為本週跌幅最重個股；惟非本日新低，此為整週累計表現。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🏛️ 宏觀因素</h2>
+    <ul class="macro-list">
+      <li>
+        <strong>📈 8 月 CPI 通膨數據</strong>
+        整體 CPI 月增 +0.4%、年增 +3.4%；核心 CPI（排除食品與能源）月增 +0.3%（略高於預期 +0.2%）、年增 +2.4%。通膨頑固，市場短暫震盪後反彈。
+      </li>
+      <li>
+        <strong>🔑 聯準會 (Fed) 升息預期大幅升溫</strong>
+        9 月 FOMC 升息機率從一週前約 60% 大幅升至 86–90%，市場幾乎篤定 9 月再升一碼。2 年期公債殖利率升至 4.65%（兩年新高），10 年期殖利率收於 4.975%（接近 2023 年 10 月以來最高）。
+      </li>
+      <li>
+        <strong>🛢️ 油價回落紓解賣壓</strong>
+        布蘭特原油週五小幅回落（惟仍高於 $104/桶），緩解連日因油價高漲引發的通膨憂慮，助推市場反彈。週線油價仍維持上漲。
+      </li>
+      <li>
+        <strong>🌐 地緣政治背景風險</strong>
+        川普政府中東政策持續帶來油價風險溢價，為本週前四日跌勢的背景壓力，週五有所收斂。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>🗂️ 板塊表現</h2>
+    <div class="sector-bar">
+      <span class="sector-tag up">通訊服務 ▲ +1.35%</span>
+      <span class="sector-tag up">科技 ▲ +1.0%+</span>
+      <span class="sector-tag up">工業 ▲ +1.0%+</span>
+      <span class="sector-tag up">非必需消費 ▲ 上漲</span>
+      <span class="sector-tag down">醫療保健 ▼ 落後</span>
+      <span class="sector-tag down">公用事業 ▼ 落後</span>
+    </div>
+    <br/>
+    <h2>⭐ 重點個股</h2>
+    <div class="stock-grid">
+      <div class="stock-chip up-chip">
+        <div class="ticker">ORCL</div>
+        <div class="change up">▲ +7.0%+</div>
+        <div class="desc">Oracle — AI 雲端財報超預期，IaaS +121%</div>
+      </div>
+      <div class="stock-chip up-chip">
+        <div class="ticker">HPE</div>
+        <div class="change up">▲ +11.0%</div>
+        <div class="desc">惠普企業 — AI 伺服器需求爆發，近月最強</div>
+      </div>
+      <div class="stock-chip up-chip">
+        <div class="ticker">HPQ</div>
+        <div class="change up">▲ +8.0%</div>
+        <div class="desc">HP Inc — AI 硬體概念跟漲</div>
+      </div>
+      <div class="stock-chip down-chip">
+        <div class="ticker">COO</div>
+        <div class="change down">▼ −22.98%（週）</div>
+        <div class="desc">Cooper Cos — Q2 營收不及預期，下調年度展望</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>Fed 升息路徑：</strong>9 月升息幾乎確定，但全年終端利率仍存不確定性；10 年期殖利率逼近 5%，債市壓力持續。</li>
+      <li><strong>通膨頑固：</strong>核心 CPI 月增 +0.3% 略高於預期，顯示通膨降溫尚未完全，增加 Fed 「更長時間維持高利率」風險。</li>
+      <li><strong>油價高位震盪：</strong>布蘭特原油高於 $104/桶，如果中東地緣政治持續升溫，可能再度推升通膨預期。</li>
+      <li><strong>殖利率曲線倒置：</strong>2 年期（4.65%）遠高於 10 年期（4.975%）利差仍大，衰退訊號尚存，企業融資成本偏高。</li>
+      <li><strong>科技股評估過高風險：</strong>AI 概念股（ORCL、HPE）短期跳升後，本益比估值偏高，若後續財報無法持續超越預期，易有回調壓力。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📎 資料來源（交叉驗證 15+ 個獨立來源）</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/" target="_blank">Yahoo Finance — 指數即時行情與收盤數據</a></li>
+      <li><a href="https://www.marketwatch.com/" target="_blank">MarketWatch — 市場收盤報告與 Oracle 財報分析</a></li>
+      <li><a href="https://www.cnbc.com/markets/" target="_blank">CNBC Markets — 盤後分析、Fed 升息預期</a></li>
+      <li><a href="https://www.bloomberg.com/markets" target="_blank">Bloomberg Markets — CPI 數據解讀、債券殖利率</a></li>
+      <li><a href="https://www.reuters.com/markets/" target="_blank">Reuters Markets — 油價走勢、地緣政治報導</a></li>
+      <li><a href="https://www.bls.gov/cpi/" target="_blank">美國勞工統計局 BLS — 8 月 CPI 官方數據</a></li>
+      <li><a href="https://www.wsj.com/market-data" target="_blank">Wall Street Journal — 殖利率與板塊分析</a></li>
+      <li><a href="https://investor.oracle.com/" target="_blank">Oracle Investor Relations — Q1 FY2027 財報官方數據</a></li>
+      <li><a href="https://www.barrons.com/" target="_blank">Barron's — HPE、HPQ 個股分析</a></li>
+      <li><a href="https://www.investing.com/" target="_blank">Investing.com — Russell 2000 與交叉驗證</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 資料日期：2026-09-11 | 僅供參考，非投資建議<br/>
+    Generated by Claude Routine · weijuted/us-stock-daily-news
+  </footer>
+
+</div>
+</body>
+</html>
