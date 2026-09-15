@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-14</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-block { margin-bottom: 16px; padding: 14px 16px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.91rem; line-height: 1.6; }
+    .event-block strong { color: #0f3460; display: block; margin-bottom: 4px; font-size: 0.94rem; }
+    .sector-grid { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+    .sector-up { background: #f0fdf4; border: 1px solid #86efac; border-radius: 6px; padding: 8px 14px; font-size: 0.88rem; color: #15803d; font-weight: 600; }
+    .sector-down { background: #fff1f2; border: 1px solid #fca5a5; border-radius: 6px; padding: 8px 14px; font-size: 0.88rem; color: #be123c; font-weight: 600; }
+    .stock-table td:last-child { font-size: 0.85rem; color: #6b7280; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-item { padding: 10px 14px; margin-bottom: 8px; background: #fffbeb; border-left: 3px solid #fbbf24; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding-left: 1.2em; position: relative; }
+    .sources li::before { content: "›"; position: absolute; left: 0; color: #9ca3af; }
+    .badge { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+    .badge-warn { background: #fef3c7; color: #92400e; }
+    .badge-hot { background: #fee2e2; color: #991b1b; }
+    .badge-up { background: #d1fae5; color: #065f46; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-09-14（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業（DJIA）</strong></td>
+          <td>52,421.20</td>
+          <td class="down">−152.09</td>
+          <td class="down">−0.29%</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500（SPX）</strong></td>
+          <td>7,619.98</td>
+          <td class="down">−37.02</td>
+          <td class="down">−0.48%</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq（COMP）</strong></td>
+          <td>26,186.41</td>
+          <td class="down">−146.62</td>
+          <td class="down">−0.56%</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000（RUT）</strong></td>
+          <td>2,892.00</td>
+          <td class="down">−11.70</td>
+          <td class="down">−0.40%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:10px;font-size:0.82rem;color:#6b7280;">✦ 四大指數全線收跌；科技股受 AI 監管訊號拖累，跌幅最深。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>⚡ 重大市場事件</h2>
+
+    <div class="event-block">
+      <strong>① AI 業界呼籲暫停發展 — 半導體板塊重挫 5.9%<span class="badge badge-hot">最大催化劑</span></strong>
+      Anthropic CEO Dario Amodei 與 OpenAI CEO Sam Altman 週末聯合聲明，呼籲 AI 業界基於安全考量暫停能力開發，引發全球半導體股拋售潮。PHLX 半導體指數（SOX）單日重挫 5.9%。<br><br>
+      主要個股跌幅：Intel −7.0%（$95.96）、AMD −6.0%（$486.80）、Micron −5.2%、Broadcom −4.8%、Nvidia −3.0%（$212.50）。<br>
+      日本軟銀（SoftBank）在東京市場暴跌 11.4%，因 OpenAI 同日確認取消 2026 年 IPO 計劃。
+    </div>
+
+    <div class="event-block">
+      <strong>② 中東局勢升溫 — 布蘭特原油逼近 $108<span class="badge badge-hot">地緣政治</span></strong>
+      沙烏地阿拉伯主要輸油管道遭攻擊，伊朗與波灣國家談判破裂，布蘭特原油盤中逼近每桶 $108 美元。能源板塊成為當日唯一主要贏家，通膨憂慮同步升溫。
+    </div>
+
+    <div class="event-block">
+      <strong>③ 10 年期美債殖利率盤中突破 5% 關口<span class="badge badge-warn">聯準會焦點</span></strong>
+      美國 10 年期公債殖利率盤中觸及 5.012%（2023 年 10 月以來最高），收盤約 4.96%。<br>
+      8 月 CPI 數據：月增 +0.4%（年增 +3.4%），核心 CPI 月增 +0.3%（預期 +0.2%），略超預期。<br>
+      利率期貨市場定價聯準會週三升息 25 bps 機率達 89%，若成真將是 2023 年以來首次升息，目標區間升至 3.75%–4.00%。
+    </div>
+
+    <h3>板塊表現概覽</h3>
+    <div class="sector-grid">
+      <div class="sector-up">能源 ↑</div>
+      <div class="sector-up">通訊服務 ↑</div>
+      <div class="sector-down">醫療保健 −3.5%+</div>
+      <div class="sector-down">資訊科技 ↓</div>
+      <div class="sector-down">房地產 ↓</div>
+      <div class="sector-down">必需消費品 ↓</div>
+      <div class="sector-down">工業 ↓</div>
+      <div class="sector-down">金融 ↓</div>
+      <div class="sector-down">原物料 ↓</div>
+      <div class="sector-down">非必需消費品 ↓</div>
+      <div class="sector-down">公用事業 ↓</div>
+    </div>
+
+    <h3>重要個股動態</h3>
+    <table class="stock-table" style="margin-top:8px;">
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>漲跌幅</th>
+          <th>原因</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Elmet Group</strong></td>
+          <td class="up">+30.8%</td>
+          <td>獲美國政府授予 20 億美元鎢金屬戰略儲備合約，當日最大單一贏家</td>
+        </tr>
+        <tr>
+          <td><strong>Baldwin Insurance</strong></td>
+          <td class="up">+6.3%</td>
+          <td>Michael Dell 旗下 DFO Management 與 Sequence Holdings 以 77 億美元私有化</td>
+        </tr>
+        <tr>
+          <td><strong>Intel (INTC)</strong></td>
+          <td class="down">−7.0%（$95.96）</td>
+          <td>AI 暫停聲明引發半導體拋售</td>
+        </tr>
+        <tr>
+          <td><strong>AMD</strong></td>
+          <td class="down">−6.0%（$486.80）</td>
+          <td>半導體板塊整體承壓</td>
+        </tr>
+        <tr>
+          <td><strong>Nvidia (NVDA)</strong></td>
+          <td class="down">−3.0%（$212.50）</td>
+          <td>AI 利空情緒蔓延</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>🌐 宏觀環境摘要</h2>
+    <div class="macro-item"><strong>聯準會（FOMC）：</strong>週三（9/16）將公布利率決策，市場幾乎完全定價升息 25 bps，為 2023 年以來首次。投票結果與聲明措辭將是下週最重要市場事件。</div>
+    <div class="macro-item"><strong>通膨數據：</strong>8 月 CPI 年增 3.4%，核心 CPI 月增 0.3%（超預期），通膨降溫勢頭有所放緩，給聯準會帶來更多升息壓力。</div>
+    <div class="macro-item"><strong>地緣政治：</strong>中東局勢惡化，沙國輸油設施受損，布蘭特原油急升，能源通膨風險上升。伊朗-海灣談判破裂，緊張態勢難以短期緩解。</div>
+    <div class="macro-item"><strong>AI 監管風險：</strong>主要 AI 實驗室 CEO 公開呼籲暫停能力開發，短期內增加政府監管不確定性，科技股估值受壓。OpenAI 取消 2026 年 IPO 計劃進一步打擊市場情緒。</div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會升息落地風險：</strong>若 FOMC 升息且釋放進一步緊縮訊號，長債殖利率將繼續走高，高估值成長股面臨更大估值修正壓力。</li>
+      <li><strong>中東地緣政治持續升溫：</strong>沙國基礎設施持續受威脅恐進一步推高油價，通膨二次反彈機率上升，衝擊消費者信心與企業利潤。</li>
+      <li><strong>AI 監管政策不確定性：</strong>若 AI 暫停倡議引起立法或行政回應，相關科技股估值可能面臨更大重新定價。</li>
+      <li><strong>10 年期利率持續在 5% 附近運行：</strong>高利率環境對房地產、槓桿型企業及整體市場估值構成持續壓力。</li>
+      <li><strong>小型股脆弱性：</strong>Russell 2000 在高利率環境下結構性更脆弱，小型企業債務再融資成本上升壓力加大。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📎 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com" target="_blank">Yahoo Finance — 指數收盤數據、個股行情</a></li>
+      <li><a href="https://www.cnbc.com/markets" target="_blank">CNBC — 市場即時報導、半導體板塊分析</a></li>
+      <li><a href="https://www.bloomberg.com/markets" target="_blank">Bloomberg Markets — 宏觀數據、債券殖利率</a></li>
+      <li><a href="https://money.cnn.com/data/markets" target="_blank">CNN Business — 市場概覽、板塊表現</a></li>
+      <li><a href="https://www.thestreet.com" target="_blank">TheStreet — 個股動態、事件分析</a></li>
+      <li><a href="https://www.schwab.com/learn/story/market-update" target="_blank">Charles Schwab — 每日市場更新</a></li>
+      <li><a href="https://www.kiplinger.com/investing/stocks/stock-market-today" target="_blank">Kiplinger — 股市今日摘要</a></li>
+      <li><a href="https://247wallst.com" target="_blank">24/7 Wall St. — 個股動態、市場催化劑</a></li>
+      <li><a href="https://fortune.com/investing" target="_blank">Fortune — 宏觀分析、AI 產業動態</a></li>
+      <li><a href="https://www.eurasiabnews.com" target="_blank">Eurasia Business News — 地緣政治、能源市場</a></li>
+    </ul>
+    <p style="margin-top:12px;font-size:0.8rem;color:#9ca3af;">✦ 指數收盤價、半導體個股跌幅、布蘭特原油（~$108）、10 年期殖利率（盤中 5.012%／收盤 ~4.96%）、CPI 數據及聯準會升息機率（89%）均經多方來源交叉驗證。S&amp;P 500 各板塊漲跌幅（除能源、通訊服務、醫療保健外）為估算值，非最終收盤確認。</p>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議<br>報告生成時間：2026-09-15</footer>
+
+</div>
+</body>
+</html>
