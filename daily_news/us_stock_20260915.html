@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-15</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.95rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .stock-card { padding: 12px 16px; border-radius: 8px; border: 1px solid #e5e7eb; }
+    .stock-card .name { font-size: 0.85rem; color: #6b7280; margin-bottom: 4px; }
+    .stock-card .change { font-size: 1.1rem; font-weight: 700; }
+    .stock-card.up-card { background: #f0fdf4; border-color: #86efac; }
+    .stock-card.down-card { background: #fef2f2; border-color: #fca5a5; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding-left: 16px; position: relative; }
+    .sources li::before { content: "→"; position: absolute; left: 0; color: #9ca3af; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; margin-left: 8px; }
+    .badge-red { background: #fee2e2; color: #dc2626; }
+    .badge-green { background: #dcfce7; color: #16a34a; }
+    .badge-yellow { background: #fef9c3; color: #d97706; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 10px; }
+    .macro-item { background: #f8faff; padding: 14px 16px; border-radius: 8px; border: 1px solid #dce3f5; }
+    .macro-item .label { font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #0f3460; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026 年 9 月 15 日（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>趨勢</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均 (DJIA)</strong></td>
+          <td>52,093.11</td>
+          <td class="down">▼ 328.09</td>
+          <td class="down">-0.63%</td>
+          <td class="down">↓ 連續第二日下跌</td>
+        </tr>
+        <tr>
+          <td><strong>標準普爾 500 (S&P 500)</strong></td>
+          <td>7,585.73</td>
+          <td class="down">▼ 34.29</td>
+          <td class="down">-0.45%</td>
+          <td class="down">↓ 受升息預期壓制</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>25,981.57</td>
+          <td class="down">▼ 204.38</td>
+          <td class="down">-0.78%</td>
+          <td class="down">↓ 科技股領跌</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>約 2,869</td>
+          <td class="down">▼ 約 23</td>
+          <td class="down">約 -0.80%</td>
+          <td class="down">↓ 小型股受高利率衝擊</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO DATA -->
+  <div class="card">
+    <h2>📈 重要宏觀指標</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">美國10年期公債殖利率</div>
+        <div class="value down">5.041%</div>
+        <div style="font-size:0.8rem;color:#dc2626;margin-top:4px;">▲ 2007年以來最高</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">布蘭特原油（Brent Crude）</div>
+        <div class="value down">$108.00 / 桶</div>
+        <div style="font-size:0.8rem;color:#dc2626;margin-top:4px;">▲ 中東衝突推升</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">西德州中質原油（WTI）</div>
+        <div class="value down">$105.00 / 桶</div>
+        <div style="font-size:0.8rem;color:#dc2626;margin-top:4px;">▲ 持續三位數高位</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">聯準會升息機率（25bp）</div>
+        <div class="value">88% ~ 90%</div>
+        <div style="font-size:0.8rem;color:#d97706;margin-top:4px;">週三 FOMC 決定公布</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>🔔 重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>聯準會 FOMC 會議開幕</strong>
+        <span class="badge badge-yellow">核心事件</span><br>
+        為期兩天的聯邦公開市場委員會（FOMC）會議於本日啟動，決策結果預計週三（9/16）公布。市場普遍預期聯準會將執行 2023 年以來首次升息，幅度 25 個基點，使聯邦基金利率區間上調。根據 Wolfe Research 最新報告，市場隱含升息機率高達 90%。
+      </li>
+      <li>
+        <strong>10年期美債殖利率創 2007 年來新高</strong>
+        <span class="badge badge-red">殖利率警報</span><br>
+        美國10年期公債殖利率突破 5.04%，創下自 2007 年以來最高水位。分析師警告，油價高漲與債券殖利率同步攀升——此種「雙高」格局在過去七年極為罕見，對股市構成明顯壓力，尤其利率敏感型科技股與小型股首當其衝。
+      </li>
+      <li>
+        <strong>油價飆漲加劇通膨憂慮</strong>
+        <span class="badge badge-red">通膨壓力</span><br>
+        中東地緣政治緊張局勢持續，布蘭特原油突破 108 美元、WTI 原油維持 105 美元以上。能源成本上升恐加重通膨黏性，進一步支撐聯準會鷹派路線，同時壓縮企業利潤空間。
+      </li>
+      <li>
+        <strong>AI 安全疑慮衝擊科技板塊</strong>
+        <span class="badge badge-red">AI 情緒轉向</span><br>
+        Anthropic 執行長 Dario Amodei 發表 AI 安全警示文章，引發市場對人工智慧風險的廣泛討論，部分資金從 AI 概念股撤出，NVIDIA 跌逾 3%，帶動科技股整體走弱。值得注意的是，Meta、Google、Microsoft 等仍錄得正報酬，顯示市場對個別 AI 龍頭看法仍分歧。
+      </li>
+    </ul>
+  </div>
+
+  <!-- INDIVIDUAL STOCKS -->
+  <div class="card">
+    <h2>🏢 重要個股動態</h2>
+    <h3>📉 跌幅較大</h3>
+    <div class="stock-grid">
+      <div class="stock-card down-card">
+        <div class="name">NVIDIA (NVDA)</div>
+        <div class="change down">-3.36%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px;">AI 安全擔憂引發賣壓</div>
+      </div>
+    </div>
+    <h3 style="margin-top:18px;">📈 漲幅較大</h3>
+    <div class="stock-grid">
+      <div class="stock-card up-card">
+        <div class="name">Qualcomm (QCOM)</div>
+        <div class="change up">+4%+</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px;">AI 晶片需求樂觀預期</div>
+      </div>
+      <div class="stock-card up-card">
+        <div class="name">Meta Platforms (META)</div>
+        <div class="change up">+2.71%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px;">廣告收益超預期看法</div>
+      </div>
+      <div class="stock-card up-card">
+        <div class="name">Google / Alphabet (GOOGL)</div>
+        <div class="change up">+3.06%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px;">AI 搜尋前景樂觀</div>
+      </div>
+      <div class="stock-card up-card">
+        <div class="name">Microsoft (MSFT)</div>
+        <div class="change up">+1.97%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px;">AI 雲端業務穩健</div>
+      </div>
+      <div class="stock-card up-card">
+        <div class="name">AMD (Advanced Micro)</div>
+        <div class="change up">+2.00%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px;">AI 晶片替代需求</div>
+      </div>
+      <div class="stock-card up-card">
+        <div class="name">Coherent (COHR)</div>
+        <div class="change up">+~2%</div>
+        <div style="font-size:0.8rem;color:#6b7280;margin-top:4px;">AI 光學連接需求增</div>
+      </div>
+    </div>
+    <div style="margin-top:16px;padding:12px 14px;background:#f8faff;border-radius:8px;font-size:0.88rem;color:#374151;border:1px solid #dce3f5;">
+      <strong>Apple (AAPL)</strong>：傳已同意三星 2027 年儲存晶片定價條款，供應鏈關係進一步穩固。消息對蘋果股價影響有限，市場聚焦點仍在聯準會決策。
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🌐 宏觀因素分析</h2>
+    <ul class="event-list">
+      <li>
+        <strong>聯準會貨幣政策</strong><br>
+        目前失業率約 4.1%，勞動市場依然強韌；然而能源價格持續高位使核心通膨降溫進度放緩。市場推算聯準會可能在本次會議升息 25 個基點，結束 2023 年以來的按兵不動態勢。升息路徑前景不明朗是當前市場最大不確定性來源。
+      </li>
+      <li>
+        <strong>中東地緣政治</strong><br>
+        中東緊張局勢升溫持續主導能源市場情緒，推動布蘭特原油站上 108 美元、WTI 上看 105 美元。油價與公債殖利率雙雙飆升，形成罕見壓制股市格局，能源股是少數逆勢受益板塊。
+      </li>
+      <li>
+        <strong>經濟數據</strong><br>
+        本週適逢聯準會開會，市場靜待週三 FOMC 聲明與利率決議。本日無重大經濟數據公布，投資人情緒主要由升息預期、油價與公債殖利率變動所主導。
+      </li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會政策超預期緊縮：</strong>若 FOMC 發出鷹派訊號或暗示後續升息，股市可能面臨更深修正，尤其利率敏感型成長股與小型股。</li>
+      <li><strong>油價通膨螺旋：</strong>布蘭特突破 108 美元、WTI 逼近 110 美元臨界，若油價進一步攀升，將持續削弱消費者購買力並推升企業成本。</li>
+      <li><strong>公債殖利率「2007 年高點」心理壓力：</strong>10年期殖利率達 5.04% 的心理關口，可能引發債市進一步拋售及股債雙殺走勢。</li>
+      <li><strong>AI 安全疑慮造成估值重評：</strong>Anthropic、OpenAI 等 AI 龍頭的安全警示可能引發市場對 AI 泡沫的重新審視，影響高估值 AI 概念股走勢。</li>
+      <li><strong>中東衝突升級風險：</strong>若局勢進一步惡化，能源供應中斷風險將使油價衝高，加深全球經濟衰退憂慮。</li>
+      <li><strong>小型股資金外流：</strong>Russell 2000 中約 40% 企業負債採浮動利率，持續高利率環境對小型股資金成本構成長期壓力。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📎 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html" target="_blank">Yahoo Finance — Stock market today: Dow, S&P 500, Nasdaq fall as 10-year Treasury yield touches 2007 high (Sept. 15, 2026)</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/14/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for Sept. 15, 2026 (live updates)</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-sept-15-2026-dow-futures-slide-as-oil-prices-surge-and-treasury-yields-hit-2007-highs" target="_blank">TheStreet — Stock Market Today (Sept. 15, 2026): Dow futures slide as oil prices surge</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/15/oil-us-treasurys-stocks-pressure.html" target="_blank">CNBC — Oil and Treasury yields haven't moved this closely in seven years</a></li>
+      <li><a href="https://www.kiplinger.com/investing/live/fed-meeting-updates-and-commentary-september-2026" target="_blank">Kiplinger — September Fed Meeting: Live Updates and Commentary</a></li>
+      <li><a href="https://www.xtb.com/en/market-analysis/economic-calendar-market-awaits-fed-and-boe-decisions-15-09-2026" target="_blank">XTB — Economic Calendar: Market awaits Fed and BoE decisions (15.09.2026)</a></li>
+      <li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-09-15/doc-inirvuyn3830458.shtml" target="_blank">新浪財經 — 9月15日美股收盤：三大股指普跌 英伟达跌超3%</a></li>
+      <li><a href="https://www.kucoin.com/news/flash/marsbit-pre-market-u-s-stock-highlights-for-september-15-2026" target="_blank">KuCoin / MarsBit — Pre-Market U.S. Stock Highlights for September 15, 2026</a></li>
+      <li><a href="https://www.fool.com/investing/2026/09/09/this-vanguard-etf-sp-500-nasdaq-100-2026-reckoning/" target="_blank">The Motley Fool — This Unstoppable Vanguard ETF Is Beating the S&P 500 and the Nasdaq-100 in 2026</a></li>
+      <li><a href="https://tradingeconomics.com/united-states/stock-market" target="_blank">Trading Economics — United States Stock Market Index</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議<br>
+    生成時間：2026-09-16 UTC
+  </footer>
+
+</div>
+</body>
+</html>
