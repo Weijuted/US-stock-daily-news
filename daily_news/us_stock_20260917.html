@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-17</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .summary-tag { display: inline-block; margin-top: 14px; background: rgba(255,255,255,0.15); border-radius: 6px; padding: 6px 14px; font-size: 0.85rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; display: flex; align-items: center; gap: 8px; }
+    h2 .icon { font-size: 1.2rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li .date-tag { display: inline-block; font-size: 0.75rem; background: #dbeafe; color: #1d4ed8; border-radius: 4px; padding: 1px 6px; margin-bottom: 4px; font-weight: 600; }
+    .macro-table td:first-child { font-weight: 600; color: #374151; width: 30%; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .stock-card { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #dce3f5; }
+    .stock-card .ticker { font-size: 1rem; font-weight: 700; color: #0f3460; }
+    .stock-card .pct { font-size: 1.3rem; font-weight: 700; }
+    .stock-card .name { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+    .stock-card .note { font-size: 0.8rem; color: #4b5563; margin-top: 6px; line-height: 1.4; }
+    .sector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-top: 12px; }
+    .sector-item { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 8px 12px; font-size: 0.85rem; display: flex; justify-content: space-between; align-items: center; }
+    .sector-item.down-sector { background: #fef2f2; border-color: #fecaca; }
+    .sector-item.neutral-sector { background: #f9fafb; border-color: #e5e7eb; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: decimal; padding-left: 18px; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 7px; }
+    .note-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; font-size: 0.88rem; color: #78350f; line-height: 1.6; }
+    .note-box strong { color: #92400e; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      header { padding: 24px 20px; }
+      header h1 { font-size: 1.4rem; }
+      .card { padding: 18px 16px; }
+      .stock-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-09-17（週四）| 由 Claude Routine 自動生成</div>
+    <div class="summary-tag">📈 反彈日 — 科技股領漲，債殖利率回落，半導體大爆發</div>
+  </header>
+
+  <div class="note-box">
+    <strong>⚠️ 背景說明：</strong> 本報告涵蓋兩個連續交易日動態。<strong>9月16日（美東時間收盤）</strong>為「Fed升息日」，道指大跌631點；<strong>9月17日（本報告主日）</strong>為「反彈日」，市場消化升息後企穩，英特爾帶動半導體全線飆升。
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2><span class="icon">📊</span>主要指數收盤（2026-09-17 美東時間）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌幅</th>
+          <th>點數變化</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>51,778.04</td>
+          <td class="up">▲ +0.61%</td>
+          <td class="up">+316.14 pts</td>
+        </tr>
+        <tr>
+          <td><strong>S&P 500 標普500</strong></td>
+          <td>7,596.19</td>
+          <td class="up">▲ +0.59%</td>
+          <td class="up">+44.38 pts</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 那斯達克</strong></td>
+          <td>~26,314</td>
+          <td class="up">▲ +1.29%</td>
+          <td class="up">~+336 pts</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000 小型股</strong></td>
+          <td>2,874.64</td>
+          <td class="up">▲ +0.55%</td>
+          <td class="up">+15.83 pts</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:18px;">
+      <div style="font-size:0.82rem; font-weight:600; color:#6b7280; margin-bottom:8px;">前一日參考（9/16 Fed升息日收盤）</div>
+      <table>
+        <thead>
+          <tr>
+            <th>指數</th>
+            <th>收盤價</th>
+            <th>漲跌幅</th>
+            <th>點數變化</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>道瓊工業指數 (DJIA)</td>
+            <td>51,461.90</td>
+            <td class="down">▼ −1.21%</td>
+            <td class="down">−631.21 pts</td>
+          </tr>
+          <tr>
+            <td>S&P 500 標普500</td>
+            <td>7,551.81</td>
+            <td class="down">▼ −0.45%</td>
+            <td class="down">−34 pts</td>
+          </tr>
+          <tr>
+            <td>Nasdaq 那斯達克</td>
+            <td>—</td>
+            <td class="down">▼ −0.01%</td>
+            <td>平盤</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2><span class="icon">⚡</span>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <div class="date-tag">9/17 反彈催化劑</div>
+        <strong>10年期美債殖利率回落，結束連漲8天走勢。</strong>殖利率從5%高點退縮，解除股市最大壓力來源，推動風險資產全面反彈。
+      </li>
+      <li>
+        <div class="date-tag">9/17 半導體爆發</div>
+        <strong>英特爾 × SK Hynix 記憶體晶片合作報導</strong>（美國本土聯合生產），成為半導體板塊集體大漲主引擎。費城半導體指數（SOX）單日飆升逾3%。
+      </li>
+      <li>
+        <div class="date-tag">9/17 英特爾14A</div>
+        <strong>英特爾14A製程超前進度</strong>，確認將於2027年Q1試量產。執行長強調AI Agent CPU需求遠超供給，帶動INTC盤中一度大漲近9%。
+      </li>
+      <li>
+        <div class="date-tag">9/17 原油回落</div>
+        <strong>布蘭特原油跌至約104美元/桶</strong>，因中東供應中斷疑慮有所緩解，通膨壓力邊際減輕，提振市場情緒。
+      </li>
+      <li>
+        <div class="date-tag">9/16 Fed升息</div>
+        <strong>聯準會全票通過升息25基點至3.75–4.00%</strong>，為2023年7月以來首次升息。主席沃許（Warsh）鷹派記者會稱「通膨過高且持續太久」，導致道指重挫631點，10年期殖利率破5%。
+      </li>
+      <li>
+        <div class="date-tag">9/17 微米印度</div>
+        <strong>Micron約27.5億美元在印度古吉拉特邦建設半導體封測廠</strong>，強化美國供應鏈多元化布局，帶動MU股價上揚逾6%。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2><span class="icon">🌐</span>宏觀因素分析</h2>
+    <table class="macro-table">
+      <tbody>
+        <tr>
+          <td>聯準會利率決策</td>
+          <td>升息25基點至 <strong>3.75–4.00%</strong>（2023年7月以來首次）；全票通過；點陣圖顯示2026年內還有一次升息空間</td>
+        </tr>
+        <tr>
+          <td>Fed主席沃許言論</td>
+          <td>鷹派基調：「通膨過高且持續太久」，暗示年底前可能再升息一次，引發市場短期恐慌</td>
+        </tr>
+        <tr>
+          <td>10年期美債殖利率</td>
+          <td>9/16 升息後衝破<strong>5%</strong>（多年高點）；9/17 回落，結束連漲8天走勢，股市壓力暫時解除</td>
+        </tr>
+        <tr>
+          <td>布蘭特原油</td>
+          <td>9/17 約 <strong>$104/桶</strong>，中東緊張局勢緩和帶動回落，能源成本壓力稍減</td>
+        </tr>
+        <tr>
+          <td>每週初領失業金</td>
+          <td>優於預期，支持接近充分就業的就業市場敘事</td>
+        </tr>
+        <tr>
+          <td>費城聯儲製造業調查</td>
+          <td>高於市場共識，但低於前月數字，顯示製造業擴張但力道減弱</td>
+        </tr>
+        <tr>
+          <td>房市數據</td>
+          <td>偏弱；抵押貸款利率上升持續抑制購屋活動</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2><span class="icon">💹</span>重要個股動態（9/17 收盤）</h2>
+    <div class="stock-grid">
+      <div class="stock-card">
+        <div class="ticker">INTC</div>
+        <div class="pct up">▲ +7.67%</div>
+        <div class="name">Intel Corporation</div>
+        <div class="note">SK Hynix合作 + 14A製程超前 + AI CPU需求爆發；盤中一度漲近9%</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">MU</div>
+        <div class="pct up">▲ +6%+</div>
+        <div class="name">Micron Technology</div>
+        <div class="note">記憶體板塊全線大漲 + 印度27.5億美元新廠</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">SNDK</div>
+        <div class="pct up">▲ +6%+</div>
+        <div class="name">Sandisk (WDC)</div>
+        <div class="note">記憶體板塊聯動上漲</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">SK Hynix ADR</div>
+        <div class="pct up">▲ +5%+</div>
+        <div class="name">SK Hynix</div>
+        <div class="note">英特爾合作報導帶動</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">NVDA</div>
+        <div class="pct up">▲ +2%+</div>
+        <div class="name">NVIDIA Corporation</div>
+        <div class="note">AI需求持續旺盛，科技全面反彈</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">AMZN / MSFT</div>
+        <div class="pct up">▲ +1%+</div>
+        <div class="name">Amazon / Microsoft</div>
+        <div class="note">大型科技股跟進反彈</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 18px;">
+      <div style="font-size:0.88rem; font-weight:600; color:#374151; margin-bottom:10px;">板塊表現（9/17）</div>
+      <div class="sector-grid">
+        <div class="sector-item"><span>科技 (XLK)</span><span class="up">▲ 領漲</span></div>
+        <div class="sector-item"><span>半導體 (SOX)</span><span class="up">▲ +3%+</span></div>
+        <div class="sector-item"><span>非核心消費 (XLY)</span><span class="up">▲ 強勢</span></div>
+        <div class="sector-item"><span>原材料 (XLB)</span><span class="up">▲ 上漲</span></div>
+        <div class="sector-item neutral-sector"><span>金融 (XLF)</span><span style="color:#6b7280">→ 落後</span></div>
+        <div class="sector-item down-sector"><span>能源 (XLE)</span><span class="down">▼ 最弱</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid #eef0f5;">
+      <div style="font-size:0.82rem; font-weight:600; color:#6b7280; margin-bottom:8px;">9/16 Fed升息日跌幅較大個股（參考）</div>
+      <div style="font-size:0.88rem; color:#4b5563;">IBM ▼−4%、高盛（GS）▼−4%（道指跌幅主因）；西方石油（OXY）▼−6%+（能源板塊重挫）</div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會年底再升息預期：</strong>沃許點陣圖暗示2026年底前可能再升一次，若通膨黏性維持，緊縮週期或延長，壓制估值。</li>
+      <li><strong>10年期殖利率5%關卡：</strong>殖利率雖9/17回落，但結構性壓力未消，若重返5%將再度衝擊股市，尤其成長股估值。</li>
+      <li><strong>中東局勢與油價：</strong>布蘭特原油仍在$104附近高位，地緣政治風險一旦升溫，能源成本可能再推高通膨。</li>
+      <li><strong>房市降溫：</strong>抵押貸款利率走高持續抑制房市，若影響蔓延至消費，可能拖累GDP增速。</li>
+      <li><strong>半導體供應鏈地緣風險：</strong>Intel-SK Hynix合作雖提振短期情緒，美中科技管制政策變化仍是中期不確定因素。</li>
+      <li><strong>企業財報季壓力：</strong>高利率環境下融資成本上升，部分槓桿較高的企業Q3財報或有獲利預警風險。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2><span class="icon">🔗</span>資料來源（17個已驗證來源）</h2>
+    <ol class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-17-2026" target="_blank">TheStreet — Nasdaq climbs after Fed rate hike (Sep 17, 2026)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-17-134502255.html" target="_blank">Yahoo Finance — Dow surges after Fed rate hike (Sep 17, 2026)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html" target="_blank">Yahoo Finance Live — Rebound as bond yields slip, oil eases</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-09-16/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Dow, S&P Live Updates Sep 17, 2026</a></li>
+      <li><a href="https://www.aol.com/articles/stock-market-today-dow-p-081248000.html" target="_blank">AOL Finance — Stocks rise as Fed hike pacifies inflation worries</a></li>
+      <li><a href="https://vittarthi.com/markets/us" target="_blank">Vittarthi — US Market Sep 17 close data (Dow 51,778; S&P 7,596; RUT 2,874)</a></li>
+      <li><a href="https://www.fx168news.com/express/fastnews/1431835" target="_blank">FX168 — Sep 17 opening prints (S&P +1.10% to 7,635.46; Nasdaq +1.43%)</a></li>
+      <li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-09-18/doc-inisewtm3374698.shtml" target="_blank">Sina Finance — Sep 18 recap: INTC +7.67%, Intel 14A ahead of schedule</a></li>
+      <li><a href="https://finance.ifeng.com/c/8wVCEdDJ03k" target="_blank">Phoenix Finance — 美股全線飄綠，晶片股大爆發，英特爾漲超7%</a></li>
+      <li><a href="https://news.qq.com/rain/a/20260917A020YF00" target="_blank">Tencent News — 美聯儲升息！道指跌超1%，費半逆勢上漲 (Sep 16 close)</a></li>
+      <li><a href="https://www.21jingji.com/article/20260917/herald/9f5c5a53dd465946f7630781b068b21d.html" target="_blank">21世紀經濟報 — 三大指數收跌，道指跌超1% (Sep 16 close)</a></li>
+      <li><a href="https://vocus.cc/article/6aab4acdfd89780001ef50e0" target="_blank">Vocus Taiwan — 飛綸投資 Sep 17 AI鏈求生策略</a></li>
+      <li><a href="https://vocus.cc/article/6aabe164fd89780001dc145f" target="_blank">Vocus Taiwan — 御薪弈記：Fed三年來首次升息，油價大跌</a></li>
+      <li><a href="https://investrade.com/morning-preview-september-17-2026/" target="_blank">Investrade — Morning Preview Sep 17, 2026</a></li>
+      <li><a href="https://investrade.com/mid-morning-look-september-17-2026/" target="_blank">Investrade — Mid-Morning Look Sep 17, 2026 (SOX +3%, sector breakdown)</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Fed rate decision context; yields/oil</a></li>
+      <li><a href="https://tradingeconomics.com/united-states/stock-market" target="_blank">Trading Economics — S&P 500 historical data (7,596, +0.59%)</a></li>
+    </ol>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議<br>
+    生成時間：2026-09-18 UTC | 資料日期：2026-09-17
+  </footer>
+
+</div>
+</body>
+</html>
