@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-18</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 4px solid #0f3460; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #d97706; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li .event-tag { display: inline-block; background: #0f3460; color: #fff; font-size: 0.72rem; padding: 2px 8px; border-radius: 3px; margin-right: 8px; font-weight: 600; }
+    .stock-table tr:hover { background: #f9faff; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-table td:first-child { font-weight: 600; color: #374151; width: 220px; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources li { margin-bottom: 8px; padding: 6px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; margin-left: 6px; }
+    .badge-witching { background: #fef3c7; color: #92400e; }
+    .badge-fed { background: #ede9fe; color: #4c1d95; }
+    .summary-bar { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+    .summary-chip { background: #f0f4ff; border-radius: 8px; padding: 12px 18px; flex: 1; min-width: 160px; text-align: center; }
+    .summary-chip .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .summary-chip .value { font-size: 1.1rem; font-weight: 700; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .note { font-size: 0.8rem; color: #9ca3af; margin-top: 10px; font-style: italic; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年9月18日（星期五）｜ 四巫日
+      <span class="badge badge-witching">四巫日</span>
+      <span class="badge badge-fed">Fed 升息</span>
+    </div>
+    <div class="subtitle" style="margin-top:8px;">由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- SUMMARY CHIPS -->
+  <div class="summary-bar">
+    <div class="summary-chip">
+      <div class="label">道瓊工業</div>
+      <div class="value up">+0.61%</div>
+    </div>
+    <div class="summary-chip">
+      <div class="label">S&amp;P 500</div>
+      <div class="value up">+1.14%</div>
+    </div>
+    <div class="summary-chip">
+      <div class="label">那斯達克</div>
+      <div class="value up">+1.69%</div>
+    </div>
+    <div class="summary-chip">
+      <div class="label">費城半導體</div>
+      <div class="value up">~+3.00%</div>
+    </div>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點數</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>市場評述</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數（DJIA）</strong></td>
+          <td>51,778.04</td>
+          <td class="up">▲ 316.14</td>
+          <td class="up">+0.61%</td>
+          <td>週線跌幅仍為近半年最大</td>
+        </tr>
+        <tr>
+          <td><strong>標準普爾 500 指數（S&amp;P 500）</strong></td>
+          <td>7,637.76</td>
+          <td class="up">▲ 85.95</td>
+          <td class="up">+1.14%</td>
+          <td>Fed 升息後消化回穩</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合指數（Nasdaq）</strong></td>
+          <td>26,418.30</td>
+          <td class="up">▲ 439.87</td>
+          <td class="up">+1.69%</td>
+          <td>科技股領漲，七巨頭全線走高</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 小型股指數（Russell 2000）</strong></td>
+          <td colspan="3" class="neutral">數據確認中（預估跟漲）</td>
+          <td>小型股跟隨大盤回升</td>
+        </tr>
+        <tr>
+          <td><strong>費城半導體指數（SOX）</strong></td>
+          <td>—</td>
+          <td class="up">—</td>
+          <td class="up">~+3.00%</td>
+          <td>晶片股力撐，為當日最強板塊</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">* 指數數據主要來源：21世紀經濟報道、CMoney、中時新聞網。部分英文來源（CNBC）數字略有出入，以中文財經媒體交叉驗證為主。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <span class="event-tag">聯準會</span>
+        <strong>Fed 升息 25 基點，聯邦基金利率升至 3.75%–4.00%</strong><br>
+        聯邦公開市場委員會（FOMC）以 12 比 0 全票通過，將基準利率上調 1 碼（25 基點）至 3.75%–4.00%，為 2023 年 7 月以來首次升息。Fed 主席 Warsh 在決議後釋出強硬信號，稱若通膨未能明顯回落，不排除後續繼續升息。這是本週市場震盪的核心驅動力。
+      </li>
+      <li>
+        <span class="event-tag">四巫日</span>
+        <strong>2026 年 Q3 四巫日：合約大規模到期，交易量暴升</strong><br>
+        9 月 18 日（第三個週五）為 2026 年度第三季四巫日，股指期貨、股指選擇權、個股期貨、個股選擇權四類合約同日到期結算，尾盤最後一小時量能與波動顯著放大。台積電 ADR 及台股期貨夜盤亦受波及，呈現震盪走勢。
+      </li>
+      <li>
+        <span class="event-tag">油價</span>
+        <strong>國際油價大幅下跌，緩解通膨壓力，提振市場情緒</strong><br>
+        WTI 原油及布蘭特原油價格明顯回落，油價走軟降低市場對通膨再起的擔憂，是當日股市反彈的重要支撐因素之一，尤其有利於航空、消費等對油價敏感的板塊。
+      </li>
+      <li>
+        <span class="event-tag">科技股</span>
+        <strong>半導體與科技七巨頭全線收漲，費半暴衝近 3%</strong><br>
+        市場消化完 Fed 升息消息後，科技板塊資金明顯回流。費城半導體指數（SOX）勁升近 3%，帶動整體科技類股表現強勢。七大科技龍頭股全線走高：NVIDIA (+2.55%)、Tesla (+2.27%)、Amazon (+2.12%)、Microsoft (+1.52%)、Apple (+1.38%)、Meta (+1.32%)、Google (+1.28%)。台積電 ADR 亦隨之上漲約 4 美元。
+      </li>
+      <li>
+        <span class="event-tag">美債</span>
+        <strong>10 年期美債殖利率高企，週內一度突破 5%</strong><br>
+        本週美債殖利率大幅飆升，10 年期利率一度衝破 5%，創 2007 年以來新高，對股市（尤其是高本益比成長股）構成壓力。週五略有回落，但仍維持在高位，是本週道瓊指數創半年最大單週跌幅的主因。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTOR TABLE -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>個股 / 板塊</th>
+          <th>表現</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NVIDIA（NVDA）</td>
+          <td class="up">+2.55%</td>
+          <td>AI 晶片需求持續，領漲七巨頭</td>
+        </tr>
+        <tr>
+          <td>Tesla（TSLA）</td>
+          <td class="up">+2.27%</td>
+          <td>電動車銷售數據預期樂觀</td>
+        </tr>
+        <tr>
+          <td>Amazon（AMZN）</td>
+          <td class="up">+2.12%</td>
+          <td>電商與雲端業務前景穩健</td>
+        </tr>
+        <tr>
+          <td>Microsoft（MSFT）</td>
+          <td class="up">+1.52%</td>
+          <td>AI 整合產品線持續擴張</td>
+        </tr>
+        <tr>
+          <td>Apple（AAPL）</td>
+          <td class="up">+1.38%</td>
+          <td>新品季前夕市場期待</td>
+        </tr>
+        <tr>
+          <td>Meta（META）</td>
+          <td class="up">+1.32%</td>
+          <td>廣告收入展望正面</td>
+        </tr>
+        <tr>
+          <td>Alphabet / Google（GOOGL）</td>
+          <td class="up">+1.28%</td>
+          <td>搜尋與 AI 業務穩健成長</td>
+        </tr>
+        <tr>
+          <td>台積電 ADR（TSM）</td>
+          <td class="up">上漲約 +4 美元</td>
+          <td>隨費半強勢跟漲</td>
+        </tr>
+        <tr>
+          <td>費城半導體指數（SOX）</td>
+          <td class="up">~+3.00%</td>
+          <td>當日表現最強板塊</td>
+        </tr>
+        <tr>
+          <td>能源板塊</td>
+          <td class="down">承壓</td>
+          <td>油價下跌拖累能源股</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO TABLE -->
+  <div class="card">
+    <h2>總體經濟與宏觀背景</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>最新動態</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>聯邦基金利率</td>
+          <td>3.75%–4.00%（升息後，2023 年 7 月以來首升）</td>
+        </tr>
+        <tr>
+          <td>10 年期美債殖利率</td>
+          <td>週內一度突破 5%，週五略回落，仍處高位</td>
+        </tr>
+        <tr>
+          <td>WTI 原油</td>
+          <td>當日明顯下跌，緩解通膨擔憂</td>
+        </tr>
+        <tr>
+          <td>Fed 主席 Warsh</td>
+          <td>強調通膨尚未完全受控，暗示後續仍可能升息</td>
+        </tr>
+        <tr>
+          <td>美股四巫日</td>
+          <td>2026/09/18，合約到期結算，尾盤量能與波動擴大</td>
+        </tr>
+        <tr>
+          <td>美元指數（DXY）</td>
+          <td>升息後維持強勢，對新興市場造成壓力</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🔴 <strong>利率環境不明朗：</strong> Fed 升息後市場擔憂後續仍有加息空間，高利率環境持續壓縮估值，尤其對高本益比科技股衝擊較大。</li>
+      <li>🔴 <strong>10 年期美債殖利率接近 5%：</strong> 殖利率維持高位，為 2007 年來最高水準，對股市整體估值形成持續下行壓力。</li>
+      <li>🔴 <strong>通膨未完全受控：</strong> Fed 主席 Warsh 釋出鷹派信號，若後續通膨數據未如預期回落，不排除年底前再次升息。</li>
+      <li>🟡 <strong>道瓊週線下跌為半年最大：</strong> 儘管週五反彈，本週道瓊工業指數週線創下近半年最大單週跌幅，反映整體市場仍偏空氛圍。</li>
+      <li>🟡 <strong>四巫日後波動：</strong> 四巫日結算後市場方向尚不明確，後續兩週通常進入震盪整理期，投資人需留意非理性波動。</li>
+      <li>🟡 <strong>地緣政治風險：</strong> 中東局勢及俄烏衝突持續，油價走勢不穩定，可能再度引發通膨擔憂，牽動市場情緒。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li>📰 <a href="https://www.21jingji.com/article/20260918/herald/885efc83f5b198bca541736330de5b34.html" target="_blank">21世紀經濟報道：美股三大指数收涨 纳指、标普500指数涨超1%（2026-09-18）</a></li>
+      <li>📰 <a href="https://www.cmoney.tw/notes/note-detail.aspx?nid=1270930" target="_blank">CMoney：【美股盤勢】Fed升息消化完，費半暴衝3%領漲（2026.09.18）</a></li>
+      <li>📰 <a href="https://www.chinatimes.com/realtimenews/20260918003995-260410" target="_blank">中時新聞網：升息後盤整 那指勁揚440點 台積電ADR上漲4美元（2026-09-18）</a></li>
+      <li>📰 <a href="https://www.cnbc.com/2026/09/17/stock-market-today-live-updates.html" target="_blank">CNBC：Stock market news for Sept. 18, 2026（Live Updates）</a></li>
+      <li>📰 <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-18-2026" target="_blank">TheStreet：Stock Market Today (Sept. 18, 2026) - Dow Jones, S&P 500, Nasdaq Updates</a></li>
+      <li>📰 <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-18-134541673.html" target="_blank">Yahoo Finance：Stock Market Today (Sept. 18, 2026): S&P 500 edges higher after Fed rate hike</a></li>
+      <li>📰 <a href="https://www.bloomberg.com/news/articles/2026-09-17/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg：Stock Market Today: Dow, S&P Live Updates for September 18</a></li>
+      <li>📰 <a href="https://news.cnyes.com/news/id/6610684" target="_blank">鉅亨網：美股四巫日震盪 晶片股力撐 費半升近3% 道瓊周線創半年最大跌幅</a></li>
+      <li>📰 <a href="https://k.sina.com.cn/article_7857201856_1d45362c001908ntri.html" target="_blank">新浪財經：美股热点小时报 2026年09月18日</a></li>
+      <li>📰 <a href="https://news.qq.com/rain/a/20260918A02YTZ00" target="_blank">騰訊新聞：盘前速递 9月18日（周五）美股市场将迎来"三巫日"</a></li>
+      <li>📰 <a href="https://vocus.cc/article/6aace2bffd8978000117a8ec" target="_blank">方格子：2026年9月18日 影響全球與台股市場的重要財經新聞與盤勢重點解析</a></li>
+      <li>📰 <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab：Cooler Crude, Yields Boost Stocks After Fed Hike</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 2026-09-19 生成 | 僅供參考，非投資建議<br>
+    <span style="font-size:0.75rem; margin-top:4px; display:block;">數據來源：CNBC、TheStreet、Bloomberg、Yahoo Finance、鉅亨網、21世紀經濟報道、CMoney、中時新聞網</span>
+  </footer>
+</div>
+</body>
+</html>
