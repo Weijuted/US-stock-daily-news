@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-18</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 16px 0 8px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-item { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-item strong { color: #0f3460; }
+    .macro-item { padding: 12px 16px; margin-bottom: 10px; background: #fffbf0; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .tag { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 99px; margin-right: 6px; }
+    .tag-up { background: #dcfce7; color: #15803d; }
+    .tag-down { background: #fee2e2; color: #b91c1c; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding-left: 12px; position: relative; }
+    .sources li::before { content: "↗"; position: absolute; left: 0; color: #9ca3af; }
+    .badge { display: inline-block; background: #dbeafe; color: #1e40af; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
+    .badge-warn { background: #fef3c7; color: #92400e; }
+    .badge-red { background: #fee2e2; color: #991b1b; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .note { font-size: 0.82rem; color: #6b7280; margin-top: 10px; padding: 8px 12px; background: #f9fafb; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-09-18（星期五）| 三重到期日 · 聯準會升息後首個交易日 | 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價（估）</th>
+          <th>漲跌幅</th>
+          <th>週表現</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業（DJIA）</strong></td>
+          <td>51,682.64</td>
+          <td class="down">▼ -0.18%</td>
+          <td class="down">弱勢</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>~7,650.50</td>
+          <td class="up">▲ +0.17%</td>
+          <td class="neutral">持平</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>26,522.55</td>
+          <td class="up">▲ +0.39%</td>
+          <td class="up">科技領漲</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>~2,881.50</td>
+          <td class="down">▼ -0.53%</td>
+          <td class="down">小型股壓力</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">* 數據說明：S&amp;P 500 收盤價在不同來源間略有出入（7,637.76 vs. 7,650.50），漲跌幅 +0.17% 已多來源交叉驗證。整體格局為「道瓊與小型股走弱、科技帶動 Nasdaq 小漲」的分化行情。</p>
+  </div>
+
+  <!-- SECTOR TABLE -->
+  <div class="card">
+    <h2>板塊表現（S&amp;P 500 成分）</h2>
+    <table>
+      <thead>
+        <tr><th>板塊 ETF</th><th>漲跌幅</th><th>說明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>科技（XLK）</td><td class="up">+2.2%</td><td>最強板塊，AI 與半導體驅動</td></tr>
+        <tr><td>非必需消費（XLY）</td><td class="up">+1.4%</td><td>零售與消費品領漲</td></tr>
+        <tr><td>公用事業（XLU）</td><td class="up">+0.9%</td><td>防禦型小漲</td></tr>
+        <tr><td>金融（XLF）</td><td class="down">-0.1%</td><td>利率敏感，唯一明確收跌板塊</td></tr>
+        <tr><td>整體</td><td class="up">9/11 收漲</td><td>僅 2 板塊收跌，市場寬度尚健</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+
+    <div class="event-item">
+      <strong>🔐 SEC「創新豁免令」發酵</strong><span class="badge">最重要催化劑</span><br>
+      9月17日宣布，18日全面發酵。SEC 宣布為期 5 年的「Innovation Exemption（創新豁免）」，允許符合資格的交易平台在無需完整傳統交易所資質的情況下，交易代幣化（Tokenized）的美國上市股票。直接利好 Coinbase（COIN +11.77%）、Robinhood（HOOD +7.80%）等加密與科技券商。
+    </div>
+
+    <div class="event-item">
+      <strong>📅 季末三重到期日（Triple Witching）</strong><br>
+      2026年第三季季末，股票選擇權、指數選擇權與期貨合約同日到期，交易量大增，盤中波動加劇。此為每季固定現象，但今年因Fed升息周圍增加市場不確定性而受更多關注。
+    </div>
+
+    <div class="event-item">
+      <strong>✈️ 美國批准對沙烏地阿拉伯 F-35 軍售</strong><br>
+      國務院批准向沙烏地出售 48 架 F-35 戰鬥機 + 49 台 F135 引擎，潛在合約金額高達 <strong>243 億美元</strong>（Lockheed Martin，LMT），仍須國會最終批准。為國防板塊提供正面催化。
+    </div>
+
+    <div class="event-item">
+      <strong>💾 SanDisk（SNDK）納入 S&amp;P 100</strong><br>
+      確認將於 9月21日（下週一）正式納入 S&amp;P 100 指數，疊加 AI 資料中心儲存需求強勁，單日大漲 <strong>+10.99%</strong> 至 $1,791.82。
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <div class="macro-item">
+      <strong>🏦 聯準會（Fed）升息 25bps</strong><span class="badge badge-warn">三年來首次升息</span><br>
+      9月16日 FOMC 以 <strong>12-0 全票通過</strong>，升息 25bps，聯邦基金利率目標升至 <strong>3.75%–4.00%</strong>。Fed 主席 Kevin Warsh 引用油價帶動的通膨回溫、穩健就業市場及強勁消費作為依據。點陣圖暗示 2026 年底前仍有另一次 25bps 升息，2027 年繼續緊縮。10 年期美債殖利率升至接近 <strong>5.00%</strong>，為道瓊與小型股製造壓力，但靴子落地後科技股反彈。
+    </div>
+
+    <div class="macro-item">
+      <strong>🇯🇵 日本銀行（BOJ）同步升息至 1.25%</strong><span class="badge badge-warn">31年來最高</span><br>
+      BOJ 以 7-2 投票通過，升息 25bps 至 <strong>1.25%</strong>，為 1995 年以來最高利率。日圓反常走弱（跌破 157 日圓/美元），日經 225 上漲 1.5%，因分裂票數暗示 BOJ 態度不會過鷹。Fed + BOJ 同週雙緊縮壓縮日圓利差套利（Yen Carry Trade）空間，為潛在市場去槓桿風險。
+    </div>
+
+    <div class="macro-item">
+      <strong>🛢️ WTI 原油約 $95–96/桶，盤中跌逾 5%</strong><br>
+      受沙烏地阿拉伯供應決策及伊朗相關中東緊張局勢支撐，原油整體仍高位震盪。盤中因中東情勢出現緩和跡象一度大幅下跌至 ~$95，但仍維持高位。高油價持續推升通膨預期，間接強化聯準會鷹派立場。
+    </div>
+  </div>
+
+  <!-- STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+
+    <h3>▲ 主要上漲個股</h3>
+    <table>
+      <thead>
+        <tr><th>代號</th><th>漲跌幅</th><th>收盤價</th><th>事件說明</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>COIN</strong><br><span style="font-size:0.8rem;color:#6b7280">Coinbase</span></td>
+          <td><span class="tag tag-up">+11.77%</span></td>
+          <td>$194.39</td>
+          <td>SEC「創新豁免令」直接受益，加密交易所獲代幣化股票交易資格</td>
+        </tr>
+        <tr>
+          <td><strong>SNDK</strong><br><span style="font-size:0.8rem;color:#6b7280">SanDisk</span></td>
+          <td><span class="tag tag-up">+10.99%</span></td>
+          <td>$1,791.82</td>
+          <td>AI 資料中心儲存需求強勁 + 確認 9/21 納入 S&amp;P 100</td>
+        </tr>
+        <tr>
+          <td><strong>AMAT</strong><br><span style="font-size:0.8rem;color:#6b7280">Applied Materials</span></td>
+          <td><span class="tag tag-up">+12%</span></td>
+          <td>—</td>
+          <td>財報強勁，設備需求指引超出市場預期</td>
+        </tr>
+        <tr>
+          <td><strong>HOOD</strong><br><span style="font-size:0.8rem;color:#6b7280">Robinhood</span></td>
+          <td><span class="tag tag-up">+7.80%</span></td>
+          <td>—</td>
+          <td>同受 SEC 豁免利好，Baird 分析師稱功能接近 Coinbase</td>
+        </tr>
+        <tr>
+          <td><strong>NVDA</strong><br><span style="font-size:0.8rem;color:#6b7280">Nvidia</span></td>
+          <td><span class="tag tag-up">+約 2%</span></td>
+          <td>~$218</td>
+          <td>Jensen Huang 宣布明年晶片出貨量倍增，Q2 FY27 營收年增 106%（$96.2B）</td>
+        </tr>
+        <tr>
+          <td><strong>LMT</strong><br><span style="font-size:0.8rem;color:#6b7280">Lockheed Martin</span></td>
+          <td><span class="tag tag-up">正面</span></td>
+          <td>—</td>
+          <td>$243 億 F-35 對沙烏地軍售案獲批，仍待國會批准</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top:20px">▼ 主要下跌個股</h3>
+    <table>
+      <thead>
+        <tr><th>代號</th><th>漲跌幅</th><th>事件說明</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>XENE</strong><br><span style="font-size:0.8rem;color:#6b7280">Xenon Pharmaceuticals</span></td>
+          <td><span class="tag tag-down">-29%</span></td>
+          <td>主動暫停 Phase 3 臨床試驗新患者招募，市場大幅反應不確定性</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>利率持續高位壓力：</strong>10 年期美債殖利率接近 5%，繼續壓抑估值倍數高的成長股與小型股，道瓊分化走弱已是訊號之一。</li>
+      <li><strong>聯準會鷹派前景：</strong>點陣圖暗示 2026 年底前可能再升息一次，市場需消化「比預期更長的高利率時代」。</li>
+      <li><strong>日圓套利交易（Yen Carry Trade）解開風險：</strong>Fed + BOJ 雙緊縮壓縮日圓利差空間，若日圓急速升值可能觸發全球去槓桿，類似 2024 年 8 月事件。</li>
+      <li><strong>油價高位通膨回溫：</strong>WTI 維持 $95+ 並非Fed預期，若油價繼續攀升，通膨預期可能再度升溫，加大緊縮壓力。</li>
+      <li><strong>中東地緣政治：</strong>伊朗相關局勢持續，若局勢惡化可能再推油價並衝擊市場風險偏好。</li>
+      <li><strong>三重到期日後遺症：</strong>大量選擇權平倉後，市場動能可能需重建，下週初波動性可能偏高。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-18-2026" target="_blank">Stock Market Today (Sept. 18, 2026) – TheStreet</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-18-133000178.html" target="_blank">Stock Market News for Sep 18, 2026 – Yahoo Finance</a></li>
+      <li><a href="https://vistapglobal.com/weekly-market-summary-friday-september-18-2026-stocks-end-mixed-as-the-fed-hikes-treasury-yields-near-5-and-oil-holds-above-95-amat-amwl-eprx-modd-nvda-onon-ser-soc-spcx/" target="_blank">Weekly Market Summary Sep 18, 2026 – VistaPG Global</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-09-17/stock-market-today-dow-s-p-live-updates" target="_blank">Stock Market Today: Dow, S&amp;P Live Updates – Bloomberg</a></li>
+      <li><a href="https://investrade.com/market-review-september-18-2026/" target="_blank">Market Review: September 18, 2026 – Investrade</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html" target="_blank">Fed Rate Decision September 2026 – CNBC</a></li>
+      <li><a href="https://www.advisorperspectives.com/dshort/updates/2026/09/16/feds-interest-rate-decision-september-16-2026" target="_blank">Fed's Interest Rate Decision: Sep 16, 2026 – Advisor Perspectives</a></li>
+      <li><a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm" target="_blank">Federal Reserve FOMC Statement Sep 16, 2026 – FederalReserve.gov</a></li>
+      <li><a href="https://www.gurufocus.com/news/9087743/bank-of-japan-raises-interest-rates-to-125-impact-on-markets" target="_blank">Bank of Japan Raises Rates to 1.25% – GuruFocus</a></li>
+      <li><a href="https://www.ebc.com/forex/september-triple-witching-2026-fed-boj-expiry" target="_blank">September Triple Witching 2026 – EBC Financial Group</a></li>
+      <li><a href="https://www.tradingkey.com/news/market-movers/262175736-market-movers-coin-20260918" target="_blank">COIN +11.77% on Sep 18 – TradingKey</a></li>
+      <li><a href="https://www.tradingkey.com/news/market-movers/262175663-market-movers-hood-20260918" target="_blank">HOOD +7.80% on Sep 18 – TradingKey</a></li>
+      <li><a href="https://finance.yahoo.com/markets/crypto/articles/sec-opens-door-tokenized-stocks-145031777.html" target="_blank">SEC Opens Door to Tokenized Stocks – Yahoo Finance</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Stocks Fall, Yields Rise on Triple Witching Day – Charles Schwab</a></li>
+      <li><a href="https://kbldestinations.substack.com/p/daily-market-report-9-18-26" target="_blank">Daily Market Report 9-18-26 – KBL Destinations (Substack)</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 資料來源已交叉驗證 | 僅供參考，非投資建議<br>
+    生成時間：2026-09-20（星期日）
+  </footer>
+</div>
+</body>
+</html>
