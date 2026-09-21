@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-18</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #4f86f7; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .stock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 600px) { .stock-grid { grid-template-columns: 1fr; } }
+    .stock-group h3 { margin-top: 0; border-bottom: 1px solid #eef0f5; padding-bottom: 8px; }
+    .stock-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f3f4f6; font-size: 0.9rem; }
+    .stock-item:last-child { border-bottom: none; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 8px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.03em; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-item .note { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 99px; margin-left: 8px; vertical-align: middle; }
+    .badge-up { background: #dcfce7; color: #15803d; }
+    .badge-down { background: #fee2e2; color: #b91c1c; }
+    .badge-neutral { background: #f3f4f6; color: #4b5563; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-09-18（週五）| 季度三重到期日 · 聯準會升息後第一交易日 | 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>週表現</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 DJIA</strong></td>
+          <td>51,682.64</td>
+          <td class="down">−95.40</td>
+          <td class="down">−0.18%</td>
+          <td><span class="badge badge-neutral">震盪整理</span></td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 S&P 500</strong></td>
+          <td>7,650.50</td>
+          <td class="up">+12.74</td>
+          <td class="up">+0.17%</td>
+          <td><span class="badge badge-up">小幅收漲</span></td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克 Nasdaq</strong></td>
+          <td>26,522.55</td>
+          <td class="up">+104.25</td>
+          <td class="up">+0.39%</td>
+          <td><span class="badge badge-up">科技領漲</span></td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 Russell 2000</strong></td>
+          <td>2,860.40</td>
+          <td class="down">−14.23</td>
+          <td class="down">−0.50%</td>
+          <td><span class="badge badge-down">小型股落後</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:12px;">市場呈現「科技領漲、傳統金融落後」的分化格局。週四已消化升息衝擊大漲，週五為三重到期日，震盪整理。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🏦 聯準會升息 25 bps（FOMC 9/15–16）</strong><br>
+        三年來首次升息，聯邦基金利率升至 <strong>3.75%–4.00%</strong>，全票通過。點陣圖暗示年內或再升一次。週四市場大漲消化決策，週五轉為震盪整理模式。
+      </li>
+      <li>
+        <strong>🇯🇵 日本央行（BOJ）升息至 1.25%</strong><br>
+        1995 年以來最高利率，週五正式宣布。惟行長植田和男發表鴿派聲明，且有兩票反對，市場意外解讀為寬鬆訊號，導致日圓走弱而非升值。
+      </li>
+      <li>
+        <strong>⚡ 季度三重到期日（Triple Witching）</strong><br>
+        個股期權、指數期權、期貨三者同步到期，放大當日波動。早盤一度大幅回吐週四漲幅，尾盤在科技股拉動下勉強收平。
+      </li>
+      <li>
+        <strong>🤖 輝達 CEO 黃仁勳宣布 AI 晶片明年銷售翻倍</strong><br>
+        黃仁勳在科技論壇上表示，NVIDIA 下一代 AI 晶片（H300 系列）明年出貨量將較今年翻倍。激勵半導體 ETF（SMH）全周大漲近 3%，NVDA 維持強勢。
+      </li>
+      <li>
+        <strong>🏃 昂跑（ONON）簽署 Kylian Mbappé 為代言人</strong><br>
+        瑞士運動品牌昂跑宣布法國足球明星 Mbappé 成為品牌大使，正式進軍足球市場。ONON 股價週五大漲逾 6.4%，為個股中表現最亮眼之一。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">美聯儲基金利率</div>
+        <div class="value">3.75%–4.00%</div>
+        <div class="note">三年來首次升息 +25 bps</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">BOJ 政策利率</div>
+        <div class="value">1.25%</div>
+        <div class="note">31年高位（1995年以來）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">美國 CPI（8月）</div>
+        <div class="value">3.4% YoY</div>
+        <div class="note">仍高於 Fed 2% 目標</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">美國失業率（8月）</div>
+        <div class="value">4.1%</div>
+        <div class="note">就業市場依然穩健</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10年期美債殖利率</div>
+        <div class="value">4.96%</div>
+        <div class="note">週五下滑約 5 bps，逼近 5% 關口</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">WTI 原油</div>
+        <div class="value">$95+</div>
+        <div class="note">週五下跌約 2%，但全週維持高位</div>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:#4b5563;margin-top:16px;line-height:1.6;">
+      <strong>地緣政治：</strong>2026 年伊朗戰爭持續，荷姆茲海峽受阻，影響全球約 31% 的船運量，國際油價維持高位。能源成本上升加劇通膨壓力，聯準會政策空間收窄。
+    </p>
+  </div>
+
+  <!-- STOCKS & SECTORS -->
+  <div class="card">
+    <h2>個股與板塊動態</h2>
+    <div class="stock-grid">
+      <div class="stock-group">
+        <h3 class="up">▲ 領漲個股</h3>
+        <div class="stock-item">
+          <span><strong>ONON</strong> 昂跑</span>
+          <span class="up">+6.4%+</span>
+        </div>
+        <div class="stock-item">
+          <span><strong>NVDA</strong> 輝達</span>
+          <span class="up">強勢上漲</span>
+        </div>
+        <div class="stock-item">
+          <span><strong>AMAT</strong> 應用材料</span>
+          <span class="up">跟漲</span>
+        </div>
+        <div class="stock-item">
+          <span><strong>AVGO</strong> 博通</span>
+          <span class="up">跟漲</span>
+        </div>
+        <div class="stock-item">
+          <span><strong>LRCX</strong> 科林研發</span>
+          <span class="up">跟漲</span>
+        </div>
+        <div class="stock-item">
+          <span><strong>SMH ETF</strong> 半導體</span>
+          <span class="up">週漲 +3%</span>
+        </div>
+      </div>
+      <div class="stock-group">
+        <h3 class="down">▼ 落後個股</h3>
+        <div class="stock-item">
+          <span><strong>BAC</strong> 美國銀行</span>
+          <span class="down">−0.8%</span>
+        </div>
+        <div class="stock-item">
+          <span><strong>GS</strong> 高盛</span>
+          <span class="down">−1.0%</span>
+        </div>
+        <div class="stock-item">
+          <span>銀行板塊</span>
+          <span class="down">整體落後</span>
+        </div>
+        <div class="stock-item">
+          <span>資產管理板塊</span>
+          <span class="down">整體落後</span>
+        </div>
+        <div class="stock-item">
+          <span>小型股（Russell 2000）</span>
+          <span class="down">−0.50%</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:14px;">半導體 / 科技板塊受惠於 AI 敘事與 NVDA 樂觀展望，抵銷了升息對估值的壓力。銀行股則因升息預期已充分定價而承壓。</p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>聯準會年內再次升息：</strong>點陣圖顯示 2026 年內可能追加升息一次，若通膨數據不如預期，市場需重新定價。</li>
+      <li><strong>美債殖利率逼近 5%：</strong>10 年期殖利率接近 5% 心理關口，一旦突破可能引發股票估值重估與資本流出。</li>
+      <li><strong>伊朗危機與油價：</strong>荷姆茲海峽受阻使油價維持高位，能源成本上升持續推升通膨，壓縮聯準會政策空間。</li>
+      <li><strong>日圓走弱連鎖效應：</strong>日圓意外走弱可能引發日系資產重新配置，影響全球資本流向。</li>
+      <li><strong>Triple Witching 後流動性：</strong>期權期貨到期後，市場流動性結構重置，下週初可能出現額外波動。</li>
+      <li><strong>AI 估值泡沫疑慮：</strong>半導體股大漲背後，AI 資本支出回報是否如預期仍存不確定性。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/09/17/stock-market-today-live-updates.html" target="_blank">CNBC — 9/18 Stock Market Live Updates</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-18-2026" target="_blank">TheStreet — Nasdaq, S&P 500 close higher to end Fed hike week</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-18-133000178.html" target="_blank">Yahoo Finance — Stock Market News Sep 18, 2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-18-134541673.html" target="_blank">Yahoo Finance — S&P 500 edges higher after Fed rate hike</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-september-18-dow-sp-500-nasdaq-080504071.html" target="_blank">Yahoo Finance Live — Weekly losses, 10-yr Treasury near 5%</a></li>
+      <li><a href="https://vistapglobal.com/weekly-market-summary-friday-september-18-2026-stocks-end-mixed-as-the-fed-hikes-treasury-yields-near-5-and-oil-holds-above-95-amat-amwl-eprx-modd-nvda-onon-ser-soc-spcx/" target="_blank">Vista P Global — Weekly Market Summary Sept 18, 2026</a></li>
+      <li><a href="https://investrade.com/market-review-september-18-2026/" target="_blank">Investrade — Market Review: September 18, 2026</a></li>
+      <li><a href="https://www.newsy-today.com/stock-market-news-today-sept-18-2026/" target="_blank">Newsy Today — Stock Market News Today: Sept. 18, 2026</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Triple Witching Day Report</a></li>
+      <li><a href="https://www.gurufocus.com/news/9088531/us-markets-mixed-amid-fed-rate-hike-and-ai-concerns" target="_blank">GuruFocus — US Markets Mixed Amid Fed Rate Hike and AI Concerns</a></li>
+      <li><a href="https://www.nasdaq.com/economic-institute/chartstopper-091826" target="_blank">Nasdaq Economic Institute — Chartstopper 9/18/26</a></li>
+      <li><a href="https://www.federalreserve.gov/monetarypolicy/fomcpresconf20260916.htm" target="_blank">Federal Reserve — FOMC Press Conference 9/16/2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html" target="_blank">CNBC — Fed rate decision September 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/18/japan-raises-rates-30-year-high-yen-jgb.html" target="_blank">CNBC — Bank of Japan raises rates to 31-year high</a></li>
+      <li><a href="https://www.babypips.com/news/headline-boj-rate-hike-september-2026-yen-falls-dovish-ueda" target="_blank">Babypips — BOJ Hikes to 1.25%, Yen Falls</a></li>
+      <li><a href="https://www.investing.com/news/economy-news/boj-hikes-rates-huang-on-nvidia-chip-sales--whats-moving-markets-4906787" target="_blank">Investing.com — BOJ hikes; Huang on Nvidia chip sales</a></li>
+      <li><a href="https://www.investing.com/news/stock-market-news/why-is-on-stock-surging-today-93CH-4907448" target="_blank">Investing.com — Why is ONON stock surging?</a></li>
+      <li><a href="https://finance.yahoo.com/quote/%5ERUT/history/" target="_blank">Yahoo Finance — Russell 2000 Historical Data</a></li>
+      <li><a href="https://tradingeconomics.com/united-states/stock-market" target="_blank">Trading Economics — US Stock Market</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_Iran_war_fuel_crisis" target="_blank">Wikipedia — 2026 Iran war fuel crisis</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 · 20 個來源交叉比對 | 2026-09-18 美股日報 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
