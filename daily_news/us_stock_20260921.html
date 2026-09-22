@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-21</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .highlight-badge { display: inline-block; background: #fef3c7; color: #92400e; font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 4px; }
+    .macro-item { background: #f0f4ff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #0f3460; }
+    .macro-item .change { font-size: 0.82rem; margin-top: 2px; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
+    .sources li:last-child { border-bottom: none; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .tag-new { display: inline-block; background: #dcfce7; color: #166534; font-size: 0.72rem; font-weight: 700; padding: 1px 7px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-09-21（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤值</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 DJIA</strong></td>
+          <td>52,048.83</td>
+          <td class="up">+366.19</td>
+          <td class="up">+0.71%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>標普500 S&amp;P 500</strong></td>
+          <td>7,764.70</td>
+          <td class="up">+114.30</td>
+          <td class="up">+1.49%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克 Nasdaq</strong></td>
+          <td>27,122.09</td>
+          <td class="up">+599.55</td>
+          <td class="up">+2.26%</td>
+          <td>歷史收盤新高 <span class="tag-new">NEW HIGH</span></td>
+        </tr>
+        <tr>
+          <td><strong>羅素2000 Russell 2000</strong></td>
+          <td>2,875.00</td>
+          <td class="up">+14.96</td>
+          <td class="up">+0.52%</td>
+          <td>小型股明顯落後大型科技</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🤖 Meta 推出 MUSE 個人 AI 代理（最核心催化劑）</strong><br>
+        Meta 的 MUSE AI 助手登上美國 App Store（iOS 與 Google Play）免費下載榜首，引爆半導體供應鏈全面上漲。AMD 盤中股價突破 $610，達成 $1 兆美元市值里程碑（成為第四家達成此成就的美國晶片商）。Nasdaq 創下自 6 月以來首次歷史收盤新高。
+      </li>
+      <li>
+        <strong>🌏 川普-習近平華盛頓國宴（地緣政治利好）</strong><br>
+        白宮宣布川普在華盛頓主持習近平國事訪問及國宴，OpenAI 執行長 Sam Altman、輝達執行長 Jensen Huang 及蘋果執行長 Tim Cook 受邀出席。議題涵蓋貿易關稅、稀土礦物、AI 治理、台灣及美伊衝突。市場解讀為中美 AI 合作框架可能重建，提振 AI 概念股。
+      </li>
+      <li>
+        <strong>🛢️ 油價急跌約 4%</strong><br>
+        WTI 原油收 $95.59/桶（▼ -4.69%）、Brent 原油 $100.06/桶（▼ -3.67%）。美伊外交緩和訊號（川普表態願與伊朗總統會談）及霍爾木茲海峽航運穩定推動油價大跌，降低通膨預期。
+      </li>
+      <li>
+        <strong>📉 10 年期美債殖利率跌破 5% 心理關口</strong><br>
+        10 年期美債殖利率回落至約 4.96%，重回 5% 以下，緩解科技股估值壓力，為本日 Nasdaq 大漲提供重要支撐。
+      </li>
+    </ul>
+
+    <h3>重要個股動態</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>代號</th>
+          <th>公司</th>
+          <th>漲幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>ARM</strong></td>
+          <td>Arm Holdings</td>
+          <td class="up">+13~17%</td>
+          <td>CPU 需求爆增預期，MUSE 受益股</td>
+        </tr>
+        <tr>
+          <td><strong>META</strong></td>
+          <td>Meta Platforms</td>
+          <td class="up">+11~12%</td>
+          <td>MUSE AI App 躍居 #1 下載</td>
+        </tr>
+        <tr>
+          <td><strong>INTC</strong></td>
+          <td>Intel</td>
+          <td class="up">+12%</td>
+          <td>AI 代理算力受益概念</td>
+        </tr>
+        <tr>
+          <td><strong>AMD</strong></td>
+          <td>超微半導體</td>
+          <td class="up">+9~10%</td>
+          <td>歷史新高 $610+，達成 $1 兆市值里程碑 <span class="tag-new">MILESTONE</span></td>
+        </tr>
+        <tr>
+          <td><strong>TSLA</strong></td>
+          <td>Tesla</td>
+          <td class="up">+3%+</td>
+          <td>大型科技整體走強帶動</td>
+        </tr>
+        <tr>
+          <td><strong>NVDA / GOOGL</strong></td>
+          <td>輝達 / Alphabet</td>
+          <td class="up">+1%+</td>
+          <td>接近各自歷史高位</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯準會基準利率</div>
+        <div class="value">3.75%–4.00%</div>
+        <div class="change neutral">有效利率 3.88%；自 2023 年以來首次升息 +25bps</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10年期美債殖利率</div>
+        <div class="value">4.96%</div>
+        <div class="change down">▼ 跌破 5% 心理關口</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">WTI 原油</div>
+        <div class="value">$95.59/桶</div>
+        <div class="change down">▼ -4.69%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Brent 原油</div>
+        <div class="value">$100.06/桶</div>
+        <div class="change down">▼ -3.67%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>📊 <strong>市場廣度偏窄：</strong>S&amp;P 500 僅 54% 個股上漲，漲勢高度集中於超大型科技股，廣度不足可能預示短期回調風險。</li>
+      <li>💰 <strong>聯準會升息預期未消：</strong>市場預期年底前再升 25bps，通膨仍高於 2% 目標，柴油價格升至約 $6/加侖，利率不確定性持續。</li>
+      <li>🌏 <strong>川習峰會結果不確定：</strong>AI 治理、台灣、稀土礦物等議題若無具體成果，市場情緒可能逆轉。</li>
+      <li>⚡ <strong>AI 概念股估值偏高：</strong>META、ARM、AMD 單日漲幅均超過 10%，短期估值壓力顯著，獲利了結風險上升。</li>
+      <li>🛢️ <strong>中東地緣政治仍存不確定性：</strong>美伊談判進展需持續追蹤；若談判破裂，油價可能急速反彈。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/09/20/stock-market-today-live-updates.html" target="_blank">CNBC – 市場即時更新（Stock Market Today Live Updates）</a></li>
+      <li><a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-203454849.html" target="_blank">Yahoo Finance – 主要指數收盤表現</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-09-21/us-stock-futures-climb-ahead-of-trump-xi-meeting-as-oil-slips" target="_blank">Bloomberg – Meta 帶動科技股上漲；川習峰會前景</a></li>
+      <li><a href="https://news.bloomberglaw.com/international-trade/amd-intel-soar-as-metas-muse-ai-agent-spurs-chip-stock-rally" target="_blank">Bloomberg Law – AMD、Intel 飆升；Meta MUSE AI 代理引爆晶片股</a></li>
+      <li><a href="https://247wallst.com/investing/2026/09/21/arm-surges-13-as-metas-muse-agent-reignites-cpu-demand-bet-intel-jumps-12-amd-climbs-9/" target="_blank">247 Wall St. – ARM +13%、Intel +12%、AMD +9% 詳細分析</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/09/61908373/meta-muse-app-store-amd-stock-trillion-ai-agents" target="_blank">Benzinga – Meta MUSE #1 App Store 下載；AMD $1 兆市值里程碑</a></li>
+      <li><a href="https://www.usnews.com/news/national-news/articles/2026-09-21/trump-and-xi-meet-in-washington-under-shadow-of-ai-trade-and-rare-earth-tensions" target="_blank">US News – 川普習近平華盛頓峰會；AI、貿易、稀土議題</a></li>
+      <li><a href="https://www.foxbusiness.com/markets/tech-power-players-land-seat-table-high-stakes-dinner-trump-xi" target="_blank">Fox Business – 國宴嘉賓名單（Altman、Jensen Huang、Tim Cook）</a></li>
+      <li><a href="https://fortune.com/article/price-of-oil-09-21-2026/" target="_blank">Fortune – 油價數據（WTI $95.59 / Brent $100.06）</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/09/21/stock-market-today-sept-21-tech-strength-powers-nasdaq-to-record-close/" target="_blank">The Motley Fool – 納斯達克創新高：科技強勢推動歷史收盤</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議<br>生成時間：2026-09-22</footer>
+</div>
+</body>
+</html>
