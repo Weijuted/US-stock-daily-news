@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-09-25</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edfc; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #4361ee; border-radius: 4px; font-size: 0.91rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; padding-left: 0; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+    .badge-up { background: #dcfce7; color: #16a34a; }
+    .badge-down { background: #fee2e2; color: #dc2626; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-item .change { font-size: 0.82rem; margin-top: 2px; }
+    .sector-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 0.88rem; }
+    .sector-name { width: 180px; flex-shrink: 0; color: #374151; }
+    .bar-container { flex: 1; height: 8px; background: #f0f4ff; border-radius: 4px; overflow: hidden; }
+    .bar-fill-up { height: 100%; background: #16a34a; border-radius: 4px; }
+    .bar-fill-down { height: 100%; background: #dc2626; border-radius: 4px; }
+    .sector-pct { width: 60px; text-align: right; font-weight: 600; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      header { padding: 24px 20px; }
+      .card { padding: 18px 16px; }
+      .macro-grid { grid-template-columns: 1fr; }
+      .sector-name { width: 130px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026年9月25日（週五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>單日漲跌點</th>
+          <th>單日漲跌幅</th>
+          <th>當週漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均 (DJIA)</strong></td>
+          <td>51,828.62</td>
+          <td class="up">+478.64</td>
+          <td class="up">+0.93%</td>
+          <td class="up">+週線收漲</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,743.41</td>
+          <td class="up">+39.38</td>
+          <td class="up">+0.51%</td>
+          <td class="up">+1.2%</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合指數</strong></td>
+          <td>27,068.72</td>
+          <td class="up">+129.34</td>
+          <td class="up">+0.48%</td>
+          <td class="up">+2.0%</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>2,837.55</td>
+          <td class="up">+1.98</td>
+          <td class="up">+0.07%</td>
+          <td class="down">-0.8%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px; font-size:0.85rem; color:#6b7280;">
+      大型科技股帶動主要指數收漲，三大指數均錄得週線勝利。道瓊結束三週連跌走勢。惟代表中小型股的 Russell 2000 當週下跌 0.8%，大小型股分化格局明顯。
+    </p>
+  </div>
+
+  <!-- MACRO INDICATORS -->
+  <div class="card">
+    <h2>宏觀經濟指標</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">10年期美債殖利率</div>
+        <div class="value">5.17%</div>
+        <div class="change down">盤中觸及 5.225%（2007年來最高）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">30年期美債殖利率</div>
+        <div class="value">5.502%</div>
+        <div class="change down">2004年以來最高水準</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">WTI 原油（當日收盤）</div>
+        <div class="value">$92.41/桶</div>
+        <div class="change down">-2.33%（伊朗外交曙光緩解供給憂慮）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">密西根消費信心（9月最終值）</div>
+        <div class="value">48.1</div>
+        <div class="change down">四個月新低；1年通膨預期升至 4.6%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">聯邦基金利率目標區間</div>
+        <div class="value">3.75%–4.00%</div>
+        <div class="change neutral">9/16 FOMC 升息25bps（逾3年來首次升息）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">布蘭特原油</div>
+        <div class="value">$104.32/桶</div>
+        <div class="change down">-2.14%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🤖 Akamai (AKAM) 大漲 +15%</strong>—與 AI 公司 Anthropic 簽署7年、總金額 <strong>116億美元</strong>（最高可達200億美元）雲端運算服務協議，為 Akamai 史上最大合約。作為協議一部分，Akamai 還授予 Anthropic 相當於約 5% 流通股的認股權證。CoreWeave 與 Cloudflare 同步跟漲。
+      </li>
+      <li>
+        <strong>📱 Microsoft (MSFT) 勁升 +3.71%</strong>—宣布將消費者版與企業版 Copilot AI 助理合併成一個統一企業產品，顯示其 AI 商業化策略取得新進展，帶動科技板塊整體走強。
+      </li>
+      <li>
+        <strong>🏭 AMD 本週率先突破兆元市值里程碑</strong>—AMD（AMD）於9月21日（週一）市值首度突破1兆美元，加入 Nvidia、台積電、博通等晶片巨頭的「兆元俱樂部」。AMD 股價 2026 年迄今累計上漲逾 <strong>187%</strong>，目前股價約 $615。
+      </li>
+      <li>
+        <strong>🌐 Meta Muse AI Agent 持續發酵</strong>—Meta Platforms 推出的個人 Muse AI 代理人本週帶動 Meta 股價累計上漲約 <strong>13%</strong>，AI 代理人（AI Agent）賽道成為本週最大市場主題，帶動整體科技板塊情緒走揚。
+      </li>
+      <li>
+        <strong>🤝 美中峰會：貿易休戰延長至2027年1月</strong>—習近平國事訪問美國（9/24–25）。兩國領導人宣布將即將到期的關稅休戰協議延長兩個月至 <strong>2027年1月10日</strong>，緩解了市場對中美貿易緊張的近期憂慮。分析師整體評估峰會「偏形式、缺實質」。
+      </li>
+      <li>
+        <strong>🛢️ 伊朗外交訊號壓低油價</strong>—市場評估伊朗有意重開荷莫茲海峽並恢復核談判，帶動油價週五明顯回落，WTI 下跌 2.33% 至 $92.41，布蘭特下跌 2.14% 至 $104.32，油價下跌同時舒緩了債市壓力，使股市得以收漲。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊單日表現（S&amp;P 500 分類）</h2>
+    <div style="margin-top: 8px;">
+      <div class="sector-bar">
+        <span class="sector-name">資訊科技 Technology</span>
+        <div class="bar-container"><div class="bar-fill-up" style="width:100%;"></div></div>
+        <span class="sector-pct up">+3.1%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">工業 Industrials</span>
+        <div class="bar-container"><div class="bar-fill-up" style="width:14%;"></div></div>
+        <span class="sector-pct up">+0.45%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">材料 Materials</span>
+        <div class="bar-container"><div class="bar-fill-up" style="width:1%;"></div></div>
+        <span class="sector-pct up">+0.02%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">房地產 Real Estate</span>
+        <div class="bar-container"><div class="bar-fill-down" style="width:13%;"></div></div>
+        <span class="sector-pct down">-0.41%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">通訊服務 Comm. Svcs</span>
+        <div class="bar-container"><div class="bar-fill-down" style="width:34%;"></div></div>
+        <span class="sector-pct down">-1.04%</span>
+      </div>
+      <div class="sector-bar">
+        <span class="sector-name">能源 Energy</span>
+        <div class="bar-container"><div class="bar-fill-down" style="width:29%;"></div></div>
+        <span class="sector-pct down">-0.88%</span>
+      </div>
+    </div>
+    <p style="margin-top:12px; font-size:0.83rem; color:#6b7280;">11個板塊中有7個收跌，科技板塊獨力撐起大盤漲幅。</p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>單日表現</th>
+          <th>關鍵事件</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Microsoft (MSFT)</strong></td>
+          <td class="up">+3.71%</td>
+          <td>宣布合併消費者與企業版 Copilot AI 助理，強化 AI 商業化</td>
+        </tr>
+        <tr>
+          <td><strong>Akamai (AKAM)</strong></td>
+          <td class="up">+15.0%</td>
+          <td>與 Anthropic 簽署 $116億美元、7年雲端運算服務協議</td>
+        </tr>
+        <tr>
+          <td><strong>Sherwin-Williams (SHW)</strong></td>
+          <td class="up">+2.72%</td>
+          <td>工業板塊表現偏強</td>
+        </tr>
+        <tr>
+          <td><strong>Amgen (AMGN)</strong></td>
+          <td class="up">+2.15%</td>
+          <td>醫療保健板塊受防禦性資金青睞</td>
+        </tr>
+        <tr>
+          <td><strong>Applied Materials (AMAT)</strong></td>
+          <td class="up">+2.3%</td>
+          <td>半導體設備股受 AI 基礎建設需求推動</td>
+        </tr>
+        <tr>
+          <td><strong>Lam Research (LRCX)</strong></td>
+          <td class="up">+2.6%</td>
+          <td>半導體設備股隨科技板塊走強</td>
+        </tr>
+        <tr>
+          <td><strong>AMD (AMD)</strong></td>
+          <td class="up">週內 +187% YTD</td>
+          <td>本週（9/21）首破 $1兆市值，股價約 $615</td>
+        </tr>
+        <tr>
+          <td><strong>Meta Platforms (META)</strong></td>
+          <td class="up">週漲 +13%</td>
+          <td>Muse AI 個人助理發布，帶動週線大漲（週五小幅回落）</td>
+        </tr>
+        <tr>
+          <td><strong>Salesforce (CRM)</strong></td>
+          <td class="down">-1.76%</td>
+          <td>軟體股承壓，高殖利率環境下估值受壓縮</td>
+        </tr>
+        <tr>
+          <td><strong>Nike (NKE)</strong></td>
+          <td class="down">-0.61%</td>
+          <td>消費信心低迷，可選消費股走弱</td>
+        </tr>
+        <tr>
+          <td><strong>IBM</strong></td>
+          <td class="down">-0.71%</td>
+          <td>通訊服務板塊承壓</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FED & MACRO -->
+  <div class="card">
+    <h2>聯準會動態與宏觀背景</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🏦 聯準會 9/16 升息25基點</strong>—FOMC 以 12-0 全票通過，將聯邦基金利率目標區間上調至 <strong>3.75%–4.00%</strong>，為逾三年來首次升息。聯準會強調「通膨仍然偏高」，18位委員中有16位預期年內還將再升息至少一次。期貨市場預期利率將於2026年12月升至約4.2%，2027年9月進一步達4.8%。
+      </li>
+      <li>
+        <strong>📈 公債殖利率維持高位</strong>—10年期美債殖利率盤中觸及 5.225%（2007年來最高），收於 5.17%；30年期殖利率達 5.502%（2004年來最高）。高殖利率環境對科技股估值及小型股融資成本造成壓力，但當日因油價回落而稍有舒緩。
+      </li>
+      <li>
+        <strong>😟 消費者信心四個月新低</strong>—密西根大學9月最終消費者信心指數報 48.1，低於預期，為四個月新低，較2026年1月大跌逾15%。一年期通膨預期升至 4.6%，五年期升至 3.4%。現況指數報 50.9，預期指數報 46.3，顯示消費者對未來經濟前景悲觀情緒加重。
+      </li>
+      <li>
+        <strong>🌍 伊朗戰爭（2026年2月爆發）持續影響能源</strong>—荷莫茲海峽部分封鎖仍在持續，為油價維持高位的根本原因。9月25日伊朗提出和平方案（重開海峽＋恢復核談判）帶動油價暫時回落，惟市場仍在評估其可行性，地緣政治風險依然存在。
+      </li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🔺 <strong>美債殖利率持續攀升</strong>——10年期殖利率盤中觸及 5.225%（2007年來最高），若維持高位將壓縮科技股、成長股估值，並對房地產及小型股（Russell 2000）造成更大融資成本壓力。</li>
+      <li>🔺 <strong>聯準會升息預期未終止</strong>——期貨市場定價年底前仍有升息空間，若通膨數據持續偏強，市場可能面臨額外的政策緊縮衝擊。</li>
+      <li>🔺 <strong>伊朗地緣政治不確定性</strong>——荷莫茲海峽局勢若惡化，油價可能再度飆升，進一步推高通膨與債券殖利率，形成股市雙重壓力。</li>
+      <li>🔺 <strong>消費者信心持續惡化</strong>——密西根大學信心指數跌至 48.1 的四個月新低，一年通膨預期高達 4.6%，顯示消費者購買力可能進一步收縮，拖累零售、可選消費板塊。</li>
+      <li>🔺 <strong>美中貿易休戰僅短期延長</strong>——休戰協議僅延至2027年1月10日，若雙方未能在此期間達成更實質性協議，關稅緊張可能於年初再度升溫。</li>
+      <li>🔺 <strong>AI 估值泡沫疑慮</strong>——AMD 本週突破兆元市值（年內累漲187%），Nvidia 市值達5.4兆美元，市場對 AI 相關股票的高估值是否能被盈利增長所支撐存有疑問，任何盈利不如預期（如9/29 Micron財報）都可能引發獲利回吐。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li>1. <a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html" target="_blank">Stock market today: Dow, S&P 500, Nasdaq notch weekly wins — Yahoo Finance</a></li>
+      <li>2. <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-25-2026" target="_blank">Stock Market Today (Sept. 25, 2026): S&P 500 and Nasdaq end higher — TheStreet</a></li>
+      <li>3. <a href="https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html" target="_blank">Stock market news for Sept. 25, 2026 — CNBC</a></li>
+      <li>4. <a href="https://sg.finance.yahoo.com/news/stock-market-news-sep-25-122000223.html" target="_blank">Stock Market News for Sep 25, 2026 — Yahoo Finance SG</a></li>
+      <li>5. <a href="https://www.fx168news.com/express/fastnews/1436927" target="_blank">道指/標普/那斯達克收盤數據 — FX168速遞</a></li>
+      <li>6. <a href="https://www.gurufocus.com/news/9097904/us-markets-rally-on-treasury-yields-and-oil-prices-xlk-advances-amid-valuation-concerns" target="_blank">U.S. Markets Rally on Treasury Yields and Oil Prices — GuruFocus</a></li>
+      <li>7. <a href="https://seekingalpha.com/article/4949891-treasury-yields-snapshot-september-25-2026" target="_blank">Treasury Yields Snapshot: September 25, 2026 — Seeking Alpha</a></li>
+      <li>8. <a href="https://investrade.com/market-review-september-25-2026/" target="_blank">Market Review: September 25, 2026 — Investrade</a></li>
+      <li>9. <a href="https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/" target="_blank">Anthropic to pay Akamai $11.6 billion over seven years — TechCrunch</a></li>
+      <li>10. <a href="https://247wallst.com/investing/2026/09/25/akamai-surges-15-on-11-6b-anthropic-cloud-deal-coreweave-and-cloudflare-tick-up/" target="_blank">Akamai Surges 15% on $11.6B Anthropic Cloud Deal — 247 Wall St.</a></li>
+      <li>11. <a href="https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html" target="_blank">AMD hits $1 trillion market cap — CNBC</a></li>
+      <li>12. <a href="https://www.fool.com/investing/2026/09/25/amd-just-joined-nvidia-in-the-1-trillion-club-at-6/" target="_blank">AMD Just Joined Nvidia in the $1 Trillion Club — Motley Fool</a></li>
+      <li>13. <a href="https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html" target="_blank">Fed rate decision September 2026: Rates rise to 3.75%-4% — CNBC</a></li>
+      <li>14. <a href="https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html" target="_blank">Trump, Xi wrap state visit — CNBC</a></li>
+      <li>15. <a href="https://www.aljazeera.com/news/2026/9/23/trump-meets-chinas-xi-jinping-at-us-airport-on-arrival-for-three-day-trip" target="_blank">Trump welcomes Xi to Washington, trade truce extended — Al Jazeera</a></li>
+      <li>16. <a href="https://tradingeconomics.com/united-states/consumer-confidence/news/586955" target="_blank">US Consumer Sentiment at a Four-Month Low — Trading Economics</a></li>
+      <li>17. <a href="https://fortune.com/2026/09/14/oil-prices-bond-yields-debt-iran-war/" target="_blank">Spiking oil prices jolt bond yields past 5% — Fortune</a></li>
+      <li>18. <a href="https://www.morningstar.com/markets/weekly-market-update-stocks-gain-109-technology-rises-energy-falls" target="_blank">Weekly Market Update: Technology Rises, Energy Falls — Morningstar</a></li>
+      <li>19. <a href="https://vocus.cc/article/6ab67519fd89780001bc94f5" target="_blank">十月美國再升息，市場無所畏懼 — 御薪弈記</a></li>
+      <li>20. <a href="https://www.news.cn/world/20260926/2d66365db256479384d2a0b17fabf89d/c.html" target="_blank">紐約股市三大股指25日上漲 — 新華網</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 資料來源：CNBC、Yahoo Finance、Bloomberg、TheStreet 等多方交叉驗證<br>
+    <span style="color:#ef4444; font-weight:600;">⚠ 僅供參考，非投資建議。投資涉及風險，過往表現不代表未來結果。</span>
+  </footer>
+</div>
+</body>
+</html>
