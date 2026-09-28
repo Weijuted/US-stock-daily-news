@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026年9月25日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .summary-tag { display: inline-block; margin-top: 14px; background: rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 14px; font-size: 0.82rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; display: flex; align-items: center; gap: 8px; }
+    h2 .icon { font-size: 1.2rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #ca8a04; font-weight: 600; }
+    .event-item { padding: 14px 18px; margin-bottom: 12px; background: #f8faff; border-left: 4px solid #0f3460; border-radius: 4px; }
+    .event-item h3 { font-size: 0.95rem; font-weight: 700; color: #0f3460; margin-bottom: 6px; }
+    .event-item p { font-size: 0.88rem; line-height: 1.6; color: #374151; }
+    .event-badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; margin-bottom: 6px; }
+    .badge-red { background: #fee2e2; color: #dc2626; }
+    .badge-green { background: #dcfce7; color: #16a34a; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    .badge-orange { background: #ffedd5; color: #c2410c; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li:last-child { margin-bottom: 0; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } }
+    .macro-box { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-box h4 { font-size: 0.88rem; font-weight: 700; color: #0f3460; margin-bottom: 8px; }
+    .macro-box p, .macro-box ul { font-size: 0.85rem; line-height: 1.6; color: #374151; }
+    .macro-box ul { padding-left: 16px; }
+    .sector-table td:nth-child(2) { text-align: right; font-weight: 600; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; }
+    .weekly-badge { display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 0.78rem; padding: 2px 8px; border-radius: 10px; margin-left: 8px; font-weight: 600; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .geopolitical-note { background: #fefce8; border: 1px solid #fef08a; border-radius: 8px; padding: 12px 16px; font-size: 0.87rem; color: #713f12; margin-bottom: 14px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年9月25日（週五）| 由 Claude Routine 自動生成</div>
+    <div class="summary-tag">三週以來首個週線收紅 | 伊朗外交緩和提振信心 | 科技股強勢領漲</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2><span class="icon">📊</span>主要指數收盤（9月25日）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅（日）</th>
+          <th>漲跌幅（週）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數（DJIA）</strong></td>
+          <td>51,828.62</td>
+          <td class="up">+478.64</td>
+          <td class="up">+0.93%</td>
+          <td class="neutral">±小幅收紅</td>
+        </tr>
+        <tr>
+          <td><strong>S&P 500</strong></td>
+          <td>7,743.41</td>
+          <td class="up">+39.28</td>
+          <td class="up">+0.51%</td>
+          <td class="up">+0.60%</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合指數（Nasdaq）</strong></td>
+          <td>27,068.72</td>
+          <td class="up">+129.34</td>
+          <td class="up">+0.50%</td>
+          <td class="up">+2.10%（Nasdaq 100）</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000（Russell 2000）</strong></td>
+          <td>2,844.32</td>
+          <td class="up">+8.75</td>
+          <td class="up">+0.31%</td>
+          <td class="up">小幅收漲</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px;font-size:0.83rem;color:#6b7280;">* 各主要指數均錄得三週以來首個週線上漲，打破連續三週收跌局面。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2><span class="icon">⚡</span>重大市場事件與催化劑</h2>
+
+    <div class="geopolitical-note">
+      ⚠️ <strong>背景說明：</strong>2026年初爆發的伊朗戰爭已導致霍爾木茲海峽關閉約7個月，IEA稱之為「全球石油市場史上最大供應中斷」，Brent油價一度逼近110美元/桶，為本週及當日市場走勢的最重要宏觀背景。
+    </div>
+
+    <div class="event-item">
+      <span class="event-badge badge-green">最大催化劑</span>
+      <h3>🕊️ 美伊外交談判出現緩和訊號</h3>
+      <p>聯合國大會（UNGA）期間，美伊談判代表在場邊進行側面接觸，討論重新開放霍爾木茲海峽的可能性。巴基斯坦總理謝巴茲·謝里夫在UNGA演講中，公開稱讚伊斯蘭堡的居間斡旋努力。此消息直接推動WTI原油跌 <strong>2.21%</strong> 至 <strong>92.52美元/桶</strong>，Brent原油跌至約 <strong>107美元/桶</strong>，大幅緩解市場壓力，帶動股市全面反彈。</p>
+    </div>
+
+    <div class="event-item">
+      <span class="event-badge badge-blue">科技亮點</span>
+      <h3>🤖 META發布Meta Muse AI助理 ／ 週暴漲16.8%</h3>
+      <p>META（Meta Platforms）本週累計暴漲 <strong>+16.8%</strong>，其中週一單日飆升 <strong>+11%</strong>（為2025年4月以來最佳單日表現）。市場對 <strong>Meta Muse</strong> 消費者AI助理的發布感到高度興奮，公司市值逼近 <strong>2兆美元</strong>大關。此為本週科技股強勢表現的最大驅動力。</p>
+    </div>
+
+    <div class="event-item">
+      <span class="event-badge badge-orange">石油供應</span>
+      <h3>🛢️ 沙烏地阿拉伯原油出口創戰時新高</h3>
+      <p>沙烏地阿拉伯9月原油出口量攀升至 <strong>600萬桶/天</strong>，為2026年伊朗戰爭爆發以來最高水準，部分緩解全球石油供應憂慮，與美伊外交緩和消息雙重支撐了週五市場情緒。</p>
+    </div>
+
+    <div class="event-item">
+      <span class="event-badge badge-red">殖利率風險</span>
+      <h3>📈 美國國債殖利率觸及逾16年高點</h3>
+      <p>10年期美債殖利率盤中一度升至 <strong>5.225%</strong>（2007年6月以來最高），收盤約 <strong>5.211%</strong>；30年期殖利率達 <strong>5.502%</strong>（2004年以來最高）。殖利率飆升持續對成長型股票形成壓力，房地產板塊當日下跌 <strong>-0.41%</strong>。</p>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2><span class="icon">🏛️</span>宏觀因素分析</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <h4>聯準會（Fed）動態</h4>
+        <ul>
+          <li>理事 <strong>Michael Barr</strong> 發表鷹派言論，提及若通膨持續，可能需進一步升息</li>
+          <li>CME FedWatch：10月升息機率約 <strong>64%</strong></li>
+        </ul>
+      </div>
+      <div class="macro-box">
+        <h4>重要經濟數據</h4>
+        <ul>
+          <li><strong>S&P 美國PMI</strong>：升至2022年以來最高，訂單積壓加速增長（過熱跡象）</li>
+          <li><strong>密西根消費者信心</strong>：9月初值 <strong>47.8</strong>，月減7.5%，史上第二低</li>
+          <li><strong>1年期通膨預期</strong>：升至 <strong>4.6%</strong>（6月以來最高）</li>
+          <li><strong>PCE通膨</strong>：預計9月26日公布</li>
+        </ul>
+      </div>
+      <div class="macro-box">
+        <h4>地緣政治</h4>
+        <ul>
+          <li>伊朗戰爭持續 ～7個月，霍爾木茲海峽封鎖影響全球逾20%石油貿易</li>
+          <li>週五外交緩和訊號（UNGA場邊接觸）</li>
+          <li>油價顯著回落 WTI -2.21%</li>
+        </ul>
+      </div>
+      <div class="macro-box">
+        <h4>債券市場</h4>
+        <ul>
+          <li>10年期殖利率：<strong>5.211%</strong>（盤中高5.225%）</li>
+          <li>30年期殖利率：<strong>5.502%</strong></li>
+          <li>殖利率居高影響估值，壓制高本益比成長股</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2><span class="icon">🗂️</span>板塊表現（9月25日單日）</h2>
+    <table class="sector-table">
+      <thead>
+        <tr>
+          <th>板塊</th>
+          <th>單日漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>資訊科技（IT）</td>
+          <td class="up">+0.83%</td>
+          <td>週漲約+3.1%，全週最強；META、MSFT、NVDA帶動</td>
+        </tr>
+        <tr>
+          <td>工業</td>
+          <td class="up">+0.45%</td>
+          <td>隨大盤上漲</td>
+        </tr>
+        <tr>
+          <td>材料</td>
+          <td class="up">+0.02%</td>
+          <td>幾近持平</td>
+        </tr>
+        <tr>
+          <td>房地產</td>
+          <td class="down">-0.41%</td>
+          <td>受殖利率高企壓制</td>
+        </tr>
+        <tr>
+          <td>能源</td>
+          <td class="down">-0.93%</td>
+          <td>油價回落；9月全月跌幅-6.7%為最弱板塊</td>
+        </tr>
+        <tr>
+          <td>通訊服務</td>
+          <td class="down">-1.04%</td>
+          <td>當日唯一明顯落後板塊</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px;font-size:0.83rem;color:#6b7280;">11個S&P 500板塊中，約3個當日上漲、8個下跌。科技板塊全週表現最優（中位數+1.7%），能源最弱（-6.7%）。</p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2><span class="icon">⭐</span>重要個股動態</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>週漲跌幅</th>
+          <th>收盤價</th>
+          <th>亮點</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>META</strong>（Meta Platforms）</td>
+          <td class="up">+16.8%</td>
+          <td>—</td>
+          <td>Meta Muse AI助理發布；週一單日+11%；市值逼近2兆美元</td>
+        </tr>
+        <tr>
+          <td><strong>MSFT</strong>（Microsoft）</td>
+          <td class="up">+3.70%</td>
+          <td>$516.17</td>
+          <td>Stifel升評至買入；Azure加速增長；AI投資前景改善</td>
+        </tr>
+        <tr>
+          <td><strong>NVDA</strong>（NVIDIA）</td>
+          <td class="up">+2.61%</td>
+          <td>$225.07</td>
+          <td>持續上漲；Seaport維持謹慎評級（TSMC產能限制、大數法則）</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px;font-size:0.83rem;color:#6b7280;">其他值得關注個股：AKAM、AMWL、DOCS、LPL、MODD、SER、YSG（週報重點提及）。</p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>利率長期維持高位：</strong>10年期美債殖利率達5.211%（16年新高），對估值偏高的成長股構成持續壓力；10月升息機率仍達64%。</li>
+      <li><strong>消費者信心陷入歷史低谷：</strong>密西根消費者信心指數僅47.8（史上第二低），1年期通膨預期升至4.6%，顯示通膨預期脫錨風險上升。</li>
+      <li><strong>伊朗戰爭油供不確定性：</strong>儘管外交緩和訊號短暫提振市場，但衝突持續已7個月，霍爾木茲海峽何時全面重開仍是最大尾部風險。</li>
+      <li><strong>財政赤字與公債供給：</strong>美國持續大量舉債，殖利率居高反映市場對長期財政可持續性的疑慮。</li>
+      <li><strong>PMI過熱 vs. 消費低迷矛盾信號：</strong>S&P PMI處於2022年以來高點（過熱），但消費者信心卻創歷史次低，兩者背離，後續走向不明。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2><span class="icon">🔗</span>資料來源（已交叉驗證）</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html" target="_blank">Yahoo Finance — Stock Market Today: Friday September 25 (Live)</a></li>
+      <li><a href="https://sg.finance.yahoo.com/news/stock-market-news-sep-25-122000223.html" target="_blank">Yahoo Finance — Stock Market News Sep 25, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market Today Live Updates (Sept 24-25)</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/25/top-10-things-to-watch-in-the-stock-market-friday.html" target="_blank">CNBC — Top 10 Things to Watch in the Stock Market Friday</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-25-2026" target="_blank">TheStreet — Stock Market Today: Dow, S&P 500, Nasdaq Updates Sept 25</a></li>
+      <li><a href="https://www.theglobeandmail.com/investing/markets/commodities/GEZ18/pressreleases/4807418/how-major-us-stock-indexes-fared-friday-9-25-2026/" target="_blank">The Globe and Mail — How Major US Stock Indexes Fared Friday 9-25-2026</a></li>
+      <li><a href="https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-25-2026" target="_blank">WTOP News — How Major US Stock Indexes Fared Friday 9-25-2026</a></li>
+      <li><a href="https://krmg.com/2026/09/25/how-major-us-stock-indexes-fared-friday-9-25-2026/" target="_blank">KRMG — How Major US Stock Indexes Fared Friday 9-25-2026</a></li>
+      <li><a href="https://vistapglobal.com/weekly-market-summary-sept-25-2026-stocks-gain-as-oil-pullback-eases-pressure-while-treasury-yields-stay-elevated-akam-amwl-docs-lpl-meta-modd-msft-nvda-ser-ysg/" target="_blank">VistaP Global — Weekly Market Summary Sept 25, 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/26/meta-microsoft-led-tech-higher-this-week-despite-soaring-bond-yields.html" target="_blank">CNBC — Meta, Microsoft Led Tech Higher This Week Despite Soaring Bond Yields</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/25/saudi-arabia-oil-iran-war-pipeline-strait-hormuz-red-sea-houthis.html" target="_blank">CNBC — Saudi Arabia Oil Exports Hit Post-War High</a></li>
+      <li><a href="https://www.foxnews.com/live-news/iran-war-president-news-oil-prices-deal-9-25-26" target="_blank">Fox News — Iran War/Oil Prices Live Coverage 9-25-26</a></li>
+      <li><a href="https://signaturefd.com/blog/the-market-brief-9-25-26/" target="_blank">SignatureFD — The Market Brief 9-25-26</a></li>
+      <li><a href="https://www.watrust.com/articles/week-in-review-september-25-2026" target="_blank">WA Trust — Week in Review September 25, 2026</a></li>
+      <li><a href="https://lanceroberts.substack.com/p/bull-bear-report-week-of-september-729" target="_blank">Lance Roberts Substack — Bull Bear Report Week of September 25</a></li>
+      <li><a href="https://tradingstrategyguides.com/weekly-market-recap-september-21-september-25-2026-tech-leads-rally-while-broader-market-stalls/" target="_blank">Trading Strategy Guides — Weekly Market Recap Sept 21-25, 2026</a></li>
+      <li><a href="https://investrade.com/market-review-september-25-2026/" target="_blank">Investrade — Market Review September 25, 2026</a></li>
+      <li><a href="https://www.eoption.com/market-review-september-25-2026/" target="_blank">eOption — Market Review September 25, 2026</a></li>
+      <li><a href="https://www.alainguillot.com/stock-market-recap-september-25-2026/" target="_blank">Alain Guillot — Stock Market Recap September 25, 2026</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2026_Iran_war_fuel_crisis" target="_blank">Wikipedia — 2026 Iran War Fuel Crisis</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 資料日期：2026年9月25日（週五）<br>
+    僅供參考，非投資建議 &nbsp;|&nbsp; Generated by Claude Routine
+  </footer>
+</div>
+</body>
+</html>
