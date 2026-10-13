@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-10-12</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .flat { color: #6b7280; font-weight: 600; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 10px 14px; margin-bottom: 8px; background: #f0f9ff; border-left: 3px solid #38bdf8; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .sector-item { padding: 10px 14px; border-radius: 6px; font-size: 0.88rem; }
+    .sector-up { background: #f0fdf4; border-left: 3px solid #22c55e; }
+    .sector-down { background: #fef2f2; border-left: 3px solid #ef4444; }
+    .sources { font-size: 0.82rem; color: #6b7280; padding-left: 0; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 8px; padding: 6px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .tag { display: inline-block; font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; margin-right: 6px; font-weight: 600; }
+    .tag-cn { background: #fef9c3; color: #854d0e; }
+    .tag-en { background: #dbeafe; color: #1e40af; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    .macro-card { background: #f8fafc; border-radius: 8px; padding: 14px; border: 1px solid #e2e8f0; }
+    .macro-card .label { font-size: 0.78rem; color: #64748b; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .macro-card .value { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; }
+    .macro-card .note { font-size: 0.78rem; color: #94a3b8; margin-top: 4px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      .sector-grid { grid-template-columns: 1fr; }
+      .macro-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年10月12日（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>趨勢</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數</strong></td>
+          <td>51,850.55</td>
+          <td class="up">+195.60</td>
+          <td class="up">+0.38%</td>
+          <td>連續第三個交易日上漲</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,807.24</td>
+          <td class="down">-4.33</td>
+          <td class="down">-0.06%</td>
+          <td>小幅下滑，幾乎持平</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合指數</strong></td>
+          <td>27,245.90</td>
+          <td class="down">-120.27</td>
+          <td class="down">-0.44%</td>
+          <td>科技股拖累，晶片股承壓</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000</strong></td>
+          <td>2,794.48</td>
+          <td class="down">—</td>
+          <td class="down">-0.45%</td>
+          <td>小型股偏弱</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px;font-size:0.85rem;color:#6b7280;">
+      <strong>市場總評：</strong>整體收盤表現分歧（Mixed）。道瓊由傳統工業藍籌帶動走強，科技股為主的納斯達克與S&P 500則小幅下滑，板塊輪動特徵明顯。
+    </p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>⚡ 重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>📅 Q3 財報季正式開跑：</strong>市場目光轉向本週大型銀行財報，包括 JPMorgan Chase 等金融巨頭預計於週稍後公布，投資人普遍採觀望態度，靜待財報指引。
+      </li>
+      <li>
+        <strong>🔴 美光科技（Micron, MU）重挫 -3.88%：</strong>股價收於 989.04 美元，成為拖累納斯達克的主要原因。市場擔憂中國廠商長鑫存儲（CXMT）在 4F² 存儲單元工藝及 DDR5 伺服器記憶體計畫上的快速進展，引發對記憶體晶片定價壓力的疑慮。韓國 SK 海力士（SK Hynix）同步下跌。
+      </li>
+      <li>
+        <strong>🛢️ 油價飆升至兩週高點：</strong>布蘭特原油突破 106–107 美元／桶，WTI 約 93 美元／桶，俄烏能源基礎設施衝突及中東霍爾木茲海峽緊張局勢推升能源板塊至今日最佳表現。
+      </li>
+      <li>
+        <strong>🔄 明顯板塊輪動：</strong>資金自高估值科技股流向能源、必需消費品等防禦性板塊，資訊科技 -0.90% 領跌，能源板塊 +1.48% 領漲。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>🏭 板塊表現</h2>
+    <div class="sector-grid">
+      <div class="sector-item sector-up">⬆ 能源板塊 <strong>+1.48%</strong>（油價飆升帶動）</div>
+      <div class="sector-item sector-up">⬆ 必需消費品 <strong>+1.22%</strong>（避險資金流入）</div>
+      <div class="sector-item sector-up">⬆ 通訊服務 <strong>小幅上揚</strong></div>
+      <div class="sector-item sector-up">⬆ 道瓊工業成分 <strong>傳統藍籌普漲</strong></div>
+      <div class="sector-item sector-down">⬇ 資訊科技 <strong>-0.90%</strong>（領跌，晶片股承壓）</div>
+      <div class="sector-item sector-down">⬇ 非必需消費品 <strong>-0.73%</strong></div>
+      <div class="sector-item sector-down">⬇ 半導體 <strong>美光 -3.88% / SK海力士下跌</strong></div>
+      <div class="sector-item sector-down">⬇ 金融/銀行 <strong>觀望（靜待財報週）</strong></div>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🌐 宏觀因素分析</h2>
+
+    <h3>聯準會（Fed）動態</h3>
+    <div class="macro-grid" style="margin-bottom:16px;">
+      <div class="macro-card">
+        <div class="label">聯邦基金利率目標區間</div>
+        <div class="value">3.75%–4.00%</div>
+        <div class="note">2026年9月升息25bps（數年來首次升息）</div>
+      </div>
+      <div class="macro-card">
+        <div class="label">密西根大學 1年期通膨預期（10月）</div>
+        <div class="value" style="color:#dc2626;">4.7%</div>
+        <div class="note">為2026年5月以來最高</div>
+      </div>
+      <div class="macro-card">
+        <div class="label">克利夫蘭聯準CPI即時預測（10月）</div>
+        <div class="value" style="color:#dc2626;">3.63%</div>
+        <div class="note">截至10月9日，年增率估值</div>
+      </div>
+    </div>
+    <p style="font-size:0.88rem;color:#374151;margin-bottom:14px;">
+      克利夫蘭聯準銀行總裁 Beth Hammack 表示可能需要進一步緊縮貨幣政策以壓制通膨。市場預期下次會議可能維持利率不變，但通膨數據超預期仍是市場隱憂。
+    </p>
+    <p style="font-size:0.88rem;color:#374151;font-weight:600;">
+      📌 重要預告：9月份 CPI 數據將於週三公布、PPI 於週四公布，為市場高度關注焦點。
+    </p>
+
+    <h3>地緣政治與油價</h3>
+    <ul class="event-list" style="margin-top:8px;">
+      <li>
+        <strong>🇷🇺 俄烏衝突：</strong>俄羅斯在能源基礎設施「停火協議」後，仍對烏克蘭電廠發動攻擊，引發市場對全球能源供給的擔憂。
+      </li>
+      <li>
+        <strong>🌍 中東局勢：</strong>霍爾木茲海峽緊張局勢升溫，沙特相關攻擊增加了供應風險溢價，推升布蘭特原油突破 106 美元。
+      </li>
+    </ul>
+  </div>
+
+  <!-- INDIVIDUAL STOCKS -->
+  <div class="card">
+    <h2>🏷️ 重要個股動態</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>個股 / 板塊</th>
+          <th>表現</th>
+          <th>主要驅動因素</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>美光科技（MU）</strong></td>
+          <td class="down">-3.88%（989.04美元）</td>
+          <td>中國CXMT在DDR5及4F²工藝的競爭威脅加劇</td>
+        </tr>
+        <tr>
+          <td><strong>SK海力士（SK Hynix）</strong></td>
+          <td class="down">下跌</td>
+          <td>同受中國記憶體晶片競爭威脅拖累</td>
+        </tr>
+        <tr>
+          <td><strong>能源類股（整體）</strong></td>
+          <td class="up">板塊 +1.48%</td>
+          <td>布蘭特油價突破106–107美元，地緣政治升溫</td>
+        </tr>
+        <tr>
+          <td><strong>必需消費品類股（整體）</strong></td>
+          <td class="up">板塊 +1.22%</td>
+          <td>避險情緒升溫，防禦性資金流入</td>
+        </tr>
+        <tr>
+          <td><strong>大型銀行（JPMorgan等）</strong></td>
+          <td class="flat">觀望</td>
+          <td>財報週前市場靜候，本週稍後公布Q3財報</td>
+        </tr>
+        <tr>
+          <td><strong>科技板塊（整體）</strong></td>
+          <td class="down">板塊 -0.90%（領跌）</td>
+          <td>資金輪動離場，高估值科技股獲利了結</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🔴 <strong>通膨黏性：</strong>密西根大學10月通膨預期升至4.7%，高於預期，若本週CPI數據亦超預期，市場對聯準會再度升息的定價恐急速升溫。</li>
+      <li>🔴 <strong>中國科技競爭加劇：</strong>長鑫存儲（CXMT）技術進展對美韓記憶體晶片廠商構成長期競爭壓力，半導體族群面臨定價與市佔雙重風險。</li>
+      <li>🔴 <strong>油價高企衝擊消費：</strong>布蘭特原油突破106美元，若油價持續高漲，將拉高通膨並壓縮企業盈利與消費者信心，形成滯脹隱憂。</li>
+      <li>🟡 <strong>地緣政治風險持續：</strong>俄烏及中東局勢緊張，能源供給不確定性高，任何新一輪衝突升級都可能推升避險情緒。</li>
+      <li>🟡 <strong>財報季前景不明：</strong>大型銀行財報本週陸續公布，若利潤或展望不如預期，可能引發金融板塊修正並波及整體市場。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📚 資料來源</h2>
+    <ul class="sources">
+      <li><span class="tag tag-en">EN</span><a href="https://www.cnbc.com/2026/10/11/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market Today Live Updates (Oct 12)</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-october-12-dow-sp-500-nasdaq-080321571.html" target="_blank">Yahoo Finance — Stock Market Today: Monday, October 12</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://www.fool.com/coverage/stock-market-today/2026/10/12/stock-market-today-oct-12-dow-gains-as-memory-stocks-weigh-on-nasdaq/" target="_blank">Motley Fool — Dow Gains as Memory Stocks Weigh on Nasdaq (Oct 12)</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://www.thestreet.com/stock-market-today/stock-market-today-oct-12-2026-dow-futures-climb-as-wall-street-gears-up-for-busy-week" target="_blank">TheStreet — Stock Market Today: Dow Futures Climb (Oct 12)</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://invezz.com/news/2026/10/12/evening-digest-oil-hits-two-week-highs-as-micron-sk-hynix-stocks-fall/" target="_blank">Invezz — Evening Digest: Oil Hits Two-Week Highs as Micron, SK Hynix Fall</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://www.gurufocus.com/news/9120130/market-update-mixed-performance-oil-prices-rise-focus-on-bank-earnings" target="_blank">GuruFocus — Market Update: Mixed Performance, Oil Prices Rise</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://www.investing.com/news/stock-market-news/why-is-micron-technology-stock-sliding-today-93CH-4943557" target="_blank">Investing.com — Why Is Micron Technology Stock Sliding Today?</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://www.alainguillot.com/stock-market-recap-october-12-2026/" target="_blank">Alain Guillot — Stock Market Recap October 12, 2026</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://econcurrents.substack.com/p/12-october-2026-market-close-and" target="_blank">EconCurrents Substack — October 12 Market Close</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar" target="_blank">Kiplinger — This Week's Economic Calendar</a></li>
+      <li><span class="tag tag-en">EN</span><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Stock Market Update: Open</a></li>
+      <li><span class="tag tag-cn">中</span><a href="https://www.fx168news.com/express/fastnews/1446423" target="_blank">FX168 財經速遞 — 美股收盤報導</a></li>
+      <li><span class="tag tag-cn">中</span><a href="https://www.singtao.ca/7653080/2026-10-12/news-美股日誌｜+道指逆市升近200點+油價抽升+晶片股捱沽/" target="_blank">星島日報（加拿大）— 道指逆市升近200點，油價抽升，晶片股捱沽</a></li>
+      <li><span class="tag tag-cn">中</span><a href="https://k.sina.cn/article_1699432410_654b47da02001wxbm.html" target="_blank">新華社 — 美股市場動態</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 資料截至 2026-10-12 美國市場收盤 | 僅供參考，非投資建議
+  </footer>
+</div>
+</body>
+</html>
