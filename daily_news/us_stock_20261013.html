@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-10-13</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 10px 14px; margin-bottom: 8px; background: #f0f7ff; border-left: 3px solid #60a5fa; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .macro-list { list-style: none; }
+    .macro-list li { padding: 10px 14px; margin-bottom: 8px; background: #f0fff4; border-left: 3px solid #34d399; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .macro-list li strong { color: #065f46; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 4px; }
+    .stock-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; }
+    .stock-card .ticker { font-size: 1rem; font-weight: 700; color: #0f3460; }
+    .stock-card .name { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+    .stock-card .change { font-size: 0.9rem; margin-top: 6px; font-weight: 600; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; }
+    .commodity-row { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+    .commodity-item { background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; padding: 10px 16px; flex: 1; min-width: 140px; }
+    .commodity-item .label { font-size: 0.78rem; color: #92400e; font-weight: 600; }
+    .commodity-item .value { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-top: 2px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      header { padding: 24px 20px; }
+      .card { padding: 18px 16px; }
+      .stock-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年10月13日（週二）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數 (DJIA)</strong></td>
+          <td>51,670.10</td>
+          <td class="down">▼ 180.45</td>
+          <td class="down">-0.35%</td>
+        </tr>
+        <tr>
+          <td><strong>標普500指數 (S&amp;P 500)</strong></td>
+          <td>7,805.45</td>
+          <td class="down">▼ 1.79</td>
+          <td class="down">-0.02%</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合指數 (Nasdaq)</strong></td>
+          <td>27,204.38</td>
+          <td class="down">▼ 41.52</td>
+          <td class="down">-0.15%</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克100指數 (NDX)</strong></td>
+          <td>30,569.48</td>
+          <td class="down">—</td>
+          <td class="down">-0.31%</td>
+        </tr>
+        <tr>
+          <td><strong>羅素2000指數 (Russell 2000)</strong></td>
+          <td>2,783.37</td>
+          <td class="down">▼ 11.11</td>
+          <td class="down">-0.40%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px; font-size:0.82rem; color:#6b7280;">
+      標普500僅略低於上週創下的歷史高點。年初至今（YTD）S&amp;P 500 +14%，Russell 2000 +12.1%。
+    </p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>📰 重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>銀行財報季正式開跑：</strong>
+        摩根大通（JPMorgan Chase）、高盛（Goldman Sachs）、花旗集團（Citigroup）與富國銀行（Wells Fargo）盤前公布第三季財報，引發市場波動。花旗集團跌幅最大，收盤下跌約 5.5%；高盛則在漲跌之間震盪。
+      </li>
+      <li>
+        <strong>中國記憶體晶片競爭衝擊半導體板塊：</strong>
+        中國長鑫存儲（ChangXin Memory Technologies，CXMT）在記憶體晶片技術上的進展引發市場擔憂，美國記憶體晶片相關個股全面收低，拖累那斯達克表現。
+      </li>
+      <li>
+        <strong>嬌生（Johnson &amp; Johnson）財報不如預期：</strong>
+        J&amp;J 公布季報後股價明顯下挫，為醫療保健板塊帶來壓力，健康照護類股成為當日主要下跌板塊之一。
+      </li>
+      <li>
+        <strong>道瓊盤中大幅震盪：</strong>
+        道瓊指數盤中一度上漲逾 460 點，但尾盤賣壓出現，最終翻黑收跌 180 點，顯示市場情緒不穩。
+      </li>
+      <li>
+        <strong>市場等待週三CPI數據：</strong>
+        投資人普遍謹慎，等待美國10月消費者物價指數（CPI）報告，該數據將直接影響聯準會下一步政策決定。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🏦 宏觀因素分析</h2>
+    <ul class="macro-list">
+      <li>
+        <strong>聯準會官員發言：</strong>
+        紐約聯準會主席威廉斯（John Williams）表示今年仍適合再升息一次，但預計2027年無需進一步緊縮；他也強調通膨將「大幅」趨緩並於明年接近2%目標。聯準會理事沃勒（Christopher Waller）則表示較高的殖利率已在壓抑利率敏感產業的需求。
+      </li>
+      <li>
+        <strong>美債殖利率下滑：</strong>
+        受聯準會官員偏鴿派言論影響，10年期美國公債殖利率小幅回落至約 5.22%，美元對七大主要貨幣全面走弱。
+      </li>
+      <li>
+        <strong>商品市場：</strong>
+        WTI 原油收漲 0.43% 至每桶 $94.14 美元，布蘭特原油期貨結算於每桶 $105.69 美元。COMEX 十二月黃金下跌 $13.30（-0.32%），收於每盎司 $4,177.30 美元。
+      </li>
+      <li>
+        <strong>地緣政治與貿易摩擦：</strong>
+        中國晶片製造商技術突破（長鑫存儲）加劇市場對美中半導體競爭的憂慮，為科技板塊帶來額外壓力。
+      </li>
+    </ul>
+    <div class="commodity-row">
+      <div class="commodity-item">
+        <div class="label">WTI 原油</div>
+        <div class="value up">$94.14 ▲0.43%</div>
+      </div>
+      <div class="commodity-item">
+        <div class="label">布蘭特原油</div>
+        <div class="value">$105.69</div>
+      </div>
+      <div class="commodity-item">
+        <div class="label">黃金 (12月)</div>
+        <div class="value down">$4,177.30 ▼0.32%</div>
+      </div>
+      <div class="commodity-item">
+        <div class="label">10年美債殖利率</div>
+        <div class="value">~5.22%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY STOCKS -->
+  <div class="card">
+    <h2>📈 重要個股與板塊動態</h2>
+    <p style="font-size:0.88rem; color:#4b5563; margin-bottom:14px;">主要表現個股（漲跌幅為當日估計值）</p>
+    <div class="stock-grid">
+      <div class="stock-card">
+        <div class="ticker">C</div>
+        <div class="name">花旗集團 Citigroup</div>
+        <div class="change down">▼ ~5.5%（財報後跌幅最大）</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">GS</div>
+        <div class="name">高盛 Goldman Sachs</div>
+        <div class="change" style="color:#6b7280;">震盪 漲跌互現</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">JPM</div>
+        <div class="name">摩根大通 JPMorgan</div>
+        <div class="change" style="color:#6b7280;">財報公布 震盪</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">WFC</div>
+        <div class="name">富國銀行 Wells Fargo</div>
+        <div class="change" style="color:#6b7280;">財報公布 震盪</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">JNJ</div>
+        <div class="name">嬌生 Johnson &amp; Johnson</div>
+        <div class="change down">▼ 財報不如預期</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">DPZ</div>
+        <div class="name">達美樂 Domino's Pizza</div>
+        <div class="change down">▼ 明顯下跌</div>
+      </div>
+    </div>
+    <p style="margin-top:16px; font-size:0.85rem; color:#4b5563;">
+      <strong>板塊表現：</strong>醫療保健（Health Care）與半導體（Semiconductors）板塊領跌；工業類股盤中承壓；銀行股因財報表現不一而走勢分化。
+    </p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>
+        <strong>CPI 數據風險：</strong>週三即將公布的10月消費者物價指數為最大近期催化劑。若通膨高於預期，可能引發市場對聯準會進一步升息的恐慌，推高殖利率並衝擊股市。
+      </li>
+      <li>
+        <strong>半導體競爭加劇：</strong>中國長鑫存儲記憶體晶片技術突破，持續對美國記憶體及晶片製造商構成長期競爭壓力，相關個股面臨估值調整風險。
+      </li>
+      <li>
+        <strong>聯準會政策不確定性：</strong>Fed 官員發言暗示今年仍可能再升息一次，高利率環境（10年期殖利率 ~5.22%）將持續壓制估值較高的科技股及利率敏感產業。
+      </li>
+      <li>
+        <strong>銀行財報季走勢分化：</strong>各大銀行財報表現參差不齊，信貸品質及利差展望不確定，花旗集團大跌顯示市場對銀行業獲利前景存有疑慮。
+      </li>
+      <li>
+        <strong>地緣政治與能源價格：</strong>中東局勢持續影響油價（布蘭特 >$100），高油價可能加劇通膨壓力，進一步複雜化聯準會的決策路徑。
+      </li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📚 資料來源</h2>
+    <ul class="sources">
+      <li>🔗 <a href="https://www.cnbc.com/2026/10/12/stock-market-today-live-updates.html" target="_blank">CNBC — S&P 500 closes near flat after big banks post earnings and memory chip stocks decline</a></li>
+      <li>🔗 <a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-13-dow-sp-500-nasdaq-080236234.html" target="_blank">Yahoo Finance — Stock market today: Dow, S&P 500, Nasdaq slip as chip stocks fall, earnings roll in</a></li>
+      <li>🔗 <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-13-134929825.html" target="_blank">Yahoo Finance / TheStreet — Stock Market Today (Oct. 13, 2026): Nasdaq edges lower as banks report earnings</a></li>
+      <li>🔗 <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-13-2026" target="_blank">TheStreet — Stock Market Today: Dow, S&P 500, Nasdaq Updates Oct 13 2026</a></li>
+      <li>🔗 <a href="https://www.10tv.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-tuesday-10132026/" target="_blank">AP / 10TV — How major US stock indexes fared Tuesday 10/13/2026</a></li>
+      <li>🔗 <a href="https://investrade.com/market-review-october-13-2026/" target="_blank">Investrade — Market Review: October 13, 2026</a></li>
+      <li>🔗 <a href="https://www.fool.com/coverage/stock-market-today/2026/10/13/stock-market-today-oct-13-markets-edge-lower-as-earnings-season-kicks-off/" target="_blank">Motley Fool — Stock Market Today, Oct. 13: Markets Edge Lower as Earnings Season Kicks Off</a></li>
+      <li>🔗 <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-mixed-104049191.html" target="_blank">Yahoo Finance — Markets News, Oct. 13, 2026: Major Indexes End Slightly Lower; Memory Stocks Retreat</a></li>
+      <li>🔗 <a href="https://www.bloomberg.com/news/articles/2026-10-12/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow, S&P Live Updates for October 13</a></li>
+      <li>🔗 <a href="https://www.babypips.com/news/financial-forex-market-recap-2026-10-13" target="_blank">BabyPips — Financial &amp; Forex Market Recap 2026-10-13</a></li>
+      <li>🔗 <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Mixed Bank Tidings, Chip Pressure, CPI in Focus</a></li>
+      <li>🔗 <a href="https://fxdailyreport.com/us-stock-market-technical-analysis-october-13-2026/" target="_blank">FX Daily Report — US Stock Market Technical Analysis, October 13 2026</a></li>
+      <li>🔗 <a href="https://www.fx168news.com/express/fastnews/1447243" target="_blank">FX168 財經（中文）— 美股收盤數據</a></li>
+      <li>🔗 <a href="https://247wallst.com/cards/the-s-p-500-finished-within-2-6-points-of-where-it-started-gspc-market-bell-01m4vdtnkfjhhmqhg751nwt73d" target="_blank">247WallSt — S&P 500 finished within 2.6 points of where it started</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 資料截至 2026-10-13 美股收盤 &nbsp;|&nbsp; 僅供參考，非投資建議
+  </footer>
+</div>
+</body>
+</html>
