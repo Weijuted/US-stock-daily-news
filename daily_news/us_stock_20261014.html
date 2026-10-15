@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-10-14</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 10px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .highlight-card { background: #fffbeb; border-left: 3px solid #f59e0b; border-radius: 4px; padding: 10px 14px; margin-bottom: 8px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-card.green { background: #f0fdf4; border-left-color: #16a34a; }
+    .highlight-card.red { background: #fef2f2; border-left-color: #dc2626; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 8px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.1rem; font-weight: 700; color: #0f3460; }
+    .macro-item .change { font-size: 0.85rem; margin-top: 2px; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 6px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; margin-right: 6px; }
+    .tag-cpi { background: #fef3c7; color: #92400e; }
+    .tag-semi { background: #ede9fe; color: #5b21b6; }
+    .tag-fed { background: #dbeafe; color: #1e40af; }
+    .tag-stock { background: #d1fae5; color: #065f46; }
+    .summary-box { background: linear-gradient(135deg, #1e3a5f 0%, #0f3460 100%); color: #fff; border-radius: 8px; padding: 18px 22px; margin-bottom: 16px; }
+    .summary-box p { font-size: 0.92rem; line-height: 1.7; opacity: 0.92; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026-10-14（週三）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="card">
+    <h2>市場總結</h2>
+    <div class="summary-box">
+      <p>10月14日美股市場被一份「超預期通膨報告」主導。9月核心CPI年增率加速至2.6%，高於聯準會2%政策目標，市場重新定價年內升息可能性，導致成長股、科技股、半導體股集體拋售。道瓊因防禦性成分較高僅微跌0.09%，但納斯達克與羅素2000均跌近2%，顯示「通膨黏著→利率升高→高估值成長股承壓」的核心邏輯。</p>
+    </div>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌幅</th>
+          <th>漲跌點數</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數（DJIA）</strong></td>
+          <td>51,621.48</td>
+          <td><span class="down">▼ -0.09%</span></td>
+          <td class="down">-48.6 點</td>
+          <td>防禦性個股支撐，跌幅最小</td>
+        </tr>
+        <tr>
+          <td><strong>標準普爾500（S&P 500）</strong></td>
+          <td>7,718.94</td>
+          <td><span class="down">▼ -1.11%</span></td>
+          <td class="down">-86 點</td>
+          <td>六交易日第五次下跌</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合（Nasdaq）</strong></td>
+          <td>26,692.87</td>
+          <td><span class="down">▼ -1.88%</span></td>
+          <td class="down">-511.51 點</td>
+          <td>科技/成長股重壓</td>
+        </tr>
+        <tr>
+          <td><strong>羅素2000（Russell 2000）</strong></td>
+          <td>2,729.53</td>
+          <td><span class="down">▼ -1.93%</span></td>
+          <td class="down">-54 點</td>
+          <td>小型成長股領跌</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CPI DATA -->
+  <div class="card">
+    <h2>🔥 核心催化劑：9月CPI通膨數據超預期</h2>
+    <div style="margin-bottom:14px;">
+      <span class="tag tag-cpi">通膨</span>
+      <span class="tag tag-fed">聯準會</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指標</th>
+          <th>實際值</th>
+          <th>市場預期</th>
+          <th>結果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>整體CPI（月增）</td>
+          <td><strong>+0.6%</strong></td>
+          <td>+0.6%</td>
+          <td class="neutral">符合預期</td>
+        </tr>
+        <tr>
+          <td>整體CPI（年增）</td>
+          <td><strong>+3.7%</strong></td>
+          <td>+3.6%</td>
+          <td class="down">超預期 ▲</td>
+        </tr>
+        <tr>
+          <td>核心CPI（月增，剔除食品/能源）</td>
+          <td><strong>+0.3%</strong></td>
+          <td>+0.2%</td>
+          <td class="down">超預期 ▲</td>
+        </tr>
+        <tr>
+          <td>核心CPI（年增）</td>
+          <td><strong>+2.6%</strong></td>
+          <td>+2.5%</td>
+          <td class="down">超預期 ▲</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem; color:#6b7280; margin-top:12px;">年增率3.7%較前月3.4%明顯加速，是自2026年春季以來最快通膨增速，市場完全未預期到這一跳升。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <span class="tag tag-semi">半導體</span>
+        <strong>費城半導體指數（SOX）連跌第六日</strong><br>
+        半導體板塊持續拋售，費城半導體指數單日跌幅達約3%至4.3%，為連續第六個交易日下跌，是自2025年5月以來最長連跌紀錄。整個晶片股市值在此輪拋售中蒸發近1兆美元。
+      </li>
+      <li>
+        <span class="tag tag-semi">半導體</span>
+        <strong>ASML第三季財報喜憂參半</strong><br>
+        荷蘭半導體設備龍頭ASML公佈Q3財報：淨利潤49.6億歐元遠超預期的41億歐元，但淨銷售額116.6億歐元略低於預期117.2億歐元。公司第三度上調2026年全年銷售展望，表示AI需求訂單能見度延伸至2030年。受板塊整體拋售氛圍拖累，美股掛牌ASML仍下跌約3%。
+      </li>
+      <li>
+        <span class="tag tag-stock">個股</span>
+        <strong>BlackRock季報大幅超預期，股價漲5%</strong><br>
+        BlackRock公佈第三季財報遠超華爾街預期，資金淨流入表現強勁，股價逆勢上漲約5%，成為當日市場中最亮眼的個股。
+      </li>
+      <li>
+        <span class="tag tag-stock">個股</span>
+        <strong>Bank of America遭聯邦監管機構重罰逾12億美元</strong><br>
+        聯邦監管機構以廣泛的內控缺失為由，對Bank of America裁罰逾12億美元，股價應聲下跌。
+      </li>
+      <li>
+        <span class="tag tag-stock">個股</span>
+        <strong>CoreWeave（CRWV）暴跌逾15%</strong><br>
+        neocloud業者CoreWeave大跌超過15%，導火索是反映其債券殖利率驟升的圖表在社群媒體廣泛流傳，引發市場對其高槓桿AI基礎設施商業模式的疑慮。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀影響因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">10年期美債殖利率</div>
+        <div class="value">5.323%</div>
+        <div class="change down">單日跳漲約 +10 bps</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">Fed 升息預期</div>
+        <div class="value">顯著升溫</div>
+        <div class="change down">距下次利率決策僅剩兩週</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">通膨年增率（年）</div>
+        <div class="value">3.7%</div>
+        <div class="change down">前月 3.4%，春季以來新高</div>
+      </div>
+    </div>
+
+    <h3>聯準會動態</h3>
+    <p style="font-size:0.9rem; line-height:1.7; color:#374151;">熱通膨數據大幅推升市場對Fed 10月加息的預期，10年期美債殖利率單日跳漲約10個基點至5.323%（10月8日以來最高），2年期殖利率亦大幅上行後高位震盪。</p>
+
+    <h3>中東地緣政治</h3>
+    <p style="font-size:0.9rem; line-height:1.7; color:#374151;">中東戰事持續推升國際油價，進而推高9月汽油價格，被視為本次CPI加速的主要貢獻因素之一。</p>
+
+    <h3>中國半導體競爭</h3>
+    <p style="font-size:0.9rem; line-height:1.7; color:#374151;">中國長鑫存儲技術（CXMT）宣佈在晶片設計上取得突破，能在更小空間存儲更多數據，引發市場對美國半導體公司長期競爭地位的擔憂，加劇晶片股拋售。</p>
+  </div>
+
+  <!-- SECTOR PERFORMANCE -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+    <h3>表現最差板塊</h3>
+    <table>
+      <thead>
+        <tr><th>板塊</th><th>當日表現</th><th>說明</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>科技（XLK）</td>
+          <td><span class="down">▼ -3%</span></td>
+          <td>S&P 500中跌幅最大</td>
+        </tr>
+        <tr>
+          <td>半導體</td>
+          <td><span class="down">▼ -3% 至 -4.3%</span></td>
+          <td>連跌第六日，蒸發近1兆美元</td>
+        </tr>
+        <tr>
+          <td>成長型/小型股</td>
+          <td><span class="down">▼ 明顯承壓</span></td>
+          <td>利率預期升溫拖累</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>相對抗跌板塊</h3>
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:6px; padding:8px 14px; font-size:0.88rem; color:#065f46;">醫療保健</div>
+      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:6px; padding:8px 14px; font-size:0.88rem; color:#065f46;">消費必需品</div>
+    </div>
+
+    <h3>重要個股</h3>
+    <div class="highlight-card red">
+      <strong>Nvidia (NVDA)</strong> — 跌逾 3%｜受半導體拋售與CPI數據雙重打壓
+    </div>
+    <div class="highlight-card red">
+      <strong>CoreWeave (CRWV)</strong> — 暴跌逾 15%～16%｜neocloud高槓桿模式疑慮引發拋售
+    </div>
+    <div class="highlight-card red">
+      <strong>Intel (INTC) / AMD</strong> — 隨半導體板塊同步大跌
+    </div>
+    <div class="highlight-card red">
+      <strong>Bank of America (BAC)</strong> — 遭監管機構罰款逾12億美元，股價下跌
+    </div>
+    <div class="highlight-card green">
+      <strong>BlackRock (BLK)</strong> — 上漲約 5%｜季度財報遠超預期，資金淨流入強勁
+    </div>
+    <div class="highlight-card green">
+      <strong>GlobalFoundries</strong> — 被選為美日半導體合作計畫技術合作夥伴，股價獲支撐
+    </div>
+    <div class="highlight-card">
+      <strong>ASML</strong> — 跌約 3%｜利潤超預期但收入略未達標，受板塊拖累
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🔥 通膨黏著（Sticky Inflation）：核心CPI年增率2.6%持續高於聯準會2%目標，若未來數月通膨無法回落，Fed升息壓力將進一步加劇</li>
+      <li>📈 利率風險：10年期美債殖利率突破5.3%，高利率環境對高估值科技成長股形成持續壓力</li>
+      <li>💻 半導體週期下行：費城半導體指數連跌第六日，AI相關基礎設施的估值泡沫疑慮升溫</li>
+      <li>🌍 中東地緣政治：戰事持續恐對油價造成進一步上行壓力，間接推高通膨</li>
+      <li>🇨🇳 中國晶片競爭：CXMT技術突破對美國半導體企業的長期競爭優勢構成挑戰</li>
+      <li>🏦 金融監管風險：Bank of America遭重罰顯示金融業面臨更嚴格監管環境</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-14-135249729.html" target="_blank">Yahoo Finance — Stock Market Today (Oct. 14, 2026): Russell 2000, Nasdaq fall 2% on hot inflation data</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-october-14-dow-sp-500-nasdaq-081136597.html" target="_blank">Yahoo Finance Live — Stock market today: Hot inflation report drops tech, drives S&P 500, Dow and Nasdaq down</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026" target="_blank">TheStreet — Stock Market Today (Oct. 14, 2026)</a></li>
+      <li><a href="https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-10142026-137270020" target="_blank">ABC News (AP Wire) — How major US stock indexes fared Wednesday 10/14/2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/10/13/stock-market-today-live-updates-.html" target="_blank">CNBC — S&P 500 drops 1%, dragged down by hot inflation data and sell-off in AI-related stocks</a></li>
+      <li><a href="https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html" target="_blank">CNBC — CPI inflation report September 2026</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/10/14/us-treasury-yields-cpi-inflation-report.html" target="_blank">CNBC — U.S. Treasury yields: investors get hot inflation report</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — 'Hot' CPI Data Sends Yields, Rate Hike Odds Higher</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/10/14/stock-market-midday-oct-14-hot-inflation-weighs-on-markets-coreweave-plummets-15/" target="_blank">Motley Fool — Stock Market Midday, Oct. 14: Hot Inflation Weighs on Markets, CoreWeave Plummets 15%</a></li>
+      <li><a href="https://www.gurufocus.com/news/9123765/philadelphia-semiconductor-index-faces-1-trillion-decline-amid-rising-rate-concerns" target="_blank">GuruFocus — Philadelphia Semiconductor Index Faces $1 Trillion Decline</a></li>
+      <li><a href="https://cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html" target="_blank">CNBC — ASML says it's getting order interest through 2030 as profit smashes expectations</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/asml-raises-sales-forecast-third-061145434.html" target="_blank">Yahoo Finance — ASML Raises Sales Forecast For A Third Time, But Q3 Revenue Miss Sends Stock Lower</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/article/nvidia-stock-sinks-as-chip-sell-off-deepens-on-hot-inflation-data-203235137.html" target="_blank">Yahoo Finance — Nvidia stock sinks as chip sell-off deepens on hot inflation data</a></li>
+      <li><a href="https://invezz.com/news/2026/10/14/intel-amd-stocks-fall-as-chip-sell-off-deepens/" target="_blank">Invezz — Intel, AMD stocks fall as chip sell-off deepens</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-10-13/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg — Stock Market Today: Dow, S&P Live Updates for October 14</a></li>
+      <li><a href="https://strategitz.substack.com/p/global-markets-close-october-14-2026" target="_blank">Strategitz — Global Markets Close, October 14, 2026</a></li>
+      <li><a href="https://finance.yahoo.com/economy/policy/articles/cpi-jumps-back-spring-levels-133200181.html" target="_blank">Yahoo Finance Economy — CPI Jumps Back to Spring Levels, Pre-Markets Fall</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 生成時間：2026-10-15 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
