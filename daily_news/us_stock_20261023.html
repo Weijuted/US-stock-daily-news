@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-10-23</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 16px 0 8px; color: #1e3a6e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 10px 14px; margin-bottom: 8px; background: #f0f4ff; border-left: 3px solid #4b6cb7; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; margin-top: 10px; }
+    .sector-item { padding: 12px 16px; background: #f8faff; border-radius: 6px; border: 1px solid #e0e8f5; font-size: 0.88rem; line-height: 1.6; }
+    .sector-item strong { display: block; color: #0f3460; margin-bottom: 4px; font-size: 0.92rem; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-up { background: #dcfce7; color: #15803d; }
+    .badge-down { background: #fee2e2; color: #b91c1c; }
+    .badge-neutral { background: #f3f4f6; color: #4b5563; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; }
+    .weekly-note { margin-top: 14px; padding: 12px 16px; background: #f0fdf4; border-left: 3px solid #22c55e; border-radius: 4px; font-size: 0.88rem; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } .sector-grid { grid-template-columns: 1fr; } }
+    .macro-item { padding: 12px 16px; background: #f8faff; border-radius: 6px; border: 1px solid #e0e8f5; font-size: 0.88rem; line-height: 1.6; }
+    .macro-item strong { display: block; color: #0f3460; margin-bottom: 4px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-10-23（週五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>📊 主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>本週表現</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均指數（DJIA）</td>
+          <td>52,215.16</td>
+          <td class="down">▼ -652.82</td>
+          <td class="down">-1.23%</td>
+          <td class="up">週漲 +0.4%</td>
+        </tr>
+        <tr>
+          <td>標準普爾 500（S&amp;P 500）</td>
+          <td>7,623.68</td>
+          <td class="down">▼ -39.75</td>
+          <td class="down">-0.52%</td>
+          <td class="down">週跌 -0.5%</td>
+        </tr>
+        <tr>
+          <td>那斯達克綜合指數（Nasdaq）</td>
+          <td>25,955.34</td>
+          <td class="down">▼ -53.52</td>
+          <td class="down">-0.21%</td>
+          <td class="down">週跌 -0.7%</td>
+        </tr>
+        <tr>
+          <td>羅素 2000（Russell 2000）</td>
+          <td>~2,775.90</td>
+          <td class="down">▼ -8.10</td>
+          <td class="down">-0.29%</td>
+          <td class="up">週漲 +2.0%</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="weekly-note">
+      <strong>🔑 本週亮點：</strong>道瓊與羅素 2000 實現週漲，小型股周表現突出（+2.0%）；但 S&amp;P 500 和那斯達克受科技股疲軟拖累而週跌。週五單日受油價飆漲影響，三大指數全面收黑。
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>🔥 重大市場事件</h2>
+
+    <h3>1. 油價急漲——當日最大市場壓力來源</h3>
+    <ul class="event-list">
+      <li>🛢️ <strong>WTI 原油期貨</strong>大漲約 <strong>3.8%</strong>，結算價達每桶 <strong>$103.27</strong>，創近期新高。</li>
+      <li>🛢️ <strong>布蘭特原油（Brent）</strong>上漲約 <strong>3.1%</strong>，結算價每桶 <strong>$116.72</strong>，為今年春季以來最高收盤價。</li>
+      <li>⚠️ 胡塞武裝（Houthis）對沙烏地阿拉伯發動新一輪攻擊，市場擔憂中東地區供油中斷風險升高。</li>
+    </ul>
+
+    <h3>2. AI 資本支出疑慮延燒</h3>
+    <ul class="event-list">
+      <li>📉 前一交易日（10/22 週四），Meta 財報超出預期但宣布龐大 AI 資本支出計畫，引發市場擔憂 AI 投資回報前景，Meta 股價單日重挫約 <strong>-8%</strong>。</li>
+      <li>💻 科技與 AI 相關股票連帶大幅下挫，帶動費城半導體指數（SOX）週四跌逾 <strong>6.72%</strong>。</li>
+      <li>🔄 週五（10/23）市場情緒略微穩定，晶片股部分反彈，費城半導體指數逆勢收漲 <strong>+0.44%</strong>。</li>
+    </ul>
+
+    <h3>3. 科技巨頭財報季前景</h3>
+    <ul class="event-list">
+      <li>📅 下週 Alphabet、微軟（Microsoft）、亞馬遜（Amazon）等科技巨頭財報陸續公布，市場進入高度觀望模式。</li>
+      <li>📊 蘋果（Apple）盤中曾短暫超越輝達，成為全球市值最高公司，之後輝達重奪第一。</li>
+    </ul>
+
+    <h3>4. 美債殖利率接近敏感關卡</h3>
+    <ul class="event-list">
+      <li>📈 10 年期美國國債殖利率在週四大幅下滑超過 <strong>18 個基點</strong>至約 <strong>4.965%</strong>，接近但仍低於 5% 心理關卡，資金流向複雜。</li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>🌐 宏觀影響因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <strong>聯準會（Fed）動態</strong>
+        市場靜待下週三（10月29日）的聯準會利率決策會議。10 年期美債殖利率接近 5% 敏感水位，市場對利率走向高度警覺。
+      </div>
+      <div class="macro-item">
+        <strong>中東地緣政治</strong>
+        美伊衝突升溫，有報導指出美國與以色列可能就對伊朗展開新一輪打擊進行部署；胡塞武裝攻擊沙烏地拉高油價，能源市場地緣溢價顯著擴大。
+      </div>
+      <div class="macro-item">
+        <strong>黃金市場</strong>
+        黃金價格再度跌破 <strong>$4,000 美元/盎司</strong>，顯示資金流向複雜，避險需求未能完全轉化為黃金買盤。
+      </div>
+      <div class="macro-item">
+        <strong>即將公布的數據</strong>
+        下週將公布 PCE 物價數據，市場提前觀望。當天並無重大經濟數據，市場主要受油價與地緣政治主導。
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTORS & STOCKS -->
+  <div class="card">
+    <h2>📈 重要個股與板塊動態</h2>
+    <div class="sector-grid">
+      <div class="sector-item">
+        <strong>能源板塊 <span class="badge badge-up">當日最強</span></strong>
+        因油價急漲逆勢走強，為 S&amp;P 500 所有板塊中表現最佳。煉油與開採類股普遍上揚。
+      </div>
+      <div class="sector-item">
+        <strong>半導體板塊 <span class="badge badge-up">止穩反彈</span></strong>
+        費城半導體指數（SOX）逆勢收漲 <strong>+0.44%</strong>，從週四重挫 6.72% 後出現技術性反彈。台積電 ADR（TSM）領漲族群之一。
+      </div>
+      <div class="sector-item">
+        <strong>AMD 超微半導體 <span class="badge badge-down">弱勢</span></strong>
+        週四大跌約 8.1%（至 $507.93），週五小幅回升。
+      </div>
+      <div class="sector-item">
+        <strong>美光科技（Micron） <span class="badge badge-up">止穩</span></strong>
+        週四跌 6.3% 後，週五反彈回升。
+      </div>
+      <div class="sector-item">
+        <strong>英特爾（Intel） <span class="badge badge-up">止穩</span></strong>
+        週四跌約 8% 後，週五止穩回升。
+      </div>
+      <div class="sector-item">
+        <strong>Nvidia 輝達 <span class="badge badge-down">微跌</span></strong>
+        週五微幅下跌。週四市值一日蒸發逾 1.5 兆人民幣。蘋果盤中曾短暫超越輝達奪回全球市值第一。
+      </div>
+      <div class="sector-item">
+        <strong>Meta <span class="badge badge-down">大跌</span></strong>
+        週四財報超預期但宣布龐大 AI 資本支出，股價單日重挫約 <strong>-8%</strong>，週五延續賣壓。
+      </div>
+      <div class="sector-item">
+        <strong>特斯拉（Tesla） <span class="badge badge-down">弱勢</span></strong>
+        因下調全年支出預測，週四跌約 3%。SpaceX 解禁後跌 9.14%。
+      </div>
+      <div class="sector-item">
+        <strong>網路安全板塊 <span class="badge badge-up">走強</span></strong>
+        中盤走強，市場擔心地緣衝突帶動相關需求增加。
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>⚠️ 風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🛢️ <strong>中東地緣衝突持續升溫</strong>：美伊緊張局勢、胡塞武裝持續攻擊沙烏地阿拉伯，油價可能進一步飆升，拖累整體市場。</li>
+      <li>🤖 <strong>AI 資本支出疑慮</strong>：Meta 龐大 AI 投資引發市場對回報率的質疑，下週 Alphabet、微軟、亞馬遜財報將成為關鍵考驗。</li>
+      <li>📈 <strong>聯準會利率政策</strong>：10 年期美債殖利率逼近 5% 敏感水位，下週聯準會利率決策可能引發市場劇烈波動。</li>
+      <li>💰 <strong>PCE 通膨數據</strong>：下週即將公布的個人消費支出（PCE）物價數據，若高於預期將加劇市場對聯準會維持高利率的擔憂。</li>
+      <li>📉 <strong>科技股估值壓力</strong>：高利率環境持續，加上 AI 資本支出疑慮，科技巨頭估值面臨重新定價的風險。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>📚 資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-23-134445147.html" target="_blank">1. Yahoo Finance — Stock Market Today (Oct. 23, 2026): Nasdaq falls following tech sell-off</a></li>
+      <li><a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-201458598.html" target="_blank">2. Yahoo Finance — How major US stock indexes fared Friday 10/23/2026</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-23-081700850.html" target="_blank">3. Yahoo Finance — Stock Market News for Oct 23, 2026</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026" target="_blank">4. TheStreet — Stock Market Today: Dow Jones, S&amp;P 500, Nasdaq Updates Oct 23 2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html" target="_blank">5. CNBC — Stock market news for Oct. 23, 2026</a></li>
+      <li><a href="https://invezz.com/news/2026/10/23/dow-falls-1-25-as-oil-tops-117-and-investors-await-fed-big-tech-earnings/" target="_blank">6. Invezz — Dow falls 1.25% as oil tops $117 and investors await Fed, big tech earnings</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-drop-nasdaq-rises-after-sharp-tech-sell-off-160940864.html" target="_blank">7. Yahoo Finance — Stock market today: Dow sinks 600 points, S&amp;P 500, Nasdaq drop</a></li>
+      <li><a href="https://www.washingtontimes.com/news/2026/oct/23/wall-street-loses-ground-friday-pressure-rising-oil-prices/" target="_blank">8. Washington Times — Wall Street loses ground under pressure from rising oil prices</a></li>
+      <li><a href="https://vistapglobal.com/weekly-market-summary-october-23-2026-oil-tops-100-as-wall-street-questions-ais-financing-bill/" target="_blank">9. Vista P Global — Weekly Market Summary: Oil Tops $100 as Wall Street Questions AI's Financing Bill</a></li>
+      <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">10. Schwab — AI Pressure Persists, Oil Up as Price Data Looms</a></li>
+      <li><a href="https://deanfi.com/insights/marketpulse/2026-10-23/" target="_blank">11. DeanFi — S&amp;P 500 down 0.52% — Market Pulse · Oct 23, 2026</a></li>
+      <li><a href="https://strategitz.substack.com/p/global-markets-close-october-23-2026" target="_blank">12. Strategitz Substack — Global Markets Close — October 23, 2026</a></li>
+      <li><a href="https://cappnotes.substack.com/p/closing-look-friday-october-23-2026" target="_blank">13. Cappnotes Substack — Closing Look — Friday, October 23, 2026</a></li>
+      <li><a href="https://cmnews.com.tw/article/cmoneyairesearcher-cb710e1a-cf35-11f1-8246-a5d47186924e" target="_blank">14. CMoney 研究員 — 油價飆破百元，道瓊跌逾650點，半導體逆勢撐盤（2026.10.24）</a></li>
+      <li><a href="https://news.cnyes.com/news/id/6635955" target="_blank">15. 鉅亨網 — 美股重點新聞摘要2026年10月23日</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議<br>生成時間：2026-10-26 UTC</footer>
+</div>
+</body>
+</html>
