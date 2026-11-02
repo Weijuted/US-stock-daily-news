@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026年10月30日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 10px; }
+    h3 { font-size: 0.97rem; font-weight: 700; margin: 16px 0 8px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #d97706; font-weight: 600; }
+    .event-item { padding: 14px 16px; margin-bottom: 12px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-item .event-title { font-weight: 700; color: #0f3460; margin-bottom: 4px; }
+    .macro-item { padding: 14px 16px; margin-bottom: 12px; background: #f0f4ff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .macro-item .macro-title { font-weight: 700; color: #1e40af; margin-bottom: 4px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 600px) { .sector-grid { grid-template-columns: 1fr; } }
+    .sector-card { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e8f5; }
+    .sector-card h4 { font-size: 0.88rem; font-weight: 700; color: #0f3460; margin-bottom: 8px; }
+    .sector-card ul { list-style: none; font-size: 0.87rem; }
+    .sector-card ul li { padding: 3px 0; border-bottom: 1px solid #eef0f5; }
+    .sector-card ul li:last-child { border-bottom: none; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-down { background: #fee2e2; color: #dc2626; }
+    .badge-up { background: #dcfce7; color: #16a34a; }
+    .highlight-box { background: linear-gradient(135deg, #1e3a5f 0%, #0f3460 100%); color: #fff; border-radius: 8px; padding: 16px 18px; margin-bottom: 14px; }
+    .highlight-box .hl-title { font-size: 0.85rem; opacity: 0.8; margin-bottom: 4px; }
+    .highlight-box .hl-value { font-size: 1.4rem; font-weight: 700; }
+    .highlight-box .hl-change { font-size: 0.9rem; opacity: 0.85; margin-top: 2px; }
+    .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+    @media (max-width: 700px) { .stat-row { grid-template-columns: repeat(2, 1fr); } }
+    .sources { font-size: 0.82rem; color: #6b7280; padding-left: 0; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-num { color: #9ca3af; margin-right: 6px; font-size: 0.78rem; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; font-size: 0.85rem; color: #92400e; margin-top: 14px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年10月30日（星期五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX SUMMARY CARDS -->
+  <div class="stat-row">
+    <div class="highlight-box">
+      <div class="hl-title">道瓊工業 DJIA</div>
+      <div class="hl-value">51,770</div>
+      <div class="hl-change down">▼ 572.25 (-1.09%)</div>
+    </div>
+    <div class="highlight-box">
+      <div class="hl-title">S&amp;P 500</div>
+      <div class="hl-value">7,580</div>
+      <div class="hl-change down">▼ 140.30 (-1.82%)</div>
+    </div>
+    <div class="highlight-box">
+      <div class="hl-title">那斯達克 Nasdaq</div>
+      <div class="hl-value">25,437</div>
+      <div class="hl-change down">▼ 747.73 (-2.86%)</div>
+    </div>
+    <div class="highlight-box">
+      <div class="hl-title">羅素2000</div>
+      <div class="hl-value">2,811</div>
+      <div class="hl-change down">▼ 47.37 (-1.66%)</div>
+    </div>
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均指數 (DJIA)</td>
+          <td>51,770.31</td>
+          <td class="down">-572.25</td>
+          <td class="down">-1.09%</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,580.07</td>
+          <td class="down">-140.30</td>
+          <td class="down">-1.82%</td>
+        </tr>
+        <tr>
+          <td>那斯達克綜合指數 (Nasdaq Composite)</td>
+          <td>25,437.00</td>
+          <td class="down">-747.73</td>
+          <td class="down">-2.86%</td>
+        </tr>
+        <tr>
+          <td>羅素2000 (Russell 2000)</td>
+          <td>2,811.84</td>
+          <td class="down">-47.37</td>
+          <td class="down">-1.66%</td>
+        </tr>
+        <tr style="background:#fff0f0;">
+          <td><strong>費城半導體指數 (SOX)</strong></td>
+          <td>10,688.80</td>
+          <td class="down">-829.40</td>
+          <td class="down"><strong>-7.20%</strong></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note">
+      ⚠️ 那斯達克跌幅為 2026 年 6 月 5 日以來最大單日跌幅，10 月全月累跌 5.3%，為 2025 年 3 月以來最差月份。費城半導體指數受英特爾暴跌拖累，重挫 7.20%。
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <div class="event-item">
+      <div class="event-title">🔴 英特爾 (INTC) 暴跌 29%：1974 年以來最慘烈單日表現</div>
+      <p>收盤 $65.76，跌幅約 -28.58%，創下 1974 年以來最大單日跌幅，直接拖累費城半導體指數重挫 7.2%。Q3 財報本身達標，但 Q4 營收指引（150～160 億美元）嚴重低於市場預期，公司警告 PC 市場疲弱將持續至 2027 年上半年。美銀（BofA）隨即將目標價從 $145 大砍至 $100 並降評至「中立」，D.A. Davidson 亦同步降評。</p>
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">🟠 亞馬遜 (AMZN) 財報低於預期，盤初大跌後回收損失</div>
+      <p>Q3 營收 2,019 億美元（+12% YoY），未達分析師預期；EPS $1.89，低於共識預期 $1.96。AWS 雲端業務成長 39%（約 459.8 億美元，大致符合預期），2026 年資本支出目標維持 2,200 億美元不變。股價盤前一度跌逾 5%，收盤最終僅跌 -1.41%（$240.35），展現一定撐盤力。</p>
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">🔴 Reddit (RDDT) 盤後暴跌 16.67%</div>
+      <p>Q3 營收 $8.95 億（+53% YoY），高於自家指引；EPS $1.40。正常時段跌 -3.79%（$129.60），盤後進一步重挫 -16.67% 至 $108，市場對用戶增長或搜尋流量前景持疑慮態度。</p>
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">🟢 埃克森美孚 (XOM) Q3 財報強勁，宣告大額回購</div>
+      <p>Q3 淨利潤 154 億美元（每股 $3.72）；調整後盈利 175 億美元（每股 $4.23）。能源產品部門盈利翻倍至約 91 億美元，宣布 2027 年回購 200 億美元股票，Q4 每股股息 $1.07，成為當日市場中的亮點。</p>
+    </div>
+
+    <div class="event-item">
+      <div class="event-title">🟢 雪佛龍 (CVX) Q3 財報超預期</div>
+      <p>調整後 EPS $5.28（預期 $4.89），營收 678 億美元（預期 616.2 億美元），下游盈利 49 億美元略低於 51 億美元預期，整體表現強勁。</p>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素分析</h2>
+
+    <div class="macro-item">
+      <div class="macro-title">📊 Q3 GDP 優於預期，但通膨同步升溫</div>
+      <p>第三季度 GDP 年化增速 3.4%，高於市場預期 3.0%，遠優於 Q2 的 2.2%，消費支出與 AI 資本支出為主要貢獻。9 月 PCE 通膨：<strong>整體 PCE 年增 3.6%</strong>（前月 3.4%，月增 0.5%）；核心 PCE 年增 3.1%。強勁 GDP 搭配頑固通膨令市場對聯準會收緊預期升溫。</p>
+    </div>
+
+    <div class="macro-item">
+      <div class="macro-title">🏦 聯準會：維持利率不變，12 月升息概率高達 75%</div>
+      <p>聯準會於 10 月 28 日（週二）決議維持基準利率於 3.75%～4.00% 區間，主席 Kevin Warsh 措辭謹慎，重申 2% 通膨目標，未排除 12 月升息可能。聯準會對經濟描述由「穩健」升格為「強勁」。10 年期美債殖利率維持在 5.25%～5.28% 高位。</p>
+    </div>
+
+    <div class="macro-item">
+      <div class="macro-title">🗳️ 2026 年期中選舉：市場進入觀望期</div>
+      <p>美國期中選舉定於 11 月 3 日（週二）舉行，距 10 月 30 日僅剩四天。市場對選後政策走向存在不確定性，部分資金選擇在月底選前撤退，進一步加重賣壓。歷史上，期中選舉前 10 月股市往往偏弱，選後至年底通常反彈。</p>
+    </div>
+
+    <div class="macro-item">
+      <div class="macro-title">🤖 AI 資本支出疑慮再起</div>
+      <p>英特爾、亞馬遜財報觸發市場對科技巨頭龐大 AI 資本支出「投資回收周期是否過長」的再度審視，引發部分 AI 交易倉位平倉，科技板塊受壓明顯。</p>
+    </div>
+  </div>
+
+  <!-- SECTOR DYNAMICS -->
+  <div class="card">
+    <h2>板塊與個股動態</h2>
+    <div class="sector-grid">
+      <div class="sector-card">
+        <h4>💻 科技／半導體（最受衝擊）</h4>
+        <ul>
+          <li>英特爾 (INTC) <span class="badge badge-down">-29%</span></li>
+          <li>費城半導體 (SOX) <span class="badge badge-down">-7.20%</span></li>
+          <li>亞馬遜 (AMZN) <span class="badge badge-down">-1.41%</span></li>
+          <li>Reddit (RDDT) <span class="badge badge-down">-3.79%</span></li>
+          <li>Reddit 盤後 <span class="badge badge-down">-16.67%</span></li>
+        </ul>
+      </div>
+      <div class="sector-card">
+        <h4>⛽ 能源（相對穩健）</h4>
+        <ul>
+          <li>埃克森美孚 (XOM) — Q3 強勁，宣告大額回購</li>
+          <li>雪佛龍 (CVX) — Q3 超預期，EPS $5.28 vs 預期 $4.89</li>
+        </ul>
+        <h4 style="margin-top:12px;">🛒 消費零售（逆市走強）</h4>
+        <ul>
+          <li>沃爾瑪 (WMT) <span class="badge badge-up">+1.86%</span></li>
+          <li>好市多 (COST) <span class="badge badge-up">+1.63%</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:16px;">📅 月度大事記</h3>
+    <ul class="risk-list" style="margin-top:8px;">
+      <li>那斯達克 10 月單月累跌 <strong>5.3%</strong>，為 2025 年 3 月以來最差月份</li>
+      <li>S&amp;P 500 與道瓊同樣出現月線收跌</li>
+      <li>費城半導體指數本月跌幅更為嚴峻，英特爾暴跌為主要元凶</li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🔴 <strong>通膨頑固：</strong>PCE 年增 3.6%，遠超聯準會 2% 目標，12 月升息概率已升至 75%，利率維持高位壓力持續</li>
+      <li>🔴 <strong>科技業財報疑慮：</strong>英特爾 Q4 指引嚴重不及預期，PC 市場疲弱預計延續至 2027 年，AI 資本支出回報時程充滿不確定性</li>
+      <li>🟠 <strong>期中選舉不確定性：</strong>11 月 3 日選舉臨近，政策走向未明，資金觀望情緒濃厚</li>
+      <li>🟠 <strong>美債殖利率高位：</strong>10 年期殖利率 5.25%～5.28%，持續壓制成長股估值</li>
+      <li>🟡 <strong>大型科技 AI 支出壓力：</strong>亞馬遜 2026 年資本支出目標 2,200 億美元，市場質疑投資回報節奏</li>
+      <li>🟡 <strong>半導體供需：</strong>英特爾暴跌顯示 PC 端半導體需求疲弱，AI 晶片與消費電子晶片分化加劇</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><span class="source-num">[1]</span><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html" target="_blank">Yahoo Finance — Stock Market Today, Oct 30, 2026（大型科技股賣壓）</a></li>
+      <li><span class="source-num">[2]</span><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026" target="_blank">TheStreet — Stock Market Today, Oct 30, 2026</a></li>
+      <li><span class="source-num">[3]</span><a href="https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-202111310.html" target="_blank">Yahoo Finance — Major US Stock Indexes, 10/30/2026</a></li>
+      <li><span class="source-num">[4]</span><a href="https://krmg.com/2026/10/30/how-major-us-stock-indexes-fared-friday-10-30-2026/" target="_blank">96.5 KRMG — How Major US Stock Indexes Fared, 10/30/2026</a></li>
+      <li><span class="source-num">[5]</span><a href="https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026" target="_blank">StockTitan — Stock Market Today Live, Oct 30, 2026</a></li>
+      <li><span class="source-num">[6]</span><a href="https://www.fx168news.com/express/fastnews/1459742" target="_blank">FX168財經 — 三大指數收盤數據快訊</a></li>
+      <li><span class="source-num">[7]</span><a href="https://hk.finance.yahoo.com/news/%E7%BE%8E%E8%82%A1-%E7%BE%8E%E8%82%A1%E5%91%A8%E4%BA%94%E5%8F%97%E5%A3%93-%E7%B4%8D%E6%8C%87%E6%8C%AB2-856-%E8%B2%BB%E5%8D%8A%E7%80%897-220018656.html" target="_blank">Yahoo Finance HK — 那指挫2.856%，費半瀉7.20%</a></li>
+      <li><span class="source-num">[8]</span><a href="https://moneydj.com/kmdj/news/newsviewer.aspx?a=c38f866f-9b2f-4fb5-bf21-43f23d6415c5" target="_blank">MoneyDJ — Intel暴跌、費半崩</a></li>
+      <li><span class="source-num">[9]</span><a href="https://invest-nav.com/market/daily/us-stocks/2026-10-30/" target="_blank">invest-nav — 10月30日美股收盤分析</a></li>
+      <li><span class="source-num">[10]</span><a href="https://www.gurufocus.com/news/9160388/intel-intc-stock-plummets-29-amidst-tech-selloff" target="_blank">GuruFocus — Intel (INTC) Stock Plummets 29%</a></li>
+      <li><span class="source-num">[11]</span><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nasdaq-p-123540419.html" target="_blank">Yahoo Finance Markets — Nasdaq/S&P 500 暴跌，Intel崩盤，比特幣下跌</a></li>
+      <li><span class="source-num">[12]</span><a href="https://qz.com/intel-stock-plunges-amazon-nasdaq-100-sell-off-103026" target="_blank">QZ — Intel股價暴跌，Nasdaq 100 下挫</a></li>
+      <li><span class="source-num">[13]</span><a href="https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html" target="_blank">CNBC — Intel最慘單日，大型科技AI支出疑慮</a></li>
+      <li><span class="source-num">[14]</span><a href="https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html" target="_blank">CNBC — Intel Q3財報 2026</a></li>
+      <li><span class="source-num">[15]</span><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-30-213502210.html" target="_blank">Yahoo Finance — Amazon財報及股價分析, Oct 30</a></li>
+      <li><span class="source-num">[16]</span><a href="https://www.cnbc.com/2026/10/30/amazon-earnings-analysts-stock.html" target="_blank">CNBC — Amazon財報分析師反應</a></li>
+      <li><span class="source-num">[17]</span><a href="https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html" target="_blank">CNBC — PCE通膨報告 9月 2026</a></li>
+      <li><span class="source-num">[18]</span><a href="https://www.cnn.com/2026/10/29/economy/us-economy-pce-inflation-gdp" target="_blank">CNN — 美國經濟加速但通膨亦升溫</a></li>
+      <li><span class="source-num">[19]</span><a href="https://moneycheck.com/reddit-rddt-stock-tumbles-16-67-after-hours-following-q3-2026-earnings-release/" target="_blank">MoneyCheck — Reddit (RDDT) 盤後暴跌16.67%</a></li>
+      <li><span class="source-num">[20]</span><a href="https://investor.exxonmobil.com/company-information/press-releases/detail/1213/exxonmobil-announces-third-quarter-2026-results" target="_blank">ExxonMobil Investor Relations — Q3 2026 財報官方發布</a></li>
+      <li><span class="source-num">[21]</span><a href="https://egyptoil-gas.com/news/exxonmobil-records-15-4-bn-profit-in-q3-2026/" target="_blank">EgyptOil-Gas — ExxonMobil Q3 2026 獲利154億美元</a></li>
+      <li><span class="source-num">[22]</span><a href="https://cappnotes.substack.com/p/closing-look-friday-october-30-2026" target="_blank">Cappnotes Substack — Closing Look, Oct 30, 2026</a></li>
+      <li><span class="source-num">[23]</span><a href="https://investrade.com/market-review-october-30-2026/" target="_blank">Investrade — 市場回顧 Oct 30, 2026</a></li>
+      <li><span class="source-num">[24]</span><a href="https://k.sina.cn/article_1699432410_654b47da02001xiys.html" target="_blank">新華社（via 新浪）— 紐約股市三大指數30日顯著下跌</a></li>
+      <li><span class="source-num">[25]</span><a href="https://www.usnews.com/news/national-news/articles/2026-10-29/economy-accelerates-but-so-does-inflation" target="_blank">US News — 經濟加速，通膨亦升溫</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議 &nbsp;|&nbsp; 生成時間：2026-11-02 00:13 UTC</footer>
+</div>
+</body>
+</html>
