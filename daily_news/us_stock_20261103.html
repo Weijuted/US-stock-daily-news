@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-03</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .badge { display: inline-block; margin-top: 12px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; padding: 4px 14px; font-size: 0.82rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; display: flex; align-items: center; gap: 8px; }
+    h2 .icon { font-size: 1.1rem; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #d97706; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .sector-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 4px; }
+    .sector-item { padding: 10px 14px; border-radius: 6px; font-size: 0.88rem; }
+    .sector-up { background: #f0fdf4; border: 1px solid #86efac; }
+    .sector-down { background: #fff5f5; border: 1px solid #fca5a5; }
+    .sector-item .sector-name { font-weight: 600; margin-bottom: 2px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-top: 4px; }
+    .macro-item { background: #f8faff; border: 1px solid #dce3f5; border-radius: 8px; padding: 12px 14px; text-align: center; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-item .change { font-size: 0.8rem; margin-top: 2px; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; }
+    .sources-group { margin-bottom: 14px; }
+    .sources-group h3 { font-size: 0.85rem; color: #6b7280; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 10px 14px; font-size: 0.84rem; color: #92400e; margin-top: 14px; line-height: 1.5; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      header { padding: 20px 18px; }
+      .card { padding: 16px 14px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年11月3日（週二）｜ 由 Claude Routine 自動生成</div>
+    <span class="badge">🗳️ 美國期中選舉投票日</span>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2><span class="icon">📊</span>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>備注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數</strong><br><small style="color:#6b7280">Dow Jones</small></td>
+          <td>51,786.72</td>
+          <td class="down">▼ -197.26</td>
+          <td class="down">-0.38%</td>
+          <td>蘋果拖累藍籌股</td>
+        </tr>
+        <tr>
+          <td><strong>標普500指數</strong><br><small style="color:#6b7280">S&amp;P 500</small></td>
+          <td>7,568.92</td>
+          <td class="up">▲ +27.52</td>
+          <td class="up">+0.36%</td>
+          <td>終結連續三日跌勢</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合指數</strong><br><small style="color:#6b7280">Nasdaq Composite</small></td>
+          <td>25,372.01</td>
+          <td class="up">▲ +207.65</td>
+          <td class="up">+0.83%</td>
+          <td>半導體股領漲</td>
+        </tr>
+        <tr>
+          <td><strong>羅素2000指數</strong><br><small style="color:#6b7280">Russell 2000</small></td>
+          <td>2,812.45</td>
+          <td class="up">▲ +6.47</td>
+          <td class="up">+0.23%</td>
+          <td>小型股小幅回升</td>
+        </tr>
+        <tr>
+          <td><strong>費城半導體指數</strong><br><small style="color:#6b7280">SOX</small></td>
+          <td>—</td>
+          <td class="up">▲</td>
+          <td class="up">+2.64%</td>
+          <td>晶片股全面反彈</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2><span class="icon">📰</span>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>🗳️ 美國2026年期中選舉投票日</strong><br>
+        全美投票選舉國會眾議院與部分參議院席位。市場整日處於觀望狀態，投資人關注共和黨或民主黨誰能掌控國會，預期將影響未來財政政策與監管方向。開盤前期貨交易混亂，盤中波動加劇。
+      </li>
+      <li>
+        <strong>🔴 蘋果（AAPL）財報後下跌 3.8%</strong><br>
+        蘋果公司公布財報後股價跌 <strong>3.8%</strong> 至 $330.56，原因包括第四季利潤率展望不如預期（記憶體晶片成本持續攀升）及 iPad 銷售低於市場預估。蘋果成為道瓊斯指數當日最大拖累。
+      </li>
+      <li>
+        <strong>🟢 AMD 盤後財報大幅超越預期，股價跳漲 6–8%</strong><br>
+        AMD 收盤後公布第三季業績：<br>
+        • 調整後 EPS：$2.09（預期 $1.95）<br>
+        • 總營收：$133.8億（歷史新高，年增45%）<br>
+        • 資料中心營收：$85.5億（歷史新高，年增近100%）<br>
+        • Q4 展望：約 $170億（±3%）<br>
+        盤中 AMD 收漲 3.65% 至 $483.90；盤後股價進一步急漲至 6–8%。
+      </li>
+      <li>
+        <strong>🟢 晶片股強勢反彈，費城半導體指數漲 2.64%</strong><br>
+        半導體板塊在經歷前幾週大幅下跌後出現明顯反彈：<br>
+        • <strong>輝達（Nvidia）</strong>：+3.0%，收 $208.24，結束連續四日下跌；市值重奪全球最高<br>
+        • <strong>博通（Broadcom）</strong>：+3.0%<br>
+        • <strong>英特爾（Intel）</strong>：+4.0%<br>
+        • <strong>邁威爾科技（Marvell）</strong>：+2.0%
+      </li>
+      <li>
+        <strong>🟢 Arista Networks（ANET）單日暴漲 14.2%</strong><br>
+        Q3 財報遠超預期：營收年增 58.5% 至約 $36.6億，全面超越預期。網路基礎設施需求持續強勁，AI 相關資料中心建置帶動成長。
+      </li>
+      <li>
+        <strong>🟢 超微電腦（SMCI）漲 8.32%</strong><br>
+        季度銷售創歷史新高，AI 伺服器需求依然旺盛。
+      </li>
+      <li>
+        <strong>🔴 Palantir（PLTR）跌 1.7%</strong><br>
+        Q3 財報雖達標，但商業合約成長放緩引發分析師憂慮，股價小幅下跌。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2><span class="icon">🌐</span>宏觀因素</h2>
+
+    <h3>主要指標</h3>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">10年期公債殖利率</div>
+        <div class="value">4.96%</div>
+        <div class="change up">▲ +6 bps</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">2年期公債殖利率</div>
+        <div class="value">4.623%</div>
+        <div class="change up">▲ +4 bps</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">WTI 原油</div>
+        <div class="value">$97.66</div>
+        <div class="change up">▲ +0.3%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">黃金</div>
+        <div class="value">$3,921</div>
+        <div class="change down">▼ -0.7%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">恐慌指數（VIX）</div>
+        <div class="value">20.8</div>
+        <div class="change neutral">中等不確定</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">9月 JOLTS 職缺</div>
+        <div class="value">752萬</div>
+        <div class="change up">▲ 優於預期</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:20px;">聯準會（Fed）動態</h3>
+    <p style="font-size:0.9rem;line-height:1.65;color:#374151;">
+      聯準會 12 月利率決策會議前，本週數據相當關鍵。多位官員近期發表偏鷹派言論，市場對降息預期降溫。
+      分析師指出，「已不再存在聯準會政策的市場共識」。市場下週將等待 10 月 CPI 通膨數據，以及下月初的非農就業報告，
+      作為下一次決策的關鍵參考依據。
+    </p>
+
+    <h3 style="margin-top:16px;">就業數據（JOLTS）</h3>
+    <p style="font-size:0.9rem;line-height:1.65;color:#374151;">
+      9 月職位空缺報 <strong>752.3 萬</strong>，大幅優於市場預期的約 710 萬。裁員率下降，就業市場整體依然強勁。
+      路透社指出，此數據與「AI 導致大規模失業」的敘事相悖。分析師形容當前勞市為「低招聘、低裁員（low hire, low fire）」的穩定狀態。
+      受此數據影響，公債殖利率進一步走高，降息預期降溫。
+    </p>
+
+    <h3 style="margin-top:16px;">伊朗核協議談判（地緣政治）</h3>
+    <p style="font-size:0.9rem;line-height:1.65;color:#374151;">
+      美伊雙方就核協議傳出矛盾訊號，導致油價當日大幅震盪。前一日（11/2）傳出雙方均願坐下談判，WTI 油價單日暴跌逾 7%。
+      週二（11/3）報導稱美方批准草案框架，促使油價進一步下探；然而，美軍疑似對伊朗 Qeshm 島發動打擊的消息傳出後，
+      油價急速反彈。伊朗外交部隨後表明「不接受強制性外交」，談判前景仍不明朗。
+    </p>
+  </div>
+
+  <!-- SECTORS -->
+  <div class="card">
+    <h2><span class="icon">🏭</span>重要板塊動態</h2>
+    <div class="sector-grid">
+      <div class="sector-item sector-up">
+        <div class="sector-name">半導體／科技</div>
+        <div>強勢上漲</div>
+        <div style="font-size:0.8rem;color:#6b7280;">AMD財報預期、AI需求回升</div>
+      </div>
+      <div class="sector-item sector-up">
+        <div class="sector-name">網路基礎設施</div>
+        <div>大漲</div>
+        <div style="font-size:0.8rem;color:#6b7280;">Arista Networks 季報遠超預期</div>
+      </div>
+      <div class="sector-item sector-up">
+        <div class="sector-name">AI 伺服器硬體</div>
+        <div>上漲</div>
+        <div style="font-size:0.8rem;color:#6b7280;">Super Micro Computer 銷售創新高</div>
+      </div>
+      <div class="sector-item sector-down">
+        <div class="sector-name">消費電子</div>
+        <div>下跌</div>
+        <div style="font-size:0.8rem;color:#6b7280;">蘋果利潤率展望疲弱</div>
+      </div>
+      <div class="sector-item sector-down">
+        <div class="sector-name">能源</div>
+        <div>承壓</div>
+        <div style="font-size:0.8rem;color:#6b7280;">伊朗談判報導，油價下行</div>
+      </div>
+      <div class="sector-item sector-down">
+        <div class="sector-name">資料分析</div>
+        <div>小幅下跌</div>
+        <div style="font-size:0.8rem;color:#6b7280;">Palantir 商業合約成長放緩</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2><span class="icon">⚠️</span>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>選舉不確定性：</strong>期中選舉結果將影響未來財政政策走向，市場需消化政治格局變化帶來的不確定性。</li>
+      <li><strong>聯準會政策不確定性：</strong>JOLTS 數據強勁導致降息預期降溫，殖利率攀升至 4.96%，對成長型科技股估值形成壓力。</li>
+      <li><strong>中東地緣政治：</strong>美伊衝突訊號矛盾，若談判破裂或局勢升溫，油價可能急劇波動，衝擊全球供應鏈。</li>
+      <li><strong>AI 資本支出過熱疑慮：</strong>前幾週市場已因 AI 資本支出擴張過快引發估值擔憂，本日雖反彈，但分析師提醒風險尚未完全消除。</li>
+      <li><strong>蘋果毛利率壓力：</strong>記憶體晶片成本上升持續壓縮蘋果利潤率，若此趨勢延續恐波及大盤藍籌股表現。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2><span class="icon">🔗</span>資料來源</h2>
+    <div class="sources">
+      <div class="sources-group">
+        <h3>指數與市場收盤數據</h3>
+        <ul>
+          <li><a href="https://cappnotes.substack.com/p/closing-look-tuesday-november-3-2026" target="_blank">CappNotes — Closing Look: Tuesday, November 3, 2026</a></li>
+          <li><a href="https://krmg.com/2026/11/03/how-major-us-stock-indexes-fared-tuesday-11-3-2026/" target="_blank">KRMG — How major US stock indexes fared Tuesday, 11-3-2026</a></li>
+          <li><a href="https://investrade.com/market-review-november-03-2026/" target="_blank">Investrade — Market Review: November 03, 2026</a></li>
+          <li><a href="https://vistapglobal.com/stock-market-today-november-3-2026-nasdaq-leads-as-chips-rebound-dow-falls-and-treasury-yields-rise-amd-aapl-amwl-eprx-googl-modd-nvda-ser/" target="_blank">VistaPGlobal — Stock Market Today November 3, 2026: Nasdaq Leads as Chips Rebound</a></li>
+          <li><a href="https://news.futunn.com/en/post/1003307805/us-stocks-close-on-election-day-the-s-p-and" target="_blank">Futunn — US stocks close on Election Day: the S&amp;P and...</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <h3>即時市場報導</h3>
+        <ul>
+          <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-3-dow-sp-500-nasdaq-midterms-amd-earnings-141143244.html" target="_blank">Yahoo Finance — Stock Market Today: Tuesday, November 3 (Live)</a></li>
+          <li><a href="https://www.stocktitan.net/articles/stock-market-today-live-november-3-2026" target="_blank">Stock Titan — Stock Market Today Live, November 3, 2026</a></li>
+          <li><a href="https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for Nov. 3, 2026</a></li>
+          <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026" target="_blank">TheStreet — Stock Market Today: Dow Jones, S&amp;P 500, Nasdaq Nov 03, 2026</a></li>
+          <li><a href="https://www.kiplinger.com/investing/stocks/nasdaq-bounces-as-chips-lead-ai-revival-stock-market-today" target="_blank">Kiplinger — Nasdaq Bounces as Chips Lead AI Revival</a></li>
+          <li><a href="https://www.alainguillot.com/stock-market-recap-november-3/" target="_blank">Alain Guillot — Stock Market Recap: November 3, 2026</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <h3>AMD 財報</h3>
+        <ul>
+          <li><a href="https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html" target="_blank">CNBC — AMD Q3 Earnings Report 2026</a></li>
+          <li><a href="https://www.investing.com/news/earnings/amd-stock-jumps-after-hours-as-quarterly-results-revenue-guidance-beat-estimates-4996344" target="_blank">Investing.com — AMD stock jumps after hours as results beat estimates</a></li>
+          <li><a href="https://www.xtb.com/cy/market-analysis/news-and-research/amd-shares-jump-7-after-stellar-earnings-will-semiconductor-stocks-return-to-growth" target="_blank">XTB — AMD shares jump 7% after stellar earnings</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <h3>半導體股及個股動態</h3>
+        <ul>
+          <li><a href="https://247wallst.com/investing/2026/11/03/amd-advances-5-intel-rises-4-marvell-gains-2-as-chip-stocks-bounce-ahead-of-amd-earnings/" target="_blank">247 Wall St. — AMD +5%, Intel +4%, Marvell +2% as Chip Stocks Bounce</a></li>
+          <li><a href="https://247wallst.com/investing/2026/11/03/nvidia-rises-3-despite-ai-ceos-warning-on-chinese-chip-competition-amd-climbs-5-broadcom-gains-3/" target="_blank">247 Wall St. — Nvidia +3%, AMD +5%, Broadcom +3%</a></li>
+          <li><a href="https://www.tradingview.com/news/benzinga:b3a987378094b:0-stock-market-today-s-p-500-nasdaq-100-dow-jones-futures-mixed-as-trump-touts-iran-settlement-hopes-aapl-pltr-amd-in-focus-updated/" target="_blank">TradingView/Benzinga — AAPL, PLTR, AMD in Focus</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <h3>宏觀經濟（JOLTS、公債殖利率、Fed）</h3>
+        <ul>
+          <li><a href="https://finance.yahoo.com/markets/stocks/articles/q3-earnings-jolts-report-midterm-143700208.html" target="_blank">Yahoo Finance — Q3 Earnings, JOLTS Report, Midterm</a></li>
+          <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Charles Schwab — Stock Market Update: Open</a></li>
+          <li><a href="https://www.investing.com/news/economy-news/ai-trade-rebounds-midterms-awaited-4996694" target="_blank">Investing.com — AI Trade Rebounds, Midterms Awaited</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <h3>伊朗談判與油價</h3>
+        <ul>
+          <li><a href="https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html" target="_blank">CNBC — Oil Prices Climb After US Reportedly Strikes Iran's Qeshm Island</a></li>
+          <li><a href="https://www.rigzone.com/news/wire/oil_prices_swing_on_conflicting_iran_signals-03-nov-2026-185001-article/" target="_blank">Rigzone — Oil Prices Swing on Conflicting Iran Signals</a></li>
+          <li><a href="https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyk2410790.shtml" target="_blank">新浪財經 — 11月3日收盤：美股三大指數冲高回落 科技股承壓</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      ⚠️ 本報告數據已交叉比對多個財經來源（Yahoo Finance、CNBC、Bloomberg、Reuters/Investing.com、24/7 Wall St.、The Street、Kiplinger 等），各來源間細微數字差異（如道瓊跌幅 -0.38% vs. -0.4%）主要源於報價時間點或四捨五入不同，不影響整體趨勢判斷。本報告僅供參考，非投資建議。
+    </div>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 | 生成時間：2026-11-04 | 僅供參考，非投資建議
+  </footer>
+
+</div>
+</body>
+</html>
