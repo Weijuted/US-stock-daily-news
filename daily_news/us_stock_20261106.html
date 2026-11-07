@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026年11月6日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .summary-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    header .chip { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22); border-radius: 20px; padding: 5px 14px; font-size: 0.85rem; }
+    header .chip.up { background: rgba(22,163,74,0.25); border-color: rgba(22,163,74,0.5); }
+    header .chip.down { background: rgba(220,38,38,0.25); border-color: rgba(220,38,38,0.5); }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 3px solid #0f3460; padding-left: 10px; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #374151; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { display: block; color: #0f3460; margin-bottom: 4px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item h4 { font-size: 0.88rem; color: #6b7280; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .macro-item p { font-size: 0.95rem; color: #1a1a2e; line-height: 1.5; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-up { background: #dcfce7; color: #16a34a; }
+    .badge-down { background: #fee2e2; color: #dc2626; }
+    .badge-neutral { background: #f3f4f6; color: #6b7280; }
+    .context-banner { background: #fef9c3; border: 1px solid #fde047; border-radius: 8px; padding: 12px 16px; margin-bottom: 18px; font-size: 0.88rem; color: #713f12; line-height: 1.5; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding-left: 16px; position: relative; }
+    .sources li::before { content: "→"; position: absolute; left: 0; color: #9ca3af; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年11月6日（星期五）| 由 Claude Routine 自動生成</div>
+    <div class="summary-chips">
+      <span class="chip down">道瓊 ▼ -0.46%</span>
+      <span class="chip up">S&amp;P 500 ▲ +0.31%</span>
+      <span class="chip up">Nasdaq ▲ +1.09%</span>
+      <span class="chip up">Russell 2000 ▲ +0.89%</span>
+      <span class="chip up">費半指數 ▲ +4.21%</span>
+    </div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="context-banner">
+      ⚠️ 背景提示：11月5日（週四）美股因期中選舉結果（民主黨兩院過半）與AI監管疑慮大幅崩跌，道瓊單日跌1,833點（-3.44%）、納斯達克100重挫6.4%（2020年3月以來最慘），全球科技股市值蒸發逾2.5兆美元。週五為崩盤後初步反彈日。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業平均指數</strong></td>
+          <td>51,285.73</td>
+          <td class="down">▼ -237.33</td>
+          <td class="down">-0.46%</td>
+        </tr>
+        <tr>
+          <td><strong>標普500指數 (S&amp;P 500)</strong></td>
+          <td>7,376.86</td>
+          <td class="up">▲ +23.13</td>
+          <td class="up">+0.31%</td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合指數 (Nasdaq)</strong></td>
+          <td>24,579.42</td>
+          <td class="up">▲ +264.43</td>
+          <td class="up">+1.09%</td>
+        </tr>
+        <tr>
+          <td><strong>羅素2000指數 (Russell 2000)</strong></td>
+          <td>2,754.11</td>
+          <td class="up">▲ +24.22</td>
+          <td class="up">+0.89%</td>
+        </tr>
+        <tr style="background:#f0f4ff;">
+          <td><strong>費城半導體指數 (SOX)</strong></td>
+          <td>—</td>
+          <td class="up">▲ 大幅反彈</td>
+          <td class="up"><strong>+4.21%</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>AI科技股觸底反彈 — 半導體板塊領軍</strong>
+        週四崩盤後，週五晶片股與AI相關股票集體反彈，費半指數單日大漲4.21%，帶動納斯達克收復部分失地。分析師指出，SOX指數週四重挫約12%後，技術面出現逢低買進契機，機構投資人積極進場承接。
+      </li>
+      <li>
+        <strong>10月非農就業報告優於預期（盤前公布）</strong>
+        10月新增就業165,000人，遠超市場預估的65,000人；失業率4.1%（微降）。強勁數據帶動美元走強與股市部分反彈，但同步推升美國公債殖利率，抑制指數整體反彈空間，使道瓊持續承壓下跌。
+      </li>
+      <li>
+        <strong>期中選舉結果衝擊持續發酵</strong>
+        11月3日（週二）期中選舉結果顯示民主黨在眾議院與參議院均取得多數，大幅超出市場預期。市場擔憂更嚴格的AI監管、資料中心建設限制，乃至暫停令（moratorium）。多位新當選議員及德克薩斯州新任州長曾在選戰中承諾限制AI資料中心。
+      </li>
+      <li>
+        <strong>輝達（Nvidia）逢低承接</strong>
+        Nvidia週五收$186.64，小漲+2.78%。週四曾因市值縮水創歷史第二大單日紀錄後，買盤週五積極進場。全球科技股兩日合計蒸發市值逾2.5兆美元。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境分析</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <h4>聯準會（Fed）政策</h4>
+        <p>10月28日維持利率不變，聯邦基金利率目標區間：<strong>3.75%–4.00%</strong>。現任主席 Kevin Warsh（已接替鮑威爾），立場偏鷹派。</p>
+      </div>
+      <div class="macro-item">
+        <h4>12月升息機率</h4>
+        <p>就業報告公布後，市場對12月FOMC升息25個基點機率攀升至<strong>約78%</strong>（路透社引述）；Kalshi預測市場顯示71%。</p>
+      </div>
+      <div class="macro-item">
+        <h4>就業市場</h4>
+        <p>10月新增非農就業<strong>165,000人</strong>，遠超預估65,000人；失業率4.1%，顯示就業市場仍具韌性。</p>
+      </div>
+      <div class="macro-item">
+        <h4>公債殖利率</h4>
+        <p>強勁就業數據推升美國公債殖利率走高，對科技與利率敏感板塊形成壓力，傳統藍籌股為主的道瓊指數持續承壓。</p>
+      </div>
+      <div class="macro-item">
+        <h4>地緣政治</h4>
+        <p>本周無重大突發地緣政治事件，市場焦點集中於國內期中選舉結果及AI監管政策前景。</p>
+      </div>
+      <div class="macro-item">
+        <h4>AI政策風險</h4>
+        <p>民主黨掌控國會後，市場押注更嚴格AI監管立法，包括對資料中心建設設施的限制，衝擊相關企業資本支出預期。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <h3>半導體 / 晶片板塊（週五全面反彈）</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>個股</th>
+          <th>週五漲跌幅</th>
+          <th>週四跌幅（供對比）</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>AMD</strong></td>
+          <td class="up">+11.0%</td>
+          <td class="down">-13.0%</td>
+          <td>反彈最強勁個股之一</td>
+        </tr>
+        <tr>
+          <td><strong>英特爾 (Intel)</strong></td>
+          <td class="up">+7.71%</td>
+          <td class="down">-8.0%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>台積電 ADR (TSMC)</strong></td>
+          <td class="up">+6.33%</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>美光 (Micron)</strong></td>
+          <td class="up">+5.12%</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>輝達 (Nvidia)</strong></td>
+          <td class="up">+2.78%</td>
+          <td>—</td>
+          <td>收$186.64，市值縮水歷史第二大單日紀錄後逢低買進</td>
+        </tr>
+        <tr style="background:#f0f4ff;">
+          <td><strong>費城半導體指數 (SOX)</strong></td>
+          <td class="up"><strong>+4.21%</strong></td>
+          <td class="down">約 -12%</td>
+          <td>當日最大板塊亮點</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 style="margin-top:18px;">板塊特徵小結</h3>
+    <ul style="list-style:disc; padding-left:20px; font-size:0.9rem; line-height:1.8;">
+      <li>科技與半導體板塊領漲反彈，納斯達克為當日表現最強指數</li>
+      <li>道瓊工業指數持續下跌，傳統藍籌股受強勁就業數據推升殖利率預期而承壓</li>
+      <li>Anthropic疑似規劃IPO的傳聞受市場關注（細節待確認）</li>
+      <li>週線：納斯達克與標普500周線均收黑，據部分報導為連續第四週收跌</li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>民主黨主導國會後，AI監管立法走向（包括資料中心暫停令）仍高度不確定，可能持續壓抑科技股估值</li>
+      <li>聯準會12月升息預期（市場機率達78%）若成真，將進一步推升長端殖利率，衝擊高估值成長股</li>
+      <li>強勁就業報告削弱降息預期，「更高更久」（Higher for Longer）政策路徑風險重燃</li>
+      <li>週四至週五全球科技股市值蒸發逾2.5兆美元，心理層面衝擊後續投資信心</li>
+      <li>週五反彈是否為技術性超跌回補，抑或趨勢反轉，仍需觀察下週走勢確認</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-06-2026" target="_blank">TheStreet — 11月6日收盤整理</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html" target="_blank">Yahoo Finance — 當日即時直播</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-6-144816072.html" target="_blank">Yahoo Finance — 當日市場摘要</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/11/06/wall-street-stocks-dow-nasdaq/fbde12a0-da27-11f1-930a-e08f8086f5ac_story.html" target="_blank">Washington Post — 指數收盤數據</a></li>
+      <li><a href="https://www.fx168news.com/express/fastnews/1464640" target="_blank">FX168速遞 — 三大指數精確收盤數字</a></li>
+      <li><a href="https://newtalk.tw/news/view/2026-11-07/1069794" target="_blank">Newtalk新聞 — 費半、台積電ADR數據</a></li>
+      <li><a href="https://news.cnyes.com/news/id/6651785" target="_blank">鉅亨網 — 晶片股反彈詳情</a></li>
+      <li><a href="https://www.ad-hoc-news.de/boerse/news/marktberichte/russell-2000-ends-friday-0-9-prozent-higher-at-2-754-11/70472304" target="_blank">ad-hoc-news — Russell 2000收盤</a></li>
+      <li><a href="https://benzinga.com/markets/equities/26/11/62998202/stock-market-today-nasdaq-100-rebounds-chip-stocks-payrolls-beat" target="_blank">Benzinga — 納斯達克100反彈與就業報告</a></li>
+      <li><a href="https://www.benzinga.com/markets/market-summary/26/11/63012338/nasdaq-100-worst-day-since-2020-midterm-sweep-ai-selloff-jobs-fed-this-week-on-wall-street" target="_blank">Benzinga — 當週市場回顧</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html" target="_blank">CNBC — AI資料中心與選後拋售</a></li>
+      <li><a href="https://www.foxbusiness.com/markets/stocks-11-6-2026" target="_blank">Fox Business — 晶片股反彈報導</a></li>
+      <li><a href="https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650" target="_blank">NBC News — 科技股崩跌報導</a></li>
+      <li><a href="https://finance.yahoo.com/technology/ai/articles/amd-tumbles-13-nvidia-slides-154601778.html" target="_blank">Yahoo Finance — AMD/Nvidia個股數據</a></li>
+      <li><a href="https://au.investing.com/news/economy-news/fed-seen-sticking-to-december-rate-hike-after-jobs-data-4752284" target="_blank">路透社 — 聯準會12月升息預期</a></li>
+      <li><a href="https://www.forbes.com/advisor/banking/savings/potential-fed-rate-hike-december-lmandp5/" target="_blank">Forbes — 聯準會政策前景</a></li>
+      <li><a href="https://www.npr.org/2026/10/28/nx-s1-6020425/federal-reserve-interest-rates-inflation" target="_blank">NPR — 聯準會10月維持利率</a></li>
+      <li><a href="https://fortune.com/2026/11/03/ai-is-on-the-ballot-data-centers-are-a-major-political-issue-in-the-midterms-but-the-implications-of-todays-vote-for-ai-go-much-furthermore/" target="_blank">Fortune — 期中選舉與AI政策</a></li>
+      <li><a href="https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets" target="_blank">Al Jazeera — 選後AI股崩跌</a></li>
+      <li><a href="https://www.androidheadlines.com/2026/11/anti-ai-midterm-results-tech-stock-crash.html" target="_blank">AndroidHeadlines — 科技股市值蒸發2.5兆</a></li>
+      <li><a href="https://k.sina.cn/article_2810373291_a782e4ab020030egi.html" target="_blank">新華社 — 三大指數漲跌不一</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議 &nbsp;|&nbsp; 生成時間：2026-11-07
+  </footer>
+
+</div>
+</body>
+</html>
