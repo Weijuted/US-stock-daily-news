@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-06</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .week-badge { display: inline-block; margin-top: 14px; background: rgba(255,255,255,0.15); border-radius: 20px; padding: 5px 14px; font-size: 0.82rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-warning { background: #fef9c3; color: #854d0e; }
+    .badge-rebound { background: #dcfce7; color: #166534; }
+    .badge-drop { background: #fee2e2; color: #991b1b; }
+    .context-banner { background: #fff7ed; border: 1px solid #fed7aa; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px; font-size: 0.88rem; line-height: 1.6; color: #7c2d12; }
+    .context-banner strong { color: #9a3412; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.secondary { border-color: #a7f3d0; background: #f0fdf4; }
+    .event-card.warning { border-color: #fcd34d; background: #fffbeb; }
+    .event-card.danger { border-color: #fca5a5; background: #fef2f2; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; }
+    .event-card.primary h4 { color: #1e40af; }
+    .event-card.secondary h4 { color: #065f46; }
+    .event-card.warning h4 { color: #92400e; }
+    .event-card.danger h4 { color: #991b1b; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.semi { background: #ede9fe; color: #5b21b6; }
+    .tag.tech { background: #e0f2fe; color: #0369a1; }
+    .tag.macro { background: #fef3c7; color: #92400e; }
+    .tag.politics { background: #fce7f3; color: #9d174d; }
+    .week-perf { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+    .week-item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 8px 14px; font-size: 0.85rem; }
+    .week-item .wlabel { font-size: 0.72rem; color: #6b7280; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .risk-list li:last-child { margin-bottom: 0; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources li { margin-bottom: 8px; display: flex; gap: 8px; align-items: flex-start; }
+    .sources li::before { content: "🔗"; font-size: 0.75rem; flex-shrink: 0; margin-top: 1px; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .prev-day-note { font-size: 0.8rem; color: #6b7280; font-style: italic; margin-top: 6px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-11-06（星期五）| 由 Claude Routine 自動生成</div>
+    <div class="week-badge">⚠️ AI科技股遭受本週重大拋售，週五技術性反彈</div>
+  </header>
+
+  <!-- CONTEXT BANNER -->
+  <div class="context-banner">
+    <strong>背景說明：</strong>本週市場受到2026年美國期中選舉衝擊。11月5日（週四），民主黨橫掃國會後，市場對AI監管收緊的憂慮引爆科技股大崩盤——那斯達克單日暴跌5.5%，S&P 500重挫4.4%，蒸發逾2兆美元市值。週五（11月6日）為技術性反彈，AI晶片股大幅回升，但道瓊仍小幅收跌。
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤 — 2026-11-06</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>週漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>51,285.73</td>
+          <td class="down">▼ 237.33</td>
+          <td class="down">-0.46%</td>
+          <td class="down">-0.94%</td>
+        </tr>
+        <tr>
+          <td><strong>S&P 500</strong></td>
+          <td>7,376.86</td>
+          <td class="up">▲ 23.13</td>
+          <td class="up">+0.31%</td>
+          <td class="down">-2.68%</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合 (Nasdaq)</strong></td>
+          <td>24,579.42</td>
+          <td class="up">▲ 264.42</td>
+          <td class="up">+1.09%</td>
+          <td class="down">-3.37%</td>
+        </tr>
+        <tr>
+          <td><strong>費城半導體指數 (SOX)</strong></td>
+          <td>—</td>
+          <td class="up">▲</td>
+          <td class="up">+4.21%</td>
+          <td class="down">-11.5%（估）</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>約 278–282</td>
+          <td class="neutral">—</td>
+          <td class="neutral">約 -0.5%（估）</td>
+          <td class="neutral">—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="prev-day-note">前日（11/5週四）參考：那斯達克 24,315.00（-5.5%）、S&P 500 7,353.73（-4.4%），道瓊約 51,523（-3.0%估）</p>
+  </div>
+
+  <!-- KEY STOCKS -->
+  <div class="card">
+    <h2>重要個股表現</h2>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>股票</th>
+          <th>代號</th>
+          <th>漲跌幅（週五）</th>
+          <th>說明</th>
+          <th>標籤</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>超微半導體 AMD</strong></td>
+          <td>AMD</td>
+          <td class="up">+10.8%～+11%</td>
+          <td>Q3營收 $134億（+45% YoY）支撐反彈；週四曾暴跌17%，週五領漲反彈</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>台積電 ADR</strong></td>
+          <td>TSM</td>
+          <td class="up">+6.33%</td>
+          <td>AI晶片需求持續強勁，隨費半大幅反彈；週四曾跌逾10%</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>輝達 NVIDIA</strong></td>
+          <td>NVDA</td>
+          <td class="up">+3.91%</td>
+          <td>AI算力龍頭跟隨費半反彈；週四曾跌逾9%</td>
+          <td><span class="tag semi">半導體</span><span class="tag tech">AI</span></td>
+        </tr>
+        <tr>
+          <td><strong>英特爾 Intel</strong></td>
+          <td>INTC</td>
+          <td class="up">約+5%</td>
+          <td>隨晶片族群普遍反彈</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>高通 Qualcomm</strong></td>
+          <td>QCOM</td>
+          <td class="up">+4.68%</td>
+          <td>週四財報展望不佳跌9.5%，週五逢低反彈；蘋果自研數據機晶片替代風險持續</td>
+          <td><span class="tag semi">半導體</span><span class="tag tech">手機</span></td>
+        </tr>
+        <tr>
+          <td><strong>美光科技 Micron</strong></td>
+          <td>MU</td>
+          <td class="up">反彈（+6%～+10%估）</td>
+          <td>記憶體晶片反彈，HBM需求前景正面</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>Microchip Technology</strong></td>
+          <td>MCHP</td>
+          <td class="down">-12.1%</td>
+          <td>預測毛利率走弱，市場反應不佳；本週最大跌幅個股之一</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>蘋果 Apple</strong></td>
+          <td>AAPL</td>
+          <td class="down">下跌（週四失血$590億市值）</td>
+          <td>季度營收創紀錄但毛利率指引令市場失望；週四遭拋售</td>
+          <td><span class="tag tech">科技</span></td>
+        </tr>
+        <tr>
+          <td><strong>VanEck半導體ETF</strong></td>
+          <td>SMH</td>
+          <td class="up">+3.8%</td>
+          <td>費半族群整體反彈代表；週四曾重挫逾12%</td>
+          <td><span class="tag semi">半導體</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+      <div class="event-card danger">
+        <h4>🗳️ 期中選舉衝擊：AI監管疑慮引爆崩盤（週四）</h4>
+        <ul>
+          <li>民主黨橫掃2026年美國期中選舉，取得國會主導權</li>
+          <li>數百位承諾限制AI資料中心擴張的候選人當選</li>
+          <li>市場憂慮新國會將收緊AI監管、削減資料中心補貼</li>
+          <li>那斯達克週四單日暴跌5.5%（1,421點），S&P 500重挫4.4%</li>
+          <li>科技股市值單日蒸發逾2兆美元，創2020年以來最大單日跌幅</li>
+        </ul>
+      </div>
+      <div class="event-card secondary">
+        <h4>📈 週五技術性反彈：AI晶片股強力回升</h4>
+        <ul>
+          <li>川普（Trump）表示接受選舉結果，市場情緒有所紓緩</li>
+          <li>半導體族群帶頭反彈：費半指數飆升4.21%</li>
+          <li>AMD勁揚9.5%以上，受Q3亮眼財報支撐</li>
+          <li>台積電ADR+6.33%，英偉達+3.8–5%</li>
+          <li>那斯達克收復逾1%，但道瓊仍小跌0.46%</li>
+        </ul>
+      </div>
+      <div class="event-card warning">
+        <h4>💼 10月非農就業報告（Jobs Report）強勁</h4>
+        <ul>
+          <li>10月新增就業165,000人，超過市場預期</li>
+          <li>失業率降至4.1%，優於預期</li>
+          <li>就業市場韌性強，但引發升息疑慮</li>
+          <li>12月升息機率隨數據升溫至77%（估）</li>
+          <li>強勁就業令道瓊承壓，抑制反彈力道</li>
+        </ul>
+      </div>
+      <div class="event-card primary">
+        <h4>💡 AMD Q3財報亮眼</h4>
+        <ul>
+          <li>AMD第三季營收達134億美元，年增45%</li>
+          <li>AI加速器（Instinct GPU）業績強勁</li>
+          <li>部分分析師對長期前景仍有分歧（Split Verdict）</li>
+          <li>AMD週四大跌後，週五藉財報利多強力反彈</li>
+          <li>分析師正評估170億美元新合約前景</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">10月非農就業</div>
+        <div class="value">+165,000</div>
+        <div class="change up">優於預期</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">失業率</div>
+        <div class="value">4.1%</div>
+        <div class="change up">低於預期</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">12月升息機率（估）</div>
+        <div class="value">≈77%</div>
+        <div class="change down">較前升溫</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">S&P 500本週表現</div>
+        <div class="value">-2.68%</div>
+        <div class="change down">受選舉拖累</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">那斯達克本週表現</div>
+        <div class="value">-3.37%</div>
+        <div class="change down">AI科技受壓</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">費半指數週五反彈</div>
+        <div class="value">+4.21%</div>
+        <div class="change up">晶片股領漲</div>
+      </div>
+    </div>
+    <h3>其他宏觀觀察</h3>
+    <ul style="padding-left: 18px; font-size: 0.9rem; line-height: 2;">
+      <li><span class="tag politics">政治</span> 民主黨掌控國會後，AI政策走向成為市場最大不確定來源</li>
+      <li><span class="tag macro">聯準會</span> 強勁就業數據使聯準會在12月FOMC升息的壓力上升</li>
+      <li><span class="tag macro">基本面</span> AMD等AI晶片股基本面仍強，提供反彈基礎</li>
+      <li><span class="tag politics">地緣</span> 歐亞股市週四受波及下跌，週五隨美股反彈回穩</li>
+      <li><span class="tag macro">長期</span> 自2024年選舉日以來，那斯達克仍累計上漲逾30%</li>
+    </ul>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>⚖️ AI監管立法風險：</strong>民主黨控制國會後，可能推動AI資料中心限制法案、強化科技反壟斷執法，大型AI基礎建設投資面臨政策不確定性。CNBC警告「AI繁榮可能迎來更崎嶇的道路」。</li>
+      <li><strong>🏦 聯準會升息風險：</strong>10月就業數據強勁，12月再度升息機率顯著上升（估計達77%），利率長期維持高位將壓抑科技股估值。</li>
+      <li><strong>📉 周跌損未完全回補：</strong>那斯達克本週累計仍跌3.37%、S&P 500跌2.68%，週五反彈僅屬局部修復，市場仍存在繼續調整的壓力。</li>
+      <li><strong>🔧 半導體個股分化：</strong>Microchip Technology單日暴跌12.1%，顯示並非所有晶片股均受惠，毛利率壓縮問題仍值得警惕。</li>
+      <li><strong>🌐 全球市場聯動：</strong>週四美股崩盤引發全球連鎖反應——南韓KOSPI一度暴跌8.8%並觸發熔斷機制，日本日經225與台灣加權指數均逼近技術性熊市（-20%），AI監管政策的不確定性可能持續影響全球科技投資信心。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html" target="_blank">Yahoo Finance — Stock market today: Nasdaq and S&P 500 rebound, Dow slips (Nov 6, 2026)</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-06-2026" target="_blank">TheStreet — Stock Market Today (Nov. 6, 2026): Nasdaq, S&P 500 rise after midterms AI rout</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-6-132900980.html" target="_blank">Yahoo Finance — Stock Market News for Nov 6, 2026</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/11/06/wall-street-stocks-dow-nasdaq/fbde12a0-da27-11f1-930a-e08f8086f5ac_story.html" target="_blank">Washington Post — How major US stock indexes fared Friday 11/6/2026</a></li>
+      <li><a href="https://www.benzinga.com/markets/equities/26/11/62998202/stock-market-today-nasdaq-100-rebounds-chip-stocks-payrolls-beat" target="_blank">Benzinga — Nasdaq 100 Rebounds 2%, Payrolls Beat: Stock Market Today (Nov 6, 2026)</a></li>
+      <li><a href="https://247wallst.com/investing/2026/11/06/amd-jumps-8-intel-and-nvidia-climb-5-as-chip-stocks-rebound-from-worst-sell-off-since-2020/" target="_blank">24/7 Wall St. — AMD Jumps 8%, Intel and NVIDIA Climb 5% as Chip Stocks Rebound</a></li>
+      <li><a href="https://brecorder.com/news/40447853/nasdaq-rebounds-as-chip-stocks-recover-from-steep-losses" target="_blank">Business Recorder — Nasdaq rebounds as chip stocks recover from steep losses</a></li>
+      <li><a href="https://m.21jingji.com/article/20261107/herald/2c01205049bf0d5bbbe505cd3c16e23e.html" target="_blank">21財經 — 全球市場：納指漲超1%，費城半導體指數漲超4%，AMD漲超11%</a></li>
+      <li><a href="https://news.vocofm.com/%E8%B2%A1%E7%B6%93%E6%96%B0%E8%81%9E/208202/" target="_blank">VOCO News — AI股止跌回升，費半飆勁揚逾4%、道瓊終場跌237點</a></li>
+      <li><a href="https://yvonnepan.substack.com/p/2026116" target="_blank">Yvonne Global Investing — 美股盤後觀察｜2026年11月6日（星期五）</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/06/ai-data-center-midterms-selloff.html" target="_blank">CNBC — AI stocks hammered by midterm shock as data center buildout becomes a 'war of attrition'</a></li>
+      <li><a href="https://www.foxbusiness.com/markets/stocks-11-6-2026" target="_blank">Fox Business — Nasdaq rises as AI and chip stocks recover after post-midterm sell-off</a></li>
+      <li><a href="https://www.npr.org/2026/11/05/nx-s1-6031987/stock-markets-ai-midterm-elections" target="_blank">NPR — Fears of an AI crackdown after midterms spark $2 trillion rout in tech stocks</a></li>
+      <li><a href="https://foreignpolicy.com/2026/11/06/ai-stock-market-us-midterms-democrats-data-centers-regulation/" target="_blank">Foreign Policy — Global AI Stocks React to U.S. Midterm Results</a></li>
+      <li><a href="https://bannedbook.org/bnews/cnnews/20261107/2378390.html" target="_blank">禁聞網 — 美就業數據強勁！美股道瓊斯續跌237點、費半漲4.21%，台積電ADR漲6.33%</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 ｜ 資料截至 2026-11-08 ｜ 僅供參考，非投資建議<br>
+    本報告所含指數點位、個股漲跌幅均來自多方公開財經媒體交叉比對；部分數據（Russell 2000、費半點位）為估算值，以「估」標示。
+  </footer>
+
+</div>
+</body>
+</html>
