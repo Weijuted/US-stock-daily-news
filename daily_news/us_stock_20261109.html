@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-09</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #374151; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-item { padding: 14px 16px; margin-bottom: 12px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.65; }
+    .event-item strong { color: #0f3460; }
+    .event-item.warning { background: #fff7ed; border-left-color: #f97316; }
+    .event-item.danger { background: #fef2f2; border-left-color: #ef4444; }
+    .event-item.positive { background: #f0fdf4; border-left-color: #22c55e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .stock-table td:nth-child(2), .stock-table td:nth-child(3) { font-family: 'Courier New', monospace; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; margin-left: 6px; }
+    .badge-up { background: #dcfce7; color: #15803d; }
+    .badge-down { background: #fee2e2; color: #b91c1c; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 600px) { .macro-grid { grid-template-columns: 1fr; } }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e7ff; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.0rem; font-weight: 700; color: #0f3460; }
+    .macro-item .note { font-size: 0.82rem; color: #6b7280; margin-top: 4px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年11月9日（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業 (DJIA)</td>
+          <td>52,389.75</td>
+          <td class="up">+1,104.02</td>
+          <td class="up">+2.15%</td>
+          <td>逾千點單日大漲</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,549.94</td>
+          <td class="up">+173.08</td>
+          <td class="up">+2.30%</td>
+          <td>年初至今 +10.3%</td>
+        </tr>
+        <tr>
+          <td>Nasdaq 綜合</td>
+          <td>25,253.14</td>
+          <td class="up">—</td>
+          <td class="up">+2.74%</td>
+          <td>科技股全面反彈</td>
+        </tr>
+        <tr>
+          <td>Russell 2000</td>
+          <td>2,840.81</td>
+          <td class="up">+86.71</td>
+          <td class="up">+3.10%</td>
+          <td>年初至今 +14.5%；領漲小型股</td>
+        </tr>
+        <tr>
+          <td>費城半導體 (SOXX)</td>
+          <td>—</td>
+          <td class="up">—</td>
+          <td class="up">+7.6～8%（盤中）</td>
+          <td>Nvidia 以外晶片股全面反彈</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:12px;">
+      ★ 自 4 月以來最強單日表現；11 大 S&amp;P 板塊全數收漲；小型股漲幅最大，市場廣度良好。
+    </p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+
+    <div class="event-item danger">
+      <strong>Nvidia (NVDA) 股價重挫 −4.27%</strong><br>
+      CEO 黃仁勳（Jensen Huang）承認婚外情，對象為美國當局認定的中國情報資產 Alice Huang。Nvidia 董事會於週日宣布啟動「獨立調查」，由外部法律顧問介入。市值損失估計約 1,920 億美元（盤中高點）；黃仁勳目前仍留任 CEO。
+    </div>
+
+    <div class="event-item positive">
+      <strong>半導體板塊大幅反彈（除 Nvidia 外）</strong><br>
+      AMD、Micron、ASML 等晶片股在前週恐慌性拋售後強力回彈；費城半導體指數（SOXX）盤中漲幅逾 8%；科技類 ETF（XLK）盤中漲約 4.0%。
+    </div>
+
+    <div class="event-item positive">
+      <strong>油價大跌推升廣泛市場情緒</strong><br>
+      布蘭特原油下跌約 −4.96% 至每桶 93.44 美元；WTI 原油下跌 −4.6% 至每桶 86.65 美元。此跌勢延續上週 −16% 的跌幅（新冠以來最大單週跌幅）。油價下行降低通膨預期，提振股市廣泛上漲；能源板塊為唯一相對落後板塊。
+    </div>
+
+    <div class="event-item warning">
+      <strong>伊朗地緣政治緩和</strong><br>
+      川普總統發出訊號，暫無對伊朗進一步軍事攻擊計畫。卡達總理赴白宮帶來伊朗「暫時協議」方案，涉及重開荷姆茲海峽。地緣政治風險溢價消退是油價急跌的主因。
+    </div>
+
+    <div class="event-item">
+      <strong>2026 年期中選舉後續效應</strong><br>
+      民主黨贏得國會兩院（眾議院與參議院），引發 AI 數據中心建設監管收緊疑慮，為前週大幅賣壓的核心原因（Nasdaq 100 連續第四週下跌）。11 月 9 日的回彈部分屬技術性超跌反彈；分析師指出短期實際監管影響有限。
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素儀表板</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯準會（Fed）動向</div>
+        <div class="value">12 月升息預期存疑</div>
+        <div class="note">市場仍預期升息，但幅度視 10 月 CPI 而定（翌日公布）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10 月 CPI（11/10 公布）</div>
+        <div class="value">共識：月增 +0.3% / 核心 +0.2%</div>
+        <div class="note">克里夫蘭 Nowcast 更樂觀：約 0.24%；若符合或低於預期可舒緩升息壓力</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">布蘭特原油</div>
+        <div class="value down">$93.44 / 桶 (−4.96%)</div>
+        <div class="note">伊朗緊張局勢緩和 + 荷姆茲海峽潛在重開</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">後續重要日程</div>
+        <div class="value" style="font-size:0.88rem">11/13 PPI｜11/18 FOMC 紀要｜11/25 PCE</div>
+        <div class="note">每份數據均可能左右 12 月升息路徑</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STOCKS TABLE -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <table class="stock-table">
+      <thead>
+        <tr>
+          <th>標的</th>
+          <th>動向</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nvidia (NVDA)</td>
+          <td class="down">−4.27%</td>
+          <td>CEO 涉中國情報資產調查；市值損失約 1,920 億美元（盤中）</td>
+        </tr>
+        <tr>
+          <td>AMD</td>
+          <td class="up">大幅上漲</td>
+          <td>半導體反彈領頭羊；前週過度拋售後技術回彈</td>
+        </tr>
+        <tr>
+          <td>Micron</td>
+          <td class="up">大幅上漲</td>
+          <td>記憶體晶片股廣泛反彈</td>
+        </tr>
+        <tr>
+          <td>ASML</td>
+          <td class="up">大幅上漲</td>
+          <td>歐洲晶片設備股跟漲</td>
+        </tr>
+        <tr>
+          <td>Tesla (TSLA)</td>
+          <td class="up">跳漲</td>
+          <td>SpaceX 相關消息提振</td>
+        </tr>
+        <tr>
+          <td>XLK（科技 ETF）</td>
+          <td class="up">盤中 +4.0%</td>
+          <td>晶片股帶動科技板塊全面上揚</td>
+        </tr>
+        <tr>
+          <td>能源板塊</td>
+          <td class="down">漲幅最弱</td>
+          <td>油價暴跌施壓能源股；相對大盤落後</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>Nvidia 關鍵人物風險：</strong>董事會調查結果若指向更嚴重的公司治理問題，可能引發 AI 相關股進一步拋售；黃仁勳留任與否是最大不確定因素。</li>
+      <li><strong>10 月 CPI 超預期風險：</strong>若 11 月 10 日公布數據高於共識，Fed 加速升息預期將重燃，恐壓制近日反彈。</li>
+      <li><strong>伊朗協議破裂風險：</strong>荷姆茲海峽談判若破局，油價可能急速反彈，再度拉高通膨預期。</li>
+      <li><strong>AI 監管立法不確定性：</strong>民主黨控制國會後，AI 相關立法時程與力度仍不明朗，尤其對大型科技股資本支出計畫形成壓力。</li>
+      <li><strong>技術性反彈的可持續性：</strong>本日反彈部分屬超跌回補，若無基本面數據支撐（CPI、PPI、PCE），回彈動能恐難維持。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-monday-11-9-2026" target="_blank">WTOP — How major US stock indexes fared Monday 11/9/2026</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/09/stock-market-today-nov-9-markets-rally-as-semiconductor-gains-lift-nasdaq/" target="_blank">Motley Fool — Stock Market Today, Nov. 9</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news Nov. 9, 2026</a></li>
+      <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-09-202" target="_blank">TheStreet — Stock Market Today (Nov. 9, 2026)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html" target="_blank">Yahoo Finance — Stock Market Today Live</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/11/09/wall-street-stocks-dow-nasdaq/d2094ae0-dc83-11f1-912c-4fbb80d73f7f_story.html" target="_blank">Washington Post — Wall Street stocks Nov. 9</a></li>
+      <li><a href="https://vistapglobal.com/stock-market-today-november-9-2026-dow-jumps-1104-points-nasdaq-rallies-as-oils-slide-fuels-breadth-amwl-ant-eprx-googl-modd-nvda-ser-spcx/" target="_blank">VistaPGlobal — Dow Jumps 1,104 Points</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html" target="_blank">CNBC — Nvidia stock falls 4%</a></li>
+      <li><a href="https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html" target="_blank">Yahoo Finance — Nvidia stock sinks</a></li>
+      <li><a href="https://www.nbcnews.com/business/markets/nvidia-stock-falls-probe-ceos-relationship-chinese-spy-rcna608290" target="_blank">NBC News — Nvidia shares slump</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity" target="_blank">Bloomberg — Nvidia Board to Probe</a></li>
+      <li><a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Sinks-to-94-as-Irans-8-Billion-Hormuz-Deal-Heads-to-Trump.html" target="_blank">OilPrice.com — Oil Sinks to $94</a></li>
+      <li><a href="https://journalarta.com/en/2026/11/09/oil-price-today-brent-falls-4-96-to-93-44-on-iran-peace-hopes-as-gold-climbs/" target="_blank">JournalArta — Brent Falls 4.96%</a></li>
+      <li><a href="https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Trump-Signals-No-New-Attacks-on-Iran.html" target="_blank">OilPrice.com — Oil Prices Fall as Trump Signals No New Attacks on Iran</a></li>
+      <li><a href="https://www.fxstreet.com/analysis/us-cpi-preview-moderation-on-the-horizon-but-underlying-pressures-linger-202611092231" target="_blank">FXStreet — US CPI Preview</a></li>
+      <li><a href="https://cryptobriefing.com/democratic-midterm-win-raises-ai-regulation-concerns-impacts-stock-prices/" target="_blank">CryptoBriefing — Democratic Midterm Win Raises AI Regulation Concerns</a></li>
+      <li><a href="https://investrade.com/market-review-november-09-2026/" target="_blank">Investrade — Market Review November 9, 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 僅供參考，非投資建議 | 生成時間：2026-11-10</footer>
+</div>
+</body>
+</html>
