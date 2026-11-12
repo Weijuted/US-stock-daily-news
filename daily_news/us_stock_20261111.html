@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-11</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .summary-row { display: flex; gap: 24px; margin-top: 20px; flex-wrap: wrap; }
+    header .summary-chip { background: rgba(255,255,255,0.12); border-radius: 8px; padding: 10px 16px; font-size: 0.85rem; }
+    header .summary-chip .label { opacity: 0.7; font-size: 0.78rem; display: block; margin-bottom: 2px; }
+    header .summary-chip .val { font-weight: 700; font-size: 1.0rem; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    h3:first-child { margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-ath { background: #fef9c3; color: #854d0e; }
+    .badge-hot { background: #fee2e2; color: #991b1b; }
+    .badge-ai { background: #e0f2fe; color: #0369a1; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } header .summary-row { gap: 12px; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.secondary { border-color: #a7f3d0; background: #f0fdf4; }
+    .event-card.warning { border-color: #fca5a5; background: #fff5f5; }
+    .event-card.amber { border-color: #fcd34d; background: #fffbeb; }
+    .event-card h3 { margin-top: 0; font-size: 0.9rem; }
+    .event-card p { font-size: 0.87rem; line-height: 1.6; color: #374151; margin-top: 6px; }
+    .macro-row { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid #eef0f5; }
+    .macro-row:last-child { border-bottom: none; }
+    .macro-icon { font-size: 1.3rem; min-width: 28px; }
+    .macro-content { flex: 1; }
+    .macro-content strong { font-size: 0.93rem; color: #1a1a2e; }
+    .macro-content p { font-size: 0.87rem; line-height: 1.6; color: #4b5563; margin-top: 4px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li:last-child { margin-bottom: 0; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding-left: 16px; position: relative; }
+    .sources li::before { content: "→"; position: absolute; left: 0; color: #9ca3af; }
+    .sources-group { margin-bottom: 16px; }
+    .sources-group-title { font-size: 0.8rem; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .week-perf { background: #f8faff; border: 1px solid #e0e7ff; border-radius: 8px; padding: 12px 16px; margin-top: 14px; display: flex; gap: 24px; flex-wrap: wrap; font-size: 0.87rem; }
+    .week-perf span { color: #4b5563; }
+    .week-perf strong { color: #0f3460; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-11-11（週三）退伍軍人節 · 股市正常交易，公債市場休市 | 由 Claude Routine 自動生成</div>
+    <div class="summary-row">
+      <div class="summary-chip">
+        <span class="label">道瓊指數</span>
+        <span class="val up">52,486 ▲+0.49%</span>
+      </div>
+      <div class="summary-chip">
+        <span class="label">S&amp;P 500</span>
+        <span class="val up">7,619 ▲+1.31%</span>
+      </div>
+      <div class="summary-chip">
+        <span class="label">Nasdaq</span>
+        <span class="val up">25,466 ▲+1.60%</span>
+      </div>
+      <div class="summary-chip">
+        <span class="label">Russell 2000</span>
+        <span class="val up">2,846 ▲+0.88%</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤表現</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點數</th>
+          <th>漲跌點</th>
+          <th>漲跌幅</th>
+          <th>年初至今</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>52,486.49</td>
+          <td class="up">+254.60</td>
+          <td class="up">+0.49%</td>
+          <td class="up">—</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,619.38</td>
+          <td class="up">+98.45</td>
+          <td class="up">+1.31%</td>
+          <td class="up">+11.3%</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>25,466.19</td>
+          <td class="up">+400.31</td>
+          <td class="up">+1.60%</td>
+          <td class="up">+9.6%</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>2,846.26</td>
+          <td class="up">+24.89</td>
+          <td class="up">+0.88%</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq-100 (NDX)</strong></td>
+          <td>—</td>
+          <td class="up">—</td>
+          <td class="up">約 +2.3%</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="week-perf">
+      <span>本週累計（S&amp;P 500）：<strong class="up">+3.3%（+242.52 點）</strong></span>
+      <span>本週累計（Nasdaq）：<strong class="up">+3.6%</strong></span>
+      <span>S&amp;P 500 距歷史高點：<strong>約 -2.6%</strong></span>
+    </div>
+    <p style="margin-top:10px;font-size:0.82rem;color:#6b7280;">數據來源：CNBC、Yahoo Finance (AP)、Washington Post、WTOP、TheStreet 五源交叉驗證一致</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <div class="event-grid">
+      <div class="event-card primary">
+        <h3>🤖 CoreWeave (CRWV) 財報爆發 <span class="badge badge-ai">AI 催化劑</span></h3>
+        <p>當日最大催化劑。Q3 營收年增 <strong>+168%</strong> 至 <strong>36.6 億美元</strong>，大幅超預期。全年指引上調至 <strong>130–133 億美元</strong>。股價單日飆漲 <strong>+20–25%</strong>，重燃 AI 板塊買氣，帶動 Nasdaq 領漲全場。</p>
+      </div>
+      <div class="event-card secondary">
+        <h3>🍎 Apple 再創歷史新高 <span class="badge badge-ath">ATH</span></h3>
+        <p>Apple (AAPL) 收盤報 <strong>$355.63</strong>，盤中高點達 $355.90，再度改寫歷史紀錄。市值突破 <strong>5.16 兆美元</strong>，年初至今漲幅達 <strong>+31.1%</strong>。Bernstein 上調目標價至 $380，強調 Apple 為 AI 消費端關鍵入口。</p>
+      </div>
+      <div class="event-card warning">
+        <h3>⚠️ Nvidia CEO 遭調查 — 盤後重挫</h3>
+        <p>盤中 Nvidia (NVDA) 收漲 <strong>+4.4%</strong> 至約 $173，為道瓊最強成分股。盤後《華爾街日報》報導，Nvidia 董事會已聘請 Wachtell Lipton 律師事務所調查 CEO Jensen Huang 是否洩露機密，股價盤後急跌 <strong>-8%</strong>。共和黨議員 Kevin Cramer 公開呼籲 Huang 辭職。</p>
+      </div>
+      <div class="event-card amber">
+        <h3>💾 Micron (MU) 大漲 +11.89%</h3>
+        <p>半導體板塊受 AI 需求復甦帶動強勢反彈，Micron 單日勁漲 <strong>+11.89%</strong>，為大型半導體股中表現最突出。科技富豪方面，Jensen Huang、Michael Dell、Larry Ellison 三人當日合計財富增加 <strong>約 300 億美元</strong>。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀因素分析</h2>
+
+    <div class="macro-row">
+      <div class="macro-icon">🏦</div>
+      <div class="macro-content">
+        <strong>聯準會 (Fed) ── 12 月升息機率升至 88.8%</strong>
+        <p>前一交易日（11/10）公佈的 10 月 CPI 通膨數據高於預期，Cleveland Fed 估算通膨率約 <strong>3.8%</strong>，遠高於 Fed 2% 目標。CME FedWatch 顯示 12 月升息 25bps 機率跳升至 <strong>88.8%</strong>（前週約 72%），另有 15% 市場押注 50bps。Fed 理事 Christopher Waller 表示「傾向」12 月升息，芝加哥 Fed 主席 Austan Goolsbee 形容最新通膨數據「borderline disturbing（令人不安）」。</p>
+      </div>
+    </div>
+
+    <div class="macro-row">
+      <div class="macro-icon">📊</div>
+      <div class="macro-content">
+        <strong>公債市場 ── 因退伍軍人節全日休市</strong>
+        <p>11/11 為退伍軍人節（Veterans Day），SIFMA 公債市場全日休市，股市正常交易。上一交易日（11/10）2 年期公債殖利率單日跳升 <strong>17.6 個基點</strong>至 <strong>4.738%</strong>，為近 19 個月來最大單日升幅；10 年期殖利率收於 <strong>4.990%</strong>，逼近 5% 關鍵心理關口。</p>
+      </div>
+    </div>
+
+    <div class="macro-row">
+      <div class="macro-icon">🛢️</div>
+      <div class="macro-content">
+        <strong>原油 ── 中東局勢不確定性推升油價</strong>
+        <p>川普總統雖表示「不需要進一步軍事行動」，但美伊和平談判尚無具體進展，市場維持風險溢價。WTI 期油回升至約 <strong>$86–87/桶</strong>，布蘭特原油約 <strong>$93–94/桶</strong>（前日因局勢降溫曾回落至兩個月低點，本日因談判不確定性再度反彈）。</p>
+      </div>
+    </div>
+
+    <div class="macro-row">
+      <div class="macro-icon">🥇</div>
+      <div class="macro-content">
+        <strong>黃金 ── 強升息預期壓制，收跌 -1.25%</strong>
+        <p>熱絡的 CPI 數據與高漲的升息預期形成黃金反向壓力，金價收於約 <strong>$3,981–3,982/盎司</strong>，跌幅約 <strong>-1.25%</strong>。</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTORS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>標的</th>
+          <th>當日表現</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>CoreWeave (CRWV)</strong><span class="badge badge-ai">AI</span></td>
+          <td class="up">+20–25%</td>
+          <td>Q3 財報大超預期，全年指引上調，AI 雲端需求確認強勁</td>
+        </tr>
+        <tr>
+          <td><strong>Micron Technology (MU)</strong></td>
+          <td class="up">+11.89%</td>
+          <td>AI 需求復甦帶動半導體板塊強勢反彈</td>
+        </tr>
+        <tr>
+          <td><strong>Nvidia (NVDA)</strong></td>
+          <td><span class="up">+4.4%（盤中）</span> / <span class="down">-8%（盤後）</span></td>
+          <td>盤中為道瓊領漲成分股；盤後 CEO 調查報導引發拋售</td>
+        </tr>
+        <tr>
+          <td><strong>Apple (AAPL)</strong><span class="badge badge-ath">ATH</span></td>
+          <td class="up">歷史新高 $355.63</td>
+          <td>年初至今 +31.1%，市值突破 5.16 兆美元，Bernstein 目標價 $380</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>板塊概況</h3>
+    <table>
+      <thead>
+        <tr><th>板塊</th><th>表現</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>科技 / 半導體</td><td class="up">領漲，Nasdaq-100 約 +2.3%</td></tr>
+        <tr><td>能源</td><td class="up">原油反彈帶動，小幅收漲</td></tr>
+        <tr><td>防禦類（公用事業、必需消費）</td><td class="down">表現落後</td></tr>
+        <tr><td>黃金 / 貴金屬</td><td class="down">升息預期壓制，收跌</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>Fed 升息路徑風險：</strong>10 月 CPI 明顯高於預期，12 月升息已近乎確定，2027 年進一步緊縮不能排除，高利率環境對估值構成持續壓力。</li>
+      <li><strong>Nvidia CEO 調查衝擊：</strong>Jensen Huang 遭董事會委託律師事務所調查，AI 旗艦股治理風險驟升，若調查升級將衝擊整體半導體板塊情緒。</li>
+      <li><strong>公債殖利率逼近 5%：</strong>10 年期公債殖利率接近 5% 關鍵心理關口，一旦突破可能引發股市重新定價。</li>
+      <li><strong>中東地緣政治：</strong>美伊衝突局勢尚未解除，原油供應不確定性仍高，能源通膨有二次抬頭風險。</li>
+      <li><strong>估值偏高：</strong>AI 板塊本益比偏高，若業績不能持續超預期（如 CoreWeave 此次），回調風險顯著。S&amp;P 500 仍距歷史高點約 2.6%，尚未完全收復跌幅。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <div class="sources">
+      <div class="sources-group">
+        <div class="sources-group-title">指數收盤數據</div>
+        <ul>
+          <li><a href="https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html" target="_blank">Stock Market News for Nov. 11, 2026 — CNBC</a></li>
+          <li><a href="https://finance.yahoo.com/markets/stocks/articles/major-us-stock-indexes-fared-211834867.html" target="_blank">How major US stock indexes fared Wednesday 11/11/2026 — Yahoo Finance</a></li>
+          <li><a href="https://www.washingtonpost.com/business/2026/11/11/wall-street-stocks-dow-nasdaq/86c5e492-de15-11f1-912c-4fbb80d73f7f_story.html" target="_blank">How major US stock indexes fared Wednesday 11/11/2026 — Washington Post</a></li>
+          <li><a href="https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-wednesday-11-11-2026" target="_blank">How major US stock indexes fared Wednesday 11/11/2026 — WTOP</a></li>
+          <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-11-2026" target="_blank">Stock Market Today Nov. 11 — TheStreet</a></li>
+          <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-stock-market-today-nov-11-nasdaq-surges-as-coreweave-s-25-rally-reignites-the-ai-trade/" target="_blank">Nasdaq Surges as CoreWeave's 25% Rally Reignites the AI Trade — Motley Fool</a></li>
+          <li><a href="https://247wallst.com/cards/tech-did-the-heavy-lifting-again-the-nasdaq-s-1-55-close-m-gspc-market-bell-01m766s5wqxj8egm37q8ks13gp" target="_blank">S&P 500 Closes Up 1.3% — 247 Wall St.</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <div class="sources-group-title">CoreWeave / AI 板塊</div>
+        <ul>
+          <li><a href="https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html" target="_blank">CoreWeave CRWV Q3 Earnings 2026 — CNBC</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-11-10/coreweave-boosts-annual-forecast-easing-concerns-about-slowdown" target="_blank">CoreWeave Boosts Annual Forecast — Bloomberg</a></li>
+          <li><a href="https://finance.biggo.com/news/5f809b64-01e7-4105-8f47-266c3146c6fb" target="_blank">CoreWeave's Upbeat Earnings Spark AI Stock Rally — BigGo Finance</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <div class="sources-group-title">Nvidia / Jensen Huang</div>
+        <ul>
+          <li><a href="https://news.sbs.co.kr/english/article.do?news_id=N1008842009" target="_blank">Nvidia CEO Jensen Huang scandal — SBS</a></li>
+          <li><a href="https://www.fastcompany.com/91640260/nvidia-stock-rises-today-first-boost-ceo-jensen-huang-scandal" target="_blank">Nvidia stock rises — first boost after scandal — Fast Company</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <div class="sources-group-title">Apple</div>
+        <ul>
+          <li><a href="https://www.investing.com/news/company-news/apple-stock-hits-alltime-high-at-3554-usd-93CH-5019808" target="_blank">Apple stock hits all-time high $355.4 — Investing.com</a></li>
+          <li><a href="https://macdailynews.com/2026/11/11/apple-shares-hit-new-all-time-intraday-and-closing-highs-95/" target="_blank">Apple shares hit new record — MacDailyNews</a></li>
+          <li><a href="https://seekingalpha.com/news/4046203-apple-scales-new-record-closing-high" target="_blank">Apple scales new record closing high — Seeking Alpha</a></li>
+          <li><a href="https://247wallst.com/investing/2026/11/10/apple-is-above-5-trillion-after-its-first-ever-close-above-350/" target="_blank">Apple above $5 Trillion — 24/7 Wall St.</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <div class="sources-group-title">通膨 / 聯準會 / 公債</div>
+        <ul>
+          <li><a href="https://www.cfodive.com/news/inflation-rises-faster-expected-boosting-odds-fed-rate-hike-waller-federal-reserve/874314/" target="_blank">Inflation rises faster than expected — CFO Dive</a></li>
+          <li><a href="https://finance.yahoo.com/economy/policy/articles/us-inflation-slows-less-expected-152634543.html" target="_blank">US inflation slows less than expected — Yahoo Finance</a></li>
+          <li><a href="https://www.kiplinger.com/investing/economy/october-2026-cpi-report-what-to-expect" target="_blank">October CPI Report Clears Way for December Rate Hike — Kiplinger</a></li>
+          <li><a href="https://investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585" target="_blank">Fed rate hike odds 88% after hot CPI — Investing.com</a></li>
+          <li><a href="https://www.ibtimes.com/fed-officials-warn-after-hotter-october-cpi-3809644" target="_blank">Fed Governor calls inflation 'Borderline Disturbing' — IBT</a></li>
+          <li><a href="https://247wallst.com/investing/2026/11/11/the-2-year-treasury-yield-just-had-its-biggest-jump-in-19-months/" target="_blank">2-Year Treasury Yield Biggest Jump in 19 Months — 24/7 Wall St.</a></li>
+        </ul>
+      </div>
+      <div class="sources-group">
+        <div class="sources-group-title">原油 / 黃金 / 地緣政治</div>
+        <ul>
+          <li><a href="https://www.gurufocus.com/news/9193510/oil-prices-rise-amid-mixed-signals-on-iran-conflict" target="_blank">Oil Prices Rise Amid Mixed Signals on Iran Conflict — GuruFocus</a></li>
+          <li><a href="https://fortune.com/article/price-of-oil-11-11-2026/" target="_blank">Current price of oil Nov. 11, 2026 — Fortune</a></li>
+          <li><a href="https://eurasiabusinessnews.com/2026/11/11/stock-market-today-dow-jones-nasdaq-sp-500-rally-on-november-11-2026-oil-rises-gold-slips/" target="_blank">Dow, Nasdaq, S&P 500 Rally; Oil Rises, Gold Slips — Eurasia Business News</a></li>
+          <li><a href="https://www.forbes.com/sites/zacharyfolk/2026/11/11/jensen-huang-michael-dell-and-larry-ellison-gain-30-billion-as-tech-stocks-surge/" target="_blank">Jensen Huang, Michael Dell, Larry Ellison gain $30B — Forbes</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議 &nbsp;|&nbsp; 生成時間：2026-11-12</footer>
+
+</div>
+</body>
+</html>
