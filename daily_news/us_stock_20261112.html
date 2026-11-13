@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026年11月12日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8f9ff; border-left: 3px solid #4f46e5; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .stock-highlight { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 4px; }
+    .stock-card { background: #f8f9ff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e4f0; }
+    .stock-card .ticker { font-weight: 700; font-size: 1rem; color: #0f3460; }
+    .stock-card .change { font-size: 1.1rem; font-weight: 700; margin-top: 4px; }
+    .stock-card .note { font-size: 0.78rem; color: #6b7280; margin-top: 4px; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: disc; margin-left: 18px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-top: 4px; }
+    .macro-item { background: #f0f4ff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .macro-item .value { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-top: 4px; }
+    .macro-item .detail { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; }
+    .badge-down { background: #fee2e2; color: #dc2626; }
+    .badge-up { background: #dcfce7; color: #16a34a; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026年11月12日（星期四）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>概況</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>52,297.09</td>
+          <td class="down">▼ 189.40</td>
+          <td class="down">−0.36%</td>
+          <td><span class="badge badge-down">下跌</span></td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&P 500)</strong></td>
+          <td>7,592.40</td>
+          <td class="down">▼ 26.98</td>
+          <td class="down">−0.35%</td>
+          <td><span class="badge badge-down">下跌</span></td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克 (Nasdaq)</strong></td>
+          <td>25,366.09</td>
+          <td class="down">▼ 100.10</td>
+          <td class="down">−0.39%</td>
+          <td><span class="badge badge-down">下跌</span></td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>約 2,799.06</td>
+          <td class="down">▼ ~47.2</td>
+          <td class="down">−1.66%</td>
+          <td><span class="badge badge-down">顯著下跌</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem;color:#9ca3af;margin-top:10px;">* 前一交易日（11/11）：S&P 500 收 7,619.38（+1.31%）、那斯達克漲 1.60%</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>輝達 (NVDA) CEO 黃仁勳突然辭職：</strong>
+        黃仁勳（Jensen Huang）於當日宣佈即時辭去 CEO 及董事會成員職務，起因為個人醜聞（據報涉及與疑似中國間諜的關係）。輝達股價盤中一度暴跌達 14.3%，收盤仍跌 4.34%，市值蒸發約 4,900 億美元。CFO Colette Kress 被任命為臨時 CEO。散戶投資人逢低大量搶進，Vanda Research 指出創下個人投資者單日最大買盤紀錄。
+      </li>
+      <li>
+        <strong>AI 半導體板塊連鎖反應：</strong>
+        依賴輝達晶片的雲端算力業者（Neocloud operators）同步下跌。競爭對手超微（AMD）則逆勢上漲約 3%，市場預期受益於輝達人事動盪帶來的潛在份額轉移。
+      </li>
+      <li>
+        <strong>10 月 CPI 通膨數據超預期：</strong>
+        美國 10 月消費者物價指數（CPI）月增 0.4%，高於市場預期的 0.3%；核心通膨月增 0.3%。數據強化市場對聯準會 12 月升息的押注，分析師辯論焦點已從「升息與否」轉為「升 25 或 50 基點」。
+      </li>
+      <li>
+        <strong>美國公債殖利率走高：</strong>
+        10 年期美國公債殖利率升至約 4.94%～5.10% 區間，為近期高點，對利率敏感的小型股（Russell 2000 跌 1.66%）及成長股形成壓力。
+      </li>
+      <li>
+        <strong>大型股展現韌性：</strong>
+        三大指數在扣除輝達衝擊後跌幅相對溫和，道瓊、S&P 500 均從盤中低點明顯回升，顯示市場存在買盤支撐。
+      </li>
+    </ul>
+  </div>
+
+  <!-- STOCK HIGHLIGHTS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <div class="stock-highlight">
+      <div class="stock-card">
+        <div class="ticker">NVDA 輝達</div>
+        <div class="change down">−4.34%</div>
+        <div class="note">CEO 辭職；市值蒸發 ~$4,900 億；盤中低點 −14.3%</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">AMD 超微</div>
+        <div class="change up">+3.00%</div>
+        <div class="note">輝達人事不確定性受益者；AI 晶片替代選擇</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">小型股板塊</div>
+        <div class="change down">−1.66%</div>
+        <div class="note">Russell 2000 領跌；高利率環境壓制小企業融資成本</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">TSM 台積電 ADR</div>
+        <div class="change down">−2.68%</div>
+        <div class="note">跟隨 AI 晶片板塊下跌；供應鏈不確定性上升</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">CRWV CoreWeave</div>
+        <div class="change down">承壓下跌</div>
+        <div class="note">高度依賴輝達 GPU；輝達人事動盪直接衝擊</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>總體經濟與宏觀因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯準會動態</div>
+        <div class="value">12 月升息預期升溫</div>
+        <div class="detail">辯論焦點：升 25 vs. 50 基點；若核心 CPI 維持 +0.3% 則傾向 50 基點</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10 月 CPI（月增率）</div>
+        <div class="value">+0.4%</div>
+        <div class="detail">高於預期 0.3%；核心 CPI +0.3%；通膨壓力持續</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10 年期公債殖利率</div>
+        <div class="value">~4.94%–5.10%</div>
+        <div class="detail">殖利率走高增加成長股估值壓力</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">地緣政治</div>
+        <div class="value">輝達 CEO 間諜疑雲</div>
+        <div class="detail">黃仁勳辭職涉及與疑似中國間諜的關係；牽動中美科技敏感議題</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">油價</div>
+        <div class="value">上漲</div>
+        <div class="detail">傳伊朗再次遭攻擊疑慮升溫；油價回升加重通膨憂慮</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">美元指數 (DXY)</div>
+        <div class="value">約 102.90</div>
+        <div class="detail">年內新高；升約 0.67%；對新興市場與大宗商品形成壓力</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>輝達領導層空窗：</strong>臨時 CEO Colette Kress 能否維持公司策略穩定、AI 晶片研發進度及客戶信心，仍是最大未知數。</li>
+      <li><strong>聯準會政策風險：</strong>若 12 月 CPI 或就業數據再度超預期，升息 50 基點的可能性大幅升高，可能觸發更大規模賣壓。</li>
+      <li><strong>殖利率持續走升：</strong>10 年期殖利率若突破 5.10% 關鍵位，將對高估值科技股及小型股形成更嚴峻的再估值壓力。</li>
+      <li><strong>AI 供應鏈不確定性：</strong>輝達人事動盪可能影響下游 AI 基礎建設採購決策；機構客戶觀望情緒或增加。</li>
+      <li><strong>中美科技脫鉤加速風險：</strong>黃仁勳事件涉及中國間諜疑雲，可能引發美國政府對輝達中國業務的額外審查或出口管制擴大。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://eurasiabusinessnews.com/2026/11/13/stock-market-today-november-12-2026-dow-sp-500-and-nasdaq-fall-after-jensen-huang-resigns/" target="_blank">Eurasia Business News — Stock Market Today Nov 12 2026: Dow, S&P 500 and Nasdaq Fall After Jensen Huang Resigns</a></li>
+      <li><a href="https://vistapglobal.com/stock-market-today-november-12-2026-stocks-fall-as-treasury-yields-hit-5-10-oil-rises-and-nvidia-faces-leadership-reset-amd-crwv-eprx-googl-modd-msft-nvda-ser-spcx-ttek-ual/" target="_blank">Vista PGlobal — Stock Market Today November 12 2026: Stocks Fall as Treasury Yields Hit 5.10%</a></li>
+      <li><a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211731317.html" target="_blank">Yahoo Finance — How major US stock indexes fared Thursday 11/12/2026</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html" target="_blank">CNBC — Nvidia stock closes down over 4% after CEO Jensen Huang announces resignation</a></li>
+      <li><a href="https://www.cbsnews.com/news/nvidia-stock-nvda-ceo-jensen-huang/" target="_blank">CBS News — Nvidia sheds nearly $500 billion in value as Jensen Huang resigns</a></li>
+      <li><a href="https://finance.yahoo.com/technology/live/nvidia-live-updates-following-jensen-huangs-resignation-as-ceo-allegations-of-a-third-affair-emerge-195535310.html" target="_blank">Yahoo Finance — Nvidia live updates: Following Jensen Huang's resignation as CEO</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html" target="_blank">CNBC — Nvidia CEO Jensen Huang resigns: Live updates</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/11/stock-market-today-live-updates.html" target="_blank">CNBC — Stock market news for Nov. 12, 2026</a></li>
+      <li><a href="https://cappnotes.substack.com/p/closing-look-thursday-november-12" target="_blank">Capp Notes — Closing Look: Thursday, November 12, 2026</a></li>
+      <li><a href="https://krmg.com/2026/11/12/how-major-us-stock-indexes-fared-thursday-11-12-2026/" target="_blank">KRMG 96.5 — How major US stock indexes fared Thursday 11/12/2026</a></li>
+      <li><a href="https://www.itv.com/news/2026-11-10/us-stocks-fall-after-a-discouraging-update-on-inflation" target="_blank">ITV News — US stocks fall after a discouraging update on inflation</a></li>
+      <li><a href="https://www.morningstar.com/news/dow-jones/202611098973/us-eurozone-bond-yields-rise-ahead-of-inflation-rates-outlook-2nd-update" target="_blank">Morningstar / Dow Jones — US, Eurozone Bond Yields Rise Ahead of Inflation, Rates Outlook</a></li>
+      <li><a href="https://www.fx168news.com/express/fastnews/1468198" target="_blank">FX168 速遞 — 11/12 收盤數字確認（道瓊 52,297.09；S&P 500 7,592.40；那指 25,366.09）</a></li>
+      <li><a href="https://www.cna.com.tw/news/afe/202611120372.aspx" target="_blank">中央社（CNA）— 黃仁勳辭職中文報導</a></li>
+      <li><a href="https://tw.news.yahoo.com/%E9%BB%83%E4%BB%81%E5%8B%B3%E7%88%86%E5%BC%95%E5%92%8E%E8%BE%AD%E8%81%B7-%E8%BC%9D%E9%81%94%E8%82%A1%E5%83%B9%E6%85%98%E9%81%AD%E8%A1%80%E6%B4%97%E7%8B%82%E6%AE%BA14-%E5%8F%B0%E7%A9%8D%E9%9B%BBadr%E4%B8%8B%E8%B7%8C2-68-184600932.html" target="_blank">Yahoo Finance 中文 — 輝達股價暴跌 14%；台積電 ADR 下跌 2.68%</a></li>
+      <li><a href="https://www.thepaper.cn/newsDetail_forward_34463726" target="_blank">澎湃新聞 — 紐約股市三大指數 11 月 12 日下跌</a></li>
+      <li><a href="https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402" target="_blank">NBC News — Nvidia CEO Jensen Huang resigns amid reports of extramarital relationships</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議<br>
+    生成時間：2026-11-13
+  </footer>
+</div>
+</body>
+</html>
