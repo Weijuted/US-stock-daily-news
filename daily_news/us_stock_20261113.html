@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-13</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 600; margin: 16px 0 8px; color: #374151; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 10px 14px; margin-bottom: 8px; background: #f0f4ff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+    .macro-item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1rem; font-weight: 700; color: #1a1a2e; }
+    .macro-item .note { font-size: 0.8rem; color: #6b7280; margin-top: 2px; }
+    .highlight-box { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; }
+    .highlight-box .tag { display: inline-block; background: #f59e0b; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
+    .highlight-box p { font-size: 0.9rem; line-height: 1.6; color: #374151; }
+    .weekly-badge { display: inline-block; background: #dcfce7; color: #16a34a; font-size: 0.8rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin-left: 8px; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 8px; line-height: 1.4; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    @media (max-width: 600px) {
+      .macro-grid { grid-template-columns: 1fr; }
+      header { padding: 24px 20px; }
+      .card { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年11月13日（星期五）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤 <span class="weekly-badge">週漲：連跌四週後反彈</span></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>當日漲跌幅</th>
+          <th>本週漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均指數 (DJIA)</td>
+          <td>52,347.55</td>
+          <td class="up">+50.46</td>
+          <td class="up">+0.10%</td>
+          <td class="up">+2.07%</td>
+        </tr>
+        <tr>
+          <td>S&amp;P 500</td>
+          <td>7,561.67</td>
+          <td class="down">▼ 下跌</td>
+          <td class="down">-0.40%</td>
+          <td class="up">+2.51%</td>
+        </tr>
+        <tr>
+          <td>Nasdaq Composite</td>
+          <td>25,136.27</td>
+          <td class="down">-229.82</td>
+          <td class="down">-0.91%</td>
+          <td class="up">+2.27%</td>
+        </tr>
+        <tr>
+          <td>Russell 2000</td>
+          <td>—</td>
+          <td class="neutral">—</td>
+          <td class="neutral">數據待確認</td>
+          <td class="neutral">—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem; color:#6b7280; margin-top:10px;">※ 三大指數均終結連續四週下跌，全週收漲。當日出現板塊輪動：道指微漲，Nasdaq 受科技股拖累明顯下跌。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+
+    <div class="highlight-box">
+      <span class="tag">頭號事件</span>
+      <p><strong>Nvidia（NVDA）CEO 領導層危機：</strong>Nvidia 董事會針對 CEO 黃仁勳（Jensen Huang）與前 Megaspeed 高管 Alice Huang 的關係展開獨立調查，美國情報官員懷疑後者已被中國國家安全部招募。Nvidia 股價當日領跌科技股，市值跌破 <strong>4 兆美元</strong>，自 10 月 6 日高點以來已蒸發逾 <strong>1.7 兆美元</strong>。公司發言人表示黃仁勳將繼續擔任 CEO，但部分報道指董事會已物色 Arm CEO Rene Haas 為潛在繼任者。</p>
+    </div>
+
+    <ul class="event-list">
+      <li><strong>板塊輪動「科技出、傳統入」：</strong>資金明顯從科技股流出，轉向傳統藍籌股及防禦性板塊，能源板塊相對抗跌，造成道指微漲而 Nasdaq 大跌的分化格局。</li>
+      <li><strong>PPI 通膨數據超預期：</strong>當日公布的生產者物價指數（PPI）年比上漲 <strong>6.5%</strong>，為 2022 年 11 月以來最快增速，強化市場對聯準會可能繼續緊縮的預期。</li>
+      <li><strong>Cerebras Systems 大漲：</strong>AI 晶片競爭者 Cerebras Systems 當日股價大幅走高，原因是公司上調全年營收預測，市場解讀為 AI 基礎設施需求依然旺盛。</li>
+      <li><strong>Anthropic IPO 預期發酵：</strong>市場對 Anthropic 即將 IPO 的預期在科技圈引發討論，成為 AI 板塊的話題催化劑之一。</li>
+      <li><strong>Nvidia 下週財報季：</strong>市場提前消化 Nvidia 即將發布財報的不確定性，疊加領導層危機，造成股價承壓。</li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">聯準會基準利率</div>
+        <div class="value">3.75% – 4.00%</div>
+        <div class="note">10/28 FOMC 決議維持不變；兩名委員投票贊成升息 25bps</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">下次升息預期</div>
+        <div class="value">≈85%</div>
+        <div class="note">CME FedWatch 顯示市場預期升息概率接近 85%</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">PPI 年比（11/13 公布）</div>
+        <div class="value down">+6.5%</div>
+        <div class="note">2022年11月以來最快增速，遠超預期</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10 年期美債殖利率</div>
+        <div class="value down">≈5.15%</div>
+        <div class="note">殖利率走升，對成長股估值形成壓力</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">房貸利率（30年固定）</div>
+        <div class="value down">≈7.4%</div>
+        <div class="note">創三年高點，近期稍有回落</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">比特幣</div>
+        <div class="value down">≈$68,340</div>
+        <div class="note">創8月以來最低水位，避險情緒升溫</div>
+      </div>
+    </div>
+    <h3>其他宏觀背景</h3>
+    <ul class="event-list" style="margin-top:0;">
+      <li><strong>聯準會立場：</strong>Fed 聲明稱需要「累積更多資訊」才能確定下一步政策方向，以確保通膨及時回到 2% 目標；Cook 及 Hammack 兩位委員明確偏鷹。</li>
+      <li><strong>結構性通膨：</strong>AI 基礎設施大規模建設及能源價格上漲被視為難以通過升息直接壓制的結構性通膨因素，增添政策不確定性。</li>
+    </ul>
+  </div>
+
+  <!-- STOCKS & SECTORS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>個股 / 板塊</th>
+          <th>動態摘要</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Nvidia (NVDA)</strong></td>
+          <td class="down">當日領跌科技股；市值跌破 4 兆美元；自 10 月高點以來累計蒸發 1.7 兆美元市值；CEO 領導層調查引發不確定性</td>
+        </tr>
+        <tr>
+          <td><strong>Cerebras Systems</strong></td>
+          <td class="up">股價大漲；公司上調全年營收預測，AI 晶片替代需求受到關注</td>
+        </tr>
+        <tr>
+          <td><strong>科技板塊整體</strong></td>
+          <td class="down">領跌 S&amp;P 500；受 Nvidia 拖累及通膨數據打壓，資金加速外流</td>
+        </tr>
+        <tr>
+          <td><strong>能源板塊</strong></td>
+          <td class="up">相對抗跌；資金輪動流入，受益於通膨環境</td>
+        </tr>
+        <tr>
+          <td><strong>防禦性板塊</strong></td>
+          <td class="up">相對抗跌；市場避險情緒升溫帶動資金流入</td>
+        </tr>
+        <tr>
+          <td><strong>黃金</strong></td>
+          <td class="up">避險需求支撐；市場不確定性加劇下受到關注</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>Nvidia 領導層不確定性：</strong>若 Jensen Huang 離任，分析師 Dan Ives 警告 Nvidia 估值可能下跌 25–30%，對整體科技股及 AI 主題投資構成系統性風險。</li>
+      <li><strong>通膨持續超預期：</strong>PPI 年比 6.5% 遠超預期，若後續 CPI 亦超預期，聯準會可能在 12 月加速升息，壓縮成長股估值空間。</li>
+      <li><strong>利率長期高位風險：</strong>10 年期美債殖利率升至 5.15%，高利率環境持續時間若超出市場預期，將持續抑制科技股及房市。</li>
+      <li><strong>中美科技競爭與出口管制：</strong>Nvidia 調查涉及中國國安部，若觸發新一輪出口管制或制裁升級，將直接衝擊半導體供應鏈。</li>
+      <li><strong>AI 敘事過熱風險：</strong>在 Nvidia 市值大幅修正後，部分分析師警告 AI 相關股估值泡沫風險，市場情緒脆弱。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ol class="sources">
+      <li><a href="https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market Today Live Updates (Nov 13, 2026)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-tick-133734502.html" target="_blank">Yahoo Finance — Stock Market Today (Futures)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-13-081500049.html" target="_blank">Yahoo Finance — Stock Market News Nov 13</a></li>
+      <li><a href="https://247wallst.com/cards/money-moved-out-of-tech-and-into-everything-else-today-the-gspc-market-bell-01m7bbjh5wpep4vmjk7jwpas8h" target="_blank">247 Wall Street — Money Moved Out of Tech (Nov 13, 2026)</a></li>
+      <li><a href="https://english.news.cn/northamerica/20261114/48afa9adbc4a440d9a21dabc97d755cf/c.html" target="_blank">新華社（Xinhua）— North America Markets (Nov 14, 2026)</a></li>
+      <li><a href="https://investrade.com/market-review-november-13-2026/" target="_blank">Investrade — Market Review November 13, 2026</a></li>
+      <li><a href="https://vistapglobal.com/weekly-stock-market-summary-november-13-2026-nasdaq-slides-as-inflation-and-ai-risks-shape-wall-street-ant-eprx-googl-gs-modd-msft-nvda-ser-spcx/" target="_blank">Vista Global — Weekly Stock Market Summary November 13, 2026</a></li>
+      <li><a href="https://www.alainguillot.com/stock-market-recap-november-13-2026/" target="_blank">Alain Guillot — Stock Market Recap November 13, 2026</a></li>
+      <li><a href="https://www.everhint.com/stock-market-news-november-13-2026-morning-update-last-12-hours-pacific-time/" target="_blank">Everhint — Stock Market News November 13, 2026 Morning Update</a></li>
+      <li><a href="https://cappnotes.substack.com/p/closing-look-friday-november-13-2026" target="_blank">CappNotes — Closing Look: Friday November 13, 2026</a></li>
+      <li><a href="https://eurasiabusinessnews.com/2026/11/14/stock-market-today-november-13-2026-tech-stocks-fall-as-nvidia-earnings-and-anthropic-ipo-loom/" target="_blank">EurAsia Business News — Tech Stocks Fall as Nvidia Earnings and Anthropic IPO Loom</a></li>
+      <li><a href="https://businessupturn.com/usa/money/us-markets/us-stocks-close-mixed-on-friday-as-nasdaq-falls-and-dow-edges-higher/" target="_blank">Business Upturn — US Stocks Close Mixed on Friday</a></li>
+      <li><a href="https://econcurrents.substack.com/p/13-november-2026-market-close-and" target="_blank">EconCurrents — November 13, 2026 Market Close and Analysis</a></li>
+      <li><a href="https://www.mitrade.com/insights/news/live-news/article-8-2246254-20261111" target="_blank">Mitrade — Nvidia Analysis (Nov 11, 2026)</a></li>
+      <li><a href="https://decrypt.co/382838/nvidias-350-billion-scare-what-happens-if-jensen-huang-leaves" target="_blank">Decrypt — Nvidia's $350 Billion Scare: What Happens if Jensen Huang Leaves?</a></li>
+      <li><a href="https://www.ky3.com/2026/10/28/federal-reserve-keeps-interest-rates-unchanged-ahead-midterms-despite-elevated-inflation/" target="_blank">KY3 — Federal Reserve Keeps Interest Rates Unchanged (Oct 28, 2026)</a></li>
+      <li><a href="https://www.spglobal.com/spdji/en/documents/commentary/market-attributes-us-equities-202511.pdf" target="_blank">S&amp;P Global — Market Attributes US Equities (November 2026)</a></li>
+    </ol>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議 &nbsp;|&nbsp; 生成時間：2026-11-15</footer>
+</div>
+</body>
+</html>
