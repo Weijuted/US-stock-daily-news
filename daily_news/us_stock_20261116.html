@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-16</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 16px 0 8px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .note { font-size: 0.84rem; color: #6b7280; margin-top: 10px; line-height: 1.6; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 8px; background: #f8faff; border-left: 3px solid #0f3460; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .macro-block { margin-bottom: 14px; padding: 12px 14px; background: #f8faff; border-left: 3px solid #6366f1; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .macro-block h3 { margin: 0 0 6px 0; font-size: 0.95rem; color: #4f46e5; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .risk-list li strong { color: #dc2626; }
+    .sector-table td:last-child { font-weight: 600; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: decimal; margin-left: 18px; }
+    .vix-badge { display: inline-block; background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; border-radius: 6px; padding: 4px 10px; font-size: 0.85rem; font-weight: 600; margin-left: 10px; }
+    .corr-badge { display: inline-block; background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; border-radius: 6px; padding: 4px 10px; font-size: 0.85rem; font-weight: 600; margin-top: 8px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-11-16（週一）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>道瓊工業平均指數 (DJIA)</td>
+          <td>51,608.17</td>
+          <td class="down">▼ 739.38</td>
+          <td class="down">-1.41%</td>
+        </tr>
+        <tr>
+          <td>標準普爾500指數 (S&amp;P 500)</td>
+          <td>7,416.59</td>
+          <td class="down">▼ 145.08</td>
+          <td class="down">-1.92%</td>
+        </tr>
+        <tr>
+          <td>納斯達克綜合指數 (Nasdaq)</td>
+          <td>24,509.76</td>
+          <td class="down">▼ 626.52</td>
+          <td class="down">-2.49%</td>
+        </tr>
+        <tr>
+          <td>羅素2000指數 (Russell 2000)</td>
+          <td>2,742.11</td>
+          <td class="down">▼ ~48.00</td>
+          <td class="down">約 -1.70%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">
+      📉 當日為連續第三個交易日下跌。納斯達克指數較10月6日歷史收盤高點下跌逾10%，正式進入技術性<strong>修正區間（Correction Territory）</strong>。
+      <span class="vix-badge">VIX 23.56 ▲22.06%</span>
+    </p>
+    <p class="note" style="margin-top:8px;">
+      <span class="corr-badge">⚠️ 納斯達克進入修正區間：距高點跌幅已超過 10%</span>
+    </p>
+  </div>
+
+  <!-- SECTOR TABLE -->
+  <div class="card">
+    <h2>板塊表現</h2>
+    <table class="sector-table">
+      <thead>
+        <tr><th>板塊</th><th>漲跌幅</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>半導體／晶片（Semiconductors）</td><td class="down">-5.30%</td></tr>
+        <tr><td>科技（Technology）</td><td class="down">-3.00%</td></tr>
+        <tr><td>通訊服務（Communication Services）</td><td class="down">-2.80%</td></tr>
+        <tr><td>其他7個板塊</td><td class="down">下跌</td></tr>
+        <tr><td>消費必需品（Consumer Staples）</td><td class="up">+0.30%</td></tr>
+        <tr><td>公用事業（Utilities）</td><td class="up">+0.10%</td></tr>
+      </tbody>
+    </table>
+    <p class="note">NYSE 下跌股票 vs. 上漲股票比例為 <strong>3.45:1</strong>；S&amp;P 500 11個板塊中 9個板塊下跌。</p>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>輝達（Nvidia）CEO 離職風波持續發酵：</strong>
+        輝達股價收盤報 <strong>$156.14，跌幅 4.12%</strong>，為當日市場最大拖累因子。自10月6日歷史高點以來累計跌幅已逾 <strong>35%</strong>。Jensen Huang 上週宣布辭職，本週一風波持續，董事會正評估是否邀請 Huang 回任；川普總統表示「不反對」。輝達財報定於週二（11/17）盤後公布，市場情緒高度不確定。
+      </li>
+      <li>
+        <strong>美國商務部新一輪 AI 晶片出口管制：</strong>
+        商務部宣布對透過海外數據中心遠端使用先進美國晶片的行為加以限制。馬來西亞、泰國、印尼、新加坡及巴西將面臨額外出口管制，涉及相關貨物須取得出口許可證。半導體板塊當日整體下跌 <strong>-5.3%</strong>，AMD 同步受衝擊。
+      </li>
+      <li>
+        <strong>AI 相關股票市值大幅蒸發：</strong>
+        據估算，12支主要 AI 相關股票合計市值蒸發逾 <strong>9,300 億美元</strong>（以盤中高點計算），市場廣度（Market Breadth）極度偏空。
+      </li>
+      <li>
+        <strong>Anthropic IPO 預期：</strong>
+        市場正等待 Anthropic 近期 IPO，形成額外不確定性，部分投資者選擇觀望。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <div class="macro-block">
+      <h3>🏦 聯準會（Federal Reserve）動態</h3>
+      聯準會主席 <strong>Kevin Warsh</strong> 當日發表談話，主要聚焦於人工智慧，對利率路徑指引有限，10年期美國公債殖利率因此小幅回落。然而部分交易員正提高押注美國聯準會可能在 <strong>12月例會升息 50bps（超常規幅度）</strong>的可能性。Warsh 自就任以來一直採偏鷹派立場，高殖利率環境是本次科技股修正的結構性壓力之一。
+    </div>
+    <div class="macro-block">
+      <h3>📊 經濟數據</h3>
+      當日明確的重要經濟數據發布有限，但製造業前景相關數據疲軟，形成市場不安情緒的來源之一。核心 PCE 通膨數據仍是關注焦點；部分機構（BofA、JPMorgan）預測近期核心 PCE 將小幅上升約 0.23%，強化聯準會謹慎態度。
+    </div>
+    <div class="macro-block">
+      <h3>🌍 地緣政治</h3>
+      <strong>美中關係：</strong>兩國貿易休戰延長至2027年1月10日，川普與習近平會晤整體偏正面，但分析師認為尚不足以實質改善市場前景，台灣議題仍是長期不確定因素。<br/><br/>
+      <strong>俄烏局勢：</strong>俄烏雙方仍持續大規模攻擊能量基礎設施，但美俄烏三方已在邁阿密舉行六小時談判，俄方表示普丁與川普有意出席中國APEC峰會，局勢出現一定外交緩和跡象。<br/><br/>
+      <strong>中國對台立場：</strong>習近平在與川普通話中重申對台主權立場不變，科技脫鉤風險持續影響半導體板塊情緒。
+    </div>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <table>
+      <thead>
+        <tr><th>股票</th><th>動態摘要</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>NVDA（輝達）</strong></td>
+          <td class="down">收 $156.14，跌幅 4.12%。CEO 辭職風波 + 晶片出口管制雙重打壓，財報前夕情緒惡化，距歷史高點累計跌幅逾 35%</td>
+        </tr>
+        <tr>
+          <td><strong>AMD</strong></td>
+          <td class="down">同步下跌，受晶片板塊拖累，出口管制擴大波及</td>
+        </tr>
+        <tr>
+          <td><strong>TSLA（特斯拉）</strong></td>
+          <td class="down">約 $379.78，受科技板塊大規模拋售波及</td>
+        </tr>
+        <tr>
+          <td><strong>AI 相關 12 支股票</strong></td>
+          <td class="down">合計市值蒸發逾 9,300 億美元（以盤中高點計算）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>AI 集中度風險：</strong>市場長期高度依賴少數 AI/科技巨頭推動漲勢，一旦修正對整體指數衝擊極大；S&amp;P 500 跌幅約一半以上來自科技板塊。</li>
+      <li><strong>晶片出口管制升級：</strong>美國持續收緊對華及多國 AI 晶片供應，影響輝達、AMD 等公司營收前景。</li>
+      <li><strong>聯準會 12 月升息風險：</strong>市場對 12 月可能升息 50bps 的預期抬頭，高利率環境對高本益比科技股估值構成壓力。</li>
+      <li><strong>財報季不確定性：</strong>輝達財報（11/17）及 Anthropic IPO 為短期「二元事件」，市場需要等待結果才能重建方向感。</li>
+      <li><strong>科技股技術性修正加速：</strong>納斯達克進入修正區間（距高點-10%以上），可能觸發更多程式化賣盤（momentum selling）。</li>
+      <li><strong>地緣政治尾部風險：</strong>俄烏衝突、美中台緊張關係，以及美國新一輪制裁措施（川普提及可能制裁俄羅斯貿易夥伴），均可能在任何時間點引發避險賣壓。</li>
+      <li><strong>科技基礎設施中斷：</strong>當日技術性中斷事件（technology outages）亦是拖累市場的附加因素之一。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/16/stock-market-today-nov-16-nvidia-sinks-as-u-s-tightens-ai-chip-restrictions-and-analysts-slash-price-targets/" target="_blank">The Motley Fool – Stock Market Today, Nov. 16: Nvidia Sinks as U.S. Tightens AI Chip Restrictions</a></li>
+      <li><a href="https://www.newsquawk.com/headlines/us-market-wrap---16th-november-2026-risk-off-trade-as-tech-rout-resumes-supporting-havens-" target="_blank">Newsquawk – US Market Wrap, 16th November 2026: Risk off trade as tech rout resumes</a></li>
+      <li><a href="https://247wallst.com/cards/tech-took-the-worst-of-it-the-nasdaq-s-2-54-drop-nearly-do-gspc-market-bell-01m7k2rvdndtgg635thrxjgnck" target="_blank">247WallSt – S&amp;P 500 Closes Down 2% as Nasdaq Leads Broad Market Lower</a></li>
+      <li><a href="https://theweekendspread.substack.com/p/the-close-monday-november-16-2026" target="_blank">The Weekend Spread – The Close: Monday, November 16, 2026</a></li>
+      <li><a href="https://www.stl.news/u-s-stock-market-today-november-16-2026/" target="_blank">STL.News – U.S. Stock Market Today: November 16, 2026</a></li>
+      <li><a href="https://www.uspress.news/u-s-stock-market-today-november-16-2026/" target="_blank">USPress.News – U.S. Stock Market Today: November 16, 2026</a></li>
+      <li><a href="https://wtop.com/national/2026/11/how-major-us-stock-indexes-fared-monday-11-16-2026" target="_blank">WTOP – How major US stock indexes fared Monday 11/16/2026</a></li>
+      <li><a href="https://mymotherlode.com/news/national/11315541/how-major-us-stock-indexes-fared-monday-11-16-2026.html" target="_blank">myMotherLode.com – How major US stock indexes fared Monday 11/16/2026</a></li>
+      <li><a href="https://www.cnn.com/2026/11/16/business/stocks-nvidia-ai-anthropic" target="_blank">CNN – Stocks slide to kick off major week for Wall Street</a></li>
+      <li><a href="https://vistapglobal.com/stock-market-today-november-16-2026-nasdaq-slides-2-49-as-ai-uncertainty-technology-outages-and-slower-manufacturing-cloud-outlook-amzn-eprx-jpm-lly-modd-nvda-ser-spcx-tsla/" target="_blank">VistaPG Global – Stock Market Today, November 16, 2026</a></li>
+      <li><a href="https://eurasiabusinessnews.com/2026/11/17/stock-market-today-nasdaq-slides-2-5-as-nvidia-turmoil-and-chip-restrictions-hit-tech/" target="_blank">EurasiaBusinessNews – Nasdaq Slides 2.5% as Nvidia Turmoil and Chip Restrictions Hit Tech</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262307685-us-stock-nasdaq-falls-nvidia-amd-drops-us-ai-chip-curbs-tradingkey" target="_blank">TradingKey – Dow Drops Over 700 Points With Tech as Main Drag, Nvidia Extends Slide by 4%</a></li>
+      <li><a href="https://www.washingtontimes.com/news/2026/nov/16/drops-nvidia-ai-stocks-dragging-us-market-lower/" target="_blank">Washington Times – More drops for Nvidia and other AI stocks drag the U.S. market lower</a></li>
+      <li><a href="https://pro.thestreet.com/market-commentary/ai-stocks-drag-the-sp-500-back-toward-the-november-5th-lows" target="_blank">TheStreet Pro – AI Stocks Drag the S&amp;P 500 Back Toward the November 5th Lows</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-11-15/stock-market-today-dow-s-p-live-updates" target="_blank">Bloomberg – Stock Market Today: Dow, S&amp;P Live Updates for November 16</a></li>
+      <li><a href="https://investrade.com/market-review-november-16-2026/" target="_blank">Investrade – Market Review: November 16, 2026</a></li>
+      <li><a href="https://www.stocktitan.net/articles/stock-market-today-live-november-16-2026" target="_blank">StockTitan – Stock Market Today Live, November 16, 2026</a></li>
+      <li><a href="https://kbldestinations.substack.com/p/daily-market-report-11-16-26" target="_blank">KBL Destinations Substack – Daily Market Report 11-16-26</a></li>
+      <li><a href="https://krmg.com/2026/11/16/how-major-us-stock-indexes-fared-monday-11-16-2026/" target="_blank">KRMG – How major US stock indexes fared Monday 11/16/2026</a></li>
+      <li><a href="https://www.sohu.com/a/1102485859_267106" target="_blank">搜狐（中文）– 紐約股市三大股指16日下跌</a></li>
+      <li><a href="https://www.basispointinsight.com/Story/risk-off-trade-dominates-asia-on-us-tech-rout-and-china-russia-energy-link_d7a1fbed0ac7.html" target="_blank">BasisPoint Insight – Risk-Off Trade Dominates Asia on US Tech Rout and China–Russia Energy Link</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 ｜ 僅供參考，非投資建議<br/>生成時間：2026-11-17</footer>
+</div>
+</body>
+</html>
