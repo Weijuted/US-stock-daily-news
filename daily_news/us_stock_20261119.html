@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-19</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .alert-banner { background: #fff1f1; border: 1px solid #fca5a5; border-radius: 10px; padding: 14px 20px; margin-bottom: 20px; font-size: 0.9rem; color: #991b1b; display: flex; align-items: center; gap: 10px; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 16px 0 8px; color: #1a1a2e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #d97706; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 16px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 6px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; }
+    .macro-item .label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-item .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-item .change { font-size: 0.82rem; margin-top: 2px; }
+    .sector-table td:first-child { font-weight: 600; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; word-break: break-all; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+    .tag-ipo { background: #e0f2fe; color: #0369a1; }
+    .tag-earnings { background: #f0fdf4; color: #166534; }
+    .tag-macro { background: #fef9c3; color: #92400e; }
+    .tag-regulation { background: #fdf2f8; color: #9d174d; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年11月19日（週四） | 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- ALERT -->
+  <div class="alert-banner">
+    ⚠️ <strong>大跌警示：</strong>道瓊重挫 1,101 點（-2.19%），S&amp;P 500 連跌第 6 日創 2024 年最長連跌紀錄，VIX 恐慌指數飆升 15.8% 至 28.44。
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>49,097.06</td>
+          <td class="down">▼ 1,101.11</td>
+          <td class="down">-2.19%</td>
+          <td>跌破 50,000 點，30 檔成分股僅 1 檔上漲</td>
+        </tr>
+        <tr>
+          <td><strong>S&amp;P 500</strong></td>
+          <td>7,175.83</td>
+          <td class="down">▼ 147.80</td>
+          <td class="down">-2.02%</td>
+          <td>連跌第 6 日；較歷史高點下跌約 8.2%</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>23,879.20</td>
+          <td class="down">▼ 550.69</td>
+          <td class="down">-2.25%</td>
+          <td>AI 與半導體股全面承壓</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>~2,655</td>
+          <td class="down">—</td>
+          <td class="down">-2.18%</td>
+          <td>跌破 200 日均線；IWM 出現「死亡交叉」訊號</td>
+        </tr>
+        <tr>
+          <td><strong>費城半導體 (SOX)</strong></td>
+          <td>—</td>
+          <td class="down">—</td>
+          <td class="down">-2.40%</td>
+          <td>Nvidia、AMD 拖累</td>
+        </tr>
+        <tr>
+          <td><strong>VIX 恐慌指數</strong></td>
+          <td>28.44</td>
+          <td class="down">—</td>
+          <td class="down">+15.8%</td>
+          <td>市場恐慌情緒顯著升溫</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>Anthropic 史上最大 IPO 首日掛牌</strong> <span class="tag tag-ipo">IPO</span><br/>
+        Anthropic（代號：ANT）於 Nasdaq 掛牌，IPO 定價 $83／股，史上最大 IPO（募資約 $813 億美元）。開盤 $111.50（+34%），收盤漲幅縮至約 14–17%。儘管 Anthropic 表現亮眼，但巨量 AI 資金虹吸效應引發大盤廣泛拋售，市場對 AI 板塊估值的疑慮也同步加深。
+      </li>
+      <li>
+        <strong>Nvidia 財報雖佳，股價仍跌 3.30%</strong> <span class="tag tag-earnings">財報</span><br/>
+        Nvidia（NVDA）Q3 FY2027 財報（11/17 公布）：營收 $1,158 億（YoY +103%）、調整後 EPS $2.68（超預期 $2.47）、數據中心營收 $1,076 億。儘管業績優異，當日仍收跌 -3.30% 至 $145.98。背景：執行長 Jensen Huang 已辭職，CFO Colette Kress 擔任代理執行長；市場情緒受整體氛圍拖累，「利多出盡」效應顯現。
+      </li>
+      <li>
+        <strong>AMD 重挫 -7.72%，出口管制疑雲蔓延</strong> <span class="tag tag-regulation">法規</span><br/>
+        新加坡資料中心公司 Megaspeed 被揭發違規將 Nvidia 晶片轉運至中國，市場擔憂 AMD 的 Instinct GPU 也面臨類似東南亞轉口管道的風險。AMD 此前已因 MI308 出口限制認列約 $8 億庫存損失，當日跌幅達 -7.72%，為 Nasdaq 明顯拖累因子。
+      </li>
+      <li>
+        <strong>Williams-Sonoma（WSM）領跌 S&amp;P 500，單日 -15.2%</strong> <span class="tag tag-earnings">財報</span><br/>
+        Q3 財報毛利率壓力加劇，前瞻指引偏謹慎，引發投資人大幅出走，成為當日 S&amp;P 500 成分股最差表現個股。
+      </li>
+      <li>
+        <strong>S&amp;P 500 成分股超過 90% 下跌，市場廣度極差</strong><br/>
+        成交量高於均值，空頭力道全面壓制。S&amp;P 500 連跌 6 日為 2024 年以來最長連跌；較上月歷史高點已累計下跌約 8.2%，技術面接近回調 10% 修正區間。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+
+    <h3>聯準會（Fed）動態</h3>
+    <ul class="event-list">
+      <li>
+        <strong>12 月 FOMC 升息機率高達 95%</strong> <span class="tag tag-macro">Fed</span><br/>
+        CME FedWatch 顯示 12 月 FOMC（12/8–9）升息 1 碼機率約 95%。Fed 理事 Waller 明確傾向 12 月升息，並表示若通膨數據不退，不排除升息 2 碼。多位官員表示「12 月升息」已是基本情境，10 月 FOMC 會議紀要顯示「幾乎所有官員」支持此舉。
+      </li>
+    </ul>
+
+    <h3>重要經濟數據</h3>
+    <ul class="event-list">
+      <li>
+        10 月 CPI（11/10 公布）月增 <strong>+0.4%</strong>（高於預期 +0.3%），強化升息預期。
+      </li>
+      <li>
+        本週初領失業救濟金人數：約 <strong>200,000</strong>（略高於前期），就業市場仍偏穩。
+      </li>
+    </ul>
+
+    <h3>金融市場指標</h3>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <div class="label">美元指數 (DXY)</div>
+        <div class="value">~103.9</div>
+        <div class="change down">19 個月新高（2025年3月以來最強）</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">10 年期美債殖利率</div>
+        <div class="value">~5.15%</div>
+        <div class="change down">當週上漲約 30 個基點</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">黃金現貨</div>
+        <div class="value">~$3,880</div>
+        <div class="change down">14 個月低點；美元強勢雙重壓制</div>
+      </div>
+      <div class="macro-item">
+        <div class="label">WTI 原油</div>
+        <div class="value">~$89</div>
+        <div class="change neutral">區間震盪</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTORS & STOCKS -->
+  <div class="card">
+    <h2>重要板塊與個股動態</h2>
+    <table class="sector-table">
+      <thead>
+        <tr>
+          <th>板塊 / 個股</th>
+          <th>漲跌幅</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Anthropic（ANT）</td>
+          <td class="up">+14% ~ +17%</td>
+          <td>史上最大 IPO 首日掛牌，開盤 $111.50；收盤漲幅縮水</td>
+        </tr>
+        <tr>
+          <td>Nvidia（NVDA）</td>
+          <td class="down">-3.30%</td>
+          <td>財報亮眼仍跌；Jensen Huang 辭職後首次財報</td>
+        </tr>
+        <tr>
+          <td>AMD</td>
+          <td class="down">-7.72%</td>
+          <td>出口管制新疑慮；Instinct GPU 轉口風險</td>
+        </tr>
+        <tr>
+          <td>Williams-Sonoma（WSM）</td>
+          <td class="down">-15.2%</td>
+          <td>S&amp;P 500 當日最差，財報毛利率壓力大</td>
+        </tr>
+        <tr>
+          <td>AI / 半導體板塊</td>
+          <td class="down">-2% ~ -8%</td>
+          <td>AI IPO 資金虹吸、估值疑慮，全面下挫</td>
+        </tr>
+        <tr>
+          <td>小型股（Russell 2000）</td>
+          <td class="down">-2.18%</td>
+          <td>跌破 200 日均線；IWM 出現「死亡交叉」</td>
+        </tr>
+        <tr>
+          <td>航空 / 郵輪股</td>
+          <td class="down">顯著下跌</td>
+          <td>消費者支出疑慮升溫，殖利率走高衝擊</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🔴 <strong>Fed 12 月升息預期高達 95%</strong>：公債殖利率攀升至 5.15%，無風險利率進一步壓縮股票估值空間；若 12 月升息 2 碼，市場可能再承壓。</li>
+      <li>🔴 <strong>S&P 500 連跌 6 日，接近回調區間</strong>：距歷史高點下跌 8.2%，若跌破 10%（約 7,050）則正式進入修正，技術面轉空訊號增加。</li>
+      <li>🔴 <strong>AI / 半導體出口管制升級</strong>：Nvidia、AMD 均面臨晶片轉口疑慮；若更多企業遭點名，整個 AI 供應鏈板塊面臨額外下行壓力。</li>
+      <li>🟡 <strong>Anthropic IPO 後 AI 板塊估值重估</strong>：史上最大 IPO 未能提振大盤，反而加劇市場對 AI 支出回報率的質疑；後市科技估值修正可能延續。</li>
+      <li>🟡 <strong>美元強勢與黃金下跌</strong>：DXY 創 19 個月新高，新興市場資金外流壓力增加；黃金跌至 14 個月低點，傳統避險需求減弱。</li>
+      <li>🟡 <strong>Nvidia 執行長空缺風險</strong>：Jensen Huang 辭職後首次財報，代理執行長 CFO Kress 能否維持公司策略一致性，仍是市場觀望焦點。</li>
+      <li>🟡 <strong>Russell 2000 死亡交叉</strong>：IWM 50/200 日均線交叉為技術性熊市訊號，小型股補漲邏輯受損，小型股資金流出壓力加大。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html" target="_blank">Yahoo Finance — Stock Market Today Live: Dow, S&P 500, Nasdaq &amp; Anthropic IPO (Nov 19, 2026)</a></li>
+      <li><a href="https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market News Nov. 19, 2026</a></li>
+      <li><a href="https://247wallst.com/cards/the-dow-s-1-091-point-drop-came-alongside-declines-in-both-t-gspc-market-bell-01m7tszafyfeyqr7mh8p14494j" target="_blank">247 Wall St. — Dow -1,091, S&amp;P 500 -2.15%</a></li>
+      <li><a href="https://www.worldjournal.com/wj/story/121477/9890424" target="_blank">世界日報 — 史上最大IPO救不了AI股 道瓊重挫1100點</a></li>
+      <li><a href="https://news.cnyes.com/news/id/6667840" target="_blank">鉅亨網 — Anthropic上市難救AI買氣！道瓊暴跌超1100點</a></li>
+      <li><a href="https://www.nacionale.com/en/articles/why-is-stock-market-down-today-november-19-dow-1100-points-ai-stocks-anthropic-ipo" target="_blank">Nacionale — Why is the stock market down today? Nov 19 (Dow -1,100)</a></li>
+      <li><a href="https://cnn.com/2026/11/19/business/live-news/anthropic-ipo" target="_blank">CNN — Anthropic valued at $1.76 trillion after historic first day of trading</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/" target="_blank">Motley Fool — Dow Plunges 1,100 Points; S&amp;P 500 6th Straight Loss</a></li>
+      <li><a href="https://www.21jingji.com/article/20261119/herald/363cc3a4e0739fbeff48e324e630006c.html" target="_blank">21 經濟網 — 標普500指數五連跌！英伟达跌2.89%</a></li>
+      <li><a href="https://k.sina.cn/article_1699432410_654b47da02001y4mm.html" target="_blank">新華社 / 新浪 — 紐約股市三大股指19日顯著下跌</a></li>
+      <li><a href="https://theweekendspread.substack.com/p/the-close-thursday-november-19-2026" target="_blank">The Weekend Spread — The Close: Thursday, November 19, 2026</a></li>
+      <li><a href="https://cappnotes.substack.com/p/closing-look-thursday-november-19" target="_blank">CappNotes — Closing Look: Thursday, November 19, 2026</a></li>
+      <li><a href="https://www.foxbusiness.com/markets/nvidia-releases-quarterly-earnings-after-jensen-huangs-resignation-ceo.amp" target="_blank">Fox Business — Nvidia Q3 Earnings after Jensen Huang's Resignation</a></li>
+      <li><a href="https://www.gurufocus.com/news/9210120/russell-2000s-death-cross-signals-caution-for-iwm-investors" target="_blank">GuruFocus — Russell 2000 Death Cross / IWM Caution Signal</a></li>
+      <li><a href="https://leverageshares.com/us/insights/anthropic-ipo-date-vs-first-trading-day/" target="_blank">Leverage Shares — Anthropic IPO: Date vs First Trading Day</a></li>
+      <li><a href="https://www.nwaonline.com/news/2026/nov/19/fed-officials-expect-december-rate-hike/" target="_blank">NWA Online — Fed Officials Expect December Rate Hike (11/19)</a></li>
+      <li><a href="https://kalshi.com/markets/kxfeddecision/fed-meeting/kxfeddecision-26dec" target="_blank">Kalshi — Fed December 2026 Rate Decision Odds (95%)</a></li>
+      <li><a href="https://pro.thestreet.com/market-commentary/thursdays-charts-more-uptrend-lines-give-way" target="_blank">TheStreet — Thursday's Charts: More Uptrend Lines Give Way (Russell 2000 / VIX)</a></li>
+      <li><a href="https://www.babypips.com/news/daily-financial-forex-market-recap-2026-11-19" target="_blank">Babypips — Financial &amp; Forex Market Recap Nov 19, 2026</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 僅供參考，非投資建議<br/>
+    資料日期：2026年11月19日 &nbsp;|&nbsp; 生成時間：2026年11月20日
+  </footer>
+
+</div>
+</body>
+</html>
