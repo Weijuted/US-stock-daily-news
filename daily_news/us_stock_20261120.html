@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-20</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .summary-badge { display: inline-block; margin-top: 14px; background: rgba(220,38,38,0.25); border: 1px solid rgba(220,38,38,0.5); color: #fca5a5; border-radius: 6px; padding: 6px 14px; font-size: 0.85rem; font-weight: 600; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-left: 3px solid #0f3460; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { display: block; color: #1e40af; margin-bottom: 4px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-list { list-style: none; }
+    .macro-list li { padding: 10px 14px; margin-bottom: 8px; background: #fffbeb; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-list li strong { color: #92400e; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+    .stock-item { background: #fff5f5; border: 1px solid #fecaca; border-radius: 8px; padding: 12px 16px; }
+    .stock-item .ticker { font-weight: 700; font-size: 1rem; color: #dc2626; }
+    .stock-item .change { font-size: 0.85rem; color: #dc2626; margin-top: 4px; font-weight: 600; }
+    .stock-item .note { font-size: 0.78rem; color: #6b7280; margin-top: 4px; line-height: 1.4; }
+    .weekly-box { background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 14px 18px; margin-top: 14px; }
+    .weekly-box h3 { font-size: 0.88rem; color: #991b1b; margin-bottom: 8px; font-weight: 700; }
+    .weekly-box .weekly-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 4px 0; border-bottom: 1px solid #fee2e2; }
+    .weekly-box .weekly-row:last-child { border-bottom: none; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .ytd-row { font-size: 0.82rem; color: #6b7280; margin-top: 10px; padding: 8px 14px; background: #f9fafb; border-radius: 6px; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026-11-20（星期五）| 由 Claude Routine 自動生成</div>
+    <div class="summary-badge">⚠️ AI/晶片股崩跌 — S&P 500 與道指進入回調區間 | 納指轉負（年初至今）</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>點數變動</th>
+          <th>漲跌幅</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業 (DJIA)</strong></td>
+          <td>48,147.03</td>
+          <td class="down">▼ -950.03</td>
+          <td class="down">-1.94%</td>
+        </tr>
+        <tr>
+          <td><strong>S&P 500</strong></td>
+          <td>6,910.39</td>
+          <td class="down">▼ -265.29</td>
+          <td class="down">-3.70%</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq 綜合</strong></td>
+          <td>22,617.73</td>
+          <td class="down">▼ -1,261.47</td>
+          <td class="down">-5.28%</td>
+        </tr>
+        <tr>
+          <td><strong>Nasdaq-100 (NDX)</strong></td>
+          <td>25,028.98</td>
+          <td class="down">▼ —</td>
+          <td class="down">-5.61%</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>~2,581.79</td>
+          <td class="down">▼ -73.32</td>
+          <td class="down">-2.76%</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="ytd-row">
+      📊 <strong>年初至今（截至11/20）：</strong>
+      S&amp;P 500 <span class="up">+0.9%</span> &nbsp;|&nbsp;
+      道瓊 <span class="up">+0.2%</span> &nbsp;|&nbsp;
+      Nasdaq <span class="down">-2.7%（已轉負）</span>
+    </div>
+    <div class="weekly-box">
+      <h3>📉 當週表現（2025年4月以來最差的一週）</h3>
+      <div class="weekly-row"><span>道瓊 DJIA</span><span class="down">-8.02%</span></div>
+      <div class="weekly-row"><span>S&P 500</span><span class="down">-8.61%</span></div>
+      <div class="weekly-row"><span>Nasdaq 綜合</span><span class="down">-10.02%</span></div>
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件與催化劑</h2>
+    <ul class="event-list">
+      <li>
+        <strong>AI/晶片股全面崩跌（主要驅動因素）</strong>
+        AI相關及半導體股票遭遇全面拋售，延續自Nvidia於2026年10月6日觸頂後的跌勢。投資人普遍質疑AI資本支出能否產生足夠回報，科技股為當日表現最差的板塊。
+      </li>
+      <li>
+        <strong>Nvidia (NVDA) -14.01%，收盤 $125.53</strong>
+        距10月6日高點已跌約43%，市值蒸發逾2.5兆美元。Reuters及WSJ報導，SEC正就潛在會計不規則對公司展開審查，監管風險與估值疑慮雙重施壓，加速股價崩跌。S&P 500連續第七個交易日收跌。
+      </li>
+      <li>
+        <strong>Anthropic (ANT) IPO效應引爆信心危機</strong>
+        Anthropic於11月19日（前一交易日）以每股$83登陸Nasdaq，定價估值約1.5兆美元，刷新IPO歷史紀錄（超越SpaceX 2026年6月上市）。首日開盤$111.50（+34%），盤中高達$114.99（+39%），但收盤回落至約$97.17。強烈的開盤漲幅無法延續，反而強化市場對AI估值泡沫的憂慮，成為11月20日進一步拋售的導火索。
+      </li>
+      <li>
+        <strong>S&P 500與道指正式進入回調區間（Correction Territory）</strong>
+        兩大指數均自近期高點下跌超過10%，正式進入技術性回調。Nasdaq-100距離熊市（下跌20%）已不足50點。
+      </li>
+    </ul>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀因素</h2>
+    <ul class="macro-list">
+      <li>
+        <strong>聯準會（Fed）政策：</strong>
+        EFFR約3.88%，Fed理事Collins表示政策仍需進一步緊縮。CME FedWatch顯示市場定價12月升息約26bps，2027年3月再升息約60bps。緊縮立場持續壓抑股市估值。
+      </li>
+      <li>
+        <strong>美國公債殖利率：</strong>
+        10年期殖利率本週處於5.00–5.14%區間，當日受避險買盤推動，殖利率小幅下行，公債價格上漲——形成典型的風險規避輪動（股跌債漲）。
+      </li>
+      <li>
+        <strong>AI投資報酬（ROI）疑慮：</strong>
+        結構性主題：投資人愈來愈質疑Amazon、Meta、Microsoft、Google等超大規模雲端廠商的AI資本支出，是否能有效轉換為營收，此趨勢自10月起持續加深。
+      </li>
+      <li>
+        <strong>SEC監管風險：</strong>
+        SEC就Nvidia會計問題展開審查，為當日新增負面催化劑，市場對AI科技龍頭的監管環境信心進一步受損。
+      </li>
+      <li>
+        <strong>黃金與油價：</strong>
+        現貨黃金下跌約1.6%至約$3,789/盎司；WTI原油亦收跌。商品同步走弱，呈現通縮需求衝擊特徵，而非單純的風險規避。
+      </li>
+      <li>
+        <strong>地緣政治：</strong>
+        伊朗與美國談判仍陷僵局，但非當日直接觸發因素。
+      </li>
+    </ul>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+    <div class="stock-grid">
+      <div class="stock-item">
+        <div class="ticker">NVDA · Nvidia</div>
+        <div class="change">▼ -14.01% → $125.53</div>
+        <div class="note">距10月6日高點 -43%；市值蒸發逾$2.5兆；SEC會計調查</div>
+      </div>
+      <div class="stock-item">
+        <div class="ticker">AMD</div>
+        <div class="change">▼ -13%+</div>
+        <div class="note">半導體板塊全面受壓，跟隨Nvidia下跌</div>
+      </div>
+      <div class="stock-item">
+        <div class="ticker">AVGO · Broadcom</div>
+        <div class="change">▼ -14%+</div>
+        <div class="note">AI基礎設施晶片需求前景遭質疑</div>
+      </div>
+      <div class="stock-item">
+        <div class="ticker">AMZN · Amazon</div>
+        <div class="change">▼ 大幅下跌</div>
+        <div class="note">AI基礎設施主要買家；雲端capex ROI受質疑</div>
+      </div>
+      <div class="stock-item">
+        <div class="ticker">META · Meta Platforms</div>
+        <div class="change">▼ 大幅下跌</div>
+        <div class="note">AI投資規模龐大，市場憂慮回報率</div>
+      </div>
+      <div class="stock-item">
+        <div class="ticker">ANT · Anthropic</div>
+        <div class="change">▼ 自IPO高點回落</div>
+        <div class="note">11/19 IPO以$83上市，11/19收盤$97.17，11/20繼續下跌</div>
+      </div>
+    </div>
+    <div style="margin-top:16px; font-size:0.88rem; color:#374151; line-height:1.6;">
+      <strong>板塊表現：</strong> 科技股為最差板塊（晶片、雲端、軟體、AI基礎設施全面重挫）；公用事業、必需消費品、醫療保健相對抗跌（但仍普遍收跌）。羅素2000（-2.76%）跌幅相對較小，因直接AI曝險較低。市場廣度極度偏空，各交易所跌家遠多於漲家。
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>AI資本支出ROI疑慮持續深化——科技巨頭AI投資能否換來實質獲利，市場信心動搖</li>
+      <li>Nvidia面臨SEC會計調查，潛在法律與財務不確定性尚未明朗</li>
+      <li>Nasdaq-100距熊市（-20%）不足50點，技術面破位風險升高</li>
+      <li>聯準會緊縮立場持續——12月及2027年初的加息預期維持，高利率環境壓縮高估值科技股</li>
+      <li>AI獨角獸IPO（Anthropic）無法維持開盤漲幅，AI敘事降溫訊號</li>
+      <li>殖利率長期在5%以上，對成長型股票估值形成持續壓力</li>
+      <li>地緣政治（伊美談判、全球供應鏈）潛在尾部風險未解</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html" target="_blank">CNBC — Stock Market Today Live Updates (Nov 19–20)</a></li>
+      <li><a href="https://cappnotes.substack.com/p/closing-look-friday-november-20-2026" target="_blank">Capp Notes Substack — Closing Look, Friday November 20, 2026</a></li>
+      <li><a href="https://www.nacionale.com/en/articles/is-the-stock-market-down-for-the-year-2026-sp-500-dow-nasdaq-year-to-date-november-20" target="_blank">Nacionale — YTD Performance Analysis (Nov 20)</a></li>
+      <li><a href="https://www.openingbelldailynews.com/p/nasdaq-swing-nov-20-2026" target="_blank">Opening Bell Daily News — Nasdaq Swing Nov 20, 2026</a></li>
+      <li><a href="https://www.upi.com/Top_News/US/2026/11/20/stocks-dow-jones-nasdaq-correction-territory/1061795214998/" target="_blank">UPI — Stocks: Dow Jones &amp; Nasdaq Enter Correction Territory</a></li>
+      <li><a href="https://247wallst.com/investing/2026/11/21/the-nasdaq-100-is-now-just-49-points-from-a-bear-market/" target="_blank">247 Wall St. — Nasdaq-100 Just 49 Points from Bear Market</a></li>
+      <li><a href="https://stockinvest.us/digest/digest-us-market-close-2026-11-20" target="_blank">StockInvest.us — US Market Close Digest 2026-11-20</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-nvidia-s-usd2-5-trillion-rout-deepens-as-sec-accounting-probe-adds-to-wall-street-s-ai-sell-off/" target="_blank">Motley Fool — Nvidia's $2.5T Rout Deepens; SEC Accounting Probe</a></li>
+      <li><a href="https://www.nbcpalmsprings.com/business-finance-and-tech/2026/11/20/wall-street-selloff-wipes-out-nasdaqs-gains-for-2026-as-ai-stocks-take-a-major-hit" target="_blank">NBC Palm Springs — Wall Street Selloff Wipes Out Nasdaq's 2026 Gains</a></li>
+      <li><a href="https://www.axios.com/2026/11/20/anthropic-ipo-nvidia-ai-tech-selloff" target="_blank">Axios — Anthropic IPO + AI Tech Selloff</a></li>
+      <li><a href="https://www.breitbart.com/economy/2026/11/20/stocks-plunge-as-ai-selloff-pushes-sp-500-and-dow-into-correction/" target="_blank">Breitbart — Stocks Plunge as AI Selloff Pushes S&P 500 and Dow Into Correction</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262316111-nasdaq-falls-ai-stock-selloff-nvidia-sec-probe-tradingkey" target="_blank">TradingKey — Nasdaq Falls; AI Stock Selloff + Nvidia SEC Probe</a></li>
+      <li><a href="https://www.kucoin.com/news/flash/nvidia-stock-falls-43-from-peak-amid-ai-sector-sell-off" target="_blank">KuCoin Flash — Nvidia Stock Falls 43% from Peak</a></li>
+      <li><a href="https://www.fx168news.com/express/fastnews/1473623" target="_blank">FX168 速遞 — 美股收盤動態（中文）</a></li>
+      <li><a href="https://www.thepaper.cn/newsDetail_forward_34527016" target="_blank">澎湃新聞 — 美股市場報道（中文）</a></li>
+      <li><a href="https://m.21jingji.com/article/20261121/herald/72ecd6775e3be3e11a4639b1ec991bc4.html" target="_blank">21財經 — 美股週評（中文）</a></li>
+      <li><a href="https://www.foxbusiness.com/markets/anthropic-begins-trading-nasdaq-record-breaking-ipo" target="_blank">Fox Business — Anthropic Begins Trading on Nasdaq in Record-Breaking IPO</a></li>
+      <li><a href="https://www.stl.news/u-s-stock-market-weekly-update-ending-nov-20-2026/" target="_blank">STL News — US Stock Market Weekly Update Ending Nov 20, 2026</a></li>
+      <li><a href="https://www.stlpr.org/npr/2026-11-19/investors-scramble-for-a-piece-of-ai-giant-anthropic-in-blockbuster-ipo" target="_blank">STLPR/NPR — Investors Scramble for Anthropic in Blockbuster IPO</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    由 Claude evidence-researcher agent 自動搜索驗證 &nbsp;|&nbsp; 2026-11-20 美國股市報告<br>
+    僅供參考，非投資建議 &nbsp;|&nbsp; 生成時間：2026-11-22
+  </footer>
+</div>
+</body>
+</html>
