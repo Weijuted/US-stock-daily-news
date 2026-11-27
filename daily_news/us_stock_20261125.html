@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-25</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    header .alert-banner { margin-top: 14px; background: rgba(248,113,113,0.2); border: 1px solid rgba(248,113,113,0.5); border-radius: 6px; padding: 10px 14px; font-size: 0.88rem; color: #fca5a5; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .neutral { color: #6b7280; font-weight: 600; }
+    .event-list { list-style: none; }
+    .event-list li { padding: 12px 14px; margin-bottom: 10px; background: #f8faff; border-left: 3px solid #3b82f6; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .event-list li strong { color: #0f3460; }
+    .stock-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .stock-card { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e9ff; }
+    .stock-card .ticker { font-weight: 700; color: #0f3460; font-size: 1rem; }
+    .stock-card .company { font-size: 0.8rem; color: #6b7280; margin-bottom: 6px; }
+    .stock-card .change { font-size: 1.1rem; font-weight: 700; }
+    .stock-card .note { font-size: 0.78rem; color: #6b7280; margin-top: 4px; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.5; }
+    .macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .macro-item { background: #f8faff; border-radius: 8px; padding: 14px 16px; border: 1px solid #e0e9ff; }
+    .macro-item h3 { font-size: 0.85rem; font-weight: 700; color: #0f3460; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.03em; }
+    .macro-item p { font-size: 0.88rem; color: #374151; line-height: 1.5; }
+    .intraday-note { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 14px 16px; margin-bottom: 20px; font-size: 0.88rem; color: #92400e; }
+    .intraday-note strong { color: #78350f; }
+    .sources { font-size: 0.82rem; color: #6b7280; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; list-style: none; padding-left: 0; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; margin-left: 6px; }
+    .badge-red { background: #fee2e2; color: #991b1b; }
+    .badge-green { background: #dcfce7; color: #166534; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>美股新聞簡報</h1>
+    <div class="subtitle">2026年11月25日（週三）| 感恩節前最後完整交易日 | 由 Claude Routine 自動生成</div>
+    <div class="alert-banner">
+      ⚠️ 當日盤中劇烈波動：道瓊一度暴跌逾1,100點，那斯達克盤中跌幅達4.6%，逢低買盤在假期前大舉湧入，市場大幅收復失地
+    </div>
+  </header>
+
+  <!-- INTRADAY NOTE -->
+  <div class="intraday-note">
+    <strong>盤中波動說明：</strong>早盤AI科技股遭拋售疊加新關稅提案衝擊，道瓊最低觸及 48,913 點（跌逾1,100點），那斯達克100指數一度較高點回落達20%，觸及技術性熊市邊緣。午後感恩節假期前逢低買盤進場，三大指數大幅反彈，收盤跌幅大幅收窄。
+  </div>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤點位</th>
+          <th>漲跌點數</th>
+          <th>漲跌幅</th>
+          <th>盤中低點</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數</strong></td>
+          <td>50,182.95</td>
+          <td class="up">+164.25</td>
+          <td class="up">+0.33%</td>
+          <td>~48,913（跌逾1,100點）</td>
+        </tr>
+        <tr>
+          <td><strong>標普 500</strong></td>
+          <td>7,182.78</td>
+          <td class="down">−18.31</td>
+          <td class="down">−0.25%</td>
+          <td>盤中最多跌約3.2%</td>
+        </tr>
+        <tr>
+          <td><strong>那斯達克綜合</strong></td>
+          <td>23,585.80</td>
+          <td class="down">−147.73</td>
+          <td class="down">−0.62%</td>
+          <td>盤中最多跌約4.6%</td>
+        </tr>
+        <tr>
+          <td><strong>Russell 2000</strong></td>
+          <td>~2,704–2,706</td>
+          <td class="up">+19～+21</td>
+          <td class="up">+0.71%～+0.78%</td>
+          <td>小型股逆勢收紅（資金輪動至非科技）</td>
+        </tr>
+        <tr>
+          <td><strong>費城半導體指數</strong></td>
+          <td colspan="2">—</td>
+          <td class="down">盤中最多 −5.8%</td>
+          <td>AI晶片賣壓主導</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <ul class="event-list">
+      <li>
+        <strong>AI科技股遭大規模拋售：</strong>輝達（NVDA）收跌 3.91%，盤中最深一度暴跌逾8.6%。甲骨文（Oracle）、美光（Micron）等AI基礎設施股同步下挫。那斯達克100指數盤中一度較歷史高點下跌20%，觸及技術性熊市邊緣。Anthropic（近期上市，IPO價$83）收盤報$81.90，仍低於掛牌價。雲端算力商 CoreWeave 重挫約10.6%。
+      </li>
+      <li>
+        <strong>美國新關稅提案衝擊：</strong>美國貿易代表辦公室（USTR）依據《貿易法》第301條，提議對包括中國、歐盟、日本在內共14個貿易夥伴加徵關稅，理由為製造業過剩產能。此為提案階段，聽證會預定於明年1月舉行，但消息已重創市場情緒。
+      </li>
+      <li>
+        <strong>道瓊戲劇性反彈，重返5萬點：</strong>感恩節假期前，逢低買盤在午後大舉進場，道瓊從跌逾1,100點的盤中低點一路反彈，收漲164點，重新站上50,000點關卡，演出近年最大盤中V型反轉之一。
+      </li>
+      <li>
+        <strong>惠普（HP/HPQ）強勁財報推升股價：</strong>惠普公布Q4財報，獲利指引優於市場預期，股價單日大漲 11.49%，成為當日逆勢亮點，部分抵銷科技板塊整體疲弱。
+      </li>
+      <li>
+        <strong>感恩節假期安排：</strong>11月26日（週四）美股因感恩節全天休市；11月27日（週五，即今日）為黑色星期五，美股提前於美東時間下午1時收盤。
+      </li>
+    </ul>
+  </div>
+
+  <!-- INDIVIDUAL STOCKS -->
+  <div class="card">
+    <h2>重要個股動態</h2>
+    <div class="stock-grid">
+      <div class="stock-card">
+        <div class="ticker">NVDA <span class="badge badge-red">↓</span></div>
+        <div class="company">輝達 Nvidia</div>
+        <div class="change down">−3.91%（$149.30）</div>
+        <div class="note">盤中最深跌逾8.6%；AI賣壓主力</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">HPQ <span class="badge badge-green">↑</span></div>
+        <div class="company">惠普 HP Inc.</div>
+        <div class="change up">+11.49%</div>
+        <div class="note">Q4財報獲利指引超預期</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">CRWV <span class="badge badge-red">↓</span></div>
+        <div class="company">CoreWeave</div>
+        <div class="change down">約 −10.6%</div>
+        <div class="note">AI雲端算力賣壓擴散</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">ANTH <span class="badge badge-red">↓</span></div>
+        <div class="company">Anthropic（近期上市）</div>
+        <div class="change down">$81.90（IPO $83）</div>
+        <div class="note">低於IPO掛牌價</div>
+      </div>
+      <div class="stock-card">
+        <div class="ticker">SOX <span class="badge badge-red">↓</span></div>
+        <div class="company">費城半導體指數</div>
+        <div class="change down">盤中 −5.8%</div>
+        <div class="note">半導體板塊全面受壓</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MACRO FACTORS -->
+  <div class="card">
+    <h2>宏觀經濟與政策因素</h2>
+    <div class="macro-grid">
+      <div class="macro-item">
+        <h3>聯準會（Fed）動態</h3>
+        <p>核心PCE通膨（Fed最偏好指標）年增 <strong>3.3%</strong>，略高於市場預期的3.2%，遠超Fed 2%目標。市場預期Fed將於<strong>12月再度升息25個基點</strong>（現行利率目標區間3.75%-4.00%）。牛津經濟研究院與Vanguard均預測年底前再升一碼。CME FedWatch工具顯示12月升息機率約80%。</p>
+      </div>
+      <div class="macro-item">
+        <h3>關稅與貿易政策</h3>
+        <p>USTR宣布提議對中國、歐盟、日本等<strong>14個貿易夥伴</strong>加徵新關稅，依據第301條對過剩製造業產能展開調查。此為提案階段，聽證排定於2027年1月，但消息已引發市場對供應鏈成本上升及通膨惡化的擔憂。</p>
+      </div>
+      <div class="macro-item">
+        <h3>能源與地緣政治</h3>
+        <p>美伊緊張局勢持續影響原油供應，<strong>油價維持在每桶100美元以上</strong>，加劇通膨壓力並限制Fed政策空間。能源成本上升亦對企業利潤率構成壓力。</p>
+      </div>
+      <div class="macro-item">
+        <h3>AI監管風險</h3>
+        <p>期中選舉民主黨大勝後，市場擔憂AI監管法規力道加強，科技巨頭面臨更嚴格審查的預期情緒加重，成為本輪AI股拋售的背景壓力之一。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li>🔴 <strong>AI科技股估值修正持續：</strong>那斯達克100盤中一度進入技術性熊市，AI股泡沫疑慮升溫，後市能否企穩仍為最大不確定性。</li>
+      <li>🔴 <strong>Fed升息路徑風險：</strong>核心PCE連續高於預期，12月加碼升息預期趨於強烈，高利率環境對成長股估值形成持續壓力。</li>
+      <li>🟡 <strong>新關稅談判前景不明：</strong>USTR提案對全球供應鏈及中美貿易關係帶來新變數，若聽證後正式實施將衝擊相關板塊成本。</li>
+      <li>🟡 <strong>AI監管政策不確定性：</strong>選後新政治格局下，AI行業監管收緊的預期可能壓制投資熱情，尤其影響大型平台與AI基礎設施商。</li>
+      <li>🟡 <strong>油價與中東地緣局勢：</strong>美伊衝突若升溫，油價進一步攀升將惡化通膨，增加Fed政策難度。</li>
+      <li>🟢 <strong>個股財報仍有亮點：</strong>惠普財報超預期顯示部分企業基本面依然強健，消費電子AI換機潮對PC需求提供結構性支撐。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <ul class="sources">
+      <li>📰 <a href="https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-dow-erases-1-100-point-loss-as-wall-street-stages-dramatic-late-day-comeback/" target="_blank">Motley Fool — Stock Market Today, Nov. 25: Dow Erases 1,100-Point Loss as Wall Street Stages Dramatic Late-Day Comeback</a></li>
+      <li>📰 <a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-211718440.html" target="_blank">Yahoo Finance — How major US stock indexes fared Wednesday 11/25/2026</a></li>
+      <li>📰 <a href="https://newtalk.tw/news/view/2026-11-26/1073773" target="_blank">新頭殼 — 感恩節假期前現逢低買盤！美股道瓊收復千點跌幅收漲、台積電ADR跌近2%</a></li>
+      <li>📰 <a href="https://www.fx168news.com/express/fastnews/1475689" target="_blank">FX168 — 道琼斯指数11月25日（周三）收盘上涨164.25点</a></li>
+      <li>📰 <a href="https://ca.investing.com/news/economy-news/nasdaq-slides-4-as-ai-selloff-tariff-proposals-rattle-wall-st-4981250" target="_blank">Reuters / Investing.com — Nasdaq slides 4% as AI selloff, tariff proposals rattle Wall St</a></li>
+      <li>📰 <a href="https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html" target="_blank">CNBC — Stock market news for Nov. 25, 2026 (live updates)</a></li>
+      <li>📰 <a href="https://thebostonreport.com/2026/11/25/nasdaq-plunges-ai-sell-off-tariffs-thanksgiving-november-25-2026" target="_blank">The Boston Report — Nasdaq Plunges 4% Before Thanksgiving as AI Sell-Off and New Tariff Plan Hit Wall Street</a></li>
+      <li>📰 <a href="https://swingfolio.com/daily/us/2026-11-25/afternoon" target="_blank">Swingfolio — US Close Nov 25, 2026: S&P 500 -0.25%, NVDA -3.91%</a></li>
+      <li>📰 <a href="https://kucoin.com/zh-hant/news/flash/dow-jones-reclaims-50-000-as-s-p-500-and-nasdaq-struggle" target="_blank">KuCoin News — 道瓊斯重上 50,000 點，而標普500與納斯達克表現掙扎</a></li>
+      <li>📰 <a href="https://www.kitco.com/news/off-the-wire/2026-11-25/nasdaq-sinks-about-4-ai-rout-fresh-trump-tariffs-spook-wall-st" target="_blank">Kitco News — Nasdaq sinks about 4% as AI rout, fresh Trump tariffs spook Wall St</a></li>
+      <li>📰 <a href="https://investrade.com/market-review-november-25-2026/" target="_blank">Investrade — Market Review: November 25, 2026</a></li>
+      <li>📰 <a href="https://www.oxfordeconomics.com/resource/us-pce-nowcast-broadening-pressures-lock-in-december-rate-hike/" target="_blank">Oxford Economics — US PCE Nowcast: Broadening Pressures Lock in December Rate Hike</a></li>
+      <li>📰 <a href="https://news.cnyes.com/news/id/5020107" target="_blank">鉅亨網 — 美股收盤，三大股指漲跌各異</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 | 資料截至2026年11月25日收盤 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
