@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>美股新聞簡報 — 2026-11-27</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f6f9; color: #1a1a2e; padding: 32px 16px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 12px; padding: 32px 36px; margin-bottom: 28px; }
+    header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+    header .subtitle { font-size: 0.95rem; opacity: 0.75; }
+    .card { background: #fff; border-radius: 10px; padding: 24px 28px; margin-bottom: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+    h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 14px; color: #0f3460; border-bottom: 2px solid #e8edf8; padding-bottom: 8px; }
+    h3 { font-size: 0.98rem; font-weight: 700; margin: 18px 0 10px; color: #16213e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: #f0f4ff; color: #0f3460; font-weight: 600; border-bottom: 2px solid #dce3f5; }
+    td { padding: 10px 14px; border-bottom: 1px solid #eef0f5; }
+    tr:last-child td { border-bottom: none; }
+    .up { color: #16a34a; font-weight: 600; }
+    .down { color: #dc2626; font-weight: 600; }
+    .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; margin-left: 6px; }
+    .badge-best { background: #fef9c3; color: #854d0e; }
+    .badge-short { background: #e0f2fe; color: #0369a1; }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 640px) { .event-grid { grid-template-columns: 1fr; } }
+    .event-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; }
+    .event-card.primary { border-color: #93c5fd; background: #eff6ff; }
+    .event-card.secondary { border-color: #a7f3d0; background: #f0fdf4; }
+    .event-card.warning { border-color: #fcd34d; background: #fffbeb; }
+    .event-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #1e40af; }
+    .event-card.secondary h4 { color: #065f46; }
+    .event-card.warning h4 { color: #92400e; }
+    .event-card p, .event-card ul { font-size: 0.87rem; line-height: 1.65; color: #374151; }
+    .event-card ul { padding-left: 16px; }
+    .event-card li { margin-bottom: 4px; }
+    .macro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+    @media (max-width: 640px) { .macro-grid { grid-template-columns: 1fr 1fr; } }
+    .macro-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+    .macro-box .label { font-size: 0.75rem; color: #6b7280; margin-bottom: 4px; }
+    .macro-box .value { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; }
+    .macro-box .change { font-size: 0.8rem; margin-top: 3px; }
+    .stock-table th, .stock-table td { padding: 8px 12px; font-size: 0.88rem; }
+    .tag { display: inline-block; background: #e0f2fe; color: #0369a1; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; margin-right: 4px; }
+    .tag.chip { background: #ede9fe; color: #5b21b6; }
+    .tag.retail { background: #dcfce7; color: #166534; }
+    .tag.pharma { background: #fce7f3; color: #9d174d; }
+    .tag.ai { background: #fef3c7; color: #92400e; }
+    .risk-list { list-style: none; }
+    .risk-list li { padding: 10px 14px; margin-bottom: 8px; background: #fff5f5; border-left: 3px solid #f87171; border-radius: 4px; font-size: 0.9rem; line-height: 1.6; }
+    .sources { font-size: 0.82rem; color: #6b7280; list-style: none; }
+    .sources a { color: #0f3460; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+    .sources li { margin-bottom: 6px; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .sources li:last-child { border-bottom: none; }
+    .source-category { font-weight: 700; color: #374151; font-size: 0.8rem; margin: 12px 0 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+    footer { text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 32px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+    .highlight-bar { background: linear-gradient(135deg, #0f3460, #1e40af); color: white; border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; font-size: 0.9rem; line-height: 1.6; }
+    .highlight-bar strong { font-size: 1rem; }
+    .week-bar { background: linear-gradient(135deg, #065f46, #0d9488); color: white; border-radius: 8px; padding: 12px 18px; margin-top: 14px; font-size: 0.88rem; line-height: 1.6; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇺🇸 美股新聞簡報</h1>
+    <div class="subtitle">2026 年 11 月 27 日（週五，感恩節後黑色星期五縮短交易日）| 由 Claude Routine 自動生成</div>
+  </header>
+
+  <!-- INDEX TABLE -->
+  <div class="card">
+    <h2>主要指數收盤</h2>
+    <div class="highlight-bar">
+      <strong>今日市場焦點：</strong>感恩節後縮短交易日（下午 1:00 ET 收盤），AI 晶片股帶動全面反彈，S&amp;P 500 收漲 1.60%，締造本週最佳表現——為 2025 年 4 月以來最強單週漲幅（+5.6%），道瓊週漲 5.46% 為 2022 年 10 月以來最大。SanDisk（SNDK）當日大漲 15.96%，名列標普 500 最強個股。
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>指數</th>
+          <th>收盤價</th>
+          <th>日漲跌幅</th>
+          <th>週漲跌幅</th>
+          <th>備註</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>道瓊工業指數 (DJIA)</strong></td>
+          <td>50,774.94</td>
+          <td class="up">+591.99 (+1.18%)</td>
+          <td class="up">+5.46%</td>
+          <td><span class="badge badge-best">2022/10 以來最大週漲</span></td>
+        </tr>
+        <tr>
+          <td><strong>標普 500 (S&amp;P 500)</strong></td>
+          <td>7,297.49</td>
+          <td class="up">+114.71 (+1.60%)</td>
+          <td class="up">+5.60%</td>
+          <td><span class="badge badge-best">2025/4 以來最強單週</span></td>
+        </tr>
+        <tr>
+          <td><strong>納斯達克綜合 (Nasdaq)</strong></td>
+          <td>24,129.50</td>
+          <td class="up">+543.70 (+2.31%)</td>
+          <td class="up">+6.68%</td>
+          <td>AI 晶片股領漲</td>
+        </tr>
+        <tr>
+          <td><strong>羅素 2000 (Russell 2000)</strong></td>
+          <td>2,750.30</td>
+          <td class="up">+46.24 (+1.71%)</td>
+          <td class="up">+6.50%</td>
+          <td>小型股同步回暖</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="week-bar">
+      <strong>本週背景：</strong>11 月 5 日（美國期中選舉日）那斯達克單日重挫 5.5%，VIX 恐慌指數暴漲 70%，AI 相關股票蒸發逾 13.2 兆美元市值（AI 電力/基礎設施股平均從高點下跌 53%，記憶體類股跌逾 60%）。本週在 Jensen Huang 重返 Nvidia 執行長一職的提振下，AI 晶片股全面強力反彈，締造 2008 年以來最強感恩節週漲幅。
+    </div>
+  </div>
+
+  <!-- KEY EVENTS -->
+  <div class="card">
+    <h2>重大市場事件</h2>
+    <div class="event-grid">
+      <div class="event-card primary" style="grid-column: span 2;">
+        <h4>🤖 Jensen Huang 重返 Nvidia 執行長 — AI 晶片股全面反彈的主要催化劑</h4>
+        <ul>
+          <li>本週一（11/23）市場開盤時，Jensen Huang 重返 Nvidia 執行長一職的消息引爆晶片股全面強力反彈</li>
+          <li>Philadelphia 半導體指數（SOX）本週大漲，本日再漲 <strong>+4.69%</strong></li>
+          <li>SanDisk（SNDK）本日飆升 <strong>+15.96%</strong>，為標普 500 當日最強，記憶體類股（Seagate、Micron、Western Digital）同步大漲</li>
+          <li>Dell（DELL）當日上漲約 <strong>+6.70%</strong>；Nvidia（NVDA）小漲 <strong>+0.80%</strong></li>
+          <li>分析師提示：本週反彈部分源於前週大跌後的倉位回補，非完全基本面驅動</li>
+        </ul>
+      </div>
+      <div class="event-card secondary">
+        <h4>🛍️ 黑色星期五購物旺季開啟</h4>
+        <ul>
+          <li>Adobe 數據：感恩節當日線上消費約 <strong>71 億美元</strong>，年增 <strong>+10.4%</strong></li>
+          <li>亞馬遜（AMZN）受惠強勁黑五數據，當日大漲約 <strong>+3.8%</strong></li>
+          <li>沃爾瑪（WMT）同步受早期假日購物數據支撐，小幅走升</li>
+          <li>消費零售板塊情緒正面</li>
+        </ul>
+      </div>
+      <div class="event-card warning">
+        <h4>⚠️ 縮短交易日 · 低成交量</h4>
+        <ul>
+          <li>美股黑色星期五縮短至 <strong>1:00 PM ET</strong> 收盤（正常為 4 PM）</li>
+          <li>成交量明顯低於正常水準，部分機構交易員仍在度假</li>
+          <li>低量環境可能放大指數波動幅度，漲跌幅僅供參考</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- MACRO -->
+  <div class="card">
+    <h2>宏觀環境</h2>
+    <div class="macro-grid">
+      <div class="macro-box">
+        <div class="label">聯準會目標區間</div>
+        <div class="value">3.75%–4.00%</div>
+        <div class="change down">12/9 升息預期 97.5%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">聯邦基金有效利率</div>
+        <div class="value">3.88%</div>
+        <div class="change">至 11/24 數據</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">下次 FOMC</div>
+        <div class="value">12/9</div>
+        <div class="change down">預期升息 25 bp</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">10 月非農就業</div>
+        <div class="value up">+165,000</div>
+        <div class="change up">預估僅 +65,000</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">失業率（10 月）</div>
+        <div class="value">4.1%</div>
+        <div class="change">勞動市場仍穩健</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">美元指數（DXY）</div>
+        <div class="value up">104.04</div>
+        <div class="change up">+0.36%</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">10 年期公債殖利率</div>
+        <div class="value">約 4.84–4.93%</div>
+        <div class="change down">緩步回落</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">VIX 恐慌指數</div>
+        <div class="value">23.81</div>
+        <div class="change up">從 11/5 高點顯著回落</div>
+      </div>
+      <div class="macro-box">
+        <div class="label">美國 Q3 GDP（年化）</div>
+        <div class="value up">+4.3%</div>
+        <div class="change">經濟韌性強勁</div>
+      </div>
+    </div>
+
+    <h3>聯準會動態</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      聯準會在 10 月 28 日 FOMC 以 10-2 票決定<strong>維持利率於 3.75%–4.00%</strong>，兩位委員持異議傾向升息。Bloomberg（11/13）報導，Fed 官員已確立 12 月升息預期，並開啟連續升息的討論空間（2023 年以來首見連升）。理事 Waller（11/18）表示可能需要更強力措施來壓抑通膨。<strong>12 月 9 日 FOMC 升息 25 bp 機率高達 97.5%</strong>（CME FedWatch）。
+    </p>
+
+    <h3>近期重要經濟數據</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>數據</th><th>結果</th><th>vs 預期</th><th>市場影響</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>非農就業（10 月）</td>
+          <td class="up">+165,000</td>
+          <td>大幅優於預估 +65,000</td>
+          <td>強勁就業推升升息預期</td>
+        </tr>
+        <tr>
+          <td>失業率（10 月）</td>
+          <td>4.1%</td>
+          <td>穩定</td>
+          <td>勞動市場韌性</td>
+        </tr>
+        <tr>
+          <td>CPI（10 月）</td>
+          <td class="down">偏高</td>
+          <td>高於預期</td>
+          <td>12 月升息 88% 機率（CPI 公布後）</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:#6b7280;margin-top:8px;">注：10 月 FOMC 會議紀要於 11 月 18 日公布；下次 FOMC 為 12 月 8-9 日。</p>
+  </div>
+
+  <!-- NOTABLE STOCKS -->
+  <div class="card">
+    <h2>重要個股與板塊動態</h2>
+
+    <h3>當日主要漲跌股</h3>
+    <table class="stock-table">
+      <thead>
+        <tr><th>股票</th><th>日漲跌幅</th><th>催化劑 / 說明</th><th>板塊</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SanDisk（SNDK）</strong></td>
+          <td class="up">+15.96%</td>
+          <td>S&amp;P 500 最強個股；記憶體/儲存股全面反彈；週漲幅更可觀</td>
+          <td><span class="tag chip">半導體/儲存</span></td>
+        </tr>
+        <tr>
+          <td><strong>Dell Technologies（DELL）</strong></td>
+          <td class="up">+6.70%</td>
+          <td>AI 伺服器需求樂觀情緒回升</td>
+          <td><span class="tag chip">科技/AI</span></td>
+        </tr>
+        <tr>
+          <td><strong>Philadelphia 半導體指數（SOX）</strong></td>
+          <td class="up">+4.69%</td>
+          <td>晶片類股整體大反彈</td>
+          <td><span class="tag chip">半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>Amazon（AMZN）</strong></td>
+          <td class="up">+3.80%</td>
+          <td>感恩節 71 億美元線上消費（年增 10.4%）提振</td>
+          <td><span class="tag retail">零售/電商</span></td>
+        </tr>
+        <tr>
+          <td><strong>Micron Technology（MU）</strong></td>
+          <td class="up">+7.60%</td>
+          <td>記憶體/DRAM 類股全面回升</td>
+          <td><span class="tag chip">半導體/記憶體</span></td>
+        </tr>
+        <tr>
+          <td><strong>Nvidia（NVDA）</strong></td>
+          <td class="up">+0.80%</td>
+          <td>Jensen Huang 重返執行長（本週主要催化劑）；英國 FT 報導暫停向東南亞特定國家出口 AI 晶片，限制當日漲幅</td>
+          <td><span class="tag ai">AI/半導體</span></td>
+        </tr>
+        <tr>
+          <td><strong>Walmart（WMT）</strong></td>
+          <td class="up">小漲</td>
+          <td>早期假日購物數據正面</td>
+          <td><span class="tag retail">零售</span></td>
+        </tr>
+        <tr>
+          <td><strong>Vertex Pharmaceuticals（VRTX）</strong></td>
+          <td class="down">下跌</td>
+          <td>FDA 推遲腎臟藥物審查決定</td>
+          <td><span class="tag pharma">生技/醫療</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>板塊表現總結</h3>
+    <table class="stock-table" style="margin-top:10px;">
+      <thead>
+        <tr><th>板塊</th><th>當日表現</th><th>主要驅動</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>半導體 / AI 晶片</td><td class="up">大幅領漲（SOX +4.69%）</td><td>Jensen Huang 回歸、記憶體/儲存股強力反彈</td></tr>
+        <tr><td>科技（大型）</td><td class="up">強勢</td><td>Dell、Amazon 等科技股受惠</td></tr>
+        <tr><td>消費零售</td><td class="up">正面</td><td>黑五線上購物數據強勁；Amazon 受惠</td></tr>
+        <tr><td>生技 / 醫療</td><td class="down">偏弱</td><td>Vertex FDA 延遲；防禦性板塊相對落後</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- BACKGROUND -->
+  <div class="card">
+    <h2>背景脈絡：11 月 AI 拋售潮與感恩節週反彈</h2>
+    <h3>11 月 5 日（美國期中選舉日）AI 股大崩盤</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;margin-bottom:12px;">
+      民主黨「藍色浪潮」期中選舉勝選，投資人憂慮新政府可能管制 AI 資料中心建設，那斯達克單日重挫 <strong>5.5%</strong>，VIX 恐慌指數暴漲 <strong>70%</strong>。AI 相關股票自 2026 年高點至 11 月 7 日合計蒸發約 <strong>13.2 兆美元</strong>市值；記憶體類股較 2026 年高點平均下跌 <strong>60%</strong>；AI 電力/基礎設施股平均下跌 <strong>53%</strong>。
+    </p>
+    <h3>感恩節週強力反彈（11/23–11/27）</h3>
+    <p style="font-size:0.9rem;line-height:1.7;color:#374151;">
+      週一（11/23）Jensen Huang 重返 Nvidia 執行長一職消息爆發，晶片股帶頭強力復甦，市場重燃 AI 基礎建設長期投資信心。Huang 公開表示「AI 正無處不在、做到每件事」，提振市場情緒。截至 11/27 收盤，標普 500 已從 11 月低點大幅反彈至 7,297，本週漲幅（+5.6%）為 <strong>2008 年以來最強感恩節週表現</strong>，且是近 19 個月來最強單週。分析師提示：本週反彈部分源於大跌後的空頭回補與倉位重設，建議觀察後續是否具備基本面支撐。
+    </p>
+  </div>
+
+  <!-- RISKS -->
+  <div class="card">
+    <h2>風險與不確定因素</h2>
+    <ul class="risk-list">
+      <li><strong>12 月 9 日 FOMC 升息幾成定局（97.5%）：</strong>強勁非農就業（+165,000 vs 預估 +65,000）與熱門 CPI 數據強化升息預期。理事 Waller 暗示可能需更激進措施；若 12 月升息後延續升息，將對股市估值形成壓力，尤其是高估值成長股。</li>
+      <li><strong>本週反彈性質存疑：</strong>分析師指出，S&amp;P 500 週漲 5.6% 主要源於前週 -8.6% 大跌後的空頭回補與倉位重設，並非基本面改善。若 AI 資本支出增速放緩疑慮持續，市場修正尚未結束。</li>
+      <li><strong>AI 板塊結構性風險：</strong>上週（11/20）標普 500 重挫 8.6%，AI/科技股為主要拖累；本週雖反彈，但估值偏高且盈利兌現壓力依存。SanDisk 等記憶體股當日大漲 16% 後短期獲利了結風險上升。</li>
+      <li><strong>通膨持續偏高：</strong>儘管勞動市場強勁，CPI 仍高於聯準會 2% 目標。若通膨未能如期回落，2026 年連續升息機率增加，可能重演 2022 年風格的熊市。</li>
+      <li><strong>低量縮短交易日放大波動：</strong>黑色星期五成交量明顯低落，漲跌幅較難反映真實市場情緒；下週恢復正常交易後，動能可能逆轉。</li>
+      <li><strong>川普貿易政策不確定性：</strong>關稅政策走向仍需密切追蹤，對跨國企業獲利與供應鏈的衝擊尚未完全反映。</li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>資料來源</h2>
+    <p class="source-category">每日市場收盤數據</p>
+    <ul class="sources">
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/27/stock-market-today-nov-27-s-and-p-500-posts-best-week-in-19-months-as-ai-stocks-rebound/" target="_blank">Motley Fool — Stock Market Today Nov. 27: S&amp;P 500 Posts Best Week in 19 Months as AI Stocks Rebound</a></li>
+      <li><a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-184551517.html" target="_blank">Yahoo Finance — How major US stock indexes fared Friday 11/27/2026</a></li>
+      <li><a href="https://swingfolio.com/daily/us/2026-11-27/afternoon" target="_blank">Swingfolio — US Close Nov 27, 2026: S&amp;P 500 +1.60%, SNDK +15.96%</a></li>
+      <li><a href="https://www.stl.news/us-stock-market-today-november-27-2026/" target="_blank">STL.News — U.S. Stock Market Today: 3 Strong Black Friday Gains</a></li>
+      <li><a href="https://eurasiabusinessnews.com/2026/11/27/u-s-stock-market-today-november-27-2026-tech-rebounds-in-shortened-black-friday-session/" target="_blank">Eurasia Business News — U.S. Stock Market Today, November 27, 2026: Tech Rebounds in Shortened Black Friday Session</a></li>
+      <li><a href="https://www.stocktitan.net/articles/stock-market-today-live-november-27-2026" target="_blank">StockTitan — Stock Market Today November 27, 2026: Stocks Close Higher in a Short Black Friday Session</a></li>
+      <li><a href="https://thelibraryestate.com/united-states-markets-closing-report-wall-street-ends-higher-as-battered-ai-stocks-lead-the-weekly-rebound-nov-27-2026/" target="_blank">The Library — United States Markets Closing Report: Wall Street Ends Higher as Battered AI Stocks Lead the Weekly Rebound</a></li>
+    </ul>
+
+    <p class="source-category">週漲幅與市場背景</p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-11-26/asian-stock-futures-signal-gains-oil-climbs-again-markets-wrap" target="_blank">Bloomberg — S&amp;P 500 Has Best Week Since April 2025 on AI Rally: Markets Wrap</a></li>
+      <li><a href="https://www.kucoin.com/news/flash/s-p-500-rises-5-6-in-best-thanksgiving-week-since-2008" target="_blank">KuCoin — S&amp;P 500 Rises 5.6% in Best Thanksgiving Week Since 2008</a></li>
+      <li><a href="https://pro.thestreet.com/market-commentary/not-your-typical-black-friday-unusually-large-gain-caps-best-week-for-stocks-since-april-2025" target="_blank">TheStreet Pro — Not Your Typical Black Friday: Unusually Large Gain Caps Best Week for Stocks Since April 2025</a></li>
+      <li><a href="https://que.com/black-friday-rally-dow-posts-its-best-week-since-2022-as-chip-stocks-lead-the-comeback/" target="_blank">QUE.com — Black Friday Rally: Dow Posts Its Best Week Since 2022 as Chip Stocks Lead the Comeback</a></li>
+      <li><a href="https://longbridge.com/en/news/307062519" target="_blank">Longbridge — S&amp;P 500's Best Week in 19 Months! Behind the Turmoil in US AI Trading: Jensen Huang's Return</a></li>
+    </ul>
+
+    <p class="source-category">個股動態</p>
+    <ul class="sources">
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/27/stock-market-midday-nov-27-tech-stocks-recover-and-amazon-posts-black-friday-gains/" target="_blank">Motley Fool — Stock Market Midday, Nov. 27: Tech Stocks Recover and Amazon Posts Black Friday Gains</a></li>
+      <li><a href="https://247wallst.com/cards/the-upside-was-lopsided-at-friday-s-close-sandisk-s-16-gai-sony-session-movers-01m8fdkc5wd2aaxszf2kp5cnct" target="_blank">247 Wall St. — SanDisk's 16% gain led five double-digit movers</a></li>
+      <li><a href="https://finviz.com/news/294229/why-sandisk-stock-rocked-the-market-this-week" target="_blank">Finviz — Why Sandisk Stock Rocked the Market This Week</a></li>
+      <li><a href="https://vistapglobal.com/weekly-market-summary-stocks-stage-a-sharp-rebound-in-a-thanksgiving-holiday-shortened-week-ending-november-27-2026-ant-bby-eprx-gap-googl-ko-modd-mo-nvda-ser-sndk-skhy-spcx-wmt/" target="_blank">VistaPGlobal — Weekly Market Summary: Stocks Stage a Sharp Rebound in Thanksgiving Week</a></li>
+      <li><a href="https://www.ad-hoc-news.de/boerse/news/marktberichte/russell-2000-closes-1-71-prozent-higher-as-ai-fears-ease/70563104" target="_blank">Ad-Hoc-News — Russell 2000 Closes 1.71% Higher as AI Fears Ease</a></li>
+    </ul>
+
+    <p class="source-category">聯準會 / 總體經濟</p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-11-13/fed-set-to-raise-interest-rates-next-month-as-debate-moves-to-january" target="_blank">Bloomberg — Fed Set to Raise Interest Rates Next Month as Debate Moves to January</a></li>
+      <li><a href="https://www.federalreserve.gov/releases/h15/" target="_blank">Federal Reserve — H.15 Selected Interest Rates (Daily) November 25, 2026</a></li>
+      <li><a href="https://cambridgecurrencies.com/next-federal-reserve-interest-rate-decision/" target="_blank">Cambridge Currencies — Federal Reserve Interest Rate Decision: 3.75%–4.00%, Next 9 Dec</a></li>
+      <li><a href="https://www.tipranks.com/news/stock-market-today-nov-27-markets-reopen-for-shortened-black-friday-trading" target="_blank">TipRanks — Stock Market Today, Nov. 27: Markets Reopen for Shortened Black Friday Trading</a></li>
+    </ul>
+
+    <p class="source-category">補充來源（由研究代理人交叉驗證）</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/markets/live/stock-market-today-firday-november-27-dow-sp-500-nasdaq-black-friday-holiday-091152065.html" target="_blank">Yahoo Finance — Markets Live Blog (Dow/S&amp;P/Nasdaq Black Friday)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/article/chip-stocks-lead-a-black-friday-rally-but-nvidia-misses-out-alphacheck-145727185.html" target="_blank">Yahoo Finance — Chip Stocks Lead a Black Friday Rally but Nvidia Misses Out</a></li>
+      <li><a href="https://www.fool.com/coverage/stock-market-today/2026/11/27/stock-market-today-nov-27-sandisk-surges-16-as-memory-stocks-rebound-from-ai-driven-selloff/" target="_blank">Motley Fool — SanDisk Surges 16% as Memory Stocks Rebound From AI-Driven Selloff</a></li>
+      <li><a href="https://www.ad-hoc-news.de/boerse/news/marktberichte/russell-2000-closes-1-71-prozent-higher-as-ai-fears-ease/70563104" target="_blank">Ad-Hoc-News — Russell 2000 Closes 1.71% Higher as AI Fears Ease</a></li>
+      <li><a href="https://cappnotes.substack.com/p/closing-look-friday-november-27-2026" target="_blank">CappNotes Substack — Closing Look: Friday, November 27, 2026</a></li>
+      <li><a href="https://theglassdesk.substack.com/p/weekly-market-review-nov-27-2026" target="_blank">The Glass Desk — Weekly Market Review: Nov 27, 2026</a></li>
+      <li><a href="https://vistapglobal.com/weekly-market-summary-stocks-stage-a-sharp-rebound-in-a-thanksgiving-holiday-shortened-week-ending-november-27-2026-ant-bby-eprx-gap-googl-ko-modd-mo-nvda-ser-sndk-skhy-spcx-wmt/" target="_blank">VistaPGlobal — Weekly Market Summary: Stocks Stage a Sharp Rebound in Thanksgiving Week</a></li>
+      <li><a href="https://finance.yahoo.com/news/jensen-huang-says-ai-going-203414189.html" target="_blank">Yahoo Finance — Jensen Huang Says AI is Going Everywhere, Doing Everything</a></li>
+      <li><a href="https://tapeboard.com/blog/weekly-recap-2026-11-06" target="_blank">Tapeboard — Weekly Recap Nov 2–6, 2026（AI 崩盤背景）</a></li>
+    </ul>
+  </div>
+
+  <footer>由 Claude evidence-researcher agent 自動搜索驗證 · 2026-11-28 生成 | 僅供參考，非投資建議</footer>
+</div>
+</body>
+</html>
